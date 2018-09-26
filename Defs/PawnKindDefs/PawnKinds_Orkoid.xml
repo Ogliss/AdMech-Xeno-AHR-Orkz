@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Ork Base ========================== -->
+  <PawnKindDef Name="OrkBase" Abstract="True">
+    <defaultFactionType>OrkFaction</defaultFactionType>
+	<!-- 
+    <race>Alien_Ork</race>
+	<backstoryCategories>
+			<li>Ork_Standard</li>
+  	</backstoryCategories>
+	-->
+    <chemicalAddictionChance>0.035</chemicalAddictionChance>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Ork Civilian Base ========================== -->
+  <PawnKindDef Name="OrkCivBase" ParentName="OrkBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Ork</race>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>100</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>Gun</li>
+		<li>OCunningGun</li>
+     	<li>NeolithicMeleeBasic</li>
+		<li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+ 
+  <PawnKindDef Name="GrotCivBase" ParentName="OrkBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Grot</race>
+    <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>100</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>OCrudeChoppa</li>
+		<li>OSlugga</li>
+     	<li>NeolithicMeleeBasic</li>
+		<li>OBrutalityMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+   
+  <!-- ============================ Ork Civilians ========================== -->
+  <PawnKindDef ParentName="OrkCivBase">
+    <defName>OrkWarboss</defName>
+    <label>Ork Warboss</label>
+    <labelPlural>Warbosses</labelPlural>
+    <factionLeader>true</factionLeader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>10000</min>
+      <max>15500</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>OMekTekGun</li>
+		<li>OBigMekGun</li>
+			<li>OPowerMelee</li>
+			<li>OEBrutalityMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+	<backstoryCategories>
+			<li>Ork_Boss</li>
+  	</backstoryCategories>
+	<minGenerationAge>60</minGenerationAge>
+	<maxGenerationAge>600</maxGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GrotCivBase">
+    <defName>GrotTrader</defName>
+    <label>Grot trader</label>
+    <trader>true</trader>
+	<backstoryCategories>
+			<li>Ork_Gretchin</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GrotCivBase">
+    <defName>GrotColonist</defName>
+    <label>Grot colonist</label>
+	<backstoryCategories>
+			<li>Ork_Gretchin</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GrotCivBase">
+    <defName>GrotSlave</defName>
+    <label>Grot slave</label>
+	<backstoryCategories>
+			<li>Ork_Slave</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+ 
+  <!-- ============================ Ork Security ========================== -->
+  <PawnKindDef ParentName="OrkCivBase">
+    <defName>OrkRuntBoy</defName>
+    <label>Ork Runt Boy</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>10</maxGenerationAge>
+	<backstoryCategories>
+			<li>Ork_Boy</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>1500</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+      <li>OrkBasic</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>200</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>OBrutalityMelee</li>
+      <li>OEBrutalityMelee</li>
+      <li>OCunningGun</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Ork Military Base ========================== -->
+  <PawnKindDef Name="OrkMilBase" ParentName="OrkBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Alien_Ork</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>10</minGenerationAge>
+    <maxGenerationAge>300</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>750</min>
+      <max>1500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Ork Military ========================== -->  
+  <!-- ============================ Ork Boyz ========================== -->
+  <PawnKindDef Name="OrkBoy" ParentName="OrkMilBase" Abstract="True">
+    <label>Ork Boy</label>
+    <combatPower>70</combatPower>
+	<backstoryCategories>
+			<li>Ork_Boy</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>OrkBasic</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Choppa Boyz ========================== -->
+  <PawnKindDef ParentName="OrkBoy">
+    <defName>OrkChoppaBoy</defName>
+    <label>Ork Choppa Boy</label>
+	<backstoryCategories>
+			<li>Ork_ChoppaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OBrutalityMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Slugga Boyz ========================== -->
+  <PawnKindDef ParentName="OrkBoy">
+    <defName>OrkSluggaBoy</defName>
+    <label>Ork Slugga Boy</label>
+	<backstoryCategories>
+			<li>Ork_SluggaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OCunningGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Shoota Boyz ========================== -->
+  <PawnKindDef ParentName="OrkBoy">
+    <defName>OrkShootaBoy</defName>
+    <label>Ork Shoota Boy</label>
+	<backstoryCategories>
+			<li>Ork_ShootaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OCunningGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Ork Eavy Boyz ========================== -->
+  <PawnKindDef Name="OrkEavyBoy" ParentName="OrkMilBase" Abstract="True">
+    <label>Ork Eavy Boy</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+	<backstoryCategories>
+			<li>Ork_Boy</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>OrkHeavy</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>3550</min>
+      <max>5800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.73</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Eavy Choppa Boyz ========================== -->
+  <PawnKindDef ParentName="OrkEavyBoy">
+    <defName>OrkEavyChoppaBoy</defName>
+    <label>Ork Eavy Choppa Boy</label>
+	<backstoryCategories>
+			<li>Ork_ChoppaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OEBrutalityMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Eavy Slugga Boyz ========================== -->
+  <PawnKindDef ParentName="OrkEavyBoy">
+    <defName>OrkEavySluggaBoy</defName>
+    <label>Ork Eavy Slugga Boy</label>
+	<backstoryCategories>
+			<li>Ork_SluggaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OICunningGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Eavy Shoota Boyz ========================== -->
+  <PawnKindDef ParentName="OrkEavyBoy">
+    <defName>OrkEavyShootaBoy</defName>
+    <label>Ork Eavy Shoota Boy</label>
+	<backstoryCategories>
+			<li>Ork_ShootaBoy</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OICunningGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Ork Nobz ========================== -->
+  <PawnKindDef Name="OrkNob" ParentName="OrkMilBase" Abstract="True">
+    <label>Ork Nob</label>
+    <combatPower>135</combatPower>
+    <minGenerationAge>50</minGenerationAge>
+	<backstoryCategories>
+			<li>Ork_Nob</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>OrkBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1500</min>
+      <max>6500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>OICunningGun</li>
+      <li>OMekTekGun</li>
+		<li>OEBrutalityMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.88</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Choppa Nob ========================== -->
+  <PawnKindDef ParentName="OrkNob">
+    <defName>OrkChoppaNob</defName>
+    <label>Ork Choppa Nob</label>
+	<backstoryCategories>
+			<li>Ork_ChoppaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OEBrutalityMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Slugga Nob ========================== -->
+  <PawnKindDef ParentName="OrkNob">
+    <defName>OrkSluggaNob</defName>
+    <label>Ork Slugga Nob</label>
+	<backstoryCategories>
+			<li>Ork_SluggaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Shoota Nob ========================== -->
+  <PawnKindDef ParentName="OrkNob">
+    <defName>OrkShootaNob</defName>
+    <label>Ork Shoota Nob</label>
+	<backstoryCategories>
+			<li>Ork_ShootaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+      <li>OBigMekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+ 
+   <!-- ============================ Ork Eavy Nobz ========================== -->
+  <PawnKindDef Name="OrkEavyNob" ParentName="OrkMilBase" Abstract="True">
+    <label>Ork Eavy Nob</label>
+    <combatPower>220</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+	<backstoryCategories>
+			<li>Ork_Nob</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Military</li>
+      <li>Spacer</li>
+      <li>OrkHeavy</li>
+      <li>OrkMega</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>6000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Choppa Nob ========================== -->
+  <PawnKindDef ParentName="OrkEavyNob">
+    <defName>OrkEavyChoppaNob</defName>
+    <label>Ork Eavy Choppa Nob</label>
+	<backstoryCategories>
+			<li>Ork_ChoppaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OEBrutalityMelee</li>
+      <li>OPowerMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Slugga Nob ========================== -->
+  <PawnKindDef ParentName="OrkEavyNob">
+    <defName>OrkEavySluggaNob</defName>
+    <label>Ork Eavy Slugga Nob</label>
+	<backstoryCategories>
+			<li>Ork_SluggaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Shoota Nob ========================== -->
+  <PawnKindDef ParentName="OrkEavyNob">
+    <defName>OrkEavyShootaNob</defName>
+    <label>Ork Eavy Shoota Nob</label>
+	<backstoryCategories>
+			<li>Ork_ShootaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+      <li>OBigMekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Ork Boss ========================== -->
+  <PawnKindDef ParentName="OrkMilBase">
+     <defName>OrkBoss</defName>
+    <label>Ork Boss</label>
+    <combatPower>250</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+	<backstoryCategories>
+			<li>Ork_Boss</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+      <li>OrkHeavy</li>
+      <li>OrkMega</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>10000</min>
+      <max>15500</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>OMekTekGun</li>
+		<li>OBigMekGun</li>
+			<li>OPowerMelee</li>
+			<li>OEBrutalityMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+</Defs>

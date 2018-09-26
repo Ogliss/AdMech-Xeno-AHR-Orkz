@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseOrkPawnKind">
+    <race>Alien_Ork</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+	    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseOrkPawnKind">
+    <defName>Ork</defName>
+    <label>Ork colonist</label>
+    <defaultFactionType>OrkPlayerColony</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Boss</li>
+			<li>Ork_Nob</li>
+			<li>Ork_Standard</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef Abstract="True" Name="BaseGrotPawnKind">
+    <race>Alien_Grot</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseGrotPawnKind">
+    <defName>Grot</defName>
+    <label>Grot colonist</label>
+    <defaultFactionType>OrkPlayerColony</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Gretchin</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>
