@@ -22,8 +22,8 @@
 			<li>Ork_Standard</li>
 			<li>Ork_Gretchin</li>
   	</backstoryCategories>
-    <homeIconPath>World/OrkBaseIcon</homeIconPath>
-    <expandingIconTexture>World/OrkBaseIcon</expandingIconTexture>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+	<expandingIconTexture>Icons/OrkIconB</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
@@ -60,12 +60,18 @@
     </pawnGroupMakers>
   </FactionDef>
   
-    <FactionDef Parent="OrkFactionBase">
+  <FactionDef Abstract="True" Name="FeralOrkFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef Parent="FeralOrkFactionBase">
     <defName>OrkPlayerColonyTribal</defName>
     <label>Ork Tribal</label>
     <description>Ork Tribal Start.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Ork</basicMemberKind>
+    <basicMemberKind>FeralOrk</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
@@ -75,8 +81,8 @@
 			<li>Ork_Standard</li>
 			<li>Ork_Gretchin</li>
   	</backstoryCategories>
-    <homeIconPath>World/OrkBaseIcon</homeIconPath>
-    <expandingIconTexture>World/OrkBaseIcon</expandingIconTexture>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+	<expandingIconTexture>Icons/FeralOrkIconB</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>

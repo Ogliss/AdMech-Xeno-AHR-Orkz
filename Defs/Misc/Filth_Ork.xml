@@ -10,7 +10,7 @@
     </statBases>
     <graphicData>
       <texPath>Things/Filth/Spatter</texPath>
-      <color>(190, 120, 64, 180)</color>
+      <color>(179, 185, 73, 180)</color>
     </graphicData>
     <filth>
       <rainWashes>true</rainWashes>

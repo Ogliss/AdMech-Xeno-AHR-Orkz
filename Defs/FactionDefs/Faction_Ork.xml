@@ -4,9 +4,7 @@
   <FactionDef>
 		<defName>OrkFaction</defName>
 		<label>Ork Warband</label>
-    <description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.
-	
-	Greenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
+    <description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind./n/nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
     <pawnsPlural>Orkz</pawnsPlural>
     <listOrderPriority>30</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
@@ -29,8 +27,8 @@
 			<li>Ork_Gretchin</li>
   	</backstoryCategories>
 			<hairTags>
-			<li>Ork</li>
-			<li>Grot</li>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
 			</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
@@ -64,37 +62,37 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <Squig>100</Squig>
-          <GrotSlave>130</GrotSlave>
-          <GrotColonist>50</GrotColonist>
-          <OrkRuntBoy>90</OrkRuntBoy>
-          <OrkWarboss>250</OrkWarboss>
-          <OrkBoss>250</OrkBoss>
-          <OrkChoppaBoy>100</OrkChoppaBoy>
-          <OrkSluggaBoy>100</OrkSluggaBoy>
-          <OrkShootaBoy>100</OrkShootaBoy>
-          <OrkEavyChoppaBoy>130</OrkEavyChoppaBoy>
-          <OrkEavySluggaBoy>130</OrkEavySluggaBoy>
-          <OrkEavyShootaBoy>130</OrkEavyShootaBoy>
-          <OrkChoppaNob>130</OrkChoppaNob>
-          <OrkSluggaNob>130</OrkSluggaNob>
-          <OrkShootaNob>130</OrkShootaNob>
-          <OrkEavyChoppaNob>170</OrkEavyChoppaNob>
-          <OrkEavySluggaNob>170</OrkEavySluggaNob>
-          <OrkEavyShootaNob>170</OrkEavyShootaNob>
+		  <!-- <Squig>100</Squig> -->
+          <GrotSlave>5</GrotSlave>
+          <GrotColonist>5</GrotColonist>
+          <OrkRuntBoy>10</OrkRuntBoy>
+          <OrkWarboss>1</OrkWarboss>
+          <OrkBoss>2</OrkBoss>
+          <OrkChoppaBoy>10</OrkChoppaBoy>
+          <OrkSluggaBoy>10</OrkSluggaBoy>
+          <OrkShootaBoy>10</OrkShootaBoy>
+          <OrkEavyChoppaBoy>7.5</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7.5</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7.</OrkEavyShootaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkShootaNob>5</OrkShootaNob>
+          <OrkEavyChoppaNob>4</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>4</OrkEavySluggaNob>
+          <OrkEavyShootaNob>4</OrkEavyShootaNob>
         </options>
       </li>
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <Squig>50</Squig>
-          <GrotColonist>50</GrotColonist>
-          <OrkRuntBoy>90</OrkRuntBoy>
-          <OrkBoss>250</OrkBoss>
-          <OrkChoppaBoy>100</OrkChoppaBoy>
-          <OrkSluggaBoy>100</OrkSluggaBoy>
-          <OrkShootaBoy>100</OrkShootaBoy>
-          <GrotSlave>130</GrotSlave>
+		  <!-- <Squig>50</Squig> -->
+          <GrotColonist>10</GrotColonist>
+          <OrkRuntBoy>10</OrkRuntBoy>
+          <OrkBoss>1</OrkBoss>
+          <OrkChoppaBoy>10</OrkChoppaBoy>
+          <OrkSluggaBoy>10</OrkSluggaBoy>
+          <OrkShootaBoy>10</OrkShootaBoy>
+          <GrotSlave>2</GrotSlave>
         </options>
       </li>
 	  <li>
@@ -108,41 +106,43 @@
           <Dromedary>2</Dromedary>
         </carriers>
         <guards>
-          <Squig>4</Squig>
-          <GrotSlave>130</GrotSlave>
-          <OrkRuntBoy>90</OrkRuntBoy>
-          <OrkChoppaBoy>100</OrkChoppaBoy>
-          <OrkSluggaBoy>100</OrkSluggaBoy>
-          <OrkShootaBoy>100</OrkShootaBoy>
-          <OrkEavyChoppaBoy>130</OrkEavyChoppaBoy>
-          <OrkEavySluggaBoy>130</OrkEavySluggaBoy>
-          <OrkEavyShootaBoy>130</OrkEavyShootaBoy>
-          <OrkEavyChoppaNob>170</OrkEavyChoppaNob>
-          <OrkEavySluggaNob>170</OrkEavySluggaNob>
-          <OrkEavyShootaNob>170</OrkEavyShootaNob>
+		  <!-- <Squig>50</Squig> -->
+          <OrkChoppaBoy>10</OrkChoppaBoy>
+          <OrkSluggaBoy>10</OrkSluggaBoy>
+          <OrkShootaBoy>10</OrkShootaBoy>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7</OrkEavyShootaBoy>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+          <OrkEavyShootaNob>3</OrkEavyShootaNob>
         </guards>
       </li>
 	  <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <GrotSlave>130</GrotSlave>
-          <GrotColonist>50</GrotColonist>
-          <OrkRuntBoy>90</OrkRuntBoy>
-          <OrkWarboss>250</OrkWarboss>
-          <OrkEavyChoppaBoy>130</OrkEavyChoppaBoy>
-          <OrkEavySluggaBoy>130</OrkEavySluggaBoy>
-          <OrkEavyShootaBoy>130</OrkEavyShootaBoy>
-          <OrkChoppaNob>130</OrkChoppaNob>
-          <OrkSluggaNob>130</OrkSluggaNob>
-          <OrkShootaNob>130</OrkShootaNob>
-          <OrkEavyChoppaNob>170</OrkEavyChoppaNob>
-          <OrkEavySluggaNob>170</OrkEavySluggaNob>
-          <OrkEavyShootaNob>170</OrkEavyShootaNob>
+          <GrotSlave>5</GrotSlave>
+          <GrotColonist>5</GrotColonist>
+          <OrkRuntBoy>9</OrkRuntBoy>
+          <OrkWarboss>1</OrkWarboss>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7</OrkEavyShootaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkShootaNob>5</OrkShootaNob>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+          <OrkEavyShootaNob>3</OrkEavyShootaNob>
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icons/OrkIcon</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
 	<expandingIconTexture>Icons/OrkIcon</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.00, 0.30, 0.70)</li>
+      <li>(0.00, 0.40, 1.00)</li>
+    </colorSpectrum>
   </FactionDef>
 
 </Defs>

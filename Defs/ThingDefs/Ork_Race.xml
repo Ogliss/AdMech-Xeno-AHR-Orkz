@@ -6,7 +6,8 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>GrotSlave</li>
+                        <li>FeralOrk</li>
+						<li>FeralGrot</li>
                         <li>Ork</li>
 						<li>Grot</li>
                     </kindDefs>
@@ -18,6 +19,8 @@
                     <kindDefs>
                         <li>Ork</li>
 						<li>Grot</li>
+                        <li>FeralOrk</li>
+						<li>FeralGrot</li>
                     </kindDefs>
                     <chance>50.0</chance>
                 </li>
@@ -35,6 +38,21 @@
 				</pawnKindEntries>
 					<factionDefs>
 						<li>OrkPlayerColony</li> 
+						<li>OrkPlayerColonyTribal</li> 
+					</factionDefs>
+				</li>
+				<li>
+				<pawnKindEntries>
+					<li>
+                    <kindDefs>
+                        <li>FeralOrk</li>
+						<li>FeralGrot</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+					</li>
+				</pawnKindEntries>
+					<factionDefs>
+						<li>OrkPlayerColonyTribal</li> 
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -45,12 +63,15 @@
                             <kindDefs>
 								<li>Ork</li>
 								<li>Grot</li>
+								<li>FeralOrk</li>
+								<li>FeralGrot</li>
                             </kindDefs>
                             <chance>50.0</chance>
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
                         <li>OrkPlayerColony</li> 
+						<li>OrkPlayerColonyTribal</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
@@ -119,82 +140,128 @@
                <li>DislikesMen</li>
             </disallowedTraits>
             <alienPartGenerator>
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
                 <aliencrowntypes>
                     <li>Average_Ork</li>
                 </aliencrowntypes>
                 <alienbodytypes>
-                <li>Hulk</li>
-				<li>Male</li>
-				<li>Fat</li>
+					<li>Hulk</li>
+					<li>Male</li>
+					<li>Fat</li>
                 </alienbodytypes>
+				<bodyAddons>
+					<li>
+						<path>Things/Orks/HeadsBase/Ears/EarsOrk</path>
+						<bodyPart>Head</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<layerOffset>-0.275</layerOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+									<Fat>(-0.42,0.6)</Fat>
+									<Hulk>(-0.42,0.6)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+									<Fat>(0,0.9)</Fat>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.48,0.6)</Male>
+									<Fat>(-0.48,0.6)</Fat>
+									<Hulk>(-0.48,0.6)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<useSkinColor>true</useSkinColor>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
                 <alienskincolorgen Class="ColorGenerator_Options">
-                               <options>
-            <li>
-                <weight>10</weight>
-				<only>RGBA(1.0,1.0,1.0,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.874,0.16,0.16,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.925,0.247,0.901,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.368,0.952,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.831,0.952,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.952,0.450,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.69,0.952,0.349,1)</only>
-            </li>
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.952,0.913,0.349,1)</only>
-            </li>
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.980,0.631,0.227,1)</only>
-            </li>
-			<li>
-                <weight>6</weight>
-                <only>RGBA(0.980,0.227,0.227,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.282,0.894,0.525,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.886,0.756,0.56,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.415,0.25,0.474,1)</only>
-            </li>
-             <li>
-                <weight>7</weight>
-                <only>RGBA(0.25,0.274,0.474,1)</only>
-            </li>
-            </options>
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>RGBA(1.0,1.0,1.0,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.874,0.16,0.16,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.925,0.247,0.901,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.349,0.368,0.952,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.349,0.831,0.952,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.349,0.952,0.450,1)</only>
+						</li>
+							<li>
+							<weight>8</weight>
+							<only>RGBA(0.69,0.952,0.349,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.952,0.913,0.349,1)</only>
+						</li>
+						<li>
+							<weight>8</weight>
+							<only>RGBA(0.980,0.631,0.227,1)</only>
+						</li>
+							<li>
+							<weight>6</weight>
+							<only>RGBA(0.980,0.227,0.227,1)</only>
+						</li>
+						<li>
+							<weight>6</weight>
+							<only>RGBA(0.282,0.894,0.525,1)</only>
+						</li>
+						<li>
+							<weight>6</weight>
+							<only>RGBA(0.886,0.756,0.56,1)</only>
+						</li>
+						<li>
+							<weight>6</weight>
+							<only>RGBA(0.415,0.25,0.474,1)</only>
+						</li>
+						<li>
+							<weight>7</weight>
+							<only>RGBA(0.25,0.274,0.474,1)</only>
+						</li>
+					</options>
                 </alienskincolorgen>
             <useSkincolorForHair>true</useSkincolorForHair>
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
-		   <notXenophobistTowards>
-              <li>Alien_Grot</li>
-           </notXenophobistTowards>
+			<notXenophobistTowards>
+				<li>Alien_Grot</li>
+			</notXenophobistTowards>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -282,6 +349,7 @@
             <researchList>
                 <li>
                     <projects>
+						<li>OrkTekBase</li>
 						<li>OrkishBrutality</li>
 						<li>OrkishCunning</li>
 						<li>OrkishArmour</li>
@@ -489,17 +557,57 @@
             </forcedRaceTraitEntries>
 			<disallowedTraits>
                <li>Kind</li>
-               <li>Gay</li>
+               <li>Gay</li> 
                <li>DislikesWomen</li>
                <li>DislikesMen</li>
             </disallowedTraits>
             <alienPartGenerator>
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
                 <aliencrowntypes>
                     <li>Average_Gretchin</li>
                 </aliencrowntypes>
                 <alienbodytypes>
                 <li>Thin</li>
                 </alienbodytypes>
+				<bodyAddons>
+					<li>
+					<path>Things/Orks/HeadsBase/Ears/EarsGretchin</path>
+					<bodyPart>Head</bodyPart>
+					<inFrontOfBody>true</inFrontOfBody>
+					<layerOffset>-0.275</layerOffset>
+					<offsets>
+						<south>
+							<bodyTypes>
+								<Thin>(-0.42,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</south>
+						<north>
+							<bodyTypes>
+								<Thin>(0,0.9)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</north>
+						<east>
+							<bodyTypes>
+								<Thin>(-0.48,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</east>
+					</offsets>
+					<useSkinColor>true</useSkinColor>
+					<hiddenUnderApparelFor>
+						<li>FullHead</li>
+					</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
                 <alienskincolorgen Class="ColorGenerator_Options">
                                <options>
             <li>
