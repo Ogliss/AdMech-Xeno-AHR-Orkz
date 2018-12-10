@@ -4,7 +4,7 @@
   <FactionDef>
 		<defName>FeralOrkFaction</defName>
 		<label>feral ork warband</label>
-    <description>Feral Orks or Wildboyz are Orks who arise on a world that a spaceborne Ork WAAAGH! has already assaulted, though they possess only pre-industrial levels of technology and culture. Feral Orks appear after a WAAAGH! has already infested a planet and then moved on to seek new battles elsewhere. Usually Feral Orks are a new generation of Orks grown from the fungal reproductive spores released by spaceborne Orks and left behind on the world their spaceborne counterparts have abandoned./n/nFeral Orks can also be derived from an original population of spaceborne Orks stranded on a world who effectively devolve back to a feral state, losing their access to more advanced technology. The Feral Orks, while less advanced than their fellow Greenskins, do have access to a variety of wargear in their armoury. However, much of it works due to the strange effects it has on the mind and behaviour of the Ork, rather than actually producing a physical effect upon the enemy.</description>
+    <description>Feral Orks or Wildboyz are Orks who arise on a world that a spaceborne Ork WAAAGH! has already assaulted, though they possess only pre-industrial levels of technology and culture. Feral Orks appear after a WAAAGH! has already infested a planet and then moved on to seek new battles elsewhere. Usually Feral Orks are a new generation of Orks grown from the fungal reproductive spores released by spaceborne Orks and left behind on the world their spaceborne counterparts have abandoned.\n\nFeral Orks can also be derived from an original population of spaceborne Orks stranded on a world who effectively devolve back to a feral state, losing their access to more advanced technology. The Feral Orks, while less advanced than their fellow Greenskins, do have access to a variety of wargear in their armoury. However, much of it works due to the strange effects it has on the mind and behaviour of the Ork, rather than actually producing a physical effect upon the enemy.</description>
 	<pawnSingular>feral ork</pawnSingular>
     <pawnsPlural>feral orkz</pawnsPlural>
     <listOrderPriority>20</listOrderPriority>
@@ -25,7 +25,7 @@
 			<li>Ork_Boss</li>
 			<li>Ork_Nob</li>
 			<li>Ork_Standard</li>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
 			<hairTags>
 		<li>OrkHair</li>
@@ -63,7 +63,7 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <!-- <Squig>100</Squig> -->
+          <AttackSquig>3</AttackSquig> 
           <FeralGrotSlave>10</FeralGrotSlave>
           <FeralGrotColonist>5</FeralGrotColonist>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
@@ -81,12 +81,15 @@
           <FeralOrkEavyChoppaNob>3</FeralOrkEavyChoppaNob>
           <FeralOrkEavySluggaNob>3</FeralOrkEavySluggaNob>
           <FeralOrkEavyShootaNob>3</FeralOrkEavyShootaNob>
+          <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+          <FeralOrkWeirdBoy>5</FeralOrkWeirdBoy>
+          <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
         </options>
       </li>
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <!-- <Squig>50</Squig> -->
+          <AttackSquig>2</AttackSquig> 
           <FeralGrotColonist>10</FeralGrotColonist>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
           <FeralOrkBoss>1</FeralOrkBoss>
@@ -94,6 +97,9 @@
           <FeralOrkSluggaBoy>10</FeralOrkSluggaBoy>
           <FeralOrkShootaBoy>10</FeralOrkShootaBoy>
           <FeralGrotSlave>13</FeralGrotSlave>
+          <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+          <FeralOrkWeirdBoy>5</FeralOrkWeirdBoy>
+          <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
         </options>
       </li>
 	  <li>
@@ -107,7 +113,7 @@
           <Dromedary>2</Dromedary>
         </carriers>
         <guards>
-          <!-- <Squig>4</Squig> -->
+          <AttackSquig>4</AttackSquig> 
           <FeralGrotSlave>13</FeralGrotSlave>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
           <FeralOrkChoppaBoy>10</FeralOrkChoppaBoy>
@@ -119,6 +125,9 @@
           <FeralOrkEavyChoppaNob>3</FeralOrkEavyChoppaNob>
           <FeralOrkEavySluggaNob>3</FeralOrkEavySluggaNob>
           <FeralOrkEavyShootaNob>3</FeralOrkEavyShootaNob>
+          <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+          <FeralOrkWeirdBoy>5</FeralOrkWeirdBoy>
+          <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
         </guards>
       </li>
 	  <li>
@@ -137,14 +146,17 @@
           <FeralOrkEavyChoppaNob>3</FeralOrkEavyChoppaNob>
           <FeralOrkEavySluggaNob>3</FeralOrkEavySluggaNob>
           <FeralOrkEavyShootaNob>3</FeralOrkEavyShootaNob>
+          <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+          <FeralOrkWeirdBoy>5</FeralOrkWeirdBoy>
+          <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
         </options>
       </li>
     </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
 	<expandingIconTexture>Icons/FeralOrkIcon</expandingIconTexture>
     <colorSpectrum>
-      <li>(0.25, 0.65, 0.05)</li>
-      <li>(0.25, 0.75, 0.05)</li>
+      <li>(0.45, 0.05, 0.05)</li>
+      <li>(0.80, 0.25, 0.05)</li>
     </colorSpectrum>
   </FactionDef>
 

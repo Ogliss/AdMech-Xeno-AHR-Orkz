@@ -1,9 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
   <LifeStageDef>
+    <defName>OrkoidWhelp</defName>
+    <label>stuntie</label>
+    <bodySizeFactor>0.5</bodySizeFactor>
+		<foodMaxFactor>0.5</foodMaxFactor>
+		<healthScaleFactor>0.5</healthScaleFactor>
+    <hungerRateFactor>0.5</hungerRateFactor>
+    <marketValueFactor>0.5</marketValueFactor>
+    <meleeDamageFactor>0.5</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.5</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
     <defName>OrkoidRunt</defName>
     <label>runt</label>
-    <bodySizeFactor>0.5</bodySizeFactor>
+    <bodySizeFactor>0.75</bodySizeFactor>
 		<foodMaxFactor>1</foodMaxFactor>
 		<healthScaleFactor>0.75</healthScaleFactor>
     <hungerRateFactor>0.75</hungerRateFactor>
@@ -21,4 +35,31 @@
     <reproductive>true</reproductive>
   </LifeStageDef>
 
+  <LifeStageDef>
+    <defName>OrkoidNob</defName>
+    <label>Nob</label>
+    <bodySizeFactor>1.5</bodySizeFactor>
+		<foodMaxFactor>1.25</foodMaxFactor>
+		<healthScaleFactor>1.25</healthScaleFactor>
+    <hungerRateFactor>1.25</hungerRateFactor>
+    <marketValueFactor>1.25</marketValueFactor>
+    <meleeDamageFactor>1.25</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>OrkoidWarboss</defName>
+    <label>Warboss</label>
+    <bodySizeFactor>2.0</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>1.75</healthScaleFactor>
+    <hungerRateFactor>1.75</hungerRateFactor>
+    <marketValueFactor>1.75</marketValueFactor>
+    <meleeDamageFactor>1.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
 </Defs>

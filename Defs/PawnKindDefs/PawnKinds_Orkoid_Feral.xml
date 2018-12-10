@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <!-- ============================ Ork Base ========================== -->
   <PawnKindDef Name="FeralOrkBase" Abstract="True">
     <defaultFactionType>FeralOrkFaction</defaultFactionType>
@@ -74,6 +73,7 @@
     </inventoryOptions>
   </PawnKindDef>
  
+  <!-- ============================ Grot Civilian Base ========================== -->
   <PawnKindDef Name="FeralGrotCivBase" ParentName="FeralOrkBase" Abstract="True">
     <combatPower>25</combatPower>
 	<race>Alien_Grot</race>
@@ -129,7 +129,8 @@
   </PawnKindDef>
    
   <!-- ============================ Ork Civilians ========================== -->
-  <PawnKindDef ParentName="FeralOrkCivBase">
+  <!-- ============================ Ork Faction leader Warboss ========================== -->
+ <PawnKindDef ParentName="FeralOrkCivBase">
     <defName>FeralOrkWarboss</defName>
     <label>Feral Warboss</label>
     <labelPlural>Feral Warbosses</labelPlural>
@@ -172,37 +173,40 @@
 	<maxGenerationAge>600</maxGenerationAge>
   </PawnKindDef>
   
+  <!-- ============================ Ork Faction leader Warboss ========================== -->
   <PawnKindDef ParentName="FeralGrotCivBase">
     <defName>FeralGrotTrader</defName>
     <label>Feral Grot trader</label>
     <trader>true</trader>
 	<backstoryCategories>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
   </PawnKindDef>
   
+  <!-- ============================ Grot Colonist ========================== -->
   <PawnKindDef ParentName="FeralGrotCivBase">
     <defName>FeralGrotColonist</defName>
     <label>Feral Grot colonist</label>
 	<backstoryCategories>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
   </PawnKindDef>
   
+  <!-- ============================ Grot Slave ========================== -->
   <PawnKindDef ParentName="FeralGrotCivBase">
     <defName>FeralGrotSlave</defName>
     <label>Feral Grot slave</label>
 	<backstoryCategories>
-			<li>Ork_Slave</li>
+			<li>Grot_Slave</li>
   	</backstoryCategories>
   </PawnKindDef>
  
-  <!-- ============================ Ork Security ========================== -->
+  <!-- ============================ Ork Runt ========================== -->
   <PawnKindDef ParentName="FeralOrkCivBase">
     <defName>FeralOrkRuntBoy</defName>
     <label>Feral Runt Boy</label>
     <combatPower>50</combatPower>
-    <maxGenerationAge>10</maxGenerationAge>
+    <maxGenerationAge>16</maxGenerationAge>
 	<backstoryCategories>
 			<li>Ork_Boy</li>
   	</backstoryCategories>
@@ -253,16 +257,12 @@
 	<race>Alien_Ork</race>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
-	<minGenerationAge>10</minGenerationAge>
+	<minGenerationAge>17</minGenerationAge>
     <maxGenerationAge>300</maxGenerationAge>
     <gearHealthRange>
       <min>0.7</min>
       <max>2.3</max>
     </gearHealthRange>
-    <apparelTags>
-	
-      <li>Apparel_WarMask</li>
-    </apparelTags>
     <apparelMoney>
       <min>1500</min>
       <max>2800</max>
@@ -314,7 +314,7 @@
     <defName>FeralOrkChoppaBoy</defName>
     <label>Feral Choppa Boy</label>
 	<backstoryCategories>
-			<li>Ork_ChoppaBoy</li>
+			<li>Ork_Boy_Choppa</li>
   	</backstoryCategories>
     <weaponTags>
       <li>OBrutalityMelee</li>
@@ -326,7 +326,7 @@
     <defName>FeralOrkSluggaBoy</defName>
     <label>Feral Slugga Boy</label>
 	<backstoryCategories>
-			<li>Ork_SluggaBoy</li>
+			<li>Ork_Boy_Slugga</li>
   	</backstoryCategories>
     <weaponTags>
       <li>NeolithicRangedDecent</li>
@@ -338,8 +338,23 @@
     <defName>FeralOrkShootaBoy</defName>
     <label>Feral Shoota Boy</label>
 	<backstoryCategories>
-			<li>Ork_ShootaBoy</li>
+			<li>Ork_Boy_Shoota</li>
   	</backstoryCategories>
+    <weaponTags>
+		<li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Wyrd Boyz ========================== -->
+  <PawnKindDef ParentName="FeralOrkBoy">
+    <defName>FeralOrkWeirdBoy</defName>
+    <label>Feral Wyrd boy</label>
+	<backstoryCategories>
+			<li>Ork_Weird_Boy</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Apparel_WarMask</li>
+    </apparelTags>
     <weaponTags>
 		<li>NeolithicRangedHeavy</li>
     </weaponTags>
@@ -406,7 +421,7 @@
     <defName>FeralOrkEavyChoppaBoy</defName>
     <label>Feral Eavy Choppa Boy</label>
 	<backstoryCategories>
-			<li>Ork_ChoppaBoy</li>
+			<li>Ork_Boy_Choppa</li>
   	</backstoryCategories>
     <weaponTags>
       <li>OEBrutalityMelee</li>
@@ -419,7 +434,7 @@
     <defName>FeralOrkEavySluggaBoy</defName>
     <label>Feral Eavy Slugga Boy</label>
 	<backstoryCategories>
-			<li>Ork_SluggaBoy</li>
+			<li>Ork_Boy_Slugga</li>
   	</backstoryCategories>
     <weaponTags>
       <li>NeolithicRangedDecent</li>
@@ -503,7 +518,7 @@
     <defName>FeralOrkChoppaNob</defName>
     <label>Feral Choppa Nob</label>
 	<backstoryCategories>
-			<li>Ork_ChoppaNob</li>
+			<li>Ork_Nob_Choppa</li>
   	</backstoryCategories>
     <weaponTags>
       <li>OEBrutalityMelee</li>
@@ -515,7 +530,7 @@
     <defName>FeralOrkSluggaNob</defName>
     <label>Feral Slugga Nob</label>
 	<backstoryCategories>
-			<li>Ork_SluggaNob</li>
+			<li>Ork_Nob_Slugga</li>
   	</backstoryCategories>
     <weaponTags>
       <li>NeolithicRangedDecent</li>
@@ -527,8 +542,23 @@
     <defName>FeralOrkShootaNob</defName>
     <label>Feral Shoota Nob</label>
 	<backstoryCategories>
-			<li>Ork_ShootaNob</li>
+			<li>Ork_Nob_Shoota</li>
   	</backstoryCategories>
+    <weaponTags>
+		<li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Wyrd Nob ========================== -->
+  <PawnKindDef ParentName="FeralOrkNob">
+    <defName>FeralOrkWeirdNob</defName>
+    <label>Feral Wyrd Nob</label>
+	<backstoryCategories>
+			<li>Ork_Weird_Nob</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Apparel_WarMask</li>
+    </apparelTags>
     <weaponTags>
 		<li>NeolithicRangedHeavy</li>
     </weaponTags>
@@ -593,7 +623,7 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <!-- ============================ Choppa Nob ========================== -->
+  <!-- ============================ Eavy Choppa Nob ========================== -->
   <PawnKindDef ParentName="FeralOrkEavyNob">
     <defName>FeralOrkEavyChoppaNob</defName>
     <label>Feral Eavy Choppa Nob</label>
@@ -607,7 +637,7 @@
     </weaponTags>
   </PawnKindDef>
   
-  <!-- ============================ Slugga Nob ========================== -->
+  <!-- ============================ Eavy Slugga Nob ========================== -->
   <PawnKindDef ParentName="FeralOrkEavyNob">
     <defName>FeralOrkEavySluggaNob</defName>
     <label>Feral Eavy Slugga Nob</label>
@@ -619,7 +649,7 @@
     </weaponTags>
   </PawnKindDef>
   
-  <!-- ============================ Shoota Nob ========================== -->
+  <!-- ============================ Eavy Shoota Nob ========================== -->
   <PawnKindDef ParentName="FeralOrkEavyNob">
     <defName>FeralOrkEavyShootaNob</defName>
     <label>Feral Eavy Shoota Nob</label>
@@ -630,11 +660,11 @@
 		<li>NeolithicRangedHeavy</li>
     </weaponTags>
   </PawnKindDef>
-
+  
   <!-- ============================ Ork Boss ========================== -->
-  <PawnKindDef ParentName="FeralOrkMilBase">
+  <PawnKindDef ParentName="FeralOrkMilBase" Name="FeralOrkBossBase">
      <defName>FeralOrkBoss</defName>
-    <label>Feral Boss</label>
+    <label>Feral Warboss</label>
     <combatPower>250</combatPower>
     <minGenerationAge>26</minGenerationAge>
 	<backstoryCategories>
@@ -696,4 +726,18 @@
     </inventoryOptions>
   </PawnKindDef>
 
+  <!-- ============================ Shaman (Wyrd Boss) ========================== -->
+  <PawnKindDef ParentName="FeralOrkBossBase">
+    <defName>FeralOrkWeirdBoss</defName>
+    <label>Feral Shaman</label>
+	<backstoryCategories>
+			<li>Ork_WeirdBoss</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Apparel_WarMask</li>
+    </apparelTags>
+    <weaponTags>
+		<li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
 </Defs>

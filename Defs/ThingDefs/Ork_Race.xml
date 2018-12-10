@@ -6,23 +6,61 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>FeralOrk</li>
 						<li>FeralGrot</li>
-                        <li>Ork</li>
 						<li>Grot</li>
                     </kindDefs>
                     <chance>40.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrk</li>
+                        <li>Ork</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkNob</li>
+                        <li>OrkNob</li>
+                    </kindDefs>
+                    <chance>20.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkBoss</li>
+                        <li>OrkBoss</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
                 </li>
             </alienslavekinds>
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>Ork</li>
-						<li>Grot</li>
-                        <li>FeralOrk</li>
 						<li>FeralGrot</li>
+						<li>Grot</li>
                     </kindDefs>
-                    <chance>50.0</chance>
+                    <chance>40.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrk</li>
+                        <li>Ork</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkNob</li>
+                        <li>OrkNob</li>
+                    </kindDefs>
+                    <chance>20.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkBoss</li>
+                        <li>OrkBoss</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
                 </li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -33,12 +71,23 @@
                         <li>Ork</li>
 						<li>Grot</li>
                     </kindDefs>
+                    <chance>80.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>OrkNob</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>OrkBoss</li>
+                    </kindDefs>
                     <chance>10.0</chance>
 					</li>
 				</pawnKindEntries>
 					<factionDefs>
 						<li>OrkPlayerColony</li> 
-						<li>OrkPlayerColonyTribal</li> 
 					</factionDefs>
 				</li>
 				<li>
@@ -47,6 +96,18 @@
                     <kindDefs>
                         <li>FeralOrk</li>
 						<li>FeralGrot</li>
+                    </kindDefs>
+                    <chance>80.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>FeralOrkNob</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+					</li>
+					<li>
+                    <kindDefs>
+                        <li>FeralOrkBoss</li>
                     </kindDefs>
                     <chance>10.0</chance>
 					</li>
@@ -59,15 +120,34 @@
             <alienwandererkinds>
                 <li>
                     <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-								<li>Ork</li>
-								<li>Grot</li>
-								<li>FeralOrk</li>
-								<li>FeralGrot</li>
-                            </kindDefs>
-                            <chance>50.0</chance>
-                        </li>
+                <li>
+                    <kindDefs>
+						<li>FeralGrot</li>
+						<li>Grot</li>
+                    </kindDefs>
+                    <chance>40.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrk</li>
+                        <li>Ork</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkNob</li>
+                        <li>OrkNob</li>
+                    </kindDefs>
+                    <chance>20.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralOrkBoss</li>
+                        <li>OrkBoss</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
                     </pawnKindEntries>
                     <factionDefs>
                         <li>OrkPlayerColony</li> 
@@ -262,6 +342,104 @@
 			<notXenophobistTowards>
 				<li>Alien_Grot</li>
 			</notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OrkFaction</li>
+                       <li>FeralOrkFaction</li>
+					   <li>OrkPlayerColony</li>
+					   <li>OrkPlayerColonyTribal</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>40</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>
+				<!--
+				<li>
+                    <factions>
+                       <li>EldarFaction</li>
+					   <li>EldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>DarkEldarFaction</li>
+					   <li>DarkEldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>TauFaction</li>
+                       <li>KrootFaction</li>
+					   <li>TauPlayerColony</li>
+					   <li>KrootPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-30</max>
+                    </goodwill>
+                </li>  
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialMechanicusFaction</li>
+					   <li>ImperialMechanicusPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialHumanFaction</li>
+					   <li>ImperialHumanPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialAstartesFaction</li>
+					   <li>ImperialAstartesPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -366,6 +544,35 @@
                     </apparelList>
                 </li>
             </researchList>
+			<apparelList>
+			
+			</apparelList>
+            <recipeList>
+                <li>OGO_Apparel_Armour</li>
+                <li>OGO_Apparel_EavyArmour</li>
+                <li>OGO_Apparel_MegaArmour</li>
+                <li>OGO_Wargear_KustomForcefield</li>
+                <li>OGO_GrenadePack_Frag</li>
+                <li>OGO_GrenadePack_Krak</li>
+                <li>OGO_GrenadePack_Melta</li>
+                <li>OGO_Melee_CrudeChoppa</li>
+                <li>OGO_Melee_Choppa</li>
+                <li>OGO_Melee_ChainChoppa</li>
+                <li>OGO_Melee_BigChoppa</li>
+                <li>OGO_Melee_PowerKlaw</li>
+                <li>OGO_Gun_OSlugga</li>
+                <li>OGO_Gun_OShoota</li>
+                <li>OGO_Gun_OTwinLinkedShoota</li>
+                <li>OGO_Gun_OBigShoota</li>
+                <li>OGO_Gun_OSnazzgun</li>
+                <li>OGO_Gun_ZappKannon</li>
+                <li>OGO_Gun_OPlasmaDeffgun</li>
+            </recipeList>
+            <plantList>
+                <li>Plant_OrkoidFungus</li>
+                <li>Plant_OrkoidCocoon</li>
+            </plantList>
+           <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
         </raceRestriction>
     </alienRace>
 	<statBases>
@@ -379,7 +586,7 @@
 		<PsychicSensitivity>0.35</PsychicSensitivity>
 		<MiningSpeed>1.4</MiningSpeed>
 		<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
-		<AimingDelayFactor>-0.5</AimingDelayFactor>
+		<AimingDelayFactor>-0.25</AimingDelayFactor>
 		<MentalBreakThreshold>0.025</MentalBreakThreshold>
         <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
         <PainShockThreshold>0.9</PainShockThreshold>
@@ -390,12 +597,12 @@
         <UnskilledLaborSpeed>1.25</UnskilledLaborSpeed>
         <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
-        <SmeltingSpeed>1.25</SmeltingSpeed>
-        <SmithingSpeed>1.25</SmithingSpeed>
-        <TailoringSpeed>0.75</TailoringSpeed>
-        <NegotiationAbility>0.75</NegotiationAbility>
-        <SocialImpact>0.75</SocialImpact>
-        <TradePriceImprovement>0.85</TradePriceImprovement>
+        <SmeltingSpeed>0.5</SmeltingSpeed>
+        <SmithingSpeed>0.5</SmithingSpeed>
+        <TailoringSpeed>0.5</TailoringSpeed>
+        <NegotiationAbility>0.5</NegotiationAbility>
+        <SocialImpact>0.5</SocialImpact>
+        <TradePriceImprovement>0.5</TradePriceImprovement>
 		<!--
 		-->
     </statBases>
@@ -470,12 +677,24 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidRunt</def>
+          <def>OrkoidWhelp</def>
           <minAge>0</minAge>
         </li>
         <li>
+          <def>OrkoidRunt</def>
+          <minAge>15</minAge>
+        </li>
+        <li>
           <def>OrkoidAdult</def>
-          <minAge>20</minAge>
+          <minAge>16</minAge>
+        </li>
+        <li>
+          <def>OrkoidNob</def>
+          <minAge>30</minAge>
+        </li>
+        <li>
+          <def>OrkoidWarboss</def>
+          <minAge>50</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -487,8 +706,8 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-                    <li>(16,0)</li>
-                    <li>(17,200)</li>
+                    <li>(15,0)</li>
+                    <li>(16,200)</li>
                     <li>(18,250)</li>
                     <li>(20,150)</li>
                     <li>(30,100)</li>
@@ -676,6 +895,104 @@
 		   <notXenophobistTowards>
               <li>Alien_Ork</li>
            </notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OrkFaction</li>
+                       <li>FeralOrkFaction</li>
+					   <li>OrkPlayerColony</li>
+					   <li>OrkPlayerColonyTribal</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>40</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>
+				<!--
+				<li>
+                    <factions>
+                       <li>EldarFaction</li>
+					   <li>EldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>DarkEldarFaction</li>
+					   <li>DarkEldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>TauFaction</li>
+                       <li>KrootFaction</li>
+					   <li>TauPlayerColony</li>
+					   <li>KrootPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-30</max>
+                    </goodwill>
+                </li>  
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialMechanicusFaction</li>
+					   <li>ImperialMechanicusPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialHumanFaction</li>
+					   <li>ImperialHumanPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+				<!--
+				<li>
+                    <factions>
+                       <li>ImperialAstartesFaction</li>
+					   <li>ImperialAstartesPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				-->
+		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -698,11 +1015,9 @@
                 <li>AteHumanlikeMeatAsIngredient</li>
 				<li>ColonistLeftUnburied</li>
 				<li>Naked</li>
-				<li>Pain</li>
 				<li>FeelingRandom</li>
 				<li>ApparelDamaged</li>
 				<li>CabinFever</li>
-				<li>Sick</li>
 				<li>DeadMansApparel</li>
 				<li>KnowGuestExecuted</li>
 				<li>KnowColonistExecuted</li>
@@ -723,7 +1038,6 @@
 				<li>ExecutedPrisoner</li>
 				<li>AteRawHumanlikeMeat</li>
 				<li>AteWithoutTable</li>
-				<li>SleepDisturbed</li>
 				<li>KnowPrisonerSold</li>
 				<li>KnowGuestOrganHarvested</li>
 				<li>ObservedLayingCorpse</li>
@@ -759,6 +1073,60 @@
                </li>
             </renamer>
         </relationSettings>
+        <raceRestriction>
+            <researchList>
+                <li>
+                    <projects>
+						<li>OrkTekBase</li>
+						<li>OrkishBrutality</li>
+						<li>OrkishCunning</li>
+						<li>OrkishArmour</li>
+						<li>OrkishExtremeBrutality</li>
+						<li>OrkishEavyArmour</li>
+						<li>OrkishIntenseCunning</li>
+						<li>OrkishMekTek</li>
+						<li>OrkishPowerField</li>
+						<li>OrkishBigMekBrainz</li>
+						<li>OrkishMegaArmour</li>
+                    </projects>
+                    <apparelList>
+						
+                    </apparelList>
+                </li>
+            </researchList>
+			<apparelList>
+			
+			</apparelList>
+            <recipeList>
+                <li>OGO_Apparel_Armour</li>
+                <li>OGO_Apparel_EavyArmour</li>
+                <li>OGO_Apparel_MegaArmour</li>
+                <li>OGO_Wargear_KustomForcefield</li>
+                <li>OGO_GrenadePack_Frag</li>
+                <li>OGO_GrenadePack_Krak</li>
+                <li>OGO_GrenadePack_Melta</li>
+                <li>OGO_Melee_CrudeChoppa</li>
+                <li>OGO_Melee_Choppa</li>
+                <li>OGO_Melee_ChainChoppa</li>
+                <li>OGO_Melee_BigChoppa</li>
+                <li>OGO_Melee_PowerKlaw</li>
+                <li>OGO_Gun_OSlugga</li>
+                <li>OGO_Gun_OShoota</li>
+                <li>OGO_Gun_OTwinLinkedShoota</li>
+                <li>OGO_Gun_OBigShoota</li>
+                <li>OGO_Gun_OSnazzgun</li>
+                <li>OGO_Gun_ZappKannon</li>
+                <li>OGO_Gun_OPlasmaDeffgun</li>
+            </recipeList>
+            <plantList>
+                <li>Plant_OrkoidFungus</li>
+                <li>Plant_OrkoidCocoon</li>
+            </plantList>
+           <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
+			<conceptList>
+				<li>OrkoidFungus</li>
+			</conceptList>
+        </raceRestriction>
     </alienRace>
 	<statBases>
       <MarketValue>2000</MarketValue>
@@ -860,12 +1228,16 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidRunt</def>
+          <def>OrkoidWhelp</def>
           <minAge>0</minAge>
         </li>
         <li>
+          <def>OrkoidRunt</def>
+          <minAge>16</minAge>
+        </li>
+        <li>
           <def>OrkoidAdult</def>
-          <minAge>20</minAge>
+          <minAge>17</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -877,8 +1249,8 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-                    <li>(16,0)</li>
-                    <li>(17,200)</li>
+                    <li>(15,0)</li>
+                    <li>(16,200)</li>
                     <li>(18,250)</li>
                     <li>(20,150)</li>
                     <li>(30,100)</li>

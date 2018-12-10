@@ -20,12 +20,13 @@
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
 			<li>Ork_Standard</li>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
 	<expandingIconTexture>Icons/OrkIconB</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
+      <li>OrkStart</li>
     </startingResearchTags>
     <hairTags>
 		<li>OrkHair</li>
@@ -33,7 +34,9 @@
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
       </thingDefs>
     </apparelStuffFilter>
     <colorSpectrum>
@@ -79,12 +82,13 @@
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
 			<li>Ork_Standard</li>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
 	<expandingIconTexture>Icons/FeralOrkIconB</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
+      <li>TribalOrkStart</li>
     </startingResearchTags>
     <hairTags>
 		<li>OrkHair</li>
@@ -92,7 +96,10 @@
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>Cloth</li>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
       </thingDefs>
     </apparelStuffFilter>
     <colorSpectrum>

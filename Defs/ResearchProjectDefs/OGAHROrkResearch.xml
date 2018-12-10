@@ -7,14 +7,18 @@
 		<tab>OGAMA_RTab</tab>
 		<defName>OrkTekBase</defName>
 		<label>Orkish Kulture</label>
-		<description>Basic udnerstanding of Orkish 'Kulture'</description>
+		<description>Basic understanding of Orkish 'Kulture'</description>
 		<baseCost>250</baseCost>
 		<prerequisites>
 		
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
+    <tags>
+      <li>OrkStart</li>
+      <li>TribalOrkStart</li>
+    </tags>
   <researchViewX>0.00</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -28,7 +32,7 @@
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
   <researchViewX>0.75</researchViewX>
-  <researchViewY>4.00</researchViewY>
+  <researchViewY>3.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -42,7 +46,7 @@
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
   <researchViewX>0.75</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>	
 	
 	<ResearchProjectDef>
@@ -56,7 +60,7 @@
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
   <researchViewX>0.75</researchViewX>
-  <researchViewY>5.00</researchViewY>
+  <researchViewY>4.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<!--OG==================== Adeptus Mechanicus Armoury Mod - Imperium Weapons =========================OG-->
@@ -74,7 +78,7 @@
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
   <researchViewX>1.5</researchViewX>
-  <researchViewY>4.00</researchViewY>
+  <researchViewY>3.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -88,7 +92,7 @@
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
   <researchViewX>1.5</researchViewX>
-  <researchViewY>5.00</researchViewY>
+  <researchViewY>4.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -103,7 +107,7 @@
 		<techLevel>Industrial</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   <researchViewX>1.5</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
 	
 	<!--OG==================== Adeptus Mechanicus Armoury Mod - Bolt Weapons =========================OG-->
@@ -123,7 +127,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
   <researchViewX>2.250</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -142,7 +146,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
   <researchViewX>3.00</researchViewX>
-  <researchViewY>4.00</researchViewY>
+  <researchViewY>3.50</researchViewY>
 	</ResearchProjectDef>
 	
 		<!--OG==================== Adeptus Mechanicus Armoury Mod - Research Imperial Special Weapons =========================OG-->
@@ -159,7 +163,7 @@
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   <researchViewX>3.00</researchViewX>
-  <researchViewY>5.00</researchViewY>
+  <researchViewY>4.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -175,7 +179,7 @@
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   <researchViewX>3.75</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

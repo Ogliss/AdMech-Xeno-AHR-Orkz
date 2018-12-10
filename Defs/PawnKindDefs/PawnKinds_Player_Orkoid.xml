@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <PawnKindDef Abstract="True" Name="BaseOrkPawnKind">
     <race>Alien_Ork</race>
     <combatPower>40</combatPower>
@@ -27,8 +26,6 @@
     <label>Ork colonist</label>
     <defaultFactionType>OrkPlayerColony</defaultFactionType>
     <backstoryCategories>
-			<li>Ork_Boss</li>
-			<li>Ork_Nob</li>
 			<li>Ork_Standard</li>
   	</backstoryCategories>
     <apparelTags>
@@ -39,6 +36,48 @@
       <min>500</min>
       <max>1200</max>
     </apparelMoney>
+    <minGenerationAge>16</minGenerationAge>
+	<maxGenerationAge>29</maxGenerationAge>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseOrkPawnKind">
+    <defName>OrkNob</defName>
+    <label>Ork colonist</label>
+    <defaultFactionType>OrkPlayerColony</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Nob</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <minGenerationAge>30</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseOrkPawnKind">
+    <defName>OrkBoss</defName>
+    <label>Ork colonist</label>
+    <defaultFactionType>OrkPlayerColony</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Boss</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <minGenerationAge>50</minGenerationAge>
+	<maxGenerationAge>600</maxGenerationAge>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
@@ -56,7 +95,7 @@
     <label>Grot colonist</label>
     <defaultFactionType>OrkPlayerColony</defaultFactionType>
     <backstoryCategories>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <apparelTags>
       <li>Spacer</li>

@@ -21,23 +21,74 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
+  
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>FeralOrk</defName>
-    <label>Feral Ork colonist</label>
+    <label>Ork Tribal</label>
     <defaultFactionType>OrkPlayerColonyTribal</defaultFactionType>
     <backstoryCategories>
-			<li>Ork_Boss</li>
-			<li>Ork_Nob</li>
 			<li>Ork_Standard</li>
   	</backstoryCategories>
     <apparelTags>
-      <li>Tribal</li>
       <li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
-      <min>500</min>
-      <max>1200</max>
+      <min>200</min>
+      <max>200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseFeralOrkPawnKind">
+    <defName>FeralWeirdOrk</defName>
+    <label>Ork Tribal</label>
+    <defaultFactionType>OrkPlayerColonyTribal</defaultFactionType>
+    <backstoryCategories>
+      <li>Ork_Weird</li>
+      <li>Ork_Weird_Boy</li>
+      <li>Ork_Weird_Nob</li>
+      <li>Ork_Weird_Boss</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseFeralOrkPawnKind">
+    <defName>FeralOrkNob</defName>
+    <label>Ork Tribal</label>
+    <defaultFactionType>OrkPlayerColonyTribal</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Nob</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseFeralOrkPawnKind">
+    <defName>FeralOrkBoss</defName>
+    <label>Ork Tribal</label>
+    <defaultFactionType>OrkPlayerColonyTribal</defaultFactionType>
+    <backstoryCategories>
+			<li>Ork_Boss</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>200</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
@@ -53,18 +104,17 @@
 
   <PawnKindDef ParentName="BaseFeralGrotPawnKind">
     <defName>FeralGrot</defName>
-    <label>Feral Grot colonist</label>
+    <label>Grot Tribal</label>
     <defaultFactionType>OrkPlayerColonyTribal</defaultFactionType>
     <backstoryCategories>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <apparelTags>
-      <li>Tribal</li>
       <li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
-      <min>500</min>
-      <max>1200</max>
+      <min>200</min>
+      <max>200</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>

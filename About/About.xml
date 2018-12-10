@@ -2,9 +2,32 @@
 <ModMetaData>
 	<name>Adeptus Mechanicus Magos Xenobiologis (Playable Orkoids)</name>
 	<author>Ogliss</author>
-	<targetVersion>0.19.2009</targetVersion>
+	<targetVersion>1.0.2059</targetVersion>
 	<description>V1.0
 	Requires new start or  one of those faction managers.
 	Adds plyable WH40k Orks
+	
+	Contents
+	Races:
+	Orks - Humanlike
+	Grots - Humanlike
+	Snotlings - Animal
+	Squigs - Animal
+	
+	Apparel:
+	Ork armour
+	Ork 'Eavy Armour
+	Ork Mega Armour
+	
+	Wargear:
+	Stikkbomb Packs (Frag, Krak, Tankbusta)
+	
+	Plants:
+	Orkoid Fungus
+	Orkoid Cocoons
+	
+	Resources:
+	Orkoid Fungus - a food
+	
 		</description>
 </ModMetaData>

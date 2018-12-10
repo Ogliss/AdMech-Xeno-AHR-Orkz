@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "OGBaseOrkMakeableGun"]/recipeMaker/recipeUsers</xpath>
+
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "OGBaseOrkMakeableGun"]/recipeMaker/recipeUsers</xpath>
+					<value><li>TableMachining</li></value>
+			</li>
+		</operations>	
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "OGOBaseMeleeWeapon"]</xpath>
+
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "OGOBaseMeleeWeapon"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>ElectricSmithy</li>
+						<li>FueledSmithy</li>
+					</value>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>

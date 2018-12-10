@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Ork - Wargear S 1 ========================== -->
+	<!-- ========================= Ork - Kustom Forcefield ========================== -->  
+	<!--<ThingDef ParentName="OGOWargearMakeable">
+    <defName>OGO_Wargear_KustomForcefield</defName>
+    <label>Kustom Forcefield</label>
+    <description>A Rosarius is a symbol of office for the clerical members of the Adeptus Ministorum and is also a symbol of office for the Chaplains of the Space Marines alongside the Crozius. A Rosarius normally takes the form of a gorget, amulet, or signet ring of adamantium usually shaped into the form of the Imperial Aquila or a Gothic Cross with a jewel in the centre, and houses a powerful protective Conversion Field emitter, protecting the Ministorum's priest or the Space Marine Chaplain from attacks both physical and psychic that might otherwise break through the protection of even the mighty Space Marine Power Armour or the indomitable psychic strength of his own will. The field's effect is to convert the kinetic energy of an impact into harmless photons of the visible light spectrum. When the field stops a shot, a blinding flash of light is produced as the energetic conversion occurs. The field is capable of rendering even Plasma Gun shots harmless. It is worn around the neck or waist on a sash, a cord, or a string of prayer beads.</description>
+    <thingClass>AdeptusMechanicus.AdvShieldBelt</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Wargear/Imperial/Apparel_ImperialRosarius</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<comps>     
+	      <li Class="AdeptusMechanicus.CompProperties_Wargear">
+		</li>
+	</comps>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>120000</WorkToMake>
+		<Mass>1</Mass>
+		<EnergyShieldRechargeRate>0.065</EnergyShieldRechargeRate>
+		<EnergyShieldEnergyMax>2.2</EnergyShieldEnergyMax>
+		<MarketValue>34000</MarketValue>
+		<MaxHitPoints>180</MaxHitPoints>
+    </statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.25</PsychicSensitivity>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<MentalBreakThreshold>-0.14</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>WGRConversionField</researchPrerequisite>
+		</recipeMaker>
+    <thingCategories>
+      <li>OGIWargear</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>BeltWargear1</li>
+      </layers>
+			<tags>
+				<li>OGIWargear</li>
+				<li>OGIWargear1</li>
+				<li>Rosarius</li>
+				<li>OGIShield</li>
+			</tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+
+        </li>
+      </options>
+    </colorGenerator>
+    <generateCommonality>0.7</generateCommonality>
+  </ThingDef>-->
+
+	<!-- ========================= Ork - Wargear S 2 ========================== -->
+
+	<!-- ========================= Ork - Wargear S 3 ========================== -->
+
+			<!--
+		  <li Class="AdeptusMechanicus.CompProperties_HediffApparel">
+			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
+			<severityBasedOnDurability>false</severityBasedOnDurability>
+			<partsToAffect>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			</partsToAffect>
+			<groupsToAffect>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			</groupsToAffect>
+		  </li>
+			-->
+</Defs>

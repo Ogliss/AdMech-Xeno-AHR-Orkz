@@ -67,4 +67,27 @@
       </statFactors>
     </stuffProps>
   </ThingDef>
+  
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Snotling</defName>
+    <label>snotling leather</label>
+    <description>Lightweight, thin leather, harvested from a snotling. Not as protective as thicker leathers.</description>
+    <graphicData>
+      <color>(140,85,36)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(140,85,36)</color>
+      <commonality>0.25</commonality>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
 </Defs>
