@@ -69,14 +69,14 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
       <recipeUsers>
-        <li>TableMachining</li>
+        <li>OGO_TableMachining</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
 
-	<ThingDef Name="OGOrkGun" ParentName="OGBaseMakeableGun" Abstract="True">
+	<ThingDef Name="OGOrkGun" ParentName="OGOBaseMakeableGun" Abstract="True">
     <weaponTags>
       <li>Ork_Gun</li>
     </weaponTags>

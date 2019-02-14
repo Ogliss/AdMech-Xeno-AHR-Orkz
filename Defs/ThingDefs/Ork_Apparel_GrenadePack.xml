@@ -53,11 +53,9 @@
 			</tags>
 		</apparel>
 		<thingCategories>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</tradeTags>
 	</ThingDef>
@@ -111,11 +109,9 @@
 			</tags>
 		</apparel>
 		<thingCategories>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</tradeTags>
 	</ThingDef>
@@ -169,11 +165,9 @@
 			</tags>
 		</apparel>
 		<thingCategories>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGOWargear</li>
 			<li>OGOGrens</li>
 		</tradeTags>
 	</ThingDef>

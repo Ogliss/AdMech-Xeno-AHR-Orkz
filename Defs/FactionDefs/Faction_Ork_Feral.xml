@@ -28,8 +28,9 @@
 			<li>Grot_Gretchin</li>
   	</backstoryCategories>
 			<hairTags>
-		<li>OrkHair</li>
-		<li>GrotHair</li>
+			<li>Civil</li>
+			<li>Raider</li>
+			<li>Rural</li>
 			</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>

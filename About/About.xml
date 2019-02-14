@@ -2,11 +2,13 @@
 <ModMetaData>
 	<name>Adeptus Mechanicus Magos Xenobiologis (Playable Orkoids)</name>
 	<author>Ogliss</author>
-	<targetVersion>1.0.2059</targetVersion>
-	<description>V1.0
-	Requires new start or  one of those faction managers.
+	<supportedVersions>
+        <li>1.0</li>
+	</supportedVersions>
+	<description>V1.1
 	Adds plyable WH40k Orks
-	
+	Requires new start or a faction manager mod to have faction bases on the world map.
+
 	Contents
 	Races:
 	Orks - Humanlike
@@ -15,7 +17,7 @@
 	Squigs - Animal
 	
 	Apparel:
-	Ork armour
+	Ork Armour
 	Ork 'Eavy Armour
 	Ork Mega Armour
 	
@@ -23,11 +25,13 @@
 	Stikkbomb Packs (Frag, Krak, Tankbusta)
 	
 	Plants:
-	Orkoid Fungus
+	Orkoid Fungus - the symbiotic fungus that is essential the orkoid ecosystem, it is a source of food, Squigs, Snotlings, Grots and Orks
 	Orkoid Cocoons
 	
 	Resources:
 	Orkoid Fungus - a food
 	
+	Mechanics:
+	Symbiotic Fungus - All Orkoids originate from the same strain of fungal spores, which can mature into a might warboss, or a tiny mushroom.
 		</description>
 </ModMetaData>

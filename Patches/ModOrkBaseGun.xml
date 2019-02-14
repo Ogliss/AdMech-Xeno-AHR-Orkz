@@ -9,7 +9,7 @@
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name = "OGBaseOrkMakeableGun"]/recipeMaker/recipeUsers</xpath>
-					<value><li>TableMachining</li></value>
+					<value><li>OGO_TableMachining</li></value>
 			</li>
 		</operations>	
 	</Operation>
@@ -23,8 +23,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name = "OGOBaseMeleeWeapon"]/recipeMaker/recipeUsers</xpath>
 					<value>
-						<li>ElectricSmithy</li>
-						<li>FueledSmithy</li>
+						<li>OGO_TableMachining</li>
 					</value>
 			</li>
 		</operations>	

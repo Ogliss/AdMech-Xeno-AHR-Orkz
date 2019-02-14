@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--========================= Adeptus Mechanicus - Catagories ==========================-->
-	<!--========================= Adeptus Mechanicus - Ork Weapon Catagories ==========================-->
-	
-	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+	<!-- ========================= Adeptus Mechanicus - Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Ork Gear Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Ork Weapon Catagories ========================== -->
+	<ThingCategoryDef>
 		<defName>OGOWeapons</defName>
 		<label>Ork Weapons</label>
 		<parent>Weapons</parent>
@@ -25,30 +25,37 @@
 		<defName>OGOGrens</defName>
 		<label>Ork Grenades</label>
 		<parent>OGOWeapons</parent>
-	</ThingCategoryDef>
-		
-
-	<!--========================= Adeptus Mechanicus - Ork Gear Catagories ==========================-->
-	<!--========================= Adeptus Mechanicus - Ork Armour Catagories ==========================-->
-	
-	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
-		<defName>OGOArmour</defName>
-		<label>Ork Armour</label>
-		<parent>Apparel</parent>
-	</ThingCategoryDef>
-	
-	<!--========================= Adeptus Mechanicus - Ork Gear Catagories ==========================-->
-	
-	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
-		<defName>OGOHeadgear</defName>
-		<label>Ork Headgear</label>
+	</ThingCategoryDef>	
+			
+	<!-- ========================= Adeptus Mechanicus - Ork Armour Catagories ========================== -->
+	<ThingCategoryDef>
+		<defName>OGOSub</defName>
+		<label>Ork</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
-		<defName>OGOGear</defName>
-		<label>Orkish gear</label>
-		<parent>Root</parent>
+		<defName>OGOArmour</defName>
+		<label>Ork Armour</label>
+		<parent>OGOSub</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGOHeadgear</defName>
+		<label>Ork Headgear</label>
+		<parent>OGOSub</parent>
+	</ThingCategoryDef>
+	  	
+	<ThingCategoryDef>
+		<defName>OGOAddons</defName>
+		<label>Ork Armour Addons</label>
+		<parent>OGOSub</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGOWargear</defName>
+		<label>Ork Wargear</label>
+		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 
 </Defs>

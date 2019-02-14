@@ -13,8 +13,6 @@ namespace RimWorld
 			DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkFactionDefOf));
 		}
 
-        public static FactionDef OrkPlayerColony;
-
         public static FactionDef OrkPlayerColonyTribal;
     }
 }

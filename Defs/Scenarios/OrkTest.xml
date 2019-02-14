@@ -72,12 +72,18 @@
 				<def>StartingThing_Defined</def>
 				<thingDef>OGO_Gun_OShoota</thingDef>
 			</li>
-			<li Class="ScenPart_StartingAnimal">
-				<def>StartingAnimal</def>
-				<animalKind>Squig</animalKind>
-				<count>3</count>
-				<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
-			</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Squig</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Snotling</animalKind>
+					<count>2</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
 			<li Class="ScenPart_ScatterThingsNearPlayerStart">
 				<def>ScatterThingsNearPlayerStart</def>
 				<thingDef>WoodLog</thingDef>
@@ -132,8 +138,8 @@
 
 	<ScenarioDef>
 		<defName>FeralOrkTribe</defName>
-		<label>Lost Tribe</label>
-		<description>Your tribe was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</description>
+		<label>Lost Ork Klan</label>
+		<description>Your klan was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</description>
 		<scenario>
 			<summary>Five lost tribespeople attempt to rebuild. Difficult.</summary>
 			<playerFaction>
@@ -146,7 +152,7 @@
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>5</pawnCount>
-          <pawnChoiceCount>8</pawnChoiceCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -207,8 +213,8 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MeleeWeapon_Knife</thingDef>
-					<stuff>Jade</stuff>
+					<thingDef>OGO_Melee_CrudeChoppa</thingDef>
+					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -221,8 +227,15 @@
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
+					<animalKind>Squig</animalKind>
 					<count>3</count>
-					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+					<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Snotling</animalKind>
+					<count>3</count>
+					<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
 				</li>
 
 				<!-- Scatter some things near player start -->
@@ -231,7 +244,12 @@
 					<thingDef>WoodLog</thingDef>
 					<count>500</count>
 				</li>
-
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+				  <def>ScatterThingsAnywhere</def>
+				  <thingDef>Plant_OrkoidCocoon</thingDef>
+				  <count>30</count>
+				</li>
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>

@@ -32,6 +32,13 @@
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralWeirdOrk</li>
+                        <li>WeirdOrk</li>
+                    </kindDefs>
+                    <chance>5.0</chance>
+                </li>
             </alienslavekinds>
             <alienrefugeekinds>
                 <li>
@@ -62,6 +69,13 @@
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralWeirdOrk</li>
+                        <li>WeirdOrk</li>
+                    </kindDefs>
+                    <chance>5.0</chance>
+                </li>
             </alienrefugeekinds>
 			<startingColonists>
 				<li>
@@ -85,6 +99,12 @@
                     </kindDefs>
                     <chance>10.0</chance>
 					</li>
+                <li>
+                    <kindDefs>
+                        <li>WeirdOrk</li>
+                    </kindDefs>
+                    <chance>5.0</chance>
+                </li>
 				</pawnKindEntries>
 					<factionDefs>
 						<li>OrkPlayerColony</li> 
@@ -111,6 +131,12 @@
                     </kindDefs>
                     <chance>10.0</chance>
 					</li>
+                <li>
+                    <kindDefs>
+                        <li>FeralWeirdOrk</li>
+                    </kindDefs>
+                    <chance>5.0</chance>
+                </li>
 				</pawnKindEntries>
 					<factionDefs>
 						<li>OrkPlayerColonyTribal</li> 
@@ -147,6 +173,13 @@
                         <li>OrkBoss</li>
                     </kindDefs>
                     <chance>10.0</chance>
+                </li>
+                <li>
+                    <kindDefs>
+                        <li>FeralWeirdOrk</li>
+                        <li>WeirdOrk</li>
+                    </kindDefs>
+                    <chance>5.0</chance>
                 </li>
                     </pawnKindEntries>
                     <factionDefs>
@@ -187,7 +220,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="BaseOrkPawn">
+<AlienRace.ThingDef_AlienRace Name="Base_Ork" ParentName="BaseOrkPawn">
     <defName>Alien_Ork</defName>
     <label>Ork</label>
     <description>The pinnacle of the orkoid species: A fully grown Ork.</description>
@@ -341,6 +374,7 @@
             <humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
 				<li>Alien_Grot</li>
+				<li>Cyborg_Ork</li>
 			</notXenophobistTowards>
 		<factionRelations>
                 <li>
@@ -365,7 +399,6 @@
                        <max>10</max>
                     </goodwill>
                 </li>
-				<!--
 				<li>
                     <factions>
                        <li>EldarFaction</li>
@@ -376,8 +409,6 @@
                        <max>0</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>DarkEldarFaction</li>
@@ -388,8 +419,6 @@
                        <max>0</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>TauFaction</li>
@@ -402,8 +431,6 @@
                        <max>-30</max>
                     </goodwill>
                 </li>  
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialMechanicusFaction</li>
@@ -414,8 +441,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialHumanFaction</li>
@@ -426,8 +451,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialAstartesFaction</li>
@@ -438,7 +461,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
 		</factionRelations>
         </generalSettings>
         <graphicPaths>
@@ -456,6 +478,9 @@
         </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
+                <li>AteOrkMeal</li>
+                <li>AteOrkFungusDirect</li>
+                <li>AteOrkFungusAsIngredient</li>
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
@@ -573,6 +598,9 @@
                 <li>Plant_OrkoidCocoon</li>
             </plantList>
            <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
+			<buildingList>
+                <li>OGO_TableMachining</li>
+            </buildingList>
         </raceRestriction>
     </alienRace>
 	<statBases>
@@ -661,11 +689,11 @@
       <leatherDef>Leather_Ork</leatherDef>
       <nameGenerator>NamerPersonOrk</nameGenerator>
       <body>Human</body>
-      <bloodDef>FilthBloodOrk</bloodDef>	
+      <bloodDef>OG_FilthBlood_Ork</bloodDef>	
       <meatColor>(200,135,100)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
+      <foodType>OmnivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>
@@ -753,6 +781,49 @@
     </recipes>
 </AlienRace.ThingDef_AlienRace>
 
+<AlienRace.ThingDef_AlienRace Name="Cyborg_Ork" ParentName="Base_Ork">
+    <defName>Cyborg_Ork</defName>
+    <label>Cybork</label>
+    <description>The pinnacle of the orkoid species: A fully grown Ork, augmented with Bionikz!</description>
+	<statBases>
+		<!--
+		<MarketValue>2000</MarketValue>
+		<MoveSpeed>4.5</MoveSpeed>
+		<Flammability>0.3</Flammability>
+		<ComfyTemperatureMin>3</ComfyTemperatureMin>
+		<ComfyTemperatureMax>42</ComfyTemperatureMax>
+		<LeatherAmount>55</LeatherAmount>
+        <CarryingCapacity>100</CarryingCapacity>
+		<PsychicSensitivity>0.35</PsychicSensitivity>
+		<MiningSpeed>1.4</MiningSpeed>
+		<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
+		<AimingDelayFactor>-0.25</AimingDelayFactor>
+		<MentalBreakThreshold>0.025</MentalBreakThreshold>
+        <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+        <PainShockThreshold>0.9</PainShockThreshold>
+        <ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+        <GlobalLearningFactor>0.85</GlobalLearningFactor>
+        <MeleeDodgeChance>1.125</MeleeDodgeChance>
+        <MeleeHitChance>1.125</MeleeHitChance>
+        <UnskilledLaborSpeed>1.25</UnskilledLaborSpeed>
+        <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+        <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
+        <SmeltingSpeed>0.5</SmeltingSpeed>
+        <SmithingSpeed>0.5</SmithingSpeed>
+        <TailoringSpeed>0.5</TailoringSpeed>
+        <NegotiationAbility>0.5</NegotiationAbility>
+        <SocialImpact>0.5</SocialImpact>
+        <TradePriceImprovement>0.5</TradePriceImprovement>
+		-->
+    </statBases>
+    <race>
+      <hediffGiverSets>
+        <li>Cybork</li>
+      </hediffGiverSets>
+    </race>
+</AlienRace.ThingDef_AlienRace>
+
+		
 <AlienRace.ThingDef_AlienRace ParentName="BaseOrkPawn">
     <defName>Alien_Grot</defName>
     <label>Grot</label>
@@ -893,7 +964,8 @@
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
-              <li>Alien_Ork</li>
+				<li>Alien_Ork</li>
+				<li>Cyborg_Ork</li>
            </notXenophobistTowards>
 		<factionRelations>
                 <li>
@@ -918,7 +990,6 @@
                        <max>10</max>
                     </goodwill>
                 </li>
-				<!--
 				<li>
                     <factions>
                        <li>EldarFaction</li>
@@ -929,8 +1000,6 @@
                        <max>0</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>DarkEldarFaction</li>
@@ -941,8 +1010,6 @@
                        <max>0</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>TauFaction</li>
@@ -955,8 +1022,6 @@
                        <max>-30</max>
                     </goodwill>
                 </li>  
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialMechanicusFaction</li>
@@ -967,8 +1032,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialHumanFaction</li>
@@ -979,8 +1042,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
-				<!--
 				<li>
                     <factions>
                        <li>ImperialAstartesFaction</li>
@@ -991,7 +1052,6 @@
                        <max>-50</max>
                     </goodwill>
                 </li>
-				-->
 		</factionRelations>
         </generalSettings>
         <graphicPaths>
@@ -1009,6 +1069,9 @@
         </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
+                <li>AteOrkMeal</li>
+                <li>AteOrkFungusDirect</li>
+                <li>AteOrkFungusAsIngredient</li>
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
@@ -1212,11 +1275,11 @@
       <leatherDef>Leather_Grot</leatherDef>
       <nameGenerator>NamerPersonOrk</nameGenerator>
       <body>Human</body>
-      <bloodDef>FilthBloodOrk</bloodDef>	
+      <bloodDef>OG_FilthBlood_Ork</bloodDef>	
       <meatColor>(0, 0, 128)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
+      <foodType>OmnivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>

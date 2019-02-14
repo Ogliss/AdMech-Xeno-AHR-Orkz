@@ -4,7 +4,7 @@
 <!-- Ork Child Base -->
   <AlienRace.BackstoryDef>
     <defName>Ork_Base_Child</defName>
-    <title>Runt</title>
+    <title>yoof</title>
     <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
@@ -85,6 +85,7 @@
       </li>
     </skillGains>
     <spawnCategories>
+      <li>Ork_Base_Child</li>
       <li>Ork_Standard</li>
       <li>Ork_Boy</li>
       <li>Ork_Nob</li>
@@ -1130,6 +1131,7 @@
       </li>
     </skillGains>
     <spawnCategories>
+      <li>Grot_Base_Child</li>
       <li>Grot_Gretchin</li>
       <li>Grot_Slave</li>
     </spawnCategories>
