@@ -10,10 +10,10 @@
   <FactionDef Parent="OrkFactionBase">
     <defName>OrkPlayerColony</defName>
     <label>Ork Colony</label>
-    <description>Your own community.</description>
+    <description>Your own kommunity.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Ork</basicMemberKind>
-    <pawnsPlural>colonists</pawnsPlural>
+    <pawnsPlural>Boyz</pawnsPlural>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
     <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>

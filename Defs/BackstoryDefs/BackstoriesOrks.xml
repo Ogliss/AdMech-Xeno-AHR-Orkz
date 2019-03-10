@@ -102,7 +102,7 @@
     <titleShort>Snipa</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] has a knack for actually hitting a target when using projectiles. [PAWN_pronoun] is more accurate than your average ork.</baseDescription>
@@ -150,7 +150,7 @@
     <titleShort>Slugga</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef]'s is motto is: Less talk, moar DAKKA! [PAWN_pronoun] loves to shoot, it doesnt matter what, although the result is less accurate than your average ork.</baseDescription>
@@ -199,7 +199,7 @@
     <titleShort>Choppa</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is earning his place in Ork society by being a terrific close-range fighter.</baseDescription>
@@ -247,7 +247,7 @@
     <titleShort>Brewer</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] has developed a rare talent among orks in that he's smart enough to brew stuff. Being an Ork, the result still tastes horrible and may be lethal to non-Orks. </baseDescription>
@@ -279,7 +279,7 @@
     <titleShort>Shouta</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is infamous for his booming voice, being able to call out enemies over half a mile away.</baseDescription>
@@ -317,7 +317,7 @@
     <titleShort>Herda</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is known for his skill in handling squigs and other animals. Skill in this case often means beating the poor thing until it submits.</baseDescription>
@@ -349,7 +349,7 @@
     <titleShort>Madboy</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is a madboy. With an intellect as thick as [PAWN_pronoun] skull, only the most basic tasks are suitable for this specimen.</baseDescription>
@@ -395,7 +395,7 @@
     <titleShort>Mekboy</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is a mekboy. With an knack for knowing which bitz go where when it comes to teknology.</baseDescription>
@@ -439,7 +439,7 @@
     <titleShort>Mad doc</titleShort>
 	<linkedBackstory>Ork_Base_Child</linkedBackstory>
     <bioAgeRange>
-        <min>17</min>
+        <min>5</min>
         <max>29</max>
     </bioAgeRange>
     <baseDescription>[PAWN_nameDef] is a mad doc. With an knack for knowing which bitz go where when it comes to stickin da boyz back togeather.</baseDescription>

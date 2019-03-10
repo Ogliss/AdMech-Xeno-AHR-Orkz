@@ -5,6 +5,7 @@
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <isFighter>true</isFighter>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
 	    <lifeStages>
@@ -36,7 +37,7 @@
       <min>500</min>
       <max>1200</max>
     </apparelMoney>
-    <minGenerationAge>16</minGenerationAge>
+    <minGenerationAge>0</minGenerationAge>
 	<maxGenerationAge>29</maxGenerationAge>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
@@ -88,6 +89,7 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseGrotPawnKind">
