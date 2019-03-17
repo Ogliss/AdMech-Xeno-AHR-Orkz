@@ -25,4 +25,23 @@
 		</allowedBiomes>
 	</IncidentDef>
 
+	<IncidentDef>
+		<defName>StealthfungalSprout</defName>
+		<label>orkoid fungal sprout</label>
+		<category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+		<workerClass>AdeptusMechanicus.IncidentWorker_OrkoidFungalSprout</workerClass>
+		<baseChance>0.0</baseChance>
+		<allowedBiomes>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>BorealForest</li>
+			<li>AridShrubland</li>
+		</allowedBiomes>
+	</IncidentDef>
+
 </Defs>

@@ -86,6 +86,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Base_Child</li>
+      <li>Ork_Runt</li>
       <li>Ork_Standard</li>
       <li>Ork_Boy</li>
       <li>Ork_Nob</li>
@@ -406,7 +407,6 @@
     <workDisables>
       <li>Caring</li>
       <li>Cooking</li>
-      <li>Animals</li>
     </workDisables>
     <skillGains>
       <li>
@@ -451,7 +451,6 @@
       <li>Cooking</li>
       <li>Mining</li>
       <li>ManualSkilled</li>
-      <li>Animals</li>
       <li>Crafting</li>
     </workDisables>
     <skillGains>
@@ -548,7 +547,6 @@
     <workDisables>
       <li>Caring</li>
       <li>Cooking</li>
-      <li>Animals</li>
     </workDisables>
 	<forcedTraits>
 		<li>
@@ -746,7 +744,7 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
-<!-- Ork Big ek -->
+<!-- Ork Big Mek -->
   <AlienRace.BackstoryDef>
     <defName>Ork_Boss_Mek</defName>
     <title>Big Mek</title>
@@ -764,7 +762,6 @@
       <li>Caring</li>
       <li>Social</li>
       <li>Cooking</li>
-      <li>Animals</li>
     </workDisables>
 	<forcedTraits>
 		<li>
@@ -1132,6 +1129,7 @@
     </skillGains>
     <spawnCategories>
       <li>Grot_Base_Child</li>
+      <li>Grot_Runt</li>
       <li>Grot_Gretchin</li>
       <li>Grot_Slave</li>
     </spawnCategories>

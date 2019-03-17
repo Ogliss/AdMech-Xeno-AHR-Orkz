@@ -3,7 +3,7 @@
 
 	<ScenarioDef>
 	<defName>OrkScenarioTest</defName>
-		<label>Testing Ork pawns</label>
+		<label>Ork Survivors</label>
 		<description>Shattered remenants of your klans krooza fall to the surface, after a raiding party against a Tau world met against unexspected planetary defences</description>
 <scenario>
 <summary>Five escaped Orks attempt to build a colony. Difficult.</summary>

@@ -95,8 +95,8 @@
 		<spawnwild>false</spawnwild>
 		<spawnChance>0.016</spawnChance>
 		<snotlingChance>0.035</snotlingChance>
-		<grotChance>0.015</grotChance>
-		<orkChance>0.005</orkChance>
+		<grotChance>0.025</grotChance>
+		<orkChance>0.015</orkChance>
       </li>
 	<!--
       <li Class="CompProperties_Glower">
@@ -131,9 +131,9 @@
 		<canspawn>true</canspawn>
 		<spawnwild>true</spawnwild>
 		<spawnChance>0.5</spawnChance>
-		<snotlingChance>0.45</snotlingChance>
-		<grotChance>0.25</grotChance>
-		<orkChance>0.15</orkChance>
+		<snotlingChance>0.75</snotlingChance>
+		<grotChance>0.45</grotChance>
+		<orkChance>0.25</orkChance>
       </li>
 	<!--
       <li Class="CompProperties_Glower">

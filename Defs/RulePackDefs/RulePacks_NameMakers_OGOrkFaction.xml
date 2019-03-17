@@ -44,15 +44,41 @@
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGOrkFirst] [OGOrkSecond]</li>
+			<li>name->[OGOrkFirst] '[OGOrkFirstB]' [OGOrkSecond]</li>
+			<li>OGOrkFirst->[OGOrkFirstA][OGOrkFirstB]</li>
 		  </rulesStrings>
 			<rulesRaw>
 			<li Class="Rule_File">
-				<keyword>OGOrkFirst</keyword>
+				<keyword>OGOrkFirstA</keyword>
 				<path>NameBanks/OGOrkFirst</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OGOrkFirstB</path>
 			</li>
 			<li Class="Rule_File">
 				<keyword>OGOrkSecond</keyword>
 				<path>NameBanks/OGOrkSecond</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSnotling</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGSnotFirst]</li>
+			<li>OGSnotFirst->[OGSnot][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OGOrkFirstB</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGSnot</keyword>
+				<path>NameBanks/Snot</path>
 			</li>
 		  </rulesRaw>
 		</rulePack>

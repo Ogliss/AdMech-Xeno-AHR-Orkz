@@ -42,6 +42,7 @@
       </li>
     </tools>
     <race>
+      <hasGenders>false</hasGenders>
       <body>Biped</body>
       <predator>true</predator>
       <maxPreyBodySize>2.3</maxPreyBodySize>
@@ -74,11 +75,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
+          <minAge>0.1</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.45</minAge>
+          <minAge>0.25</minAge>
           <soundWounded>Pawn_Warg_Wounded</soundWounded>
           <soundDeath>Pawn_Warg_Death</soundDeath>
           <soundCall>Pawn_Warg_Call</soundCall>

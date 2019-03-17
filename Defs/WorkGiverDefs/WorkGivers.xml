@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+    <defName>TakeGrogOutOfOrkFermentingBarrel</defName>
+    <label>take grog out of fermenting barrels</label>
+    <giverClass>WorkGiver_TakeGrogOutOfOrkFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take grog</verb>
+    <gerund>taking grog from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>FillOrkFermentingBarrel</defName>
+    <label>fill fermenting barrels</label>
+    <giverClass>WorkGiver_FillOrkFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>19</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+</Defs>

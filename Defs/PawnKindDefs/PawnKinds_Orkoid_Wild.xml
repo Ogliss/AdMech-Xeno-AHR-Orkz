@@ -9,7 +9,8 @@
     <combatPower>50</combatPower>
     <race>Alien_Ork</race>
     <backstoryCategories>
-      <li>Ork_Runt</li>
+      <li>Ork_Boy</li>
+      <li>Ork_Weird_Boy</li>
     </backstoryCategories>
     <baseRecruitDifficulty>0.450</baseRecruitDifficulty>
     <itemQuality>Poor</itemQuality>
@@ -27,7 +28,7 @@
     <combatPower>40</combatPower>
     <race>Alien_Grot</race>
     <backstoryCategories>
-      <li>Grot_Runt</li>
+      <li>Grot_Gretchin</li>
     </backstoryCategories>
     <baseRecruitDifficulty>0.250</baseRecruitDifficulty>
     <itemQuality>Poor</itemQuality>

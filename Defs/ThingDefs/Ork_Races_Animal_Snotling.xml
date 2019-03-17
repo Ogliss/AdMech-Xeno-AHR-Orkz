@@ -8,7 +8,7 @@
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
       <MarketValue>450</MarketValue>
-      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
     </statBases>
     <tools>
       <li>
@@ -60,15 +60,16 @@
       <hasGenders>false</hasGenders>
       <body>Human</body>
       <predator>false</predator>
-      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <maxPreyBodySize>1.50</maxPreyBodySize>
       <petness>0.5</petness>
-      <baseBodySize>0.30</baseBodySize>
+      <baseBodySize>0.750</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.0</baseHealthScale>
-      <foodType>OmnivoreAnimal</foodType>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Snotling</leatherDef>
       <gestationPeriodDays>26</gestationPeriodDays>
-      <nameOnTameChance>1</nameOnTameChance>
+      <nameOnTameChance>0</nameOnTameChance>
+	  <!-- <thinkTreeMain>Snotling</thinkTreeMain> -->
       <trainability>Advanced</trainability>
       <wildness>0.75</wildness>
       <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
@@ -82,7 +83,7 @@
           <li>(3, 0)</li>
         </points>
       </litterSizeCurve>
-      <lifeExpectancy>5</lifeExpectancy>
+      <lifeExpectancy>10</lifeExpectancy>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -90,11 +91,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
+          <minAge>0.1</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.45</minAge>
+          <minAge>0.25</minAge>
           <soundWounded>Pawn_Warg_Wounded</soundWounded>
           <soundDeath>Pawn_Warg_Death</soundDeath>
           <soundCall>Pawn_Warg_Call</soundCall>
@@ -124,7 +125,7 @@
         <bodyGraphicData>
           <texPath>Things/Animals/Snotling/Snotling</texPath>
           <drawSize>0.55</drawSize>
-          <color>(74,88,26)</color>
+          <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -136,7 +137,7 @@
         <bodyGraphicData>
           <texPath>Things/Animals/Snotling/Snotling</texPath>
           <drawSize>0.7</drawSize>
-          <color>(74,88,26)</color>
+          <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
@@ -152,7 +153,7 @@
         <bodyGraphicData>
           <texPath>Things/Animals/Snotling/Snotling</texPath>
           <drawSize>1.25</drawSize>
-          <color>(74,88,26)</color>
+          <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>

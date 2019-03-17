@@ -17,5 +17,13 @@ namespace RimWorld
         public static ThingDef Plant_OrkoidCocoon;
 
         public static ThingDef Plant_OrkFungus;
+
+        public static ThingDef OrkFermentingBarrel;
+
+        public static ThingDef OrkWaart;
+
+        public static ThingDef OrkGrog;
+
+        public static AlienRace.BackstoryDef Ork_Base_Child;
     }
 }
