@@ -61,7 +61,7 @@
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
 				<thingDef>OGO_Melee_Choppa</thingDef>
-				<stuff>Jade</stuff>
+				<stuff>BlocksGranite</stuff>
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>

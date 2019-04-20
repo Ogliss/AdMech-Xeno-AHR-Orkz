@@ -43,6 +43,9 @@
     <Compile Include="OGOrkThingDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\AdMechArmoury\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Class="ThingDef_Hivelike" ParentName="BuildingHivelikeBase">
+    <defName>OGOOrkTunnel</defName>
+    <label>ork tunnel</label>
+    <description>A tunnel dug by orkz. If activated, it will spawn additional deamons and rifts over time.</description>
+    <thingClass>HiveLike</thingClass>
+		<Faction>RokOrkz</Faction>
+		<TunnelDef>OGCDWarpTunnel</TunnelDef>
+    <graphicData>
+      <texPath>Things/Building/Natural/SteamGeyser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <drawerType>RealtimeOnly</drawerType>
+    <killedLeavings>
+      <InsectJelly>30</InsectJelly>
+    </killedLeavings>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_SpawnerHiveLikes" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>InsectJelly</thingToSpawn>
+        <spawnCount>5</spawnCount>
+        <spawnIntervalRange>
+          <min>13000</min>
+          <max>15000</max>
+        </spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>6</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Slime</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>5</spawnRadius>
+      </li>
+      <li Class="CompProperties_Maintainable">
+        <ticksHealthy>60000</ticksHealthy>
+        <ticksNeedsMaintenance>40000</ticksNeedsMaintenance>
+        <damagePerTickRare>10</damagePerTickRare>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="ThingDef_TunnelHiveLikeSpawner"  ParentName="EtherealThingBase">
+    <defName>OGORokTunnelSpawner</defName>
+    <label>ork tunnel</label>
+    <thingClass>TunnelHiveLikeSpawner</thingClass>
+		<Faction>RokOrkz</Faction>
+		<HiveDef>OGOOrkTunnel</HiveDef>
+		<strikespreexplode>false</strikespreexplode>
+		<explodesprespawn>false</explodesprespawn>
+		<damageDef>OGCDWarpStormStrike</damageDef>
+		<blastradius>5</blastradius>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <alwaysFlee>true</alwaysFlee>
+    <comps>
+      <li Class="CompProperties_SpawnerHiveLikes" />
+    </comps>
+  </ThingDef>
+  
+</Defs>

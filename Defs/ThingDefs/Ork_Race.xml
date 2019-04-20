@@ -284,6 +284,22 @@
         <li>
             <compClass>CompAttachBase</compClass>
         </li>
+      <li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
+		<Poisonable>true</Poisonable>
+		<FoodTypeFlags>
+			<li>Meat</li>
+			<li>Corpse</li>
+		</FoodTypeFlags>
+		<FoodPoisonCause>
+			<li>DangerousFoodType</li>
+			<!--
+			<li>FilthyKitchen</li>
+			<li>IncompetentCook</li>
+			<li>Rotten</li>
+			<li>Unknown</li>
+			-->
+		</FoodPoisonCause>
+      </li>
     </comps>
     <drawGUIOverlay>true</drawGUIOverlay>
 </ThingDef>
@@ -296,7 +312,7 @@
         <generalSettings>
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
             <maleGenderProbability>1</maleGenderProbability>
-            <immuneToAge>true</immuneToAge>
+            <immuneToAge>false</immuneToAge>
             <forcedRaceTraitEntries>
                 <li>
                     <defName>Bloodlust</defName>
@@ -549,10 +565,12 @@
                 <li>AteOrkMeal</li>
                 <li>AteOrkFungusDirect</li>
                 <li>AteOrkFungusAsIngredient</li>
-                <li>ButcheredHumanlikeCorpse</li>
-				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
                 <li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteRawHumanlikeMeat</li>
+				<li>AteWithoutTable</li>
+                <li>ButcheredHumanlikeCorpse</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
 				<li>ColonistLeftUnburied</li>
 				<li>Naked</li>
 				<li>Pain</li>
@@ -578,12 +596,11 @@
 				<li>Ugly</li>
 				<li>SoldPrisoner</li>
 				<li>ExecutedPrisoner</li>
-				<li>AteRawHumanlikeMeat</li>
-				<li>AteWithoutTable</li>
 				<li>SleepDisturbed</li>
 				<li>KnowPrisonerSold</li>
 				<li>KnowGuestOrganHarvested</li>
 				<li>ObservedLayingCorpse</li>
+				<li>ObservedLayingRottingCorpse</li>
 				<li>SleptInBarracks</li>
             </cannotReceiveThoughts>
         </thoughtSettings>
@@ -683,15 +700,15 @@
 		<MiningSpeed>1.4</MiningSpeed>
 		<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
 		<AimingDelayFactor>-0.25</AimingDelayFactor>
-		<MentalBreakThreshold>0.025</MentalBreakThreshold>
+		<MentalBreakThreshold>0.020</MentalBreakThreshold>
         <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
         <PainShockThreshold>0.9</PainShockThreshold>
         <ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
         <GlobalLearningFactor>0.85</GlobalLearningFactor>
         <MeleeDodgeChance>1.125</MeleeDodgeChance>
-        <MeleeHitChance>1.125</MeleeHitChance>
+        <MeleeHitChance>1.25</MeleeHitChance>
         <UnskilledLaborSpeed>1.25</UnskilledLaborSpeed>
-        <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+        <ButcheryFleshSpeed>1.5</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
         <SmeltingSpeed>0.5</SmeltingSpeed>
         <SmithingSpeed>0.5</SmithingSpeed>
@@ -884,7 +901,16 @@
         <TradePriceImprovement>0.5</TradePriceImprovement>
 		-->
     </statBases>
+    <alienRace>
+        <generalSettings>
+			<notXenophobistTowards>
+				<li>Alien_Grot</li>
+				<li>Alien_Ork</li>
+			</notXenophobistTowards>
+        </generalSettings>
+    </alienRace>
     <race>
+	  <useMeatFrom>Alien_Ork</useMeatFrom>
       <hediffGiverSets>
         <li>Cybork</li>
       </hediffGiverSets>
@@ -900,7 +926,7 @@
         <generalSettings>
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
             <maleGenderProbability>1</maleGenderProbability>
-            <immuneToAge>true</immuneToAge>
+            <immuneToAge>false</immuneToAge>
             <forcedRaceTraitEntries>
                 <li>
                     <defName>Wimp</defName>
@@ -922,6 +948,8 @@
             <alienPartGenerator>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
+				<customDrawSize>(0.75, 0.75)</customDrawSize>
+				<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
                 <aliencrowntypes>
                     <li>Average_Gretchin</li>
                 </aliencrowntypes>
@@ -929,11 +957,13 @@
                 <li>Thin</li>
                 </alienbodytypes>
 				<bodyAddons>
+				<!--
 					<li>
 					<path>Things/Orks/HeadsBase/Ears/EarsGretchin</path>
 					<bodyPart>Head</bodyPart>
 					<inFrontOfBody>true</inFrontOfBody>
-					<layerOffset>-0.275</layerOffset>
+					<drawnInBed>true</drawnInBed>
+					<layerOffset>0.0</layerOffset>
 					<offsets>
 						<south>
 							<bodyTypes>
@@ -965,6 +995,83 @@
 						<li>FullHead</li>
 					</hiddenUnderApparelFor>
 					</li>
+					-->
+					
+					<li>
+					<path>Things/Orks/HeadsBase/Ears/EarsGretchinR</path>
+					<bodyPart>Head</bodyPart>
+					<inFrontOfBody>true</inFrontOfBody>
+					<drawnInBed>true</drawnInBed>
+					<layerOffset>0.0</layerOffset>
+					<offsets>
+						<south>
+							<bodyTypes>
+								<Thin>(-0.42,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</south>
+						<north>
+							<bodyTypes>
+								<Thin>(0,0.9)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</north>
+						<east>
+							<bodyTypes>
+								<Thin>(-0.48,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</east>
+					</offsets>
+					<useSkinColor>true</useSkinColor>
+					<hiddenUnderApparelFor>
+						<li>FullHead</li>
+					</hiddenUnderApparelFor>
+					</li>
+					<li>
+					<path>Things/Orks/HeadsBase/Ears/EarsGretchinL</path>
+					<bodyPart>Head</bodyPart>
+					<inFrontOfBody>true</inFrontOfBody>
+					<drawnInBed>true</drawnInBed>
+					<layerOffset>0.0</layerOffset>
+					<offsets>
+						<south>
+							<bodyTypes>
+								<Thin>(-0.42,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</south>
+						<north>
+							<bodyTypes>
+								<Thin>(0,0.9)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</north>
+						<east>
+							<bodyTypes>
+								<Thin>(-0.48,0.6)</Thin>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+							</crownTypes>
+						</east>
+					</offsets>
+					<useSkinColor>true</useSkinColor>
+					<hiddenUnderApparelFor>
+						<li>FullHead</li>
+					</hiddenUnderApparelFor>
+					</li>
+
 				</bodyAddons>
                 <alienskincolorgen Class="ColorGenerator_Options">
                                <options>
@@ -1140,10 +1247,12 @@
                 <li>AteOrkMeal</li>
                 <li>AteOrkFungusDirect</li>
                 <li>AteOrkFungusAsIngredient</li>
-                <li>ButcheredHumanlikeCorpse</li>
-				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
                 <li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteRawHumanlikeMeat</li>
+				<li>AteWithoutTable</li>
+                <li>ButcheredHumanlikeCorpse</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
 				<li>ColonistLeftUnburied</li>
 				<li>Naked</li>
 				<li>FeelingRandom</li>
@@ -1167,8 +1276,6 @@
 				<li>Ugly</li>
 				<li>SoldPrisoner</li>
 				<li>ExecutedPrisoner</li>
-				<li>AteRawHumanlikeMeat</li>
-				<li>AteWithoutTable</li>
 				<li>KnowPrisonerSold</li>
 				<li>KnowGuestOrganHarvested</li>
 				<li>ObservedLayingCorpse</li>
@@ -1344,7 +1451,7 @@
       <nameGenerator>NamerPersonOrk</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Ork</bloodDef>	
-      <meatColor>(0, 0, 128)</meatColor>
+      <meatColor>(64, 128, 64)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
       <foodType>OmnivoreAnimal</foodType>

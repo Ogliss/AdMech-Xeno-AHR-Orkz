@@ -93,7 +93,7 @@
       <li Class="AdeptusMechanicus.CompProperties_OrkoidSpores">
 		<canspawn>true</canspawn>
 		<spawnwild>false</spawnwild>
-		<spawnChance>0.016</spawnChance>
+		<spawnChance>0.05</spawnChance>
 		<snotlingChance>0.035</snotlingChance>
 		<grotChance>0.025</grotChance>
 		<orkChance>0.015</orkChance>

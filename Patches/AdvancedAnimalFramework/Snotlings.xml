@@ -212,6 +212,26 @@
             <li Class="ThinkNode_Tagger">
               <tagToGive>TrainedAnimalBehavior</tagToGive>
               <subNodes>
+					
+				<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
+					<workGiverDef>FightFires</workGiverDef>
+				</li>
+				
+				<!-- Modded: Cut Plants -->
+				<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
+					<workGiverDef>PlantsCut</workGiverDef>
+				</li>	
+				
+				<!-- Modded: Harvest Plants -->
+				
+				<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
+					<workGiverDef>GrowerHarvest</workGiverDef>
+				</li>		
+				
+				<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
+					<workGiverDef>WPGrowerSow</workGiverDef>
+				</li>		
+
                 <!-- Trained behavior: obedience: Follow and defend master -->
                 <li Class="ThinkNode_ConditionalTrainableCompleted">
                   <trainable>Obedience</trainable>
@@ -223,22 +243,6 @@
                         </li>
                         <li Class="JobGiver_AIFollowMaster"/>
                         <li Class="JobGiver_WanderNearMaster" />
-						
-							<!-- Modded: Cut Plants -->
-							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
-								<workGiverDef>PlantsCut</workGiverDef>
-							</li>	
-							
-							<!-- Modded: Harvest Plants -->
-							
-							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
-								<workGiverDef>GrowerHarvest</workGiverDef>
-							</li>		
-							
-							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
-								<workGiverDef>WPGrowerSow</workGiverDef>
-							</li>		
-			
                       </subNodes>
                     </li>
 					
@@ -329,7 +333,7 @@
 							<!-- Modded: Cut Plants -->
 							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
 								<workGiverDef>PlantsCut</workGiverDef>
-							</li>	
+							</li>	 
 							
 							<!-- Modded: Harvest Plants -->
 							
@@ -339,14 +343,14 @@
 							
 							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
 								<workGiverDef>WPGrowerSow</workGiverDef>
-							</li>		
+							</li>		 
 			
 					  </subNodes>
 					</li>
 				  </subNodes>
 				</li>
 
-				<!-- Trained behavior: Haul-->
+				<!-- Trained behavior: Release-->
 				<li Class="ThinkNode_ConditionalTrainableCompleted">
 					<trainable>Release</trainable>
 					<subNodes>

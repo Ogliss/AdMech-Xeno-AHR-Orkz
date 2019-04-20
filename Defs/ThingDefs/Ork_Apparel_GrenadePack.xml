@@ -31,7 +31,7 @@
 		</recipeMaker>
 		<comps>  
 			<li Class="AbilityUser.CompProperties_AbilityItem">
-				<AbilityUserClass>AbilityUser.GenericCompAbilityUser</AbilityUserClass>
+				<AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass>
 				<Abilities>
 					<li>OGO_Ability_ThrowFrag</li>
 				</Abilities>
@@ -87,7 +87,7 @@
 		</recipeMaker>
 		<comps>  
 			<li Class="AbilityUser.CompProperties_AbilityItem">
-				<AbilityUserClass>AbilityUser.GenericCompAbilityUser</AbilityUserClass>
+				<AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass>
 				<Abilities>
 					<li>OGO_Ability_ThrowKrak</li>
 				</Abilities>
@@ -143,7 +143,7 @@
 		</recipeMaker>
 		<comps>  
 			<li Class="AbilityUser.CompProperties_AbilityItem">
-				<AbilityUserClass>AbilityUser.GenericCompAbilityUser</AbilityUserClass>
+				<AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass>
 				<Abilities>
 					<li>OGO_Ability_ThrowMelta</li>
 				</Abilities>

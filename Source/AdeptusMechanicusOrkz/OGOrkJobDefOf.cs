@@ -13,6 +13,6 @@ namespace RimWorld
 			DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkFactionDefOf));
 		}
 
-        public static JobDef TakeGrogOutOfOrkFermentingBarrel;
+    //    public static JobDef TakeGrogOutOfOrkFermentingBarrel;
     }
 }

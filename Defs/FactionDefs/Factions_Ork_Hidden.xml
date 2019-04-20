@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="OrkzBase">
+		<label>Orkz</label>
+    <pawnSingular>Ork</pawnSingular>
+		<pawnsPlural>Orkz</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>an orkish Waaargh</fixedName>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>Ork_Boss</li>
+			<li>Ork_Nob</li>
+			<li>Ork_Standard</li>
+			<li>Grot_Gretchin</li>
+		</backstoryCategories>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>false</autoFlee>
+		<geneticVariance>1</geneticVariance>
+		<earliestRaidDays>45</earliestRaidDays>
+		<hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Squig</li>
+				<li>Leather_Snotling</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- All types-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+		  <AttackSquig>5</AttackSquig>
+          <OrkRuntBoy>9</OrkRuntBoy>
+          <OrkWarboss>1</OrkWarboss>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7</OrkEavyShootaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkShootaNob>5</OrkShootaNob>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+          <OrkEavyShootaNob>3</OrkEavyShootaNob>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <OrkRuntBoy>9</OrkRuntBoy>
+          <OrkWarboss>1</OrkWarboss>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7</OrkEavyShootaBoy>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkShootaNob>5</OrkShootaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+          <OrkEavyShootaNob>3</OrkEavyShootaNob>
+        </options>
+      </li>
+      <li>
+        <!-- Melee only-->
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+		  <AttackSquig>5</AttackSquig>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+        </options>
+      </li>
+      <li>
+        <!-- Nob Squad -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <OrkEavyShootaNob>10</OrkEavyShootaNob>
+          <OrkEavyChoppaNob>10</OrkEavyChoppaNob>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>-100</min>
+      <max>200</max>
+    </allowedArrivalTemperatureRange>
+	</FactionDef>
+
+	<FactionDef ParentName="OrkzBase">
+		<defName>HulkOrkz</defName>
+    <description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.\n\nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+
+  <FactionDef ParentName="OrkzBase">
+    <defName>RokOrkz</defName>
+    <description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.\n\nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+
+  <!--
+  <FactionDef>
+    <defName>HostileOrkz</defName>
+	<description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.\n\nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
+    <label>orkish Waaargh!</label>
+    <pawnSingular>Ork</pawnSingular>
+    <pawnsPlural>Orkz</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>an orkish Waaargh!</fixedName>
+		<raidCommonalityFromPointsCurve>
+			<points>
+        <li>(700, 0.1)</li>
+        <li>(900, 0.2)</li>
+        <li>(1200, 1)</li>
+        <li>(4000, 1.5)</li>
+      </points>
+		</raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Ultra</techLevel>
+    <earliestRaidDays>45</earliestRaidDays>
+    <permanentEnemy>true</permanentEnemy>
+  <backstoryCategories>
+			<li>Ork_Boss</li>
+			<li>Ork_Nob</li>
+			<li>Ork_Standard</li>
+			<li>Grot_Gretchin</li>
+  	</backstoryCategories>
+			<hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+			</hairTags>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <OrkRuntBoy>9</OrkRuntBoy>
+          <OrkWarboss>1</OrkWarboss>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkEavyShootaBoy>7</OrkEavyShootaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkShootaNob>5</OrkShootaNob>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+          <OrkEavyShootaNob>3</OrkEavyShootaNob>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+          <OrkEavyChoppaBoy>7</OrkEavyChoppaBoy>
+          <OrkEavySluggaBoy>7</OrkEavySluggaBoy>
+          <OrkChoppaNob>5</OrkChoppaNob>
+          <OrkSluggaNob>5</OrkSluggaNob>
+          <OrkEavyChoppaNob>3</OrkEavyChoppaNob>
+          <OrkEavySluggaNob>3</OrkEavySluggaNob>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <OrkEavyShootaNob>10</OrkEavyShootaNob>
+          <OrkEavyChoppaNob>10</OrkEavyChoppaNob>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>-100</min>
+      <max>200</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+  -->
+  
+</Defs>

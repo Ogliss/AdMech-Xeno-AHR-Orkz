@@ -156,6 +156,7 @@
   <ThingDef ParentName="SquigBase">
     <defName>AttackSquig</defName>
     <race>
+	  <useMeatFrom>Squig</useMeatFrom>
       <intelligence>ToolUser</intelligence>
     </race>
     <tradeTags Inherit="false"> </tradeTags>
