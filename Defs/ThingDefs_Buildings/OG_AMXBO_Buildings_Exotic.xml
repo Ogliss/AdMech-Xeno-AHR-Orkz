@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Class="AdeptusMechanicus.ThingDef_Hivelike" ParentName="BuildingHivelikeBase">
+    <defName>OG_Ork_Rok</defName>
+    <label>Ork Rok</label>
+	<thingClass>AdeptusMechanicus.Building_HiveLike_CrashedShipPart</thingClass>
+		<Faction>RokOrkz</Faction>
+		<TunnelDef>OGORokTunnel</TunnelDef>
+    <description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials.</description>
+    <graphicData>
+      <texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+			<shadowData>
+				<volume>(5.5, 1.0, 2.45)</volume>
+			</shadowData>
+    </graphicData>
+    <size>(6,6)</size>
+		<comps>
+			<li Class="CompProperties_PawnSpawnerOnDamaged"> 
+			<Faction>RokOrkz</Faction>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_Spawner_HiveLike_CrashedShipPart">
+			<tunnelthingDef>OGORokTunnel</tunnelthingDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ShipPartBaseOG">
+    <defName>SpaceHulkPart</defName>
+    <label>Space Hulk Part</label>
+    <description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials.</description>
+    <graphicData>
+      <texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,3)</drawSize>
+			<shadowData>
+				<volume>(5.5, 1.0, 2.45)</volume>
+			</shadowData>
+    </graphicData>
+		<comps>
+			<li Class="CompProperties_PawnSpawnerOnDamaged"> 
+			<Factions>
+			<li>RokOrkz</li>
+			<li>Pirate</li>
+			</Factions>
+			</li>
+		</comps>
+  </ThingDef>
+
+</Defs>

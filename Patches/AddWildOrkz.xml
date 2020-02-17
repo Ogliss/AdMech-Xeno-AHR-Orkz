@@ -9,7 +9,7 @@
 	  <value>
 		<!-- Wild Ork behavior core Link -->
         <li Class="ThinkNode_ConditionalPawnKind">
-          <pawnKind>WildOrk</pawnKind>
+          <pawnKind>OG_Ork_Wild</pawnKind>
           <subNodes>
             <li Class="ThinkNode_Subtree">
               <treeDef>MainWildManBehaviorCore</treeDef>
@@ -24,7 +24,7 @@
 	  <value>
         <!-- Idle wild man -->
         <li Class="ThinkNode_ConditionalPawnKind">
-          <pawnKind>WildOrk</pawnKind>
+          <pawnKind>OG_Ork_Wild</pawnKind>
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>Idle</tagToGive>
@@ -48,7 +48,7 @@
 	  <value>
 		<!-- Wild Grot behavior core Link -->
         <li Class="ThinkNode_ConditionalPawnKind">
-          <pawnKind>WildGrot</pawnKind>
+          <pawnKind>OG_Grot_Wild</pawnKind>
           <subNodes>
             <li Class="ThinkNode_Subtree">
               <treeDef>MainWildManBehaviorCore</treeDef>
@@ -63,7 +63,7 @@
 	  <value>
         <!-- Idle wild Grot -->
         <li Class="ThinkNode_ConditionalPawnKind">
-          <pawnKind>WildGrot</pawnKind>
+          <pawnKind>OG_Grot_Wild</pawnKind>
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>Idle</tagToGive>
