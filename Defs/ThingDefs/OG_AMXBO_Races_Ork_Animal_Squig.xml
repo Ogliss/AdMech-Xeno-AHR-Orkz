@@ -3,7 +3,7 @@
   <!-- ========================== Squig ================================= -->
   <ThingDef Name="SquigBase" ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>OG_Squig</defName>
-    <label>squig</label>
+    <label>Squig</label>
     <description>Heavily-muscled creatures with vicious unnatural claws and an absurdly powerful bite. They will only eat meat or corpses. If disturbed in the wild, they are very likely to attack. Squigs are usually found in and around Ork Settlements and camps, often kept as Guard/Attack Dogs.</description>
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
@@ -97,10 +97,10 @@
     </tradeTags>
   </ThingDef>
   
-  <PawnKindDef Name="Squig" ParentName="AnimalKindBase">
+  <PawnKindDef Name="OG_Squig" ParentName="AnimalKindBase">
     <defName>OG_Squig</defName>
-    <label>squig</label>
-    <race>Squig</race>
+    <label>Squig</label>
+    <race>OG_Squig</race>
     <combatPower>160</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <lifeStages>
@@ -157,13 +157,13 @@
   <ThingDef ParentName="SquigBase">
     <defName>OG_Squig_Ork</defName>
     <race>
-	  <useMeatFrom>Squig</useMeatFrom>
+	  <useMeatFrom>OG_Squig</useMeatFrom>
       <intelligence>ToolUser</intelligence>
     </race>
     <tradeTags Inherit="false"> </tradeTags>
   </ThingDef>
   
-  <PawnKindDef Name="OG_Squig_Ork" ParentName="Squig">
+  <PawnKindDef Name="OG_Squig_Ork" ParentName="OG_Squig">
     <defName>OG_Squig_Ork</defName>
     <race>OG_Squig_Ork</race>
 	<defaultFactionType>OG_Ork_Tek_Faction</defaultFactionType>

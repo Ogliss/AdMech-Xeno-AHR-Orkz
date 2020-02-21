@@ -10,7 +10,7 @@
     </li>
 	
     <li Class="PatchOperationAddModExtension">
-    <xpath>/Defs/PawnKindDef[defName="OrkBase" or defName="FeralOrkBase"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="OG_Orkoid_Base" or defName="OG_Orkoid_Feral"]</xpath>
 		<value>
 		  <li Class="CombatExtended.LoadoutPropertiesExtension">
 			<primaryMagazineCount>

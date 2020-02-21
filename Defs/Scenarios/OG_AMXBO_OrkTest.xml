@@ -9,7 +9,7 @@
 <summary>Five escaped Orks attempt to build a colony. Difficult.</summary>
 		<playerFaction>
 			<def>PlayerFaction</def>
-			<factionDef>OG_Ork_Player</factionDef>
+			<factionDef>OG_Ork_PlayerColony</factionDef>
 		</playerFaction>
 		<parts>
 			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -74,7 +74,7 @@
 			</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
-					<animalKind>Squig</animalKind>
+					<animalKind>OG_Squig</animalKind>
 					<count>1</count>
 					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
 				</li>
@@ -144,7 +144,7 @@
 			<summary>Five lost tribespeople attempt to rebuild. Difficult.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>OG_Ork_Feral_Player</factionDef>
+				<factionDef>OG_Ork_Feral_PlayerTribe</factionDef>
 			</playerFaction>
 			<parts>
 
@@ -227,7 +227,7 @@
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
-					<animalKind>Squig</animalKind>
+					<animalKind>OG_Squig</animalKind>
 					<count>3</count>
 					<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
 				</li>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Player_Base" Abstract="True">
-    <defName>OG_Ork_Player</defName>
+  <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_PlayerFactionBase" Abstract="True">
+    <defName>OG_Ork_PlayerColony</defName>
     <label>Ork Colony</label>
     <description>Your own kommunity.</description>
     <isPlayer>true</isPlayer>
@@ -57,17 +57,17 @@
     </pawnGroupMakers>
   </FactionDef>
   
-  <FactionDef ParentName="OG_Ork_Player_Base">
-    <defName>OG_Ork_Player</defName>
+  <FactionDef ParentName="OG_Ork_PlayerFactionBase">
+    <defName>OG_Ork_PlayerColony</defName>
   </FactionDef>
 
 <!--
   <FactionDef ParentName="OG_Ork_Player_Base">
     <defName>OrkPlayerColony</defName>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
+  </FactionDef> OG_Ork_PlayerFactionBase
   -->
-    <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_Player_Base" Abstract="True">
+    <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
     <label>Ork Tribal</label>
     <description>Ork Tribal Start.</description>
     <isPlayer>true</isPlayer>
@@ -123,8 +123,8 @@
     </pawnGroupMakers>
     </FactionDef>
 	
-  <FactionDef ParentName="OG_Ork_Feral_Player_Base">
-    <defName>OG_Ork_Feral_Player</defName>
+  <FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
+    <defName>OG_Ork_Feral_PlayerTribe</defName>
   </FactionDef>
 
 <!--

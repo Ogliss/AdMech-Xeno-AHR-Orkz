@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ============================ Ork Base ========================== -->
-  <PawnKindDef Name="OrkBase" Abstract="True">
+  <PawnKindDef Name="OG_Orkoid_Base" Abstract="True">
     <defaultFactionType>OG_Ork_Tek_Faction</defaultFactionType>
 	<!-- 
     <race>OG_Alien_Ork</race>
@@ -19,7 +19,7 @@
   </PawnKindDef>
   
   <!-- ============================ Ork Civilian Base ========================== -->
-  <PawnKindDef Name="OrkCivBase" ParentName="OrkBase" Abstract="True">
+  <PawnKindDef Name="OrkCivBase" ParentName="OG_Orkoid_Base" Abstract="True">
     <combatPower>25</combatPower>
 	<race>OG_Alien_Ork</race>
     <itemQuality>Normal</itemQuality>
@@ -75,7 +75,7 @@
   </PawnKindDef>
  
   <!-- ============================ Grot Civilian Base ========================== -->
-  <PawnKindDef Name="GrotCivBase" ParentName="OrkBase" Abstract="True">
+  <PawnKindDef Name="GrotCivBase" ParentName="OG_Orkoid_Base" Abstract="True">
     <combatPower>25</combatPower>
 	<race>Alien_Grot</race>
     <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
@@ -270,7 +270,7 @@
   </PawnKindDef>
   
   <!-- ============================ Ork Military Base ========================== -->
-  <PawnKindDef Name="OrkMilBase" ParentName="OrkBase" Abstract="True">
+  <PawnKindDef Name="OrkMilBase" ParentName="OG_Orkoid_Base" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
 	<race>OG_Alien_Ork</race>

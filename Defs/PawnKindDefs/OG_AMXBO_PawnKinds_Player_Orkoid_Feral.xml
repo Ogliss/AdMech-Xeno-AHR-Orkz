@@ -25,7 +25,7 @@
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>Tribesperson_OG_Ork_Boy_Feral</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_Player</defaultFactionType>
+    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
     <backstoryCategories>
 			<li>Ork_Standard</li>
   	</backstoryCategories>
@@ -42,7 +42,7 @@
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>Tribesperson_OG_Ork_Feral_Weird</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_Player</defaultFactionType>
+    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
     <backstoryCategories>
       <li>Ork_Weird</li>
       <li>Ork_Weird_Boy</li>
@@ -62,7 +62,7 @@
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>Tribesperson_OG_Ork_Nob_Feral</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_Player</defaultFactionType>
+    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
     <backstoryCategories>
 			<li>Ork_Nob</li>
   	</backstoryCategories>
@@ -79,7 +79,7 @@
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>Tribesperson_OG_Ork_Feral_Warboss</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_Player</defaultFactionType>
+    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
     <backstoryCategories>
 			<li>Ork_Boss</li>
   	</backstoryCategories>
@@ -105,7 +105,7 @@
   <PawnKindDef ParentName="BaseFeralGrotPawnKind">
     <defName>Tribesperson_OG_Grot_Feral</defName>
     <label>Grot Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_Player</defaultFactionType>
+    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
     <backstoryCategories>
 			<li>Grot_Gretchin</li>
   	</backstoryCategories>

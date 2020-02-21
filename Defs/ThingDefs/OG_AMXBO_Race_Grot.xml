@@ -191,8 +191,8 @@
                     <factions>
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_Player</li>
-					   <li>OG_Ork_Feral_Player</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_Feral_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -331,15 +331,17 @@
             </ateThoughtSpecific>
 			<!-- -->
 			<replacerList>
-				<!-- 
                 <li>
                     <original>EnvironmentDark</original>
                     <replacer>EnvironmentDark_OGOrkoid</replacer> 
                 </li>
-				-->
                 <li>
                     <original>ApparelDamaged</original>
                     <replacer>ApparelDamaged_OGOrkoid</replacer> 
+                </li>
+                <li>
+                    <original>DeadMansApparel</original>
+                    <replacer>DeadMansApparel_OGOrkoid</replacer> 
                 </li>
                 <li>
                     <original>DeadMansApparel</original>
@@ -498,6 +500,7 @@
 				<li>PawnWithGoodOpinionDied</li>
 				-->
 				
+				<li>ApparelDamaged</li>
 				<li>FeelingRandom</li>
 				<li>CabinFever</li>
 				
@@ -522,6 +525,7 @@
 				<li>KnowPrisonerSold</li>
 				<li>KnowGuestOrganHarvested</li>
 				<li>SleptInBarracks</li>
+				<li>SleepDisturbed</li>
 				
                 <li>AteOrkMeal</li>
                 <li>AteOrkFungusDirect</li>

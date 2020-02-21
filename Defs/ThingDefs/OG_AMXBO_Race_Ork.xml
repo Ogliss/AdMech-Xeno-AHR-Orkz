@@ -107,7 +107,7 @@
                 </li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>OG_Ork_Player</li> 
+						<li>OG_Ork_PlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
@@ -139,7 +139,7 @@
                 </li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>OG_Ork_Feral_Player</li> 
+						<li>OG_Ork_Feral_PlayerTribe</li> 
 					</factionDefs>
 				</li>
 				<li>
@@ -251,8 +251,8 @@
                 </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>OG_Ork_Player</li> 
-						<li>OG_Ork_Feral_Player</li> 
+                        <li>OG_Ork_PlayerColony</li> 
+						<li>OG_Ork_Feral_PlayerTribe</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
@@ -463,8 +463,8 @@
                     <factions>
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_Player</li>
-					   <li>OG_Ork_Feral_Player</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_Feral_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -779,6 +779,7 @@
 				<li>PawnWithGoodOpinionDied</li>
 				-->
 				<li>Pain</li>
+				<li>ApparelDamaged</li>
 				<li>FeelingRandom</li>
 				<li>CabinFever</li>
 				<li>Sick</li>

@@ -63,7 +63,7 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-		  <!-- <Squig>100</Squig> -->
+		  <!-- <OG_Squig>100</OG_Squig> -->
           <Slave_OG_Grot>5</Slave_OG_Grot>
           <Colonist_OG_Grot>5</Colonist_OG_Grot>
           <OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
@@ -86,7 +86,7 @@
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
-		  <!-- <Squig>50</Squig> -->
+		  <!-- <OG_Squig>50</OG_Squig> -->
           <Colonist_OG_Grot>10</Colonist_OG_Grot>
           <OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
           <OG_Ork_Warboss>1</OG_Ork_Warboss>
@@ -107,7 +107,7 @@
           <Dromedary>2</Dromedary>
         </carriers>
         <guards>
-		  <!-- <Squig>50</Squig> -->
+		  <!-- <OG_Squig>50</OG_Squig> -->
           <OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
           <OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
           <OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>

@@ -10,12 +10,12 @@
       <xpath>Defs/ResearchTabDef[defName="CE_Turrets"]</xpath>
     </li>
     <li Class="PatchOperationTest">
-      <xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]/statBases/MeleeParryChance</xpath>
+      <xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/statBases/MeleeParryChance</xpath>
 		<success>Invert</success>
     </li>
 
 	<li Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]</xpath>
+		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Quadruped</bodyShape>
@@ -24,14 +24,14 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]/statBases/MoveSpeed</xpath>
+		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/statBases/MoveSpeed</xpath>
 		<value>
 			<MoveSpeed>6</MoveSpeed>
 		</value>
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/statBases</xpath>
 		<value>
 			<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.125</ArmorRating_Sharp>
@@ -42,7 +42,7 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/tools</xpath>
 		<value>
 			<tools>
 			<!--
@@ -117,7 +117,7 @@
 	</li>
 
 	<li Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Squig" or defName="AttackSquig"]/race/baseHealthScale</xpath>
+		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/race/baseHealthScale</xpath>
 		<value>
 			<baseHealthScale>1.5</baseHealthScale>
 		</value>
