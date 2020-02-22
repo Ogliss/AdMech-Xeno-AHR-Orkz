@@ -139,7 +139,7 @@
   </FactionDef>
 	
   <FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
-    <defName>OG_Ork_Feral_PlayerTribe</defName>
+    <defName>OG_Ork_PlayerTribe</defName>
   </FactionDef>
 
 <!--

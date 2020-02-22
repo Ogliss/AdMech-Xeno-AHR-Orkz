@@ -155,15 +155,4 @@
     </colorSpectrum>
   </FactionDef>
 
-<!--
-  <FactionDef ParentName="OG_Ork_Tek_Faction_Base">
-    <defName>OrkFaction</defName>
-    <label>ork warband</label>
-    <colorSpectrum>
-      <li>(0.35, 0.35, 0)</li>
-      <li>(0.4, 0.2, 0)</li>
-    </colorSpectrum>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
--->
 </Defs>

@@ -146,7 +146,7 @@
 			<summary>Five lost tribespeople attempt to rebuild. Difficult.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>OG_Ork_Feral_PlayerTribe</factionDef>
+				<factionDef>OG_Ork_PlayerTribe</factionDef>
 			</playerFaction>
 			<parts>
 

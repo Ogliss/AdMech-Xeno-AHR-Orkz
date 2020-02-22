@@ -94,11 +94,7 @@ namespace AdeptusMechanicus
         {
             get
             {
-                if (pawnKindDef.RaceProps.Humanlike)
-                {
-                    return 16.5f;
-                }
-                else return 0f;
+                return 0f;
             }
             set
             {
@@ -117,19 +113,19 @@ namespace AdeptusMechanicus
                     spawnRoll = Rand.Value;
                     if (spawnRoll < snotlingChance & spawnRoll > grotChance)
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.Snotling;
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Find(x=> x.defName.Contains("Snotling") && x.defaultFactionType==null);
                     }
                     else if (spawnRoll < grotChance & spawnRoll > orkChance)
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.WildGrot;
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Find(x => x.defName.Contains("Wild") && x.defName.Contains("Grot"));
                     }
                     else if (spawnRoll < orkChance)
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.WildOrk;
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Find(x => x.defName.Contains("Wild") && x.defName.Contains("Ork"));
                     }
                     else
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.Squig;
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Find(x => x.defName.Contains("Squig") && x.defaultFactionType == null);
                     }
                     if (spawnwild)
                     {
@@ -147,19 +143,20 @@ namespace AdeptusMechanicus
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, false, false, false, true, true, 20f, fixedGender: Gender.Male, fixedBiologicalAge: age, fixedChronologicalAge: age);
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
                     
-                    if (pawn.kindDef==OGOrkPawnKindDefOf.WildOrk)
+                    if (pawn.kindDef.defName.Contains("Ork"))
                     {
                         pawn.story.childhood.identifier = "Ork_Base_Child";
                     }
-                    else if (pawn.kindDef==OGOrkPawnKindDefOf.WildGrot)
+                    else
+                    if (pawn.kindDef.defName.Contains("Grot"))
                     {
                         pawn.story.childhood.identifier = "Grot_Base_Child";
                     }
-                    if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
+                    if (spawnwild && pawnKindDef.RaceProps.Humanlike)
                     {
                             pawn.ChangeKind(PawnKindDefOf.WildMan);
                     }
-                    else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OrkPlayerColonyTribal && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
+                    else if (!spawnwild && (Faction.OfPlayer.def.defName.Contains("_Ork_") || Faction.OfPlayer.def.defName.Contains("_Grot_"))  && pawnKindDef.RaceProps.Humanlike)
                     {
                         pawn.ChangeKind(PawnKindDefOf.Colonist);
                     }

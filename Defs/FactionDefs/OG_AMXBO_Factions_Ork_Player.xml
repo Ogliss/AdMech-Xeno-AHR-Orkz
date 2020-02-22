@@ -61,12 +61,6 @@
     <defName>OG_Ork_PlayerColony</defName>
   </FactionDef>
 
-<!--
-  <FactionDef ParentName="OG_Ork_Player_Base">
-    <defName>OrkPlayerColony</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef> OG_Ork_PlayerFactionBase
-  -->
     <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
     <label>Ork Tribal</label>
     <description>Ork Tribal Start.</description>
@@ -124,13 +118,8 @@
     </FactionDef>
 	
   <FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
-    <defName>OG_Ork_Feral_PlayerTribe</defName>
+    <defName>OG_Ork_PlayerTribe</defName>
   </FactionDef>
 
-<!--
-  <FactionDef ParentName="OG_Ork_Feral_Player_Base">
-    <defName>OrkPlayerColonyTribal</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
-  -->
+
 </Defs>

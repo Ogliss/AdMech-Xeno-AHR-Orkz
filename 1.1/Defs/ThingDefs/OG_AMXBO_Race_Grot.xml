@@ -191,7 +191,7 @@
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
 					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_Feral_PlayerTribe</li>
+					   <li>OG_Ork_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -210,7 +210,12 @@
                 </li>
 				<li>
                     <factions>
-                       <li>EldarFaction</li>
+                       <li>OG_Eldar_Craftworld_Faction</li>
+                       <li>OG_Eldar_Exodite_Faction</li>
+                       <li>OG_Eldar_Harlequin_Faction</li>
+                       <li>OG_Eldar_Craftworld_PlayerColony</li>
+                       <li>OG_Eldar_Exodite_PlayerColony</li>
+                       <li>OG_Eldar_Harlequin_PlayerColony</li>
 					   <li>EldarPlayerColony</li>
                     </factions>
                     <goodwill>

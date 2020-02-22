@@ -192,7 +192,7 @@
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
 					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_Feral_PlayerTribe</li>
+					   <li>OG_Ork_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
