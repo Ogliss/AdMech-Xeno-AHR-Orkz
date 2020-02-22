@@ -58,7 +58,7 @@
       <HintPath>..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\packages\Lib.Harmony.2.0.0.5\lib\net472\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AlienRace">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>..\..\..\..\AlienRaces\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
