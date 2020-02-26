@@ -62,7 +62,7 @@
     <ThingCategoryDef>
       <defName>OG_Corpses_Orkoid</defName>
       <label>ork corpses</label>
-      <parent>OG_Corpses_Xenos</parent>
+      <parent>CorpsesHumanlike</parent>
     </ThingCategoryDef>
 	
 <!-- Ork Construct Corpse -->

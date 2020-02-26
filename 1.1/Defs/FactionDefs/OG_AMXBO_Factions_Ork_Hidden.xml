@@ -12,11 +12,8 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ork_Boss</li>
-				<li>Ork_Nob</li>
 				<li>Ork_Standard</li>
 				<li>Grot_Gretchin</li>
-				<li>Pirate</li>
 			</categories>
 		  </li>
 		</backstoryFilters>

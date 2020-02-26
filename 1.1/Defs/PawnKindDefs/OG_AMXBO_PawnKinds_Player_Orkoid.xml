@@ -22,7 +22,6 @@
     </lifeStages>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>false</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>
@@ -111,7 +110,6 @@
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>false</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>

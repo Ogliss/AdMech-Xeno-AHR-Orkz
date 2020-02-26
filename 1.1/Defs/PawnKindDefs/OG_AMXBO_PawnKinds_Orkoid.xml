@@ -149,7 +149,6 @@
     <isFighter>true</isFighter>
     <combatPower>250</combatPower>
     <minGenerationAge>50</minGenerationAge>
-	<maxGenerationAge>600</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>2.0</max>
@@ -184,6 +183,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
+          <li>Ork_Standard</li>
           <li>Ork_Boss</li>
         </categories>
       </li>

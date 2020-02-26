@@ -131,7 +131,7 @@
           <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated</texPath>
           <drawSize>0.55</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -147,7 +147,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated</texPath>
           <drawSize>0.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -163,7 +163,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
+          <texPath>Things/Pawn/Humanlike/Bodies/Dessicated</texPath>
           <drawSize>1.05</drawSize>
         </dessicatedBodyGraphicData>
       </li>

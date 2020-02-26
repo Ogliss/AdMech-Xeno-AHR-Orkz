@@ -103,7 +103,7 @@
     <defName>Ork_Boy_Shoota</defName>
     <title>sharpshooter</title>
     <titleShort>Snipa</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -153,7 +153,7 @@
     <defName>Ork_Boy_Slugga</defName>
     <title>Slugga</title>
     <titleShort>Slugga</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -204,7 +204,7 @@
     <defName>Ork_Boy_Choppa</defName>
     <title>Choppa</title>
     <titleShort>Choppa</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -254,7 +254,7 @@
     <defName>Ork_Boy_Brewer</defName>
     <title>Brewer</title>
     <titleShort>Brewer</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -286,7 +286,7 @@
     <defName>Ork_Boy_Shouter</defName>
     <title>Shouta</title>
     <titleShort>Shouta</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -324,7 +324,7 @@
     <defName>Ork_Boy_Herda</defName>
     <title>Herda</title>
     <titleShort>Herda</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -356,7 +356,7 @@
     <defName>Ork_Boy_Mad</defName>
     <title>Madboy</title>
     <titleShort>Madboy</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -402,7 +402,7 @@
     <defName>OrkMekboy</defName>
     <title>Mekboy</title>
     <titleShort>Mekboy</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -445,7 +445,7 @@
     <defName>Ork_Boy_Doc</defName>
     <title>Mad doc</title>
     <titleShort>Mad doc</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -491,7 +491,7 @@
     <defName>Ork_Nob_Crusher</defName>
     <title>Crusher</title>
     <titleShort>Crusher</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -542,7 +542,7 @@
     <defName>Ork_Nob_Mek</defName>
     <title>Mek</title>
     <titleShort>Mek</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -595,7 +595,7 @@
     <defName>Ork_Nob_Flash</defName>
     <title>Flash Git</title>
     <titleShort>Flash</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -651,7 +651,7 @@
     <defName>Ork_Nob_Devastator</defName>
     <title>Devistata</title>
     <titleShort>Devistata</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -708,7 +708,7 @@
     <defName>Ork_Boss_Nob</defName>
     <title>Boss</title>
     <titleShort>Boss</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>50</min>
     </bioAgeRange>
@@ -757,7 +757,7 @@
     <defName>Ork_Boss_Mek</defName>
     <title>Big Mek</title>
     <titleShort>Big Mek</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>50</min>
     </bioAgeRange>
