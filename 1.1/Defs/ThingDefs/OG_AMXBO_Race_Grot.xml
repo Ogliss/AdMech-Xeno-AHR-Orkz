@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<AlienRace.ThingDef_AlienRace Name="OG_Grot_Race" ParentName="OG_Ork_Pawn_Base" Abstract="True">
-    <defName>Alien_Grot</defName>
+<AlienRace.ThingDef_AlienRace Name="OG_Grot_Race" ParentName="OG_Ork_Pawn_Base">
+    <defName>OG_Alien_Grot</defName>
     <label>Grot</label>
     <description>The worker of the orkoid species: A fully grown Grot.</description>
     <alienRace>
@@ -190,8 +190,8 @@
                     <factions>
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_PlayerTribe</li>
+					   <li>OG_Ork_Player</li>
+					   <li>OG_Ork_Feral_Player</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -210,12 +210,7 @@
                 </li>
 				<li>
                     <factions>
-                       <li>OG_Eldar_Craftworld_Faction</li>
-                       <li>OG_Eldar_Exodite_Faction</li>
-                       <li>OG_Eldar_Harlequin_Faction</li>
-                       <li>OG_Eldar_Craftworld_PlayerColony</li>
-                       <li>OG_Eldar_Exodite_PlayerColony</li>
-                       <li>OG_Eldar_Harlequin_PlayerColony</li>
+                       <li>EldarFaction</li>
 					   <li>EldarPlayerColony</li>
                     </factions>
                     <goodwill>
@@ -568,6 +563,7 @@
         <raceRestriction>
             <researchList>
                 <li>
+					
                     <projects>
 						<li>OrkTekBase</li>
 						<li>OrkishBrutality</li>
@@ -581,6 +577,7 @@
 						<li>OrkishBigMekBrainz</li>
 						<li>OrkishMegaArmour</li>
                     </projects>
+					
                     <apparelList>
 						
                     </apparelList>
@@ -827,17 +824,11 @@
       </li>
     </comps>
 </AlienRace.ThingDef_AlienRace>
-
+<!--
 <AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
     <defName>OG_Alien_Grot</defName>
     <label>Grot</label>
     <description>The worker of the orkoid species: A fully grown Grot.</description>
 </AlienRace.ThingDef_AlienRace>
-
-<AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
-    <defName>Alien_Grot</defName>
-    <label>Grot</label>
-    <description>The worker of the orkoid species: A fully grown Grot.</description>
-</AlienRace.ThingDef_AlienRace>
-
+-->
 </Defs>

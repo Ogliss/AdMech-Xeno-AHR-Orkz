@@ -397,7 +397,7 @@
 
   <!-- ============================ Weird Boyz ========================== -->
   <PawnKindDef ParentName="OrkBoy">
-    <defName>OrkWeirdBoy</defName>
+    <defName>OG_Ork_Weird_Boy</defName>
     <label>Weird boy</label>
     <backstoryFiltersOverride>
       <li>
@@ -638,7 +638,7 @@
   
    <!-- ============================ Weird Nob ========================== -->
   <PawnKindDef ParentName="OG_Ork_Nob">
-    <defName>OrkWeirdNob</defName>
+    <defName>OG_Ork_Weird_Nob</defName>
     <label>Weird Nob</label>
     <backstoryFiltersOverride>
       <li>
@@ -660,7 +660,7 @@
     <label>Eavy Nob</label>
     <combatPower>220</combatPower>
     <minGenerationAge>26</minGenerationAge>
-	<race>OG_Cyborg_Ork</race>
+	<race>OG_Alien_Ork</race>
     <backstoryFiltersOverride>
       <li>
         <categories>

@@ -17,7 +17,7 @@
       <LeatherAmount>25</LeatherAmount>
     </statBases>
     <race>      
-      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <thinkTreeConstant>SnotlingConstant</thinkTreeConstant>
       <hasGenders>false</hasGenders>
       <nameGenerator>NamerSnotling</nameGenerator>
       <nameGeneratorFemale>NamerSnotling</nameGeneratorFemale>
@@ -569,7 +569,7 @@
 	</ThinkTreeDef>
 
 	<ThinkTreeDef>
-		<defName>AnimalConstant</defName>
+		<defName>SnotlingConstant</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">

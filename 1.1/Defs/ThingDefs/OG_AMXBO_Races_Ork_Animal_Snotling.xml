@@ -130,10 +130,6 @@
           <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>0.55</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
@@ -146,10 +142,6 @@
             <offset>(0,0,-0.15)</offset>
           </shadowData>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>0.7</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
@@ -162,10 +154,6 @@
             <offset>(0,0,-0.15)</offset>
           </shadowData>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>1.05</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>

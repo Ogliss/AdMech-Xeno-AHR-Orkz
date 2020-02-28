@@ -370,7 +370,7 @@
 
   <!-- ============================ Weird Boyz ========================== -->
   <PawnKindDef ParentName="OrkBoy">
-    <defName>OrkWeirdBoy</defName>
+    <defName>OG_Ork_Weird_Boy</defName>
     <label>Weird boy</label>
 	<backstoryCategories>
 			<li>Ork_Weird_Boy</li>
@@ -575,7 +575,7 @@
   
    <!-- ============================ Weird Nob ========================== -->
   <PawnKindDef ParentName="OG_Ork_Nob">
-    <defName>OrkWeirdNob</defName>
+    <defName>OG_Ork_Weird_Nob</defName>
     <label>Weird Nob</label>
 	<backstoryCategories>
 			<li>Ork_Weird_Nob</li>

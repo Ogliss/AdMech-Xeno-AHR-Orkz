@@ -104,28 +104,27 @@ namespace AdeptusMechanicus
 
         public override void PostDeSpawn(Map map)
         {
-            base.PostDeSpawn(map);
             if (canspawn == true)
             {
                 var spawnRoll = Rand.Value;
                 if (spawnRoll < (spawnChance*plant.Growth))
                 {
                     spawnRoll = Rand.Value;
+                    if (spawnRoll < orkChance)
+                    {
+                        pawnKindDef = OGOrkPawnKindDefOf.OG_Ork_Wild;
+                    }
+                    else if (spawnRoll < grotChance)
+                    {
+                        pawnKindDef = OGOrkPawnKindDefOf.OG_Grot_Wild;
+                    }
                     if (spawnRoll < snotlingChance & spawnRoll > grotChance)
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.Snotling;
-                    }
-                    else if (spawnRoll < grotChance & spawnRoll > orkChance)
-                    {
-                        pawnKindDef = OGOrkPawnKindDefOf.WildGrot;
-                    }
-                    else if (spawnRoll < orkChance)
-                    {
-                        pawnKindDef = OGOrkPawnKindDefOf.WildOrk;
+                        pawnKindDef = OGOrkPawnKindDefOf.OG_Ork_Snotling;
                     }
                     else
                     {
-                        pawnKindDef = OGOrkPawnKindDefOf.Squig;
+                        pawnKindDef = OGOrkPawnKindDefOf.OG_Squig;
                     }
                     if (spawnwild)
                     {
@@ -143,25 +142,26 @@ namespace AdeptusMechanicus
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, false, false, false, true, true, 20f, fixedGender: Gender.Male, fixedBiologicalAge: age, fixedChronologicalAge: age);
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
                     
-                    if (pawn.kindDef==OGOrkPawnKindDefOf.WildOrk)
+                    if (pawn.kindDef==OGOrkPawnKindDefOf.OG_Ork_Wild)
                     {
                         pawn.story.childhood.identifier = "Ork_Base_Child";
                     }
-                    else if (pawn.kindDef==OGOrkPawnKindDefOf.WildGrot)
+                    else if (pawn.kindDef==OGOrkPawnKindDefOf.OG_Grot_Wild)
                     {
                         pawn.story.childhood.identifier = "Grot_Base_Child";
                     }
-                    if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
+                    if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
                     {
                             pawn.ChangeKind(PawnKindDefOf.WildMan);
                     }
-                    else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OrkPlayerColonyTribal && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
+                    else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
                     {
                         pawn.ChangeKind(PawnKindDefOf.Colonist);
                     }
                     GenSpawn.Spawn(pawn, base.parent.Position, map, 0);
                 }
             }
+            base.PostDeSpawn(map);
         }
 
         public PawnKindDef pawnKindDef;
