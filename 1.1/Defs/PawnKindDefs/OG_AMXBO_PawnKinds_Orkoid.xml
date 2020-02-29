@@ -3,7 +3,7 @@
   <!-- ============================ Ork Base ========================== -->
   <PawnKindDef Name="OG_Orkoid_Base" Abstract="True">
     <defaultFactionType>OG_Ork_Tek_Faction</defaultFactionType>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Standard</li>
@@ -130,7 +130,7 @@
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Grot_Gretchin</li>
@@ -180,10 +180,9 @@
     <techHediffsTags>
       <li>Advanced</li>
     </techHediffsTags>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
-          <li>Ork_Standard</li>
           <li>Ork_Boss</li>
         </categories>
       </li>
@@ -216,7 +215,7 @@
   <PawnKindDef ParentName="GrotCivBase">
     <defName>Slave_OG_Grot</defName>
     <label>Grot slave</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Grot_Slave</li>
@@ -232,7 +231,7 @@
     <combatPower>50</combatPower>
     <minGenerationAge>10</minGenerationAge>
     <maxGenerationAge>16</maxGenerationAge>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Boy</li>
@@ -335,7 +334,7 @@
   <PawnKindDef Name="OrkBoy" ParentName="OrkMilBase" Abstract="True">
     <label>Boy</label>
     <combatPower>70</combatPower>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Boy</li>
@@ -351,7 +350,7 @@
   <PawnKindDef ParentName="OrkBoy">
     <defName>OG_Ork_Boy_Choppa</defName>
     <label>Choppa Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ChoppaBoy</li>
@@ -367,7 +366,7 @@
   <PawnKindDef ParentName="OrkBoy">
     <defName>OG_Ork_Boy_Slugga</defName>
     <label>Slugga Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_SluggaBoy</li>
@@ -383,7 +382,7 @@
   <PawnKindDef ParentName="OrkBoy">
     <defName>OG_Ork_Boy_Shoota</defName>
     <label>Shoota Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ShootaBoy</li>
@@ -399,7 +398,7 @@
   <PawnKindDef ParentName="OrkBoy">
     <defName>OG_Ork_Weird_Boy</defName>
     <label>Weird boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Weird_Boy</li>
@@ -418,7 +417,7 @@
   <PawnKindDef Name="OrkEavyBoy" ParentName="OrkMilBase" Abstract="True">
     <label>Eavy Boy</label>
     <combatPower>90</combatPower>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Boy</li>
@@ -477,7 +476,7 @@
   <PawnKindDef ParentName="OrkEavyBoy">
     <defName>OG_Ork_Eavy_Boy_Choppa</defName>
     <label>Eavy Choppa Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ChoppaBoy</li>
@@ -493,7 +492,7 @@
   <PawnKindDef ParentName="OrkEavyBoy">
     <defName>OG_Ork_Eavy_Boy_Slugga</defName>
     <label>Eavy Slugga Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_SluggaBoy</li>
@@ -509,7 +508,7 @@
   <PawnKindDef ParentName="OrkEavyBoy">
     <defName>OG_Ork_Eavy_Boy_Shoota</defName>
     <label>Eavy Shoota Boy</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ShootaBoy</li>
@@ -527,7 +526,7 @@
     <combatPower>135</combatPower>
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>50</maxGenerationAge>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Nob</li>
@@ -591,7 +590,7 @@
   <PawnKindDef ParentName="OG_Ork_Nob">
     <defName>OG_Ork_Nob_Choppa</defName>
     <label>Choppa Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ChoppaNob</li>
@@ -607,7 +606,7 @@
   <PawnKindDef ParentName="OG_Ork_Nob">
     <defName>OG_Ork_Nob_Slugga</defName>
     <label>Ork Slugga Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_SluggaNob</li>
@@ -623,7 +622,7 @@
   <PawnKindDef ParentName="OG_Ork_Nob">
     <defName>OG_Ork_Nob_Shoota</defName>
     <label>Shoota Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ShootaNob</li>
@@ -640,7 +639,7 @@
   <PawnKindDef ParentName="OG_Ork_Nob">
     <defName>OG_Ork_Weird_Nob</defName>
     <label>Weird Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Weird_Nob</li>
@@ -661,7 +660,7 @@
     <combatPower>220</combatPower>
     <minGenerationAge>26</minGenerationAge>
 	<race>OG_Alien_Ork</race>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Nob</li>
@@ -726,7 +725,7 @@
   <PawnKindDef ParentName="OrkEavyNob">
     <defName>OG_Ork_Eavy_Nob_Choppa</defName>
     <label>Eavy Choppa Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ChoppaNob</li>
@@ -743,7 +742,7 @@
   <PawnKindDef ParentName="OrkEavyNob">
     <defName>OG_Ork_Eavy_Nob_Slugga</defName>
     <label>Eavy Slugga Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_SluggaNob</li>
@@ -759,7 +758,7 @@
   <PawnKindDef ParentName="OrkEavyNob">
     <defName>OG_Ork_Eavy_Nob_Shoota</defName>
     <label>Ork Eavy Shoota Nob</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_ShootaNob</li>
@@ -842,7 +841,7 @@
   <PawnKindDef ParentName="OrkWarbossBase">
      <defName>OG_Ork_Warboss</defName>
     <label>Warboss</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Boss</li>
@@ -855,7 +854,7 @@
   <PawnKindDef ParentName="OrkWarbossBase">
     <defName>OG_Ork_Warboss_Weird</defName>
     <label>Prophet of Waaaargh</label>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Weird_Boss</li>
