@@ -300,8 +300,6 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>PlantWork</li>
-      <li>ManualSkilled</li>
     </workDisables>
     <skillGains>
       <li>
@@ -335,7 +333,8 @@
     <bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <workDisables>
-      <li>Caring</li>
+      <li>PlantWork</li>
+      <li>Cooking</li>
       <li>Intellectual</li>
     </workDisables>
     <skillGains>
@@ -458,7 +457,6 @@
     <workDisables>
       <li>Cooking</li>
       <li>Mining</li>
-      <li>ManualSkilled</li>
       <li>Crafting</li>
     </workDisables>
     <skillGains>
@@ -489,7 +487,7 @@
 <!-- Ork Nob Crusher --> 
   <AlienRace.BackstoryDef>
     <defName>Ork_Nob_Crusher</defName>
-    <title>Crusher</title>
+    <title>Crusher Nob</title>
     <titleShort>Crusher</titleShort>
 	
     <bioAgeRange>
@@ -505,10 +503,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
-      <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
 	<forcedTraits>
@@ -609,10 +604,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
-      <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
     <skillGains>
@@ -665,9 +657,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
       <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
@@ -721,7 +711,6 @@
       <li>Intellectual</li>
       <li>Caring</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
       <li>Crafting</li>
       <li>Mining</li>

@@ -82,10 +82,9 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-                        <li>Colonist_OG_Ork_Boy</li>
 						<li>Colonist_OG_Grot</li>
                     </kindDefs>
-                    <chance>80.0</chance>
+                    <chance>70.0</chance>
 					</li>
 					<li>
                     <kindDefs>
@@ -107,7 +106,7 @@
                 </li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>OG_Ork_Player</li> 
+						<li>OG_Ork_PlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
@@ -139,7 +138,7 @@
                 </li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>OG_Ork_Feral_Player</li> 
+						<li>OG_Ork_PlayerTribe</li> 
 					</factionDefs>
 				</li>
 				<li>
@@ -251,8 +250,8 @@
                 </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>OG_Ork_Player</li> 
-						<li>OG_Ork_Feral_Player</li> 
+                        <li>OG_Ork_PlayerColony</li> 
+						<li>OG_Ork_PlayerTribe</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
@@ -462,8 +461,8 @@
                     <factions>
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_Player</li>
-					   <li>OG_Ork_Feral_Player</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -987,7 +986,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>600</lifeExpectancy>
       <leatherDef>Leather_Ork</leatherDef>
-      <nameGenerator>NamerPersonOrk</nameGenerator>
+      <nameGenerator>NamerPerson_Ork_OG</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <meatColor>(200,135,100)</meatColor>

@@ -190,8 +190,8 @@
                     <factions>
                        <li>OG_Ork_Tek_Faction</li>
                        <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_Player</li>
-					   <li>OG_Ork_Feral_Player</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_PlayerTribe</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>
@@ -721,7 +721,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>300</lifeExpectancy>
       <leatherDef>Leather_Grot</leatherDef>
-      <nameGenerator>NamerPersonOrk</nameGenerator>
+      <nameGenerator>NamerPerson_Grot_OG</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <meatColor>(64, 128, 64)</meatColor>
@@ -761,15 +761,9 @@
       <ageGenerationCurve>
         <points>
 			<li>(0,0)</li>
-			<li>(3,200)</li>
-			<li>(10,250)</li>
-			<li>(20,150)</li>
-			<li>(30,100)</li>
-			<li>(40,12)</li>
-			<li>(50,6)</li>
-			<li>(120,1)</li>
-			<li>(140,1)</li>
-			<li>(200,0)</li>
+			<li>(5,200)</li>
+			<li>(10,50)</li>
+			<li>(20,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>

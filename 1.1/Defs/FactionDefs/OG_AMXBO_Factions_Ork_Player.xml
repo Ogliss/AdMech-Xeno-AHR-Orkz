@@ -5,20 +5,17 @@
     <label>Ork Colony</label>
     <description>Your own kommunity.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist_OG_Ork_Boy</basicMemberKind>
+    <basicMemberKind>Colonist_OG_Ork</basicMemberKind>
     <pawnsPlural>Boyz</pawnsPlural>
 	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
     <techLevel>Industrial</techLevel>
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ork_Boss</li>
-				<li>Ork_Nob</li>
-				<li>Ork_Standard</li>
-				<li>Grot_Gretchin</li>
 				<li>Pirate</li>
+				<li>Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
@@ -75,11 +72,11 @@
     <label>Ork Tribal</label>
     <description>Ork Tribal Start.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Tribesperson_OG_Ork_Boy_Feral</basicMemberKind>
+    <basicMemberKind>Tribesperson_OG_Ork</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-    <factionNameMaker>NamerOGOrkFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 		  <li>

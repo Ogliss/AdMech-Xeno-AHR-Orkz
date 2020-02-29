@@ -33,20 +33,29 @@ namespace AdeptusMechanicus.Orkz
         [HarmonyPostfix]
         public static void Post_GeneratePawn(ref Pawn __result)
         {
-            if (__result.kindDef.isOrkoid())
+            if (__result!=null)
             {
-                PawnKindDef kindDef = __result.kindDef;
-                if (__result.RaceProps.Humanlike)
+                if (__result.kindDef!=null)
                 {
-                    Pawn_StoryTracker storyTracker = __result.story;
-                    bool weirdKind = kindDef.defName.Contains("Weird");
-                    bool weirdStory = storyTracker.adulthood.identifier.Contains("Weird") || storyTracker.childhood.identifier.Contains("Weird");
-                    bool weirdOrk = __result.def == OGOrkThingDefOf.OG_Alien_Ork && (weirdStory || weirdKind);
-                    bool weirdGrot = __result.def == OGOrkThingDefOf.OG_Alien_Grot && (weirdStory || weirdKind);
-                    bool weird = (weirdGrot || weirdOrk);
-                    if (weird)
+                    if (__result.kindDef.isOrkoid())
                     {
-                     //   Log.Message(string.Format("{0} iz a wierd {1}....",__result.NameShortColored, __result.def.LabelCap));
+                        PawnKindDef kindDef = __result.kindDef;
+                        if (__result.RaceProps!=null)
+                        {
+                            if (__result.RaceProps.Humanlike)
+                            {
+                                Pawn_StoryTracker storyTracker = __result.story;
+                                bool weirdKind = kindDef.defName.Contains("Weird");
+                                bool weirdStory = storyTracker.adulthood.identifier.Contains("Weird") || storyTracker.childhood.identifier.Contains("Weird");
+                                bool weirdOrk = __result.def == OGOrkThingDefOf.OG_Alien_Ork && (weirdStory || weirdKind);
+                                bool weirdGrot = __result.def == OGOrkThingDefOf.OG_Alien_Grot && (weirdStory || weirdKind);
+                                bool weird = (weirdGrot || weirdOrk);
+                                if (weird)
+                                {
+                                    //   Log.Message(string.Format("{0} iz a wierd {1}....",__result.NameShortColored, __result.def.LabelCap));
+                                }
+                            }
+                        }
                     }
                 }
             }
