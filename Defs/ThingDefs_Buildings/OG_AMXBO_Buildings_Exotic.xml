@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef Class="AdeptusMechanicus.ThingDef_Hivelike" ParentName="BuildingHivelikeBase">
+  <ThingDef ParentName="ShipPartBaseOG">
     <defName>OG_Ork_Rok</defName>
     <label>Ork Rok</label>
-	<thingClass>AdeptusMechanicus.Building_HiveLike_CrashedShipPart</thingClass>
-		<Faction>OG_Ork_Rok</Faction>
-		<TunnelDef>OGORokTunnel</TunnelDef>
     <description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials.</description>
     <graphicData>
       <texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
@@ -20,9 +17,11 @@
 			<li Class="CompProperties_PawnSpawnerOnDamaged"> 
 			<Faction>OG_Ork_Rok</Faction>
 			</li>
+			<!--
 			<li Class="AdeptusMechanicus.CompProperties_Spawner_HiveLike_CrashedShipPart">
 			<tunnelthingDef>OGORokTunnel</tunnelthingDef>
 			</li>
+			-->
 		</comps>
   </ThingDef>
   
@@ -41,7 +40,7 @@
 		<comps>
 			<li Class="CompProperties_PawnSpawnerOnDamaged"> 
 			<Factions>
-			<li>OG_Ork_Rok</li>
+			<li>OG_Ork_Hulk</li>
 			<li>Pirate</li>
 			</Factions>
 			</li>

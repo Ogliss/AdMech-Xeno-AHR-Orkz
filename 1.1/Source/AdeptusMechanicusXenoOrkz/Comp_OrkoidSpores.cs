@@ -136,12 +136,8 @@ namespace AdeptusMechanicus
                         faction = Faction.OfPlayer;
                         generationContext = PawnGenerationContext.PlayerStarter;
                     }
-                    if (pawnKindDef.RaceProps.Humanlike)
-                    {
-                    }
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, false, false, false, true, true, 20f, fixedGender: Gender.Male, fixedBiologicalAge: age, fixedChronologicalAge: age);
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: age, fixedChronologicalAge: age);
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
-                    
                     if (pawn.kindDef==OGOrkPawnKindDefOf.OG_Ork_Wild)
                     {
                         pawn.story.childhood.identifier = "Ork_Base_Child";
@@ -150,14 +146,18 @@ namespace AdeptusMechanicus
                     {
                         pawn.story.childhood.identifier = "Grot_Base_Child";
                     }
-                    if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
+                    if (pawnKindDef.RaceProps.Humanlike)
                     {
+                        if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
+                        {
                             pawn.ChangeKind(PawnKindDefOf.WildMan);
+                        }
+                        else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
+                        {
+                            pawn.ChangeKind(PawnKindDefOf.Colonist);
+                        }
                     }
-                    else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe && pawnKindDef != OGOrkPawnKindDefOf.OG_Ork_Snotling && pawnKindDef != OGOrkPawnKindDefOf.OG_Squig_Ork)
-                    {
-                        pawn.ChangeKind(PawnKindDefOf.Colonist);
-                    }
+
                     GenSpawn.Spawn(pawn, base.parent.Position, map, 0);
                 }
             }
