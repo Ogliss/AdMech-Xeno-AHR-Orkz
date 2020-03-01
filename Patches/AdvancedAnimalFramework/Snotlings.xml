@@ -2,6 +2,7 @@
 <Patch>
 <!-- Advanced Animal Framework Snotlingz -->
 <Operation Class="PatchOperationSequence">
+  <success>Always</success>
   <operations>
     <li Class="PatchOperationTest">
       <xpath>/Defs/JobDef[defName = "AnimalWeaponEquip"]</xpath>
