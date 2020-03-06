@@ -71,7 +71,9 @@
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <gestationPeriodDays>26</gestationPeriodDays>
       <nameOnTameChance>0</nameOnTameChance>
-	  <!-- <thinkTreeMain>Snotling</thinkTreeMain> -->
+	  <thinkTreeMain>Snotling</thinkTreeMain>
+      <thinkTreeConstant>SnotlingConstant</thinkTreeConstant>
+      <nameGenerator>NamerSnotling</nameGenerator>
       <trainability>Advanced</trainability>
       <wildness>0.75</wildness>
       <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
@@ -130,10 +132,6 @@
           <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>0.55</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
@@ -146,10 +144,6 @@
             <offset>(0,0,-0.15)</offset>
           </shadowData>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>0.7</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
@@ -162,10 +156,6 @@
             <offset>(0,0,-0.15)</offset>
           </shadowData>
         </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Pawn/HumanoidDessicated</texPath>
-          <drawSize>1.05</drawSize>
-        </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>

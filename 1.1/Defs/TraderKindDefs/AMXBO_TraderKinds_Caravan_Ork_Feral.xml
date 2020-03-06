@@ -187,12 +187,12 @@
         <countRange>5~5</countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <categoryDef>OGEArmour</categoryDef>
+        <categoryDef>OGOArmour</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <categoryDef>OGEHeadgear</categoryDef>
+        <categoryDef>OGOHeadgear</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>

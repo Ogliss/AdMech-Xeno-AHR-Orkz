@@ -83,10 +83,9 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>OGIGHeadgear</li>
-        <li>OGImperialGuard</li>
-        <li>OGIGCommissar</li>
-        <li>OGIGCommissarJacket</li>
+		  <li>OGOClothing</li>
+		  <li>OGOUniform</li>
+		  <li>OGOJacket</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

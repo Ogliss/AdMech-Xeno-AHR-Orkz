@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 <!-- Ork Childhood -->
-<!-- Ork Child Base -->
-  <AlienRace.BackstoryDef>
-    <defName>Ork_Base_Child</defName>
+  <AlienRace.BackstoryDef Name="OG_Ork_Child_Base" Abstract="True">
     <title>yoof</title>
     <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>Ork_Base_Child</li>
+      <li>Ork_Standard</li>
+      <li>Ork_Runt</li>
+      <li>Ork_Boy</li>
+      <li>Ork_Nob</li>
+      <li>Ork_Boss</li>
+      <li>Ork_Tek</li>
+      <li>Ork_Choppa</li>
+      <li>Ork_Boy_Choppa</li>
+      <li>Ork_Slugga</li>
+      <li>Ork_Boy_Slugga</li>
+      <li>Ork_Shoota</li>
+      <li>Ork_Boy_Shoota</li>
+      <li>Ork_ShootaNob</li>
+      <li>Ork_Nob_Shoota</li>
+      <li>Ork_SluggaNob</li>
+      <li>Ork_Nob_Slugga</li>
+      <li>Ork_ChoppaNob</li>
+      <li>Ork_Nob_Choppa</li>
+      <li>Ork_Doc</li>
+      <li>Ork_Noncom</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!-- Ork Child Base -->
+  <AlienRace.BackstoryDef ParentName="OG_Ork_Child_Base">
+    <defName>Ork_Base_Child</defName>
     <workDisables>
 	<!--
       <li>Cleaning</li>
@@ -75,25 +101,98 @@
       </li>
       <li>
         <defName>Medicine</defName>
-        <amount>1</amount>
+        <amount>-2</amount>
       </li>
       <li>
         <defName>Social</defName>
-        <amount>1</amount>
+        <amount>-4</amount>
       </li>
       <li>
         <defName>Intellectual</defName>
-        <amount>1</amount>
+        <amount>-2</amount>
       </li>
     </skillGains>
-    <spawnCategories>
-      <li>Ork_Base_Child</li>
-      <li>Ork_Runt</li>
-      <li>Ork_Standard</li>
-      <li>Ork_Boy</li>
-      <li>Ork_Nob</li>
-      <li>Ork_Boss</li>
-    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!-- Ork Child Smart -->
+  <AlienRace.BackstoryDef ParentName="OG_Ork_Child_Base">
+    <defName>Ork_Smart_Child</defName>
+    <workDisables>
+	<!--
+      <li>Cleaning</li>
+      <li>Artistic</li>
+	-->
+    </workDisables>
+	<disallowedTraits>
+		<li>
+			<defName>Beauty</defName>
+			<degree>2</degree>
+        </li>
+		<li>
+			<defName>Beauty</defName>
+			<degree>1</degree>
+        </li>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>1</degree>
+		</li>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
+		</li>
+    </disallowedTraits>
+	<forcedTraits>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+    </forcedTraits>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
   </AlienRace.BackstoryDef>
 
 <!-- Ork Adulthood -->
@@ -103,7 +202,7 @@
     <defName>Ork_Boy_Shoota</defName>
     <title>sharpshooter</title>
     <titleShort>Snipa</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -143,6 +242,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Boy</li>
+      <li>Ork_Boy_Shoota</li>
       <li>Ork_Shoota</li>
       <li>Ork_Standard</li>
     </spawnCategories>
@@ -153,7 +253,7 @@
     <defName>Ork_Boy_Slugga</defName>
     <title>Slugga</title>
     <titleShort>Slugga</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -194,6 +294,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Boy</li>
+      <li>Ork_Boy_Slugga</li>
       <li>Ork_Slugga</li>
       <li>Ork_Standard</li>
     </spawnCategories>
@@ -204,7 +305,7 @@
     <defName>Ork_Boy_Choppa</defName>
     <title>Choppa</title>
     <titleShort>Choppa</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -244,6 +345,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Boy</li>
+      <li>Ork_Boy_Choppa</li>
       <li>Ork_Choppa</li>
       <li>Ork_Standard</li>
     </spawnCategories>
@@ -254,7 +356,7 @@
     <defName>Ork_Boy_Brewer</defName>
     <title>Brewer</title>
     <titleShort>Brewer</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -286,7 +388,7 @@
     <defName>Ork_Boy_Shouter</defName>
     <title>Shouta</title>
     <titleShort>Shouta</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -300,8 +402,6 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>PlantWork</li>
-      <li>ManualSkilled</li>
     </workDisables>
     <skillGains>
       <li>
@@ -324,7 +424,7 @@
     <defName>Ork_Boy_Herda</defName>
     <title>Herda</title>
     <titleShort>Herda</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -335,7 +435,8 @@
     <bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <workDisables>
-      <li>Caring</li>
+      <li>PlantWork</li>
+      <li>Cooking</li>
       <li>Intellectual</li>
     </workDisables>
     <skillGains>
@@ -356,7 +457,7 @@
     <defName>Ork_Boy_Mad</defName>
     <title>Madboy</title>
     <titleShort>Madboy</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -402,7 +503,7 @@
     <defName>OrkMekboy</defName>
     <title>Mekboy</title>
     <titleShort>Mekboy</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -445,7 +546,7 @@
     <defName>Ork_Boy_Doc</defName>
     <title>Mad doc</title>
     <titleShort>Mad doc</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>5</min>
         <max>29</max>
@@ -458,7 +559,6 @@
     <workDisables>
       <li>Cooking</li>
       <li>Mining</li>
-      <li>ManualSkilled</li>
       <li>Crafting</li>
     </workDisables>
     <skillGains>
@@ -489,9 +589,9 @@
 <!-- Ork Nob Crusher --> 
   <AlienRace.BackstoryDef>
     <defName>Ork_Nob_Crusher</defName>
-    <title>Crusher</title>
+    <title>Crusher Nob</title>
     <titleShort>Crusher</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -505,10 +605,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
-      <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
 	<forcedTraits>
@@ -534,6 +631,7 @@
     <spawnCategories>
       <li>Ork_Nob</li>
       <li>Ork_ChoppaNob</li>
+      <li>Ork_Nob_Choppa</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
  
@@ -542,7 +640,7 @@
     <defName>Ork_Nob_Mek</defName>
     <title>Mek</title>
     <titleShort>Mek</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -595,7 +693,7 @@
     <defName>Ork_Nob_Flash</defName>
     <title>Flash Git</title>
     <titleShort>Flash</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -609,10 +707,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
-      <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
     <skillGains>
@@ -643,6 +738,7 @@
     <spawnCategories>
       <li>Ork_Nob</li>
       <li>Ork_SluggaNob</li>
+      <li>Ork_Nob_Slugga</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -651,7 +747,7 @@
     <defName>Ork_Nob_Devastator</defName>
     <title>Devistata</title>
     <titleShort>Devistata</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -665,9 +761,7 @@
       <li>Caring</li>
       <li>Intellectual</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
-      <li>Crafting</li>
       <li>Mining</li>
       <li>PlantWork</li>
     </workDisables>
@@ -699,6 +793,7 @@
     <spawnCategories>
       <li>Ork_Nob</li>
       <li>Ork_ShootaNob</li>
+      <li>Ork_Nob_Shoota</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -708,7 +803,7 @@
     <defName>Ork_Boss_Nob</defName>
     <title>Boss</title>
     <titleShort>Boss</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>50</min>
     </bioAgeRange>
@@ -721,7 +816,6 @@
       <li>Intellectual</li>
       <li>Caring</li>
       <li>Cooking</li>
-      <li>ManualSkilled</li>
       <li>Animals</li>
       <li>Crafting</li>
       <li>Mining</li>
@@ -757,7 +851,7 @@
     <defName>Ork_Boss_Mek</defName>
     <title>Big Mek</title>
     <titleShort>Big Mek</titleShort>
-	<linkedBackstory>Ork_Base_Child</linkedBackstory>
+	
     <bioAgeRange>
         <min>50</min>
     </bioAgeRange>
@@ -896,8 +990,11 @@
       <li>Ork_Weird</li>
       <li>Ork_Weird_Child</li>
       <li>Ork_Weird_Boy</li>
+      <li>Ork_WeirdBoy</li>
       <li>Ork_Weird_Nob</li>
+      <li>Ork_WeirdNob</li>
       <li>Ork_Weird_Boss</li>
+      <li>Ork_WeirdBoss</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -907,7 +1004,7 @@
     <defName>Ork_Weird_Boy</defName>
     <title>Weirdboy</title>
     <titleShort>Weirdboy</titleShort>
-	<linkedBackstory>Ork_Weird_Child</linkedBackstory>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
     <bioAgeRange>
         <min>16</min>
         <max>29</max>
@@ -945,6 +1042,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
+      <li>Ork_WeirdBoy</li>
       <li>Ork_Weird_Boy</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -954,7 +1052,7 @@
     <defName>Ork_Weird_Nob</defName>
     <title>Weirdboy Nob</title>
     <titleShort>Weirdboy Nob</titleShort>
-	<linkedBackstory>Ork_Weird_Child</linkedBackstory>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
     <bioAgeRange>
         <min>30</min>
         <max>49</max>
@@ -1002,6 +1100,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
+      <li>Ork_WeirdNob</li>
       <li>Ork_Weird_Nob</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -1011,7 +1110,7 @@
     <defName>Ork_Weird_Boss</defName>
     <title>Prophet of Waaaaargh!</title>
     <titleShort>Prophet</titleShort>
-	<linkedBackstory>Ork_Weird_Child</linkedBackstory>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
     <bioAgeRange>
         <min>50</min>
     </bioAgeRange>
@@ -1058,6 +1157,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
+      <li>Ork_WeirdBoss</li>
       <li>Ork_Weird_Boss</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>

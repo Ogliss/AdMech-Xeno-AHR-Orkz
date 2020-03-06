@@ -5,7 +5,7 @@
     <label>ork tunnel</label>
     <description>A tunnel dug by orkz. If activated, it will spawn additional orkz and tunnels over time.</description>
     <thingClass>AdeptusMechanicus.HiveLike</thingClass>
-		<Faction>RokOrkz</Faction>
+		<Faction>OG_Ork_Rok</Faction>
 		<TunnelDef>OGORokTunnel</TunnelDef>
     <graphicData>
       <texPath>Things/Building/Natural/SteamGeyser</texPath>
@@ -62,7 +62,7 @@
     <defName>OGORokTunnel</defName>
     <label>orkz tunneling</label>
     <thingClass>AdeptusMechanicus.TunnelHiveLikeSpawner</thingClass>
-		<Faction>RokOrkz</Faction>
+		<Faction>OG_Ork_Rok</Faction>
 		<HiveDef>OGOrkTunnel</HiveDef>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>

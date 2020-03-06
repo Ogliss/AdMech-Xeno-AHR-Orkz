@@ -758,7 +758,7 @@
     <defName>OG_Ork_Feral_Warboss</defName>
     <label>Feral Warboss</label>
 	<backstoryCategories>
-			<li>Ork_WeirdBoss</li>
+			<li>Ork_Weird_Boss</li>
   	</backstoryCategories>
     <apparelTags>
       <li>Apparel_WarMask</li>
@@ -773,7 +773,7 @@
     <defName>OG_Ork_Feral_Warboss_Weird</defName>
     <label>Feral Shaman</label>
 	<backstoryCategories>
-			<li>Ork_WeirdBoss</li>
+			<li>Ork_Weird_Boss</li>
   	</backstoryCategories>
     <apparelTags>
       <li>Apparel_WarMask</li>

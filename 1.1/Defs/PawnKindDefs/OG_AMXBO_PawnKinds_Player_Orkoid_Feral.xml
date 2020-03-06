@@ -2,15 +2,72 @@
 <Defs>
 
   <PawnKindDef ParentName="OG_Ork_Player_Base">
-    <defName>Tribesperson_OG_Ork_Boy_Feral</defName>
+    <defName>Tribesperson_OG_Ork</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_Standard</li>
-          <li>Tribal</li>
+          <li>Ork_Boy</li>
         </categories>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boy</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Nob</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Nob</li>
+        </categories>
+        <commonality>0.05</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Boss</li>
+        </categories>
+        <commonality>0.15</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boss</li>
+        </categories>
+        <commonality>0.025</commonality>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OG_Ork_Player_Base">
+    <defName>Tribesperson_OG_Ork_Boy_Feral</defName>
+    <label>Ork Tribal</label>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Ork_Boy</li>
+        </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boy</li>
+        </categories>
+        <commonality>0.1</commonality>
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
@@ -26,7 +83,7 @@
   <PawnKindDef ParentName="OG_Ork_Player_Base">
     <defName>Tribesperson_OG_Ork_Feral_Weird</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -50,12 +107,18 @@
   <PawnKindDef ParentName="OG_Ork_Player_Base">
     <defName>Tribesperson_OG_Ork_Nob_Feral</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
         <categories>
           <li>Ork_Nob</li>
         </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Nob</li>
+        </categories>
+        <commonality>0.1</commonality>
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
@@ -71,12 +134,18 @@
   <PawnKindDef ParentName="OG_Ork_Player_Base">
     <defName>Tribesperson_OG_Ork_Feral_Warboss</defName>
     <label>Ork Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
         <categories>
           <li>Ork_Boss</li>
         </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boss</li>
+        </categories>
+        <commonality>0.1</commonality>
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
@@ -92,12 +161,11 @@
   <PawnKindDef ParentName="OG_Grot_Player_Base">
     <defName>Tribesperson_OG_Grot_Feral</defName>
     <label>Grot Tribal</label>
-    <defaultFactionType>OG_Ork_Feral_PlayerTribe</defaultFactionType>
+    <defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride>
       <li>
         <categories>
           <li>Grot_Gretchin</li>
-          <li>Tribal</li>
         </categories>
       </li>
     </backstoryFiltersOverride>

@@ -20,9 +20,12 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <apparelTags>
+      <li>OGOClothing</li>
+	  <li>Cloak</li>
+    </apparelTags>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>false</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>
@@ -37,12 +40,60 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="OG_Ork_Player_Base">
+    <defName>Colonist_OG_Ork</defName>
+    <label>Ork colonist</label>
+    <defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Ork_Boy</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boy</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Nob</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Nob</li>
+        </categories>
+        <commonality>0.05</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Boss</li>
+        </categories>
+        <commonality>0.15</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boss</li>
+        </categories>
+        <commonality>0.025</commonality>
+      </li>
+    </backstoryFiltersOverride>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OG_Ork_Player_Base">
     <defName>Colonist_OG_Ork_Boy</defName>
     <label>Ork colonist</label>
     <defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
     <apparelTags>
-      <li>Spacer</li>
-      <li>IndustrialBasic</li>
+	
     </apparelTags>
     <apparelMoney>
       <min>500</min>
@@ -50,6 +101,19 @@
     </apparelMoney>
     <minGenerationAge>0</minGenerationAge>
 	<maxGenerationAge>29</maxGenerationAge>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Ork_Boy</li>
+        </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boy</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+    </backstoryFiltersOverride>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
   
@@ -63,11 +127,13 @@
           <li>Ork_Nob</li>
         </categories>
       </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Nob</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
     </backstoryFiltersOverride>
-    <apparelTags>
-      <li>Spacer</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
     <apparelMoney>
       <min>500</min>
       <max>1200</max>
@@ -87,10 +153,15 @@
           <li>Ork_Boss</li>
         </categories>
       </li>
+      <li>
+        <categories>
+          <li>Ork_Weird_Boss</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
     </backstoryFiltersOverride>
     <apparelTags>
-      <li>Spacer</li>
-      <li>IndustrialBasic</li>
+	
     </apparelTags>
     <apparelMoney>
       <min>500</min>
@@ -109,9 +180,19 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>OGOClothing</li>
+	  <li>Cloak</li>
+    </apparelTags>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Grot_Gretchin</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>false</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>
@@ -122,16 +203,8 @@
     <defName>Colonist_OG_Grot</defName>
     <label>Grot colonist</label>
     <defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Grot_Gretchin</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <apparelTags>
-      <li>Spacer</li>
-      <li>IndustrialBasic</li>
+	
     </apparelTags>
     <apparelMoney>
       <min>500</min>

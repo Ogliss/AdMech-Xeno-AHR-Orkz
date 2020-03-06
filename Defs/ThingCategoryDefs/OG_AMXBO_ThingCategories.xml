@@ -58,4 +58,18 @@
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 
+<!-- Ork Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Orkoid</defName>
+      <label>ork corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+	
+<!-- Ork Construct Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Orkoid_Construct</defName>
+      <label>ork construct remains</label>
+      <parent>CorpsesMechanoid</parent>
+    </ThingCategoryDef>
+	
 </Defs>

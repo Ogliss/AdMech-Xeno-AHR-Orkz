@@ -152,7 +152,7 @@
       </li>
     </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
-	<expandingIconTexture>Icons/FeralOrkIcon</expandingIconTexture>
+	<expandingIconTexture>Icons/Icon_Ork_Feral</expandingIconTexture>
     <colorSpectrum>
       <li>(0.45, 0.05, 0.05)</li>
       <li>(0.80, 0.25, 0.05)</li>

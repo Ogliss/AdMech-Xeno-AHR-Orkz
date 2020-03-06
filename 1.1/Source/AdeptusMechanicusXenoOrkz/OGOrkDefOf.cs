@@ -32,7 +32,6 @@ namespace RimWorld
 
         // Humanlike Race Defs
         public static AlienRace.ThingDef_AlienRace OG_Alien_Ork;
-        public static AlienRace.ThingDef_AlienRace OG_Cyborg_Ork;
         public static AlienRace.ThingDef_AlienRace OG_Alien_Grot;
         
 
@@ -41,6 +40,7 @@ namespace RimWorld
         public static ThingDef OG_Squig_Ork;
     }
 
+    [DefOf]
     public static class OGOrkPawnKindDefOf
     {
         // Token: 0x0600377C RID: 14204 RVA: 0x001A83CC File Offset: 0x001A67CC
@@ -50,17 +50,20 @@ namespace RimWorld
         }
         public class Player
         {
-            public static PawnKindDef Squig;
+            public static PawnKindDef OG_Squig;
         }
-        public static PawnKindDef Squig;
+        public static PawnKindDef OG_Squig;
 
-        public static PawnKindDef Snotling;
+        public static PawnKindDef OG_Squig_Ork;
 
-        public static PawnKindDef WildGrot;
+        public static PawnKindDef OG_Ork_Snotling;
 
-        public static PawnKindDef WildOrk;
+        public static PawnKindDef OG_Grot_Wild;
+
+        public static PawnKindDef OG_Ork_Wild;
     }
 
+    [DefOf]
     public static class OGOrkFactionDefOf
     {
         // Token: 0x06003770 RID: 14192 RVA: 0x001A8272 File Offset: 0x001A6672
@@ -69,22 +72,23 @@ namespace RimWorld
             DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkFactionDefOf));
         }
 
-        public static FactionDef OrkPlayerColony;
-        public static FactionDef OrkPlayerColonyTribal;
+        public static FactionDef OG_Ork_PlayerColony;
+        public static FactionDef OG_Ork_PlayerTribe;
 
-        public static FactionDef RokOrkz;
-        public static FactionDef HulkOrkz;
+        public static FactionDef OG_Ork_Rok;
+        public static FactionDef OG_Ork_Hulk;
 
-        public static FactionDef OrkFaction;
-        public static FactionDef FeralOrkFaction;
+        public static FactionDef OG_Ork_Tek_Faction;
+        public static FactionDef OG_Ork_Feral_Faction;
     }
 
+    [DefOf]
     public static class OGOrkJobDefOf
     {
         // Token: 0x06003770 RID: 14192 RVA: 0x001A8272 File Offset: 0x001A6672
         static OGOrkJobDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkFactionDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkJobDefOf));
         }
 
         //    public static JobDef TakeGrogOutOfOrkFermentingBarrel;

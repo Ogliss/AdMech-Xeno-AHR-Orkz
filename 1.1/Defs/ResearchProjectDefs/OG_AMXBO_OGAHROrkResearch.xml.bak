@@ -1,52 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--OG==================== Adeptus Mechanicus Armoury Mod - Research Ork Weapons =========================OG-->
+	<!--OG==================== Adeptus Mechanicus Armoury Mod - Research Imperial Weapons =========================OG-->
 
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
-		<defName>OrkTekBase</defName>
-		<label>Orkish Kulture</label>
-		<description>Basic understanding of Orkish 'Kulture'</description>
-		<baseCost>250</baseCost>
+		<defName>OrkishBrutality</defName>
+		<label>Orkish Brutality</label>
+		<description>Allows you to create basic orkish melee weapons</description>
+		<baseCost>500</baseCost>
 		<prerequisites>
 		
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
-    <tags>
-      <li>OrkStart</li>
-      <li>TribalOrkStart</li>
-    </tags>
+		<requiredResearchBuilding>OGTekLab</requiredResearchBuilding>
   <researchViewX>0.00</researchViewX>
-  <researchViewY>4.0</researchViewY>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef>
-		<tab>OGAMA_RTab</tab>
-		<defName>OrkishBrutality</defName>
-		<label>Brutality</label>
-		<description>Allows you to create basic orkish melee weapons</description>
-		<baseCost>500</baseCost>
-		<prerequisites>
-			<li>OrkTekBase</li>
-		</prerequisites>
-		<techLevel>Neolithic</techLevel>
-  <researchViewX>0.75</researchViewX>
-  <researchViewY>3.50</researchViewY>
+  <researchViewY>5.00</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
 		<defName>OrkishCunning</defName>
-		<label>Cunning</label>
+		<label>Orkish Cunning</label>
 		<description>Allows you to create basic orkish ranged weapons</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
-			<li>OrkTekBase</li>
+			<li>OrkishBrutality</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-  <researchViewX>0.75</researchViewX>
-  <researchViewY>4.0</researchViewY>
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
 	</ResearchProjectDef>	
 	
 	<ResearchProjectDef>
@@ -56,12 +39,16 @@
 		<description>Allows you to create basic orkish armour</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
-			<li>OrkTekBase</li>
+			<li>OrkishBrutality</li>
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
-  <researchViewX>0.75</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>6.25</researchViewY>
 	</ResearchProjectDef>
+	
+	<!--OG==================== Adeptus Mechanicus Armoury Mod - Imperium Weapons =========================OG-->
+	
+	<!--OG==================== Adeptus Mechanicus Armoury Mod - Las Weapons =========================OG-->
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
@@ -73,28 +60,28 @@
 			<li>OrkishBrutality</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-  <researchViewX>1.5</researchViewX>
-  <researchViewY>3.50</researchViewY>
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>5.00</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
 		<defName>OrkishEavyArmour</defName>
-		<label>Eavy Armour</label>
+		<label>Orkish Eavy Armour</label>
 		<description>Allows you to create better orkish armour</description>
 		<baseCost>1500</baseCost>
 		<prerequisites>
 			<li>OrkishArmour</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-  <researchViewX>1.5</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewX>1.75</researchViewX>
+  <researchViewY>6.25</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
 		<defName>OrkishIntenseCunning</defName>
-		<label>Intense Cunning</label>
+		<label>Orkish Intense Cunning</label>
 		<description>Allows you to create better orkish ranged weapons</description>
 		<baseCost>1500</baseCost>
 		<prerequisites>
@@ -102,9 +89,11 @@
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-  <researchViewX>1.5</researchViewX>
-  <researchViewY>4.0</researchViewY>
+  <researchViewX>1.75</researchViewX>
+  <researchViewY>5.50</researchViewY>
 	</ResearchProjectDef>
+	
+	<!--OG==================== Adeptus Mechanicus Armoury Mod - Bolt Weapons =========================OG-->
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
@@ -120,8 +109,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-  <researchViewX>2.250</researchViewX>
-  <researchViewY>4.0</researchViewY>
+  <researchViewX>2.50</researchViewX>
+  <researchViewY>5.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -139,9 +128,11 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-  <researchViewX>3.00</researchViewX>
-  <researchViewY>3.50</researchViewY>
+  <researchViewX>3.50</researchViewX>
+  <researchViewY>5.00</researchViewY>
 	</ResearchProjectDef>
+	
+		<!--OG==================== Adeptus Mechanicus Armoury Mod - Research Imperial Special Weapons =========================OG-->
 
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
@@ -154,14 +145,14 @@
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-  <researchViewX>3.00</researchViewX>
-  <researchViewY>4.50</researchViewY>
+  <researchViewX>3.50</researchViewX>
+  <researchViewY>6.00</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
 		<defName>OrkishMegaArmour</defName>
-		<label>Mega Armour</label>
+		<label>Orkish Mega Armour</label>
 		<description>Allows you to create orkish Mega Armour</description>
 		<baseCost>3000</baseCost>
 		<prerequisites>
@@ -170,8 +161,8 @@
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-  <researchViewX>3.75</researchViewX>
-  <researchViewY>4.0</researchViewY>
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>5.50</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

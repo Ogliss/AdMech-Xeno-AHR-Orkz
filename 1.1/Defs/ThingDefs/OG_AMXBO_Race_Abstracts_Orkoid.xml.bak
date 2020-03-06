@@ -82,9 +82,10 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
+                        <li>Colonist_OG_Ork_Boy</li>
 						<li>Colonist_OG_Grot</li>
                     </kindDefs>
-                    <chance>70.0</chance>
+                    <chance>80.0</chance>
 					</li>
 					<li>
                     <kindDefs>
@@ -258,7 +259,7 @@
         </pawnKindSettings>
   </AlienRace.RaceSettings>
 
-<ThingDef ParentName="BasePawn" Name="OG_Ork_Pawn_Base" Abstract="True">
+<ThingDef ParentName="BasePawn" Name="OG_Orkoid_Pawn_Base" Abstract="True">
 	<!--
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
@@ -289,7 +290,257 @@
 	-->
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace Name="OG_Ork_Race" ParentName="OG_Ork_Pawn_Base" Abstract="True">
+<AlienRace.ThingDef_AlienRace ParentName="OG_Orkoid_Pawn_Base" Name="OG_Orkoid_Race"  Abstract="True">
+    <alienRace>
+        <generalSettings>
+            <maleGenderProbability>1</maleGenderProbability>
+            <immuneToAge>false</immuneToAge>
+			<disallowedTraits>
+               <li>Kind</li>
+               <li>Gay</li>
+               <li>DislikesWomen</li>
+               <li>DislikesMen</li>
+            </disallowedTraits>
+            <alienPartGenerator>
+				<useGenderedHeads>false</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+                <alienskincolorgen Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>100</weight>
+							<min>RGBA(0.0,0.329,0.255,1)</min>
+							<max>RGBA(0.388,0.61,0.133,1)</max>
+						</li>
+						<li>
+							<weight>10</weight>
+							<min>RGBA(0.224,0.196,0.133,1)</min>
+							<max>RGBA(0.478,0.451,0.482,1)</max>
+						</li>
+						<li>
+							<weight>1</weight>
+							<min>RGBA(0.4,0.004,0.204,1)</min>
+							<max>RGBA(0.608,0,0.09,1)</max>
+						</li>
+					</options>
+                </alienskincolorgen>
+            <useSkincolorForHair>false</useSkincolorForHair>
+            </alienPartGenerator>
+			<chemicalSettings>	
+		    </chemicalSettings>
+            <humanRecipeImport>true</humanRecipeImport>
+			<notXenophobistTowards>
+				<li>Alien_Grot</li>
+				<li>OG_Alien_Grot</li>
+				<li>Alien_Ork</li>
+				<li>OG_Alien_Ork</li>
+				<li>OG_Cyborg_Ork</li>
+			</notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OG_Ork_Tek_Faction</li>
+                       <li>OG_Ork_Feral_Faction</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>40</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>EldarFaction</li>
+					   <li>EldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>DarkEldarFaction</li>
+					   <li>DarkEldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>TauFaction</li>
+                       <li>KrootFaction</li>
+					   <li>TauPlayerColony</li>
+					   <li>KrootPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-30</max>
+                    </goodwill>
+                </li>  
+				<li>
+                    <factions>
+                       <li>ImperialMechanicusFaction</li>
+					   <li>ImperialMechanicusPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialHumanFaction</li>
+					   <li>ImperialHumanPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialAstartesFaction</li>
+					   <li>ImperialAstartesPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+		</factionRelations>
+        </generalSettings>
+        <relationSettings>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <relationChanceModifierChild>0</relationChanceModifierChild>
+            <relationChanceModifierSibling>0</relationChanceModifierSibling>
+			
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+			
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+			   <renamer>
+               <li>
+                  <relation>Sibling</relation>
+                  <label>Mob mate</label>
+                  <femaleLabel>Mob mate</femaleLabel>
+               </li>
+               <li>
+                  <relation>Parent</relation>
+                  <label>Kult leader</label>
+                  <femaleLabel>Kult leader</femaleLabel>
+               </li>
+               <li>
+                  <relation>Child</relation>
+                  <label>Klan member</label>
+                  <femaleLabel>Klan member</femaleLabel>
+               </li>
+            </renamer>
+        </relationSettings>
+        <raceRestriction>
+            <researchList>
+                <li>
+					<!--
+                    <projects>
+						<li>OrkTekBase</li>
+						<li>OrkishBrutality</li>
+						<li>OrkishCunning</li>
+						<li>OrkishArmour</li>
+						<li>OrkishExtremeBrutality</li>
+						<li>OrkishEavyArmour</li>
+						<li>OrkishIntenseCunning</li>
+						<li>OrkishMekTek</li>
+						<li>OrkishPowerField</li>
+						<li>OrkishBigMekBrainz</li>
+						<li>OrkishMegaArmour</li>
+                    </projects>
+					-->
+                    <apparelList>
+						
+                    </apparelList>
+                </li>
+            </researchList>
+			<apparelList>
+                <li>OGO_Wargear_BossPole</li>
+                <li>OGO_Apparel_LevaElmet</li>
+                <li>OGO_Apparel_Elmet</li>
+                <li>OGO_Apparel_EavyElmet</li>
+                <li>OGO_Apparel_MegaArmourElmet</li>
+                <li>OGO_Apparel_IronGob</li>
+                <li>OGO_Apparel_LevaArmour</li>
+                <li>OGO_Apparel_Armour</li>
+                <li>OGO_Apparel_EavyArmour</li>
+                <li>OGO_Apparel_MegaArmour</li>
+                <li>OGO_Wargear_KustomForcefield</li>
+                <li>OGO_Apparel_UniformShirt</li>
+                <li>OGO_Apparel_UniformJacket</li>
+			</apparelList>
+            <recipeList>
+                <li>OGO_Wargear_BossPole</li>
+                <li>OGO_Apparel_LevaElmet</li>
+                <li>OGO_Apparel_Elmet</li>
+                <li>OGO_Apparel_EavyElmet</li>
+                <li>OGO_Apparel_MegaArmourElmet</li>
+                <li>OGO_Apparel_IronGob</li>
+                <li>OGO_Apparel_UniformShirt</li>
+                <li>OGO_Apparel_UniformJacket</li>
+                <li>OGO_Apparel_LevaArmour</li>
+                <li>OGO_Apparel_Armour</li>
+                <li>OGO_Apparel_EavyArmour</li>
+                <li>OGO_Apparel_MegaArmour</li>
+                <li>OGO_Wargear_KustomForcefield</li>
+                <li>OGO_GrenadePack_Frag</li>
+                <li>OGO_GrenadePack_Krak</li>
+                <li>OGO_GrenadePack_Melta</li>
+                <li>OGO_Melee_CrudeChoppa</li>
+                <li>OGO_Melee_Choppa</li>
+                <li>OGO_Melee_ChainChoppa</li>
+                <li>OGO_Melee_BigChoppa</li>
+                <li>OGO_Melee_PowerKlaw</li>
+                <li>OGO_Gun_GrotBlasta</li>
+                <li>OGO_Gun_OSlugga</li>
+                <li>OGO_Gun_OShoota</li>
+                <li>OGO_Gun_OTwinLinkedShoota</li>
+                <li>OGO_Gun_OBigShoota</li>
+                <li>OGO_Gun_OSnazzgun</li>
+                <li>OGO_Gun_ZappKannon</li>
+                <li>OGO_Gun_Burna</li>
+                <li>OGO_Gun_Scorcha</li>
+                <li>OGO_Gun_RokkitLaucha</li>
+                <li>OGO_Gun_KombiBurna</li>
+                <li>OGO_Gun_KombiRokkit</li>
+                <li>OGO_Gun_DeffgunPlasma</li>
+                <li>OGO_Gun_DeffgunBeamy</li>
+                <li>OGO_Gun_DeffgunDakka</li>
+            </recipeList>
+            <plantList>
+                <li>OG_Plant_OrkoidFungus</li>
+                <li>OG_Plant_Orkoid_Cocoon</li>
+            </plantList>
+           <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
+			<buildingList>
+                <li>OG_Ork_TableMachining</li>
+            </buildingList>
+        </raceRestriction>
+    </alienRace>
+
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.ThingDef_AlienRace ParentName="OG_Orkoid_Race" Name="OG_Ork_Race" Abstract="True">
     <label>Ork</label>
     <description>The pinnacle of the orkoid species: A fully grown Ork.</description>
     <alienRace>
@@ -313,15 +564,9 @@
                 </li>
             </forcedRaceTraitEntries>
 			<disallowedTraits>
-               <li>Kind</li>
-               <li>Gay</li>
                <li>Wimp</li>
-               <li>DislikesWomen</li>
-               <li>DislikesMen</li>
             </disallowedTraits>
             <alienPartGenerator>
-				<useGenderedHeads>false</useGenderedHeads>
-				<useGenderedBodies>false</useGenderedBodies>
                 <aliencrowntypes>
                     <li>Average_Ork</li>
                 </aliencrowntypes>
@@ -447,101 +692,6 @@
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>
-            <humanRecipeImport>true</humanRecipeImport>
-			<notXenophobistTowards>
-				<li>Alien_Grot</li>
-				<li>OG_Alien_Grot</li>
-				<li>Alien_Ork</li>
-				<li>OG_Alien_Ork</li>
-				<li>Cyborg_Ork</li>
-				<li>OG_Cyborg_Ork</li>
-			</notXenophobistTowards>
-		<factionRelations>
-                <li>
-                    <factions>
-                       <li>OG_Ork_Tek_Faction</li>
-                       <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-10</min>
-                       <max>40</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-					   <li>PlayerColony</li>
-					   <li>PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>10</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>EldarFaction</li>
-					   <li>EldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>DarkEldarFaction</li>
-					   <li>DarkEldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>TauFaction</li>
-                       <li>KrootFaction</li>
-					   <li>TauPlayerColony</li>
-					   <li>KrootPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-30</max>
-                    </goodwill>
-                </li>  
-				<li>
-                    <factions>
-                       <li>ImperialMechanicusFaction</li>
-					   <li>ImperialMechanicusPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>ImperialHumanFaction</li>
-					   <li>ImperialHumanPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>ImperialAstartesFaction</li>
-					   <li>ImperialAstartesPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -806,103 +956,6 @@
                 <li>AteOrkFungusAsIngredient</li>
             </cannotReceiveThoughts>
         </thoughtSettings>
-        <relationSettings>
-            <relationChanceModifierParent>0</relationChanceModifierParent>
-            <relationChanceModifierChild>0</relationChanceModifierChild>
-            <relationChanceModifierSibling>0</relationChanceModifierSibling>
-			
-            <relationChanceModifierLover>0</relationChanceModifierLover>
-            <relationChanceModifierExLover>0</relationChanceModifierExLover>
-			
-            <relationChanceModifierFiance>0</relationChanceModifierFiance>
-            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
-            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
-        </relationSettings>
-        <raceRestriction>
-            <researchList>
-                <li>
-					
-                    <projects>
-						<li>OrkTekBase</li>
-						<li>OrkishBrutality</li>
-						<li>OrkishCunning</li>
-						<li>OrkishArmour</li>
-						<li>OrkishExtremeBrutality</li>
-						<li>OrkishEavyArmour</li>
-						<li>OrkishIntenseCunning</li>
-						<li>OrkishMekTek</li>
-						<li>OrkishPowerField</li>
-						<li>OrkishBigMekBrainz</li>
-						<li>OrkishMegaArmour</li>
-                    </projects>
-					
-                    <apparelList>
-						
-                    </apparelList>
-                </li>
-            </researchList>
-			<apparelList>
-                <li>OGO_Wargear_BossPole</li>
-                <li>OGO_Apparel_LevaElmet</li>
-                <li>OGO_Apparel_Elmet</li>
-                <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
-                <li>OGO_Apparel_IronGob</li>
-                <li>OGO_Apparel_LevaArmour</li>
-                <li>OGO_Apparel_Armour</li>
-                <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
-                <li>OGO_Apparel_UniformShirt</li>
-                <li>OGO_Apparel_UniformJacket</li>
-			</apparelList>
-            <recipeList>
-                <li>OGO_Wargear_BossPole</li>
-                <li>OGO_Apparel_LevaElmet</li>
-                <li>OGO_Apparel_Elmet</li>
-                <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
-                <li>OGO_Apparel_IronGob</li>
-                <li>OGO_Apparel_UniformShirt</li>
-                <li>OGO_Apparel_UniformJacket</li>
-                <li>OGO_Apparel_LevaArmour</li>
-                <li>OGO_Apparel_Armour</li>
-                <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
-                <li>OGO_GrenadePack_Frag</li>
-                <li>OGO_GrenadePack_Krak</li>
-                <li>OGO_GrenadePack_Melta</li>
-                <li>OGO_Melee_CrudeChoppa</li>
-                <li>OGO_Melee_Choppa</li>
-                <li>OGO_Melee_ChainChoppa</li>
-                <li>OGO_Melee_BigChoppa</li>
-                <li>OGO_Melee_PowerKlaw</li>
-                <li>OGO_Gun_GrotBlasta</li>
-                <li>OGO_Gun_OSlugga</li>
-                <li>OGO_Gun_OShoota</li>
-                <li>OGO_Gun_OTwinLinkedShoota</li>
-                <li>OGO_Gun_OBigShoota</li>
-                <li>OGO_Gun_OSnazzgun</li>
-                <li>OGO_Gun_ZappKannon</li>
-                <li>OGO_Gun_Burna</li>
-                <li>OGO_Gun_Scorcha</li>
-                <li>OGO_Gun_RokkitLaucha</li>
-                <li>OGO_Gun_KombiBurna</li>
-                <li>OGO_Gun_KombiRokkit</li>
-                <li>OGO_Gun_DeffgunPlasma</li>
-                <li>OGO_Gun_DeffgunBeamy</li>
-                <li>OGO_Gun_DeffgunDakka</li>
-            </recipeList>
-            <plantList>
-                <li>OG_Plant_OrkoidFungus</li>
-                <li>OG_Plant_Orkoid_Cocoon</li>
-            </plantList>
-           <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
-			<buildingList>
-                <li>OG_Ork_TableMachining</li>
-            </buildingList>
-        </raceRestriction>
     </alienRace>
 	<statBases>
 		<MarketValue>2000</MarketValue>
@@ -915,15 +968,15 @@
 		<PsychicSensitivity>0.35</PsychicSensitivity>
 		<MiningSpeed>1.4</MiningSpeed>
 		<ShootingAccuracyPawn>-0.32</ShootingAccuracyPawn>
-		<AimingDelayFactor>-0.25</AimingDelayFactor>
+		<AimingDelayFactor>0.65</AimingDelayFactor>
 		<MentalBreakThreshold>0.020</MentalBreakThreshold>
-        <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+        <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
         <PainShockThreshold>0.95</PainShockThreshold>
-        <ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+        <ForagedNutritionPerDay>1.25</ForagedNutritionPerDay>
         <GlobalLearningFactor>0.85</GlobalLearningFactor>
         <MeleeDodgeChance>1.125</MeleeDodgeChance>
         <MeleeHitChance>1.25</MeleeHitChance>
-        <GeneralLaborSpeed>0.75</GeneralLaborSpeed>
+        <GeneralLaborSpeed>1.05</GeneralLaborSpeed>
         <ButcheryFleshSpeed>1.5</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
         <SmeltingSpeed>0.5</SmeltingSpeed>
@@ -986,7 +1039,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>600</lifeExpectancy>
       <leatherDef>Leather_Ork</leatherDef>
-      <nameGenerator>NamerPerson_Ork_OG</nameGenerator>
+      <nameGenerator>NamerPersonOrk</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <meatColor>(200,135,100)</meatColor>
