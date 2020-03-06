@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ============================== Big threats ============================== -->  
   <IncidentDef>
-    <defName>OrkRokCrash</defName>
+    <defName>OG_Ork_Rok_Crash</defName>
     <label>Rok Impact</label>
     <targetTags>
       <li>Map_PlayerHome</li>

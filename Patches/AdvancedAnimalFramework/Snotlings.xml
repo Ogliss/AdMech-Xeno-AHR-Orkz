@@ -355,13 +355,24 @@
 					<trainable>Release</trainable>
 					<subNodes>
 					<li Class="ThinkNode_Tagger">
+<<<<<<< Updated upstream
 						<tagToGive>TrainedAnimalBehavior</tagToGive>
 						<subNodes>
 							
+=======
+					  <tagToGive>TrainedAnimalBehavior</tagToGive>
+					  <subNodes>
+						<!--	
+>>>>>>> Stashed changes
 						<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
 							<workGiverDef>Uninstall</workGiverDef>
 						</li>
+<<<<<<< Updated upstream
 							
+=======
+						-->
+						<!-- Modded: Cut Plants -->
+>>>>>>> Stashed changes
 						<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					  
 							<workGiverDef>BuildRoofs</workGiverDef>
 						</li>

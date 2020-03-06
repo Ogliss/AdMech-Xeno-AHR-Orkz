@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+  <AMO_ModName>Orkz</AMO_ModName>
   <!-- Xenobiologis Playable Orkz Mod -->
+  
+  <AMO_FungusSpawnChance>Fungus Spawn</AMO_FungusSpawnChance>
+  <AMO_CocoonSpawnChance>Cocoon Spawn</AMO_CocoonSpawnChance>
+  <AMO_Snot>Snotling</AMO_Snot>
+  <AMO_Grot>Grot</AMO_Grot>
+  <AMO_Ork>Ork</AMO_Ork>
+  <AMO_Chance>Chance:</AMO_Chance>
+  
+  
   <OGOrk_FungalHarvest_SuccessMessage>found a {0}</OGOrk_FungalHarvest_SuccessMessage>
   <OGOrk_FungalHarvest_FailMessage>found nothing of interest</OGOrk_FungalHarvest_FailMessage>
 </LanguageData>

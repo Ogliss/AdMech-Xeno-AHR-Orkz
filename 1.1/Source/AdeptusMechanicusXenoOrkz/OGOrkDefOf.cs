@@ -89,4 +89,15 @@ namespace RimWorld
 
         //    public static JobDef TakeGrogOutOfOrkFermentingBarrel;
     }
+    [DefOf]
+    public static class OGOrkIncidentDefOf
+    {
+        // Token: 0x06003770 RID: 14192 RVA: 0x001A8272 File Offset: 0x001A6672
+        static OGOrkIncidentDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(OGOrkIncidentDefOf));
+        }
+
+        public static IncidentDef OG_Ork_Rok_Crash;
+    }
 }

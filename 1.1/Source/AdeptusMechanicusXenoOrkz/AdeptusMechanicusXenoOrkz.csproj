@@ -38,7 +38,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
+    <Compile Include="ThoughtWorker_HasKrudeAddedBodyPart.cs" />
+    <Compile Include="Harmony\Patches\Settings\AMXBO_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="MentalStateWorker_StarvingOrkoid.cs" />
+    <Compile Include="AMOMain.cs" />
+    <Compile Include="AMXBSetIncidents.cs" />
     <Compile Include="ThoughtWorker_HumanlikeLeatherApparel_Ork.cs" />
     <Compile Include="MentalState_StarvingOrkoid.cs" />
     <Compile Include="Harmony\Patches\AMXBO_Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
@@ -54,11 +58,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\packages\Lib.Harmony.2.0.0.4\lib\net472\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\packages\Lib.Harmony.2.0.0.7\lib\net472\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AlienRace">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -66,6 +70,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="Unity.TextMeshPro">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
@@ -319,6 +324,11 @@
     <ProjectReference Include="..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\AdeptusMechanicusMain.csproj">
       <Project>{2ac73323-b4f2-4592-b3ea-53ac4f8d73a7}</Project>
       <Name>AdeptusMechanicusMain</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\AdMechXeno\1.1\Source\AdeptusMechanicusXenobiologis\AdeptusMechanicusXenobiologis.csproj">
+      <Project>{25320202-14a6-42ed-aa6a-602006fd55b9}</Project>
+      <Name>AdeptusMechanicusXenobiologis</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
