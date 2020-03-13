@@ -49,7 +49,8 @@
         <li>OrkBasic</li>
       </tags>
       <defaultOutfitTags>
-        <li>OrkWorker</li>
+        <li>Ork</li>
+        <li>Soldier</li>
         <li>OrkSoldier</li>
       </defaultOutfitTags>
     </apparel>
@@ -118,9 +119,12 @@
       </layers>
       <tags>
         <li>OrkBasic</li>
+        <li>Royal</li>
+		<li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
-        <li>OrkWorker</li>
+        <li>Ork</li>
+        <li>Soldier</li>
         <li>OrkSoldier</li>
       </defaultOutfitTags>
     </apparel>
@@ -195,8 +199,12 @@
       </layers>
       <tags>
         <li>OrkHeavy</li>
+        <li>Royal</li>
+		<li>RoyalTier6</li>
       </tags>
       <defaultOutfitTags>
+        <li>Ork</li>
+        <li>Soldier</li>
         <li>OrkSoldier</li>
       </defaultOutfitTags>
     </apparel>
@@ -274,8 +282,12 @@
       </layers>
       <tags>
         <li>OrkMega</li>
+        <li>Royal</li>
+        <li>RoyalTier7</li>
       </tags>
       <defaultOutfitTags>
+        <li>Ork</li>
+        <li>Soldier</li>
         <li>OrkSoldier</li>
       </defaultOutfitTags>
     </apparel>

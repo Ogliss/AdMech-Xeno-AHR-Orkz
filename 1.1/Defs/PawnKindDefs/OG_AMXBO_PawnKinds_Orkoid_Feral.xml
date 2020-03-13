@@ -408,7 +408,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_Weird_Boy</li>
+          <li>Ork_Boy_Weird</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -520,7 +520,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_ShootaBoy</li>
+          <li>Ork_Boy_Shoota</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -648,7 +648,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_Weird_Nob</li>
+          <li>Ork_Nob_Weird</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -730,7 +730,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_ChoppaNob</li>
+          <li>Ork_Nob_Choppa</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -748,7 +748,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_SluggaNob</li>
+          <li>Ork_Nob_Slugga</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -764,7 +764,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_ShootaNob</li>
+          <li>Ork_Nob_Shoota</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -848,7 +848,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_WeirdBoss</li>
+          <li>Ork_Boss_Weird</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -867,7 +867,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Ork_WeirdBoss</li>
+          <li>Ork_Boss_Weird</li>
         </categories>
       </li>
     </backstoryFiltersOverride>

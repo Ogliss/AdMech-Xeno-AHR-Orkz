@@ -6,27 +6,15 @@
     <label>Grot</label>
     <description>The worker of the orkoid species: A fully grown Grot.</description>
     <alienRace>
+        <graphicPaths>
+            <li>
+                <body>Things/Pawn/Humanlike/Grot/Bodies/</body>
+                <head>Things/Pawn/Humanlike/Grot/HeadsBase/</head>
+            </li>
+        </graphicPaths>
         <generalSettings>
             <maleGenderProbability>1</maleGenderProbability>
             <immuneToAge>false</immuneToAge>
-            <forcedRaceTraitEntries>
-                <li>
-                    <defName>Wimp</defName>
-                    <degree>0</degree>
-                    <chance>50</chance>
-                </li>
-                <li>
-                    <defName>Xenophobia</defName>
-                    <degree>1</degree>
-                    <chance>75</chance>
-                </li>
-            </forcedRaceTraitEntries>
-			<disallowedTraits>
-               <li>Kind</li>
-               <li>Gay</li> 
-               <li>DislikesWomen</li>
-               <li>DislikesMen</li>
-            </disallowedTraits>
             <alienPartGenerator>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
@@ -179,105 +167,117 @@
 			<chemicalSettings>	
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
-		   <notXenophobistTowards>
+			<notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
 				<li>Alien_Ork</li>
 				<li>OG_Cyborg_Ork</li>
 				<li>Cyborg_Ork</li>
-           </notXenophobistTowards>
-		<factionRelations>
+			</notXenophobistTowards>
+			<factionRelations>
+					<li>
+						<factions>
+						   <li>OG_Ork_Tek_Faction</li>
+						   <li>OG_Ork_Feral_Faction</li>
+						   <li>OG_Ork_PlayerColony</li>
+						   <li>OG_Ork_PlayerTribe</li>
+						</factions>
+						<goodwill>
+						   <min>-10</min>
+						   <max>40</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>PlayerColony</li>
+						   <li>PlayerTribe</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>10</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>EldarFaction</li>
+						   <li>EldarPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>0</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>DarkEldarFaction</li>
+						   <li>DarkEldarPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>0</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>TauFaction</li>
+						   <li>KrootFaction</li>
+						   <li>TauPlayerColony</li>
+						   <li>KrootPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>-30</max>
+						</goodwill>
+					</li>  
+					<li>
+						<factions>
+						   <li>ImperialMechanicusFaction</li>
+						   <li>ImperialMechanicusPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>-50</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>ImperialHumanFaction</li>
+						   <li>ImperialHumanPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>-50</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+						   <li>ImperialAstartesFaction</li>
+						   <li>ImperialAstartesPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>-100</min>
+						   <max>-50</max>
+						</goodwill>
+					</li>
+			</factionRelations>
+            <forcedRaceTraitEntries>
                 <li>
-                    <factions>
-                       <li>OG_Ork_Tek_Faction</li>
-                       <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-10</min>
-                       <max>40</max>
-                    </goodwill>
+                    <defName>Wimp</defName>
+                    <degree>0</degree>
+                    <chance>50</chance>
                 </li>
-				<li>
-                    <factions>
-					   <li>PlayerColony</li>
-					   <li>PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>10</max>
-                    </goodwill>
+                <li>
+                    <defName>Xenophobia</defName>
+                    <degree>1</degree>
+                    <chance>75</chance>
                 </li>
-				<li>
-                    <factions>
-                       <li>EldarFaction</li>
-					   <li>EldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>DarkEldarFaction</li>
-					   <li>DarkEldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>TauFaction</li>
-                       <li>KrootFaction</li>
-					   <li>TauPlayerColony</li>
-					   <li>KrootPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-30</max>
-                    </goodwill>
-                </li>  
-				<li>
-                    <factions>
-                       <li>ImperialMechanicusFaction</li>
-					   <li>ImperialMechanicusPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>ImperialHumanFaction</li>
-					   <li>ImperialHumanPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-				<li>
-                    <factions>
-                       <li>ImperialAstartesFaction</li>
-					   <li>ImperialAstartesPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-		</factionRelations>
-        </generalSettings>
-        <graphicPaths>
-            <li>
-                <body>Things/Pawn/Humanlike/Grot/Bodies/</body>
-                <head>Things/Pawn/Humanlike/Grot/HeadsBase/</head>
-            </li>
-        </graphicPaths>
+            </forcedRaceTraitEntries>
+			<disallowedTraits>
+               <li>Kind</li>
+               <li>Gay</li> 
+               <li>DislikesWomen</li>
+               <li>DislikesMen</li>
+            </disallowedTraits>
+		</generalSettings>
         <hairSettings>
             <hasHair>true</hasHair>
             <getsGreyAt>200</getsGreyAt> 
@@ -818,11 +818,4 @@
       </li>
     </comps>
 </AlienRace.ThingDef_AlienRace>
-<!--
-<AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
-    <defName>OG_Alien_Grot</defName>
-    <label>Grot</label>
-    <description>The worker of the orkoid species: A fully grown Grot.</description>
-</AlienRace.ThingDef_AlienRace>
--->
 </Defs>

@@ -22,11 +22,11 @@
       <li>Ork_Boy_Slugga</li>
       <li>Ork_Shoota</li>
       <li>Ork_Boy_Shoota</li>
-      <li>Ork_ShootaNob</li>
       <li>Ork_Nob_Shoota</li>
-      <li>Ork_SluggaNob</li>
+      <li>Ork_Nob_Shoota</li>
       <li>Ork_Nob_Slugga</li>
-      <li>Ork_ChoppaNob</li>
+      <li>Ork_Nob_Slugga</li>
+      <li>Ork_Nob_Choppa</li>
       <li>Ork_Nob_Choppa</li>
       <li>Ork_Doc</li>
       <li>Ork_Noncom</li>
@@ -630,7 +630,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Nob</li>
-      <li>Ork_ChoppaNob</li>
+      <li>Ork_Nob_Choppa</li>
       <li>Ork_Nob_Choppa</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -737,7 +737,7 @@
     </disallowedTraits>
     <spawnCategories>
       <li>Ork_Nob</li>
-      <li>Ork_SluggaNob</li>
+      <li>Ork_Nob_Slugga</li>
       <li>Ork_Nob_Slugga</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -792,7 +792,7 @@
     </disallowedTraits>
     <spawnCategories>
       <li>Ork_Nob</li>
-      <li>Ork_ShootaNob</li>
+      <li>Ork_Nob_Shoota</li>
       <li>Ork_Nob_Shoota</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -989,19 +989,16 @@
     <spawnCategories>
       <li>Ork_Weird</li>
       <li>Ork_Weird_Child</li>
-      <li>Ork_Weird_Boy</li>
-      <li>Ork_WeirdBoy</li>
-      <li>Ork_Weird_Nob</li>
-      <li>Ork_WeirdNob</li>
-      <li>Ork_Weird_Boss</li>
-      <li>Ork_WeirdBoss</li>
+      <li>Ork_Boy_Weird</li>
+      <li>Ork_Nob_Weird</li>
+      <li>Ork_Boss_Weird</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
 <!-- Weird Adulthood -->
 <!-- Weird Boy -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Weird_Boy</defName>
+    <defName>Ork_Boy_Weird</defName>
     <title>Weirdboy</title>
     <titleShort>Weirdboy</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
@@ -1042,14 +1039,13 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
-      <li>Ork_WeirdBoy</li>
-      <li>Ork_Weird_Boy</li>
+      <li>Ork_Boy_Weird</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
    
 <!-- Weird Nob -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Weird_Nob</defName>
+    <defName>Ork_Nob_Weird</defName>
     <title>Weirdboy Nob</title>
     <titleShort>Weirdboy Nob</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
@@ -1100,14 +1096,13 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
-      <li>Ork_WeirdNob</li>
-      <li>Ork_Weird_Nob</li>
+      <li>Ork_Nob_Weird</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
   
 <!-- Weird Boss -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Weird_Boss</defName>
+    <defName>Ork_Boss_Weird</defName>
     <title>Prophet of Waaaaargh!</title>
     <titleShort>Prophet</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
@@ -1157,8 +1152,7 @@
     </skillGains>
     <spawnCategories>
       <li>Ork_Weird</li>
-      <li>Ork_WeirdBoss</li>
-      <li>Ork_Weird_Boss</li>
+      <li>Ork_Boss_Weird</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
   
