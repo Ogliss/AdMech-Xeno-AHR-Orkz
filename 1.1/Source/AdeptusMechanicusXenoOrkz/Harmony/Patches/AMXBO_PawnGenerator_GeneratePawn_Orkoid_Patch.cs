@@ -29,7 +29,7 @@ namespace AdeptusMechanicus.Orkz
                 //    Log.Message(string.Format("GeneratePawn End request is {0}, {1}, {2}", request.KindDef.LabelCap, request.FixedGender, request.MustBeCapableOfViolence));
             }
         }
-
+        /*
         [HarmonyPostfix]
         public static void Post_GeneratePawn(ref Pawn __result)
         {
@@ -60,5 +60,6 @@ namespace AdeptusMechanicus.Orkz
                 }
             }
         }
+        */
     }
 }

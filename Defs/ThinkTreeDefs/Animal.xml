@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThinkTreeDef>
-    <defName>Snotling</defName>
-    <thinkRoot Class="ThinkNode_Priority">
+	<ThinkTreeDef>
+		<defName>Snotling</defName>
+		<thinkRoot Class="ThinkNode_Priority">
       <subNodes>
         <!-- Keep lying down if we have to -->
-        <li Class="ThinkNode_ConditionalMustKeepLyingDown">
-          <subNodes>
+				<li Class="ThinkNode_ConditionalMustKeepLyingDown">
+					<subNodes>
             <!-- Do a queued job if possible -->
             <li Class="ThinkNode_QueuedJob">
               <inBedOnly>true</inBedOnly>
@@ -29,7 +29,7 @@
         </li>
         
         <!-- React to close melee threat -->
-        <li Class="JobGiver_ReactToCloseMeleeThreat" />
+				<li Class="JobGiver_ReactToCloseMeleeThreat" />
 
         <!-- Do a queued job -->
         <li Class="ThinkNode_QueuedJob" />
@@ -84,7 +84,7 @@
           </subNodes>
         </li>
         
-        <!-- Lord directives -->
+				<!-- Lord directives -->
         <li Class="ThinkNode_Subtree">
           <treeDef>LordDuty</treeDef>
         </li>
@@ -152,7 +152,7 @@
                   <trainable>Rescue</trainable>
                   <subNodes>
                     <li Class="JobGiver_RescueNearby">
-                      <radius>75</radius>
+                      <radius>30</radius>
                     </li>
                   </subNodes>
                 </li>
@@ -174,19 +174,19 @@
           </subNodes>
         </li>
         
-        <!-- Eat random things out of curiosity -->
-        <li Class="ThinkNode_ChancePerHour_Constant">
-          <mtbDays>60</mtbDays>
-          <subNodes>
+				<!-- Eat random things out of curiosity -->
+				<li Class="ThinkNode_ChancePerHour_Constant">
+					<mtbDays>60</mtbDays>
+					<subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>SatisfyingNeeds</tagToGive>
               <subNodes>
                 <li Class="JobGiver_EatRandom"/>
               </subNodes>
             </li>
-          </subNodes>
-        </li>
-        
+					</subNodes>
+				</li>
+				
         <!-- Satisfy basic needs -->
         <li Class="ThinkNode_Subtree">
           <treeDef>SatisfyBasicNeeds</treeDef>
@@ -224,20 +224,13 @@
             <li Class="ThinkNode_ChancePerHour_Constant">
               <mtbHours>1.5</mtbHours>
               <subNodes>
-                <li Class="ThinkNode_ConditionalRequireCapacities">
-                  <requiredCapacities>
-                    <li>Manipulation</li>
-                  </requiredCapacities>
+                <li Class="ThinkNode_ConditionalTrainableCompleted">
+                  <trainable>Haul</trainable>
                   <subNodes>
-                    <li Class="ThinkNode_ConditionalTrainableCompleted">
-                      <trainable>Haul</trainable>
+                    <li Class="ThinkNode_Tagger">
+                      <tagToGive>TrainedAnimalBehavior</tagToGive>
                       <subNodes>
-                        <li Class="ThinkNode_Tagger">
-                          <tagToGive>TrainedAnimalBehavior</tagToGive>
-                          <subNodes>
-                            <li Class="JobGiver_Haul" />
-                          </subNodes>
-                        </li>
+                        <li Class="JobGiver_Haul" />
                       </subNodes>
                     </li>
                   </subNodes>
@@ -263,7 +256,10 @@
                   <subNodes>
                     <li Class="JobGiver_WanderAnywhere">
                       <maxDanger>None</maxDanger>
-                      <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                      <ticksBetweenWandersRange>
+                        <min>120</min>
+                        <max>240</max>
+                      </ticksBetweenWandersRange>
                     </li>
                   </subNodes>
                 </li>
@@ -271,7 +267,10 @@
                 <!-- Wander near colony -->
                 <li Class="JobGiver_WanderColony">
                   <maxDanger>None</maxDanger>
-                  <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                  <ticksBetweenWandersRange>
+                    <min>120</min>
+                    <max>240</max>
+                  </ticksBetweenWandersRange>
                 </li>
               </subNodes>
             </li>
@@ -307,27 +306,33 @@
               <subNodes>
                 <li Class="JobGiver_WanderHerd">
                   <maxDanger>Deadly</maxDanger>
-                  <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                  <ticksBetweenWandersRange>
+                    <min>120</min>
+                    <max>240</max>
+                  </ticksBetweenWandersRange>
                 </li>
               </subNodes>
             </li>
             
             <li Class="JobGiver_WanderAnywhere">
               <maxDanger>Deadly</maxDanger>
-              <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>    
+              <ticksBetweenWandersRange>
+                <min>120</min>
+                <max>240</max>
+              </ticksBetweenWandersRange>    
             </li>
           </subNodes>
         </li>
 
         <li Class="JobGiver_IdleError"/>
       </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
+		</thinkRoot>
+	</ThinkTreeDef>
 
-  <ThinkTreeDef>
-    <defName>SnotlingConstant</defName>
-    <thinkRoot Class="ThinkNode_Priority">
-      <subNodes>
+	<ThinkTreeDef>
+		<defName>AnimalConstant</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
           <subNodes>
             <!-- Flee enemies, tornados, meteorites, etc. -->
@@ -345,7 +350,7 @@
           </subNodes>
         </li>
       </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
+		</thinkRoot>
+	</ThinkTreeDef>
 
 </Defs>

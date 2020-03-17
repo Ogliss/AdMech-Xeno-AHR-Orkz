@@ -1,8 +1,6 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\bin\Release\AdeptusMechanicusOrkz.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\bin\Release\AdeptusMechanicusOrkz.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\bin\Release\0Harmony.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusXenoOrkz.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusXenoOrkz.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusOrkz.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusOrkz.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Assemblies\AdeptusMechanicusOrkz.dll
@@ -13,3 +11,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorldV1.0\Mods\AdMech-Xeno-AHR-
 C:\Program Files (x86)\Steam\steamapps\common\RimWorldV1.0\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusXenoOrkz.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorldV1.0\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusOrkz.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorldV1.0\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusOrkz.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusXenoOrkz.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Source\AdeptusMechanicusXenoOrkz\obj\Release\AdeptusMechanicusXenoOrkz.csproj.CopyComplete
