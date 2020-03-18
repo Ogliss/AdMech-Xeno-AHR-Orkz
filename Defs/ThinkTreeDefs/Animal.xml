@@ -330,7 +330,7 @@
 	</ThinkTreeDef>
 
 	<ThinkTreeDef>
-		<defName>AnimalConstant</defName>
+		<defName>SnotlingConstant</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">

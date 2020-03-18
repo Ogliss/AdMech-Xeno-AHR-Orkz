@@ -2,7 +2,7 @@
 <Defs>
 
 <AlienRace.ThingDef_AlienRace Name="OG_Grot_Race" ParentName="OG_Ork_Pawn_Base" Abstract="True">
-    <defName>Alien_Grot</defName>
+    <defName>OG_Alien_Grot</defName>
     <label>Grot</label>
     <description>The worker of the orkoid species: A fully grown Grot.</description>
     <alienRace>
@@ -182,7 +182,7 @@
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
-				<li>Alien_Ork</li>
+				<li>OG_Alien_Ork</li>
 				<li>OG_Cyborg_Ork</li>
 				<li>Cyborg_Ork</li>
            </notXenophobistTowards>
@@ -303,9 +303,9 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Ork</li>
-                        <li>Alien_Ork</li>
+                        <li>OG_Alien_Ork</li>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Grot</li>
+                        <li>OG_Alien_Grot</li>
                         <li>OG_Cyborg_Ork</li>
                         <li>Cyborg_Ork</li>
                     </raceList>
@@ -317,9 +317,9 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Ork</li>
-                        <li>Alien_Ork</li>
+                        <li>OG_Alien_Ork</li>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Grot</li>
+                        <li>OG_Alien_Grot</li>
                         <li>OG_Cyborg_Ork</li>
                         <li>Cyborg_Ork</li>
                     </raceList>
@@ -828,12 +828,6 @@
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
     <defName>OG_Alien_Grot</defName>
-    <label>Grot</label>
-    <description>The worker of the orkoid species: A fully grown Grot.</description>
-</AlienRace.ThingDef_AlienRace>
-
-<AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
-    <defName>Alien_Grot</defName>
     <label>Grot</label>
     <description>The worker of the orkoid species: A fully grown Grot.</description>
 </AlienRace.ThingDef_AlienRace>

@@ -26,7 +26,7 @@
     <labelFemale>wild grot runt</labelFemale>
     <labelFemalePlural>wild grot runts</labelFemalePlural>
     <combatPower>40</combatPower>
-    <race>Alien_Grot</race>
+    <race>OG_Alien_Grot</race>
     <backstoryCategories>
       <li>Grot_Gretchin</li>
     </backstoryCategories>

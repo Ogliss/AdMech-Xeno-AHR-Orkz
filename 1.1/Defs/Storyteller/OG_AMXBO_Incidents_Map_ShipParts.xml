@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ============================== Big threats ============================== -->  
   <IncidentDef>
-    <defName>OrkRokCrash</defName>
+    <defName>OG_Ork_Rok_Crash</defName>
     <label>Rok Impact</label>
     <targetTags>
       <li>Map_PlayerHome</li>
@@ -27,7 +27,7 @@
   </IncidentDef>
   
   <IncidentDef>
-    <defName>SpaceHulkPartCrash</defName>
+    <defName>OG_Space_Hulk_Part_Crash</defName>
     <label>Space hulk part impact</label>
     <targetTags>
       <li>Map_PlayerHome</li>

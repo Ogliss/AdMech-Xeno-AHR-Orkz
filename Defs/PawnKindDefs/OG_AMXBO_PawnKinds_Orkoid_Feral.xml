@@ -76,7 +76,7 @@
   <!-- ============================ Grot Civilian Base ========================== -->
   <PawnKindDef Name="FeralGrotCivBase" ParentName="OG_Orkoid_Feral" Abstract="True">
     <combatPower>25</combatPower>
-	<race>Alien_Grot</race>
+	<race>OG_Alien_Grot</race>
     <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>

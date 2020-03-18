@@ -449,9 +449,9 @@
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
-				<li>Alien_Grot</li>
 				<li>OG_Alien_Grot</li>
-				<li>Alien_Ork</li>
+				<li>OG_Alien_Grot</li>
+				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
 				<li>Cyborg_Ork</li>
 				<li>OG_Cyborg_Ork</li>
@@ -572,9 +572,9 @@
 			<butcherThoughtSpecific>
                 <li>
                     <raceList>
-                        <li>Alien_Grot</li>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Ork</li>
+                        <li>OG_Alien_Grot</li>
+                        <li>OG_Alien_Ork</li>
                         <li>OG_Alien_Ork</li>
                         <li>Cyborg_Ork</li>
                         <li>OG_Cyborg_Ork</li>
@@ -586,9 +586,9 @@
             <ateThoughtSpecific>
                 <li>
                     <raceList>
-                        <li>Alien_Grot</li>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Ork</li>
+                        <li>OG_Alien_Grot</li>
+                        <li>OG_Alien_Ork</li>
                         <li>OG_Alien_Ork</li>
                         <li>Cyborg_Ork</li>
                         <li>OG_Cyborg_Ork</li>
@@ -1136,9 +1136,9 @@
     <alienRace>
         <generalSettings>
 			<notXenophobistTowards>
-				<li>Alien_Grot</li>
 				<li>OG_Alien_Grot</li>
-				<li>Alien_Ork</li>
+				<li>OG_Alien_Grot</li>
+				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
 				<li>Cyborg_Ork</li>
 				<li>OG_Cyborg_Ork</li>
