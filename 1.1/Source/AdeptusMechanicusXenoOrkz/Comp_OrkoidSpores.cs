@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AlienRace;
+using AdeptusMechanicus.settings;
 
 namespace AdeptusMechanicus
 {
@@ -62,7 +63,7 @@ namespace AdeptusMechanicus
         {
             get
             {
-                return Props.spawnChance;
+                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
             }
         }
 
@@ -70,7 +71,7 @@ namespace AdeptusMechanicus
         {
             get
             {
-                return Props.snotlingChance;
+                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
             }
         }
 
@@ -78,7 +79,7 @@ namespace AdeptusMechanicus
         {
             get
             {
-                return Props.grotChance;
+                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
             }
         }
 
@@ -86,7 +87,7 @@ namespace AdeptusMechanicus
         {
             get
             {
-                return Props.orkChance;
+                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
             }
         }
 
@@ -157,7 +158,8 @@ namespace AdeptusMechanicus
                             pawn.ChangeKind(PawnKindDefOf.Colonist);
                         }
                     }
-
+                    pawn.ageTracker.AgeBiologicalTicks = 0;
+                    pawn.ageTracker.AgeChronologicalTicks = 0;
                     GenSpawn.Spawn(pawn, base.parent.Position, map, 0);
                 }
             }

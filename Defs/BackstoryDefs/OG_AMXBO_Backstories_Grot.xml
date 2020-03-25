@@ -78,6 +78,8 @@
       <li>Grot_Runt</li>
       <li>Grot_Gretchin</li>
       <li>Grot_Slave</li>
+      <li>Grot_Leada</li>
+      <li>Grot_Tek</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -123,9 +125,6 @@
     <workDisables>
       <li>Cooking</li>
       <li>Mining</li>
-      <li>ManualSkilled</li>
-      <li>Animals</li>
-      <li>Crafting</li>
     </workDisables>
     <skillGains>
       <li>
@@ -134,7 +133,7 @@
       </li>
       <li>
         <defName>Melee</defName>
-        <amount>1</amount>
+        <amount>4</amount>
       </li>
     </skillGains>
     <spawnCategories>
@@ -158,9 +157,6 @@
       <li>Caring</li>
       <li>Social</li>
       <li>Cooking</li>
-      <li>Animals</li>
-      <li>Mining</li>
-      <li>PlantWork</li>
     </workDisables>
     <skillGains>
       <li>
@@ -170,6 +166,10 @@
       <li>
         <defName>Melee</defName>
         <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
       </li>
     </skillGains>
     <spawnCategories>
@@ -193,7 +193,6 @@
       <li>Caring</li>
       <li>Cooking</li>
       <li>Mining</li>
-      <li>PlantWork</li>
     </workDisables>
     <skillGains>
       <li>
@@ -202,7 +201,11 @@
       </li>
       <li>
         <defName>Melee</defName>
-        <amount>1</amount>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
       </li>
     </skillGains>
     <spawnCategories>
