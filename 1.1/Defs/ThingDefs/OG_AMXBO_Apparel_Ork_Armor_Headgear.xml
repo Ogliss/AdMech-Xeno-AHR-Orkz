@@ -32,7 +32,7 @@
       <li>Leathery</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -93,7 +93,7 @@
       <li>Metallic</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T1</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -152,7 +152,7 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishEavyArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T2</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -213,7 +213,7 @@
       <Steel>550</Steel>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishMegaArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T3</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -257,6 +257,9 @@
     <costList>
       <Steel>20</Steel>
     </costList>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T1</researchPrerequisite>
+		</recipeMaker>
     <costStuffCount>40</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
@@ -290,6 +293,9 @@
         <li>OGOrkArmour</li>
         <li>OGOrkHeadgear</li>
         <li>OGOrkMask</li>
+        <li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>OGOArmour</li>

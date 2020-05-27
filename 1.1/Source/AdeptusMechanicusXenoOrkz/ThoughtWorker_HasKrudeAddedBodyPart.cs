@@ -37,7 +37,7 @@ namespace AdeptusMechanicus
             List<Hediff> hediffs = hs.hediffs;
             for (int i = 0; i < hediffs.Count; i++)
             {
-                if (hediffs[i] is Hediff_AddedPart addedPart && addedPart.comps.Any(comp => comp.props is HediffCompProperties_CrudeAddedPart))
+                if (hediffs[i] is Hediff_AddedPart addedPart && addedPart.def.defName.Contains("OG_KrudeBionik"))
                 {
                     num++;
                 }

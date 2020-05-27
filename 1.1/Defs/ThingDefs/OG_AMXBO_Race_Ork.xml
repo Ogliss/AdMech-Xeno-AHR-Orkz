@@ -6,35 +6,35 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-						<li>Tribesperson_OG_Grot_Feral</li>
+						<li>Tribesperson_OG_Grot</li>
 						<li>Colonist_OG_Grot</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy_Feral</li>
+                        <li>Tribesperson_OG_Ork_Boy</li>
                         <li>Colonist_OG_Ork_Boy</li>
                     </kindDefs>
                     <chance>30.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                         <li>Colonist_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>20.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                         <li>Colonist_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Weird</li>
+                        <li>Tribesperson_OG_Ork_Weird</li>
                         <li>Colonist_OG_Ork_Weird</li>
                     </kindDefs>
                     <chance>5.0</chance>
@@ -43,35 +43,35 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-						<li>Tribesperson_OG_Grot_Feral</li>
+						<li>Tribesperson_OG_Grot</li>
 						<li>Colonist_OG_Grot</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral</li>
+                        <li>Tribesperson_OG_Ork</li>
                         <li>Colonist_OG_Ork_Colonist</li>
                     </kindDefs>
                     <chance>30.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                         <li>Colonist_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>20.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                         <li>Colonist_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Weird</li>
+                        <li>Tribesperson_OG_Ork_Weird</li>
                         <li>Colonist_OG_Ork_Weird</li>
                     </kindDefs>
                     <chance>5.0</chance>
@@ -113,26 +113,26 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral</li>
-						<li>Tribesperson_OG_Grot_Feral</li>
+                        <li>Tribesperson_OG_Ork</li>
+						<li>Tribesperson_OG_Grot</li>
                     </kindDefs>
                     <chance>80.0</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>30.0</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>10.0</chance>
 					</li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Weird</li>
+                        <li>Tribesperson_OG_Ork_Weird</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
@@ -146,23 +146,23 @@
 					<li>
                     <kindDefs>
                         <li>Colonist_OG_Ork_Boy</li>
-                        <li>Tribesperson_OG_Ork_Boy_Feral</li>
+                        <li>Tribesperson_OG_Ork_Boy</li>
 						<li>Colonist_OG_Grot</li>
-						<li>Tribesperson_OG_Grot_Feral</li>
+						<li>Tribesperson_OG_Grot</li>
                     </kindDefs>
                     <chance>8.0</chance>
 					</li>
 					<li>
                     <kindDefs>
                         <li>Colonist_OG_Ork_Nob</li>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>3.0</chance>
 					</li>
 					<li>
                     <kindDefs>
                         <li>Colonist_OG_Ork_Warboss</li>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>1.0</chance>
 					</li>
@@ -181,26 +181,26 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy_Feral</li>
-						<li>Tribesperson_OG_Grot_Feral</li>
+                        <li>Tribesperson_OG_Ork_Boy</li>
+						<li>Tribesperson_OG_Grot</li>
                     </kindDefs>
                     <chance>8.0</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>3.0</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>1.0</chance>
 					</li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Weird</li>
+                        <li>Tribesperson_OG_Ork_Weird</li>
                     </kindDefs>
                     <chance>0.50</chance>
                 </li>
@@ -215,35 +215,35 @@
                     <pawnKindEntries>
                 <li>
                     <kindDefs>
-						<li>Tribesperson_OG_Grot_Feral</li>
+						<li>Tribesperson_OG_Grot</li>
 						<li>Colonist_OG_Grot</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy_Feral</li>
+                        <li>Tribesperson_OG_Ork_Boy</li>
                         <li>Colonist_OG_Ork_Colonist</li>
                     </kindDefs>
                     <chance>30.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob_Feral</li>
+                        <li>Tribesperson_OG_Ork_Nob</li>
                         <li>Colonist_OG_Ork_Nob</li>
                     </kindDefs>
                     <chance>20.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Warboss</li>
+                        <li>Tribesperson_OG_Ork_Warboss</li>
                         <li>Colonist_OG_Ork_Warboss</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Tribesperson_OG_Ork_Feral_Weird</li>
+                        <li>Tribesperson_OG_Ork_Weird</li>
                         <li>Colonist_OG_Ork_Weird</li>
                     </kindDefs>
                     <chance>5.0</chance>
@@ -449,99 +449,112 @@
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
-				<li>OG_Alien_Grot</li>
-				<li>OG_Alien_Grot</li>
 				<li>OG_Alien_Ork</li>
-				<li>OG_Alien_Ork</li>
-				<li>Cyborg_Ork</li>
+				<li>Alien_Ork</li>
+				<li>OG_Alien_Grot</li>
+				<li>Alien_Grot</li>
 				<li>OG_Cyborg_Ork</li>
+				<li>Cyborg_Ork</li>
 			</notXenophobistTowards>
-		<factionRelations>
-                <li>
-                    <factions>
-                       <li>OG_Ork_Tek_Faction</li>
-                       <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-10</min>
-                       <max>40</max>
-                    </goodwill>
-                </li>
+			<factionRelations>
 				<li>
-                    <factions>
+					<factions>
 					   <li>PlayerColony</li>
 					   <li>PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>10</max>
-                    </goodwill>
-                </li>
+					   <li>OutlanderCivil</li>
+					   <li>OutlanderRough</li>
+					   <li>TribeCivil</li>
+					   <li>TribeRough</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>10</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>EldarFaction</li>
-					   <li>EldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
+					<factions>
+					   <li>OG_Ork_Tek_Faction</li>
+					   <li>OG_Ork_Feral_Faction</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_PlayerTribe</li>
+					</factions>
+					<goodwill>
+					   <min>-10</min>
+					   <max>40</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>DarkEldarFaction</li>
-					   <li>DarkEldarPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>0</max>
-                    </goodwill>
-                </li>
+					<factions>
+					   <li>OG_Eldar_Craftworld_Faction</li>
+					   <li>OG_Eldar_Player_Craftworld</li>
+					   <li>OG_Eldar_Exodite_Faction</li>
+					   <li>OG_Eldar_Player_Exodite</li>
+					   <li>OG_Eldar_Harlequin_Faction</li>
+					   <li>OG_Eldar_Player_Harlequin</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>0</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>TauFaction</li>
-                       <li>KrootFaction</li>
-					   <li>TauPlayerColony</li>
-					   <li>KrootPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-30</max>
-                    </goodwill>
-                </li>  
+					<factions>
+					   <li>OG_DarkEldar_Faction</li>
+					   <li>OG_DarkEldar_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>0</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>ImperialMechanicusFaction</li>
-					   <li>ImperialMechanicusPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
+					<factions>
+					   <li>OG_Tau_Faction</li>
+					   <li>OG_Kroot_Faction</li>
+					   <li>OG_Tau_PlayerColony</li>
+					   <li>OG_Kroot_PlayerColony</li>
+					   <li>OG_Kroot_PlayerTribe</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-30</max>
+					</goodwill>
+				</li>  
 				<li>
-                    <factions>
-                       <li>ImperialHumanFaction</li>
-					   <li>ImperialHumanPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
+					<factions>
+					   <li>OG_Mechanicus_Faction</li>
+					   <li>OG_Mechanicus_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-50</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>ImperialAstartesFaction</li>
-					   <li>ImperialAstartesPlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-		</factionRelations>
+					<factions>
+					   <li>OG_Militarum_Cadian_Faction</li>
+					   <li>OG_Militarum_Cadian_Faction</li>
+					   <li>OG_Militarum_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-50</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_Astartes_BloodAngels</li>
+					   <li>OG_Astartes_DarkAngels</li>
+					   <li>OG_Astartes_ImperialFists</li>
+					   <li>OG_Astartes_PlayerColony</li>
+					   <li>OG_AstartesNeophyte_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-50</max>
+					</goodwill>
+				</li>
+			</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -573,11 +586,11 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Grot</li>
-                        <li>OG_Alien_Grot</li>
+                        <li>Alien_Grot</li>
                         <li>OG_Alien_Ork</li>
-                        <li>OG_Alien_Ork</li>
-                        <li>Cyborg_Ork</li>
+                        <li>Alien_Ork</li>
                         <li>OG_Cyborg_Ork</li>
+                        <li>Cyborg_Ork</li>
                     </raceList>
                     <thought>ButcheredOrkoidCorpse_OGOrkoid</thought>
                     <knowThought>KnowButcheredOrkoidCorpse_OGOrkoid</knowThought>
@@ -587,11 +600,11 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Grot</li>
-                        <li>OG_Alien_Grot</li>
+                        <li>Alien_Grot</li>
                         <li>OG_Alien_Ork</li>
-                        <li>OG_Alien_Ork</li>
-                        <li>Cyborg_Ork</li>
+                        <li>Alien_Ork</li>
                         <li>OG_Cyborg_Ork</li>
+                        <li>Cyborg_Ork</li>
                     </raceList>
                     <thought>AteOrkoidMeatDirect_OGOrkoid</thought>
                     <ingredientThought>AteOrkoidMeatAsIngredient_OGOrkoid</ingredientThought>
@@ -823,17 +836,17 @@
                 <li>
 					
                     <projects>
-						<li>OrkTekBase</li>
-						<li>OrkishBrutality</li>
-						<li>OrkishCunning</li>
-						<li>OrkishArmour</li>
-						<li>OrkishExtremeBrutality</li>
-						<li>OrkishEavyArmour</li>
-						<li>OrkishIntenseCunning</li>
-						<li>OrkishMekTek</li>
-						<li>OrkishPowerField</li>
-						<li>OrkishBigMekBrainz</li>
-						<li>OrkishMegaArmour</li>
+						<li>OG_Ork_Tech_Base_T1</li>
+						<li>OG_Ork_Tech_Weapons_Melee_T1</li>
+						<li>OG_Ork_Tech_Weapons_Ranged_T1</li>
+						<li>OG_Ork_Tech_Apparel_Armour_T1</li>
+						<li>OG_Ork_Tech_Weapons_Melee_T2</li>
+						<li>OG_Ork_Tech_Apparel_Armour_T2</li>
+						<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
+						<li>OG_Ork_Tech_Base_T2</li>
+						<li>OG_Ork_Tech_Weapons_Melee_T3</li>
+						<li>OG_Ork_Tech_Base_T3</li>
+						<li>OG_Ork_Tech_Apparel_Armour_T3</li>
                     </projects>
 					
                     <apparelList>
@@ -1050,7 +1063,7 @@
       </hediffGiverSets>
     </race>
     <recipes>
-       <li>InstallArchotechEye</li>
+      <!--li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
       <li>InstallArchotechLeg</li>
       <li>InstallPowerClaw</li>
@@ -1072,7 +1085,7 @@
       <li>InstallNaturalHeart</li>
       <li>InstallNaturalLung</li>
       <li>InstallNaturalKidney</li>
-      <li>InstallNaturalLiver</li>
+      <li>InstallNaturalLiver</li-->
       <li>ExciseCarcinoma</li>
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
@@ -1090,6 +1103,21 @@
 			<li>Unknown</li>
 			-->
 		</FoodPoisonCause>
+      </li>
+      <li Class="AdeptusMechanicus.CompProperties_Regeneration">
+		<healFreshWounds>true</healFreshWounds>
+		<healFreshChance>0.5</healFreshChance>
+		<allowSealWounds>false</allowSealWounds>
+		<sealWoundsChance>0.1</sealWoundsChance>
+		<healPermenantWounds>true</healPermenantWounds>
+		<healPermenantChance>0.1</healPermenantChance>
+		<allowScarRemoval>false</allowScarRemoval>
+		<scarRemovalChance>0.01</scarRemovalChance>
+		<regrowMissingParts>true</regrowMissingParts>
+		<regrowMissingChance>0.01</regrowMissingChance>
+		<useFood>true</useFood>
+		<useRest>false</useRest>
+		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li>
     </comps>
 </AlienRace.ThingDef_AlienRace>

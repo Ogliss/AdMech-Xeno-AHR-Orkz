@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkz and Grotz -->
+	<!-- stops Orkz and Grotz getting imperial traits from Astra Militarum -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>
+					/Defs/TraitDef[defName = "IGTraitMechanicus"]
+				</xpath>
+				<success>Always</success>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace [defName = "OG_Alien_Ork" or defName = "OG_Alien_Grot"]/alienRace/generalSettings/disallowedTraits</xpath>
+					<value>
+					<li>IGTraitMechanicus</li>
+					<li>IGTraitAstraMilitarum</li>
+					<li>IGTraitAssassinorum</li>
+					<li>IGTraitInquisition</li>
+					<li>IGTraitImperialMedic</li>
+					<li>IG_TraitAstarte</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

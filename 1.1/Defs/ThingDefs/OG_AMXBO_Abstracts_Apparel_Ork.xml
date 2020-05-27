@@ -25,7 +25,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 		
@@ -81,7 +81,7 @@
 				<li>OG_Ork_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -135,7 +135,7 @@
 				<li>OG_Ork_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>	
 </Defs>

@@ -81,7 +81,7 @@
       <li>Ork_Gun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OrkTekBase</researchPrerequisite>
+      <researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
   
@@ -90,7 +90,7 @@
       <li>Ork_SpecialGun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OrkishCunning</researchPrerequisite>
+      <researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T1</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
   
@@ -99,7 +99,7 @@
       <li>Ork_HeavyGun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OrkishIntenseCunning</researchPrerequisite>
+      <researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T2</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
 
@@ -121,7 +121,7 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-      <researchPrerequisite>OrkTekBase</researchPrerequisite>
+      <researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
     </recipeMaker>
     <inspectorTabs>
       <li>ITab_Art</li>

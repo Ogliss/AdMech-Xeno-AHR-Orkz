@@ -38,7 +38,7 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<!-- <researchPrerequisite>WGRConversionField</researchPrerequisite> -->
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
 		</recipeMaker>
     <thingCategories>
 	
@@ -104,7 +104,7 @@
 		  <li>Metallic</li>
 		</stuffCategories>
 		<recipeMaker>
-			<!-- <researchPrerequisite>OG_Wargear_ServoSkull_Imperial</researchPrerequisite> -->
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 			<bodyPartGroups>
@@ -117,6 +117,9 @@
 			<tags>
 				<li>OGOWargear</li>
 				<li>BossPole</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>RoyalCombatGear</li>
 			</tags>
 		</apparel>
 		<tradeTags>

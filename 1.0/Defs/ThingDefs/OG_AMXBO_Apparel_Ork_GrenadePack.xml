@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========================= Ork - Wargear S 3 ========================== -->
+    <!-- ========================= Ork - Grenade Packs	========================== -->
+    <!-- ========================= Ork - Frag Grenades	========================== -->
+	<ThingDef ParentName="OGOWargearMakeable">
+		<defName>OGO_GrenadePack_Frag</defName>
+		<label>frag stikk bombz</label>
+		<description>a pack of frag stikk bombz.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkFragStikkBombs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+		
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T2</researchPrerequisite>
+		</recipeMaker>
+		<comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
+				<Abilities>
+					<li>OGO_Ability_ThrowFrag</li>
+				</Abilities>
+			</li>
+		</comps>
+		
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>BeltWargear3</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>OGOGrens</li>
+				<li>OGOGrenFrag</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
+	</ThingDef>
+	
+    <!-- ========================= Ork - Krak Grenades	========================== -->
+	<ThingDef ParentName="OGOWargearMakeable">
+		<defName>OGO_GrenadePack_Krak</defName>
+		<label>krak stikk bombz</label>
+		<description>a pack of krak stikk bombz.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkKrakStikkBombs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+		
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T2</researchPrerequisite>
+		</recipeMaker>
+		<comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
+				<Abilities>
+					<li>OGO_Ability_ThrowKrak</li>
+				</Abilities>
+			</li>
+		</comps>
+		
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>BeltWargear3</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>OGOGrens</li>
+				<li>OGOGrenKrak</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
+	</ThingDef>
+
+    <!-- ========================= Ork - Melta Bomb	========================== -->
+	<ThingDef ParentName="OGOWargearMakeable">
+		<defName>OGO_GrenadePack_Melta</defName>
+		<label>Tankbusta bombz</label>
+		<description>a pack of tankbusta bombz.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkTankbustaBombs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+		
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+		</recipeMaker>
+		<comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
+				<Abilities>
+					<li>OGO_Ability_ThrowMelta</li>
+				</Abilities>
+			</li>
+		</comps>
+		
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>BeltWargear3</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>OGOGrens</li>
+				<li>OGOGrenMelta</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
+	</ThingDef>
+
+			<!--
+		  <li Class="AdeptusMechanicus.CompProperties_HediffApparel">
+			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
+			<severityBasedOnDurability>false</severityBasedOnDurability>
+			<partsToAffect>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			</partsToAffect>
+			<groupsToAffect>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			</groupsToAffect>
+		  </li>
+			-->
+</Defs>

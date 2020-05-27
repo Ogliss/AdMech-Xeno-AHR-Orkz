@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="AddedBodyPartBase" Name="OG_KrudeBioniks" Abstract="true">
+		<description>Ork made krude bionik partz</description>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBionicBase" Name="OG_BodyPartKrudeBioniks" Abstract="true">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>OG_Ork_TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>OG_Ork_Tech_Base_T2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Krude Bionik Eye -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikEye</defName>
+		<label>install krude bionik eye</label>
+		<description>Install a krude bionik eye.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik eye.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikEye</addsHediff>
+	</RecipeDef>
+	
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikEye</defName>
+		<label>krude bionik eye</label>
+		<labelNoun>a krude bionik eye</labelNoun>
+		<comps>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikEye</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikEye</defName>
+		<label>krude bionik eye</label>
+		<description>An advanced but krude artificial eyes. Is a bit better than a biological eye but is uncomfortable. A lattice-dust healing system allows it to recover from damage.</description>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<WorkToMake>19000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- Krude Bionik Arm -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikArm</defName>
+		<label>install krude bionik arm</label>
+		<description>Install a krude bionik arm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik arm.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikArm</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikArm</defName>
+		<label>krude bionik arm</label>
+		<labelNoun>a krude bionik arm</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikArm</defName>
+		<label>krude bionik arm</label>
+		<description>An advanced but krude artificial arm. Noisy and strong this arm works better than a biological arm in every way. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- Krude Bionik Leg -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikLeg</defName>
+		<label>install krude bionik leg</label>
+		<description>Install a krude bionik leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik leg.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikLeg</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikLeg</defName>
+		<label>krude bionik leg</label>
+		<labelNoun>a krude bionik leg</labelNoun>
+		<comps>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikLeg</defName>
+		<label>krude bionik leg</label>
+		<description>An advanced but krude artificial leg. Noisy and strong this leg let its host run fast, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- Krude Bionik Spine -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikSpine</defName>
+		<label>install krude bionik spine</label>
+		<description>Install a krude bionik spine.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik spine.</jobString>
+		<workAmount>6000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikSpine</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikSpine</defName>
+		<label>krude bionik spine</label>
+		<labelNoun>a krude bionik spine</labelNoun>
+		<comps>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikSpine</defName>
+		<label>krude bionik spine</label>
+		<description>An advanced but krude artificial spine. A biogel nerve bundle runs down an articulated steel core, surrounded by a lattice-dust healing system. It is better than a biological spine.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- Integrated weapons -->
+	<!-- Krude Bionik Arm-Bludgeon -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikArm_Bludgeon</defName>
+		<label>install krude bionik arm bludgeon</label>
+		<description>Install a krude bionik arm bludgeon.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik arm bludgeon.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikArm_Bludgeon</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikArm_Bludgeon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikArm_Bludgeon</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikArm_Bludgeon</defName>
+		<label>krude bionik arm bludgeon</label>
+		<labelNoun>a krude bionik arm bludgeon</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bludgeon</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>20</power>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<cooldownTime>3</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikArm_Bludgeon</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+					<MeleeHitChance>10</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikArm_Bludgeon</defName>
+		<label>krude bionik bludgeon</label>
+		<description>An advanced but krude artificial arm turned into a potent bludgeon weapon. Works much like a normal krude bionik arm but its now a deadly weapon.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Krude Bionik Arm-Spike -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikArm_Spike</defName>
+		<label>install krude bionik arm spike</label>
+		<description>Install a krude bionik arm spike.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik arm spike.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikArm_Spike</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikArm_Spike</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikArm_Spike</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikArm_Spike</defName>
+		<label>krude bionik arm spike</label>
+		<labelNoun>a krude bionik arm spike</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>blade</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>18</power>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<cooldownTime>3</cooldownTime>
+					</li>
+					<li>
+						<label>point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>22</power>
+						<armorPenetration>0.6</armorPenetration>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<cooldownTime>2.5</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikArm_Spike</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+					<MeleeHitChance>10</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikArm_Spike</defName>
+		<label>krude bionik spike</label>
+		<description>An advanced but krude artificial arm turned into a potent piercing weapon. Works much like a normal krude bionik arm but its now a deadly weapon.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- Krude Bionik Arm-RangedWeaponPlatform -->
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>OG_InstallKrudeBionikArm_WeaponsPlatform</defName>
+		<label>install krude bionik ranged weapon platform</label>
+		<description>Install a krude bionik ranged weapon platform.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing krude bionik ranged weapon platform.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OG_KrudeBionikArm_RangedWeaponPlatform</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>OG_KrudeBionikArm_RangedWeaponPlatform</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<recipeUsers>
+			<li>OG_Alien_Ork</li>
+			<li>OG_Alien_Grot</li>
+		</recipeUsers>
+		<addsHediff>OG_KrudeBionikArm_RangedWeaponPlatform</addsHediff>
+	</RecipeDef>
+	
+	<HediffDef ParentName="OG_KrudeBioniks">
+		<defName>OG_KrudeBionikArm_RangedWeaponPlatform</defName>
+		<label>krude bionik ranged weapon platform</label>
+		<labelNoun>a krude bionik ranged weapon platform</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+			<!--li Class="QEthics.HediffCompProperties_WeaponsPlatform"/-->
+		</comps>
+		<spawnThingOnRemoved>OG_KrudeBionikArm_RangedWeaponPlatform</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+					<ShootingAccuracyPawn>14</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="OG_BodyPartKrudeBioniks">
+		<defName>OG_KrudeBionikArm_RangedWeaponPlatform</defName>
+		<label>krude bionik ranged weapon platform</label>
+		<description>An advanced but krude artificial arm turned into a platform for ranged weapons. Equipped items won't be dropped when downed. Works much like a normal krude bionik arm but its now a deadly weapon.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

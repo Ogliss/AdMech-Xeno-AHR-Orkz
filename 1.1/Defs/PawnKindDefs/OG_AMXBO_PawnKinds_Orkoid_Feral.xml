@@ -14,8 +14,7 @@
     <baseRecruitDifficulty>1</baseRecruitDifficulty>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelTags>
-      <li>Tribal</li>
-      <li>Neolithic</li>
+      <li>OGOClothing</li>
     </apparelTags>
   </PawnKindDef>
   
@@ -160,8 +159,7 @@
       <max>9000</max>
     </apparelMoney>
     <apparelTags>
-      <li>Tribal</li>
-      <li>Neolithic</li>
+      <li>OGOClothing</li>
     </apparelTags>
     <weaponMoney>
       <min>10000</min>
@@ -181,15 +179,30 @@
     <techHediffsTags>
       <li>Simple</li>
     </techHediffsTags>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
           <li>Ork_Boss</li>
         </categories>
+        <exclude>
+          <li>Ork_Boss_Weird</li>
+        </exclude>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Ork_Boss_Weird</li>
+        </categories>
+        <commonality>0.1</commonality>
       </li>
     </backstoryFiltersOverride>
 	<minGenerationAge>60</minGenerationAge>
 	<maxGenerationAge>600</maxGenerationAge>
+    <modExtensions>
+      <li Class="AdeptusMechanicus.BackstoryExtension">
+
+      </li>
+    </modExtensions>
   </PawnKindDef>
   
   <!-- ============================ Ork Trader ========================== -->
@@ -259,8 +272,7 @@
       <max>1500</max>
     </apparelMoney>
     <apparelTags>
-      <li>Tribal</li>
-      <li>Neolithic</li>
+      <li>OGOClothing</li>
       <li>OrkBasic</li>
     </apparelTags>
     <weaponMoney>
@@ -794,8 +806,7 @@
       <max>9000</max>
     </apparelMoney>
     <apparelTags>
-      <li>Tribal</li>
-      <li>Neolithic</li>
+      <li>OGOClothing</li>
     </apparelTags>
     <weaponMoney>
       <min>10000</min>

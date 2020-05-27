@@ -31,11 +31,12 @@
       <li>Leathery</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
       <bodyPartGroups>
+			<li>Neck</li>
 			<li>Torso</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
@@ -73,7 +74,7 @@
     </comps>
   </ThingDef>
  
-  <ThingDef ParentName="OGOApparelMakeableBase">
+  <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_Armour</defName>
     <label>Arma</label>
     <description>Arma is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
@@ -90,10 +91,10 @@
 		<MarketValue>1100</MarketValue>
 		<WorkToMake>1200</WorkToMake>
 		<Mass>3.25</Mass>
-      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>5</EquipDelay>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>6.5</EquipDelay>
     </statBases>
     <costList>
       <Steel>10</Steel>
@@ -103,12 +104,13 @@
       <li>Metallic</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T1</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
       <bodyPartGroups>
 			<li>Torso</li>
+			<li>Neck</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
 			<li>Legs</li>
@@ -119,8 +121,6 @@
       </layers>
       <tags>
         <li>OrkBasic</li>
-        <li>Royal</li>
-		<li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
         <li>Ork</li>
@@ -172,22 +172,26 @@
       <WorkToMake>12000</WorkToMake>
       <Mass>7.25</Mass>
       <Flammability>0</Flammability>
-      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.27</ArmorRating_Heat>
-      <Insulation_Cold>1</Insulation_Cold>
+      <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.67</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold>
       <EquipDelay>10</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
     <costList>
       <Steel>150</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishEavyArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T2</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
       <bodyPartGroups>
+			<li>Neck</li>
 			<li>Torso</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
@@ -201,6 +205,7 @@
         <li>OrkHeavy</li>
         <li>Royal</li>
 		<li>RoyalTier6</li>
+		<li>RoyalCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>Ork</li>
@@ -253,8 +258,8 @@
       <Mass>18.25</Mass>
       <Flammability>0</Flammability>
       <ArmorRating_Sharp>1.58</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.05</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.84</ArmorRating_Heat>
+      <ArmorRating_Blunt>1.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.44</ArmorRating_Heat>
       <Insulation_Cold>34</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>15</EquipDelay>
@@ -266,11 +271,12 @@
       <Steel>550</Steel>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishMegaArmour</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T3</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
       <bodyPartGroups>
+			<li>Neck</li>
 			<li>Torso</li>
 			<li>Shoulders</li>
 			<li>Arms</li>
@@ -284,6 +290,7 @@
         <li>OrkMega</li>
         <li>Royal</li>
         <li>RoyalTier7</li>
+		<li>RoyalCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>Ork</li>
@@ -310,7 +317,7 @@
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0.001</NorthOffset>
+			<NorthOffset>0.01</NorthOffset>
 			<SouthOffset>-0.001</SouthOffset>
 			<EastOffset>0.35</EastOffset>
 			<WestOffset>0.35</WestOffset>

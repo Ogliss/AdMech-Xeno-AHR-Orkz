@@ -58,4 +58,7 @@
     <li>Ogliss.AdMech.Armoury</li>
     <li>Ogliss.AdMech.Xenobiologis</li>
   </loadAfter>
+  <!--incompatibleWith>
+    <li>Ogliss.FeralOrkz</li>
+  </incompatibleWith-->	
 </ModMetaData>

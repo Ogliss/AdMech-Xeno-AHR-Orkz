@@ -17,12 +17,12 @@ namespace AdeptusMechanicus.ExtensionMethods
 
         public static bool isOrk(this PawnKindDef pawn)
         {
-            return pawn.race == OGOrkThingDefOf.OG_Alien_Ork;
+            return pawn.race == OGOrkThingDefOf.OG_Alien_Ork || pawn.race.defName.Contains("Alien_Ork") || pawn.race.defName.Contains("Cybork");
         }
 
         public static bool isGrot(this PawnKindDef pawn)
         {
-            return pawn.race == OGOrkThingDefOf.OG_Alien_Grot;
+            return pawn.race == OGOrkThingDefOf.OG_Alien_Grot || pawn.race.defName.Contains("Alien_Grot");
         }
 
         public static bool isSquig(this PawnKindDef pawn)
