@@ -3,9 +3,8 @@
   <identifier>AdMechXenoOrkz</identifier>
   <version>1.5.0.0</version>
   <dependencies>
-    <li>JecsTools</li>
     <li>AdMechArmoury</li>
-    <li>HumanoidAlienRaces2.0</li>
+    <li>erdelf.HumanoidAlienRaces</li>
   </dependencies>
   <incompatibleWith> 
     <li>FeralOrkz</li>
