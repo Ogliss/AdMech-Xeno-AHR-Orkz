@@ -27,7 +27,7 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T2</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 		<comps>  
 			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
@@ -139,7 +139,7 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+			<researchPrerequisite>OG_Common_Tech_Weapons_Melta</researchPrerequisite>
 		</recipeMaker>
 		<comps>  
 			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">

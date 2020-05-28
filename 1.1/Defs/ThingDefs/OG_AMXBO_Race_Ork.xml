@@ -892,11 +892,11 @@
                 <li>OGO_Melee_BigChoppa</li>
                 <li>OGO_Melee_PowerKlaw</li>
                 <li>OGO_Gun_GrotBlasta</li>
-                <li>OGO_Gun_OSlugga</li>
-                <li>OGO_Gun_OShoota</li>
-                <li>OGO_Gun_OTwinLinkedShoota</li>
-                <li>OGO_Gun_OBigShoota</li>
-                <li>OGO_Gun_OSnazzgun</li>
+                <li>OGO_Gun_Slugga</li>
+                <li>OGO_Gun_Shoota</li>
+                <li>OGO_Gun_TwinLinkedShoota</li>
+                <li>OGO_Gun_BigShoota</li>
+                <li>OGO_Gun_Snazzgun</li>
                 <li>OGO_Gun_ZappKannon</li>
                 <li>OGO_Gun_Burna</li>
                 <li>OGO_Gun_Scorcha</li>

@@ -2,7 +2,7 @@
 <Defs>
     <!-- ========================= Ork ========================== -->
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOApparelBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOApparelBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -25,7 +25,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 		
@@ -59,7 +59,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOArmorBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOArmorBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -113,7 +113,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Ork - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OGOWargearBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOWargearBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkWargear</li>

@@ -31,7 +31,7 @@
       <li>Leathery</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel</researchPrerequisite>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>

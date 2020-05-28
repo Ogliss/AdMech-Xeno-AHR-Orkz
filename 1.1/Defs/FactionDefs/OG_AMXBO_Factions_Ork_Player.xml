@@ -23,7 +23,7 @@
     <factionIconPath>Icons/Icon_Ork</factionIconPath>
     <startingResearchTags>
       <li>ClassicStart</li>
-      <li>OrkStart</li>
+      <li>Start_Ork</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>ClassicStart</li>
@@ -93,7 +93,7 @@
     <factionIconPath>Icons/Icon_Ork</factionIconPath>
     <startingResearchTags>
       <li>TribalStart</li>
-      <li>TribalOrkStart</li>
+      <li>TribalStart_Ork</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>TribalStart</li>
