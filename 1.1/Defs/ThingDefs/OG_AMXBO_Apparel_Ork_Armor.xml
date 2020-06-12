@@ -66,10 +66,10 @@
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0.001</NorthOffset>
-			<SouthOffset>-0.001</SouthOffset>
-			<EastOffset>0.35</EastOffset>
-			<WestOffset>0.35</WestOffset>
+			<NorthOffset>0,0.001,0</NorthOffset>
+			<SouthOffset>0,-0.001,0</SouthOffset>
+			<EastOffset>0,0.35,0</EastOffset>
+			<WestOffset>0,0.35,0</WestOffset>
       </li>
     </comps>
   </ThingDef>
@@ -147,10 +147,10 @@
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0.001</NorthOffset>
-			<SouthOffset>-0.001</SouthOffset>
-			<EastOffset>0.35</EastOffset>
-			<WestOffset>0.35</WestOffset>
+			<NorthOffset>0,0.001,0</NorthOffset>
+			<SouthOffset>0,-0.001,0</SouthOffset>
+			<EastOffset>0,0.35,0</EastOffset>
+			<WestOffset>0,0.35,0</WestOffset>
       </li>
     </comps>
   </ThingDef>
@@ -232,10 +232,10 @@
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0.001</NorthOffset>
-			<SouthOffset>-0.001</SouthOffset>
-			<EastOffset>0.35</EastOffset>
-			<WestOffset>0.35</WestOffset>
+			<NorthOffset>0,0.001,0</NorthOffset>
+			<SouthOffset>0,-0.001,0</SouthOffset>
+			<EastOffset>0,0.35,0</EastOffset>
+			<WestOffset>0,0.35,0</WestOffset>
       </li>
     </comps>
   </ThingDef>
@@ -317,10 +317,10 @@
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0.01</NorthOffset>
-			<SouthOffset>-0.001</SouthOffset>
-			<EastOffset>0.35</EastOffset>
-			<WestOffset>0.35</WestOffset>
+			<NorthOffset>0,0.01,0</NorthOffset>
+			<SouthOffset>0,-0.001,0</SouthOffset>
+			<EastOffset>0,0.35,0</EastOffset>
+			<WestOffset>0,0.35,0</WestOffset>
       </li>
     </comps>
   </ThingDef>

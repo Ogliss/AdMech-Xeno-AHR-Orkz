@@ -5,7 +5,7 @@ using RimWorld;
 using AdeptusMechanicus.ExtensionMethods;
 using Verse;
 
-namespace AdeptusMechanicus
+namespace AdeptusMechanicus.HarmonyInstance
 {
     // Token: 0x020000CB RID: 203
     [HarmonyPatch(typeof(Pawn_RelationsTracker), "SecondaryRomanceChanceFactor", null)]

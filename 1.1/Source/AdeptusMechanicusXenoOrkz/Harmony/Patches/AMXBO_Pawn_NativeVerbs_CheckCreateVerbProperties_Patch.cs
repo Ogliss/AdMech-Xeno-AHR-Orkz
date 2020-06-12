@@ -6,7 +6,7 @@ using System;
 using AdeptusMechanicus.ExtensionMethods;
 using System.Reflection;
 
-namespace AdeptusMechanicus
+namespace AdeptusMechanicus.HarmonyInstance
 {
 	/*
     [HarmonyPatch(typeof(Pawn_NativeVerbs), "CheckCreateVerbProperties")]

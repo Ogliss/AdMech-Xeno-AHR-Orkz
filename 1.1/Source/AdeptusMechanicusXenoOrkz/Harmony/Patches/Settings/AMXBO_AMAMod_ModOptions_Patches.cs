@@ -9,10 +9,10 @@ using AdeptusMechanicus.settings;
 using System.Linq;
 using AdeptusMechanicus.ExtensionMethods;
 
-namespace AdeptusMechanicus
+namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(AMAMod), "ModLoaded")]
-    public static class AMXB_AMAMod_SettingsCategory_Patch
+    public static class AMO_AMAMod_SettingsCategory_Patch
     {
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)
@@ -67,13 +67,24 @@ namespace AdeptusMechanicus
             {
                 Listing_Standard listing_General = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
                 listing_General.ColumnWidth *= 0.32f;
-                listing_General.CheckboxLabeled("AMXB_AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()), ref settings.AllowOrkTek, null, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")), DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")));
+                listing_General.CheckboxLabeled("AMXB_AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    ref settings.AllowOrkTek,
+                    null,
+                    !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) || !settings.AllowOrkWeapons,
+                    DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) && settings.AllowOrkWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()), ref settings.AllowOrkFeral, null, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")), DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")));
+                listing_General.CheckboxLabeled("AMXB_AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    ref settings.AllowOrkFeral,
+                    null,
+                    !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) || !settings.AllowOrkWeapons,
+                    DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) && settings.AllowOrkWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowOrkRok".Translate(), ref settings.AllowOrkRok, null, false, true);
+                listing_General.CheckboxLabeled("AMXB_AllowOrkRok".Translate(),
+                    ref settings.AllowOrkRok,
+                    null,
+                    !settings.AllowOrkTek || !settings.AllowOrkWeapons,
+                    settings.AllowOrkTek && settings.AllowOrkWeapons);
                 listing_Race.EndSection(listing_General);
-
                 Listing_Standard listing_FungalLabel = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
                 listing_FungalLabel.ColumnWidth *= 0.488f;
                 listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AMO_FungusOptionsToolTip".Translate(), 0.75f, 0.25f);

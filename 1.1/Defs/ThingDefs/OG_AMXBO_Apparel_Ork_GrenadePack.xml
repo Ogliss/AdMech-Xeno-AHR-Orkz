@@ -30,7 +30,7 @@
 			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowFrag</li>
@@ -86,7 +86,7 @@
 			<researchPrerequisite>OG_Ork_Tech_Base_T2</researchPrerequisite>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowKrak</li>
@@ -142,7 +142,7 @@
 			<researchPrerequisite>OG_Common_Tech_Weapons_Melta</researchPrerequisite>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowMelta</li>

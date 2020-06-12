@@ -102,7 +102,7 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_Ork</factionIconPath>
     <allowedArrivalTemperatureRange>
       <min>-100</min>
       <max>200</max>

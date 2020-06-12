@@ -17,7 +17,7 @@
 			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-	<expandingIconTexture>Icons/Icon_Ork</expandingIconTexture>
+	<expandingIconTexture>Icons/Ork/Icon_OrkB</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
       <li>OrkStart</li>
@@ -76,7 +76,7 @@
 			<li>Grot_Gretchin</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
-	<expandingIconTexture>Icons/Icon_Ork_Feral</expandingIconTexture>
+	<expandingIconTexture>Icons/Ork/Icon_Ork_FeralB</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
       <li>TribalOrkStart</li>

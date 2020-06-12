@@ -20,7 +20,7 @@
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>
     <startingResearchTags>
       <li>ClassicStart</li>
       <li>Start_Ork</li>
@@ -90,7 +90,7 @@
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
     <startingResearchTags>
       <li>TribalStart</li>
       <li>TribalStart_Ork</li>

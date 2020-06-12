@@ -11,7 +11,7 @@ using Verse.Sound;
 using AdeptusMechanicus;
 using AdeptusMechanicus.ExtensionMethods;
 
-namespace AdeptusMechanicus.Orkz
+namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public static class AMXBO_PawnGenerator_GeneratePawn_Orkoid_Patch
