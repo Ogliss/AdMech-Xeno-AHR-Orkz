@@ -35,61 +35,17 @@ namespace AdeptusMechanicus
             }
         }
 
-        public Plant plant
-        {
-            get
-            {
-                return base.parent as Plant;
-            }
-        }
+        public Plant plant => base.parent as Plant;
 
-        public bool canspawn
-        {
-            get
-            {
-                return plant.HarvestableNow && Props.canspawn;
-            }
-        }
+        public bool canspawn => plant.HarvestableNow && Props.canspawn;
 
-        public bool spawnwild
-        {
-            get
-            {
-                return Props.spawnwild;
-            }
-        }
+        public bool spawnwild => Props.spawnwild;
+        public float spawnChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
 
-        public float spawnChance
-        {
-            get
-            {
-                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
-            }
-        }
+        public float snotlingChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
+        public float grotChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
+        public float orkChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
 
-        public float snotlingChance
-        {
-            get
-            {
-                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
-            }
-        }
-
-        public float grotChance
-        {
-            get
-            {
-                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
-            }
-        }
-
-        public float orkChance
-        {
-            get
-            {
-                return parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
-            }
-        }
         private float age = 0;
         public float Age
         {

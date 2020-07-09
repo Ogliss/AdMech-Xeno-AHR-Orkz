@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Krafs.Rimworld.Ref/1.1.2647": {
+      "Krafs.Rimworld.Ref/1.1.2654": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -113,7 +113,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1",
           "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
         },
@@ -129,7 +129,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AdeptusMechanicusMain": "1.0.0",
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1"
         },
         "compile": {
@@ -141,7 +141,7 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Krafs.Rimworld.Ref/1.1.2647": {
+      "Krafs.Rimworld.Ref/1.1.2654": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -252,7 +252,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1",
           "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
         },
@@ -268,7 +268,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AdeptusMechanicusMain": "1.0.0",
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1"
         },
         "compile": {
@@ -280,7 +280,7 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Krafs.Rimworld.Ref/1.1.2647": {
+      "Krafs.Rimworld.Ref/1.1.2654": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -391,7 +391,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1",
           "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
         },
@@ -407,7 +407,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AdeptusMechanicusMain": "1.0.0",
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1"
         },
         "compile": {
@@ -419,7 +419,7 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Krafs.Rimworld.Ref/1.1.2647": {
+      "Krafs.Rimworld.Ref/1.1.2654": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -530,7 +530,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1",
           "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
         },
@@ -546,7 +546,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AdeptusMechanicusMain": "1.0.0",
-          "Krafs.Rimworld.Ref": "1.1.2647",
+          "Krafs.Rimworld.Ref": "1.1.2654",
           "Lib.Harmony": "2.0.1"
         },
         "compile": {
@@ -559,16 +559,16 @@
     }
   },
   "libraries": {
-    "Krafs.Rimworld.Ref/1.1.2647": {
-      "sha512": "ZZSpLLO/KXyQIQ9SrIN9O++nnxoAQsCKOVnkbHDuKZqSr/lrR9DZ8DafOUjZ+H84U8beFLt/4bxST5suAKtuJw==",
+    "Krafs.Rimworld.Ref/1.1.2654": {
+      "sha512": "yzi1ev3iBN14NC6gplWWW+I28+VtQg/KL8358+SFf9A3J+BvVZuOtA+qC7uNQVIISuf6kVxIwT21zcp7LuRRjA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.1.2647",
+      "path": "krafs.rimworld.ref/1.1.2654",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "icon.png",
-        "krafs.rimworld.ref.1.1.2647.nupkg.sha512",
+        "krafs.rimworld.ref.1.1.2654.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -704,7 +704,7 @@
     ".NETFramework,Version=v4.7.2": [
       "AdeptusMechanicusMain >= 1.0.0",
       "AdeptusMechanicusXenobiologis >= 1.0.0",
-      "Krafs.Rimworld.Ref >= 1.1.2647",
+      "Krafs.Rimworld.Ref >= 1.1.2654",
       "Lib.Harmony >= 2.0.1"
     ]
   },
@@ -755,7 +755,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.1.2647, )"
+            "version": "[1.1.2654, )"
           },
           "Lib.Harmony": {
             "target": "Package",
