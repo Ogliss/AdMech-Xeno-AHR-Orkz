@@ -15,8 +15,8 @@ namespace AdeptusMechanicus
         public static List<ResearchProjectDef> OrkReseach => DefDatabase<ResearchProjectDef>.AllDefs.Where(x=> x.defName.Contains("OG_Ork_Tech_")).ToList();
         static AMOMain()
         {
-            AlienRace.ThingDef_AlienRace ork = OGOrkDefOf.OG_Alien_Ork as AlienRace.ThingDef_AlienRace;
-            AlienRace.ThingDef_AlienRace grot = OGOrkDefOf.OG_Alien_Grot as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace ork = OGOrkThingDefOf.OG_Alien_Ork as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace grot = OGOrkThingDefOf.OG_Alien_Grot as AlienRace.ThingDef_AlienRace;
             foreach (ResearchProjectDef def in OrkReseach)
             {
                 if (!AlienRace.RaceRestrictionSettings.researchRestrictionDict.ContainsKey(key: def))

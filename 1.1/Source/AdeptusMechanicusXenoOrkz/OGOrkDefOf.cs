@@ -31,8 +31,8 @@ namespace RimWorld
         public static AlienRace.BackstoryDef Grot_Base_Child;
 
         // Humanlike Race Defs
-        public static AlienRace.ThingDef_AlienRace OG_Alien_Ork;
-        public static AlienRace.ThingDef_AlienRace OG_Alien_Grot;
+        public static ThingDef OG_Alien_Ork;
+        public static ThingDef OG_Alien_Grot;
         
 
         public static ThingDef OG_Ork_Snotling;
