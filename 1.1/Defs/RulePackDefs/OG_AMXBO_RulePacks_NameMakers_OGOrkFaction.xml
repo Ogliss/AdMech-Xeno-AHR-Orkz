@@ -190,7 +190,7 @@
 			</li>
 			<li Class="Rule_File">
 				<keyword>OGSnot</keyword>
-				<path>NameBanks/Snot</path>
+				<path>NameBanks/OG_AMXBO_Snotling</path>
 			</li>
 		  </rulesRaw>
 		</rulePack>
