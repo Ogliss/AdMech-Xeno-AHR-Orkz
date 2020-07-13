@@ -345,9 +345,9 @@
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Fat>(-0.42,0.6)</Fat>
-									<Hulk>(-0.42,0.6)</Hulk>
+									<Male>(-0.39,0.55)</Male>
+									<Fat>(-0.39,0.55)</Fat>
+									<Hulk>(-0.39,0.55)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -388,9 +388,9 @@
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Fat>(-0.42,0.6)</Fat>
-									<Hulk>(-0.42,0.6)</Hulk>
+									<Male>(-0.42,0.55)</Male>
+									<Fat>(-0.42,0.55)</Fat>
+									<Hulk>(-0.42,0.55)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
