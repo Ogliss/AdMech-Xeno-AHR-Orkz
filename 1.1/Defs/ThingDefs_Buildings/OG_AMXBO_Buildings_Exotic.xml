@@ -17,10 +17,10 @@
 			<li Class="CompProperties_PawnSpawnerOnDamaged"> 
 			<Faction>OG_Ork_Rok</Faction>
 			</li>
-			<li Class="CompProperties_CausesGameCondition">
+			<!--li Class="CompProperties_CausesGameCondition">
 				<conditionDef>GiantSmokeCloud</conditionDef>
 				<worldRange>10</worldRange>
-			</li>
+			</li-->
 			<li Class="CompProperties_ThrownMoteEmitter">
 				<mote>Mote_Smoke</mote>
 				<offsetMin>(-2,0,3)</offsetMin>
@@ -37,6 +37,15 @@
 		</comps>
   </ThingDef>
   
+  <!--GameConditionDef>
+    <defName>GiantSmokeCloud</defName>
+    <conditionClass>GameCondition_SmokeSpewer</conditionClass>
+    <label>giant smoke cloud</label>
+    <description>A nearby smoke spewer is reducing sunlight in this region.</description>
+    <letterText>A smoke spewer machine has begun obscuring the sun.</letterText>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef-->
+
   <ThingDef ParentName="ShipPartBaseOG">
     <defName>SpaceHulkPart</defName>
     <label>Space Hulk Part</label>
