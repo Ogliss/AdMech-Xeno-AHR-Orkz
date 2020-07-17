@@ -1002,6 +1002,7 @@
       <nameGenerator>NamerPerson_Ork_OG</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
+      <fleshType>OG_Flesh_Ork</fleshType>
       <meatColor>(200,135,100)</meatColor>
       <baseBodySize>1.25</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>

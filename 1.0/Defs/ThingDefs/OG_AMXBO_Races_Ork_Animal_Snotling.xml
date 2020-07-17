@@ -125,7 +125,7 @@
         <label>snotling</label>
         <labelPlural>snotlings</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Snotling/Snotling</texPath>
+          <texPath>Things/Pawn/Animal/Snotling/YoungSnotling</texPath>
           <drawSize>0.55</drawSize>
           <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -137,7 +137,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Snotling/Snotling</texPath>
+          <texPath>Things/Pawn/Animal/Snotling/SnotlingYoung</texPath>
           <drawSize>0.7</drawSize>
           <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -153,7 +153,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animals/Snotling/Snotling</texPath>
+          <texPath>Things/Pawn/Animal/Snotling/Snotling</texPath>
           <drawSize>1.0</drawSize>
           <color>(28,121,62)</color>
           <shaderType>CutoutComplex</shaderType>

@@ -739,6 +739,7 @@
       <nameGenerator>NamerPerson_Grot_OG</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
+      <fleshType>OG_Flesh_Ork</fleshType>
       <meatColor>(64, 128, 64)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>

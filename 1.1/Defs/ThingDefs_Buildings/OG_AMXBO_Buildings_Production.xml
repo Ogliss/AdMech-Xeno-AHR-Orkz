@@ -132,7 +132,7 @@
                         </thingDefs>
                     </ingredientFilter>
                     <maxCapacity>40</maxCapacity>
-<baseFermentationDuration>300000</baseFermentationDuration>
+					<baseFermentationDuration>300000</baseFermentationDuration>
                     <efficiency>1</efficiency>
                 </li>
             </products>

@@ -142,7 +142,7 @@
         <label>squigling</label>
         <labelPlural>squiglings</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Animals/Squig/Squig</texPath>
+          <texPath>Things/Pawn/Animal/Squig/Squig</texPath>
           <drawSize>0.55</drawSize>
           <color>(74,88,26)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -154,7 +154,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animals/Squig/Squig</texPath>
+          <texPath>Things/Pawn/Animal/Squig/Squig</texPath>
           <drawSize>0.7</drawSize>
           <color>(74,88,26)</color>
           <shaderType>CutoutComplex</shaderType>
@@ -170,7 +170,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animals/Squig/Squig</texPath>
+          <texPath>Things/Pawn/Animal/Squig/Squig</texPath>
           <drawSize>1.05</drawSize>
           <color>(74,88,26)</color>
           <shaderType>CutoutComplex</shaderType>
