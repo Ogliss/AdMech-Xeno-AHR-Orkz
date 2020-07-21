@@ -33,13 +33,15 @@
 	Resources:
 	Orkoid Fungus - a food
 	
+	Grog - a foul orkish alcholic beverage made from fungus - requires Syrchalis' Universal Fermenter mod
+	
 	Mechanics:
 	Symbiotic Fungus - All Orkoids originate from the same strain of fungal spores, which can mature into a might warboss, or a tiny mushroom.
 		</description>
     <modDependencies>
       <li>
         <packageId>Ogliss.AdMech.Armoury</packageId>
-        <displayName>Adeptus Mechanicus: Armoury R1.1</displayName>
+        <displayName>Adeptus Mechanicus: Armoury</displayName>
         <steamWorkshopUrl>steam://url/CommunityFilePage/1541438614</steamWorkshopUrl>
         <downloadUrl>https://github.com/Ogliss/AdMechArmoury</downloadUrl>
       </li>
@@ -57,8 +59,9 @@
     <li>erdelf.HumanoidAlienRaces</li>
     <li>Ogliss.AdMech.Armoury</li>
     <li>Ogliss.AdMech.Xenobiologis</li>
+    <li>syrchalis.universalfermenter</li>
   </loadAfter>
-  <!--incompatibleWith>
+  <incompatibleWith>
     <li>Ogliss.FeralOrkz</li>
-  </incompatibleWith-->	
+  </incompatibleWith>	
 </ModMetaData>

@@ -80,7 +80,7 @@
     </placeWorkers>
   </ThingDef>
 
-    <ThingDef ParentName="BuildingBase">
+    <!--ThingDef ParentName="BuildingBase">
     <defName>OG_Ork_FermentingBarrel</defName>
     <label>ork fermenting barrel</label>
     <description>A barrel for fermenting raw waart into grog.</description>
@@ -138,6 +138,6 @@
             </products>
 		</li>
        </comps>
-    </ThingDef>
+    </ThingDef-->
 
 </Defs>

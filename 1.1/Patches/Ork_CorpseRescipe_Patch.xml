@@ -3,12 +3,25 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<!-- Adds Non-Humanlike Corpses to ButcherCorpseMechanoid Categories -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "ButcherCorpseMechanoid"]/fixedIngredientFilter/categories</xpath>
-				<value>			
-							<li>OG_Corpses_Orkoid_Construct</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[@Name = "ButcherCorpseMechanoidBase"]/fixedIngredientFilter/categories</xpath>
+			<!--success>Always</success-->
+			
+			<match Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>Defs/RecipeDef[@Name = "ButcherCorpseMechanoidBase"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>OG_Corpses_Orkoid_Construct</li>
 				</value>
-			</li>
+			</match>
+			
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "ButcherCorpseMechanoid"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>OG_Corpses_Orkoid_Construct</li>
+				</value>
+			</nomatch>
+		</li>
 			
 			<!-- Adds Non-Humanlike Corpses to ButcherCorpseFlesh disallowedCategories -->
 			<li Class="PatchOperationAdd">

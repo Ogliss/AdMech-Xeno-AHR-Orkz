@@ -20,11 +20,11 @@ namespace RimWorld
         public static ThingDef OG_FilthBlood_Orkoid;
 
         // Building Defs
-        public static ThingDef OG_Ork_FermentingBarrel;
+    //    public static ThingDef OG_Ork_FermentingBarrel;
 
         // Item Defs
-        public static ThingDef OG_Ork_Waart;
-        public static ThingDef OG_Ork_Grog;
+    //    public static ThingDef OG_Ork_Waart;
+    //    public static ThingDef OG_Ork_Grog;
 
         // Backstory Defs
         public static AlienRace.BackstoryDef Ork_Base_Child;

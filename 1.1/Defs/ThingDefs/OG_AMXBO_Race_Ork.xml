@@ -295,6 +295,7 @@
     <alienRace>
         <generalSettings>
             <maleGenderProbability>1</maleGenderProbability>
+			<minAgeForAdulthood>2</minAgeForAdulthood>
             <immuneToAge>false</immuneToAge>
             <forcedRaceTraitEntries>
                 <li>
@@ -908,7 +909,7 @@
                 <li>OGO_Gun_DeffgunDakka</li>
             </recipeList>
             <plantList>
-                <li>OG_Plant_OrkoidFungus</li>
+                <li>OG_Plant_Orkoid_Fungus</li>
                 <li>OG_Plant_Orkoid_Cocoon</li>
             </plantList>
            <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
