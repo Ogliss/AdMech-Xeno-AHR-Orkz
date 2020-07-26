@@ -105,7 +105,7 @@
       </li>
 	-->
     </comps>
-	    <storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity> 
+	    <!--storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity--> 
   </ThingDef>
   
   <ThingDef ParentName="OrkoidPlantBase">

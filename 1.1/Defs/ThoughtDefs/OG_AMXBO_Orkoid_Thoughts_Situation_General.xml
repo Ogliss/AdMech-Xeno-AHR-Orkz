@@ -3,7 +3,7 @@
   
   <ThoughtDef>
     <defName>EnvironmentDark_OGOrkoid</defName>
-    <workerClass>ThoughtWorker_Dark</workerClass>
+    <!--workerClass>AdeptusMechanicus.ThoughtWorker_Dark_Orkoid</workerClass-->
     <nullifyingTraits>
       <li>NightOwl</li>
       <li>Undergrounder</li>

@@ -653,7 +653,7 @@
                 <li>OG_Ork_TableMachining</li>
             </buildingList>
 			<conceptList>
-				<li>OrkoidFungus</li>
+				<!--li>OrkoidFungus</li-->
 			</conceptList>
         </raceRestriction>
     </alienRace>
