@@ -170,7 +170,7 @@
             <humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
-				<li>Alien_Ork</li>
+				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Grot</li>
 				<li>Alien_Grot</li>
 				<li>OG_Cyborg_Ork</li>
@@ -318,11 +318,8 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Grot</li>
                         <li>OG_Alien_Ork</li>
-                        <li>Alien_Ork</li>
                         <li>OG_Cyborg_Ork</li>
-                        <li>Cyborg_Ork</li>
                     </raceList>
                     <thought>ButcheredOrkoidCorpse_OGOrkoid</thought>
                     <knowThought>KnowButcheredOrkoidCorpse_OGOrkoid</knowThought>
@@ -332,11 +329,8 @@
                 <li>
                     <raceList>
                         <li>OG_Alien_Grot</li>
-                        <li>Alien_Grot</li>
                         <li>OG_Alien_Ork</li>
-                        <li>Alien_Ork</li>
                         <li>OG_Cyborg_Ork</li>
-                        <li>Cyborg_Ork</li>
                     </raceList>
                     <thought>AteOrkoidMeatDirect_OGOrkoid</thought>
                     <ingredientThought>AteOrkoidMeatAsIngredient_OGOrkoid</ingredientThought>
