@@ -30,6 +30,56 @@ namespace AdeptusMechanicus.HarmonyInstance
                 //    Log.Message(string.Format("GeneratePawn End request is {0}, {1}, {2}", request.KindDef.LabelCap, request.FixedGender, request.MustBeCapableOfViolence));
             }
         }
+        
+        [HarmonyPostfix]
+        public static void Post_GeneratePawn(ref Pawn __result)
+        {
+            if (__result!=null)
+            {
+                if (__result.story == null)
+                {
+                    return;
+                }
+                Pawn_StoryTracker storyTracker = __result.story;
+                if (storyTracker.childhood.identifier.Contains("_Weird"))
+                {
+                    bool psyker = storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity);
+                    bool nob = false;
+                    bool boss = false;
+                    if (psyker)
+                    {
+                        return;
+                    }
+                    if (__result.isOrk())
+                    {
+                        if (storyTracker.adulthood != null)
+                        {
+                            nob = storyTracker.adulthood.identifier.Contains("_Nob");
+                            boss = storyTracker.adulthood.identifier.Contains("_Boss");
+                        }
+                        if (boss)
+                        {
+
+                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, 2));
+                        }
+                        else if (nob)
+                        {
+
+                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1,2)));
+                        }
+                        else
+                        {
+                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, 1));
+                        }
+                    }
+                    if (__result.isGrot())
+                    {
+
+                    }
+                }
+            }
+        }
+        
         /*
         [HarmonyPostfix]
         public static void Post_GeneratePawn(ref Pawn __result)

@@ -926,18 +926,18 @@
     </disallowedTraits>
 	<forcedTraits>
 		<li>
-			<defName>Tough</defName>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
 			<chance>50</chance>
 		</li>
 		<li>
 			<defName>PsychicSensitivity</defName>
 			<degree>1</degree>
-			<chance>50</chance>
+			<chance>75</chance>
 		</li>
 		<li>
-			<defName>PsychicSensitivity</defName>
-			<degree>2</degree>
-			<chance>50</chance>
+			<defName>Tough</defName>
+			<chance>25</chance>
 		</li>
     </forcedTraits>
     <skillGains>
@@ -1012,13 +1012,22 @@
     <bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
     <workDisables>
-      <li>Caring</li>
       <li>Social</li>
       <li>Cooking</li>
-      <li>Animals</li>
       <li>Mining</li>
-      <li>PlantWork</li>
     </workDisables>
+	<forcedTraits>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>1</degree>
+			<chance>75</chance>
+		</li>
+    </forcedTraits>
     <skillGains>
       <li>
         <defName>Crafting</defName>
@@ -1067,6 +1076,16 @@
       <li>PlantWork</li>
     </workDisables>
 	<forcedTraits>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
+			<chance>75</chance>
+		</li>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>1</degree>
+			<chance>50</chance>
+		</li>
 		<li>
 			<defName>Tough</defName>
 			<chance>50</chance>
@@ -1123,6 +1142,11 @@
       <li>PlantWork</li>
     </workDisables>
 	<forcedTraits>
+		<li>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
+			<chance>100</chance>
+		</li>
 		<li>
 			<defName>Tough</defName>
 			<chance>75</chance>

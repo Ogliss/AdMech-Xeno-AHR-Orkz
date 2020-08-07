@@ -141,7 +141,7 @@
     <stages>
       <li>
         <label>brawler has ranged weapon</label>
-        <description>I hate shooting from a distance. I want to get up close and personal!</description>
+        <description>Oi boss!! Wotz dis rubbish!! I want ta get up close and Smash dem gitz!!</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
     </stages>
@@ -236,27 +236,27 @@
     <stages>
       <li> <!-- used if no bedroom at all -->
         <label>greedy for impressive bedroom</label>
-        <description>I'm greedy. I want a really impressive bedroom.</description>
+        <description>I'za Flash git! I wantz a really impressive gaff.</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
       <li>
         <label>greedy for impressive bedroom</label>
-        <description>I'm greedy. My room is pathetic! I want a really impressive bedroom.</description>
+        <description>I'za Flash git! Dis place iz pafetic! I wantz a really impressive gaff.</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
       <li>
         <label>greedy for impressive bedroom</label>
-        <description>I'm greedy. My room isn't nearly good enough. I want a really impressive bedroom.</description>
+        <description>I'za Flash git! Dis place isn't nearly good enough. I wantz a really impressive gaff.</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
       <li>
         <label>greedy for impressive bedroom</label>
-        <description>I'm greedy. My room isn't good enough. I want a really impressive bedroom.</description>
+        <description>I'za Flash git! Dis place isn't good enough. I wantz a really impressive gaff.</description>
         <baseMoodEffect>-6</baseMoodEffect>
       </li>
       <li>
         <label>greedy for impressive bedroom</label>
-        <description>I'm greedy. My room isn't quite good enough. I want a really impressive bedroom.</description>
+        <description>I'za Flash git! Dis place isn't quite good enough. I wantz a really impressive gaff.</description>
         <baseMoodEffect>-4</baseMoodEffect>
       </li>
       <li IsNull="True" /> <!-- slightly impressive -->
@@ -294,54 +294,54 @@
     <stages>
       <li>
         <label>ascetic has awful bedroom</label>
-        <description>My bedroom is just how I want it to be. Very humble and simple.</description>
+        <description>Dis gaff iz all i need. somwhere ta leave me choppa.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has dull bedroom</label>
-        <description>My bedroom is just how I want it to be. Very humble and simple.</description>
+        <description>Dis gaff iz all i need. somwhere ta leave me choppa.</description>
         <baseMoodEffect>4</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has mediocre bedroom</label>
-        <description>My bedroom is very humble and simple. I like it.</description>
+        <description>Dis gaff iz alright. somwhere ta leave me choppa.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
       <li IsNull="True" /> <!-- mediocre -->
       <li IsNull="True" /> <!-- interesting -->
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
       <li>
         <label>ascetic has impressive bedroom</label>
-        <description>I don't like having an impressive bedroom.</description>
+        <description>Wotz da point in all dis stuff? all I needz iz somwhere ta leave me choppa.</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>

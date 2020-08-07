@@ -40,6 +40,7 @@
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
     <Compile Include="Harmony\Patches\AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cs" />
     <Compile Include="Harmony\Patches\AMXBO_Pawn_EquipmentTracker_DropAllEquipment_Orkoid_Patch.cs" />
+    <Compile Include="ThoughtWorker_Dark_Orkoid.cs" />
     <Compile Include="ThoughtWorker_HasKrudeAddedBodyPart.cs" />
     <Compile Include="Harmony\Patches\Settings\AMXBO_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="MentalStateWorker_StarvingOrkoid.cs" />

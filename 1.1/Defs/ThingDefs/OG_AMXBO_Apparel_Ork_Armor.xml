@@ -3,8 +3,8 @@
 
   <ThingDef ParentName="OGOApparelMakeableBase">
     <defName>OGO_Apparel_LevaArmour</defName>
-    <label>Leva Arma</label>
-    <description>Arma is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+    <label>Studded Arma</label>
+    <description>Studded Arma is made of tanned Squig skin with occasional metal plates. It is commonly worn by all Ork Boys, because it looks hard and offers some protection, especially against primitive weapons, such as spears or arrows. These heavy leathers are the most common type of Ork armour, and Orks often use the colour of their squigshade to show allegiance to a particular Clan or Warboss.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/OrkLevaArmour/Ork_LevaArmour1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -76,8 +76,8 @@
  
   <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_Armour</defName>
-    <label>Arma</label>
-    <description>Arma is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+    <label>Flak Arma</label>
+    <description>Flak Arma is a heavier type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes metal pauldrons and other metal plates bolted together, Flak Armour is basically a heavier version of Studded Armour, made with several layers of Squig skin studded with nuts and bolts and more metal plates to make it more resistant to incoming damage.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -157,7 +157,7 @@
  
   <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_EavyArmour</defName>
-    <label>Eavy Arma</label>
+    <label>'Eavy Arma</label>
     <description>'Eavy Arma is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</texPath>
