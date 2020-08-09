@@ -104,7 +104,9 @@
 		  <li>Metallic</li>
 		</stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Apparel_Wargear_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Wargear_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 			<bodyPartGroups>

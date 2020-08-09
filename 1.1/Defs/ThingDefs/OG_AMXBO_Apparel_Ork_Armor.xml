@@ -31,7 +31,9 @@
       <li>Leathery</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Apparel</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -104,7 +106,9 @@
       <li>Metallic</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -186,7 +190,9 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -271,7 +277,9 @@
       <Steel>550</Steel>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T3</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T3</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>

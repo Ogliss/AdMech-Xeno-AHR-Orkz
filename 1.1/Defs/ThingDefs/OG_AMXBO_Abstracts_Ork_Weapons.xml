@@ -72,7 +72,9 @@
         <li>OG_Ork_TableMachining</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<researchPrerequisites>
+				<li>Gunsmithing</li>
+			</researchPrerequisites>
     </recipeMaker>
   </ThingDef>
 
@@ -81,7 +83,9 @@
       <li>Ork_Gun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T1</li>
+			</researchPrerequisites>
     </recipeMaker>
   </ThingDef>
   
@@ -90,7 +94,9 @@
       <li>Ork_SpecialGun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Weapons_Ranged_T1</li>
+			</researchPrerequisites>
     </recipeMaker>
   </ThingDef>
   
@@ -99,7 +105,9 @@
       <li>Ork_HeavyGun</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
+			</researchPrerequisites>
     </recipeMaker>
   </ThingDef>
 
@@ -121,7 +129,9 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-      <researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T1</li>
+			</researchPrerequisites>
     </recipeMaker>
     <inspectorTabs>
       <li>ITab_Art</li>

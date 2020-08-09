@@ -11,7 +11,9 @@
 			<recipeUsers Inherit="False">
 				<li>OG_Ork_TableMachining</li>
 			</recipeUsers>
-			<researchPrerequisite>OG_Ork_Tech_Base_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 
@@ -460,7 +462,9 @@
 			<Mass>5</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T3</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 
@@ -571,7 +575,9 @@
 			<Mass>8</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T3</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 
@@ -673,7 +679,9 @@
 			<Mass>5</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T3</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 
