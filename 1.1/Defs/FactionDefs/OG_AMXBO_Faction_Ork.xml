@@ -143,7 +143,7 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_Ork</factionIconPath>
     <colorSpectrum>
       <li>(0.45, 0.05, 0.05)</li>
       <li>(0.80, 0.25, 0.05)</li>

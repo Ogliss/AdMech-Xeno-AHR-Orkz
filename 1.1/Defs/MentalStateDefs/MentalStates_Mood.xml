@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+  <MentalBreakDef>
+    <defName>Slaughterer</defName>
+    <mentalState>Slaughterer</mentalState>
+    <baseCommonality>0.75</baseCommonality>
+    <intensity>Extreme</intensity>
+  </MentalBreakDef>
+  <MentalStateDef ParentName="BaseMentalState">
+    <defName>Slaughterer</defName>
+    <stateClass>MentalState_Slaughterer</stateClass>
+    <workerClass>MentalStateWorker_Slaughterer</workerClass>
+    <label>slaughterer</label>
+    <category>Aggro</category>
+    <colonistsOnly>true</colonistsOnly>
+    <minTicksBeforeRecovery>5000</minTicksBeforeRecovery>
+    <recoveryMtbDays>0.12</recoveryMtbDays>
+    <maxTicksBeforeRecovery>15000</maxTicksBeforeRecovery>
+    <recoverFromSleep>true</recoverFromSleep>
+    <nameColor>(0.88,0.48,0.16)</nameColor>
+    <moodRecoveryThought>Catharsis</moodRecoveryThought>
+    <blockNormalThoughts>true</blockNormalThoughts>
+    <recoveryMessage>{0} is no longer slaughtering random animals.</recoveryMessage>
+    <beginLetter>{0} has a mental breakdown and is going to vent [PAWN_possessive] anger on your animals.</beginLetter>
+    <beginLetterDef>ThreatSmall</beginLetterDef>
+    <baseInspectLine>Mental state: Slaughterer</baseInspectLine>
+    <allowBeatfire>true</allowBeatfire>
+  </MentalStateDef>
+-->
+</Defs>

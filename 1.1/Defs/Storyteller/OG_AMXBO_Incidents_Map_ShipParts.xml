@@ -7,7 +7,7 @@
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>AdeptusMechanicus.IncidentWorker_CrashedHiveShip</workerClass>
+    <workerClass>IncidentWorker_CrashedShip</workerClass>
     <letterLabel>Rok Impact</letterLabel>
     <letterText>A large piece of an An Ork Rok is the most feared form of Ork spacecraft. A Rok was once an asteroid that has been hollowed out by Ork Mekboyz and then outfitted with Ork-made gunz, plasma engines, targeting systems and whatever other large, powerful weapons the Orks can get their green hands on.\n\nRoks possess no Warp-Drives and so are incapable of Warp travel, instead drifting from star system to star system as the solar winds dictate. It is common for Ork WAAAGHs! that are large enough to possess Roks to use these massive spacecraft as one-way reentry vehicles, positioning them to slam down onto the surface of a world the Orks intended to invade.\n\nWhile this means the Rok cannot be reused to get back into space, it does cause a horrific amount of damage to whatever world the Orks invade, greatly pleasing the Greenskins and weakening the defences of the planet's military forces.</letterText>
     <letterDef>ThreatSmall</letterDef>

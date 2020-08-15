@@ -65,12 +65,12 @@
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
-				<thingDef>OGO_Gun_OSlugga</thingDef>
+				<thingDef>OGO_Gun_Slugga</thingDef>
 				<count>2</count>
 			</li>
 			<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
-				<thingDef>OGO_Gun_OShoota</thingDef>
+				<thingDef>OGO_Gun_Shoota</thingDef>
 			</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
@@ -216,6 +216,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>OGO_Melee_CrudeChoppa</thingDef>
+					<stuff>BlocksGranite</stuff>
 					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">

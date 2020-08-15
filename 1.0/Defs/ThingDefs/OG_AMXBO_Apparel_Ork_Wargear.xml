@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Ork - Wargear S 1 ========================== -->
+	<!-- ========================= Ork - Kustom Forcefield ========================== -->  
+	<ThingDef ParentName="OGOWargearMakeable">
+    <defName>OGO_Wargear_KustomForcefield</defName>
+    <label>Kustom Forcefield</label>
+    <description>.</description>
+    <thingClass>AdeptusMechanicus.AdvShieldBelt</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Wargear/Ork/Apparel_KustomForceField</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<comps>     
+	      <li Class="AdeptusMechanicus.CompProperties_Wargear">
+		</li>
+	</comps>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>120000</WorkToMake>
+		<Mass>1</Mass>
+		<EnergyShieldRechargeRate>0.065</EnergyShieldRechargeRate>
+		<EnergyShieldEnergyMax>2.2</EnergyShieldEnergyMax>
+		<MarketValue>34000</MarketValue>
+		<MaxHitPoints>180</MaxHitPoints>
+    </statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.25</PsychicSensitivity>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<MentalBreakThreshold>-0.14</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
+		</recipeMaker>
+    <thingCategories>
+	
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>BeltWargear1</li>
+      </layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>OGOWargear1</li>
+				<li>KustomForceField</li>
+				<li>OGOShield</li>
+				<li>RoyalCombatGear</li>
+			</tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+
+        </li>
+      </options>
+    </colorGenerator>
+    <generateCommonality>0.01</generateCommonality>
+  </ThingDef>
+
+	<!-- ========================= Ork - Wargear S 2 ========================== -->
+    <!-- ========================= Ork - Boss Pole ========================== -->
+	<ThingDef ParentName="OGOWargearMakeable">
+		<defName>OGO_Wargear_BossPole</defName>
+		<label>Boss Pole</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	<comps> 
+	
+	</comps>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</wornGraphicPath>
+			<layers>
+				<li>BeltWargear2</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>BossPole</li>
+				<li>RoyalCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>OGOWargear</li>
+		</tradeTags>
+		<generateCommonality>0.03</generateCommonality>
+	</ThingDef>
+	
+	<!-- ========================= Ork - Wargear S 3 ========================== -->
+
+    <!-- ========================= Ork - Wargear Overhead ========================== -->
+			<!--
+		  <li Class="AdeptusMechanicus.CompProperties_HediffApparel">
+			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
+			<severityBasedOnDurability>false</severityBasedOnDurability>
+			<partsToAffect>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			  <li>A_BODYPARTDEF_HERE</li>
+			</partsToAffect>
+			<groupsToAffect>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			</groupsToAffect>
+		  </li>
+			-->
+</Defs>

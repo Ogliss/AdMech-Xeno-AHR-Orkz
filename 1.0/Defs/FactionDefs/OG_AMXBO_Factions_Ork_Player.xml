@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_PlayerFactionBase" Abstract="True">
+    <defName>OG_Ork_PlayerColony</defName>
+    <label>Ork Colony</label>
+    <description>Your own kommunity.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist_OG_Ork_Boy</basicMemberKind>
+    <pawnsPlural>Boyz</pawnsPlural>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>Ork_Standard</li>
+			<li>Grot_Gretchin</li>
+  	</backstoryCategories>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+	<expandingIconTexture>Icons/Ork/Icon_OrkB</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+      <li>OrkStart</li>
+    </startingResearchTags>
+    <hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(1, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Colonist_OG_Grot>100</Colonist_OG_Grot>
+          <Colonist_OG_Ork_Boy>100</Colonist_OG_Ork_Boy>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+  <FactionDef ParentName="OG_Ork_PlayerFactionBase">
+    <defName>OG_Ork_PlayerColony</defName>
+  </FactionDef>
+
+    <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
+    <label>Ork Tribal</label>
+    <description>Ork Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Tribesperson_OG_Ork_Boy</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>Ork_Standard</li>
+			<li>Grot_Gretchin</li>
+  	</backstoryCategories>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+	<expandingIconTexture>Icons/Ork/Icon_Ork_FeralB</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+      <li>TribalOrkStart</li>
+    </startingResearchTags>
+    <hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribesperson_OG_Grot>100</Tribesperson_OG_Grot>
+          <Tribesperson_OG_Ork_Boy>100</Tribesperson_OG_Ork_Boy>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    </FactionDef>
+	
+  <FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
+    <defName>OG_Ork_PlayerTribe</defName>
+  </FactionDef>
+
+
+</Defs>

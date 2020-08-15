@@ -2,7 +2,7 @@
 <Defs>
     <!-- ========================= Ork ========================== -->
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOApparelBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOApparelBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -25,7 +25,9 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 		
@@ -59,7 +61,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOArmorBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOArmorBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -81,7 +83,9 @@
 				<li>OG_Ork_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -113,7 +117,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Ork - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OGOWargearBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGOWargearBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkWargear</li>
@@ -135,7 +139,9 @@
 				<li>OG_Ork_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>OrkTekBase</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Base_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>	
 </Defs>

@@ -72,7 +72,7 @@
     </building>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>OrkTekBase</li>
+      <li>OG_Ork_Tech_Base_T1</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
     <placeWorkers>
@@ -80,7 +80,7 @@
     </placeWorkers>
   </ThingDef>
 
-    <ThingDef ParentName="BuildingBase">
+    <!--ThingDef ParentName="BuildingBase">
     <defName>OG_Ork_FermentingBarrel</defName>
     <label>ork fermenting barrel</label>
     <description>A barrel for fermenting raw waart into grog.</description>
@@ -132,12 +132,12 @@
                         </thingDefs>
                     </ingredientFilter>
                     <maxCapacity>40</maxCapacity>
-<baseFermentationDuration>300000</baseFermentationDuration>
+					<baseFermentationDuration>300000</baseFermentationDuration>
                     <efficiency>1</efficiency>
                 </li>
             </products>
 		</li>
        </comps>
-    </ThingDef>
+    </ThingDef-->
 
 </Defs>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+  <operations>
+  
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/ScenarioDef[defName = "OGAM_TestScenario_Ork"]/scenario/parts</xpath>
+                <success>Always</success>
+                <match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ScenarioDef[defName = "OGAM_TestScenario_Ork"]/scenario/parts</xpath>
+                    <value>
+						<!-- Ork Apparel -->
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_UniformShirt</thingDef>
+						  <stuff>Leather_Squig</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_UniformJacket</thingDef>
+						  <stuff>Leather_Squig</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_LevaArmour</thingDef>
+						  <stuff>Leather_Squig</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_Armour</thingDef>
+						  <stuff>Steel</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_EavyArmour</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_MegaArmour</thingDef>
+						</li>
+						<!-- Ork Headgear -->
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_LevaElmet</thingDef>
+						  <stuff>Leather_Squig</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_Elmet</thingDef>
+						  <stuff>Plasteel</stuff>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_EavyElmet</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+						  <def>StartingThing_Defined</def>
+						  <thingDef>OGO_Apparel_MegaArmourElmet</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>OGO_Apparel_IronGob</thingDef>
+							<stuff>Plasteel</stuff>
+						</li>
+						<!-- Ork Wargear -->
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>OGO_Wargear_KustomForcefield</thingDef>
+						</li>
+						<li Class="ScenPart_StartingThing_Defined">
+							<def>StartingThing_Defined</def>
+							<thingDef>OGO_Wargear_BossPole</thingDef>
+							<stuff>Steel</stuff>
+						</li>
+                    </value>
+                </match>
+            </li>
+	
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/ScenarioDef[defName = "OGAM_TestScenario_Ork"]/scenario/playerFaction/factionDef</xpath>
+                <success>Always</success>
+                <match Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ScenarioDef[defName = "OGAM_TestScenario_Ork"]/scenario/playerFaction/factionDef</xpath>
+                    <value>
+						<factionDef>OG_Ork_PlayerColony</factionDef>
+                    </value>
+                </match>
+            </li>
+	
+  </operations>
+</Operation>
+
+</Patch>

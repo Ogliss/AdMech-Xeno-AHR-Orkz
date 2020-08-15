@@ -18,7 +18,7 @@
     <itemQuality>Poor</itemQuality>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>
-	<maxGenerationAge>16</maxGenerationAge>
+	<maxGenerationAge>0</maxGenerationAge>
   </PawnKindDef>
   
   <PawnKindDef ParentName="OG_Grot_Player_Base">
@@ -38,6 +38,6 @@
     <itemQuality>Poor</itemQuality>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>
-	<maxGenerationAge>16</maxGenerationAge>
+	<maxGenerationAge>0</maxGenerationAge>
   </PawnKindDef>
 </Defs>

@@ -9,7 +9,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace AdeptusMechanicus.Orkz
+namespace AdeptusMechanicus.HarmonyInstance
 {
     [StaticConstructorOnStartup]
     static class HarmonyInstance
@@ -18,7 +18,22 @@ namespace AdeptusMechanicus.Orkz
         {
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.orkz");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            if (Prefs.DevMode) Log.Message(string.Format("Adeptus Mecanicus: Orkz: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);
+            Type pawn_NativeVerbs = typeof(Pawn_NativeVerbs);
+            HarmonyInstance._cachedVerbProperties = pawn_NativeVerbs.GetField("cachedVerbProperties", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
+            HarmonyInstance._pawnPawnNativeVerbs = pawn_NativeVerbs.GetField("pawn", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
+            if (Prefs.DevMode) Log.Message(string.Format("Adeptus Xenobiologis: Orkz: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);
         }
+        public static Pawn pawnPawnNativeVerbs(Pawn_NativeVerbs instance)
+        {
+            return (Pawn)HarmonyInstance._pawnPawnNativeVerbs.GetValue(instance);
+        }
+
+        public static List<VerbProperties> cachedVerbProperties(Pawn_NativeVerbs instance)
+        {
+            return (List<VerbProperties>)HarmonyInstance._cachedVerbProperties.GetValue(instance);
+        }
+
+        public static FieldInfo _pawnPawnNativeVerbs;
+        public static FieldInfo _cachedVerbProperties;
     }
 }

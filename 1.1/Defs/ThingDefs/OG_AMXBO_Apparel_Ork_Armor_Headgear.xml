@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ========================= Ork - Leva Elmet ========================== -->
-  <ThingDef ParentName="OGOApparelMakeableBase">
+  <ThingDef ParentName="OGOApparelMakeable">
     <defName>OGO_Apparel_LevaElmet</defName>
     <label>Leva Elmet</label>
     <description>Orkish Armour is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
@@ -31,9 +31,6 @@
     <stuffCategories>
       <li>Leathery</li>
     </stuffCategories>
-		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
-		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
       <wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</wornGraphicPath>
@@ -62,11 +59,11 @@
     </colorGenerator>
   </ThingDef>
  
-  <!-- ========================= Ork - Elmet ========================== -->
+  <!-- ========================= Ork - 'Ard Hat ========================== -->
   <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_Elmet</defName>
-    <label>Elmet</label>
-    <description>Orkish Armour is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+    <label>'Ard Hat</label>
+    <description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -93,7 +90,9 @@
       <li>Metallic</li>
     </stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>OrkishArmour</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -126,8 +125,8 @@
   <!-- ========================= Ork - Eavy Elmet ========================== -->
   <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_EavyElmet</defName>
-    <label>Eavy Elmet</label>
-    <description>'Eavy Armour is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+    <label>'Eavy 'Ard Hat</label>
+    <description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Eavy 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -152,7 +151,9 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishEavyArmour</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -213,7 +214,9 @@
       <Steel>550</Steel>
     </costList>
 		<recipeMaker>
-			<researchPrerequisite>OrkishMegaArmour</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Armour_T3</li>
+			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
     <apparel>
@@ -247,7 +250,7 @@
   <ThingDef ParentName="OGOArmorMakeableBase">
     <defName>OGO_Apparel_IronGob</defName>
     <label>Iron Gob</label>
-    <description>A combat mask.\n\n.</description>
+    <description>These massive facial appliances are bolted onto an Ork's armour, or onto the Ork's jaw itself. They exaggerate the already fearsome appearance of these green brutes and are often viewed as symbols of authority. As such, they are often found on Ork Nobs and Warbosses.</description>
     <!-- <thingClass>AdeptusMechanicus.ProtectiveEyeWear</thingClass> -->
     <graphicData>
       <texPath>Things/Item/Apparel/Ork/Headgear/IronGob/Ork_IronGob</texPath>
@@ -257,6 +260,11 @@
     <costList>
       <Steel>20</Steel>
     </costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Wargear_T1</li>
+			</researchPrerequisites>
+		</recipeMaker>
     <costStuffCount>40</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
@@ -290,6 +298,9 @@
         <li>OGOrkArmour</li>
         <li>OGOrkHeadgear</li>
         <li>OGOrkMask</li>
+        <li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>OGOArmour</li>

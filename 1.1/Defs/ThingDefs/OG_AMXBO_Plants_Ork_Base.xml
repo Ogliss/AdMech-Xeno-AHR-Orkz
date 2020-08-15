@@ -50,7 +50,7 @@
   </ThingDef>
   
   <ThingDef ParentName="OrkoidPlantBase">
-    <defName>OG_Plant_OrkoidFungus</defName>
+    <defName>OG_Plant_Orkoid_Fungus</defName>
     <label>orkoid fungus</label>
     <description>A small brown mushroom typically found in and around ork settlements. It smells like an old, dirty rag pulled from the stomach of a rotting muffalo - but it tastes surprisingly good when cooked.</description>
     <statBases>
@@ -73,7 +73,7 @@
       <dieIfLeafless>false</dieIfLeafless>
       <harvestYield>20</harvestYield>
       <harvestTag>Standard</harvestTag>
-       <harvestedThingDef>OG_Plant_Orkoid_Fungus</harvestedThingDef> 
+       <harvestedThingDef>OG_Raw_Orkoid_Fungus</harvestedThingDef> 
 	  <!-- <harvestedThingDef>Mote_MakeOrkoid_Cultivated</harvestedThingDef> -->
 	  <sowTags>
 		<li>Ground</li>
@@ -105,7 +105,7 @@
       </li>
 	-->
     </comps>
-	    <storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity> 
+	    <!--storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity--> 
   </ThingDef>
   
   <ThingDef ParentName="OrkoidPlantBase">
@@ -117,7 +117,7 @@
 	</graphicData>
 	<plant>
 	  <immatureGraphicPath>Things/Plants/Orkoid_Cocoon_Immature</immatureGraphicPath>
-	  <harvestedThingDef>OG_Plant_Orkoid_Fungus</harvestedThingDef>
+	  <harvestedThingDef>OG_Raw_Orkoid_Fungus</harvestedThingDef>
       <growDays>30</growDays>
 	  <sowTags>
 	  <!--
@@ -145,7 +145,7 @@
   </ThingDef>
   
   <ThingDef ParentName="PlantFoodRawBase">
-    <defName>OG_Plant_Orkoid_Fungus</defName>
+    <defName>OG_Raw_Orkoid_Fungus</defName>
     <label>orkoid fungus</label>
     <description>Raw orkoid fungus.</description>
     <graphicData>

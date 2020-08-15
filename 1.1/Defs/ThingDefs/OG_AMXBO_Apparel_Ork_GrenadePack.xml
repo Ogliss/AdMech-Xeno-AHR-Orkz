@@ -27,10 +27,13 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-			
+		<researchPrerequisites>
+			<li>Machining</li>
+			<li>OG_Ork_Tech_Base_T1</li>
+		</researchPrerequisites>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowFrag</li>
@@ -83,10 +86,13 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-			
+			<researchPrerequisites>
+				<li>Machining</li>
+				<li>OG_Ork_Tech_Base_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowKrak</li>
@@ -139,10 +145,14 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-			
+			<researchPrerequisites>
+				<li>Machining</li>
+				<li>OG_Ork_Tech_Base_T3</li>
+				<li>OG_Common_Tech_Weapons_Melta</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<comps>  
-			<li Class="AdeptusMechanicus.CompProperties_AbilityItem">
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowMelta</li>

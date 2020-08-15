@@ -20,10 +20,10 @@
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>
     <startingResearchTags>
       <li>ClassicStart</li>
-      <li>OrkStart</li>
+      <li>Start_Ork</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>ClassicStart</li>
@@ -90,10 +90,10 @@
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
     <startingResearchTags>
       <li>TribalStart</li>
-      <li>TribalOrkStart</li>
+      <li>TribalStart_Ork</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>TribalStart</li>
@@ -128,8 +128,8 @@
         <kindDef>Peaceful</kindDef>
         <commonality>100</commonality>
         <options>
-          <Tribesperson_OG_Grot_Feral>100</Tribesperson_OG_Grot_Feral>
-          <Tribesperson_OG_Ork_Boy_Feral>100</Tribesperson_OG_Ork_Boy_Feral>
+          <Tribesperson_OG_Grot>100</Tribesperson_OG_Grot>
+          <Tribesperson_OG_Ork_Boy>100</Tribesperson_OG_Ork_Boy>
         </options>
       </li>
     </pawnGroupMakers>
