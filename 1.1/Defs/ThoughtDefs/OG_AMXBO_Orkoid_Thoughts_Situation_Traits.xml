@@ -146,6 +146,22 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>ShooterUnhappy_OGOrkoid</defName>
+    <workerClass>AdeptusMechanicus.ThoughtWorker_IsCarryingMeleeWeapon</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>ShootingAccuracy</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Shooter has melee weapon</label>
+        <description>Oi boss!! Wotz dis rubbish!! I wantz da best Dakka we got so i can blast dem gitz!!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 <!--
   <ThoughtDef>
     <defName>PyromaniacHappy</defName>

@@ -41,31 +41,31 @@ namespace AdeptusMechanicus.HarmonyInstance
 	// Token: 0x0200005B RID: 91
 	[HarmonyPatch(typeof(Pawn_NativeVerbs))]
 	[HarmonyPatch("CheckCreateVerbProperties")]
-	public static class AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch
+	public static class Pawn_NativeVerbs_CheckCreateVerbProperties_Patch
 	{
 		// Token: 0x06000194 RID: 404 RVA: 0x0000DA4C File Offset: 0x0000BC4C
 		private static Pawn pawn(Pawn_NativeVerbs instance)
 		{
-			return (Pawn)AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_pawn.GetValue(instance);
+			return (Pawn)Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_pawn.GetValue(instance);
 		}
 
 		// Token: 0x06000195 RID: 405 RVA: 0x0000DA70 File Offset: 0x0000BC70
 		private static List<VerbProperties> cachedVerbProperties(Pawn_NativeVerbs instance)
 		{
-			return (List<VerbProperties>)AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.GetValue(instance);
+			return (List<VerbProperties>)Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.GetValue(instance);
 		}
 
 		// Token: 0x06000196 RID: 406 RVA: 0x0000DA94 File Offset: 0x0000BC94
 		private static bool Prefix(ref Pawn_NativeVerbs __instance)
 		{
-			bool flag = AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance) == null;
+			bool flag = Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance) == null;
 			if (flag)
 			{
-				bool flag2 = AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.pawn(__instance).isSnotling();
+				bool flag2 = Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.pawn(__instance).isSnotling();
 				if (flag2)
 				{
-					AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.SetValue(__instance, new List<VerbProperties>());
-					AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance).Add(NativeVerbPropertiesDatabase.VerbWithCategory(VerbCategory.BeatFire));
+					Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.SetValue(__instance, new List<VerbProperties>());
+					Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance).Add(NativeVerbPropertiesDatabase.VerbWithCategory(VerbCategory.BeatFire));
 					return false;
 				}
 			}

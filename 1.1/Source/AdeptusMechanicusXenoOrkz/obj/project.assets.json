@@ -97,7 +97,7 @@
           "lib/net472/0Harmony.dll": {}
         }
       },
-      "UnlimitedHugs.Rimworld.HugsLib/7.2.1": {
+      "UnlimitedHugs.Rimworld.HugsLib/8.0.0": {
         "type": "package",
         "dependencies": {
           "Lib.Harmony": "2.0.0.8"
@@ -115,7 +115,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2719",
           "Lib.Harmony": "2.0.2",
-          "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
+          "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusMain.dll": {}
@@ -236,7 +236,7 @@
           "lib/net472/0Harmony.dll": {}
         }
       },
-      "UnlimitedHugs.Rimworld.HugsLib/7.2.1": {
+      "UnlimitedHugs.Rimworld.HugsLib/8.0.0": {
         "type": "package",
         "dependencies": {
           "Lib.Harmony": "2.0.0.8"
@@ -254,7 +254,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2719",
           "Lib.Harmony": "2.0.2",
-          "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
+          "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusMain.dll": {}
@@ -375,7 +375,7 @@
           "lib/net472/0Harmony.dll": {}
         }
       },
-      "UnlimitedHugs.Rimworld.HugsLib/7.2.1": {
+      "UnlimitedHugs.Rimworld.HugsLib/8.0.0": {
         "type": "package",
         "dependencies": {
           "Lib.Harmony": "2.0.0.8"
@@ -393,7 +393,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2719",
           "Lib.Harmony": "2.0.2",
-          "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
+          "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusMain.dll": {}
@@ -514,7 +514,7 @@
           "lib/net472/0Harmony.dll": {}
         }
       },
-      "UnlimitedHugs.Rimworld.HugsLib/7.2.1": {
+      "UnlimitedHugs.Rimworld.HugsLib/8.0.0": {
         "type": "package",
         "dependencies": {
           "Lib.Harmony": "2.0.0.8"
@@ -532,7 +532,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2719",
           "Lib.Harmony": "2.0.2",
-          "UnlimitedHugs.Rimworld.HugsLib": "7.2.1"
+          "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusMain.dll": {}
@@ -675,17 +675,17 @@
         "lib/netcoreapp3.1/0Harmony.xml"
       ]
     },
-    "UnlimitedHugs.Rimworld.HugsLib/7.2.1": {
-      "sha512": "qsZvzRjWcZo5pcDIh2Vr9lW15FEMVIeTIiDtEXLpIA+fgHdxDl0ryWptWKmY+QWdorlgV6LpR1Yw+5+qY5lSBg==",
+    "UnlimitedHugs.Rimworld.HugsLib/8.0.0": {
+      "sha512": "6hQkFBcEsFmmjQ00aHcD89DoowmED0QyAeSA+ozLlIpilwcQTTYfMb6Ytv6G/tNma9A8411Faw2Z6DzS0Gf09Q==",
       "type": "package",
-      "path": "unlimitedhugs.rimworld.hugslib/7.2.1",
+      "path": "unlimitedhugs.rimworld.hugslib/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "images/icon.png",
         "lib/net472/HugsLib.dll",
         "lib/net472/HugsLib.xml",
-        "unlimitedhugs.rimworld.hugslib.7.2.1.nupkg.sha512",
+        "unlimitedhugs.rimworld.hugslib.8.0.0.nupkg.sha512",
         "unlimitedhugs.rimworld.hugslib.nuspec"
       ]
     },

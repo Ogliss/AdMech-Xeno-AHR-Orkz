@@ -496,26 +496,17 @@
                     <original>EnvironmentDark</original>
                     <replacer>EnvironmentDark_OGOrkoid</replacer> 
                 </li>
-                -->
-                <li>
-                    <original>Greedy</original>
-                    <replacer>Greedy_OGOrkoid</replacer> 
-                </li>
                 <li>
                     <original>ApparelDamaged</original>
                     <replacer>ApparelDamaged_OGOrkoid</replacer> 
                 </li>
                 <li>
+                    <original>DefeatedHostileFactionLeader</original>
+                    <replacer>DefeatedHostileFactionLeader_OGOrkoid</replacer> 
+                </li>
+                <li>
                     <original>DeadMansApparel</original>
                     <replacer>DeadMansApparel_OGOrkoid</replacer> 
-                </li>
-                <li>
-                    <original>HumanLeatherApparelSad</original>
-                    <replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
-                </li>
-                <li>
-                    <original>HumanLeatherApparelHappy</original>
-                    <replacer>HumanLeatherApparelHappy_OGOrkoid</replacer> 
                 </li>
                 <li>
                     <original>ButcheredHumanlikeCorpseOpinion</original>
@@ -526,13 +517,22 @@
                     <replacer>AteRawHumanlikeMeat_OGOrkoid</replacer> 
                 </li>
                 <li>
-                    <original>BrawlerUnhappy</original>
-                    <replacer>BrawlerUnhappy_OGOrkoid</replacer> 
-                </li>
-                <li>
                     <original>ColonistLeftUnburied</original>
                     <replacer>ColonistLeftUnburied_OGOrkoid</replacer> 
                 </li>
+                <li>
+                    <original>Greedy</original>
+                    <replacer>Greedy_OGOrkoid</replacer> 
+                </li>
+                <li>
+                    <original>HumanLeatherApparelSad</original>
+                    <replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
+                </li>
+                <li>
+                    <original>HumanLeatherApparelHappy</original>
+                    <replacer>HumanLeatherApparelHappy_OGOrkoid</replacer> 
+                </li>
+                -->
                 <li>
                     <original>AteWithoutTable</original>
                     <replacer>AteWithoutTable_OGOrkoid</replacer> 
@@ -590,10 +590,6 @@
                     <replacer>KilledHumanlikeBloodlust_OGOrkoid</replacer> 
                 </li>
                 <li>
-                    <original>DefeatedHostileFactionLeader</original>
-                    <replacer>DefeatedHostileFactionLeader_OGOrkoid</replacer> 
-                </li>
-                <li>
                     <original>DefeatedHostileFactionLeaderOpinion</original>
                     <replacer>DefeatedHostileFactionLeaderOpinion_OGOrkoid</replacer> 
                 </li>
@@ -616,6 +612,7 @@
             </replacerList>
             <restrictedThoughts>
                 <li>EnvironmentDark_OGOrkoid</li>
+                <li>Ascetic_OGOrkoid</li>
                 <li>Greedy_OGOrkoid</li>
                 <li>ApparelDamaged_OGOrkoid</li>
                 <li>DeadMansApparel_OGOrkoid</li>
@@ -624,6 +621,7 @@
                 <li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
                 <li>AteRawHumanlikeMeat_OGOrkoid</li>
                 <li>BrawlerUnhappy_OGOrkoid</li>
+                <li>ShooterUnhappy_OGOrkoid</li>
                 <li>ColonistLeftUnburied_OGOrkoid</li>
                 <li>AteWithoutTable_OGOrkoid</li>
                 <li>SleptOutside_OGOrkoid</li>
@@ -650,14 +648,12 @@
 				<!--
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-				<li>AteRawHumanlikeMeat</li>
                 <li>AteHumanlikeMeatDirect</li>
                 <li>AteHumanlikeMeatAsIngredient</li>
 				
 				<li>ObservedLayingCorpse</li>
 				<li>AteWithoutTable</li>
 				<li>AteCorpse</li>
-				<li>ColonistLeftUnburied</li>
 				<li>DeadMansApparel</li>
 				<li>ApparelDamaged</li>
 				
@@ -666,15 +662,23 @@
 				
 				<li>KnowColonistExecuted</li>
 				<li>KnowColonistDied</li>
+				<li>HumanLeatherApparelHappy/li>
 				<li>PawnWithGoodOpinionDied</li>
 				-->
+				<li>ColonistLeftUnburied</li>
+				<li>AteRawHumanlikeMeat</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
 				<li>EnvironmentDark</li>
+				<li>Ascetic</li>
 				<li>Pain</li>
+				<li>Greedy</li>
+				<li>BrawlerUnhappy</li>
 				<li>ApparelDamaged</li>
 				<li>FeelingRandom</li>
 				<li>CabinFever</li>
 				<li>Sick</li>
-				
+				<li>HumanLeatherApparelSad</li>
+				<li>HumanLeatherApparelHappy</li>
 				<li>KnowGuestExecuted</li>
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>MySonDied</li>
@@ -688,6 +692,7 @@
 				<li>Pretty</li>
 				<li>Ugly</li>
 				<li>SoldPrisoner</li>
+				<li>PrisonerBanishedToDie</li>
 				<li>ExecutedPrisoner</li>
 				<li>SleepDisturbed</li>
 				<li>KnowPrisonerSold</li>
@@ -697,6 +702,7 @@
                 <li>AteOrkMeal</li>
                 <li>AteOrkFungusDirect</li>
                 <li>AteOrkFungusAsIngredient</li>
+                <li>DefeatedHostileFactionLeaderOpinion</li>
             </cannotReceiveThoughts>
         </thoughtSettings>
         <relationSettings>
@@ -750,6 +756,7 @@
                 <li>OGO_Apparel_UniformJacket</li>
 			</apparelList>
             <recipeList>
+                <li>OGO_SkavengeApparel</li>
                 <li>OGO_Wargear_BossPole</li>
                 <li>OGO_Apparel_LevaElmet</li>
                 <li>OGO_Apparel_Elmet</li>

@@ -143,7 +143,7 @@
     <stages>
       <li>
         <label>soaking wet</label>
-        <description>I'm soaking wet.</description>
+        <description>I'z soakin wet.</description>
         <baseMoodEffect>-1</baseMoodEffect>
       </li>
     </stages>
@@ -156,11 +156,11 @@
 		<durationDays>6</durationDays>
 		<stackLimit>10</stackLimit>
 		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
-		<nullifyingTraits>
+		<!--nullifyingTraits>
 			<li>Psychopath</li>
 			<li>Bloodlust</li>
 			<li>Cannibal</li>
-		</nullifyingTraits>
+		</nullifyingTraits-->
 		<stages>
 			<li>
 				<label>I butchered humanlike</label>
@@ -283,7 +283,7 @@
 		<stages>
 			<li>
 				<label>witnessed ally's death</label>
-				<description>One of day boyz got wasted. Dey was alive, den they was dead, just like dat.</description>
+				<description>One of da boyz got wasted. Dey was alive, den they was dead, just like dat.</description>
 				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 		</stages>

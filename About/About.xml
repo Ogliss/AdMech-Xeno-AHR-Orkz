@@ -61,6 +61,7 @@
     <li>Ogliss.AdMech.Armoury</li>
     <li>Ogliss.AdMech.Xenobiologis</li>
     <li>syrchalis.universalfermenter</li>
+    <li>walkingproblem.aaf</li>
   </loadAfter>
   <incompatibleWith>
     <li>Ogliss.FeralOrkz</li>

@@ -152,7 +152,7 @@
 				</li>
 			</PauldronEntries>
 			<NorthOffset>0,0.001,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
+			<SouthOffset>0,-0.005,0</SouthOffset>
 			<EastOffset>0,0.35,0</EastOffset>
 			<WestOffset>0,0.35,0</WestOffset>
       </li>
@@ -239,7 +239,7 @@
 				</li>
 			</PauldronEntries>
 			<NorthOffset>0,0.001,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
+			<SouthOffset>0,-0.005,0</SouthOffset>
 			<EastOffset>0,0.35,0</EastOffset>
 			<WestOffset>0,0.35,0</WestOffset>
       </li>

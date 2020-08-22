@@ -14,7 +14,7 @@ using AdeptusMechanicus.ExtensionMethods;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
-    public static class AMXBO_PawnGenerator_GeneratePawn_Orkoid_Patch
+    public static class PawnGenerator_GeneratePawn_Orkoid_Patch
     {
         [HarmonyPrefix]
         public static void Pre_GeneratePawn(ref PawnGenerationRequest request)

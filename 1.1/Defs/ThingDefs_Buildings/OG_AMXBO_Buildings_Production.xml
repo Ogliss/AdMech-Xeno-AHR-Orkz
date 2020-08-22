@@ -69,6 +69,7 @@
     </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <unpoweredWorkTableWorkSpeedFactor>0.5</unpoweredWorkTableWorkSpeedFactor>
     </building>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>

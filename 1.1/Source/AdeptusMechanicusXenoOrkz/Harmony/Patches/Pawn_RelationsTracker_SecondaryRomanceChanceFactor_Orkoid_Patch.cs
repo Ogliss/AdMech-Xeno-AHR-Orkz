@@ -9,7 +9,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 {
     // Token: 0x020000CB RID: 203
     [HarmonyPatch(typeof(Pawn_RelationsTracker), "SecondaryRomanceChanceFactor", null)]
-    public class AMXBO_Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch
+    public class Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch
     {
         // Token: 0x06000346 RID: 838 RVA: 0x0001D994 File Offset: 0x0001BB94
         [HarmonyPostfix]

@@ -12,7 +12,7 @@ using AdeptusMechanicus.ExtensionMethods;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(AMAMod), "ModLoaded")]
-    public static class AMO_AMAMod_SettingsCategory_Patch
+    public static class MAMod_SettingsCategory_Patch
     {
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)
@@ -21,32 +21,8 @@ namespace AdeptusMechanicus.HarmonyInstance
         }
     }
 
-    /*
-    [HarmonyPatch(typeof(AMAMod), "SettingsCategory")]
-    public static class AMO_AMAMod_SettingsCategory_Patch
-    {
-        [HarmonyPostfix, HarmonyPriority(399)]
-        public static void SettingsCategory_Postfix(ref AMAMod __instance, ref string __result)
-        {
-            __result += ", " + "AMO_ModName".Translate();
-        }
-    }
-    [HarmonyPatch(typeof(AMAMod), "get_MenuLength")]
-    public static class AMO_AMAMod_MenuLength_Patch
-    {
-        [HarmonyPostfix]
-        public static void MenuLength_Postfix(ref float __result)
-        {
-            //    Log.Message(string.Format("PreModOptions_Prefix num2: {0}",  num2));
-            __result += (AMSettings.Instance.ShowOrk ? (AdeptusIntergrationUtil.enabled_MagosXenobiologis ? 60f : 120f) : 0);
-
-            //    Log.Message(string.Format("PreModOptions_Prefix num2: {0}", num2));
-        }
-
-    }
-	*/
     [HarmonyPatch(typeof(AMAMod), "OrkSettings")]
-    public static class AMO_AMMod_PlayableOrkSettings_Patch
+    public static class AMMod_PlayableOrkSettings_Patch
     {
         [HarmonyPrefix, HarmonyPriority(401)]
         public static bool OrkSettings_Prefix(ref AMAMod __instance, ref Listing_Standard listing_Main, Rect rect, Rect inRect, float num, float num2)
@@ -116,7 +92,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     }
     
     [HarmonyPatch(typeof(AMAMod), "PostModOptions")]
-    public static class AMO_AMAMod_PostModOptions_Patch
+    public static class AMAMod_PostModOptions_Patch
     {
         [HarmonyPostfix, HarmonyPriority(399)]
         public static void PostModOptions_Prefix(ref Listing_Standard listing_Main, Rect inRect, float width, float menuLength)

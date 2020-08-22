@@ -126,22 +126,22 @@
       <li>
         <label>chilly</label>
         <description>I'm uncomfortably cold.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
+        <baseMoodEffect>-1</baseMoodEffect>
       </li>
        <li>
         <label>cold</label>
         <description>I'm so cold, I'm shivering.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
+        <baseMoodEffect>-2</baseMoodEffect>
       </li>   
         <li>
         <label>numbing cold</label>
         <description>I can't stop shivering. My teeth are chattering. All I can think of is getting warm.</description>
-        <baseMoodEffect>-12</baseMoodEffect>
+        <baseMoodEffect>-4</baseMoodEffect>
       </li>
       <li>
         <label>absolutely freezing</label>
         <description>My teeth are chattering so hard I can barely speak. My toes are numb. I need to get warm.</description>
-        <baseMoodEffect>-16</baseMoodEffect>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -154,22 +154,22 @@
       <li>
         <label>sweaty</label>
         <description>It's too hot here. I'm sweating.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
+        <baseMoodEffect>-1</baseMoodEffect>
       </li>
       <li>
         <label>hot</label>
         <description>It's way too hot here. If I could just have a breath of cool air...</description>
-        <baseMoodEffect>-8</baseMoodEffect>
+        <baseMoodEffect>-2</baseMoodEffect>
       </li>    
         <li>
         <label>sweltering hot</label>
         <description>I feel like I'm in an oven! I'm not sure how long I can handle this.</description>
-        <baseMoodEffect>-12</baseMoodEffect>
+        <baseMoodEffect>-4</baseMoodEffect>
       </li>
       <li>
         <label>blistering hot</label>
         <description>This place is searing hot. I think I could die from this heat!</description>
-        <baseMoodEffect>-16</baseMoodEffect>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>     
     </stages>
   </ThoughtDef>

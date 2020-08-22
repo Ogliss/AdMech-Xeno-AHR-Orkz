@@ -38,21 +38,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
-    <Compile Include="Harmony\Patches\AMXBO_Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cs" />
-    <Compile Include="Harmony\Patches\AMXBO_Pawn_EquipmentTracker_DropAllEquipment_Orkoid_Patch.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Harmony\Patches\TraitSet_HasTrait_Orkoid_Patch.cs" />
+    <Compile Include="ThoughtWorker_IsCarryingMeleeWeapon.cs" />
+    <Compile Include="Harmony\Patches\Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_EquipmentTracker_DropAllEquipment_KrudeBionic_Patch.cs" />
     <Compile Include="ThoughtWorker_Dark_Orkoid.cs" />
     <Compile Include="ThoughtWorker_HasKrudeAddedBodyPart.cs" />
-    <Compile Include="Harmony\Patches\Settings\AMXBO_AMAMod_ModOptions_Patches.cs" />
+    <Compile Include="Harmony\Patches\Settings\AMMod_PlayableOrkSettings_Patch.cs" />
     <Compile Include="MentalStateWorker_StarvingOrkoid.cs" />
     <Compile Include="AMOMain.cs" />
     <Compile Include="AMXBSetIncidents.cs" />
     <Compile Include="ThoughtWorker_HumanlikeLeatherApparel_Ork.cs" />
     <Compile Include="MentalState_StarvingOrkoid.cs" />
-    <Compile Include="Harmony\Patches\AMXBO_Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <None Include="OGOrkJobDefOf.cs.bak" />
     <Compile Include="Comp_OrkoidSpores.cs" />
-    <Compile Include="Harmony\Patches\AMXBO_PawnGenerator_GeneratePawn_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\PawnGenerator_GeneratePawn_Orkoid_Patch.cs" />
     <Compile Include="IncidentWorker_OrkoidFungalSprout.cs" />
     <None Include="OGOrkPawnKindDefOf.cs.bak" />
     <None Include="OGOrkFactionDefOf.cs.bak" />

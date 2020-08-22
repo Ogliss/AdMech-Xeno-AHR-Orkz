@@ -113,7 +113,7 @@
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[7.2.1, )"
+              "version": "[8.0.0, )"
             }
           }
         }
