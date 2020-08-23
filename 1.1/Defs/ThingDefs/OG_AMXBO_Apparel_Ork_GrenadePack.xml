@@ -6,7 +6,7 @@
     <!-- ========================= Ork - Frag Grenades	========================== -->
 	<ThingDef ParentName="OGOWargearMakeable">
 		<defName>OGO_GrenadePack_Frag</defName>
-		<label>frag stikk bombz</label>
+		<label>frag stikk bombz (O)</label>
 		<description>a pack of frag stikk bombz.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkFragStikkBombs</texPath>
@@ -66,7 +66,7 @@
     <!-- ========================= Ork - Krak Grenades	========================== -->
 	<ThingDef ParentName="OGOWargearMakeable">
 		<defName>OGO_GrenadePack_Krak</defName>
-		<label>krak stikk bombz</label>
+		<label>krak stikk bombz (O)</label>
 		<description>a pack of krak stikk bombz.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkKrakStikkBombs</texPath>
@@ -125,7 +125,7 @@
     <!-- ========================= Ork - Melta Bomb	========================== -->
 	<ThingDef ParentName="OGOWargearMakeable">
 		<defName>OGO_GrenadePack_Melta</defName>
-		<label>Tankbusta bombz</label>
+		<label>Tankbusta bombz (O)</label>
 		<description>a pack of tankbusta bombz.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkTankbustaBombs</texPath>
@@ -182,20 +182,4 @@
 		</tradeTags>
 	</ThingDef>
 
-			<!--
-		  <li Class="AdeptusMechanicus.CompProperties_HediffApparel">
-			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
-			<severityBasedOnDurability>false</severityBasedOnDurability>
-			<partsToAffect>
-			  <li>A_BODYPARTDEF_HERE</li>
-			  <li>A_BODYPARTDEF_HERE</li>
-			  <li>A_BODYPARTDEF_HERE</li>
-			</partsToAffect>
-			<groupsToAffect>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
-			</groupsToAffect>
-		  </li>
-			-->
 </Defs>
