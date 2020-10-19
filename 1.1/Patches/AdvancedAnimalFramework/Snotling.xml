@@ -4,9 +4,9 @@
 <Operation Class="PatchOperationSequence">
   <success>Always</success>
   <operations>
-    <li Class="PatchOperationTest">
+    <!--li Class="PatchOperationTest">
       <xpath>/Defs/JobDef[defName = "AnimalWeaponEquip"]</xpath>
-    </li>
+    </li-->
     <li Class="PatchOperationReplace">
       <xpath>/Defs/ThinkTreeDef[defName = "Snotling"]</xpath>
 		<value>	
@@ -597,8 +597,8 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
-	  <li>WPEquipWeaponOnAnimal</li>
-	  <li>WPRemoveWeaponOnAnimal</li>
+	  <!--li>WPEquipWeaponOnAnimal</li>
+	  <li>WPRemoveWeaponOnAnimal</li-->
     </recipes>
 		</value>
     </li>

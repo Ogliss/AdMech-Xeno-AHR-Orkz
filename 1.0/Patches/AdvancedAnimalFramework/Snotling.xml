@@ -597,8 +597,8 @@
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
       <li>Anesthetize</li>
-	  <li>WPEquipWeaponOnAnimal</li>
-	  <li>WPRemoveWeaponOnAnimal</li>
+	  <!--li>WPEquipWeaponOnAnimal</li>
+	  <li>WPRemoveWeaponOnAnimal</li-->
     </recipes>
 		</value>
     </li>

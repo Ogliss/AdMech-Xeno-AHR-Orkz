@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ========================= Ork Rok ========================= -->
+  <ThingDef ParentName="ShipPartBaseOG">
+    <defName>OG_Ork_Rok</defName>
+    <label>Ork Rok</label>
+    <description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials.</description>
+    <graphicData>
+      <texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+		<shadowData>
+			<volume>(5.5, 1.0, 2.45)</volume>
+		</shadowData>
+    </graphicData>
+    <size>(5,5)</size>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected> <!-- Hack to draw defoliant radius -->
+    <placeWorkers>
+      <li>PlaceWorker_ShowPlantHarmRadius</li>
+    </placeWorkers>
+	<modExtensions>
+		<li Class="ExtraHives.HiveDefExtension">
+			<Faction>OG_Ork_Rok</Faction>
+		</li>
+	</modExtensions>
+    <comps>
+		<li Class="CrashedShipsExtension.CompProperties_SpawnerOnDamaged">
+			<Factions>
+				<li>OG_Ork_Rok</li>
+			</Factions>
+		</li>
+		<li Class="CrashedShipsExtension.CompProperties_SpawnerPawn">
+		<!-- 
+			<lordJob>LordJob_DefendAndExpandHive</lordJob>
+		-->
+			<lordJob>CrashedShipsExtension.LordJob_PawnsDefendShip</lordJob>
+			<spawnSound>Hive_Spawn</spawnSound>
+			<initialSpawnDelay>60</initialSpawnDelay>
+			<initialPawnsPoints>500</initialPawnsPoints>
+			<maxSpawnedPawnsPoints>2500</maxSpawnedPawnsPoints>
+		</li>
+		<li Class="ExtraHives.CompProperties_SpawnerHives">
+			<hiveDef>OG_Ork_Rok_Tunnel</hiveDef>
+			<tunnelDef>OG_Ork_Rok_Spawner_Tunnel</tunnelDef>
+			<requireRoofed>false</requireRoofed>
+			<HiveSpawnIntervalDays>0.67~1.5</HiveSpawnIntervalDays>
+			<radiusPerDayCurve>
+			  <points>
+				<li>0  , 5</li>
+				<li>3, 18</li>
+				<li>12  , 40</li>
+				<li>40 , 100</li>
+			  </points>
+			</radiusPerDayCurve>
+		</li>
+		<!--li Class="CompProperties_CausesGameCondition">
+			<conditionDef>GiantSmokeCloud</conditionDef>
+			<worldRange>10</worldRange>
+		</li-->
+		<li Class="CompProperties_ThrownMoteEmitter">
+			<mote>Mote_Smoke</mote>
+			<offsetMin>(-2,0,3)</offsetMin>
+			<offsetMax>(2,0,3)</offsetMax>
+			<emissionInterval>15</emissionInterval>
+			<burstCount>2</burstCount>
+			<scale>2~4</scale>
+			<rotationRate>-30~30</rotationRate>
+			<velocityX>-40~40</velocityX>
+			<velocityY>0.5~1</velocityY>
+			<colorA>(0.2,0.2,0.2,1)</colorA>
+			<colorB>(0.4,0.4,0.4,1)</colorB>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>OG_Ork_Rok_Tunnel</defName>
+    <label>ork tunnel</label>
+    <description>An ork tunnel. If activated, it will spawn additional Orkz over time.</description>
+    <thingClass>ExtraHives.Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Special/TunnelExit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.1,0.1,1.8,1.8)</rect>
+      </damageData>
+    </graphicData>
+    <size>(1,1)</size>
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <killedLeavings>
+      <InsectJelly>30</InsectJelly>
+    </killedLeavings>
+	<modExtensions>
+		<li Class="ExtraHives.HiveDefExtension">
+			<TunnelDef>OG_Ork_Rok_Spawner_Tunnel</TunnelDef>
+			<Faction>OG_Ork_Rok</Faction>
+		</li>
+	</modExtensions>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="ExtraHives.CompProperties_SpawnerPawn">
+        <lordJob>ExtraHives.LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>200</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>OG_Ork_Rok_Spawner_Tunnel</defName>
+    <label>ork rok tunneler</label>
+    <thingClass>ExtraHives.TunnelHiveSpawner</thingClass>
+	<modExtensions>
+		<li Class="ExtraHives.TunnelExtension">
+			<HiveDef>OG_Ork_Rok_Tunnel</HiveDef>
+			<Faction>OG_Ork_Rok</Faction>
+		</li>
+	</modExtensions>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+  
+  <!--GameConditionDef>
+    <defName>GiantSmokeCloud</defName>
+    <conditionClass>GameCondition_SmokeSpewer</conditionClass>
+    <label>giant smoke cloud</label>
+    <description>A nearby smoke spewer is reducing sunlight in this region.</description>
+    <letterText>A smoke spewer machine has begun obscuring the sun.</letterText>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef-->
+  
+</Defs>

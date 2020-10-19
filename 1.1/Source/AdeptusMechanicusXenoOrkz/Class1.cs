@@ -12,6 +12,7 @@ namespace AdeptusMechanicus
 
     class OrkoidFungus : Plant
 	{
+		public new bool HasEnoughLightToGrow => true;
 		public new float GrowthRateFactor_Temperature
 		{
 			get
@@ -21,18 +22,22 @@ namespace AdeptusMechanicus
 				{
 					return 1f;
 				}
-				if (num < 10f)
+				if (num < -10f)
 				{
-					return Mathf.InverseLerp(-20f, 10f, num);
+					return Mathf.InverseLerp(-50f, -10f, num);
 				}
-				if (num > 42f)
+				if (num > 62f)
 				{
-					return Mathf.InverseLerp(116f, 42f, num);
+					return Mathf.InverseLerp(116f, 62f, num);
 				}
 				return 1f;
 			}
 		}
 
-		public new bool HasEnoughLightToGrow => true;
+		public override void PlantCollected()
+		{
+
+			base.PlantCollected();
+		}
 	} 
 }

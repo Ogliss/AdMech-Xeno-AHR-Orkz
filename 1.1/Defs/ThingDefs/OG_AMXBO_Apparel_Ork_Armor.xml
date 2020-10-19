@@ -292,6 +292,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Item/Apparel/Ork/OrkMegaArmour/OrkMegaArmour</wornGraphicPath>
       <layers>
+        <li>Middle</li>
         <li>Shell</li>
       </layers>
       <tags>
@@ -299,6 +300,7 @@
         <li>Royal</li>
         <li>RoyalTier7</li>
 		<li>RoyalCombatGear</li>
+		<li>EVA</li>
       </tags>
       <defaultOutfitTags>
         <li>Ork</li>

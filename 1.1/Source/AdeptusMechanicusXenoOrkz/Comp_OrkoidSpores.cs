@@ -103,7 +103,9 @@ namespace AdeptusMechanicus
         {
             if (canspawn)
             {
+                Rand.PushState();
                 var spawnRoll = Rand.Value;
+                Rand.PopState();
                 if (spawnRoll < (spawnChance*plant.Growth))
                 {
                     pawnKindDef = pairs.RandomElementByWeight(x=> x.Second).First;

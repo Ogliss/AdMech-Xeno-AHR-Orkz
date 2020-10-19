@@ -34,9 +34,6 @@
 				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Grot</li>
-				<li>Alien_Grot</li>
-				<li>OG_Cyborg_Ork</li>
-				<li>Cyborg_Ork</li>
 			</notXenophobistTowards>
 			<factionRelations>
 				<li>
@@ -67,12 +64,12 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Eldar_Craftworld_Faction</li>
-					   <li>OG_Eldar_Player_Craftworld</li>
-					   <li>OG_Eldar_Exodite_Faction</li>
-					   <li>OG_Eldar_Player_Exodite</li>
-					   <li>OG_Eldar_Harlequin_Faction</li>
-					   <li>OG_Eldar_Player_Harlequin</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Player_Exodite</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Harlequin_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Player_Harlequin</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -81,8 +78,8 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_DarkEldar_Faction</li>
-					   <li>OG_DarkEldar_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -91,11 +88,11 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Tau_Faction</li>
-					   <li>OG_Kroot_Faction</li>
-					   <li>OG_Tau_PlayerColony</li>
-					   <li>OG_Kroot_PlayerColony</li>
-					   <li>OG_Kroot_PlayerTribe</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Tau_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Tau_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_PlayerTribe</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -104,8 +101,8 @@
 				</li>  
 				<li>
 					<factions>
-					   <li>OG_Mechanicus_Faction</li>
-					   <li>OG_Mechanicus_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -114,9 +111,9 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -125,11 +122,8 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Astartes_BloodAngels</li>
-					   <li>OG_Astartes_DarkAngels</li>
-					   <li>OG_Astartes_ImperialFists</li>
-					   <li>OG_Astartes_PlayerColony</li>
-					   <li>OG_AstartesNeophyte_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_Astartes_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -497,7 +491,7 @@
                 <li>Greedy_OGOrkoid</li>
                 <li>ApparelDamaged_OGOrkoid</li>
                 <li>DeadMansApparel_OGOrkoid</li>
-                <li>HumanLeatherApparelSad_OGOrkoid</li>
+                <!--li>HumanLeatherApparelSad_OGOrkoid</li-->
                 <li>HumanLeatherApparelHappy_OGOrkoid</li>
                 <li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
                 <li>AteRawHumanlikeMeat_OGOrkoid</li>
@@ -555,8 +549,8 @@
 				<li>Greedy</li>
 				<li>BrawlerUnhappy</li>
 				<li>ApparelDamaged</li>
-				<li>FeelingRandom</li>
-				<li>CabinFever</li>
+				<!--li>FeelingRandom</li-->
+				<!--li>CabinFever</li-->
 				<li>Sick</li>
 				<li>HumanLeatherApparelSad</li>
 				<li>HumanLeatherApparelHappy</li>
@@ -622,13 +616,13 @@
                     <projects>
 						<li>OG_Ork_Tech_Base_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T1</li>
-						<li>OG_Ork_Tech_Weapons_Ranged_T1</li>
+						<!--li>OG_Ork_Tech_Weapons_Ranged_T1</li-->
 						<li>OG_Ork_Tech_Apparel_Armour_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T2</li>
 						<li>OG_Ork_Tech_Apparel_Armour_T2</li>
 						<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
 						<li>OG_Ork_Tech_Base_T2</li>
-						<li>OG_Ork_Tech_Weapons_Melee_T3</li>
+						<!--li>OG_Ork_Tech_Weapons_Melee_T3</li-->
 						<li>OG_Ork_Tech_Base_T3</li>
 						<li>OG_Ork_Tech_Apparel_Armour_T3</li>
                     </projects>
@@ -647,42 +641,42 @@
 			</apparelList>
             <recipeList>
                 <li>OGO_SkavengeApparel</li>
-                <li>OGO_Apparel_UniformShirt</li>
-                <li>OGO_Apparel_UniformJacket</li>
-                <li>OGO_Wargear_BossPole</li>
-                <li>OGO_Apparel_LevaElmet</li>
-                <li>OGO_Apparel_Elmet</li>
-                <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
-                <li>OGO_Apparel_IronGob</li>
-                <li>OGO_Apparel_LevaArmour</li>
-                <li>OGO_Apparel_Armour</li>
-                <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
-                <li>OGO_GrenadePack_Frag</li>
-                <li>OGO_GrenadePack_Krak</li>
-                <li>OGO_GrenadePack_Melta</li>
-                <li>OGO_Melee_CrudeChoppa</li>
-                <li>OGO_Melee_Choppa</li>
-                <li>OGO_Melee_ChainChoppa</li>
-                <li>OGO_Melee_BigChoppa</li>
-                <li>OGO_Melee_PowerKlaw</li>
-                <li>OGO_Gun_GrotBlasta</li>
-                <li>OGO_Gun_Slugga</li>
-                <li>OGO_Gun_Shoota</li>
-                <li>OGO_Gun_TwinLinkedShoota</li>
-                <li>OGO_Gun_BigShoota</li>
-                <li>OGO_Gun_Snazzgun</li>
-                <li>OGO_Gun_ZappKannon</li>
-                <li>OGO_Gun_Burna</li>
-                <li>OGO_Gun_Scorcha</li>
-                <li>OGO_Gun_RokkitLaucha</li>
-                <li>OGO_Gun_KombiBurna</li>
-                <li>OGO_Gun_KombiRokkit</li>
-                <li>OGO_Gun_DeffgunPlasma</li>
-                <li>OGO_Gun_DeffgunBeamy</li>
-                <li>OGO_Gun_DeffgunDakka</li>
+                <li>Make_OGO_Apparel_UniformShirt</li>
+                <li>Make_OGO_Apparel_UniformJacket</li>
+                <li>Make_OGO_Wargear_BossPole</li>
+                <li>Make_OGO_Apparel_LevaElmet</li>
+                <li>Make_OGO_Apparel_Elmet</li>
+                <li>Make_OGO_Apparel_EavyElmet</li>
+                <li>Make_OGO_Apparel_MegaArmourElmet</li>
+                <li>Make_OGO_Apparel_IronGob</li>
+                <li>Make_OGO_Apparel_LevaArmour</li>
+                <li>Make_OGO_Apparel_Armour</li>
+                <li>Make_OGO_Apparel_EavyArmour</li>
+                <li>Make_OGO_Apparel_MegaArmour</li>
+                <li>Make_OGO_Wargear_KustomForcefield</li>
+                <li>Make_OGO_GrenadePack_Frag</li>
+                <li>Make_OGO_GrenadePack_Krak</li>
+                <li>Make_OGO_GrenadePack_Melta</li>
+                <li>Make_OGO_Melee_CrudeChoppa</li>
+                <li>Make_OGO_Melee_Choppa</li>
+                <li>Make_OGO_Melee_ChainChoppa</li>
+                <li>Make_OGO_Melee_BigChoppa</li>
+                <li>Make_OGO_Melee_PowerKlaw</li>
+                <li>Make_OGO_Gun_GrotBlasta</li>
+                <li>Make_OGO_Gun_Slugga</li>
+                <li>Make_OGO_Gun_Shoota</li>
+                <li>Make_OGO_Gun_TwinLinkedShoota</li>
+                <li>Make_OGO_Gun_BigShoota</li>
+                <li>Make_OGO_Gun_Snazzgun</li>
+                <li>Make_OGO_Gun_ZappKannon</li>
+                <li>Make_OGO_Gun_Burna</li>
+                <li>Make_OGO_Gun_Scorcha</li>
+                <li>Make_OGO_Gun_RokkitLaucha</li>
+                <li>Make_OGO_Gun_KombiBurna</li>
+                <li>Make_OGO_Gun_KombiRokkit</li>
+                <li>Make_OGO_Gun_DeffgunPlasma</li>
+                <li>Make_OGO_Gun_DeffgunBeamy</li>
+                <li>Make_OGO_Gun_DeffgunDakka</li>
             </recipeList>
             <plantList>
                 <li>OG_Plant_Orkoid_Fungus</li>

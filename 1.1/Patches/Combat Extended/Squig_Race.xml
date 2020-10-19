@@ -33,8 +33,8 @@
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="OG_Squig" or defName="OG_Squig_Ork"]/statBases</xpath>
 		<value>
-			<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.125</ArmorRating_Sharp>
+			<!--ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.125</ArmorRating_Sharp-->
 			<MeleeDodgeChance>0.21</MeleeDodgeChance>
 			<MeleeCritChance>0.20</MeleeCritChance>
 			<MeleeParryChance>0.09</MeleeParryChance>
@@ -49,7 +49,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left claw</label>
 					<capacities>
-						<li>Slash</li>
+						<li>Scratch</li>
 					</capacities>
 					<power>14</power>
 					<cooldownTime>1.5</cooldownTime>
@@ -67,7 +67,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>right claw</label>
 					<capacities>
-						<li>Slash</li>
+						<li>Scratch</li>
 					</capacities>
 					<power>14</power>
 					<cooldownTime>1.5</cooldownTime>

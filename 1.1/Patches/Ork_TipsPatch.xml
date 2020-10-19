@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/TipSetDef[defName = "GameplayTips"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/TipSetDef[defName = "GameplayTips"]/tips</xpath>
+				<value>			
+					<li>All Orkoid lifeforms begin as a single type spore, these spores can grow into harmless fungus, or they can grow into any orkoid creature, from squigz to those orkz that become mighty warbosses"</li>
+					<li>Ork weapons and technology can only be produced/researched by Orkz.</li>
+					<li>Orkz all count as having the Bloodlust/Psychopath trait.</li>
+					<li>Orkoids are incredibly resilient, given enough time and nutrition they can regenerate from most non fatal wounds, even regrowing entire limbs.</li>
+				</value>
+			</li>
+		</operations>	
+	</Operation>
+	
+</Patch>

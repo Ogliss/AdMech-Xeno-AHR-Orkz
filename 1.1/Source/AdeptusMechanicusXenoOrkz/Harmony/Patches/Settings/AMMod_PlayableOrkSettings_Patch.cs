@@ -36,7 +36,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             float RaceSettings = __instance.Length(setting, Options, lineheight, 48, showRaces ? 1 : 0); //(settings.ShowImperium ? (lineheight * 2) : (lineheight * 1)) + (settings.ShowImperium ? 10 : 0);
             float options = __instance.Length(setting, Options - 1, lineheight, 0, 0);
 
-            Listing_Standard listing_Race = listing_Main.BeginSection(RaceSettings);
+            Listing_Standard listing_Race = listing_Main.BeginSection_NewTemp(RaceSettings);
             listing_Race.CheckboxLabeled("AMXB_ShowOrk".Translate() + " Settings" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowOrk, null, false, true);
 
             if (setting)

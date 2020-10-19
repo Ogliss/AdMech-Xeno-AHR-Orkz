@@ -19,6 +19,10 @@ namespace AdeptusMechanicus.HarmonyInstance
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.orkz");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Type pawn_NativeVerbs = typeof(Pawn_NativeVerbs);
+            if (AdeptusIntergrationUtil.enabled_SOS2)
+            {
+                HarmonyPatches.SOSConstructPatch();
+            }
             HarmonyInstance._cachedVerbProperties = pawn_NativeVerbs.GetField("cachedVerbProperties", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
             HarmonyInstance._pawnPawnNativeVerbs = pawn_NativeVerbs.GetField("pawn", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
             if (Prefs.DevMode) Log.Message(string.Format("Adeptus Xenobiologis: Orkz: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);

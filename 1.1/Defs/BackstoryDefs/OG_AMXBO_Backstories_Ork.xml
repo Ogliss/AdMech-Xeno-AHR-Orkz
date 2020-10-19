@@ -351,6 +351,56 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
+<!-- Ork Boy Kommando -->
+  <AlienRace.BackstoryDef>
+    <defName>Ork_Boy_Kommando</defName>
+    <title>Kommando</title>
+    <titleShort>Kommando</titleShort>
+	
+    <bioAgeRange>
+        <min>5</min>
+        <max>29</max>
+    </bioAgeRange>
+    <baseDescription>[PAWN_nameDef] is a Kommando, he epitomise the Orky virtue of low cunning. Nothing makes [PAWN_nameDef] happier than creeping up on an unsuspecting enemy, his mates slithering through the undergrowth at his side. When the time is right, burst from concealment, slashing, stabbing and shooting their stunned prey before they have a chance to strike back.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <workDisables>
+	<!--
+      <li>Caring</li>
+      <li>Social</li>
+      <li>Cooking</li>
+      <li>Animals</li>
+      <li>PlantWork</li>
+	-->
+      <li>ManualSkilled</li>
+      <li>Intellectual</li>
+    </workDisables>
+	<forcedTraits>
+        <li>
+            <defName>Brawler</defName>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+	<disallowedTraits>
+        <li>
+            <defName>ShootingAccuracy</defName>
+        </li>
+    </disallowedTraits>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Ork_Boy</li>
+      <li>Ork_Boy_Kommando</li>
+      <li>Ork_Standard</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
 <!-- Ork Boy Brewer -->
   <AlienRace.BackstoryDef>
     <defName>Ork_Boy_Brewer</defName>

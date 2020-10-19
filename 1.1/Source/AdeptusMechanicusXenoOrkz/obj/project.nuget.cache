@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/tjBTMHb1K258aF/bq5eIE35OkVnmd3OK2gU1/HQW7Gy4RKaVtH0vICwx+lGBOxMYy3KlMWiR5NJpgz1Ih9oAg==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz\\1.1\\Source\\AdeptusMechanicusXenoOrkz\\AdeptusMechanicusXenoOrkz.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2753\\krafs.rimworld.ref.1.2.2753.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\lib.harmony\\2.0.2\\lib.harmony.2.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\8.0.0\\unlimitedhugs.rimworld.hugslib.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

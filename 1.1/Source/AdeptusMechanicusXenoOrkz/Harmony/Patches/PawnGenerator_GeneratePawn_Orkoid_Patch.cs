@@ -64,8 +64,9 @@ namespace AdeptusMechanicus.HarmonyInstance
                         }
                         else if (nob)
                         {
-
+                            Rand.PushState();
                             __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1,2)));
+                            Rand.PopState();
                         }
                         else
                         {
