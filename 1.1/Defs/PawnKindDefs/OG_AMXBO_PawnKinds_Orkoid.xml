@@ -16,6 +16,14 @@
     <apparelTags>
       <li>OGOClothing</li>
     </apparelTags>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+			  <min>5</min>
+			  <max>8</max>
+			</primaryMagazineCount>
+		</li>
+    </modExtensions>
   </PawnKindDef>
   
   <!-- ============================ Ork Civilian Base ========================== -->

@@ -710,6 +710,8 @@
       <GlobalLearningFactor>0.75</GlobalLearningFactor>
       <MeleeDodgeChance>1.35</MeleeDodgeChance>
       <MeleeHitChance>0.85</MeleeHitChance>
+      <MeleeCritChance MayRequire="CETeam.CombatExtended">0.75</MeleeCritChance>
+      <MeleeParryChance MayRequire="CETeam.CombatExtended">0.75</MeleeParryChance>
       <GeneralLaborSpeed>0.92</GeneralLaborSpeed>
       <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
       <ButcheryFleshEfficiency>0.75</ButcheryFleshEfficiency>
@@ -879,6 +881,11 @@
 		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li>
     </comps>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">

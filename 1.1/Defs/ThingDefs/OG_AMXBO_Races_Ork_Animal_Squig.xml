@@ -8,6 +8,11 @@
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>450</MarketValue>
+	  <MeleeDodgeChance>0.06</MeleeDodgeChance>
+	  <MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
+	  <MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
+	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.125</ArmorRating_Sharp>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
     </statBases>
     <tools>
@@ -124,6 +129,11 @@
 		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li>
     </comps>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Quadruped</bodyShape>
+		</li>
+    </modExtensions>
   </ThingDef>
   
   <PawnKindDef Name="OG_Squig" ParentName="AnimalKindBase">

@@ -6,8 +6,13 @@
     <label>Snotling</label>
     <description>A Snotling is an Orkoid, the smaller cousin of Gretchins and Orks. Snotlings are often used by their larger counterparts as cannon fodder, food or even ammunition in certain cases. Snotlings represent the lowest rung of Orkoid society and are bullied by all other Greenskins. Snotlings often wield mushrooms or sticks into battle.\n\nA Snotling appears to be a miniaturised Gretchin. It stands roughly half a metre tall and has the same gangly appearance as a tiny Grot. Because of their small stature in the Orks' "might makes right" "kultur," they occupy what is perhaps the lowest rung of Ork society. While the Gretchin act as servants and maintain other secondary positions in Ork society, Snotlings will serve sometimes as "pets," but more often they are placed in Orkish agricultural and animal husbandry roles due to their affinity with the fungus and Squigs that feed most Ork settlements. Snotlings' affinity with Squigs usually ensures that only a few dozen Snotlings are eaten by their "livestock" on any given day. Supervised and trained by Runtherdz, Snotlings will cultivate the fungus preferred by Greenskins to provide Orks with food, drink, and medicine.</description>
     <statBases>
-      <MoveSpeed>3.0</MoveSpeed>
+      <MoveSpeed>3.75</MoveSpeed>
       <MarketValue>450</MarketValue>
+	  <MeleeDodgeChance>0.25</MeleeDodgeChance>
+	  <MeleeCritChance MayRequire="CETeam.CombatExtended">0.1</MeleeCritChance>
+	  <MeleeParryChance MayRequire="CETeam.CombatExtended">0.1</MeleeParryChance>
+	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.125</ArmorRating_Sharp>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
     </statBases>
     <tools>
@@ -143,6 +148,11 @@
 		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li>
     </comps>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

@@ -287,6 +287,13 @@
     </comps>
     <drawGUIOverlay>true</drawGUIOverlay>
 	-->
+    <comps>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
+		<li MayRequire="CETeam.CombatExtended">
+		  <compClass>CombatExtended.CompPawnGizmo</compClass>
+		</li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
+    </comps>
 </ThingDef>
 
 <AlienRace.ThingDef_AlienRace Name="OG_Ork_RaceBase" ParentName="OG_Ork_Pawn_Base" Abstract="True">
@@ -815,6 +822,8 @@
         <GlobalLearningFactor>0.85</GlobalLearningFactor>
         <MeleeDodgeChance>1.125</MeleeDodgeChance>
         <MeleeHitChance>1.25</MeleeHitChance>
+        <MeleeCritChance MayRequire="CETeam.CombatExtended">1.15</MeleeCritChance>
+        <MeleeParryChance MayRequire="CETeam.CombatExtended">1.15</MeleeParryChance>
         <GeneralLaborSpeed>0.75</GeneralLaborSpeed>
         <ButcheryFleshSpeed>1.5</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
@@ -1000,6 +1009,11 @@
 		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li>
     </comps>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Ork_Race">
@@ -1045,8 +1059,6 @@
         <generalSettings>
 			<notXenophobistTowards>
 				<li>OG_Alien_Grot</li>
-				<li>OG_Alien_Grot</li>
-				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
 				<li>OG_Cyborg_Ork</li>
 			</notXenophobistTowards>
