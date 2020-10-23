@@ -134,6 +134,10 @@
 					<thingDef>Steel</thingDef>
 					<count>720</count>
 				</li>
+				<li MayRequire="CptVHOhu970.CorruptionWorship" Class="Corruption.Worship.ScenPart_StartingReligion">
+					<def>StartingReligion</def>
+					<pantheon>OrkPantheon</pantheon>
+				</li>
 			</parts>
 		</scenario>
 	</ScenarioDef>
@@ -258,6 +262,10 @@
 					<def>GameStartDialog</def>
 					<text>The gods were very angry. The blood machines came at night. They swept through your village, cutting and burning your people with their blades and devil-fire.\n\nOnly a few of you escaped. Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new home in the wilderness, like your ancestors did.</text>
 					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li MayRequire="CptVHOhu970.CorruptionWorship" Class="Corruption.Worship.ScenPart_StartingReligion">
+					<def>StartingReligion</def>
+					<pantheon>OrkPantheon</pantheon>
 				</li>
 			</parts>
 		</scenario>

@@ -4,6 +4,24 @@
     <alienRace>
         <generalSettings>
 			<disallowedTraits>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+			   </li>
                 <li>
                     <defName>Kind</defName>
                 </li>
