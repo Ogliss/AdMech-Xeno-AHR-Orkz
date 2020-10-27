@@ -6,7 +6,7 @@
     <label>Studded Arma</label>
     <description>Studded Arma is made of tanned Squig skin with occasional metal plates. It is commonly worn by all Ork Boys, because it looks hard and offers some protection, especially against primitive weapons, such as spears or arrows. These heavy leathers are the most common type of Ork armour, and Orks often use the colour of their squigshade to show allegiance to a particular Clan or Warboss.</description>
     <graphicData>
-      <texPath>Things/Item/Apparel/Ork/OrkLevaArmour/Ork_LevaArmour1</texPath>
+      <texPath>Things/Item/Apparel/Ork/Arma/Leva/Icon_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -44,7 +44,7 @@
 			<li>Arms</li>
 			<li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Ork/OrkLevaArmour/Ork_LevaArmour1</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/Ork/Arma/Leva/Base</wornGraphicPath>
       <layers>
         <li>Middle</li>
       </layers>
@@ -64,7 +64,7 @@
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/OrkLevaArmour/Pauldrons/PadLeather</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Leva/Pauldrons/PadLeather</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
@@ -81,7 +81,7 @@
     <label>Flak Arma</label>
     <description>Flak Arma is a heavier type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes metal pauldrons and other metal plates bolted together, Flak Armour is basically a heavier version of Studded Armour, made with several layers of Squig skin studded with nuts and bolts and more metal plates to make it more resistant to incoming damage.</description>
     <graphicData>
-      <texPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</texPath>
+      <texPath>Things/Item/Apparel/Ork/Arma/Eavy/Icon_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -119,7 +119,7 @@
 			<li>Arms</li>
 			<li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/Ork/Arma/Eavy/Base</wornGraphicPath>
       <layers>
         <li>Middle</li>
       </layers>
@@ -147,7 +147,7 @@
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/OrkEavyArmour/Pauldrons/PadArmored</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Eavy/Pauldrons/PadArmored</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
@@ -164,7 +164,7 @@
     <label>'Eavy Arma</label>
     <description>'Eavy Arma is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
     <graphicData>
-      <texPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</texPath>
+      <texPath>Things/Item/Apparel/Ork/Arma/Eavy/Icon_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -203,7 +203,7 @@
 			<li>Arms</li>
 			<li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Ork/OrkEavyArmour/OrkEavyArmour</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/Ork/Arma/Eavy/Base</wornGraphicPath>
       <layers>
         <li>Middle</li>
       </layers>
@@ -234,7 +234,7 @@
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/OrkEavyArmour/Pauldrons/PadLeather</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Eavy/Pauldrons/PadLeather</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
@@ -251,7 +251,7 @@
     <label>Mega Arma</label>
     <description>Its weight (a ton or more) and complexity make it difficult to move and slow down its user, but it can withstand insane amounts of punishment, almost as much as Imperial Terminator Armour. Piston-enchased metal limbs of mega armour give the wearer phenomenal strength, and it incorporates fearsome weapons: a Power Klaw and Kombi-Weapon or twin-linked Shootaz. It often involves the use of built-in bionics and is very complex, which makes it very hard to manufacture, so it is a rare sight in Ork armies. Usually only Nobs (who like to call themselves "Meganobs" after acquiring Mega Armour) and Warbosses can afford such armour.</description>
     <graphicData>
-      <texPath>Things/Item/Apparel/Ork/OrkMegaArmour/OrkMegaArmour</texPath>
+      <texPath>Things/Item/Apparel/Ork/Arma/Mega/Icon_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -290,7 +290,7 @@
 			<li>Arms</li>
 			<li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Ork/OrkMegaArmour/OrkMegaArmour</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/Ork/Arma/Mega/Base</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>
@@ -323,7 +323,7 @@
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/OrkEavyArmour/Pauldrons/PadLeather</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Mega/Pauldrons/PadArmored</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>

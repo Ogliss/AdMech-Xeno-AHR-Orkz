@@ -32,8 +32,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj": {
-                "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj"
+              "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
+                "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj"
               },
               "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechXeno\\1.1\\Source\\AdeptusMechanicusXenobiologis\\AdeptusMechanicusXenobiologis.csproj": {
                 "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechXeno\\1.1\\Source\\AdeptusMechanicusXenobiologis\\AdeptusMechanicusXenobiologis.csproj"
@@ -68,12 +68,12 @@
         }
       }
     },
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj",
-        "projectName": "AdeptusMechanicusMain",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj",
+        "projectName": "AdeptusMechanicusArmoury",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\obj\\",
         "projectStyle": "PackageReference",
@@ -158,8 +158,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj": {
-                "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj"
+              "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
+                "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj"
               }
             }
           }

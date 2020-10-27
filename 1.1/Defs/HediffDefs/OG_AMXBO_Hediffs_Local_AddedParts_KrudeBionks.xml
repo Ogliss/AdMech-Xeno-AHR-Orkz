@@ -9,7 +9,7 @@
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
-				<li>OG_Ork_TableMachining</li>
+				<li>OGO_TableMachining</li>
 			</recipeUsers>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Base_T2</li>

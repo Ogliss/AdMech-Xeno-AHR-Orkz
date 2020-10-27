@@ -15,18 +15,13 @@ namespace AdeptusMechanicus
         public static List<ResearchProjectDef> OrkReseach => DefDatabase<ResearchProjectDef>.AllDefs.Where(x=> x.defName.Contains("OG_Ork_Tech_")).ToList();
         static AMOMain()
         {
-            AlienRace.ThingDef_AlienRace ork = OGOrkThingDefOf.OG_Alien_Ork as AlienRace.ThingDef_AlienRace;
-            AlienRace.ThingDef_AlienRace grot = OGOrkThingDefOf.OG_Alien_Grot as AlienRace.ThingDef_AlienRace;
-            foreach (ResearchProjectDef def in OrkReseach)
-            {
-                if (!AlienRace.RaceRestrictionSettings.researchRestrictionDict.ContainsKey(key: def))
-                    AlienRace.RaceRestrictionSettings.researchRestrictionDict.Add(key: def, value: new List<AlienRace.ThingDef_AlienRace>());
-                AlienRace.RaceRestrictionSettings.researchRestrictionDict[key: def].Add(item: ork);
-                AlienRace.RaceRestrictionSettings.researchRestrictionDict[key: def].Add(item: grot);
-            }
+            AlienRace.ThingDef_AlienRace Ork = OGOrkThingDefOf.OG_Alien_Ork as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace Grot = OGOrkThingDefOf.OG_Alien_Grot as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace Cybork = DefDatabase<ThingDef>.GetNamedSilentFail("OG_Alien_Cybork") as AlienRace.ThingDef_AlienRace;
 
-            HarmonyPatches.TryAddRacialRestrictions(ork, "O");
-            HarmonyPatches.TryAddRacialRestrictions(grot, "O");
+            List<ThingDef> races = new List<ThingDef>() { Ork, Grot};
+            if (Cybork != null) races.Add(Cybork);
+            ArmouryMain.DoRacialRestrictionsFor(races, "O", OrkReseach);
         }
         
     }

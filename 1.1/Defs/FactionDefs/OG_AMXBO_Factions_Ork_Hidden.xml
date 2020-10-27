@@ -2,18 +2,19 @@
 <Defs>
 
 	<FactionDef Abstract="True" Name="OG_Ork_Hidden_Faction_Base">
-		<label>Orkz</label>
-		<pawnSingular>Ork</pawnSingular>
-		<pawnsPlural>Orkz</pawnsPlural>
+		<label>greenskin Waaagh!</label>
+		<pawnSingular>greenskin</pawnSingular>
+		<pawnsPlural>greenskinz</pawnsPlural>
 		<basicMemberKind>Colonist_OG_Ork_Boy</basicMemberKind>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<fixedName>an orkish Waaargh</fixedName>
+		<fixedName>a greenskin Waaagh!</fixedName>
+		<factionNameMaker>OG_NamerFaction_Ork_Waaagh</factionNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ork_Standard</li>
-				<li>Grot_Gretchin</li>
+			  <li>Offworld</li>
+			  <li>Pirate</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
@@ -23,8 +24,7 @@
 		<geneticVariance>1</geneticVariance>
 		<earliestRaidDays>45</earliestRaidDays>
 		<hairTags>
-		<li>OrkHair</li>
-		<li>GrotHair</li>
+			<li>Punk</li>
 		</hairTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -102,7 +102,7 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Ork/Icon_Ork</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_Ork_Hulk</factionIconPath>
     <allowedArrivalTemperatureRange>
       <min>-100</min>
       <max>200</max>

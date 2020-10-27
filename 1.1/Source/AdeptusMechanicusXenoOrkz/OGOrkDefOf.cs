@@ -27,8 +27,8 @@ namespace RimWorld
     //    public static ThingDef OG_Ork_Grog;
 
         // Backstory Defs
-        public static AlienRace.BackstoryDef Ork_Base_Child;
-        public static AlienRace.BackstoryDef Grot_Base_Child;
+        public static AlienRace.BackstoryDef OG_Ork_Base_Child;
+        public static AlienRace.BackstoryDef OG_Grot_Base_Child;
 
         // Humanlike Race Defs
         public static ThingDef OG_Alien_Ork;

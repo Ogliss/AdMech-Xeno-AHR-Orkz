@@ -2,8 +2,8 @@
 <Defs>
 <AlienRace.PawnBioDef>
     <defName>OG_Grot_DaBiggestGrot</defName>
-    <childhoodDef>Grot_Base_Child</childhoodDef>
-    <adulthoodDef>Grot_TroubleMaker</adulthoodDef>
+    <childhoodDef>OG_Grot_Base_Child</childhoodDef>
+    <adulthoodDef>OG_Grot_TroubleMaker</adulthoodDef>
     <gender>Either</gender> <!-- other options are Male and Female -->
     <name>
       <first>Zognutt</first>

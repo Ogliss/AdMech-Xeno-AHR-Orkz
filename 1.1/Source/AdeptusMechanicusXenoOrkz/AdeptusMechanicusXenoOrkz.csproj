@@ -38,7 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Harmony\Patches\QuestManager_Notify_PlantHarvested_Orkoid_Patch.cs" />
+    <Compile Include="OrkoidFungus.cs" />
     <Compile Include="Harmony\Patches\TraitSet_HasTrait_Orkoid_Patch.cs" />
     <Compile Include="ThoughtWorker_IsCarryingMeleeWeapon.cs" />
     <Compile Include="Harmony\Patches\Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cs" />
@@ -53,18 +54,15 @@
     <Compile Include="MentalState_StarvingOrkoid.cs" />
     <Compile Include="Harmony\Patches\Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <None Include="OGOrkJobDefOf.cs.bak" />
     <Compile Include="Comp_OrkoidSpores.cs" />
     <Compile Include="Harmony\Patches\PawnGenerator_GeneratePawn_Orkoid_Patch.cs" />
     <Compile Include="IncidentWorker_OrkoidFungalSprout.cs" />
-    <None Include="OGOrkPawnKindDefOf.cs.bak" />
-    <None Include="OGOrkFactionDefOf.cs.bak" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OGOrkDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AlienRace">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.2\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="CrashedShipsExtension">
@@ -75,9 +73,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\AdeptusMechanicusMain.csproj">
+    <ProjectReference Include="..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\AdeptusMechanicusArmoury.csproj">
       <Project>{2ac73323-b4f2-4592-b3ea-53ac4f8d73a7}</Project>
-      <Name>AdeptusMechanicusMain</Name>
+      <Name>AdeptusMechanicusArmoury</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\AdMechXeno\1.1\Source\AdeptusMechanicusXenobiologis\AdeptusMechanicusXenobiologis.csproj">

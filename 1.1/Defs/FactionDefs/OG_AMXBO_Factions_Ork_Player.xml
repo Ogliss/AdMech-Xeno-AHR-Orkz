@@ -8,7 +8,7 @@
     <basicMemberKind>Colonist_OG_Ork</basicMemberKind>
     <pawnsPlural>Boyz</pawnsPlural>
 	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+	<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
     <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
     <techLevel>Industrial</techLevel>
 		<backstoryFilters>
@@ -75,7 +75,7 @@
     <basicMemberKind>Tribesperson_OG_Ork</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+	<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
     <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>

@@ -4,7 +4,7 @@
 <!-- Grot Childhood -->
 <!-- Grot Child -->
   <AlienRace.BackstoryDef>
-    <defName>Grot_Base_Child</defName>
+    <defName>OG_Grot_Base_Child</defName>
     <title>Grotling</title>
     <titleShort>Grotling</titleShort>
     <baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
@@ -90,7 +90,7 @@
 <!-- Grot Adulthood -->
 <!-- Grot Slave -->
   <AlienRace.BackstoryDef>
-    <defName>Grot_Base</defName>
+    <defName>OG_Grot_Base</defName>
     <title>Grot Slave</title>
     <titleShort>Slave</titleShort>
 	<linkedBackstory>Grot_Base_Child</linkedBackstory>
@@ -117,7 +117,7 @@
 
 <!-- Grot Orderly -->    
   <AlienRace.BackstoryDef>
-    <defName>Grot_Orderly</defName>
+    <defName>OG_Grot_Orderly</defName>
     <title>Grot orderly</title>
     <titleShort>Orderly</titleShort>
 	<linkedBackstory>Grot_Base_Child</linkedBackstory>
@@ -148,7 +148,7 @@
 
 <!-- Grot Tinkerer --> 
   <AlienRace.BackstoryDef>
-    <defName>Grot_Tinkerer</defName>
+    <defName>OG_Grot_Tinkerer</defName>
     <title>Grot Tinkerer</title>
     <titleShort>Tinkerer</titleShort>
 	<linkedBackstory>Grot_Base_Child</linkedBackstory>
@@ -184,7 +184,7 @@
  
 <!-- Grot Tinkerer --> 
   <AlienRace.BackstoryDef>
-    <defName>Grot_TroubleMaker</defName>
+    <defName>OG_Grot_TroubleMaker</defName>
     <title>Grot Trouble Maker</title>
     <titleShort>Trouble Maker</titleShort>
 	<linkedBackstory>Grot_Base_Child</linkedBackstory>

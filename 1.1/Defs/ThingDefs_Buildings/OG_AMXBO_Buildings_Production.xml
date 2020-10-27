@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BenchBase">
-    <defName>OG_Ork_TableMachining</defName>
+    <defName>OGO_TableMachining</defName>
     <label>Ork crafting supplies</label>
     <description>An orkish work station for assembling or breaking down machinery like components, armour, guns and ammunition, or dead mechanoids.</description>
     <thingClass>Building_WorkTable</thingClass>

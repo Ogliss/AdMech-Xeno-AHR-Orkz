@@ -120,19 +120,17 @@
       <li>AnimalOrk</li>
     </tradeTags>
     <comps>
-      <li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
+      <!--li Class="FeralOrkz.CompProperties_FoodPoisonProtection">
 		<Poisonable>true</Poisonable>
 		<FoodPoisonCause>
 			<li>DangerousFoodType</li>
 			<li>FilthyKitchen</li>
 			<li>IncompetentCook</li>
 			<li>Rotten</li>
-			<!--
 			<li>Unknown</li>
-			-->
 		</FoodPoisonCause>
       </li>
-      <li Class="AdeptusMechanicus.CompProperties_Regeneration">
+      <li Class="FeralOrkz.CompProperties_Regeneration">
 		<healFreshWounds>true</healFreshWounds>
 		<healFreshChance>0.5</healFreshChance>
 		<allowSealWounds>false</allowSealWounds>
@@ -146,7 +144,7 @@
 		<useFood>true</useFood>
 		<useRest>false</useRest>
 		<onlyWhileSleeping>false</onlyWhileSleeping>
-      </li>
+      </li-->
     </comps>
     <modExtensions>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">

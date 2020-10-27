@@ -35,7 +35,7 @@
 
 <!-- Ork Child Base -->
   <AlienRace.BackstoryDef ParentName="OG_Ork_Child_Base">
-    <defName>Ork_Base_Child</defName>
+    <defName>OG_Ork_Base_Child</defName>
     <workDisables>
 	<!--
       <li>Cleaning</li>
@@ -116,7 +116,7 @@
 
 <!-- Ork Child Smart -->
   <AlienRace.BackstoryDef ParentName="OG_Ork_Child_Base">
-    <defName>Ork_Smart_Child</defName>
+    <defName>OG_Ork_Smart_Child</defName>
     <workDisables>
 	<!--
       <li>Cleaning</li>
@@ -199,7 +199,7 @@
 <!-- Ork Boyz -->
 <!-- Ork Boy Shoota -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Shoota</defName>
+    <defName>OG_Ork_Boy_Shoota</defName>
     <title>sharpshooter</title>
     <titleShort>Snipa</titleShort>
 	
@@ -250,7 +250,7 @@
 
 <!-- Ork Boy Slugga -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Slugga</defName>
+    <defName>OG_Ork_Boy_Slugga</defName>
     <title>Slugga</title>
     <titleShort>Slugga</titleShort>
 	
@@ -302,7 +302,7 @@
 
 <!-- Ork Boy Choppa -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Choppa</defName>
+    <defName>OG_Ork_Boy_Choppa</defName>
     <title>Choppa</title>
     <titleShort>Choppa</titleShort>
 	
@@ -353,7 +353,7 @@
 
 <!-- Ork Boy Kommando -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Kommando</defName>
+    <defName>OG_Ork_Boy_Kommando</defName>
     <title>Kommando</title>
     <titleShort>Kommando</titleShort>
 	
@@ -403,7 +403,7 @@
 
 <!-- Ork Boy Brewer -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Brewer</defName>
+    <defName>OG_Ork_Boy_Brewer</defName>
     <title>Brewer</title>
     <titleShort>Brewer</titleShort>
 	
@@ -435,7 +435,7 @@
 
 <!-- Ork Boy Shouta -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Shouter</defName>
+    <defName>OG_Ork_Boy_Shouter</defName>
     <title>Shouta</title>
     <titleShort>Shouta</titleShort>
 	
@@ -471,7 +471,7 @@
 
 <!-- Ork Boy Herda -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Herda</defName>
+    <defName>OG_Ork_Boy_Herda</defName>
     <title>Herda</title>
     <titleShort>Herda</titleShort>
 	
@@ -504,7 +504,7 @@
 
 <!-- Ork Boy Mad -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Mad</defName>
+    <defName>OG_Ork_Boy_Mad</defName>
     <title>Madboy</title>
     <titleShort>Madboy</titleShort>
 	
@@ -593,7 +593,7 @@
   
 <!-- Ork Boy Doc -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Doc</defName>
+    <defName>OG_Ork_Boy_Doc</defName>
     <title>Mad doc</title>
     <titleShort>Mad doc</titleShort>
 	
@@ -638,7 +638,7 @@
 <!-- Ork Nobz -->
 <!-- Ork Nob Crusher --> 
   <AlienRace.BackstoryDef>
-    <defName>Ork_Nob_Crusher</defName>
+    <defName>OG_Ork_Nob_Crusher</defName>
     <title>Crusher Nob</title>
     <titleShort>Crusher</titleShort>
 	
@@ -687,7 +687,7 @@
  
 <!-- Ork Nob Mek -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Nob_Mek</defName>
+    <defName>OG_Ork_Nob_Mek</defName>
     <title>Mek</title>
     <titleShort>Mek</titleShort>
 	
@@ -740,7 +740,7 @@
   
 <!-- Ork Nob Flash -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Nob_Flash</defName>
+    <defName>OG_Ork_Nob_Flash</defName>
     <title>Flash Git</title>
     <titleShort>Flash</titleShort>
 	
@@ -794,7 +794,7 @@
 
 <!-- Ork Nob Devastator -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Nob_Devastator</defName>
+    <defName>OG_Ork_Nob_Devastator</defName>
     <title>Devistata</title>
     <titleShort>Devistata</titleShort>
 	
@@ -850,7 +850,7 @@
 <!-- Ork Bosses -->
 <!-- Ork Boss -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boss_Nob</defName>
+    <defName>OG_Ork_Boss_Nob</defName>
     <title>Boss</title>
     <titleShort>Boss</titleShort>
 	
@@ -898,7 +898,7 @@
 
 <!-- Ork Big Mek -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boss_Mek</defName>
+    <defName>OG_Ork_Boss_Mek</defName>
     <title>Big Mek</title>
     <titleShort>Big Mek</titleShort>
 	
@@ -953,7 +953,7 @@
 <!-- Weird Childhood -->
 <!-- Weird Child -->
    <AlienRace.BackstoryDef>
-    <defName>Ork_Weird_Child</defName>
+    <defName>OG_Ork_Weird_Child</defName>
     <title>Weird Runt</title>
     <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
@@ -1048,7 +1048,7 @@
 <!-- Weird Adulthood -->
 <!-- Weird Boy -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boy_Weird</defName>
+    <defName>OG_Ork_Boy_Weird</defName>
     <title>Weirdboy</title>
     <titleShort>Weirdboy</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
@@ -1104,7 +1104,7 @@
    
 <!-- Weird Nob -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Nob_Weird</defName>
+    <defName>OG_Ork_Nob_Weird</defName>
     <title>Weirdboy Nob</title>
     <titleShort>Weirdboy Nob</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
@@ -1171,7 +1171,7 @@
   
 <!-- Weird Boss -->
   <AlienRace.BackstoryDef>
-    <defName>Ork_Boss_Weird</defName>
+    <defName>OG_Ork_Boss_Weird</defName>
     <title>Prophet of Waaaaargh!</title>
     <titleShort>Prophet</titleShort>
 	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->

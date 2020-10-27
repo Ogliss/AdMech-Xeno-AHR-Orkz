@@ -58,22 +58,8 @@
 					   <li>OG_Ork_PlayerTribe</li>
 					</factions>
 					<goodwill>
-					   <min>-10</min>
-					   <max>40</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Player_Exodite</li>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Harlequin_Faction</li>
-					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Player_Harlequin</li>
-					</factions>
-					<goodwill>
 					   <min>-100</min>
-					   <max>0</max>
+					   <max>100</max>
 					</goodwill>
 				</li>
 				<li>
@@ -90,6 +76,7 @@
 					<factions>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Tau_Faction</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Vespid_Faction</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Tau_PlayerColony</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_PlayerColony</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tau">OG_Kroot_PlayerTribe</li>
@@ -103,17 +90,15 @@
 					<factions>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_Faction</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_PlayerColony</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>-50</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
 					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_Astartes_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
+					   <li MayRequire="CptOhu.CorruptionCore">PlayerColony_IoM</li>
+					   <li MayRequire="CptOhu.CorruptionCore">PlayerColony_Chaos</li>
+					   <li MayRequire="QX.AstraMilitarum.Factions">IG_ChaosMarineFaction</li>
+					   <li MayRequire="QX.AstraMilitarum.Factions">TraitorGuardFaction</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -122,12 +107,26 @@
 				</li>
 				<li>
 					<factions>
-					   <li MayRequire="Ogliss.AdMech.Astartes">OG_Astartes_PlayerColony</li>
-					   <li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
+					   <li>OG_Ork_Hulk</li>
+					   <li>OG_Ork_Rok</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Player_Exodite</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Harlequin_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Player_Harlequin</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Necrons">OG_Necron_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Necrons">OG_Necron_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tyranids">OG_Tyranid_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Tyranids">OG_Tyranid_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Necron_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
+					   <li MayRequire="QX.AstraMilitarum.Factions">TyranidFaction</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
-					   <max>-50</max>
+					   <max>-100</max>
 					</goodwill>
 				</li>
 			</factionRelations>
@@ -614,17 +613,15 @@
                 <li>
 					
                     <projects>
-						<li>OG_Ork_Tech_Base_T1</li>
+						<!--li>OG_Ork_Tech_Base_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T1</li>
-						<!--li>OG_Ork_Tech_Weapons_Ranged_T1</li-->
 						<li>OG_Ork_Tech_Apparel_Armour_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T2</li>
 						<li>OG_Ork_Tech_Apparel_Armour_T2</li>
 						<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
 						<li>OG_Ork_Tech_Base_T2</li>
-						<!--li>OG_Ork_Tech_Weapons_Melee_T3</li-->
 						<li>OG_Ork_Tech_Base_T3</li>
-						<li>OG_Ork_Tech_Apparel_Armour_T3</li>
+						<li>OG_Ork_Tech_Apparel_Armour_T3</li-->
                     </projects>
 					
                     <apparelList>
@@ -640,7 +637,7 @@
                 <li>OGO_Wargear_KustomForcefield</li>
 			</apparelList>
             <recipeList>
-                <li>OGO_SkavengeApparel</li>
+                <!--li>OGO_SkavengeApparel</li>
                 <li>Make_OGO_Apparel_UniformShirt</li>
                 <li>Make_OGO_Apparel_UniformJacket</li>
                 <li>Make_OGO_Wargear_BossPole</li>
@@ -676,7 +673,7 @@
                 <li>Make_OGO_Gun_KombiRokkit</li>
                 <li>Make_OGO_Gun_DeffgunPlasma</li>
                 <li>Make_OGO_Gun_DeffgunBeamy</li>
-                <li>Make_OGO_Gun_DeffgunDakka</li>
+                <li>Make_OGO_Gun_DeffgunDakka</li-->
             </recipeList>
             <plantList>
                 <li>OG_Plant_Orkoid_Fungus</li>
@@ -684,7 +681,7 @@
             </plantList>
            <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
 			<buildingList>
-                <li>OG_Ork_TableMachining</li>
+                <!--li>OGO_TableMachining</li-->
             </buildingList>
 			<conceptList>
 				<!--li>OrkoidFungus</li-->
