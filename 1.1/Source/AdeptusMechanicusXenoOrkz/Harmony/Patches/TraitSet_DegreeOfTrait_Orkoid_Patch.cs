@@ -13,11 +13,11 @@ using AdeptusMechanicus.ExtensionMethods;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
-    [HarmonyPatch(typeof(TraitSet), "HasTrait")]
-    public static class TraitSet_HasTrait_Orkoid_Patch
+    [HarmonyPatch(typeof(TraitSet), "DegreeOfTrait")]
+    public static class TraitSet_DegreeOfTrait_Orkoid_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(TraitDef tDef, Pawn ___pawn, ref bool __result)
+        public static void Postfix(TraitDef tDef, Pawn ___pawn, ref int __result)
         {
             if (___pawn != null)
             {
@@ -25,7 +25,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (tDef == TraitDefOf.Bloodlust || tDef == TraitDefOf.Psychopath)
                     {
-                        __result = true;
+                        __result = 0;
                     }
                 }
             }
