@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="OGOApparelMakeableBase">
+  <ThingDef ParentName="OG_Ork_Apparel_Makeable">
     <defName>OGO_Apparel_LevaArmour</defName>
     <label>Leva Arma</label>
     <description>Arma is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
@@ -72,7 +72,7 @@
     </comps>
   </ThingDef>
  
-  <ThingDef ParentName="OGOApparelMakeableBase">
+  <ThingDef ParentName="OG_Ork_Apparel_Makeable">
     <defName>OGO_Apparel_Armour</defName>
     <label>Arma</label>
     <description>Arma is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
@@ -151,7 +151,7 @@
     </comps>
   </ThingDef>
  
-  <ThingDef ParentName="OGOArmorMakeableBase">
+  <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
     <defName>OGO_Apparel_EavyArmour</defName>
     <label>Eavy Arma</label>
     <description>'Eavy Arma is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
@@ -227,7 +227,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="OGOArmorMakeableBase">
+  <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
     <defName>OGO_Apparel_MegaArmour</defName>
     <label>Mega Arma</label>
     <description>Its weight (a ton or more) and complexity make it difficult to move and slow down its user, but it can withstand insane amounts of punishment, almost as much as Imperial Terminator Armour. Piston-enchased metal limbs of mega armour give the wearer phenomenal strength, and it incorporates fearsome weapons: a Power Klaw and Kombi-Weapon or twin-linked Shootaz. It often involves the use of built-in bionics and is very complex, which makes it very hard to manufacture, so it is a rare sight in Ork armies. Usually only Nobs (who like to call themselves "Meganobs" after acquiring Mega Armour) and Warbosses can afford such armour.</description>

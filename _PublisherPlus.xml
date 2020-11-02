@@ -2,8 +2,57 @@
 <Configuration>
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\.git</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Assemblies\AdeptusMechanicusOrkz.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\BackstoryDefs\OG_AMXBO_Backstories_Ork_Old.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\Misc\OG_AMXBO_Items_Resource_Manufactured_Ork.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\PawnKindDefs\OG_AMXBO_PawnKinds_Orkoid_Feral.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ResearchProjectDefs\OG_AMXBO_OGAHROrkResearch.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThingDefs\OG_AMXBO_Abstracts_Ork_Apparel.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThingDefs\Races_Snotling_Base.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThinkTreeDefs\OG_AMXBO_Humanlike_Orkoid.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThinkTreeDefs\OG_AMXBO_Snotling.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_Social.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_Special.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_Needs.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_TraitsPerm.xml.bak</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.0\Source</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Assemblies\AdeptusMechanicusOrkz.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Assemblies\CrashedShipsExtension.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Assemblies\ExtraHives.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\BackstoryDefs\OG_AMXBO_Backstories_Ork_Old.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\Drugs\OG_AMXBO_Alcohol_Grog.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\Misc\OG_AMXBO_Items_Resource_Manufactured_Ork.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\PawnKindDefs\OG_AMXBO_PawnKinds_Orkoid_Feral.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\RecipeDefs\OG_AMXBO_Recipes_Surgery_Installations.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThingDefs\OG_AMXBO_Abstracts_Ork_Apparel.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThingDefs\OG_AMXBO_Race_Abstracts_Orkoid.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThingDefs\Races_Snotling_Base.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThingDefs_Buildings\OG_AMXBO_Buildings_Exotic.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThingDefs_Buildings\OG_AMXBO_Buildings_HiveLike.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThinkTreeDefs\OG_AMXBO_Humanlike_Orkoid.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThinkTreeDefs\OG_AMXBO_Snotling.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_Social.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Memory_Special.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_Needs.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Orkoid_Thoughts_Situation_TraitsPerm.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\ThoughtDefs\OG_AMXBO_Thoughts_Situation_KrudeBionikz.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Defs\Tutor\OG_AMXBO_ConceptDefs_Ork.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Patches\Ork_AddGrogToUF.xml.old</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.2\Assemblies\AnimalJobs.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.2\Assemblies\AnimalVehicles.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.2\Assemblies\AnimalWeaponFramework.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.2\Source</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Building\Worship\Shrines.psd</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Item.zip</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\HeadsBase\Ears\GrotEarsOld.7z</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\HeadsBase\GrotHeadsOld.7z</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\Bodies\Bodies.7z</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\HeadsBase\Ears\Ears.7z</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\HeadsBase\HeadsBase.7z</exclude>
   </Excluded>
 </Configuration>

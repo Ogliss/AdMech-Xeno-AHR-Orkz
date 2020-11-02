@@ -770,7 +770,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>300</lifeExpectancy>
       <leatherDef>Leather_Grot</leatherDef>
-      <nameGenerator>NamerPerson_Grot_OG</nameGenerator>
+      <nameGenerator>OG_NamerPerson_Grot</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <fleshType>OG_Flesh_Ork</fleshType>

@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ========================= Ork - Wargear S 1 ========================== -->
 	<!-- ========================= Ork - Kustom Forcefield ========================== -->  
-	<ThingDef ParentName="OGOWargearMakeable">
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
     <defName>OGO_Wargear_KustomForcefield</defName>
     <label>Kustom Forcefield</label>
     <description>.</description>
@@ -73,7 +73,7 @@
 
 	<!-- ========================= Ork - Wargear S 2 ========================== -->
     <!-- ========================= Ork - Boss Pole ========================== -->
-	<ThingDef ParentName="OGOWargearMakeable">
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_Wargear_BossPole</defName>
 		<label>Boss Pole</label>
 		<description>Senior Orks, such as Nobs, Big Meks or Warbosses usually carry around some sign of their status, that shows that they are not the ones to be messed with. These items help them to bring their mob into order during the battle.\n\nThese items usually take a form of a huge metal stick, heavy with trophies or crude metal glyphs, proclaiming their user's hardness and ferociousness. They are known as Bosspoles or Backbanners It has the additional advantage of being able to be used to hit boyz that attempt to run away from battle.</description>

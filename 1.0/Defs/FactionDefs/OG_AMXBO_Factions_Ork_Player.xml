@@ -9,7 +9,7 @@
     <basicMemberKind>Colonist_OG_Ork_Boy</basicMemberKind>
     <pawnsPlural>Boyz</pawnsPlural>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+		<factionNameMaker>OG_NamerFaction_Ork</factionNameMaker>
     <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
@@ -68,7 +68,7 @@
     <basicMemberKind>Tribesperson_OG_Ork_Boy</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+		<factionNameMaker>OG_NamerFaction_Ork</factionNameMaker>
     <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>

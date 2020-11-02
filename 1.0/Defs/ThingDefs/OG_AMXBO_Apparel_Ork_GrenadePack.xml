@@ -4,7 +4,7 @@
 	<!-- ========================= Ork - Wargear S 3 ========================== -->
     <!-- ========================= Ork - Grenade Packs	========================== -->
     <!-- ========================= Ork - Frag Grenades	========================== -->
-	<ThingDef ParentName="OGOWargearMakeable">
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Frag</defName>
 		<label>frag stikk bombz</label>
 		<description>a pack of frag stikk bombz.</description>
@@ -61,7 +61,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Krak Grenades	========================== -->
-	<ThingDef ParentName="OGOWargearMakeable">
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Krak</defName>
 		<label>krak stikk bombz</label>
 		<description>a pack of krak stikk bombz.</description>
@@ -117,7 +117,7 @@
 	</ThingDef>
 
     <!-- ========================= Ork - Melta Bomb	========================== -->
-	<ThingDef ParentName="OGOWargearMakeable">
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Melta</defName>
 		<label>Tankbusta bombz</label>
 		<description>a pack of tankbusta bombz.</description>

@@ -2,7 +2,7 @@
 <Defs>
     <!-- ========================= Ork ========================== -->
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOApparelBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Base" ParentName="OGApparelBase" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -14,7 +14,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Clothes Base - Apparel Makable Base ========================== -->
-	<ThingDef Name="OGOApparelMakeableBase" ParentName="OGOApparelBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Makeable" ParentName="OG_Ork_Apparel_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>TailoringSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -30,7 +30,7 @@
 	</ThingDef>
 		
     <!-- ========================= Ork - Clothes - Apparel Makable ========================== -->
-	<ThingDef Name="OGOApparelMakeable" ParentName="OGOApparelMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel" ParentName="OG_Ork_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkClothing</li>
@@ -44,7 +44,7 @@
 	</ThingDef>
 	
 	<!-- ========================= Ork - Headgear - Hat Makable ========================== -->
-	<ThingDef Name="OGOHatMakeable" ParentName="OGOApparelMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Headgear" ParentName="OG_Ork_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkHat</li>
@@ -59,7 +59,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGOArmorBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Armor_Base" ParentName="OGApparelBase" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>
@@ -71,7 +71,7 @@
 	</ThingDef>
 
     <!-- ========================= Ork - Apparel Armor Makable Base ========================== -->
-	<ThingDef Name="OGOArmorMakeableBase" ParentName="OGOArmorBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Armor_Makeable" ParentName="OG_Ork_Apparel_Armor_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -86,7 +86,7 @@
 	</ThingDef>
 	
     <!-- ========================= Ork - Apparel Armor Makable Base ========================== -->
-	<ThingDef Name="OGOArmorMakeable" ParentName="OGOArmorMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Armor" ParentName="OG_Ork_Apparel_Armor_Makeable" Abstract="True">
 				<apparel>
 			<tags>
 				<li>OrkArmour</li>
@@ -98,7 +98,7 @@
 	</ThingDef>	
 		
 	<!-- ========================= Ork - Headgear Base - Helmet Makable Base ========================== -->
-	<ThingDef Name="OGOHelmetMakeable" ParentName="OGOArmorMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Armor_Headgear" ParentName="OG_Ork_Apparel_Armor_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkHelmet</li>
@@ -113,7 +113,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Ork - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OGOWargearBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Wargear_Base" ParentName="OGApparelBase" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkWargear</li>
@@ -125,7 +125,7 @@
 	</ThingDef>	
 	
 	<!-- ========================= Ork - Apparel Wargear Makable Base ========================== -->
-	<ThingDef Name="OGOWargearMakeable" ParentName="OGOWargearBase" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Wargear_Makeable" ParentName="OG_Ork_Apparel_Wargear_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

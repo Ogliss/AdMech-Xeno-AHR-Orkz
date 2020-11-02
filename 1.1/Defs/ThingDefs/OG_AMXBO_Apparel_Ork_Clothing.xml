@@ -3,7 +3,7 @@
 
   <!-- ========================= Ork - Apparel ========================== -->	
   <!-- ========================= Ork - Shirt ========================== -->
-  <ThingDef ParentName="OGOApparelMakeable">
+  <ThingDef ParentName="OG_Ork_Apparel">
     <defName>OGO_Apparel_UniformShirt</defName>
     <label>ork undershirt</label>
     <description>A simple shirt worn by the orks.</description>
@@ -49,7 +49,7 @@
   </ThingDef>
 
   <!-- ========================= Ork - Jacket ========================== -->  
- <ThingDef ParentName="OGOApparelMakeable">
+ <ThingDef ParentName="OG_Ork_Apparel">
     <defName>OGO_Apparel_UniformJacket</defName>
     <description>The official coat of the orks.</description>
     <label>ork jacket</label>

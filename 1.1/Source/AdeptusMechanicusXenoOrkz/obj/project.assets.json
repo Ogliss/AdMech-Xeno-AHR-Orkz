@@ -85,11 +85,8 @@
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.0.2": {
+      "Lib.Harmony/2.0.3": {
         "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.InteropServices.RuntimeInformation"
-        ],
         "compile": {
           "lib/net472/0Harmony.dll": {}
         },
@@ -114,7 +111,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2",
+          "Lib.Harmony": "2.0.3",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
@@ -130,7 +127,7 @@
         "dependencies": {
           "AdeptusMechanicusArmoury": "1.0.0",
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2"
+          "Lib.Harmony": "2.0.3"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusXenobiologis.dll": {}
@@ -224,11 +221,8 @@
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.0.2": {
+      "Lib.Harmony/2.0.3": {
         "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.InteropServices.RuntimeInformation"
-        ],
         "compile": {
           "lib/net472/0Harmony.dll": {}
         },
@@ -253,7 +247,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2",
+          "Lib.Harmony": "2.0.3",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
@@ -269,7 +263,7 @@
         "dependencies": {
           "AdeptusMechanicusArmoury": "1.0.0",
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2"
+          "Lib.Harmony": "2.0.3"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusXenobiologis.dll": {}
@@ -363,11 +357,8 @@
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.0.2": {
+      "Lib.Harmony/2.0.3": {
         "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.InteropServices.RuntimeInformation"
-        ],
         "compile": {
           "lib/net472/0Harmony.dll": {}
         },
@@ -392,7 +383,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2",
+          "Lib.Harmony": "2.0.3",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
@@ -408,7 +399,7 @@
         "dependencies": {
           "AdeptusMechanicusArmoury": "1.0.0",
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2"
+          "Lib.Harmony": "2.0.3"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusXenobiologis.dll": {}
@@ -502,11 +493,8 @@
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.0.2": {
+      "Lib.Harmony/2.0.3": {
         "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.InteropServices.RuntimeInformation"
-        ],
         "compile": {
           "lib/net472/0Harmony.dll": {}
         },
@@ -531,7 +519,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2",
+          "Lib.Harmony": "2.0.3",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
@@ -547,7 +535,7 @@
         "dependencies": {
           "AdeptusMechanicusArmoury": "1.0.0",
           "Krafs.Rimworld.Ref": "1.2.2753",
-          "Lib.Harmony": "2.0.2"
+          "Lib.Harmony": "2.0.3"
         },
         "compile": {
           "bin/placeholder/AdeptusMechanicusXenobiologis.dll": {}
@@ -650,16 +638,16 @@
         "ref/net472/mscorlib.dll"
       ]
     },
-    "Lib.Harmony/2.0.2": {
-      "sha512": "QzJnBhb8TiM0cYlxh82rHJMdhZNTmi9HNQQJ15qNyjMvdeDYF9V2aljmrnGafQ+bh6Af/L0iWHxuYlNrHck0nQ==",
+    "Lib.Harmony/2.0.3": {
+      "sha512": "B+U40AGKzavakeZCS+Av4WWnMl2Z8Vp0G2U1kKRTcsbyAnoJ3QwuJhGidwCglV/m5A5G6mLbw9dTx9YI/ViA1Q==",
       "type": "package",
-      "path": "lib.harmony/2.0.2",
+      "path": "lib.harmony/2.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "HarmonyLogo.png",
         "LICENSE",
-        "lib.harmony.2.0.2.nupkg.sha512",
+        "lib.harmony.2.0.3.nupkg.sha512",
         "lib.harmony.nuspec",
         "lib/net35/0Harmony.dll",
         "lib/net35/0Harmony.xml",
@@ -705,7 +693,7 @@
       "AdeptusMechanicusArmoury >= 1.0.0",
       "AdeptusMechanicusXenobiologis >= 1.0.0",
       "Krafs.Rimworld.Ref >= 1.2.2753",
-      "Lib.Harmony >= 2.0.2"
+      "Lib.Harmony >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -759,7 +747,7 @@
           },
           "Lib.Harmony": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "[2.0.3, )"
           }
         }
       }
