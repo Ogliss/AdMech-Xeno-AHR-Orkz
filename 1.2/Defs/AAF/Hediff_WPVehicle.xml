@@ -6,24 +6,23 @@
 		<description>Vehicle rebooting...</description>
 		<label>vehicle rebooting...</label>
 		<comps>
-		  <li Class="HediffCompProperties_Disappears">
+		<li Class="HediffCompProperties_Disappears">
 			<disappearsAfterTicks>
-			  <min>15000</min>
-			  <max>15000</max>
+			<min>15000</min>
+			<max>15000</max>
 			</disappearsAfterTicks>
-		  </li>
+		</li>
 		</comps>
 		<stages>
-		  <li>
+		<li>
 			<capMods>
-			  <li>
+			<li>
 				<capacity>Consciousness</capacity>
 				<setMax>0.1</setMax>
-			  </li>
+			</li>
 			</capMods>
-		  </li>
+		</li>
 		</stages>
 	</HediffDef>
-  
+
 </Defs>
-  

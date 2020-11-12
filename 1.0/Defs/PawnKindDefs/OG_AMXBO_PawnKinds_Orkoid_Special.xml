@@ -1,53 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <PawnKindDef>
-    <defName>StrangerInBlackOrk</defName>
-    <label>stranger in black</label>
-    <labelMale>man in black</labelMale>
-    <labelFemale>woman in black</labelFemale>
-    <labelPlural>strangers in black</labelPlural>
-    <combatPower>100</combatPower>
-    <minGenerationAge>20</minGenerationAge>
-    <maxGenerationAge>50</maxGenerationAge>
-    <isFighter>true</isFighter>
-    <race>OG_Alien_Ork</race>
-    <chemicalAddictionChance>0.05</chemicalAddictionChance>
-    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-    <backstoryCategories>
-      <li>Ork_Standard</li>
-      <li>Ork_Nob</li>
-      <li>Ork_Boss</li>
-    </backstoryCategories>
-    <invNutrition>10.0</invNutrition>
-    <inventoryOptions>
-      <subOptionsChooseOne>
-        <li>
-          <choiceChance>6</choiceChance>
-          <thingDef>MedicineIndustrial</thingDef>
-          <countRange>5</countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
-    <gearHealthRange>
-      <min>1</min>
-      <max>1</max>
-    </gearHealthRange>
-    <itemQuality>Good</itemQuality>
-    <weaponMoney>
-      <min>500</min>
-      <max>500</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>OBrutalityMelee</li>
-      <li>OSlugga</li>
-    </weaponTags>
-    <apparelRequired>
-      <li>Apparel_CollarShirt</li>
-      <li>Apparel_Pants</li>
-      <li>Apparel_FlakVest</li>
-      <li>Apparel_CowboyHat</li>
-    </apparelRequired>
-    <apparelColor>(58,58,58)</apparelColor>
-  </PawnKindDef>
+<PawnKindDef>
+	<defName>StrangerInBlack_OG_Ork</defName>
+	<label>stranger in black</label>
+	<labelMale>man in black</labelMale>
+	<labelFemale>woman in black</labelFemale>
+	<labelPlural>strangers in black</labelPlural>
+	<combatPower>100</combatPower>
+	<minGenerationAge>20</minGenerationAge>
+	<maxGenerationAge>50</maxGenerationAge>
+	<isFighter>true</isFighter>
+	<race>OG_Alien_Ork</race>
+	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+	<backstoryCategories>
+		<li>Ork_Standard</li>
+		<li>Ork_Nob</li>
+		<li>Ork_Boss</li>
+	</backstoryCategories>
+	<invNutrition>10.0</invNutrition>
+	<inventoryOptions>
+		<subOptionsChooseOne>
+		<li>
+			<choiceChance>6</choiceChance>
+			<thingDef>MedicineIndustrial</thingDef>
+			<countRange>5</countRange>
+		</li>
+		</subOptionsChooseOne>
+	</inventoryOptions>
+	<gearHealthRange>
+		<min>1</min>
+		<max>1</max>
+	</gearHealthRange>
+	<itemQuality>Good</itemQuality>
+	<weaponMoney>
+		<min>500</min>
+		<max>500</max>
+	</weaponMoney>
+	<weaponTags>
+		<li>OBrutalityMelee</li>
+		<li>OSlugga</li>
+	</weaponTags>
+	<apparelRequired>
+		<li>Apparel_CollarShirt</li>
+		<li>Apparel_Pants</li>
+		<li>Apparel_FlakVest</li>
+		<li>Apparel_CowboyHat</li>
+	</apparelRequired>
+	<apparelColor>(58,58,58)</apparelColor>
+</PawnKindDef>
 
 </Defs>

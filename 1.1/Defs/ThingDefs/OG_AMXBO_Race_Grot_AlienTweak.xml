@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <AlienRace.ThingDef_AlienRace Name="OG_Grot_Race" ParentName="OG_Grot_RaceBase" Abstract="True">
-    <alienRace>
-        <generalSettings>
+	<alienRace>
+		<generalSettings>
 			<disallowedTraits>
-               <li MayRequire="QX.AstraMilitarum">IGTraitMechanicus</li>
-               <li MayRequire="QX.AstraMilitarum">IGTraitAstraMilitarum</li>
-               <li MayRequire="QX.AstraMilitarum">IGTraitAssassinorum</li>
-               <li MayRequire="QX.AstraMilitarum">IGTraitInquisition</li>
-               <li MayRequire="QX.AstraMilitarum">IGTraitImperialMedic</li>
-               <li MayRequire="QX.AstraMilitarum">IG_TraitAstarte</li>
-               <li>Kind</li>
-               <li>Gay</li> 
-               <li>DislikesWomen</li>
-               <li>DislikesMen</li>
-            </disallowedTraits>
-            <alienPartGenerator>
+					<li MayRequire="QX.AstraMilitarum">IGTraitMechanicus</li>
+					<li MayRequire="QX.AstraMilitarum">IGTraitAstraMilitarum</li>
+					<li MayRequire="QX.AstraMilitarum">IGTraitAssassinorum</li>
+					<li MayRequire="QX.AstraMilitarum">IGTraitInquisition</li>
+					<li MayRequire="QX.AstraMilitarum">IGTraitImperialMedic</li>
+					<li MayRequire="QX.AstraMilitarum">IG_TraitAstarte</li>
+					<li>Kind</li>
+					<li>Gay</li> 
+					<li>DislikesWomen</li>
+					<li>DislikesMen</li>
+				</disallowedTraits>
+				<alienPartGenerator>
 				<bodyAddons>
 					<li>
 					<path>Things/Pawn/Humanlike/Grot/HeadsBase/Ears/Average_Gretchin_EarR</path>
@@ -93,7 +93,7 @@
 					</li>
 
 				</bodyAddons>
-                <alienskincolorgen Class="ColorGenerator_Options">
+					<alienskincolorgen Class="ColorGenerator_Options">
 					<options>
 						<li>
 							<weight>100</weight>
@@ -111,10 +111,10 @@
 							<max>RGBA(0.608,0,0.09,1)</max>
 						</li>
 					</options>
-                </alienskincolorgen>
-            <useSkincolorForHair>true</useSkincolorForHair>
-            </alienPartGenerator>
+					</alienskincolorgen>
+				<useSkincolorForHair>true</useSkincolorForHair>
+				</alienPartGenerator>
 		</generalSettings>
-    </alienRace>
+	</alienRace>
 </AlienRace.ThingDef_AlienRace>
 </Defs>

@@ -136,18 +136,18 @@
 		</stages>
 	</ThoughtDef>
 
-  <ThoughtDef>
-    <defName>SoakingWet_OGOrkoid</defName>
-    <durationDays>0.1</durationDays>
-    <stackLimit>1</stackLimit>
-    <stages>
-      <li>
-        <label>soaking wet</label>
-        <description>I'z soakin wet.</description>
-        <baseMoodEffect>-1</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+<ThoughtDef>
+	<defName>SoakingWet_OGOrkoid</defName>
+	<durationDays>0.1</durationDays>
+	<stackLimit>1</stackLimit>
+	<stages>
+		<li>
+		<label>soaking wet</label>
+		<description>I'z soakin wet.</description>
+		<baseMoodEffect>-1</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 
 	<!-- ============== Human corpse butchering ===============-->
 
@@ -362,148 +362,148 @@
 		</stages>
 	</ThoughtDef>
 
-  <ThoughtDef>
-    <defName>DefeatedHostileFactionLeader_OGOrkoid</defName>
-    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
-    <showBubble>true</showBubble>
-    <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
-    <stages>
-      <li>
-        <label>defeated hostile leader {0}</label>
+<ThoughtDef>
+	<defName>DefeatedHostileFactionLeader_OGOrkoid</defName>
+	<icon>Things/Mote/ThoughtSymbol/Skull</icon>
+	<showBubble>true</showBubble>
+	<durationDays>6</durationDays>
+	<stackLimit>5</stackLimit>
+	<stages>
+		<li>
+		<label>defeated hostile leader {0}</label>
 				<description>WAAAAAAAAaaaaaaaaagh!</description>
-        <baseMoodEffect>10</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+		<baseMoodEffect>10</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 
-  <ThoughtDef>
-    <defName>DefeatedHostileFactionLeaderOpinion_OGOrkoid</defName>
-    <thoughtClass>Thought_Tale</thoughtClass>
-    <workerClass>ThoughtWorker_Tale</workerClass>
-    <taleDef>DefeatedHostileFactionLeader</taleDef>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>defeated hostile leader</label>
-        <baseOpinionOffset>20</baseOpinionOffset>
-      </li>
-    </stages>
-    <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
-  </ThoughtDef>
-  
-  <!-- Banishing pawns -->
+<ThoughtDef>
+	<defName>DefeatedHostileFactionLeaderOpinion_OGOrkoid</defName>
+	<thoughtClass>Thought_Tale</thoughtClass>
+	<workerClass>ThoughtWorker_Tale</workerClass>
+	<taleDef>DefeatedHostileFactionLeader</taleDef>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stages>
+		<li>
+		<label>defeated hostile leader</label>
+		<baseOpinionOffset>20</baseOpinionOffset>
+		</li>
+	</stages>
+	<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+</ThoughtDef>
+
+<!-- Banishing pawns -->
 <!--
-  <ThoughtDef>
-    <defName>ColonistBanished</defName>
-    <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
+<ThoughtDef>
+	<defName>ColonistBanished</defName>
+	<durationDays>6</durationDays>
+	<stackLimit>5</stackLimit>
 		<showBubble>true</showBubble>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <stages>
-      <li>
-        <label>colonist banished</label>
-        <description>We just banished someone. I hope they'll make it, but I'm worried.</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>ColonistBanishedToDie</defName>
-    <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+		<label>colonist banished</label>
+		<description>We just banished someone. I hope they'll make it, but I'm worried.</description>
+		<baseMoodEffect>-3</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ThoughtDef>
+	<defName>ColonistBanishedToDie</defName>
+	<durationDays>6</durationDays>
+	<stackLimit>5</stackLimit>
 		<showBubble>true</showBubble>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <stages>
-      <li>
-        <label>colonist banished to death</label>
-        <description>We banished someone in such a way that there's almost no way they'll survive.</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>PrisonerBanishedToDie</defName>
-    <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+		<label>colonist banished to death</label>
+		<description>We banished someone in such a way that there's almost no way they'll survive.</description>
+		<baseMoodEffect>-6</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ThoughtDef>
+	<defName>PrisonerBanishedToDie</defName>
+	<durationDays>6</durationDays>
+	<stackLimit>5</stackLimit>
 		<showBubble>true</showBubble>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <stages>
-      <li>
-        <label>prisoner banished to death</label>
-        <description>We banished a prisoner in such a way that there's almost no way they'll survive.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>BondedAnimalBanished</defName>
-    <durationDays>6</durationDays>
-    <stackLimit>5</stackLimit>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+		<label>prisoner banished to death</label>
+		<description>We banished a prisoner in such a way that there's almost no way they'll survive.</description>
+		<baseMoodEffect>-4</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ThoughtDef>
+	<defName>BondedAnimalBanished</defName>
+	<durationDays>6</durationDays>
+	<stackLimit>5</stackLimit>
 		<showBubble>true</showBubble>
-    <nullifyingTraits>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <stages>
-      <li>
-        <label>bonded animal {0} banished</label>
-        <description>My bonded animal was banished!</description>
-        <baseMoodEffect>-6</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+		<label>bonded animal {0} banished</label>
+		<description>My bonded animal was banished!</description>
+		<baseMoodEffect>-6</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 -->
-  <!-- Rescue quest -->
+<!-- Rescue quest -->
 <!--
-  <ThoughtDef>
-    <defName>FailedToRescueRelative_OGOrkoid</defName>
-    <durationDays>30</durationDays>
-    <stackLimit>5</stackLimit>
+<ThoughtDef>
+	<defName>FailedToRescueRelative_OGOrkoid</defName>
+	<durationDays>30</durationDays>
+	<stackLimit>5</stackLimit>
 	<showBubble>true</showBubble>
-    <stages>
-      <li>
-        <label>failed to rescue {0}</label>
-        <description>We had a chance to rescue my relative, and failed. I could have helped!</description>
-        <baseMoodEffect>-18</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<stages>
+		<li>
+		<label>failed to rescue {0}</label>
+		<description>We had a chance to rescue my relative, and failed. I could have helped!</description>
+		<baseMoodEffect>-18</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 
-  <ThoughtDef>
-    <defName>RescuedRelative_OGOrkoid</defName>
-    <durationDays>30</durationDays>
-    <stackLimit>5</stackLimit>
+<ThoughtDef>
+	<defName>RescuedRelative_OGOrkoid</defName>
+	<durationDays>30</durationDays>
+	<stackLimit>5</stackLimit>
 	<showBubble>true</showBubble>
-    <stages>
-      <li>
-        <label>rescued {0}</label>
-        <description>We rescued one of my relatives. Finally, I can breathe a sigh of relief.</description>
-        <baseMoodEffect>18</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<stages>
+		<li>
+		<label>rescued {0}</label>
+		<description>We rescued one of my relatives. Finally, I can breathe a sigh of relief.</description>
+		<baseMoodEffect>18</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 
-  <ThoughtDef>
-    <defName>Rescued_OGOrkoid</defName>
-    <durationDays>30</durationDays>
-    <stackLimit>5</stackLimit>
+<ThoughtDef>
+	<defName>Rescued_OGOrkoid</defName>
+	<durationDays>30</durationDays>
+	<stackLimit>5</stackLimit>
 	<showBubble>true</showBubble>
-    <stages>
-      <li>
-        <label>rescued</label>
-        <description>I was rescued! I almost thought I was done for back there. I'm so thankful.</description>
-        <baseMoodEffect>18</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+	<stages>
+		<li>
+		<label>rescued</label>
+		<description>I was rescued! I almost thought I was done for back there. I'm so thankful.</description>
+		<baseMoodEffect>18</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 -->
 </Defs>

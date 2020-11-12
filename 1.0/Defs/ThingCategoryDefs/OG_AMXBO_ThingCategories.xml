@@ -45,7 +45,7 @@
 		<label>Ork Headgear</label>
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
-	  	
+		
 	<ThingCategoryDef>
 		<defName>OGOAddons</defName>
 		<label>Ork Armour Addons</label>
@@ -59,17 +59,17 @@
 	</ThingCategoryDef>
 
 <!-- Ork Corpse -->
-    <ThingCategoryDef>
-      <defName>OG_Corpses_Orkoid</defName>
-      <label>ork corpses</label>
-      <parent>CorpsesHumanlike</parent>
-    </ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>OG_Corpses_Orkoid</defName>
+		<label>ork corpses</label>
+		<parent>CorpsesHumanlike</parent>
+	</ThingCategoryDef>
 	
 <!-- Ork Construct Corpse -->
-    <ThingCategoryDef>
-      <defName>OG_Corpses_Orkoid_Construct</defName>
-      <label>ork construct remains</label>
-      <parent>CorpsesMechanoid</parent>
-    </ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>OG_Corpses_Orkoid_Construct</defName>
+		<label>ork construct remains</label>
+		<parent>CorpsesMechanoid</parent>
+	</ThingCategoryDef>
 	
 </Defs>

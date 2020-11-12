@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- ========================= Ork - Wargear S 3 ========================== -->
-    <!-- ========================= Ork - Grenade Packs	========================== -->
-    <!-- ========================= Ork - Frag Grenades	========================== -->
+	<!-- ========================= Ork - Grenade Packs	========================== -->
+	<!-- ========================= Ork - Frag Grenades	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Frag</defName>
 		<label>frag stikk bombz (O)</label>
 		<description>a pack of frag stikk bombz.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkFragStikkBombs</texPath>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/StikkBombs_Frag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(199,199,46)</color>
 		</graphicData>
 		
 		<statBases>
@@ -32,9 +33,8 @@
 			<li>OG_Ork_Tech_Base_T1</li>
 		</researchPrerequisites>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowFrag</li>
 				</Abilities>
@@ -63,14 +63,16 @@
 		</tradeTags>
 	</ThingDef>
 	
-    <!-- ========================= Ork - Krak Grenades	========================== -->
+	<!-- ========================= Ork - Krak Grenades	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Krak</defName>
 		<label>krak stikk bombz (O)</label>
 		<description>a pack of krak stikk bombz.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkKrakStikkBombs</texPath>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/StikkBombs_Krak</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(183,075,0)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>1500</MarketValue>
@@ -91,9 +93,8 @@
 				<li>OG_Ork_Tech_Base_T2</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowKrak</li>
 				</Abilities>
@@ -122,13 +123,13 @@
 		</tradeTags>
 	</ThingDef>
 
-    <!-- ========================= Ork - Melta Bomb	========================== -->
+	<!-- ========================= Ork - Melta Bomb	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Melta</defName>
 		<label>Tankbusta bombz (O)</label>
 		<description>a pack of tankbusta bombz.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/GrenadePacks/Ork/OrkTankbustaBombs</texPath>
+			<texPath>Things/Item/Equipment/GrenadePacks/Ork/TankbustaBombs</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -151,9 +152,8 @@
 				<li>OG_Common_Tech_Weapons_Melta</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
 					<li>OGO_Ability_ThrowMelta</li>
 				</Abilities>

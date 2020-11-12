@@ -14,8 +14,8 @@
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
 		<tags>
-		  <li>OrkStart</li>
-		  <li>TribalOrkStart</li>
+		<li>OrkStart</li>
+		<li>TribalOrkStart</li>
 		</tags>
 		<researchViewX>0.00</researchViewX>
 		<researchViewY>11.0</researchViewY>
@@ -33,7 +33,7 @@
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
 		<tags>
-		  <li>OrkStart</li>
+		<li>OrkStart</li>
 		</tags>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>10.00</researchViewY>
@@ -50,7 +50,7 @@
 		</prerequisites>
 		<techLevel>Neolithic</techLevel>
 		<tags>
-		  <li>OrkStart</li>
+		<li>OrkStart</li>
 		</tags>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>10.50</researchViewY>
@@ -101,7 +101,7 @@
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
 		<tags>
-		  <li>OrkStart</li>
+		<li>OrkStart</li>
 		</tags>
 		<researchViewX>2.00</researchViewX>
 		<researchViewY>9.50</researchViewY>

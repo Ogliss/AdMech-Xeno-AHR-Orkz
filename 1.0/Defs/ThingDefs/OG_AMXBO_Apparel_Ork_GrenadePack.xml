@@ -2,8 +2,8 @@
 <Defs>
 
 	<!-- ========================= Ork - Wargear S 3 ========================== -->
-    <!-- ========================= Ork - Grenade Packs	========================== -->
-    <!-- ========================= Ork - Frag Grenades	========================== -->
+	<!-- ========================= Ork - Grenade Packs	========================== -->
+	<!-- ========================= Ork - Frag Grenades	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Frag</defName>
 		<label>frag stikk bombz</label>
@@ -29,7 +29,7 @@
 		<recipeMaker>
 			<researchPrerequisite>OG_Ork_Tech_Weapons_Ranged_T2</researchPrerequisite>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilityUser.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
@@ -60,7 +60,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-    <!-- ========================= Ork - Krak Grenades	========================== -->
+	<!-- ========================= Ork - Krak Grenades	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Krak</defName>
 		<label>krak stikk bombz</label>
@@ -85,7 +85,7 @@
 		<recipeMaker>
 			<researchPrerequisite>OG_Ork_Tech_Base_T2</researchPrerequisite>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilityUser.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
@@ -116,7 +116,7 @@
 		</tradeTags>
 	</ThingDef>
 
-    <!-- ========================= Ork - Melta Bomb	========================== -->
+	<!-- ========================= Ork - Melta Bomb	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Melta</defName>
 		<label>Tankbusta bombz</label>
@@ -141,7 +141,7 @@
 		<recipeMaker>
 			<researchPrerequisite>OG_Ork_Tech_Base_T3</researchPrerequisite>
 		</recipeMaker>
-		<comps>  
+		<comps>
 			<li Class="AbilityUser.CompProperties_AbilityItem">
 				<!-- <AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass> -->
 				<Abilities>
@@ -173,19 +173,19 @@
 	</ThingDef>
 
 			<!--
-		  <li Class="AdeptusMechanicus.CompProperties_HediffApparel">
+		<li Class="AdeptusMechanicus.CompProperties_HediffApparel">
 			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
 			<severityBasedOnDurability>false</severityBasedOnDurability>
 			<partsToAffect>
-			  <li>A_BODYPARTDEF_HERE</li>
-			  <li>A_BODYPARTDEF_HERE</li>
-			  <li>A_BODYPARTDEF_HERE</li>
+			<li>A_BODYPARTDEF_HERE</li>
+			<li>A_BODYPARTDEF_HERE</li>
+			<li>A_BODYPARTDEF_HERE</li>
 			</partsToAffect>
 			<groupsToAffect>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
-			  <li>A_BODYPARTGROUPDEF_HERE</li>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
 			</groupsToAffect>
-		  </li>
+		</li>
 			-->
 </Defs>

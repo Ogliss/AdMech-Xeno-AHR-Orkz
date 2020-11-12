@@ -1,72 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef>
-    <defName>OGO_SkavengeApparel</defName>
-    <label>skavenge apparel</label>
-    <description>Skavenge unwanted apparel into raw materials.</description>
-    <jobString>Skavenging apparel.</jobString>
-    <workAmount>1000</workAmount>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Tailor</effectWorking>
-    <soundWorking>Recipe_Tailor</soundWorking>
-    <workSkill>Crafting</workSkill>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Apparel</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <specialProducts>
-      <li>Smelted</li>
-    </specialProducts>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Apparel</li>
-      </categories>
-    </fixedIngredientFilter>
-    <recipeUsers>
-         	<li>CraftingSpot</li>
-         	<li>HandTailoringBench</li>
-         	<li>ElectricTailoringBench</li>
-    </recipeUsers>
-  </RecipeDef>
-  
-  <RecipeDef>
-    <defName>OGO_SkavengeWeapons</defName>
-    <label>skavenge weaponz</label>
-    <description>Skavenge unwanted weaponz into raw materials.</description>
-    <jobString>Skavenging weaponz.</jobString>
-    <workAmount>1000</workAmount>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Tailor</effectWorking>
-    <soundWorking>Recipe_Tailor</soundWorking>
-    <workSkill>Crafting</workSkill>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Weapons</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <specialProducts>
-      <li>Smelted</li>
-    </specialProducts>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Weapons</li>
-      </categories>
-    </fixedIngredientFilter>
-    <recipeUsers>
-         	<li>OGO_TableMachining</li>
-    </recipeUsers>
-  </RecipeDef>
-  
+<RecipeDef>
+	<defName>OGO_SkavengeApparel</defName>
+	<label>skavenge apparel</label>
+	<description>Skavenge unwanted apparel into raw materials.</description>
+	<jobString>Skavenging apparel.</jobString>
+	<workAmount>1000</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<effectWorking>Tailor</effectWorking>
+	<soundWorking>Recipe_Tailor</soundWorking>
+	<workSkill>Crafting</workSkill>
+	<ingredients>
+		<li>
+		<filter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+		</filter>
+		<count>1</count>
+		</li>
+	</ingredients>
+	<specialProducts>
+		<li>Smelted</li>
+	</specialProducts>
+	<fixedIngredientFilter>
+		<categories>
+		<li>Apparel</li>
+		</categories>
+	</fixedIngredientFilter>
+	<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+	</recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>OGO_SkavengeWeapons</defName>
+	<label>skavenge weaponz</label>
+	<description>Skavenge unwanted weaponz into raw materials.</description>
+	<jobString>Skavenging weaponz.</jobString>
+	<workAmount>1000</workAmount>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<effectWorking>Tailor</effectWorking>
+	<soundWorking>Recipe_Tailor</soundWorking>
+	<workSkill>Crafting</workSkill>
+	<ingredients>
+		<li>
+		<filter>
+			<categories>
+				<li>Weapons</li>
+			</categories>
+		</filter>
+		<count>1</count>
+		</li>
+	</ingredients>
+	<specialProducts>
+		<li>Smelted</li>
+	</specialProducts>
+	<fixedIngredientFilter>
+		<categories>
+		<li>Weapons</li>
+		</categories>
+	</fixedIngredientFilter>
+	<recipeUsers>
+				<li>OGO_TableMachining</li>
+	</recipeUsers>
+</RecipeDef>
+
 </Defs>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="OG_Ork_Apparel_Makeable">
-    <defName>OGO_Apparel_LevaArmour</defName>
-    <label>Studded Arma</label>
-    <description>Studded Arma is made of tanned Squig skin with occasional metal plates. It is commonly worn by all Ork Boys, because it looks hard and offers some protection, especially against primitive weapons, such as spears or arrows. These heavy leathers are the most common type of Ork armour, and Orks often use the colour of their squigshade to show allegiance to a particular Clan or Warboss.</description>
-    <graphicData>
-		<texPath>Things/Item/Apparel/Ork/Arma/Leva/Icon_Base</texPath>
+<ThingDef ParentName="OG_Ork_Apparel_Makeable">
+	<defName>OGO_Apparel_LevaArmour</defName>
+	<label>Studded Arma</label>
+	<description>Studded Arma is made of tanned Squig skin with occasional metal plates. It is commonly worn by all Ork Boys, because it looks hard and offers some protection, especially against primitive weapons, such as spears or arrows. These heavy leathers are the most common type of Ork armour, and Orks often use the colour of their squigshade to show allegiance to a particular Clan or Warboss.</description>
+	<graphicData>
+		<texPath>Things/Item/Apparel/Ork/Arma/Leva/Base__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
+	</graphicData>
+	<thingCategories>
 		<li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
+	</thingCategories>
+	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
 		<MarketValue>1100</MarketValue>
 		<WorkToMake>1200</WorkToMake>
@@ -22,24 +22,26 @@
 		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>5</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
+	</statBases>
+	<equippedStatOffsets>
 	
-    </equippedStatOffsets>
-    <costList>
+	</equippedStatOffsets>
+	<costList>
 		<Steel>10</Steel>
-    </costList>
-    <costStuffCount>140</costStuffCount>
-    <stuffCategories>
+	</costList>
+	<costStuffCount>140</costStuffCount>
+	<stuffCategories>
 		<li>Leathery</li>
-    </stuffCategories>
+	</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Apparel</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Leva/Base</wornGraphicPath>
 		<bodyPartGroups>
 			<li>Neck</li>
 			<li>Torso</li>
@@ -47,51 +49,68 @@
 			<li>Arms</li>
 			<li>Legs</li>
 		</bodyPartGroups>
-		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Leva/Base</wornGraphicPath>
 		<layers>
-		  <li>Middle</li>
+			<li>Middle</li>
 		</layers>
 		<tags>
-		  <li>OrkBasic</li>
+			<li>OrkArmourBasic</li>
 		</tags>
 		<defaultOutfitTags>
-		  <li>Ork</li>
-		  <li>Soldier</li>
-		  <li>OrkSoldier</li>
+			<li>Ork</li>
+			<li>Soldier</li>
+			<li>OrkSoldier</li>
 		</defaultOutfitTags>
-    </apparel>
-    <comps>
+	</apparel>
+	<comps>
 		<li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-		  <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+		<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
 			<PauldronEntries>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/Arma/Leva/Pauldrons/PadLeather</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.001,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
+			<NorthOffset>0,0.05,0</NorthOffset>
+			<SouthOffset>0,0.023,0</SouthOffset>
 			<EastOffset>0,0.35,0</EastOffset>
 			<WestOffset>0,0.35,0</WestOffset>
 		</li>
-    </comps>
-  </ThingDef>
+	</comps>
+</ThingDef>
  
-  <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
-    <defName>OGO_Apparel_Armour</defName>
-    <label>Flak Arma</label>
-    <description>Flak Arma is a heavier type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes metal pauldrons and other metal plates bolted together, Flak Armour is basically a heavier version of Studded Armour, made with several layers of Squig skin studded with nuts and bolts and more metal plates to make it more resistant to incoming damage.</description>
-    <graphicData>
+<ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
+	<defName>OGO_Apparel_Armour</defName>
+	<label>Flak Arma</label>
+	<description>Flak Arma is a heavier type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes metal pauldrons and other metal plates bolted together, Flak Armour is basically a heavier version of Studded Armour, made with several layers of Squig skin studded with nuts and bolts and more metal plates to make it more resistant to incoming damage.</description>
+	<graphicData>
 		<texPath>Things/Item/Apparel/Ork/Arma/Eavy/Icon_Base</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
+	</graphicData>
+	<thingCategories>
 		<li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
+	</thingCategories>
+	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
 		<MarketValue>1100</MarketValue>
 		<WorkToMake>1200</WorkToMake>
@@ -100,24 +119,25 @@
 		<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>6.5</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
+	</statBases>
+	<equippedStatOffsets>
 	
-    </equippedStatOffsets>
-    <costList>
+	</equippedStatOffsets>
+	<costList>
 		<Steel>10</Steel>
-    </costList>
-    <costStuffCount>180</costStuffCount>
-    <stuffCategories>
+	</costList>
+	<costStuffCount>180</costStuffCount>
+	<stuffCategories>
 		<li>Metallic</li>
-    </stuffCategories>
+	</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Apparel_Armour_T1</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<bodyPartGroups>
 			<li>Torso</li>
 			<li>Neck</li>
@@ -127,57 +147,57 @@
 		</bodyPartGroups>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Eavy/Base</wornGraphicPath>
 		<layers>
-		  <li>Middle</li>
+			<li>Middle</li>
 		</layers>
 		<tags>
-		  <li>OrkBasic</li>
+			<li>OrkArmourNormal</li>
 		</tags>
 		<defaultOutfitTags>
-		  <li>Ork</li>
-		  <li>Soldier</li>
-		  <li>OrkSoldier</li>
+			<li>Ork</li>
+			<li>Soldier</li>
+			<li>OrkSoldier</li>
 		</defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
 		<options>
-		  <li>
-		    <weight>10</weight>
-		    <only>RGBA(1.00,1.00,1.00,1)</only>
-		  </li>
+		<li>
+			<weight>10</weight>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
 		</options>
-    </colorGenerator>
-    <comps>
+	</colorGenerator>
+	<comps>
 		<li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-		  <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+		<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
 			<PauldronEntries>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/Arma/Eavy/Pauldrons/PadArmored</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Armoured/Pad</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.001,0</NorthOffset>
-			<SouthOffset>0,-0.005,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
+			<NorthOffset>0,0.05,0</NorthOffset>
+			<SouthOffset>0,0.022,0</SouthOffset>
+			<EastOffset>0,0.03,0</EastOffset>
+			<WestOffset>0,0.03,0</WestOffset>
 		</li>
-    </comps>
-  </ThingDef>
+	</comps>
+</ThingDef>
  
-  <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
-    <defName>OGO_Apparel_EavyArmour</defName>
-    <label>'Eavy Arma</label>
-    <description>'Eavy Arma is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
-    <graphicData>
+<ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
+	<defName>OGO_Apparel_EavyArmour</defName>
+	<label>'Eavy Arma</label>
+	<description>'Eavy Arma is a type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+	<graphicData>
 		<texPath>Things/Item/Apparel/Ork/Arma/Eavy/Icon_Base</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
+	</graphicData>
+	<thingCategories>
 		<li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
+	</thingCategories>
+	<statBases>
 		<MaxHitPoints>350</MaxHitPoints>
 		<MarketValue>1700</MarketValue>
 		<WorkToMake>12000</WorkToMake>
@@ -188,21 +208,21 @@
 		<ArmorRating_Heat>0.92</ArmorRating_Heat>
 		<Insulation_Cold>5</Insulation_Cold>
 		<EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
+	</statBases>
+	<equippedStatOffsets>
 		<MoveSpeed>-0.15</MoveSpeed>
-    </equippedStatOffsets>
-    <costList>
+	</equippedStatOffsets>
+	<costList>
 		<Steel>150</Steel>
 		<ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
+	</costList>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Apparel_Armour_T2</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
+	<apparel>
 		<bodyPartGroups>
 			<li>Neck</li>
 			<li>Torso</li>
@@ -212,51 +232,63 @@
 		</bodyPartGroups>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Eavy/Base</wornGraphicPath>
 		<layers>
-		  <li>Middle</li>
+			<li>Middle</li>
 		</layers>
 		<tags>
-		  <li>OrkHeavy</li>
-		  <li>Royal</li>
-		<li>RoyalTier6</li>
-		<li>RoyalCombatGear</li>
+			<li>OrkArmourHeavy</li>
+			<li>Royal</li>
+			<li>RoyalTier6</li>
+			<li>RoyalCombatGear</li>
 		</tags>
 		<defaultOutfitTags>
-		  <li>Ork</li>
-		  <li>Soldier</li>
-		  <li>OrkSoldier</li>
+			<li>Ork</li>
+			<li>Soldier</li>
+			<li>OrkSoldier</li>
 		</defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
 		<options>
-		  <li>
-		    <weight>10</weight>
-		    <only>RGBA(1.00,1.00,1.00,1)</only>
-		  </li>
+		<li>
+			<weight>10</weight>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
 		</options>
-    </colorGenerator>
-    <comps>
+	</colorGenerator>
+	<comps>
 		<li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-		  <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+		<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
 			<PauldronEntries>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/Arma/Eavy/Pauldrons/PadLeather</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.001,0</NorthOffset>
-			<SouthOffset>0,-0.005,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
+			<NorthOffset>0,0.05,0</NorthOffset>
+			<SouthOffset>0,0.022,0</SouthOffset>
+			<EastOffset>0,0.03,0</EastOffset>
+			<WestOffset>0,0.03,0</WestOffset>
 		</li>
-    </comps>
-  </ThingDef>
+	</comps>
+</ThingDef>
 
 	<!--==================== Ork - Mega Arma =========================-->
 	<!--==================== Abstracts =========================-->
 <ThingDef Name="OG_Ork_Apparel_Mega_Armour_Base" ParentName="OG_Ork_Apparel_Armor_Makeable" Abstract="True">
-    <techLevel>Spacer</techLevel>
+	<techLevel>Spacer</techLevel>
 	<recipeMaker>
 		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 		<researchPrerequisites>
@@ -274,7 +306,7 @@
 	<uiIconScale>1.25</uiIconScale>
 	<generateCommonality>1</generateCommonality>
 	<statBases>
-	  <WorkToMake>75000</WorkToMake>
+	<WorkToMake>75000</WorkToMake>
 		<MaxHitPoints>700</MaxHitPoints>
 		<Mass>25.25</Mass>
 		<Flammability>0.0</Flammability>
@@ -285,9 +317,9 @@
 		<Insulation_Heat>12</Insulation_Heat>
 		<EquipDelay>17</EquipDelay>
 	</statBases>
-    <equippedStatOffsets>
+	<equippedStatOffsets>
 		<MoveSpeed>-1.5</MoveSpeed>
-    </equippedStatOffsets>
+	</equippedStatOffsets>
 	<tradeTags>
 		<!--li>HiTechArmor</li-->
 	</tradeTags>
@@ -300,7 +332,7 @@
 		<Plasteel>150</Plasteel>
 		<Uranium>50</Uranium>
 	</costList>
-    <apparel>
+	<apparel>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Mega/Base</wornGraphicPath>
 		<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		<bodyPartGroups>
@@ -315,7 +347,7 @@
 			<li>Shell</li>
 		</layers>
 		<tags>
-			<li>OrkMega</li>
+			<li>OrkArmourMega</li>
 			<li>Royal</li>
 			<li>RoyalTier7</li>
 			<li>RoyalCombatGear</li>
@@ -326,7 +358,7 @@
 			<li>Soldier</li>
 			<li>OrkSoldier</li>
 		</defaultOutfitTags>
-    </apparel>
+	</apparel>
 	<colorGenerator Class="ColorGenerator_Options">
 		<options>
 		<li>
@@ -353,11 +385,11 @@
 	</thingSetMakerTags>
 	<comps>
 		<!--li Class="CompProperties_BiocodableApparel"/-->
-    </comps>
+	</comps>
 </ThingDef>
 
 	<!--==================== Ork - Mega Arma Base =========================-->
-  <ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Base">
+<ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Base">
 	<defName>OGO_Apparel_MegaArmour</defName>
 	<label>Mega Arma</label>
 	<description>A suit of heavy powered armor, its weight (a ton or more) and complexity make it difficult to move and slow down its user, but it can withstand insane amounts of punishment, almost as much as Imperial Terminator Armour. Piston-enchased metal limbs of mega armour give the wearer phenomenal strength, and it incorporates fearsome weapons: a Power Klaw and Kombi-Weapon or twin-linked Shootaz. It often involves the use of built-in bionics and is very complex, which makes it very hard to manufacture, so it is a rare sight in Ork armies. Usually only Nobs (who like to call themselves "Meganobs" after acquiring Mega Armour) and Warbosses can afford such armour.</description>
@@ -365,23 +397,41 @@
 		<li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
 			<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
 			<PauldronEntries>
+				<!--li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
+					<commonality>10</commonality>
+				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Ork/Arma/Mega/Pauldrons/PadArmored</padTexPath>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
+					<commonality>10</commonality>
+				</li-->
+				<li>
+					<shoulderPadType>Backpack</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Ork/Arma/Mega/Backpack/Base</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.01,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
+			<NorthOffset>0,0.05,0</NorthOffset>
+			<SouthOffset>0,0.022,0</SouthOffset>
+			<EastOffset>0,0.04,0.25</EastOffset>
+			<WestOffset>0,0.05,0.25</WestOffset>
 		</li>
-    </comps>
-  </ThingDef>
+	</comps>
+</ThingDef>
 
-  
-  <!--ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Base">
+
+<!--ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Base">
 	<defName>OGO_Apparel_MegaArmourPrestige</defName>
 	<label>prestige cataphract armor</label>
 	<description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
@@ -407,6 +457,6 @@
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractArmor/PrestigeCataphractArmor</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
-  </ThingDef-->
+</ThingDef-->
 
 </Defs>

@@ -7,9 +7,9 @@
 		<defName>OrkoidfungalSprout</defName>
 		<label>orkoid fungal sprout</label>
 		<category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
 		<workerClass>AdeptusMechanicus.IncidentWorker_OrkoidFungalSprout</workerClass>
 		<baseChance>0.35</baseChance>
 		<letterLabel>orkoid fungal sprout</letterLabel>
@@ -29,9 +29,9 @@
 		<defName>StealthfungalSprout</defName>
 		<label>orkoid fungal sprout</label>
 		<category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
+	<targetTags>
+		<li>Map_PlayerHome</li>
+	</targetTags>
 		<workerClass>AdeptusMechanicus.IncidentWorker_OrkoidFungalSprout</workerClass>
 		<baseChance>0.0</baseChance>
 		<allowedBiomes>

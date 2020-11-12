@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef Abstract="True" Name="WPVehicleRepair">
-    <effectWorking>Repair</effectWorking>
-    <soundWorking>Recipe_Surgery</soundWorking>
-    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <workSkillLearnFactor>16</workSkillLearnFactor>
-  </RecipeDef>
-  
-    <RecipeDef ParentName="WPVehicleRepair">
+<RecipeDef Abstract="True" Name="WPVehicleRepair">
+	<effectWorking>Repair</effectWorking>
+	<soundWorking>Recipe_Surgery</soundWorking>
+	<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<workSkillLearnFactor>16</workSkillLearnFactor>
+</RecipeDef>
+
+	<RecipeDef ParentName="WPVehicleRepair">
 		<defName>WPVehicleRepair</defName>
 		<label>repair all damages</label>
 		<description>Fully repair a vehicle</description>

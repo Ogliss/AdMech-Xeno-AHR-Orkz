@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <AlienRace.ThingDef_AlienRace Name="OG_Ork_Race" ParentName="OG_Ork_RaceBase" Abstract="True">
-    <alienRace>
-        <generalSettings>
+	<alienRace>
+		<generalSettings>
 			<disallowedTraits>
-               <li MayRequire="QX.AstraMilitarum">
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IGTraitMechanicus</defName>
-			   </li>
-               <li MayRequire="QX.AstraMilitarum">
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IGTraitAstraMilitarum</defName>
-			   </li>
-               <li MayRequire="QX.AstraMilitarum">
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IGTraitAssassinorum</defName>
-			   </li>
-               <li MayRequire="QX.AstraMilitarum">
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IGTraitInquisition</defName>
-			   </li>
-               <li MayRequire="QX.AstraMilitarum">
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IGTraitImperialMedic</defName>
-			   </li>
-               <li MayRequire="QX.AstraMilitarum">
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
 					<defName>IG_TraitAstarte</defName>
-			   </li>
-                <li>
-                    <defName>Kind</defName>
-                </li>
-                <li>
-                    <defName>Gay</defName>
-                </li>
-                <li>
-                    <defName>Wimp</defName>
-                </li>
-                <li>
-                    <defName>DislikesWomen</defName>
-                </li>
-                <li>
-                    <defName>DislikesMen</defName>
-                </li>
-            </disallowedTraits>
-            <alienPartGenerator>
-				<bodyAddons>
+				</li>
+				<li>
+						<defName>Kind</defName>
+				</li>
+				<li>
+						<defName>Gay</defName>
+				</li>
+				<li>
+						<defName>Wimp</defName>
+				</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarR</path>
-						<bodyPart>right ear</bodyPart>
+						<defName>DislikesWomen</defName>
+				</li>
+				<li>
+						<defName>DislikesMen</defName>
+				</li>
+			</disallowedTraits>
+			<alienPartGenerator>
+				<bodyAddons>
+					<!-- Eyes -->
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeR</path>
+						<bodyPart>right eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
-						<layerOffset>0.275</layerOffset>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.39,0.55)</Male>
-									<Fat>(-0.39,0.55)</Fat>
-									<Hulk>(-0.39,0.55)</Hulk>
+									<Male>(-0.42,0.6)</Male>
+									<Hulk>(-0.42,0.6)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -59,7 +60,6 @@
 							<north>
 								<bodyTypes>
 									<Male>(0,0.9)</Male>
-									<Fat>(0,0.9)</Fat>
 									<Hulk>(0,0.9)</Hulk>
 								</bodyTypes>
 								<crownTypes>
@@ -68,9 +68,103 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.48,0.6)</Male>
-									<Fat>(-0.48,0.6)</Fat>
-									<Hulk>(-0.48,0.6)</Hulk>
+									<Male>(-0.55,0.6)</Male>
+									<Hulk>(-0.725,0.7)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<!--hiddenUnderApparelFor>
+							<li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li>
+						</hiddenUnderApparelFor-->                
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeR_Missing</MissingBodyPart>
+						</hediffGraphics>
+					</li>
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeL</path>
+						<bodyPart>left eye</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+									<Hulk>(-0.42,0.6)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+									<Hulk>(-0.725,0.7)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<!--hiddenUnderApparelFor>
+							<li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li>
+						</hiddenUnderApparelFor-->     
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeL_Missing</MissingBodyPart>
+						</hediffGraphics>
+					</li>
+					<!-- Ears -->
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarR</path>
+						<bodyPart>right ear</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+									<Hulk>(-0.44,0.6)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+									<Hulk>(-0.68,0.65)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -81,19 +175,21 @@
 						<hiddenUnderApparelFor>
 							<li>OrkFullHead</li>
 							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li>
 						</hiddenUnderApparelFor>
 					</li>
 					<li>
 						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
-						<layerOffset>0.275</layerOffset>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.55)</Male>
-									<Fat>(-0.42,0.55)</Fat>
-									<Hulk>(-0.42,0.55)</Hulk>
+									<Male>(-0.42,0.6)</Male>
+									<Hulk>(-0.40,0.6)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -102,7 +198,6 @@
 							<north>
 								<bodyTypes>
 									<Male>(0,0.9)</Male>
-									<Fat>(0,0.9)</Fat>
 									<Hulk>(0,0.9)</Hulk>
 								</bodyTypes>
 								<crownTypes>
@@ -111,9 +206,8 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.48,0.6)</Male>
-									<Fat>(-0.48,0.6)</Fat>
-									<Hulk>(-0.48,0.6)</Hulk>
+									<Male>(-0.55,0.6)</Male>
+									<Hulk>(-0.68,0.65)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -122,9 +216,323 @@
 						</offsets>
 						<colorChannel>skin</colorChannel>
 						<hiddenUnderApparelFor>
+							<li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
 							<li>FullHead</li>
 							<li>UpperHead</li>
 						</hiddenUnderApparelFor>
+					</li>
+					<!-- Nose -->
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Nose/Nose</path>
+						<bodyPart>Nose</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2741</layerOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>
+					</li>
+					<!-- Teef -->
+					<!-- Male -->
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef</path>
+						<bodyPart>Jaw</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<bodyTypeRequirement>Male</bodyTypeRequirement>
+						<debug>false</debug>
+						<layerOffset>-0.2741</layerOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR</path>
+						<!--bodyPart>right tusk</bodyPart-->
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<bodyTypeRequirement>Male</bodyTypeRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>        
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR_Missing</MissingBodyPart>
+						</hediffGraphics>
+					</li>
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL</path>
+						<!--bodyPart>left tusk</bodyPart-->
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<bodyTypeRequirement>Male</bodyTypeRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.55,0.6)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>       
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL_Missing</MissingBodyPart>
+						</hediffGraphics>
+					</li>
+					<!-- Hulk -->
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef</path>
+						<bodyPart>Jaw</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2741</layerOffset>
+						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
+						<drawSize>(1.075, 1.0)</drawSize>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.4175,0.6)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0,0)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.725,0.75)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR</path>
+						<bodyPart>right tusk</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
+						<drawSize>(1.15, 1.15)</drawSize>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.40,0.65)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.68,0.75)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>       
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR_Missing</MissingBodyPart>
+						</hediffGraphics>
+					</li>
+					<li>
+						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL</path>
+						<bodyPart>left tusk</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<debug>false</debug>
+						<layerOffset>-0.2740</layerOffset>
+						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
+						<drawSize>(1.15, 1.15)</drawSize>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.44,0.65)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(0,0.0)</Average_Ork>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.68,0.75)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</east>
+						</offsets>
+						<colorChannel>none</colorChannel>
+						<!--colorChannel>skin</colorChannel-->
+						<hiddenUnderApparelFor>
+							<!--li>OrkFullHead</li>
+							<li>OrkUpperHead</li>
+							<li>FullHead</li>
+							<li>UpperHead</li-->
+						</hiddenUnderApparelFor>       
+						<hediffGraphics>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL_Missing</MissingBodyPart>
+						</hediffGraphics>
 					</li>
 				</bodyAddons>
 				<colorChannels>
@@ -159,9 +567,9 @@
 						</second-->
 					</li>
 				</colorChannels>
-            </alienPartGenerator>
-        </generalSettings>
-    </alienRace>
+			</alienPartGenerator>
+		</generalSettings>
+	</alienRace>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

@@ -3,25 +3,25 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/RecordDef[defName="TimeRepairing"]/measuredTimeJobs</xpath>
-	  <value>
+	<xpath>*/RecordDef[defName="TimeRepairing"]/measuredTimeJobs</xpath>
+	<value>
 		<li>WPRepair</li>
-	  </value>
+	</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/RecordDef[defName="TimeSowingAndHarvesting"]/measuredTimeJobs</xpath>
-	  <value>
+	<xpath>*/RecordDef[defName="TimeSowingAndHarvesting"]/measuredTimeJobs</xpath>
+	<value>
 		<li>WPSow</li>
-	  </value>
+	</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/RecordDef[defName="TimeConstructing"]/measuredTimeJobs</xpath>
-	  <value>
+	<xpath>*/RecordDef[defName="TimeConstructing"]/measuredTimeJobs</xpath>
+	<value>
 		<li>WPDeconstruct</li>
 		<li>WPFinishFrame</li>
-	  </value>
+	</value>
 	</Operation>
 	
 	

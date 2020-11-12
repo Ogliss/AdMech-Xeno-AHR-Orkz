@@ -2,16 +2,16 @@
 <Patch>
 <!-- Restrict Ork & Grot Abilities: TheForce -->
 <Operation Class="PatchOperationSequence">
-  <success>Always</success>
-  <operations>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/TraitDef[defName = "PJ_ForceSensitive"]</xpath>
-    </li>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+<success>Always</success>
+<operations>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/TraitDef[defName = "PJ_ForceSensitive"]</xpath>
+	</li>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
 		<value>
 			<li>
 				<defName>PJ_ForceSensitive</defName>
@@ -26,12 +26,12 @@
 				<defName>PJ_GrayTrait</defName>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
 		<value>
 			<li>
 				<defName>PJ_ForceSensitive</defName>
@@ -46,9 +46,9 @@
 				<defName>PJ_GrayTrait</defName>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Boy" or defName = "Ork_Weird_Nob" or defName = "Ork_Weird_Boss" or defName = "Weird_Grot"]/forcedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Boy" or defName = "Ork_Weird_Nob" or defName = "Ork_Weird_Boss" or defName = "Weird_Grot"]/forcedTraits</xpath>
 		<value>	
 			<li>
 				<defName>PJ_SithTrait</defName>
@@ -71,9 +71,9 @@
 				<chance>5</chance>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child"]/forcedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child"]/forcedTraits</xpath>
 		<value>	
 			<li>
 				<defName>PJ_ForceSensitive</defName>
@@ -86,9 +86,9 @@
 				<chance>50</chance>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child"]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child"]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>PJ_JediTrait</defName>
@@ -97,22 +97,22 @@
 				<defName>PJ_GrayTrait</defName>
 			</li>
 		</value>
-    </li>
-  </operations>
+	</li>
+</operations>
 </Operation>
 
 <!-- Restrict Ork & Grot Abilities: RimWolrd of Magic -->
 <Operation Class="PatchOperationSequence">
-  <success>Always</success>
-  <operations>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
-    </li>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+<success>Always</success>
+<operations>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
+	</li>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>TM_Gifted</defName>
@@ -172,12 +172,12 @@
 				<defName>BloodMage</defName>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationTest">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationTest">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>TM_Gifted</defName>
@@ -249,9 +249,9 @@
 				<defName>Bladedancer</defName>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Boy" or defName = "Ork_Weird_Nob" or defName = "Ork_Weird_Boss" or defName = "Weird_Grot"]/forcedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Boy" or defName = "Ork_Weird_Nob" or defName = "Ork_Weird_Boss" or defName = "Weird_Grot"]/forcedTraits</xpath>
 		<value>	
 			<li>
 				<defName>InnerFire</defName>
@@ -348,9 +348,9 @@
 				<chance>5</chance>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child" or defName = "Weird_Grot"]/forcedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child" or defName = "Weird_Grot"]/forcedTraits</xpath>
 		<value>	
 			<li>
 				<defName>TM_Gifted</defName>
@@ -358,9 +358,9 @@
 				<chance>75</chance>
 			</li>
 		</value>
-    </li>
-    <li Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child" or defName = "Weird_Grot"]/disallowedTraits</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child" or defName = "Weird_Grot"]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>Paladin</defName>
@@ -387,7 +387,7 @@
 				<defName>Faceless</defName>
 			</li>
 		</value>
-    </li>
-  </operations>
+	</li>
+</operations>
 </Operation>
 </Patch>

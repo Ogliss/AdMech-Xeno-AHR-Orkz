@@ -1,203 +1,207 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ========================= Ork - Leva Elmet ========================== -->
-  <ThingDef ParentName="OG_Ork_Apparel">
-    <defName>OGO_Apparel_LevaElmet</defName>
-    <label>Leva Elmet</label>
-    <description>Orkish Armour is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
-      <li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
+<!-- ========================= Ork - Leva Elmet ========================== -->
+<ThingDef ParentName="OG_Ork_Apparel">
+	<defName>OGO_Apparel_LevaElmet</defName>
+	<label>Leva Elmet</label>
+	<description>Orkish Armour is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+	<graphicData>
+		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/LevaHelmet__Icon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<thingCategories>
+		<li>OGOArmour</li>
+	</thingCategories>
+	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
 		<MarketValue>1100</MarketValue>
 		<WorkToMake>1200</WorkToMake>
 		<Mass>0.25</Mass>
-      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.5</EquipDelay>
-    </statBases>
-    <costList>
-     <!-- <Steel>10</Steel> -->
-    </costList>
-    <costStuffCount>40</costStuffCount>
-    <stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
+		<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.5</EquipDelay>
+	</statBases>
+	<costList>
+		<!-- <Steel>10</Steel> -->
+	</costList>
+	<costStuffCount>40</costStuffCount>
+	<stuffCategories>
+		<li>Leathery</li>
+	</stuffCategories>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
-      <wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</wornGraphicPath>
-      <bodyPartGroups>
-		<li>UpperHead</li>
-		<li>OrkUpperHead</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>OrkBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>OrkWorker</li>
-        <li>OrkSoldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>RGBA(1.00,1.00,1.00,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-  </ThingDef>
+	<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/LevaHelmet</wornGraphicPath>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+			<li>OrkUpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>OrkArmourBasic</li>
+			<li>OrkArmourHeadgearBasic</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>OrkWorker</li>
+			<li>OrkSoldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+		<options>
+		<li>
+			<weight>10</weight>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
+		</options>
+	</colorGenerator>
+</ThingDef>
  
-  <!-- ========================= Ork - 'Ard Hat ========================== -->
-  <ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
-    <defName>OGO_Apparel_Elmet</defName>
-    <label>'Ard Hat</label>
-    <description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
-      <li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
+<!-- ========================= Ork - 'Ard Hat ========================== -->
+<ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
+	<defName>OGO_Apparel_Elmet</defName>
+	<label>'Ard Hat</label>
+	<description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
+	<graphicData>
+		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/Helmet__Icon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<thingCategories>
+		<li>OGOArmour</li>
+	</thingCategories>
+	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
 		<MarketValue>1100</MarketValue>
 		<WorkToMake>1200</WorkToMake>
 		<Mass>1.0</Mass>
-      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1</EquipDelay>
-    </statBases>
-    <costList>
-      <Steel>10</Steel>
-    </costList>
-    <costStuffCount>140</costStuffCount>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
+		<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1</EquipDelay>
+	</statBases>
+	<costList>
+		<Steel>10</Steel>
+	</costList>
+	<costStuffCount>140</costStuffCount>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Apparel_Armour_T1</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
-      <wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</wornGraphicPath>
-      <bodyPartGroups>
-		<li>UpperHead</li>
-		<li>OrkUpperHead</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>OrkBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>OrkWorker</li>
-        <li>OrkSoldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>RGBA(1.00,1.00,1.00,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-  </ThingDef>
+	<apparel>
+		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/Helmet</wornGraphicPath>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+			<li>OrkUpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>OrkArmourNormal</li>
+			<li>OrkArmourHeadgearNormal</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>OrkWorker</li>
+			<li>OrkSoldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+		<options>
+		<li>
+			<weight>10</weight>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
+		</options>
+	</colorGenerator>
+</ThingDef>
  
-  <!-- ========================= Ork - Eavy Elmet ========================== -->
-  <ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
-    <defName>OGO_Apparel_EavyElmet</defName>
-    <label>'Eavy 'Ard Hat</label>
-    <description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Eavy 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <thingCategories>
-      <li>OGOArmour</li>
-    </thingCategories>
-    <statBases>
-      <MarketValue>1700</MarketValue>
-      <WorkToMake>12000</WorkToMake>
-      <Mass>1.25</Mass>
-      <Flammability>0</Flammability>
-      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.27</ArmorRating_Heat>
-      <Insulation_Cold>1</Insulation_Cold>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <costList>
-      <Steel>150</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
+<!-- ========================= Ork - Eavy Elmet ========================== -->
+<ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
+	<defName>OGO_Apparel_EavyElmet</defName>
+	<label>'Eavy 'Ard Hat</label>
+	<description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Eavy 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
+	<graphicData>
+		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/EavyHelmet__Icon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<thingCategories>
+		<li>OGOArmour</li>
+	</thingCategories>
+	<statBases>
+		<MarketValue>1700</MarketValue>
+		<WorkToMake>12000</WorkToMake>
+		<Mass>1.25</Mass>
+		<Flammability>0</Flammability>
+		<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.27</ArmorRating_Heat>
+		<Insulation_Cold>1</Insulation_Cold>
+		<EquipDelay>3</EquipDelay>
+	</statBases>
+	<costList>
+		<Steel>150</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>OG_Ork_Tech_Apparel_Armour_T2</li>
 			</researchPrerequisites>
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
-    <apparel>
-      <wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</wornGraphicPath>
-      <bodyPartGroups>
-		<li>UpperHead</li>
-		<li>OrkUpperHead</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>OrkHeavy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>OrkSoldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>RGBA(1.00,1.00,1.00,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-  </ThingDef>
-  
+	<apparel>
+		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/EavyHelmet</wornGraphicPath>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+			<li>OrkUpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>OrkArmourHeavy</li>
+			<li>OrkArmourHeadgearHeavy</li>
+			<li>Royal</li>
+			<li>RoyalTier6</li>
+			<li>RoyalCombatGear</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>OrkSoldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+		<options>
+		<li>
+			<weight>10</weight>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
+		</options>
+	</colorGenerator>
+</ThingDef>
+
 	<!--==================== Ork - Mega Arma Elmet =========================-->
 	<!--==================== Abstracts =========================-->
 	<ThingDef Name="OG_Ork_Apparel_Mega_Armour_Helmet_Base" ParentName="OG_Ork_Apparel_Armor_Makeable" Abstract="True">
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
+			<researchPrerequisite>OG_Ork_Tech_Apparel_Armour_T3</researchPrerequisite>
 			<skillRequirements>
-			<Crafting>8</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-			<li>FabricationBench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</texPath>
+			<texPath>Things/Item/Apparel/Ork/Headgear/MegaElmet/MegaElmet_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(0.9, 0.9)</drawSize>
@@ -230,12 +234,16 @@
 				<li>FullHead</li>
 				<li>OrkUpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/OrkHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/MegaElmet/MegaElmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>OrkMega</li>
+				<li>OrkArmourMega</li>
+				<li>OrkArmourHeadgearMega</li>
+				<li>Royal</li>
+				<li>RoyalTier7</li>
+				<li>RoyalCombatGear</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
@@ -251,15 +259,15 @@
 			<!--li Class="CompProperties_BiocodableApparel"/-->
 		</comps>
 	</ThingDef>
-  
-  <!-- ========================= Ork - Mega Arma Base Elmet ========================== -->
-  <ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Helmet_Base">
+
+<!-- ========================= Ork - Mega Arma Base Elmet ========================== -->
+<ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Helmet_Base">
 	<defName>OGO_Apparel_MegaArmourElmet</defName>
-	<label>cataphract helmet</label>
-	<description>A heavily-armored 'Eye-tek' helmet, with a solid plasteel-weave shell that can withstand insane amounts of punishment, almost as much as Imperial Terminator Armour. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by ork Nobz, Bossez and Meks to break heavily fortified positions in frontal assaults when no other option is available.</description>
-  </ThingDef>
-  
-  <!--ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Helmet_Base">
+	<label>mega 'elmet</label>
+	<description>A heavily-armored 'Ey-tek' helmet, with a solid plasteel-weave shell that can withstand insane amounts of punishment, almost as much as Imperial Terminator Armour. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by ork Nobz, Bossez and Meks to break heavily fortified positions in frontal assaults when no other option is available.</description>
+</ThingDef>
+
+<!--ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Helmet_Base">
 	<defName>OGO_Apparel_MegaArmourElmetPrestige</defName>
 	<label>prestige cataphract helmet</label>
 	<description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
@@ -286,72 +294,6 @@
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
-  </ThingDef-->
+</ThingDef-->
 
-  <!-- ========================= Ork - Special ========================== -->
-  <!-- ========================= Ork - Iron Gob ========================== -->
-  <ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
-    <defName>OGO_Apparel_IronGob</defName>
-    <label>Iron Gob</label>
-    <description>These massive facial appliances are bolted onto an Ork's armour, or onto the Ork's jaw itself. They exaggerate the already fearsome appearance of these green brutes and are often viewed as symbols of authority. As such, they are often found on Ork Nobs and Warbosses.</description>
-    <!-- <thingClass>AdeptusMechanicus.ProtectiveEyeWear</thingClass> -->
-    <graphicData>
-      <texPath>Things/Item/Apparel/Ork/Headgear/IronGob/Ork_IronGob</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <costList>
-      <Steel>20</Steel>
-    </costList>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>OG_Ork_Tech_Apparel_Wargear_T1</li>
-			</researchPrerequisites>
-		</recipeMaker>
-    <costStuffCount>40</costStuffCount>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-    <statBases>
-		<Mass>0.05</Mass>
-      <WorkToMake>4000</WorkToMake>
-      <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>400</MarketValue>
-      <ArmorRating_Blunt>0.075</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.01</MoveSpeed>
-	  
-	  <PsychicSensitivity>-0.10</PsychicSensitivity>
-    </equippedStatOffsets>
-	<generateCommonality>0.25</generateCommonality>
-    <apparel>
-      <bodyPartGroups Inherit="false">
-        <li>Mouth</li>
-		<li>Neck</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Ork/Headgear/IronGob/Ork_IronGob</wornGraphicPath>	
-      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>			
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>OGOrk</li>
-        <li>OGOrkArmour</li>
-        <li>OGOrkHeadgear</li>
-        <li>OGOrkMask</li>
-        <li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalCombatGear</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>OGOArmour</li>
-      </defaultOutfitTags> 
-   </apparel>
-	<comps>     
-	
-	</comps>
-  </ThingDef>
-  
 </Defs>

@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest> 
-  <identifier>Ogliss.AdMech.Xenobiologis.Orkz</identifier>
-  <version>1.6.1.1</version>
-  <dependencies>
-    <li>Ogliss.AdMech.Armoury</li>
-    <li>erdelf.HumanoidAlienRaces</li>
-  </dependencies>
-  <incompatibleWith>
-    <li>Ogliss.FeralOrkz</li>
-  </incompatibleWith>	
-  <loadBefore>
-  
-  </loadBefore>
-  <loadAfter>
-    <li>jecrell.jecstools</li>
-    <li>unlimitedhugs.hugslib</li>
-    <li>Ogliss.AdMech.Armoury</li>
-    <li>Ogliss.AdMech.Xenobiologis</li>
-  </loadAfter>
-  <manifestUri>https://raw.githubusercontent.com/Ogliss/AdMech-Xeno-AHR-Orkz/master/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/Ogliss/AdMech-Xeno-AHR-Orkz/releases</downloadUri>
+<identifier>Ogliss.AdMech.Xenobiologis.Orkz</identifier>
+<version>1.6.1.1</version>
+<dependencies>
+	<li>Ogliss.AdMech.Armoury</li>
+	<li>erdelf.HumanoidAlienRaces</li>
+</dependencies>
+<incompatibleWith>
+	<li>Ogliss.FeralOrkz</li>
+</incompatibleWith>	
+<loadBefore>
+
+</loadBefore>
+<loadAfter>
+	<li>jecrell.jecstools</li>
+	<li>unlimitedhugs.hugslib</li>
+	<li>Ogliss.AdMech.Armoury</li>
+	<li>Ogliss.AdMech.Xenobiologis</li>
+</loadAfter>
+<manifestUri>https://raw.githubusercontent.com/Ogliss/AdMech-Xeno-AHR-Orkz/master/About/Manifest.xml</manifestUri>
+<downloadUri>https://github.com/Ogliss/AdMech-Xeno-AHR-Orkz/releases</downloadUri>
 </Manifest>

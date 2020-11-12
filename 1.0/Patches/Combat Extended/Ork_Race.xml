@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <Operation Class="PatchOperationSequence">
-  <success>Always</success>
-  <operations>
-    <li Class="PatchOperationTest">
-      <xpath>Defs/ResearchTabDef[defName="CE_Turrets"]</xpath>
-    </li>
+<success>Always</success>
+<operations>
+	<li Class="PatchOperationTest">
+		<xpath>Defs/ResearchTabDef[defName="CE_Turrets"]</xpath>
+	</li>
 	<li Class="PatchOperationAddModExtension">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork" or defName="OG_Alien_Grot"]</xpath>
 		<value>
@@ -15,21 +15,21 @@
 		</value>
 	</li>
 	
-    <li Class="PatchOperationReplace">
-        <success>Always</success>
-        <xpath>Defs/ThingDef[@Name="BaseOrkPawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
-        <value>
-            <li>CombatExtended.ITab_Inventory</li>
-        </value>
-    </li>
+	<li Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BaseOrkPawn"]/inspectorTabs/li[.="ITab_Pawn_Gear"]</xpath>
+		<value>
+				<li>CombatExtended.ITab_Inventory</li>
+		</value>
+	</li>
  
-    <li Class="PatchOperationAdd">
-        <success>Always</success>
-        <xpath>Defs/ThingDef[@Name="BaseOrkPawn"]/comps</xpath>
-        <value>
-            <li Class="CombatExtended.CompProperties_Inventory" />
-        </value>
-    </li>
+	<li Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BaseOrkPawn"]/comps</xpath>
+		<value>
+				<li Class="CombatExtended.CompProperties_Inventory" />
+		</value>
+	</li>
 	
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork"]/tools</xpath>
@@ -110,31 +110,31 @@
 	</li>
 <!--
 	<li Class="PatchOperationSequence">
-  	<success>Always</success>
-  	<operations>
-    	<li Class="PatchOperationTest">
-      	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork" or defName="OG_Alien_Grot"]/comps</xpath>
-      	<success>Invert</success>
-    	</li>
-    	<li Class="PatchOperationAdd">
-      	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork" or defName="OG_Alien_Grot"]</xpath>
-      	<value>
-        	<comps />
-      	</value>
-    	</li> 
-  	</operations>
+	<success>Always</success>
+	<operations>
+		<li Class="PatchOperationTest">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork" or defName="OG_Alien_Grot"]/comps</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="OG_Alien_Ork" or defName="OG_Alien_Grot"]</xpath>
+			<value>
+			<comps />
+			</value>
+		</li> 
+	</operations>
 	</li>
 -->
 	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BaseOrkPawn"]/comps</xpath>
 		<value>
 			<li>
-			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+			<compClass>CombatExtended.CompPawnGizmo</compClass>
 			</li>
 			<li Class="CombatExtended.CompProperties_Suppressable" />
 		</value>
 	</li>
-  </operations>
+</operations>
 </Operation>
 
 </Patch>
