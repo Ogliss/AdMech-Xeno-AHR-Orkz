@@ -234,6 +234,12 @@
  
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef/[defName="OG_Ork_Orbital_BulkGoods" or defName="OG_Ork_Orbital_PirateMerchant"]/stockGenerators/li[thingDef="Beer"]/thingDef</xpath>
+				<value>
+					<thingDef>OG_Ork_Grog</thingDef>
+				</value>
+			</li>
 		</operations>
 	</match>
 </Operation>

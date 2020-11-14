@@ -891,6 +891,54 @@
 	</spawnCategories>
 </AlienRace.BackstoryDef>
 
+<!-- Freebootah Orkz -->
+
+<!-- Freebootah Adulthood -->
+<!-- Ork Boy Freebootah -->
+<AlienRace.BackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Freebootah</defName>
+	<title>Freebootah</title>
+	<titleShort>Freebootah</titleShort>
+	<baseDescription>[PAWN_nameDef] is a Freebootah, the typical Ork pirate, akin in almost every way to a standard Ork. Nothing makes [PAWN_nameDef] happier than creeping up on an unsuspecting voidcraft, his mates slithering through the undergrowth at his side. When the time is right, burst from concealment, slashing, stabbing and shooting their stunned prey before they have a chance to strike back.</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+	<!--
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	-->
+		<li>ManualSkilled</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraits>
+		<li>
+				<defName>Brawler</defName>
+				<chance>50</chance>
+		</li>
+	</forcedTraits>
+	<disallowedTraits>
+		<li>
+				<defName>ShootingAccuracy</defName>
+		</li>
+	</disallowedTraits>
+	<skillGains>
+		<li>
+		<defName>Melee</defName>
+		<amount>4</amount>
+		</li>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy</li>
+		<li>Ork_Boy_Kommando</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.BackstoryDef>
+
 <!-- Weird Orkz -->
 <!-- Weird Childhood -->
 <!-- Weird Child -->

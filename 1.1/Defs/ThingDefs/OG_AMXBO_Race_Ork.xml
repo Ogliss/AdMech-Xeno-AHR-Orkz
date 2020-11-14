@@ -234,7 +234,7 @@
 				<!--customHeadDrawSize>(1.05, 1.05)</customHeadDrawSize-->
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
-					<north>(0.0, 0.22)</north>
+					<north>(0.0, 0.11)</north>
 					<south>(0.0, -0.00)</south>
 					<east>(0.200, 0.10)</east>
 					<west>(-0.200, 0.10)</west>
@@ -252,7 +252,7 @@
 				<!--customHeadDrawSize>(1.075, 1.075)</customHeadDrawSize-->
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
-					<north>(0.0, 0.22)</north>
+					<north>(0.0, 0.11)</north>
 					<south>(0.0, -0.00)</south>
 					<east>(0.200, 0.10)</east>
 					<west>(-0.200, 0.10)</west>

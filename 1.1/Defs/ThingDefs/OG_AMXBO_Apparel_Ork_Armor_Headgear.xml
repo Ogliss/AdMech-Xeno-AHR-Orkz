@@ -4,8 +4,8 @@
 <!-- ========================= Ork - Leva Elmet ========================== -->
 <ThingDef ParentName="OG_Ork_Apparel">
 	<defName>OGO_Apparel_LevaElmet</defName>
-	<label>Leva Elmet</label>
-	<description>Orkish Armour is the basic type of Ork Armour. It is usually made from sections of armoured plates and scavenged pieces of armour, battered into shape so that it fits its wearer (well, sort of). It usually includes huge metal pauldrons and other metal plates bolted together, or even riveted onto the Ork himself. 'Eavy armour has a ramshackle, improvised appearance, but offers far more protection then its humble origins can suggest. It is cumbersome to wear, but is commonly worn by Nobz and Warbosses, as extra protection goes a long way in a society where fighting (often to the death) is the usual form of career advancement. Those Ork Boyz who manage to get their hand on a piece of 'Eavy Armour are called 'Ard Boyz, and usually comprise mobs of their own.</description>
+	<label>studded elmet</label>
+	<description>A simple helmet, the basic type of Orkish head armour. Usually made from sections of hardened leather, with the odd bits of scrap metal plate or scavenged piece of armour. It sometimes includes 'horns' fashioned from metal or bones and other metal plates bolted together, Orkish armour has a ramshackle, improvised appearance, but offers more protection then its humble origins would suggest.</description>
 	<graphicData>
 		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/LevaHelmet__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -65,7 +65,7 @@
 <ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
 	<defName>OGO_Apparel_Elmet</defName>
 	<label>'Ard Hat</label>
-	<description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
+	<description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull. Orkish armour has a ramshackle, improvised appearance, but offers more protection then its humble origins would suggest.</description>
 	<graphicData>
 		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/Helmet__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -129,7 +129,7 @@
 <ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
 	<defName>OGO_Apparel_EavyElmet</defName>
 	<label>'Eavy 'Ard Hat</label>
-	<description>Made of a slab of metal beaten into a rough bowl shape and embellished with rivets, and sometimes with added horns, 'Eavy 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull.</description>
+	<description>A heavier grade of headgear, with extra plating and a facegaurd and embellished with rivets, and sometimes with added horns, 'Eavy 'Ard Hats are heavy helmets, that complement the protection offered by the Orks' legendary thick skull. Orkish armour has a ramshackle, improvised appearance, but offers more protection then its humble origins would suggest.</description>
 	<graphicData>
 		<texPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/EavyHelmet__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

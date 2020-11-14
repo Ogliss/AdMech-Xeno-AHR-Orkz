@@ -163,15 +163,15 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
-									<Hulk>(-0.68,0.65)</Hulk>
+									<Male>(-0.6,0.6)</Male>
+									<Hulk>(-0.75,0.70)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
 						</offsets>
-						<colorChannel>skin</colorChannel>
+						<colorChannel>skinEars</colorChannel>
 						<hiddenUnderApparelFor>
 							<li>OrkFullHead</li>
 							<li>OrkUpperHead</li>
@@ -206,15 +206,15 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
-									<Hulk>(-0.68,0.65)</Hulk>
+									<Male>(-0.6,0.6)</Male>
+									<Hulk>(-0.75,0.65)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
 						</offsets>
-						<colorChannel>skin</colorChannel>
+						<colorChannel>skinEars</colorChannel>
 						<hiddenUnderApparelFor>
 							<li>OrkFullHead</li>
 							<li>OrkUpperHead</li>
@@ -565,6 +565,36 @@
 								</li>
 							</options>
 						</second-->
+					</li>
+					<li>
+						<name>skinEars</name>
+						<first Class="AlienRace.ColorGenerator_CustomAlienChannel">
+							<colorChannel>skin_1</colorChannel>
+						</first>
+						<second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(224, 223, 219, 255)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(80, 47, 32, 255)</only>
+								</li>
+								<li>
+									<weight>7.5</weight>
+									<only>RGBA(192,192,192, 255)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(212,175,55, 255)</only>
+								</li>
+								<li>
+									<weight>2.5</weight>
+									<only>RGBA(207,181,59, 255)</only>
+								</li>
+							</options>
+						</second>
 					</li>
 				</colorChannels>
 			</alienPartGenerator>
