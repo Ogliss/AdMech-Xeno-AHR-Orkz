@@ -19,7 +19,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.orkz");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Type pawn_NativeVerbs = typeof(Pawn_NativeVerbs);
-            if (AdeptusIntergrationUtil.enabled_SOS2)
+            if (AdeptusIntergrationUtility.enabled_SOS2)
             {
                 HarmonyPatches.SOSConstructPatch();
             }
