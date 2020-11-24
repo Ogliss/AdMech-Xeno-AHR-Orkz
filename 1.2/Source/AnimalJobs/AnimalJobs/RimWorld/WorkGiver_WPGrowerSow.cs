@@ -175,7 +175,7 @@ namespace RimWorld
 								while (j < thingList.Count)
 								{
 									Thing thing3 = thingList[j];
-									bool blockPlanting = thing3.def.BlockPlanting;
+									bool blockPlanting = thing3.def.BlocksPlanting(false);
 									if (blockPlanting)
 									{
 										bool flag18 = !pawn.CanReserve(thing3, 1, -1, null, false);

@@ -4,13 +4,13 @@
 <FleshTypeDef Name="OG_Flesh_Construct_Base" Abstract="True">
 	<wounds>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundMechA</texture>
+			<texture>Things/Pawn/Wounds/WoundMechA</texture>
 		</li>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundMechB</texture>
+			<texture>Things/Pawn/Wounds/WoundMechB</texture>
 		</li>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundMechC</texture>
+			<texture>Things/Pawn/Wounds/WoundMechC</texture>
 		</li>
 	</wounds>
 </FleshTypeDef>
@@ -22,16 +22,16 @@
 	<corpseCategory>OG_Corpses_Orkoid</corpseCategory>
 	<wounds>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundA</texture>
-		<color>(179, 185, 73)</color>
+			<texture>Things/Pawn/Wounds/WoundA</texture>
+			<color>(9, 121, 0)</color>
 		</li>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundB</texture>
-		<color>0.675,0,0.529</color>
+			<texture>Things/Pawn/Wounds/WoundB</texture>
+			<color>(9, 121, 0)</color>
 		</li>
 		<li>
-		<texture>Things/Pawn/Wounds/WoundC</texture>
-		<color>0.675,0,0.529</color>
+			<texture>Things/Pawn/Wounds/WoundC</texture>
+			<color>(9, 121, 0)</color>
 		</li>
 	</wounds>
 </FleshTypeDef>

@@ -58,7 +58,7 @@ namespace RimWorld
 					{
 						string str = "Grow zone has 0 cells: ";
 						Zone_Growing zone_Growing = growZone;
-						Log.ErrorOnce(str + ((zone_Growing != null) ? zone_Growing.ToString() : null), -563487, false);
+						Log.ErrorOnce(str + (zone_Growing?.ToString()), -563487, false);
 					}
 					else
 					{
@@ -86,7 +86,6 @@ namespace RimWorld
 				num = j;
 			}
 			WorkGiver_WPGrower.wantedPlantDef = null;
-			yield break;
 			yield break;
 		}
 

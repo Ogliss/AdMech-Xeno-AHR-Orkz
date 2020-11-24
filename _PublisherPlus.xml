@@ -49,10 +49,10 @@
 	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.2\Source</exclude>
 	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Building\Worship\Shrines.psd</exclude>
 	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Item.zip</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\HeadsBase\Ears\GrotEarsOld.7z</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\HeadsBase\GrotHeadsOld.7z</exclude>
+	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\Head\Ears\GrotEarsOld.7z</exclude>
+	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Grot\Head\GrotHeadsOld.7z</exclude>
 	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\Bodies\Bodies.7z</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\HeadsBase\Ears\Ears.7z</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\HeadsBase\HeadsBase.7z</exclude>
+	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\Head\Ears\Ears.7z</exclude>
+	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Textures\Things\Pawn\Humanlike\Ork\Head\Head.7z</exclude>
 </Excluded>
 </Configuration>

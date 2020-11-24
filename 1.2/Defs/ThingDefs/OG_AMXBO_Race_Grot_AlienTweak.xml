@@ -39,7 +39,7 @@
 				<bodyAddons>
 					<li>
 						<debug>false</debug>
-						<path>Things/Pawn/Humanlike/Grot/HeadsBase/Ears/Average_Gretchin_EarR</path>
+						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<drawnInBed>true</drawnInBed>
@@ -79,7 +79,7 @@
 					</li>
 					<li>
 						<debug>false</debug>
-						<path>Things/Pawn/Humanlike/Grot/HeadsBase/Ears/Average_Gretchin_EarL</path>
+						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<drawnInBed>true</drawnInBed>

@@ -8,7 +8,7 @@
 		<graphicPaths>
 				<li>
 					<body>Things/Pawn/Humanlike/Grot/Bodies/</body>
-					<head>Things/Pawn/Humanlike/Grot/HeadsBase/</head>
+					<head>Things/Pawn/Humanlike/Grot/Head/</head>
 				</li>
 		</graphicPaths>
 		<generalSettings>
@@ -609,26 +609,26 @@
 				</renamer>
 		</relationSettings>
 		<raceRestriction>
-				<researchList>
-					<li>
+			<researchList>
+				<li>
+				
+					<projects>
+					<!--li>OG_Ork_Tech_Base_T1</li>
+					<li>OG_Ork_Tech_Weapons_Melee_T1</li>
+					<li>OG_Ork_Tech_Apparel_Armour_T1</li>
+					<li>OG_Ork_Tech_Weapons_Melee_T2</li>
+					<li>OG_Ork_Tech_Apparel_Armour_T2</li>
+					<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
+					<li>OG_Ork_Tech_Base_T2</li>
+					<li>OG_Ork_Tech_Base_T3</li>
+					<li>OG_Ork_Tech_Apparel_Armour_T3</li-->
+					</projects>
+				
+					<apparelList>
 					
-						<projects>
-						<!--li>OG_Ork_Tech_Base_T1</li>
-						<li>OG_Ork_Tech_Weapons_Melee_T1</li>
-						<li>OG_Ork_Tech_Apparel_Armour_T1</li>
-						<li>OG_Ork_Tech_Weapons_Melee_T2</li>
-						<li>OG_Ork_Tech_Apparel_Armour_T2</li>
-						<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
-						<li>OG_Ork_Tech_Base_T2</li>
-						<li>OG_Ork_Tech_Base_T3</li>
-						<li>OG_Ork_Tech_Apparel_Armour_T3</li-->
-						</projects>
-					
-						<apparelList>
-						
-						</apparelList>
-					</li>
-				</researchList>
+					</apparelList>
+				</li>
+			</researchList>
 			<apparelList>
 			
 					<li>OGO_Apparel_LevaArmour</li>
@@ -637,53 +637,54 @@
 					<li>OGO_Apparel_UniformJacket</li>
 					<li>OGO_Wargear_KustomForcefield</li>
 			</apparelList>
-				<recipeList>
-					<!--li>OGO_SkavengeApparel</li>
-					<li>Make_OGO_Apparel_UniformShirt</li>
-					<li>Make_OGO_Apparel_UniformJacket</li>
-					<li>Make_OGO_Wargear_BossPole</li>
-					<li>Make_OGO_Apparel_LevaElmet</li>
-					<li>Make_OGO_Apparel_Elmet</li>
-					<li>Make_OGO_Apparel_EavyElmet</li>
-					<li>Make_OGO_Apparel_MegaArmourElmet</li>
-					<li>Make_OGO_Apparel_IronGob</li>
-					<li>Make_OGO_Apparel_LevaArmour</li>
-					<li>Make_OGO_Apparel_Armour</li>
-					<li>Make_OGO_Apparel_EavyArmour</li>
-					<li>Make_OGO_Apparel_MegaArmour</li>
-					<li>Make_OGO_Wargear_KustomForcefield</li>
-					<li>Make_OGO_GrenadePack_Frag</li>
-					<li>Make_OGO_GrenadePack_Krak</li>
-					<li>Make_OGO_GrenadePack_Melta</li>
-					<li>Make_OGO_Melee_CrudeChoppa</li>
-					<li>Make_OGO_Melee_Choppa</li>
-					<li>Make_OGO_Melee_ChainChoppa</li>
-					<li>Make_OGO_Melee_BigChoppa</li>
-					<li>Make_OGO_Melee_PowerKlaw</li>
-					<li>Make_OGO_Gun_GrotBlasta</li>
-					<li>Make_OGO_Gun_Slugga</li>
-					<li>Make_OGO_Gun_Shoota</li>
-					<li>Make_OGO_Gun_TwinLinkedShoota</li>
-					<li>Make_OGO_Gun_BigShoota</li>
-					<li>Make_OGO_Gun_Snazzgun</li>
-					<li>Make_OGO_Gun_ZappKannon</li>
-					<li>Make_OGO_Gun_Burna</li>
-					<li>Make_OGO_Gun_Scorcha</li>
-					<li>Make_OGO_Gun_RokkitLaucha</li>
-					<li>Make_OGO_Gun_KombiBurna</li>
-					<li>Make_OGO_Gun_KombiRokkit</li>
-					<li>Make_OGO_Gun_DeffgunPlasma</li>
-					<li>Make_OGO_Gun_DeffgunBeamy</li>
-					<li>Make_OGO_Gun_DeffgunDakka</li-->
-				</recipeList>
-				<plantList>
-					<li>OG_Plant_Orkoid_Fungus</li>
-					<li>OG_Plant_Orkoid_Cocoon</li>
-				</plantList>
-				<!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
+			<recipeList>
+				<!--li>OGO_SkavengeApparel</li>
+				<li>Make_OGO_Apparel_UniformShirt</li>
+				<li>Make_OGO_Apparel_UniformJacket</li>
+				<li>Make_OGO_Wargear_BossPole</li>
+				<li>Make_OGO_Apparel_LevaElmet</li>
+				<li>Make_OGO_Apparel_Elmet</li>
+				<li>Make_OGO_Apparel_EavyElmet</li>
+				<li>Make_OGO_Apparel_MegaArmourElmet</li>
+				<li>Make_OGO_Apparel_IronGob</li>
+				<li>Make_OGO_Apparel_LevaArmour</li>
+				<li>Make_OGO_Apparel_Armour</li>
+				<li>Make_OGO_Apparel_EavyArmour</li>
+				<li>Make_OGO_Apparel_MegaArmour</li>
+				<li>Make_OGO_Wargear_KustomForcefield</li>
+				<li>Make_OGO_GrenadePack_Frag</li>
+				<li>Make_OGO_GrenadePack_Krak</li>
+				<li>Make_OGO_GrenadePack_Melta</li>
+				<li>Make_OGO_Melee_CrudeChoppa</li>
+				<li>Make_OGO_Melee_Choppa</li>
+				<li>Make_OGO_Melee_ChainChoppa</li>
+				<li>Make_OGO_Melee_BigChoppa</li>
+				<li>Make_OGO_Melee_PowerKlaw</li>
+				<li>Make_OGO_Gun_GrotBlasta</li>
+				<li>Make_OGO_Gun_Slugga</li>
+				<li>Make_OGO_Gun_Shoota</li>
+				<li>Make_OGO_Gun_TwinLinkedShoota</li>
+				<li>Make_OGO_Gun_BigShoota</li>
+				<li>Make_OGO_Gun_Snazzgun</li>
+				<li>Make_OGO_Gun_ZappKannon</li>
+				<li>Make_OGO_Gun_Burna</li>
+				<li>Make_OGO_Gun_Scorcha</li>
+				<li>Make_OGO_Gun_RokkitLaucha</li>
+				<li>Make_OGO_Gun_KombiBurna</li>
+				<li>Make_OGO_Gun_KombiRokkit</li>
+				<li>Make_OGO_Gun_DeffgunPlasma</li>
+				<li>Make_OGO_Gun_DeffgunBeamy</li>
+				<li>Make_OGO_Gun_DeffgunDakka</li-->
+			</recipeList>
+			<plantList>
+				<li>OG_Plant_Orkoid_Fungus</li>
+				<li>OG_Plant_Orkoid_Cocoon</li>
+			</plantList>
+			<!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
 			<buildingList>
-					<!--li>OGO_TableMachining</li-->
-				</buildingList>
+				<li>OGO_TableMachining</li>
+				<li>OGO_TableButcher</li>
+			</buildingList>
 			<conceptList>
 				<!--li>OrkoidFungus</li-->
 			</conceptList>
@@ -718,50 +719,50 @@
 		<SocialImpact>0.75</SocialImpact>
 		<TradePriceImprovement>0.85</TradePriceImprovement>
 	</statBases>
-<tools>
+	<tools>
 		<li>
-		<label>left fist</label>
-		<capacities>
-			<li>Blunt</li>
-		</capacities>
-		<power>3</power>
-		<cooldownTime>1.6</cooldownTime>
-		<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-		<surpriseAttack>
-			<extraMeleeDamages>
-				<li>
-				<def>Stun</def>
-				<amount>11</amount>
-				</li>
-			</extraMeleeDamages>
-		</surpriseAttack>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>11</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
 		</li>
 		<li>
-		<label>right fist</label>
-		<capacities>
-			<li>Blunt</li>
-		</capacities>
-		<power>3</power>
-		<cooldownTime>1.6</cooldownTime>
-		<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-		<surpriseAttack>
-			<extraMeleeDamages>
-				<li>
-				<def>Stun</def>
-				<amount>11</amount>
-				</li>
-			</extraMeleeDamages>
-		</surpriseAttack>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>11</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
 		</li>
 		<li>
-		<label>head</label>
-		<capacities>
-			<li>Blunt</li>
-		</capacities>
-		<power>2</power>
-		<cooldownTime>1.8</cooldownTime>
-		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<chanceFactor>0.2</chanceFactor>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>2</power>
+			<cooldownTime>1.8</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<chanceFactor>0.2</chanceFactor>
 		</li>
 	</tools>
 	<race>
@@ -789,36 +790,36 @@
 		</points>
 		</litterSizeCurve>
 		<lifeStageAges>
-		<li>
-			<def>GrotWhelp</def>
-			<minAge>0</minAge>
-		</li>
-		<li>
-			<def>GrotRunt</def>
-			<minAge>1</minAge>
-		</li>
-		<li>
-			<def>GrotAdult</def>
-			<minAge>2</minAge>
-		</li>
+			<li>
+				<def>GrotWhelp</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>GrotRunt</def>
+				<minAge>1</minAge>
+			</li>
+			<li>
+				<def>GrotAdult</def>
+				<minAge>2</minAge>
+			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		<specialShadowData>
-		<volume>(0.3, 0.8, 0.4)</volume>
-		<offset>(0,0,-0.3)</offset>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
 		</specialShadowData>
 		<ageGenerationCurve>
-		<points>
-			<li>(0,0)</li>
-			<li>(2,200)</li>
-			<li>(5,10)</li>
-			<li>(10,0)</li>
-		</points>
+			<points>
+				<li>(0,0)</li>
+				<li>(2,200)</li>
+				<li>(5,10)</li>
+				<li>(10,0)</li>
+			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>
-		<li>OrganicAgeless</li>
+			<li>OrganicAgeless</li>
 		</hediffGiverSets>
 	</race>
 	<recipes>
@@ -852,31 +853,31 @@
 	</recipes>
 	<comps>
 		<li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
-		<Poisonable>true</Poisonable>
-		<FoodPoisonCause>
-			<li>DangerousFoodType</li>
-			<li>FilthyKitchen</li>
-			<li>IncompetentCook</li>
-			<li>Rotten</li>
-			<!--
-			<li>Unknown</li>
-			-->
-		</FoodPoisonCause>
+			<Poisonable>true</Poisonable>
+			<FoodPoisonCause>
+				<li>DangerousFoodType</li>
+				<li>FilthyKitchen</li>
+				<li>IncompetentCook</li>
+				<li>Rotten</li>
+				<!--
+				<li>Unknown</li>
+				-->
+			</FoodPoisonCause>
 		</li>
 		<li Class="AdeptusMechanicus.CompProperties_Regeneration">
-		<healFreshWounds>true</healFreshWounds>
-		<healFreshChance>0.5</healFreshChance>
-		<allowSealWounds>false</allowSealWounds>
-		<sealWoundsChance>0.1</sealWoundsChance>
-		<healPermenantWounds>true</healPermenantWounds>
-		<healPermenantChance>0.1</healPermenantChance>
-		<allowScarRemoval>false</allowScarRemoval>
-		<scarRemovalChance>0.01</scarRemovalChance>
-		<regrowMissingParts>true</regrowMissingParts>
-		<regrowMissingChance>0.01</regrowMissingChance>
-		<useFood>true</useFood>
-		<useRest>false</useRest>
-		<onlyWhileSleeping>false</onlyWhileSleeping>
+			<healFreshWounds>true</healFreshWounds>
+			<healFreshChance>0.5</healFreshChance>
+			<allowSealWounds>false</allowSealWounds>
+			<sealWoundsChance>0.1</sealWoundsChance>
+			<healPermenantWounds>true</healPermenantWounds>
+			<healPermenantChance>0.1</healPermenantChance>
+			<allowScarRemoval>false</allowScarRemoval>
+			<scarRemovalChance>0.01</scarRemovalChance>
+			<regrowMissingParts>true</regrowMissingParts>
+			<regrowMissingChance>0.01</regrowMissingChance>
+			<useFood>true</useFood>
+			<useRest>false</useRest>
+			<onlyWhileSleeping>false</onlyWhileSleeping>
 		</li>
 	</comps>
 	<modExtensions>
@@ -888,8 +889,10 @@
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
 	<defName>OG_Alien_Grot</defName>
-	<label>Ork</label>
-	<description>The pinnacle of the orkoid species: A fully grown Ork.</description>
+	<label>Grot</label>
+	<description>Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations. Gretchins are quite low in the strict hierarchy of Ork society because of their small size (the lowest Orkoids being the Snotlings) and are often used for the dirtiest jobs like scavenging and being used as the football when the bigger Orks get bored.
+
+While they are not as aggressive as standard Orks, they enjoy fighting weaker opponents and are less likely to flee if they comfortably outnumber their opponents. If a Gretchin is particularly wealthy, he may purchase a second-hand, worn-down, low-tech gun. These guns are mainly to reassure the Gretchin that they have a chance of killing something, provided they remember which way to hold the gun.</description>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

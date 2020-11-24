@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using AlienRace;
 using AdeptusMechanicus.settings;
+using AdeptusMechanicus.ExtensionMethods;
 
 namespace AdeptusMechanicus
 {
@@ -42,6 +43,7 @@ namespace AdeptusMechanicus
         public bool spawnwild => Props.spawnwild;
         public float spawnChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
 
+        public float squigChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSquigChance : AMMod.Instance.settings.FungusSquigChance;
         public float snotlingChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
         public float grotChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
         public float orkChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
@@ -74,31 +76,56 @@ namespace AdeptusMechanicus
             }
         }
 
-        public List<Pair<PawnKindDef, float>> pairs
-        {
-            get
-            {
-                float animalschance = HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(Pawns.Count()) * Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor;
-                float chance = HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent) * Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor;
-                return new List<Pair<PawnKindDef, float>>()
-                {
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Squig, 1f * animalschance),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Snotling, snotlingChance * animalschance),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * chance),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance * chance)
-                };
-            }
-        }
-
-        protected IEnumerable<Pawn> Pawns
+        protected IEnumerable<Pawn> Squigs
         {
             get
             {
                 return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                       where p.RaceProps.Animal
+                       where p.isSquig()
                        select p;
             }
         }
+        protected IEnumerable<Pawn> Snots
+        {
+            get
+            {
+                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
+                       where p.isSnotling()
+                       select p;
+            }
+        }
+        protected IEnumerable<Pawn> Grots
+        {
+            get
+            {
+                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
+                       where p.isGrot()
+                       select p;
+            }
+        }
+        protected IEnumerable<Pawn> Orks
+        {
+            get
+            {
+                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
+                       where p.isOrk()
+                       select p;
+            }
+        }
+        public List<Pair<PawnKindDef, float>> pairs
+        {
+            get
+            {
+                return new List<Pair<PawnKindDef, float>>()
+                {
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Snotling, snotlingChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance * OrkoidFungualUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
+                };
+            }
+        }
+
         public override void PostDeSpawn(Map map)
         {
             if (canspawn)
@@ -108,7 +135,18 @@ namespace AdeptusMechanicus
                 Rand.PopState();
                 if (spawnRoll < (spawnChance*plant.Growth))
                 {
-                    pawnKindDef = pairs.RandomElementByWeight(x=> x.Second).First;
+                    string msg = string.Empty;
+                    StringBuilder builder = new StringBuilder();
+                    builder.AppendLine("Possible Spawns:");
+                    foreach (var item in pairs)
+                    {
+                        builder.Append(" "+item.First.LabelCap + " weighted at " + item.Second);
+                    }
+
+                    Pair<PawnKindDef, float> pair = pairs.RandomElementByWeight(x => x.Second);
+                    pawnKindDef = pair.First;
+                    builder.Append(" " + "Spawning " + pawnKindDef.LabelCap);
+                    Log.Message(builder.ToString());
                     faction = spawnwild ? null : Faction.OfPlayer;
                     generationContext = spawnwild ? PawnGenerationContext.NonPlayer : PawnGenerationContext.NonPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);

@@ -340,7 +340,7 @@
 				
 				<bodyAddons>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarR</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarR</path>
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<layerOffset>0.275</layerOffset>
@@ -383,7 +383,7 @@
 						</hiddenUnderApparelFor>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarL</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<layerOffset>0.275</layerOffset>
@@ -561,7 +561,7 @@
 		<graphicPaths>
 			<li>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
 			</li>
 		</graphicPaths>
 		<hairSettings>

@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <ThingDef Name="OrkoidPlantBase" Abstract="True">
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutPlant</shaderType>
+	</graphicData>
 	<category>Plant</category>
 	<thingClass>Plant</thingClass>
 	<altitudeLayer>LowPlant</altitudeLayer>
 	<useHitPoints>True</useHitPoints>
 	<statBases>
 		<Flammability>1</Flammability>
-	<MaxHitPoints>150</MaxHitPoints>
+		<MaxHitPoints>150</MaxHitPoints>
 		<Nutrition>0.80</Nutrition>
 	</statBases>
 	<pathCost>10</pathCost>
@@ -16,10 +20,6 @@
 	<neverMultiSelect>True</neverMultiSelect>
 	<drawerType>MapMeshOnly</drawerType>
 	<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
-	<graphicData>
-	<graphicClass>Graphic_Single</graphicClass>
-	<shaderType>CutoutPlant</shaderType>
-	</graphicData>
 	<ingestible>
 		<foodType>Plant</foodType>
 		<preferability>RawBad</preferability>
@@ -27,16 +27,16 @@
 	<plant>
 		<neverBlightable>true</neverBlightable>
 		<growMinGlow>0</growMinGlow>
-		<growOptimalGlow>0</growOptimalGlow>
-	<growDays>5</growDays>
+		<growOptimalGlow>1</growOptimalGlow>
+		<growDays>5</growDays>
 		<wildOrder>2</wildOrder>
 		<purpose>Misc</purpose>
-	<dieIfLeafless>false</dieIfLeafless>
-	<maxMeshCount>1</maxMeshCount>
-	<harvestTag>Standard</harvestTag>
-	<harvestYield>1</harvestYield>
-	<fertilityMin>0.7</fertilityMin>
-	<fertilitySensitivity>1.0</fertilitySensitivity>
+		<dieIfLeafless>false</dieIfLeafless>
+		<maxMeshCount>1</maxMeshCount>
+		<harvestTag>Standard</harvestTag>
+		<harvestYield>1</harvestYield>
+		<fertilityMin>0.7</fertilityMin>
+		<fertilitySensitivity>1.0</fertilitySensitivity>
 		<soundHarvesting>Harvest_Standard</soundHarvesting>
 		<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
 		<sowWork>170</sowWork>

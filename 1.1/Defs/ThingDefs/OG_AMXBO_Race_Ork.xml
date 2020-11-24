@@ -187,14 +187,16 @@
 		<graphicPaths>
 			<li>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 			</li>
 			<li>
 				<lifeStageDefs>
 					<li>OG_Lifestage_Ork_Whelp</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(0.8, 0.8)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
@@ -205,7 +207,8 @@
 					<li>OG_Lifestage_Ork_Runt</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.00, 1.00)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(1.00, 1.00)</customHeadDrawSize>
@@ -216,7 +219,8 @@
 					<li>OG_Lifestage_Ork_Adult</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.125, 1.125)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(1.00, 1.00)</customHeadDrawSize>
@@ -227,7 +231,8 @@
 					<li>OG_Lifestage_Ork_Nob</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.25, 1.25)</customDrawSize>
 				<customPortraitDrawSize>(1.25, 1.25)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
@@ -245,7 +250,8 @@
 					<li>OG_Lifestage_Ork_BigNob</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.3, 1.3)</customDrawSize>
 				<customPortraitDrawSize>(1.3, 1.3)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
@@ -263,7 +269,8 @@
 					<li>OG_Lifestage_Ork_Boss</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.35, 1.35)</customDrawSize>
 				<customPortraitDrawSize>(1.35, 1.35)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
@@ -281,7 +288,8 @@
 					<li>OG_Lifestage_Ork_WarBoss</li>
 				</lifeStageDefs>
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
+				<head>Things/Pawn/Humanlike/Ork/Head/</head>
+                <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.5, 1.5)</customDrawSize>
 				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
@@ -648,7 +656,8 @@
 			</plantList>
 			<!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
 			<buildingList>
-				<!--li>OG_Ork_TableMachining</li-->
+				<li>OGO_TableMachining</li>
+				<li>OGO_TableButcher</li>
 			</buildingList>
 		</raceRestriction>
 	</alienRace>

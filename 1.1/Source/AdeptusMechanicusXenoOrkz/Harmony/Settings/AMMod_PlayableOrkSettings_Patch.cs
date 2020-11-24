@@ -62,14 +62,39 @@ namespace AdeptusMechanicus.HarmonyInstance
                     settings.AllowOrkTek && settings.AllowOrkWeapons);
                 listing_Race.EndSection(listing_General);
                 Listing_Standard listing_FungalLabel = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
-                listing_FungalLabel.ColumnWidth *= 0.488f;
+                listing_FungalLabel.ColumnWidth *= 0.32f;
                 listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AMO_FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
                 listing_FungalLabel.NewColumn();
                 listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_CocoonOptions".Translate(), ref settings.CocoonSpawnChance, ref settings.CocoonSpawnChanceBuffer, 0f, 1f, "AMO_CocoonOptionsToolTip".Translate(), 0.75f, 0.25f);
+                listing_FungalLabel.NewColumn();
+                if (listing_FungalLabel.ButtonTextLine("Defaults"))
+                {
+                    settings.FungusSpawnChance = 0.05f;
+                    settings.FungusSpawnChanceBuffer = settings.FungusSpawnChance.ToString();
+                    settings.FungusSquigChance = 0.5f;
+                    settings.FungusSquigChanceBuffer = settings.FungusSquigChance.ToString();
+                    settings.FungusSnotChance = 0.35f;
+                    settings.FungusSnotChanceBuffer = settings.FungusSnotChance.ToString();
+                    settings.FungusGrotChance = 0.15f;
+                    settings.FungusGrotChanceBuffer = settings.FungusGrotChance.ToString();
+                    settings.FungusOrkChance = 0.075f;
+                    settings.FungusOrkChanceBuffer = settings.FungusOrkChance.ToString();
+
+                    settings.CocoonSpawnChance = 0.25f;
+                    settings.CocoonSpawnChanceBuffer = settings.CocoonSpawnChance.ToString();
+                    settings.CocoonSquigChance = 0.15f;
+                    settings.CocoonSquigChanceBuffer = settings.CocoonSquigChance.ToString();
+                    settings.CocoonSnotChance = 0.2f;
+                    settings.CocoonSnotChanceBuffer = settings.CocoonSnotChance.ToString();
+                    settings.CocoonGrotChance = 0.35f;
+                    settings.CocoonGrotChanceBuffer = settings.CocoonGrotChance.ToString();
+                    settings.CocoonOrkChance = 0.25f;
+                    settings.CocoonOrkChanceBuffer = settings.CocoonOrkChance.ToString();
+                }
                 listing_Race.EndSection(listing_FungalLabel);
 
                 Listing_Standard listing_Fungus = listing_Race.BeginSection(__instance.Length(setting, 4, lineheight, 0, 0), true);
-                listing_Fungus.ColumnWidth *= 0.488f;
+                listing_Fungus.ColumnWidth *= 0.32f;
                 listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
                 listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
             //    listing_Fungus.NewColumn();
@@ -81,7 +106,6 @@ namespace AdeptusMechanicus.HarmonyInstance
             //    listing_Fungus.NewColumn();
                 listing_Fungus.TextFieldNumericLabeled<float>("AMO_Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AMO_GrotToolTip".Translate(), 0.75f, 0.25f);
                 listing_Fungus.TextFieldNumericLabeled<float>("AMO_Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AMO_OrkToolTip".Translate(), 0.75f, 0.25f);
-
                 listing_Race.EndSection(listing_Fungus);
             }
             listing_Main.EndSection(listing_Race);

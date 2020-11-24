@@ -42,7 +42,7 @@
 				<bodyAddons>
 				<!--
 					<li>
-					<path>Things/Orks/HeadsBase/Ears/EarsGretchin</path>
+					<path>Things/Orks/Head/Ears/EarsGretchin</path>
 					<bodyPart>Head</bodyPart>
 					<inFrontOfBody>true</inFrontOfBody>
 					<drawnInBed>true</drawnInBed>
@@ -81,7 +81,7 @@
 					-->
 					
 					<li>
-					<path>Things/Pawn/Humanlike/Grot/HeadsBase/Ears/Average_Gretchin_EarR</path>
+					<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
 					<bodyPart>right ear</bodyPart>
 					<inFrontOfBody>true</inFrontOfBody>
 					<drawnInBed>true</drawnInBed>
@@ -118,7 +118,7 @@
 					</hiddenUnderApparelFor>
 					</li>
 					<li>
-					<path>Things/Pawn/Humanlike/Grot/HeadsBase/Ears/Average_Gretchin_EarL</path>
+					<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarL</path>
 					<bodyPart>left ear</bodyPart>
 					<inFrontOfBody>true</inFrontOfBody>
 					<drawnInBed>true</drawnInBed>
@@ -291,7 +291,7 @@
 		<graphicPaths>
 				<li>
 					<body>Things/Pawn/Humanlike/Grot/Bodies/</body>
-					<head>Things/Pawn/Humanlike/Grot/HeadsBase/</head>
+					<head>Things/Pawn/Humanlike/Grot/Head/</head>
 				</li>
 		</graphicPaths>
 		<hairSettings>

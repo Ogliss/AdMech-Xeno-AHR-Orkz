@@ -18,9 +18,18 @@ namespace RimWorld
 			}
 		}
 
-		// Token: 0x17000019 RID: 25
-		// (get) Token: 0x06000096 RID: 150 RVA: 0x00005638 File Offset: 0x00003838
-		public override PathEndMode PathEndMode
+        public override bool ShouldSkip(Pawn pawn, bool forced = false)
+        {
+            if (!pawn.RaceProps.Animal)
+            {
+				return true;
+            }
+            return base.ShouldSkip(pawn, forced);
+        }
+
+        // Token: 0x17000019 RID: 25
+        // (get) Token: 0x06000096 RID: 150 RVA: 0x00005638 File Offset: 0x00003838
+        public override PathEndMode PathEndMode
 		{
 			get
 			{

@@ -66,11 +66,11 @@
 	<label>Waaagh! banner</label>
 	<rotatable>true</rotatable>
 	<graphicData>
-		<texPath>Things/Building/Banner/Banner_Flag</texPath>
+		<texPath>Things/Building/Ork/Banner/Banner_Flag</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(3,3)</drawSize>
 	</graphicData>
-	<uiIconPath>Things/Building/Banner/Banner_Flag__Icon</uiIconPath>
+	<uiIconPath>Things/Building/Ork/Banner/Banner_Flag__Icon</uiIconPath>
   </ThingDef>
   
   <!--================================ High Flag Base ======================================-->
@@ -217,7 +217,7 @@
 	<description>A torso-sized piece of material sculpted into an artistic form.</description>
 	<graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
-		<texPath>Things/Building/Worship/Shrine</texPath>
+		<texPath>Things/Building/Ork/Worship/Shrine</texPath>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
 	</graphicData>

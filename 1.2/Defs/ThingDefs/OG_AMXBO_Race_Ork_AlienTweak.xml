@@ -42,7 +42,7 @@
 				<bodyAddons>
 					<!-- Eyes -->
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeR</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeR</path>
 						<bodyPart>right eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -85,11 +85,11 @@
 							<li>UpperHead</li>
 						</hiddenUnderApparelFor-->                
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeR_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeL</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeL</path>
 						<bodyPart>left eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -132,12 +132,12 @@
 							<li>UpperHead</li>
 						</hiddenUnderApparelFor-->     
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Eyes/EyeL_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeL_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 					<!-- Ears -->
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarR</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarR</path>
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -180,7 +180,7 @@
 						</hiddenUnderApparelFor>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarL</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -224,7 +224,7 @@
 					</li>
 					<!-- Nose -->
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Nose/Nose</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Nose/Nose</path>
 						<bodyPart>Nose</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -267,7 +267,7 @@
 					<!-- Teef -->
 					<!-- Male -->
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef</path>
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
@@ -309,7 +309,7 @@
 						</hiddenUnderApparelFor>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
 						<!--bodyPart>right tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -350,11 +350,11 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>        
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
 						<!--bodyPart>left tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -395,12 +395,12 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>       
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 					<!-- Hulk -->
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef</path>
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -443,7 +443,7 @@
 						</hiddenUnderApparelFor>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
 						<bodyPart>right tusk</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -485,11 +485,11 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>       
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangR_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL</path>
+						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
 						<bodyPart>left tusk</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
@@ -531,7 +531,7 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>       
 						<hediffGraphics>
-							<MissingBodyPart>Things/Pawn/Humanlike/Ork/HeadsBase/Teef/Teef_FangL_Missing</MissingBodyPart>
+							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
 				</bodyAddons>

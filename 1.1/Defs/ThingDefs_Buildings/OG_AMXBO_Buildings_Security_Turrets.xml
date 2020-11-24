@@ -206,7 +206,7 @@
 	<label>pintle-mounted storm bolter</label>
 	<description>A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/PintleMount_Base</texPath>
+		<texPath>Things/Building/Imperial/Security/PintleMount_Base</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(3,3)</drawSize>
 		<damageData>
@@ -217,7 +217,7 @@
 		<offset>(0,0,0)</offset>
 		</shadowData>
 	</graphicData>
-	<uiIconPath>Things/Buildings/Imperial/Security/PintleMount_StormBolter_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/PintleMount_StormBolter_Menu</uiIconPath>
 	<hasInteractionCell>True</hasInteractionCell>
 	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 	<rotatable>true</rotatable>
@@ -262,7 +262,7 @@
 	<label>pintle-mounted storm bolter</label>
 	<description>A simple automatic gun made to be mounted on a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/PintleMount_StormBolter_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/PintleMount_StormBolter_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
@@ -317,7 +317,7 @@
 	<description>A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
 	<thingClass>Building_TurretGun</thingClass>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/PintleMount_Base</texPath>
+		<texPath>Things/Building/Imperial/Security/PintleMount_Base</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(3,3)</drawSize>
 		<damageData>
@@ -328,7 +328,7 @@
 		<offset>(0,0,0)</offset>
 		</shadowData>
 	</graphicData>
-	<uiIconPath>Things/Buildings/Imperial/Security/PintleMount_HeavyBolter_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/PintleMount_HeavyBolter_Menu</uiIconPath>
 	<hasInteractionCell>True</hasInteractionCell>
 	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 	<rotatable>true</rotatable>
@@ -369,7 +369,7 @@
 	<label>pintle-mounted heavy bolter</label>
 	<description>A simple automatic gun made to be mounted on a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/PintleMount_HeavyBolter_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/PintleMount_HeavyBolter_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
@@ -619,7 +619,7 @@
 		<offset>(0,0,-0.05)</offset>
 		</shadowData>
 	</graphicData>	
-	<uiIconPath>Things/Buildings/Imperial/Security/TurretMount_QuadHeavyStubber_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/TurretMount_QuadHeavyStubber_Menu</uiIconPath>
 	<statBases>
 		<AimingAccuracy MayRequire="CETeam.CombatExtended">0.25</AimingAccuracy>
 		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -673,7 +673,7 @@
 	<label>quad heavy stubber</label>
 	<description>A self-loading quad heavy stubber designed to attach to a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/TurretMount_QuadHeavyStubber_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/TurretMount_QuadHeavyStubber_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1,1)</drawSize>
 	</graphicData>
@@ -734,7 +734,7 @@
 		<offset>(0,0,-0.05)</offset>
 		</shadowData>
 	</graphicData>	
-	<uiIconPath>Things/Buildings/Imperial/Security/TurretMount_Autocannon_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/TurretMount_Autocannon_Menu</uiIconPath>
 	<statBases>
 		<AimingAccuracy MayRequire="CETeam.CombatExtended">0.25</AimingAccuracy>
 		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -788,7 +788,7 @@
 	<label>autocannon</label>
 	<description>A self-loading large-bore cannon designed to attach to a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/TurretMount_Autocannon_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/TurretMount_Autocannon_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<comps>		
@@ -829,7 +829,7 @@
 	<defName>OGO_Turret_Lascannon_Auto</defName>
 	<label>lascannon turret</label>
 	<description>A heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged.</description> 
-	<uiIconPath>Things/Buildings/Imperial/Security/TurretMount_Lascannon_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/TurretMount_Lascannon_Menu</uiIconPath>
 	<statBases>
 		<AimingAccuracy MayRequire="CETeam.CombatExtended">0.5</AimingAccuracy>
 		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -868,7 +868,7 @@
 	<label>lascannon</label>
 	<description>A self-loading large-bore cannon designed to attach to a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/TurretMount_Lascannon_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/TurretMount_Lascannon_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
@@ -903,7 +903,7 @@
 	<defName>OGO_Turret_LascannonDual_Auto</defName>
 	<label>twin-linked lascannon turret</label>
 	<description>A heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged.</description>
-	<uiIconPath>Things/Buildings/Imperial/Security/TurretMount_LascannonDual_Menu</uiIconPath>
+	<uiIconPath>Things/Building/Imperial/Security/TurretMount_LascannonDual_Menu</uiIconPath>
 	<statBases>
 		<AimingAccuracy MayRequire="CETeam.CombatExtended">0.5</AimingAccuracy>
 		<ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
@@ -942,7 +942,7 @@
 	<label>lascannon</label>
 	<description>A self-loading large-bore cannon designed to attach to a turret.</description>
 	<graphicData>
-		<texPath>Things/Buildings/Imperial/Security/TurretMount_LascannonDual_Top</texPath>
+		<texPath>Things/Building/Imperial/Security/TurretMount_LascannonDual_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
