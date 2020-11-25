@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
     <Compile Include="Utilities\Class1.cs" />
+    <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />
     <None Include="Harmony\Patches\QuestManager_Notify_PlantHarvested_Orkoid_Patch.cs.bak" />
     <Compile Include="Harmony\Patches\TraitSet_DegreeOfTrait_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\TraitSet_GetTrait_Orkoid_Patch.cs" />

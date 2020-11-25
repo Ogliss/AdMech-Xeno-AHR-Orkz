@@ -126,21 +126,22 @@ namespace AdeptusMechanicus
             }
         }
 
-        public override void PostDeSpawn(Map map)
+        public void SpawnPawns(Pawn harvester, Plant plant)
         {
+
             if (canspawn)
             {
                 Rand.PushState();
                 var spawnRoll = Rand.Value;
                 Rand.PopState();
-                if (spawnRoll < (spawnChance*plant.Growth))
+                if (spawnRoll < (spawnChance * plant.Growth))
                 {
                     string msg = string.Empty;
                     StringBuilder builder = new StringBuilder();
                     builder.AppendLine("Possible Spawns:");
                     foreach (var item in pairs)
                     {
-                        builder.Append(" "+item.First.LabelCap + " weighted at " + item.Second);
+                        builder.Append(" " + item.First.LabelCap + " weighted at " + item.Second);
                     }
 
                     Pair<PawnKindDef, float> pair = pairs.RandomElementByWeight(x => x.Second);
@@ -148,8 +149,7 @@ namespace AdeptusMechanicus
                     builder.Append(" " + "Spawning " + pawnKindDef.LabelCap);
                     Log.Message(builder.ToString());
                     faction = spawnwild ? null : Faction.OfPlayer;
-                    generationContext = spawnwild ? PawnGenerationContext.NonPlayer : PawnGenerationContext.NonPlayer;
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
 
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
 
@@ -184,7 +184,7 @@ namespace AdeptusMechanicus
                         }
                         pawn.story.bodyType = pawn.story.childhood.BodyTypeFor(pawn.gender);
                     }
-                    if (Fertility<1f)
+                    if (Fertility < 1f)
                     {
                         foreach (Need need in pawn.needs.AllNeeds)
                         {
@@ -198,12 +198,16 @@ namespace AdeptusMechanicus
                     {
                         foreach (Need need in pawn.needs.AllNeeds)
                         {
-                            need.CurLevel = Fertility- 1f;
+                            need.CurLevel = Fertility - 1f;
                         }
                     }
-                    GenSpawn.Spawn(pawn, base.parent.Position, map, 0);
+                    GenSpawn.Spawn(pawn, base.parent.Position, base.parent.Map, 0);
                 }
             }
+        }
+
+        public override void PostDeSpawn(Map map)
+        {
             base.PostDeSpawn(map);
         }
 

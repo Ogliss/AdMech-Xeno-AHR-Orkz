@@ -29,12 +29,12 @@
 </IncidentDef>
 
 <IncidentDef>
-	<defName>OG_Space_Hulk_Part_Crash</defName>
+	<defName>OG_SpaceHulk_PartCrash</defName>
 	<label>Space hulk part impact</label>
 	<targetTags>
 		<li>Map_PlayerHome</li>
 	</targetTags>
-	<workerClass>IncidentWorker_CrashedShip</workerClass>
+	<workerClass>CrashedShipsExtension.IncidentWorker_CrashedShip</workerClass>
 	<letterLabel>Space hulk part Impact</letterLabel>
 	<letterText>A large piece of an ancient Space hulk has crashed nearby.\n\nIt's mysterious influence will kill all plants in an expanding circle around itself.\n\nDestroy it as soon as possible. But beware - it will probably defend itself.</letterText>
 	<letterDef>ThreatSmall</letterDef>

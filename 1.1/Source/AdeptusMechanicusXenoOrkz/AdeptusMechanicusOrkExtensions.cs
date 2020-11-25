@@ -85,6 +85,24 @@ namespace AdeptusMechanicus.ExtensionMethods
             return pawn.defName.Contains("OG_") && pawn.defName.Contains("Snotling");
         }
 
+
+
+        public static bool isOrkoidFungus(this Plant plant)
+        {
+            return plant.def == OGOrkThingDefOf.OG_Plant_Orkoid_Fungus || plant.def == OGOrkThingDefOf.OG_Plant_Orkoid_Cocoon;
+        }
+
+        public static bool isOrkoidFungus(this Thing thing)
+        {
+            return thing.def == OGOrkThingDefOf.OG_Plant_Orkoid_Fungus || thing.def == OGOrkThingDefOf.OG_Plant_Orkoid_Cocoon;
+        }
+
+        public static bool isOrkoidFungus(this ThingDef def)
+        {
+            return def == OGOrkThingDefOf.OG_Plant_Orkoid_Fungus || def == OGOrkThingDefOf.OG_Plant_Orkoid_Cocoon;
+        }
+
+
     }
 
 }

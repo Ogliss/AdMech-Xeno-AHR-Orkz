@@ -32,7 +32,7 @@
   </ThingDef>
 
   <ThingDef ParentName="OG_Ork_SteleBase">
-	<defName>SteleLarge</defName>
+	<defName>OGO_SteleLarge</defName>
 	<label>large stele</label>
 	<description>A tall, thick slab with engravings on the sides. Orkz use these to memorialize individuals, battles, and other important events.</description>
 	<size>(2,2)</size>
@@ -48,9 +48,9 @@
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	<graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
-		<texPath>Things/Building/Ork/Worship/Shrine</texPath>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(4,4)</drawSize>
+		<texPath>Things/Building/Ork/Misc/Stele</texPath>
+		<!--shaderType>CutoutComplex</shaderType-->
+		<drawSize>(3,3)</drawSize>
 		<drawOffset>(0,0,0.05)</drawOffset>
 		<shadowData>
 			<volume>(1.5, 0.6, 1.5)</volume>
