@@ -30,14 +30,13 @@
 		<li>ClassicStartTechprints</li>
 	</startingTechprintsResearchTags>
 	<hairTags>
-		<li>OrkHair</li>
-		<li>GrotHair</li>
+		<li>Tribal</li>
+		<li>Raider</li>
 	</hairTags>
 	<apparelStuffFilter>
 		<thingDefs>
-		<li>Leather_Plain</li>
+		<li>Steel</li>
 		<li>Leather_Squig</li>
-		<li>Leather_Human</li>
 		</thingDefs>
 	</apparelStuffFilter>
 	<colorSpectrum>
@@ -66,6 +65,13 @@
 
 <FactionDef ParentName="OG_Ork_PlayerFactionBase">
 	<defName>OG_Ork_PlayerColony</defName>
+	<modExtensions>
+		<li Class="AdeptusMechanicus.FactionDefExtension">
+			<RefugeeFactions>
+				<li>OG_Ork_FeralRefugee_Faction</li>
+			</RefugeeFactions>
+		</li>
+	</modExtensions>
 </FactionDef>
 
 <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
@@ -133,6 +139,13 @@
 	
 <FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
 	<defName>OG_Ork_PlayerTribe</defName>
+	<modExtensions>
+		<li Class="AdeptusMechanicus.FactionDefExtension">
+			<RefugeeFactions>
+				<li>OG_Ork_FeralRefugee_Faction</li>
+			</RefugeeFactions>
+		</li>
+	</modExtensions>
 </FactionDef>
 
 <!--

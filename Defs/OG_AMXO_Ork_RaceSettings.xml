@@ -15,6 +15,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Grot</li>
 					<li>Colonist_OG_Grot</li>
+					<li>OG_Refugee_Grot</li>
 				</kindDefs>
 				<chance>40.0</chance>
 			</li>
@@ -22,7 +23,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Boy</li>
 					<li>Colonist_OG_Ork_Boy</li>
-					<li>OG_Refugee_Ork</li>
+					<li>OG_Refugee_Ork_Boy</li>
 				</kindDefs>
 				<chance>30.0</chance>
 			</li>
@@ -30,6 +31,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Nob</li>
 					<li>Colonist_OG_Ork_Nob</li>
+					<li>OG_Refugee_Ork_Nob</li>
 				</kindDefs>
 				<chance>20.0</chance>
 			</li>
@@ -37,7 +39,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Warboss</li>
 					<li>Colonist_OG_Ork_Warboss</li>
-					<li>Colonist_OG_Ork_Warboss</li>
+					<li>OG_Refugee_Ork_Boss</li>
 				</kindDefs>
 				<chance>10.0</chance>
 			</li>
@@ -45,6 +47,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Weird_Boy</li>
 					<li>Colonist_OG_Ork_Weird_Boy</li>
+					<li>OG_Refugee_Ork_Boy_Weird</li>
 				</kindDefs>
 				<chance>5.0</chance>
 			</li>
@@ -52,6 +55,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Weird_Nob</li>
 					<li>Colonist_OG_Ork_Weird_Nob</li>
+					<li>OG_Refugee_Ork_Nob_Weird</li>
 				</kindDefs>
 				<chance>1.0</chance>
 			</li>
@@ -59,6 +63,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Weird_Warboss</li>
 					<li>Colonist_OG_Ork_Weird_Warboss</li>
+					<li>OG_Refugee_Ork_Boss_Weird</li>
 				</kindDefs>
 				<chance>0.10</chance>
 			</li>
@@ -68,6 +73,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Grot</li>
 					<li>Colonist_OG_Grot</li>
+					<li>OG_Refugee_Grot</li>
 				</kindDefs>
 				<chance>40.0</chance>
 			</li>
@@ -75,6 +81,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Boy</li>
 					<li>Colonist_OG_Ork_Boy</li>
+					<li>OG_Refugee_Ork_Boy</li>
 				</kindDefs>
 				<chance>30.0</chance>
 			</li>
@@ -82,6 +89,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Nob</li>
 					<li>Colonist_OG_Ork_Nob</li>
+					<li>OG_Refugee_Ork_Nob</li>
 				</kindDefs>
 				<chance>20.0</chance>
 			</li>
@@ -89,6 +97,7 @@
 				<kindDefs>
 					<li>Tribesperson_OG_Ork_Warboss</li>
 					<li>Colonist_OG_Ork_Warboss</li>
+					<li>OG_Refugee_Ork_Boss</li>
 				</kindDefs>
 				<chance>10.0</chance>
 			</li>

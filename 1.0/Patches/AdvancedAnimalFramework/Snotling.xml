@@ -556,7 +556,7 @@
 		</value>
 	</li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "OG_Ork_Snotling"]/race</xpath>
+		<xpath>/Defs/ThingDef[defName = "OG_Snotling"]/race</xpath>
 		<value>	
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
@@ -565,7 +565,7 @@
 	</li>
 	
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "OG_Ork_Snotling"]</xpath>
+		<xpath>/Defs/ThingDef[defName = "OG_Snotling"]</xpath>
 		<value>	
 	<recipes>
 		<li>InstallArchotechEye</li>

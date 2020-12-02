@@ -28,6 +28,22 @@ namespace AdeptusMechanicus.HarmonyInstance
             {
                 CodeInstruction instruction = instructionsList[i];
                 //    Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+
+
+                if (i > 1 && i < instructionsList.Count)
+                {
+                    if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(ThingMaker), name: nameof(ThingMaker.MakeThing), parameters: new[] { typeof(ThingDef), typeof(ThingDef) })))
+                    {
+                        Log.Message("Boss, wez found ThingMaker.MakeThing!");
+                        Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                        
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
+                        instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvested"));
+                        
+
+                    }
+                }
                 yield return instruction;
                 /*
                 if (i > 1 && i + 1 < instructionsList.Count)
@@ -38,7 +54,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         Log.Message("Boss, wez found it!");
                         Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                     }
-                    if (instructionsList[index: i - 1].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(Vector3), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
+                    if (instructionsList[index: i - 1].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
                     {
                         Log.Message("Boss, wez found it!");
                         Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
@@ -56,11 +72,73 @@ namespace AdeptusMechanicus.HarmonyInstance
                         yield return new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusSpawner"));
 
                     }
+                    if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
+                    {
+                        Log.Message("Boss, wez found GenPlace.TryPlaceThing!");
+                        Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    }
                 }
             }
 
         }
         
+        public static Thing FungusHarvested( ThingDef harvested, ThingDef stuff, Pawn pawn, Plant plant)
+        {
+
+            if (pawn == null)
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: pawn is null");
+            }
+            else
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: pawn is " + pawn);
+            }
+            if (plant == null)
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: plant is null");
+            }
+            else
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: plant is " + plant);
+            }
+            if (harvested == null)
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: harvested is null");
+            }
+            else
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: harvested is " + harvested);
+            }
+            if (stuff == null)
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: stuff is null");
+            }
+            else
+            {
+                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: stuff is " + stuff);
+            }
+            Log.Message("We'ez tryin to arvest " + plant.LabelCap + " boss");
+            OrkoidFungus fungus = plant as OrkoidFungus;
+            Thing thing;
+            if (fungus == null)
+            {
+                thing = ThingMaker.MakeThing(plant.def.plant.harvestedThingDef);
+                Log.Message("We'ez arvestin " + plant.LabelCap + " boss but i dont fink its fungus");
+            }
+            else
+            {
+                ThingDef harvestedThingDef = plant.def.plant.harvestedThingDef;
+                Log.Message("We'ez arvestin fungus boss");
+                Rand.PushState();
+
+                Rand.PopState();
+                thing = ThingMaker.MakeThing(harvestedThingDef);
+            }
+
+            return thing;
+        }
+
+
         public static void FungusSpawner(Pawn pawn, Plant plant)
         {
             return;

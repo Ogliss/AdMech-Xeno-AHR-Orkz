@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  <LifeStageDef Name="OG_SquigBaby">
+    <defName>OG_SquigBaby</defName>
+    <label>baby</label>
+    <voxPitch>1.6</voxPitch>
+    <voxVolume>0.8</voxVolume>
+    <bodySizeFactor>0.2</bodySizeFactor>
+    <foodMaxFactor>2</foodMaxFactor>
+    <healthScaleFactor>0.25</healthScaleFactor>
+    <hungerRateFactor>0.4</hungerRateFactor>
+    <marketValueFactor>0.4</marketValueFactor>
+    <meleeDamageFactor>0.5</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.5</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef ParentName="OG_SquigBaby">
+    <defName>OG_SquigBabyTiny</defName>
+    <bodySizeFactor>0.1</bodySizeFactor>
+    <foodMaxFactor>4</foodMaxFactor>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>OG_SquigJuvenile</defName>
+    <label>juvenile</label>
+    <voxPitch>1.2</voxPitch>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <foodMaxFactor>1.5</foodMaxFactor>
+    <healthScaleFactor>0.6</healthScaleFactor>
+    <hungerRateFactor>0.75</hungerRateFactor>
+    <marketValueFactor>0.75</marketValueFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.9</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef Name="OG_SquigAdult">
+    <defName>OG_SquigAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="OG_SquigAdult">
+    <defName>OG_SquigAdultBig</defName>
+    <label>big</label>
+    <bodySizeFactor>1.25</bodySizeFactor>
+    <foodMaxFactor>1.75</foodMaxFactor>
+    <healthScaleFactor>1.25</healthScaleFactor>
+    <hungerRateFactor>1.1</hungerRateFactor>
+    <marketValueFactor>1.25</marketValueFactor>
+    <meleeDamageFactor>1.25</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1.1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="OG_SquigAdult">
+    <defName>OG_SquigAdultMassive</defName>
+    <label>massive</label>
+    <bodySizeFactor>1.75</bodySizeFactor>
+    <foodMaxFactor>2.5</foodMaxFactor>
+    <healthScaleFactor>1.75</healthScaleFactor>
+    <hungerRateFactor>1.35</hungerRateFactor>
+    <marketValueFactor>1.25</marketValueFactor>
+    <meleeDamageFactor>1.25</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1.2</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef ParentName="OG_SquigAdult">
+    <defName>OG_SquigAdultColossal</defName>
+    <label>colossal</label>
+    <bodySizeFactor>3.25</bodySizeFactor>
+    <foodMaxFactor>1.75</foodMaxFactor>
+    <healthScaleFactor>4.5</healthScaleFactor>
+    <hungerRateFactor>2.5</hungerRateFactor>
+    <marketValueFactor>5.5</marketValueFactor>
+    <meleeDamageFactor>4.5</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>1.3</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+</Defs>

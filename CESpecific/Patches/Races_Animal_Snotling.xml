@@ -5,7 +5,7 @@
 		<!--success>Always</success-->
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="OG_Ork_Snotling"]/tools</xpath>
+				<xpath>Defs/ThingDef[defName="OG_Snotling"]/tools</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">

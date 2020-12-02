@@ -155,7 +155,7 @@ namespace AnimalJobs
 									bool flag10 = prioritized2;
 									if (flag10)
 									{
-										bool flag11 = !intVec.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, intVec, false);
+										bool flag11 = !intVec.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, intVec, false) && pawn.CanReach(intVec, PathEndMode.Touch, Danger.None);
 										if (flag11)
 										{
 											float priority = scanner.GetPriority(pawn, intVec);

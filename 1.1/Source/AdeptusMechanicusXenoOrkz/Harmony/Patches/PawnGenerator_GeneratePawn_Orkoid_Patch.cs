@@ -34,7 +34,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPostfix]
         public static void Post_GeneratePawn(ref Pawn __result)
         {
-            if (__result!=null)
+            if (__result != null && __result.isOrkoid())
             {
                 if (__result.story == null)
                 {
@@ -59,7 +59,6 @@ namespace AdeptusMechanicus.HarmonyInstance
                         }
                         if (boss)
                         {
-
                             __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, 2));
                         }
                         else if (nob)

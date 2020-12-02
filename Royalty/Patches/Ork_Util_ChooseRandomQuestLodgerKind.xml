@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid Weirdboy Meditation Focus Link -->
+	<Operation Class="PatchOperationSequence">
+	<!--success>Always</success-->
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+				<value>
+					<!--li>
+						<factionDef>EmpireOrk</factionDef>
+						<pawnKinds>
+						  <li>Empire_Common_Lodger</li>
+						</pawnKinds>
+					</li-->
+					<li>
+						<categoryTag>OutlanderOrk</categoryTag>
+						<pawnKinds>
+						  <li>OG_Ork_Boy_Runt</li>
+						  <li>Slave_OG_Grot</li>
+						  <li>OG_Ork_Warboss</li>
+						  <li>Slave_OG_Ork</li>
+						  <li>OG_Refugee_Ork_Boy</li>
+						  <li>OG_Refugee_Ork_Nob</li>
+						  <li>OG_Refugee_Ork_Boss</li>
+						  <li>OG_Refugee_Ork_Boy_Weird</li>
+						  <li>OG_Refugee_Ork_Nob_Weird</li>
+						  <li>OG_Refugee_Ork_Boss_Weird</li>
+						</pawnKinds>
+					</li>
+					<li>
+						<categoryTag>TribalOrk</categoryTag>
+						<pawnKinds>
+						  <li>OG_Ork_Feral_Boy_Runt</li>
+						  <li>OG_Ork_Feral_Boy_Choppa</li>
+						  <li>OG_Ork_Feral_Boy_Shoota</li>
+						  <li>Slave_OG_Grot_Feral</li>
+						  <li>Slave_OG_Ork_Feral</li>
+						</pawnKinds>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+				<value>
+					<!--li>
+						<factionDef>EmpireOrk</factionDef>
+						<pawnKinds>
+						  <li>Empire_Common_Lodger</li>
+						</pawnKinds>
+					</li-->
+					<li>
+						<categoryTag>OutlanderOrk</categoryTag>
+						<pawnKinds>
+						  <li>OG_Ork_Boy_Runt</li>
+						  <li>OG_Ork_Boy_Choppa</li>
+						  <li>OG_Ork_Boy_Slugga</li>
+						  <li>OG_Ork_Boy_Shoota</li>
+						  <li>OG_Ork_Eavy_Boy_Choppa</li>
+						  <li>OG_Ork_Eavy_Boy_Slugga</li>
+						  <li>OG_Ork_Eavy_Boy_Shoota</li>
+						</pawnKinds>
+					</li>
+					<li>
+						<categoryTag>TribalOrk</categoryTag>
+						<pawnKinds>
+						  <li>OG_Ork_Feral_Boy_Runt</li>
+						  <li>OG_Ork_Feral_Boy_Choppa</li>
+						  <li>OG_Ork_Feral_Boy_Shoota</li>
+						</pawnKinds>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/QuestScriptDef[defName="Hospitality_Animals"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetPawnKind"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/QuestScriptDef[defName="Hospitality_Animals"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetPawnKind"]</xpath>
+					<value>
+						<li Class="QuestNode_IsSet">
+						  <name>asker</name>
+						  <node Class="QuestNode_GetRandomPawnKindForFaction">
+							<factionOf>$asker</factionOf>
+							<storeAs>lodgersPawnKind</storeAs>
+							<choices>
+								<li>
+									<categoryTag>OutlanderOrk</categoryTag>
+									<pawnKinds>
+									  <li>OG_Squig</li>
+									  <li>OG_Snotling</li>
+									</pawnKinds>
+								</li>
+								<li>
+									<categoryTag>TribalOrk</categoryTag>
+									<pawnKinds>
+									  <li>OG_Squig</li>
+									  <li>OG_Snotling</li>
+									</pawnKinds>
+								</li>              
+							</choices>
+						  </node>
+						  <elseNode Class="QuestNode_GetPawnKind">
+							<storeAs>lodgersPawnKind</storeAs>
+							<options>
+							  <li>
+								  <anyAnimal>true</anyAnimal>
+								  <onlyAllowedFleshType>Normal</onlyAllowedFleshType>
+								  <weight>1</weight>
+							  </li>
+							</options>
+						  </elseNode>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

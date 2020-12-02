@@ -2,7 +2,7 @@
 <Defs>
 <!-- ========================== Snotling ================================= -->
 <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
-	<defName>OG_Ork_Snotling</defName>
+	<defName>OG_Snotling</defName>
 	<label>snotling</label>
 	<description>A Snotling is an Orkoid, the smaller cousin of Gretchins and Orks. Snotlings are often used by their larger counterparts as cannon fodder, food or even ammunition in certain cases. Snotlings represent the lowest rung of Orkoid society and are bullied by all other Greenskins. Snotlings often wield mushrooms or sticks into battle.\n\nA Snotling appears to be a miniaturised Gretchin. It stands roughly half a metre tall and has the same gangly appearance as a tiny Grot. Because of their small stature in the Orks' "might makes right" "kultur," they occupy what is perhaps the lowest rung of Ork society. While the Gretchin act as servants and maintain other secondary positions in Ork society, Snotlings will serve sometimes as "pets," but more often they are placed in Orkish agricultural and animal husbandry roles due to their affinity with the fungus and Squigs that feed most Ork settlements. Snotlings' affinity with Squigs usually ensures that only a few dozen Snotlings are eaten by their "livestock" on any given day. Supervised and trained by Runtherdz, Snotlings will cultivate the fungus preferred by Greenskins to provide Orks with food, drink, and medicine.</description>
 	<statBases>
@@ -115,9 +115,9 @@
 </ThingDef>
 
 <PawnKindDef ParentName="AnimalKindBase">
-	<defName>OG_Ork_Snotling</defName>
+	<defName>OG_Snotling</defName>
 	<label>snotling</label>
-	<race>OG_Ork_Snotling</race>
+	<race>OG_Snotling</race>
 	<combatPower>60</combatPower>
 	<ecoSystemWeight>0.5</ecoSystemWeight>
 	<lifeStages>

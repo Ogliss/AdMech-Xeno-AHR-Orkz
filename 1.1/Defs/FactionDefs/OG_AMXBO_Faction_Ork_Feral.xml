@@ -3,6 +3,7 @@
 
 <FactionDef Name="OG_Ork_Feral_Faction_Base" Abstract="True">
 	<label>feral ork warband</label>
+    <categoryTag>TribalOrk</categoryTag>
 	<description>Feral Orks or Wildboyz are Orks who arise on a world that a spaceborne Ork WAAAGH! has already assaulted, though they possess only pre-industrial levels of technology and culture. Feral Orks appear after a WAAAGH! has already infested a planet and then moved on to seek new battles elsewhere. Usually Feral Orks are a new generation of Orks grown from the fungal reproductive spores released by spaceborne Orks and left behind on the world their spaceborne counterparts have abandoned.\n\nFeral Orks can also be derived from an original population of spaceborne Orks stranded on a world who effectively devolve back to a feral state, losing their access to more advanced technology. The Feral Orks, while less advanced than their fellow Greenskins, do have access to a variety of wargear in their armoury. However, much of it works due to the strange effects it has on the mind and behaviour of the Ork, rather than actually producing a physical effect upon the enemy.</description>
 	<pawnSingular>feral ork</pawnSingular>
 	<pawnsPlural>feral orkz</pawnsPlural>
@@ -25,14 +26,11 @@
 		<li>
 		<categories>
 			<li>Tribal</li>
-			<li>Ork_Boss</li>
-			<li>Ork_Nob</li>
-			<li>Ork_Standard</li>
-			<li>Grot_Gretchin</li>
 		</categories>
 		</li>
 	</backstoryFilters>
 	<hairTags>
+			<li>Tribal</li>
 			<li>Civil</li>
 			<li>Raider</li>
 			<li>Rural</li>
@@ -42,15 +40,16 @@
 		<max>0</max>
 	</naturalColonyGoodwill>
 	<visitorTraderKinds>
-		<li>Visitor_Ork_Standard</li>
+		<li>Visitor_Ork_Feral_Standard</li>
 	</visitorTraderKinds>
- <caravanTraderKinds>
-		<li>Caravan_Outlander_BulkGoods</li>
-		<li>Caravan_Outlander_CombatSupplier</li>
-		<li>Caravan_Outlander_Exotic</li>
+	<caravanTraderKinds>
+		<li>Caravan_Ork_Feral_BulkGoods</li>
+		<li>Caravan_Ork_Feral_CombatSupplier</li>
+		<li>Caravan_Ork_Feral_Exotic</li>
+		<li>Caravan_Ork_Feral_PirateMerchant</li>
 	</caravanTraderKinds>
 	<baseTraderKinds>
-		<li>Base_Outlander_Standard</li>
+		<li>Base_Ork_Feral_Standard</li>
 	</baseTraderKinds>
 	<allowedArrivalTemperatureRange>
 		<min>-50</min>
@@ -162,6 +161,11 @@
 		<li>(0.45, 0.05, 0.05)</li>
 		<li>(0.80, 0.25, 0.05)</li>
 	</colorSpectrum>
+	<modExtensions>
+		<li Class="AdeptusMechanicus.FactionDefRaidSoundExtension">
+			<raidSound>LetterArrive_OG_Ork_Raid_Alert_A</raidSound>
+		</li>
+	</modExtensions>
 </FactionDef>
 
 <FactionDef ParentName="OG_Ork_Feral_Faction_Base">

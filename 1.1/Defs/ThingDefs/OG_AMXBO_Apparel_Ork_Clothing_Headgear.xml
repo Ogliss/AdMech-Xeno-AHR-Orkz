@@ -8,7 +8,7 @@
 	<label>slava cowl</label>
 	<description>A cowl worn by ork Runtherds and grot tenders. provides minor protection from the elements and weaponry</description>
 	<graphicData>
-			<texPath>Things/Item/Apparel/Ork/Headgear/SlavaCowl/SlavaCowl__Icon</texPath>
+		<texPath>Things/Item/Apparel/Ork/Headgear/SlavaCowl/SlavaCowl__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>Cutout</shaderType>
 	</graphicData>
@@ -20,8 +20,8 @@
 	<statBases>
 		<MaxHitPoints>150</MaxHitPoints>
 		<MarketValue>300</MarketValue>
-			<WorkToMake>1800</WorkToMake>
-			<Mass>0.14</Mass>
+		<WorkToMake>1800</WorkToMake>
+		<Mass>0.14</Mass>
 		<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>

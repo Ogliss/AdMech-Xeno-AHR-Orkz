@@ -122,9 +122,6 @@
 			</subNodes>
 		</li>
 
-		<!-- Lay eggs you need to -->
-		<li Class="JobGiver_LayEgg" />
-
 		<!-- Tame animal -->
 		<li Class="ThinkNode_ConditionalOfPlayerFaction">
 			<subNodes>
@@ -196,18 +193,6 @@
 		<li Class="ThinkNode_ConditionalHasFaction">
 			<subNodes>
 				
-				<!-- Try to mate -->
-				<li Class="ThinkNode_ChancePerHour_Mate">
-				<subNodes>
-					<li Class="ThinkNode_Tagger">
-						<tagToGive>SatisfyingNeeds</tagToGive>
-						<subNodes>
-						<li Class="JobGiver_Mate" />
-						</subNodes>
-					</li>
-				</subNodes>
-				</li>
-
 				<!-- Nuzzle randoms -->
 				<li Class="ThinkNode_ChancePerHour_Nuzzle">
 				<subNodes>

@@ -32,8 +32,40 @@ namespace AdeptusMechanicus.HarmonyInstance
             {
                 Log.Warning("Patch method null");
             }
-            
             harmony.Patch(method, transpiler: new HarmonyMethod(method2));
+
+            MethodInfo method3 = AccessTools.TypeByName("RBB_Code.JobDriver_CatchFish").GetMethod("MakeNewToils", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo method4 = typeof(JobDriver_CatchFish_MakeNewToils_Snotling_Patch).GetMethod("Prefix");
+            bool flag3 = method3 == null;
+            if (flag3)
+            {
+                Log.Warning("RBB_Code.JobDriver_CatchFish method null");
+            }
+            else
+            {
+                if (method4 == null)
+                {
+                    Log.Warning("JobDriver_CatchFish_MakeNewToils_Snotling_Patch Prefix method null");
+                }
+                else
+                    harmony.Patch(method3, prefix: new HarmonyMethod(method4));
+            }
+            MethodInfo method5 = AccessTools.TypeByName("Quarry.WorkGiver_MineQuarry").GetMethod("JobOnThing");
+            MethodInfo method6 = typeof(WorkGiver_MineQuarry_JobOnThing_Snotling_Patch).GetMethod("Prefix");
+            bool flag4 = method5 == null;
+            if (flag4)
+            {
+                Log.Warning("Quarry.WorkGiver_MineQuarry method null");
+            }
+            else
+            {
+                if (method4 == null)
+                {
+                    Log.Warning("WorkGiver_MineQuarry_JobOnThing_Snotling_Patch Prefix method null");
+                }
+                else
+                    harmony.Patch(method5, prefix: new HarmonyMethod(method6));
+            }
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Type pawn_NativeVerbs = typeof(Pawn_NativeVerbs);
             if (AdeptusIntergrationUtility.enabled_SOS2)

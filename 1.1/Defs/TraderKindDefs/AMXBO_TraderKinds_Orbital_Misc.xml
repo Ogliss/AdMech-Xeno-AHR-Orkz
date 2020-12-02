@@ -201,11 +201,11 @@
         <countRange>10~14</countRange>
       </li-->
       <li Class="StockGenerator_WeaponsRanged">
-        <weaponTag>OGORanged</weaponTag>
+        <weaponTag>OrkRanged</weaponTag>
         <countRange>10~14</countRange>
       </li>
       <li Class="StockGenerator_WeaponsMelee">
-        <weaponTag>OGOMelee</weaponTag>
+        <weaponTag>OrkMelee</weaponTag>
         <countRange>10~14</countRange>
       </li>
       <li Class="StockGenerator_Tag">

@@ -35,7 +35,7 @@ namespace RimWorld
         public static ThingDef OG_Alien_Grot;
         
 
-        public static ThingDef OG_Ork_Snotling;
+        public static ThingDef OG_Snotling;
         public static ThingDef OG_Squig;
         public static ThingDef OG_Squig_Ork;
     }

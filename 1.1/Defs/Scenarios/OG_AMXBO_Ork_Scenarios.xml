@@ -97,7 +97,7 @@
 					</li>
 					<li Class="ScenPart_StartingAnimal">
 						<def>StartingAnimal</def>
-						<animalKind>OG_Ork_Snotling</animalKind>
+						<animalKind>OG_Snotling</animalKind>
 						<count>2</count>
 						<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
 					</li>
@@ -257,7 +257,7 @@
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
-					<animalKind>OG_Ork_Snotling</animalKind>
+					<animalKind>OG_Snotling</animalKind>
 					<count>3</count>
 					<bondToRandomPlayerPawnChance>0</bondToRandomPlayerPawnChance>
 				</li>

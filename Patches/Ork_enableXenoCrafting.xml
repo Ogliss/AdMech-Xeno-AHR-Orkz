@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_TableMachining"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationSequence">
+			<!--success>Always</success-->
+			<operations>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "OGO_TableMachining"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Production</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "OGO_TableMachining"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+						  <li>OG_Ork_Tech_Base_T1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_ReseachBase"]/requiredResearchFacilities</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_ReseachBase"]/requiredResearchBuilding</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="OGO_TableMachining"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName="OGO_TableMachining"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="OGO_TableMachining"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="OGO_TableMachining"]</xpath>
+					</match>
+				</li>
+			</operations>	
+		</match>
+	</Operation>
+</Patch>

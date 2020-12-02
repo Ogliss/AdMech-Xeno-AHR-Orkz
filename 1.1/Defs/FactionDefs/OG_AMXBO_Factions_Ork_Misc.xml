@@ -31,16 +31,16 @@
 	<basicMemberKind>Refugee</basicMemberKind>
 	<backstoryFilters>
 		<li>
-		<categories>
-			<li>Ork_Standard</li>
-		</categories>
-		<commonality>0.95</commonality>
+			<categories>
+				<li>Ork_Standard</li>
+			</categories>
+			<commonality>0.95</commonality>
 		</li>
 		<li>
-		<categories>
-			<li>Ork_Weird</li>
-		</categories>
-		<commonality>0.05</commonality>
+			<categories>
+				<li>Ork_Weird</li>
+			</categories>
+			<commonality>0.05</commonality>
 		</li>
 	</backstoryFilters>
 	<geneticVariance>0.8</geneticVariance>

@@ -630,9 +630,11 @@
 				</li>
 			</researchList>
 			<apparelList>
-			
+					<li>OGO_Apparel_SlavaCowl</li>
 					<li>OGO_Apparel_LevaArmour</li>
 					<li>OGO_Apparel_LevaElmet</li>
+					<li>OGO_Apparel_Elmet</li>
+					<li>OGO_Apparel_EavyElmet</li>
 					<li>OGO_Apparel_UniformShirt</li>
 					<li>OGO_Apparel_UniformJacket</li>
 					<li>OGO_Wargear_KustomForcefield</li>

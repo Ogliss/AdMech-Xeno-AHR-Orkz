@@ -71,13 +71,13 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     settings.FungusSpawnChance = 0.05f;
                     settings.FungusSpawnChanceBuffer = settings.FungusSpawnChance.ToString();
-                    settings.FungusSquigChance = 0.5f;
+                    settings.FungusSquigChance = 1f;
                     settings.FungusSquigChanceBuffer = settings.FungusSquigChance.ToString();
-                    settings.FungusSnotChance = 0.35f;
+                    settings.FungusSnotChance = 0.75f;
                     settings.FungusSnotChanceBuffer = settings.FungusSnotChance.ToString();
-                    settings.FungusGrotChance = 0.15f;
+                    settings.FungusGrotChance = 0.2f;
                     settings.FungusGrotChanceBuffer = settings.FungusGrotChance.ToString();
-                    settings.FungusOrkChance = 0.075f;
+                    settings.FungusOrkChance = 0.1f;
                     settings.FungusOrkChanceBuffer = settings.FungusOrkChance.ToString();
 
                     settings.CocoonSpawnChance = 0.25f;
@@ -88,7 +88,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     settings.CocoonSnotChanceBuffer = settings.CocoonSnotChance.ToString();
                     settings.CocoonGrotChance = 0.35f;
                     settings.CocoonGrotChanceBuffer = settings.CocoonGrotChance.ToString();
-                    settings.CocoonOrkChance = 0.25f;
+                    settings.CocoonOrkChance = 0.3f;
                     settings.CocoonOrkChanceBuffer = settings.CocoonOrkChance.ToString();
                 }
                 listing_Race.EndSection(listing_FungalLabel);

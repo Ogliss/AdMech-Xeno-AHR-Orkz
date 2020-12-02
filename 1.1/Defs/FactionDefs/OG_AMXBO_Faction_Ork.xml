@@ -2,7 +2,8 @@
 <Defs>
 
 <FactionDef Name="OG_Ork_Tek_Faction_Base" Abstract="True">
-		<label>Ork Warband</label>
+	<label>Ork Warband</label>
+    <categoryTag>OutlanderOrk</categoryTag>
 	<description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.\n\nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
 	<pawnSingular>ork</pawnSingular>
 	<pawnsPlural>orkz</pawnsPlural>
@@ -25,16 +26,14 @@
 	<backstoryFilters>
 		<li>
 		<categories>
-			<li>Ork_Boss</li>
-			<li>Ork_Nob</li>
-			<li>Ork_Standard</li>
-			<li>Grot_Gretchin</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
 		</categories>
 		</li>
 	</backstoryFilters>
 	<hairTags>
-		<li>OrkHair</li>
-		<li>GrotHair</li>
+		<li>Tribal</li>
+		<li>Pirate</li>
 	</hairTags>
 	<naturalColonyGoodwill>
 		<min>-60</min>
@@ -43,13 +42,14 @@
 	<visitorTraderKinds>
 		<li>Visitor_Ork_Standard</li>
 	</visitorTraderKinds>
- <caravanTraderKinds>
-		<li>Caravan_Outlander_BulkGoods</li>
-		<li>Caravan_Outlander_CombatSupplier</li>
-		<li>Caravan_Outlander_Exotic</li>
+	<caravanTraderKinds>
+		<li>Caravan_Ork_BulkGoods</li>
+		<li>Caravan_Ork_CombatSupplier</li>
+		<li>Caravan_Ork_Exotic</li>
+		<li>Caravan_Ork_PirateMerchant</li>
 	</caravanTraderKinds>
 	<baseTraderKinds>
-		<li>Base_Outlander_Standard</li>
+		<li>Base_Ork_Standard</li>
 	</baseTraderKinds>
 	<allowedArrivalTemperatureRange>
 		<min>-50</min>
@@ -66,81 +66,81 @@
 	</maxPawnCostPerTotalPointsCurve>
 	<pawnGroupMakers>
 		<li>
-		<kindDef>Combat</kindDef>
-		<options>
-		<!-- <OG_Squig>100</OG_Squig> -->
-			<Slave_OG_Grot>5</Slave_OG_Grot>
-			<Colonist_OG_Grot>5</Colonist_OG_Grot>
-			<OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
-			<OG_Ork_Warboss_Warlord>1</OG_Ork_Warboss_Warlord>
-			<OG_Ork_Warboss>2</OG_Ork_Warboss>
-			<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
-			<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
-			<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
-			<OG_Ork_Eavy_Boy_Choppa>7.5</OG_Ork_Eavy_Boy_Choppa>
-			<OG_Ork_Eavy_Boy_Slugga>7.5</OG_Ork_Eavy_Boy_Slugga>
-			<OG_Ork_Eavy_Boy_Shoota>7.</OG_Ork_Eavy_Boy_Shoota>
-			<OG_Ork_Nob_Choppa>5</OG_Ork_Nob_Choppa>
-			<OG_Ork_Nob_Slugga>5</OG_Ork_Nob_Slugga>
-			<OG_Ork_Nob_Shoota>5</OG_Ork_Nob_Shoota>
-			<OG_Ork_Eavy_Nob_Choppa>4</OG_Ork_Eavy_Nob_Choppa>
-			<OG_Ork_Eavy_Nob_Slugga>4</OG_Ork_Eavy_Nob_Slugga>
-			<OG_Ork_Eavy_Nob_Shoota>4</OG_Ork_Eavy_Nob_Shoota>
-		</options>
+			<kindDef>Combat</kindDef>
+			<options>
+				<!-- <OG_Squig>100</OG_Squig> -->
+				<Slave_OG_Grot>5</Slave_OG_Grot>
+				<Colonist_OG_Grot>5</Colonist_OG_Grot>
+				<OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
+				<OG_Ork_Warboss_Warlord>1</OG_Ork_Warboss_Warlord>
+				<OG_Ork_Warboss>2</OG_Ork_Warboss>
+				<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
+				<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
+				<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
+				<OG_Ork_Eavy_Boy_Choppa>7.5</OG_Ork_Eavy_Boy_Choppa>
+				<OG_Ork_Eavy_Boy_Slugga>7.5</OG_Ork_Eavy_Boy_Slugga>
+				<OG_Ork_Eavy_Boy_Shoota>7.</OG_Ork_Eavy_Boy_Shoota>
+				<OG_Ork_Nob_Choppa>5</OG_Ork_Nob_Choppa>
+				<OG_Ork_Nob_Slugga>5</OG_Ork_Nob_Slugga>
+				<OG_Ork_Nob_Shoota>5</OG_Ork_Nob_Shoota>
+				<OG_Ork_Eavy_Nob_Choppa>4</OG_Ork_Eavy_Nob_Choppa>
+				<OG_Ork_Eavy_Nob_Slugga>4</OG_Ork_Eavy_Nob_Slugga>
+				<OG_Ork_Eavy_Nob_Shoota>4</OG_Ork_Eavy_Nob_Shoota>
+			</options>
 		</li>
 		<li>
-		<kindDef>Peaceful</kindDef>
-		<options>
-		<!-- <OG_Squig>50</OG_Squig> -->
-			<Colonist_OG_Grot>10</Colonist_OG_Grot>
-			<OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
-			<OG_Ork_Warboss>1</OG_Ork_Warboss>
-			<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
-			<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
-			<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
-			<Slave_OG_Grot>2</Slave_OG_Grot>
-		</options>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<!-- <OG_Squig>50</OG_Squig> -->
+				<Colonist_OG_Grot>10</Colonist_OG_Grot>
+				<OG_Ork_Boy_Runt>10</OG_Ork_Boy_Runt>
+				<OG_Ork_Warboss>1</OG_Ork_Warboss>
+				<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
+				<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
+				<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
+				<Slave_OG_Grot>2</Slave_OG_Grot>
+			</options>
 		</li>
-	<li>
-		<kindDef>Trader</kindDef>
-		<traders>
-			<OG_Ork_Trader>1</OG_Ork_Trader>
-			<OG_Grot_Trader>1</OG_Grot_Trader>
-		</traders>
-		<carriers>
-			<Muffalo>2</Muffalo>
-			<Dromedary>2</Dromedary>
-		</carriers>
-		<guards>
-		<!-- <OG_Squig>50</OG_Squig> -->
-			<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
-			<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
-			<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
-			<OG_Ork_Eavy_Boy_Choppa>7</OG_Ork_Eavy_Boy_Choppa>
-			<OG_Ork_Eavy_Boy_Slugga>7</OG_Ork_Eavy_Boy_Slugga>
-			<OG_Ork_Eavy_Boy_Shoota>7</OG_Ork_Eavy_Boy_Shoota>
-			<OG_Ork_Eavy_Nob_Choppa>3</OG_Ork_Eavy_Nob_Choppa>
-			<OG_Ork_Eavy_Nob_Slugga>3</OG_Ork_Eavy_Nob_Slugga>
-			<OG_Ork_Eavy_Nob_Shoota>3</OG_Ork_Eavy_Nob_Shoota>
-		</guards>
+		<li>
+			<kindDef>Trader</kindDef>
+			<traders>
+				<OG_Ork_Trader>1</OG_Ork_Trader>
+				<OG_Grot_Trader>1</OG_Grot_Trader>
+			</traders>
+			<carriers>
+				<Muffalo>2</Muffalo>
+				<Dromedary>2</Dromedary>
+			</carriers>
+			<guards>
+			<!-- <OG_Squig>50</OG_Squig> -->
+				<OG_Ork_Boy_Choppa>10</OG_Ork_Boy_Choppa>
+				<OG_Ork_Boy_Slugga>10</OG_Ork_Boy_Slugga>
+				<OG_Ork_Boy_Shoota>10</OG_Ork_Boy_Shoota>
+				<OG_Ork_Eavy_Boy_Choppa>7</OG_Ork_Eavy_Boy_Choppa>
+				<OG_Ork_Eavy_Boy_Slugga>7</OG_Ork_Eavy_Boy_Slugga>
+				<OG_Ork_Eavy_Boy_Shoota>7</OG_Ork_Eavy_Boy_Shoota>
+				<OG_Ork_Eavy_Nob_Choppa>3</OG_Ork_Eavy_Nob_Choppa>
+				<OG_Ork_Eavy_Nob_Slugga>3</OG_Ork_Eavy_Nob_Slugga>
+				<OG_Ork_Eavy_Nob_Shoota>3</OG_Ork_Eavy_Nob_Shoota>
+			</guards>
 		</li>
-	<li>
-		<kindDef>Settlement</kindDef>
-		<options>
-			<Slave_OG_Grot>5</Slave_OG_Grot>
-			<Colonist_OG_Grot>5</Colonist_OG_Grot>
-			<OG_Ork_Boy_Runt>9</OG_Ork_Boy_Runt>
-			<OG_Ork_Warboss_Warlord>1</OG_Ork_Warboss_Warlord>
-			<OG_Ork_Eavy_Boy_Choppa>7</OG_Ork_Eavy_Boy_Choppa>
-			<OG_Ork_Eavy_Boy_Slugga>7</OG_Ork_Eavy_Boy_Slugga>
-			<OG_Ork_Eavy_Boy_Shoota>7</OG_Ork_Eavy_Boy_Shoota>
-			<OG_Ork_Nob_Choppa>5</OG_Ork_Nob_Choppa>
-			<OG_Ork_Nob_Slugga>5</OG_Ork_Nob_Slugga>
-			<OG_Ork_Nob_Shoota>5</OG_Ork_Nob_Shoota>
-			<OG_Ork_Eavy_Nob_Choppa>3</OG_Ork_Eavy_Nob_Choppa>
-			<OG_Ork_Eavy_Nob_Slugga>3</OG_Ork_Eavy_Nob_Slugga>
-			<OG_Ork_Eavy_Nob_Shoota>3</OG_Ork_Eavy_Nob_Shoota>
-		</options>
+		<li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<Slave_OG_Grot>5</Slave_OG_Grot>
+				<Colonist_OG_Grot>5</Colonist_OG_Grot>
+				<OG_Ork_Boy_Runt>9</OG_Ork_Boy_Runt>
+				<OG_Ork_Warboss_Warlord>1</OG_Ork_Warboss_Warlord>
+				<OG_Ork_Eavy_Boy_Choppa>7</OG_Ork_Eavy_Boy_Choppa>
+				<OG_Ork_Eavy_Boy_Slugga>7</OG_Ork_Eavy_Boy_Slugga>
+				<OG_Ork_Eavy_Boy_Shoota>7</OG_Ork_Eavy_Boy_Shoota>
+				<OG_Ork_Nob_Choppa>5</OG_Ork_Nob_Choppa>
+				<OG_Ork_Nob_Slugga>5</OG_Ork_Nob_Slugga>
+				<OG_Ork_Nob_Shoota>5</OG_Ork_Nob_Shoota>
+				<OG_Ork_Eavy_Nob_Choppa>3</OG_Ork_Eavy_Nob_Choppa>
+				<OG_Ork_Eavy_Nob_Slugga>3</OG_Ork_Eavy_Nob_Slugga>
+				<OG_Ork_Eavy_Nob_Shoota>3</OG_Ork_Eavy_Nob_Shoota>
+			</options>
 		</li>
 	</pawnGroupMakers>
 	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -149,6 +149,11 @@
 		<li>(0.45, 0.05, 0.05)</li>
 		<li>(0.80, 0.25, 0.05)</li>
 	</colorSpectrum>
+	<modExtensions>
+		<li Class="AdeptusMechanicus.FactionDefRaidSoundExtension">
+			<raidSound>LetterArrive_OG_Ork_Raid_Alert_A</raidSound>
+		</li>
+	</modExtensions>
 </FactionDef>
 
 <FactionDef ParentName="OG_Ork_Tek_Faction_Base">
