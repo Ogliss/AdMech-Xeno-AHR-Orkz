@@ -155,13 +155,7 @@ namespace AdeptusMechanicus
             }
         }
 
-        public override void PlantCollected()
-        {
-            this.TrySpawnPawns();
-            base.PlantCollected();
-        }
-
-        public virtual void TrySpawnPawns()
+        public virtual bool TrySpawnPawns(Pawn harvester = null)
         {
             if (this.HarvestableNow)
             {
@@ -170,27 +164,27 @@ namespace AdeptusMechanicus
                 int grots = Grots.Count();
                 int orks = Orks.Count();
                 int greenskins = squigs + snots + grots + orks;
-                Rand.PushState();
-                var spawnRoll = Rand.Value;
+                Rand.PushState(this.thingIDNumber);
+                var spawnRoll = Rand.ValueSeeded(this.thingIDNumber);
                 Rand.PopState();
                 if (spawnRoll < (spawnChance * (/*HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + greenskins) **/ Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor) * this.Growth))
                 {
-                    List<Pair<PawnKindDef, float>> pairs = new List<Pair<PawnKindDef, float>>()
+                    List<PawnGenOption> options = new List<PawnGenOption>()
                     {
-                        new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
-                        new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Snotling, snotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
-                        new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
-                        new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
+                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
+                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Snotling, snotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
+                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
+                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
                     };
-                    PawnKindDef pawnKindDef = pairs.RandomElementByWeight(x => x.Second).First;
+                    PawnKindDef pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
                     Faction faction = FungalProps.spawnwild ? null : Faction.OfPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
                     StringBuilder builder = new StringBuilder();
                     builder.Append(pawnKindDef.LabelCap + " Spawned");
                     builder.AppendLine();
-                    foreach (var item in pairs)
+                    foreach (var item in options)
                     {
-                        builder.Append(" " + item.First.LabelCap + " weighted at " + item.Second);
+                        builder.Append(" " + item.kind.LabelCap + " weighted at " + item.selectionWeight);
                     }
                     Log.Message(builder.ToString());
 
@@ -208,7 +202,7 @@ namespace AdeptusMechanicus
                             pawn.story.childhood.identifier = "Grot_Base_Child";
                         }
                         */
-                        if (!FungalProps.spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
+                        if (harvester != null && !FungalProps.spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
                         {
                             PawnKindDef pawnKind;
                             if (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe)
@@ -239,7 +233,7 @@ namespace AdeptusMechanicus
                             }
                         }
                         Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, pawn);
-                        hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.75f);
+                        hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.8f);
                         pawn.health.AddHediff(hediff);
                     }
                     else
@@ -253,8 +247,10 @@ namespace AdeptusMechanicus
                         }
                     }
                     GenSpawn.Spawn(pawn, this.Position, this.Map, 0);
+                    return true;
                 }
             }
+            return false;
         }
         // Token: 0x06005259 RID: 21081 RVA: 0x001BBF68 File Offset: 0x001BA168
         public override void TickLong()

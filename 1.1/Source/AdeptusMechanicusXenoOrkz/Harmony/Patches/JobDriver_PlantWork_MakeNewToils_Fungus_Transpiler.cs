@@ -29,21 +29,28 @@ namespace AdeptusMechanicus.HarmonyInstance
                 CodeInstruction instruction = instructionsList[i];
                 //    Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
 
-
+                
                 if (i > 1 && i < instructionsList.Count)
                 {
+                    /*
+                    */
+
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(ThingMaker), name: nameof(ThingMaker.MakeThing), parameters: new[] { typeof(ThingDef), typeof(ThingDef) })))
                     {
-                        Log.Message("Boss, wez found ThingMaker.MakeThing!");
                         Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
-                        
+
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
+                        instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvest"));
+                    }
+                    if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
+                    {
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
                         instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvested"));
-                        
-
                     }
                 }
+                
                 yield return instruction;
                 /*
                 if (i > 1 && i + 1 < instructionsList.Count)
@@ -61,6 +68,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     }
                  }
                  */
+                /*
                 if (i > 1 && i < instructionsList.Count)
                 {
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(QuestManager), name: nameof(QuestManager.Notify_PlantHarvested), parameters: new[] { typeof(Pawn), typeof(Thing) })))
@@ -72,171 +80,56 @@ namespace AdeptusMechanicus.HarmonyInstance
                         yield return new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusSpawner"));
 
                     }
-                    if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
-                    {
-                        Log.Message("Boss, wez found GenPlace.TryPlaceThing!");
-                        Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
-                    }
-                }
-            }
-
-        }
-        
-        public static Thing FungusHarvested( ThingDef harvested, ThingDef stuff, Pawn pawn, Plant plant)
-        {
-
-            if (pawn == null)
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: pawn is null");
-            }
-            else
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: pawn is " + pawn);
-            }
-            if (plant == null)
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: plant is null");
-            }
-            else
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: plant is " + plant);
-            }
-            if (harvested == null)
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: harvested is null");
-            }
-            else
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: harvested is " + harvested);
-            }
-            if (stuff == null)
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: stuff is null");
-            }
-            else
-            {
-                Log.Warning("JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler: FungusHarvested: stuff is " + stuff);
-            }
-            Log.Message("We'ez tryin to arvest " + plant.LabelCap + " boss");
-            OrkoidFungus fungus = plant as OrkoidFungus;
-            Thing thing;
-            if (fungus == null)
-            {
-                thing = ThingMaker.MakeThing(plant.def.plant.harvestedThingDef);
-                Log.Message("We'ez arvestin " + plant.LabelCap + " boss but i dont fink its fungus");
-            }
-            else
-            {
-                ThingDef harvestedThingDef = plant.def.plant.harvestedThingDef;
-                Log.Message("We'ez arvestin fungus boss");
-                Rand.PushState();
-
-                Rand.PopState();
-                thing = ThingMaker.MakeThing(harvestedThingDef);
-            }
-
-            return thing;
-        }
-
-
-        public static void FungusSpawner(Pawn pawn, Plant plant)
-        {
-            return;
-            if (pawn.isOrkoid() && plant.isOrkoidFungus())
-            {
-                bool canspawn = plant.HarvestableNow;
-                bool spawnwild = plant.def.defName.Contains("Cocoon");// Props.spawnwild; 
-                float Age = plant.Age;
-                float Fertility = plant.GrowthRateFactor_Fertility;
-                /*
-                Comp_OrkoidSpores spores = plant.TryGetComp<Comp_OrkoidSpores>();
-                if (spores != null)
-                {
-                    spores.SpawnPawns(pawn, plant);
                 }
                 */
-
-                if (canspawn)
-                {
-                    Rand.PushState();
-                    var spawnRoll = Rand.Value;
-                    Rand.PopState();
-                    if (spawnRoll < (plant.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance * plant.Growth))
-                    {
-                        string msg = string.Empty;
-                        StringBuilder builder = new StringBuilder();
-                        builder.AppendLine("Possible Spawns:");
-                        List<Pair<PawnKindDef, float>> pairs = Pairs(
-                            plant.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSquigChance : AMMod.Instance.settings.FungusSquigChance,
-                            plant.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance,
-                            plant.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance,
-                            plant.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance);
-                        foreach (var item in pairs)
-                        {
-                            builder.Append(" " + item.First.LabelCap + " weighted at " + item.Second);
-                        }
-
-                        Pair<PawnKindDef, float> pair = pairs.RandomElementByWeight(x => x.Second);
-                        PawnKindDef pawnKindDef = pair.First;
-                        builder.Append(" " + "Spawning " + pawnKindDef.LabelCap);
-                        Log.Message(builder.ToString());
-                        PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, spawnwild ? null : Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
-
-                        Pawn spawned = PawnGenerator.GeneratePawn(pawnGenerationRequest);
-
-                        if (pawnKindDef.RaceProps.Humanlike)
-                        {
-                            /*
-                            if (pawn.kindDef == OGOrkPawnKindDefOf.OG_Ork_Wild)
-                            {
-                                pawn.story.childhood.identifier = "Ork_Base_Child";
-                            }
-                            else if (pawn.kindDef == OGOrkPawnKindDefOf.OG_Grot_Wild)
-                            {
-                                pawn.story.childhood.identifier = "Grot_Base_Child";
-                            }
-                            */
-                            if (!spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
-                            {
-                                PawnKindDef pawnKind;
-                                if (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe)
-                                {
-                                    pawnKind = spawned.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElement();
-                                }
-                                else
-                                {
-                                    pawnKind = spawned.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElement();
-                                }
-                                spawned.ChangeKind(pawnKind);
-                            }
-                            else
-                            {
-                                spawned.ChangeKind(PawnKindDefOf.WildMan);
-                            }
-                            spawned.story.bodyType = spawned.story.childhood.BodyTypeFor(spawned.gender);
-                        }
-                        if (Fertility < 1f)
-                        {
-                            foreach (Need need in spawned.needs.AllNeeds)
-                            {
-                                need.CurLevel = 0f;
-                            }
-                            Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, spawned);
-                            hediff.Severity = Math.Min(1f - Fertility, 0.75f);
-                            spawned.health.AddHediff(hediff);
-                        }
-                        else
-                        {
-                            foreach (Need need in spawned.needs.AllNeeds)
-                            {
-                                need.CurLevel = Fertility - 1f;
-                            }
-                        }
-                        GenSpawn.Spawn(spawned, plant.Position, plant.Map, 0);
-                    }
-                }
             }
 
+        }
+
+
+        public static ThingDef FungalMeds = DefDatabase<ThingDef>.GetNamedSilentFail("OG_Orkoid_MedicineFungal");
+
+        public static Thing FungusHarvest(ThingDef harvested, ThingDef stuff, Pawn pawn, Plant plant)
+        {
+            ThingDef harvestedThingDef = harvested;
+            OrkoidFungus fungus = plant as OrkoidFungus;
+            Thing thing;
+            if (fungus != null && (pawn != null && pawn.isOrkoid()))
+            {
+            //    Log.Message(pawn.Name+" 'ez arvestin " + plant.LabelCap + " boss");
+                Rand.PushState(plant.thingIDNumber);
+
+                if (FungalMeds != null && Rand.ChanceSeeded(0.01f, plant.thingIDNumber))
+                {
+                    harvestedThingDef = FungalMeds;
+                //    Log.Message("we'ez found some meds boss!");
+                }
+
+                Rand.PopState();
+            }
+            return ThingMaker.MakeThing(harvestedThingDef);
+        }
+
+
+        public static bool FungusHarvested(Thing thing, IntVec3 center, Map map, ThingPlaceMode mode, Action<Thing, int> placedAction, Predicate<IntVec3> nearPlaceValidator, Rot4 rot, Pawn pawn, Plant plant)
+        {
+            OrkoidFungus fungus = plant as OrkoidFungus;
+            if (fungus != null && (pawn != null && pawn.isOrkoid()))
+            {
+                ThingDef harvestedThingDef = plant.def.plant.harvestedThingDef;
+                if (FungalMeds != null && thing.def == FungalMeds)
+                {
+                    Rand.PushState();
+                    thing.stackCount = Rand.RangeInclusive(1, Math.Max(thing.stackCount / 4, 1));
+                    Rand.PopState();
+                }
+                if (thing.def == plant.def.plant.harvestedThingDef)
+                {
+                    return fungus.TrySpawnPawns(pawn);
+                }
+            //    Log.Message(pawn.Name + " 'ez arvested " + thing.stackCount + " " + thing.LabelCap + " from " + plant.LabelCap + " boss!");
+            }
+            return GenPlace.TryPlaceThing(thing, center, map, ThingPlaceMode.Near, null, null, default(Rot4));
         }
 
         private static IEnumerable<Pawn> Squigs

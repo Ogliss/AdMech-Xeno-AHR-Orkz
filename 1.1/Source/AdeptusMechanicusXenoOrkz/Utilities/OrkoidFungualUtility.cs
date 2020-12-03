@@ -18,19 +18,23 @@ namespace AdeptusMechanicus
 				true
 			},
 			{
-				new CurvePoint(10f, 0.75f),
+				new CurvePoint(5f, 0.85f),
 				true
 			},
 			{
-				new CurvePoint(20f, 0.6f),
+				new CurvePoint(20f, 0.75f),
 				true
 			},
 			{
-				new CurvePoint(25f, 0.3f),
+				new CurvePoint(25f, 0.65f),
 				true
 			},
 			{
-				new CurvePoint(30f, 0.15f),
+				new CurvePoint(30f, 0.5f),
+				true
+			},
+			{
+				new CurvePoint(50f, 0.00f),
 				true
 			}
 		};
@@ -55,6 +59,10 @@ namespace AdeptusMechanicus
 			},
 			{
 				new CurvePoint(20f, 0.125f),
+				true
+			},
+			{
+				new CurvePoint(50f, 0.00f),
 				true
 			}
 		};

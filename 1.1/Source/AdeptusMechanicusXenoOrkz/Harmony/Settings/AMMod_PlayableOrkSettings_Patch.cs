@@ -69,15 +69,15 @@ namespace AdeptusMechanicus.HarmonyInstance
                 listing_FungalLabel.NewColumn();
                 if (listing_FungalLabel.ButtonTextLine("Defaults"))
                 {
-                    settings.FungusSpawnChance = 0.05f;
+                    settings.FungusSpawnChance = 0.025f;
                     settings.FungusSpawnChanceBuffer = settings.FungusSpawnChance.ToString();
                     settings.FungusSquigChance = 1f;
                     settings.FungusSquigChanceBuffer = settings.FungusSquigChance.ToString();
-                    settings.FungusSnotChance = 0.75f;
+                    settings.FungusSnotChance = 0.85f;
                     settings.FungusSnotChanceBuffer = settings.FungusSnotChance.ToString();
-                    settings.FungusGrotChance = 0.2f;
+                    settings.FungusGrotChance = 0.1f;
                     settings.FungusGrotChanceBuffer = settings.FungusGrotChance.ToString();
-                    settings.FungusOrkChance = 0.1f;
+                    settings.FungusOrkChance = 0.05f;
                     settings.FungusOrkChanceBuffer = settings.FungusOrkChance.ToString();
 
                     settings.CocoonSpawnChance = 0.25f;

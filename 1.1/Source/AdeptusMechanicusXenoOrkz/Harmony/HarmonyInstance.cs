@@ -33,7 +33,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 Log.Warning("Patch method null");
             }
             harmony.Patch(method, transpiler: new HarmonyMethod(method2));
-
+            /*
             MethodInfo method3 = AccessTools.TypeByName("RBB_Code.JobDriver_CatchFish").GetMethod("MakeNewToils", BindingFlags.NonPublic | BindingFlags.Instance);
             MethodInfo method4 = typeof(JobDriver_CatchFish_MakeNewToils_Snotling_Patch).GetMethod("Prefix");
             bool flag3 = method3 == null;
@@ -66,6 +66,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 else
                     harmony.Patch(method5, prefix: new HarmonyMethod(method6));
             }
+            */
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Type pawn_NativeVerbs = typeof(Pawn_NativeVerbs);
             if (AdeptusIntergrationUtility.enabled_SOS2)

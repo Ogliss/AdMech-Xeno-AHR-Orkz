@@ -175,7 +175,6 @@
 	</comps>
 </ThingDef>
 
-
 <ThingDef ParentName="MedicineBase">
     <defName>OG_Orkoid_MedicineFungal</defName>
     <label>Speckled Bloodshade</label>

@@ -11,5 +11,6 @@
 	<li>1.2</li>
 	<li IfModActive="CETeam.CombatExtended">CESpecific</li>
 	<li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
+    <li IfModNotActive="walkingproblem.aaf">AdvancedAnimalFramework</li>
 </v1.2>
 </loadFolders>
