@@ -154,7 +154,7 @@ namespace AdeptusMechanicus
                 return this.GrowthRateFactor_Fertility * this.GrowthRateFactor_Temperature * this.GrowthRateFactor_Light;
             }
         }
-
+        public static float Inverse(float val) => 1f / val;
         public virtual bool TrySpawnPawns(Pawn harvester = null)
         {
             if (this.HarvestableNow)
@@ -177,6 +177,17 @@ namespace AdeptusMechanicus
                         new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
                     };
                     PawnKindDef pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
+                    Rand.PushState();
+                    if (pawnKindDef == OGOrkPawnKindDefOf.OG_Squig)
+                    {
+                        Rand.PushState();
+                        if (Rand.Chance(0.5f))
+                        {
+                            pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElement();
+                        }
+                        Rand.PopState();
+                    }
+                    Rand.PopState();
                     Faction faction = FungalProps.spawnwild ? null : Faction.OfPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
                     StringBuilder builder = new StringBuilder();
@@ -186,7 +197,7 @@ namespace AdeptusMechanicus
                     {
                         builder.Append(" " + item.kind.LabelCap + " weighted at " + item.selectionWeight);
                     }
-                    Log.Message(builder.ToString());
+                    if (Prefs.DevMode) Log.Message(builder.ToString());
 
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
 
@@ -207,11 +218,11 @@ namespace AdeptusMechanicus
                             PawnKindDef pawnKind;
                             if (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe)
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElement();
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElementByWeight(x=> Inverse(x.combatPower));
                             }
                             else
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElement();
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OGOrkPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElementByWeight(x => Inverse(x.combatPower));
                             }
                             pawn.ChangeKind(pawnKind);
                         }
@@ -232,20 +243,17 @@ namespace AdeptusMechanicus
                                 need.CurLevel = 0.1f;
                             }
                         }
-                        Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, pawn);
-                        hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.8f);
-                        pawn.health.AddHediff(hediff);
                     }
                     else
                     {
-                        foreach (Need need in pawn.needs.AllNeeds)
-                        {
-                            if (need.def != NeedDefOf.Rest)
-                            {
-                                need.CurLevel = GrowthRateFactor_Fertility - 1f;
-                            }
-                        }
+                        float level = GrowthRateFactor_Fertility - 1f;
+                        pawn.needs.food.CurLevel = level;
+                        pawn.needs.mood.CurLevel = level;
+                        pawn.needs.rest.CurLevel = 1f;
                     }
+                    Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, pawn);
+                    hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.8f);
+                    pawn.health.AddHediff(hediff);
                     GenSpawn.Spawn(pawn, this.Position, this.Map, 0);
                     return true;
                 }

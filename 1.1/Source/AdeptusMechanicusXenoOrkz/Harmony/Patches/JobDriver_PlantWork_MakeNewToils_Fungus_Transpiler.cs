@@ -37,7 +37,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(ThingMaker), name: nameof(ThingMaker.MakeThing), parameters: new[] { typeof(ThingDef), typeof(ThingDef) })))
                     {
-                        Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    //    if (Prefs.DevMode) Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
 
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant

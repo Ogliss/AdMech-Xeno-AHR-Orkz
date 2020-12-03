@@ -41,7 +41,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs" />
     <Compile Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs" />
-    <Compile Include="Utilities\DebugTools\Class1.cs" />
+    <Compile Include="Utilities\DebugTools\AdMechDebugActionsMisc.cs" />
     <Compile Include="Utilities\OrkoidFungualUtility.cs" />
     <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />
     <None Include="Harmony\Patches\QuestManager_Notify_PlantHarvested_Orkoid_Patch.cs.bak" />

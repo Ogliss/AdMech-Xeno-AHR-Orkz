@@ -9,8 +9,8 @@ using Verse.Sound;
 
 namespace Verse
 {
-	// Token: 0x0200053D RID: 1341
-	public static class AdMechDebugActionsMisc
+    // Token: 0x0200053D RID: 1341
+    public static class AdMechDebugActionsMisc
 	{
 		// Verse.DebugToolsSpawning
 		[DebugAction("General", "Mature All plants of Def...", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]

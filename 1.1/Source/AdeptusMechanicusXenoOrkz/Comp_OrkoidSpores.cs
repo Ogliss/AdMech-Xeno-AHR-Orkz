@@ -147,7 +147,7 @@ namespace AdeptusMechanicus
                     Pair<PawnKindDef, float> pair = pairs.RandomElementByWeight(x => x.Second);
                     pawnKindDef = pair.First;
                     builder.Append(" " + "Spawning " + pawnKindDef.LabelCap);
-                    Log.Message(builder.ToString());
+                    if (Prefs.DevMode) Log.Message(builder.ToString());
                     faction = spawnwild ? null : Faction.OfPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
 
