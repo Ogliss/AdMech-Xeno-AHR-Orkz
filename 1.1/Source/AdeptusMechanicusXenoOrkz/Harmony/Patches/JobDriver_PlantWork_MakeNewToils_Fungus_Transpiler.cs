@@ -125,7 +125,10 @@ namespace AdeptusMechanicus.HarmonyInstance
                 }
                 if (thing.def == plant.def.plant.harvestedThingDef)
                 {
-                    return fungus.TrySpawnPawns(pawn);
+                    if (fungus.TrySpawnPawns(pawn))
+                    {
+                        return true;
+                    }
                 }
             //    Log.Message(pawn.Name + " 'ez arvested " + thing.stackCount + " " + thing.LabelCap + " from " + plant.LabelCap + " boss!");
             }
