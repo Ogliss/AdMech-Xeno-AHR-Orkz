@@ -39,8 +39,8 @@
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs" />
-    <Compile Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs" />
+    <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
+    <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
     <Compile Include="Utilities\DebugTools\AdMechDebugActionsMisc.cs" />
     <Compile Include="Utilities\OrkoidFungualUtility.cs" />
     <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />
