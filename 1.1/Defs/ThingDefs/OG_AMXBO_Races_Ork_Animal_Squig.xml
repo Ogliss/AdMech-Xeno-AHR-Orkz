@@ -8,7 +8,7 @@
 	<statBases>
 		<MoveSpeed>6.0</MoveSpeed>
 		<MarketValue>450</MarketValue>
-		<MinimumHandlingSkill>4</MinimumHandlingSkill>
+		<MinimumHandlingSkill>5</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.06</MeleeDodgeChance>
 		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
@@ -63,7 +63,7 @@
 		<gestationPeriodDays>26</gestationPeriodDays>
 		<nameOnTameChance>1</nameOnTameChance>
 		<trainability>Advanced</trainability>
-		<wildness>0.85</wildness>
+		<wildness>0.5</wildness>
 		<manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 		<litterSizeCurve>
@@ -329,7 +329,7 @@
 	<statBases>
 		<MoveSpeed>2.0</MoveSpeed>
 		<MarketValue>200</MarketValue>
-		<MinimumHandlingSkill>2</MinimumHandlingSkill>
+		<MinimumHandlingSkill>1</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.00</MeleeDodgeChance>
 		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
@@ -338,54 +338,23 @@
 		<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
 		<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 	</statBases>
-	<tools>
-		<li>
-		<label>teef</label>
-		<capacities>
-			<li>Bite</li>
-		</capacities>
-		<power>3</power>
-		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-		<chanceFactor>0.9</chanceFactor>
-		<surpriseAttack>
-			<extraMeleeDamages>
-				<li>
-				<def>Stun</def>
-				<amount>6</amount>
-				</li>
-			</extraMeleeDamages>
-		</surpriseAttack>
-		</li>
-		<li>
-		<label>head</label>
-		<capacities>
-			<li>Blunt</li>
-		</capacities>
-		<power>5</power>
-		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-		<chanceFactor>0.2</chanceFactor>
-		</li>
-	</tools>
 	<race>
 		<hasGenders>false</hasGenders>
 		<body>Snake</body>
 		<predator>false</predator>
-		<petness>0.5</petness>
+		<petness>0.3</petness>
 		<baseBodySize>1.0</baseBodySize>
 		<baseHungerRate>0.25</baseHungerRate>
 		<baseHealthScale>1.25</baseHealthScale>
-		<foodType>OmnivoreAnimal</foodType>
+		<foodType>OmnivoreRoughAnimal</foodType>
 		<leatherDef>Leather_Squig</leatherDef>
 		<bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
 		<gestationPeriodDays>26</gestationPeriodDays>
-		<nameOnTameChance>1</nameOnTameChance>
-		<trainability>Simple</trainability>
-		<wildness>0.85</wildness>
-		<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-		<manhunterOnDamageChance>0.55</manhunterOnDamageChance>
+		<nameOnTameChance>0</nameOnTameChance>
+		<trainability>None</trainability>
+		<wildness>0.0</wildness>
+		<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
 		<litterSizeCurve>
 			<points>
 				<li>(0.5, 0)</li>
@@ -447,6 +416,37 @@
 			</points>
 		</ageGenerationCurve>
 	</race>
+	<tools>
+		<li>
+		<label>teef</label>
+		<capacities>
+			<li>Bite</li>
+		</capacities>
+		<power>3</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		<chanceFactor>0.9</chanceFactor>
+		<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+				<def>Stun</def>
+				<amount>6</amount>
+				</li>
+			</extraMeleeDamages>
+		</surpriseAttack>
+		</li>
+		<li>
+		<label>head</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
 	<tradeTags>
 		<li>AnimalFarmOrk</li>
 		<li>AnimalOrk</li>

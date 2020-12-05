@@ -181,10 +181,7 @@ namespace AdeptusMechanicus
                     if (pawnKindDef == OGOrkPawnKindDefOf.OG_Squig)
                     {
                         Rand.PushState();
-                        if (Rand.Chance(0.5f))
-                        {
-                            pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElement();
-                        }
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x=> Inverse(x.combatPower));
                         Rand.PopState();
                     }
                     Rand.PopState();
@@ -213,7 +210,7 @@ namespace AdeptusMechanicus
                             pawn.story.childhood.identifier = "Grot_Base_Child";
                         }
                         */
-                        if (harvester != null && !FungalProps.spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
+                        if (!FungalProps.spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
                         {
                             PawnKindDef pawnKind;
                             if (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe)
@@ -248,8 +245,11 @@ namespace AdeptusMechanicus
                     {
                         float level = GrowthRateFactor_Fertility - 1f;
                         pawn.needs.food.CurLevel = level;
-                        pawn.needs.mood.CurLevel = level;
                         pawn.needs.rest.CurLevel = 1f;
+                        if (pawn.RaceProps.Humanlike)
+                        {
+                            pawn.needs.mood.CurLevel = level;
+                        }
                     }
                     Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, pawn);
                     hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.8f);

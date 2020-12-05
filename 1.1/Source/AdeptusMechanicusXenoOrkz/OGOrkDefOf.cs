@@ -57,6 +57,8 @@ namespace RimWorld
         public static PawnKindDef OG_Squig_Ork;
 
         public static PawnKindDef OG_Snotling;
+
+        [MayRequireXenobiologis]
         public static PawnKindDef OG_Ork_Snotling;
 
         public static PawnKindDef OG_Grot_Wild;
