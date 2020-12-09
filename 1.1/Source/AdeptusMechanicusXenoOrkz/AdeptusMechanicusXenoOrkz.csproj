@@ -41,6 +41,8 @@
     <Compile Include="Class1.cs" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
+    <Compile Include="Harmony\Patches\WorkGiver_InteractAnimal_CanInteractWithAnimal_Restricted_Patch.cs" />
+    <Compile Include="Harmony\Patches\RelationsUtility_TryDevelopBondRelation_Restricted_Patch.cs" />
     <Compile Include="Utilities\DebugTools\AdMechDebugActionsMisc.cs" />
     <Compile Include="Utilities\OrkoidFungualUtility.cs" />
     <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />

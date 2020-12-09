@@ -169,33 +169,44 @@ namespace AdeptusMechanicus
                 Rand.PopState();
                 if (spawnRoll < (spawnChance * (/*HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + greenskins) **/ Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor) * this.Growth))
                 {
-                    List<PawnGenOption> options = new List<PawnGenOption>()
+                    PawnKindDef pawnKindDef;
+                    bool OrkoidHarvester = harvester != null ? harvester.isOrkoid() : true;
+                    if (OrkoidHarvester)
                     {
-                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
-                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Snotling, snotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
-                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
-                        new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
-                    };
-                    PawnKindDef pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
-                    Rand.PushState();
-                    if (pawnKindDef == OGOrkPawnKindDefOf.OG_Squig)
-                    {
+                        List<PawnGenOption> options = new List<PawnGenOption>()
+                        {
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Snotling, snotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
+                        };
+                        pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
                         Rand.PushState();
-                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x=> Inverse(x.race.BaseMarketValue));
-                        Rand.PopState();
-                    }
-                    Rand.PopState();
-                    Faction faction = FungalProps.spawnwild ? null : Faction.OfPlayer;
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
-                    StringBuilder builder = new StringBuilder();
-                    builder.Append(pawnKindDef.LabelCap + " Spawned");
-                    builder.AppendLine();
-                    foreach (var item in options)
-                    {
-                        builder.Append(" " + item.kind.LabelCap + " weighted at " + item.selectionWeight);
-                    }
-                    if (Prefs.DevMode) Log.Message(builder.ToString());
+                        if (pawnKindDef == OGOrkPawnKindDefOf.OG_Squig)
+                        {
+                            Rand.PushState();
+                            pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x => Inverse(x.race.BaseMarketValue));
+                            Rand.PopState();
+                        }
+                        Rand.PopState(); 
+                        StringBuilder builder = new StringBuilder();
+                        builder.Append(pawnKindDef.LabelCap + " Spawned");
+                        builder.AppendLine();
 
+                        foreach (var item in options)
+                        {
+                            builder.Append(" " + item.kind.LabelCap + " weighted at " + item.selectionWeight);
+                        }
+                        if (Prefs.DevMode) Log.Message(builder.ToString());
+
+                    }
+                    else
+                    {
+                        pawnKindDef = OGOrkPawnKindDefOf.OG_Squig;
+                    }
+                    Faction faction = FungalProps.spawnwild || !OrkoidHarvester ? null : Faction.OfPlayer;
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
+                    
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
 
                     if (pawnKindDef.RaceProps.Humanlike)
@@ -255,6 +266,11 @@ namespace AdeptusMechanicus
                     hediff.Severity = Math.Min(1f - GrowthRateFactor_Fertility, 0.8f);
                     pawn.health.AddHediff(hediff);
                     GenSpawn.Spawn(pawn, this.Position, this.Map, 0);
+                    if (harvester!=null && harvester.Faction == Faction.OfPlayer)
+                    {
+                        TaggedString taggedString = "OGOrk_FungalHarvest_SuccessMessage".Translate(harvester.Name, pawn.Label);
+                        Messages.Message(taggedString, pawn, MessageTypeDefOf.PositiveEvent, true);
+                    }
                     return true;
                 }
             }
