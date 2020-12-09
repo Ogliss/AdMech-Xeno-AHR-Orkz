@@ -181,7 +181,7 @@ namespace AdeptusMechanicus
                     if (pawnKindDef == OGOrkPawnKindDefOf.OG_Squig)
                     {
                         Rand.PushState();
-                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x=> Inverse(x.combatPower));
+                        pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x=> Inverse(x.race.BaseMarketValue));
                         Rand.PopState();
                     }
                     Rand.PopState();

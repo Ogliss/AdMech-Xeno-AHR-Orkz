@@ -226,7 +226,7 @@
 						</hiddenUnderApparelFor>
 					</li>
 					<!-- Nose -->
-					<li>
+					<!--li>
 						<path>Things/Pawn/Humanlike/Ork/Head/Nose/Nose</path>
 						<bodyPart>Nose</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
@@ -259,14 +259,14 @@
 							</east>
 						</offsets>
 						<colorChannel>none</colorChannel>
-						<!--colorChannel>skin</colorChannel-->
+						<colorChannel>skin</colorChannel>
 						<hiddenUnderApparelFor>
-							<!--li>OrkFullHead</li>
+							<li>OrkFullHead</li>
 							<li>OrkUpperHead</li>
 							<li>FullHead</li>
-							<li>UpperHead</li-->
+							<li>UpperHead</li>
 						</hiddenUnderApparelFor>
-					</li>
+					</li-->
 					<!-- Teef -->
 					<!-- Male -->
 					<li>
@@ -314,6 +314,7 @@
 					<li>
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
 						<!--bodyPart>right tusk</bodyPart-->
+						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
@@ -359,6 +360,7 @@
 					<li>
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
 						<!--bodyPart>left tusk</bodyPart-->
+						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
@@ -447,7 +449,8 @@
 					</li>
 					<li>
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
-						<bodyPart>right tusk</bodyPart>
+						<bodyPart>Jaw</bodyPart>
+						<!--bodyPart>right tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
@@ -493,7 +496,8 @@
 					</li>
 					<li>
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
-						<bodyPart>left tusk</bodyPart>
+						<bodyPart>Jaw</bodyPart>
+						<!--bodyPart>left tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>

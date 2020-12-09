@@ -159,8 +159,7 @@
 <PawnKindDef ParentName="OG_Ork_Player_Base">
 	<defName>StrangerInBlack_OG_Ork</defName>
 	<label>stranger in black</label>
-	<labelMale>man in black</labelMale>
-	<labelFemale>woman in black</labelFemale>
+	<labelMale>boy in black</labelMale>
 	<labelPlural>strangers in black</labelPlural>
 	<combatPower>100</combatPower>
 	<minGenerationAge>20</minGenerationAge>
@@ -170,13 +169,13 @@
 	<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 	<backstoryFiltersOverride>
 		<li>
-		<categories>
-			<li>Ork_Standard</li>
-			<li>Ork_Boy</li>
-			<li>Ork_Nob</li>
-			<li>Ork_Boss</li>
-			<li>Ork_Boy_Weird</li>
-		</categories>
+			<categories>
+				<li>Ork_Standard</li>
+				<li>Ork_Boy</li>
+				<li>Ork_Nob</li>
+				<li>Ork_Boss</li>
+				<li>Ork_Boy_Weird</li>
+			</categories>
 		</li>
 	</backstoryFiltersOverride>
 	<invNutrition>10.0</invNutrition>

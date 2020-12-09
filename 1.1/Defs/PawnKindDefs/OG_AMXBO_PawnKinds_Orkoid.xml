@@ -160,7 +160,7 @@
 	<weaponTags>
 		<li>OCrudeChoppa</li>
 		<li>OSlugga</li>
-			<li>NeolithicMeleeBasic</li>
+		<li>NeolithicMeleeBasic</li>
 		<li>OBrutalityMelee</li>
 	</weaponTags>
 	<techHediffsMoney>
@@ -228,8 +228,7 @@
 	<defName>OG_Ork_Boy_Runt</defName>
 	<label>Runt Boy</label>
 	<combatPower>50</combatPower>
-	<minGenerationAge>10</minGenerationAge>
-	<maxGenerationAge>16</maxGenerationAge>
+	<maxGenerationAge>2</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
@@ -247,7 +246,7 @@
 	</apparelMoney>
 	<apparelTags>
 		<li>OGOClothing</li>
-		<li>OrkBasic</li>
+		<li>OrkArmourBasic</li>
 	</apparelTags>
 	<weaponMoney>
 		<min>200</min>
@@ -284,14 +283,13 @@
 	<race>OG_Alien_Ork</race>
 	<invNutrition>2.55</invNutrition>
 	<itemQuality>Normal</itemQuality>
-	<maxGenerationAge>30</maxGenerationAge>
+	<minGenerationAge>2</minGenerationAge>
 	<gearHealthRange>
 		<min>0.7</min>
 		<max>2.3</max>
 	</gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
-		<li>Military</li>
+		<li>OGOClothing</li>
 		<li>OGOGrenFrag</li>
 	</apparelTags>
 	<apparelMoney>
@@ -332,6 +330,7 @@
 <PawnKindDef Name="OrkBoy" ParentName="OrkMilBase" Abstract="True">
 	<label>Boy</label>
 	<combatPower>70</combatPower>
+	<maxGenerationAge>29</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
@@ -340,7 +339,6 @@
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
-		<li>OrkBasic</li>
 		<li>OrkArmourNormal</li>
 		<li>OrkArmourBasic</li>
 	</apparelTags>
@@ -417,6 +415,8 @@
 <PawnKindDef Name="OrkEavyBoy" ParentName="OrkMilBase" Abstract="True">
 	<label>Eavy Boy</label>
 	<combatPower>90</combatPower>
+	<minGenerationAge>15</minGenerationAge>
+	<maxGenerationAge>29</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
@@ -429,7 +429,7 @@
 		<max>2.3</max>
 	</gearHealthRange>
 	<apparelTags>
-		<li>OrkHeavy</li>
+		<li>OrkArmourHeavy</li>
 		<li>OGOGrenKrak</li>
 		<li>IronGob</li>
 	</apparelTags>
@@ -531,7 +531,7 @@
 	<label>Nob</label>
 	<combatPower>135</combatPower>
 	<minGenerationAge>30</minGenerationAge>
-	<maxGenerationAge>50</maxGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
@@ -544,9 +544,10 @@
 		<max>2.3</max>
 	</gearHealthRange>
 	<apparelTags>
-		<li>OrkBasic</li>
+		<li>OrkArmourHeavy</li>
+		<li>OrkArmourBasic</li>
+		<li>OrkArmourNormal</li>
 		<li>OGOGrenKrak</li>
-		<li>BossPole</li>
 		<li>IronGob</li>
 	</apparelTags>
 	<apparelMoney>
@@ -667,7 +668,8 @@
 <PawnKindDef Name="OrkEavyNob" ParentName="OrkMilBase" Abstract="True">
 	<label>Eavy Nob</label>
 	<combatPower>220</combatPower>
-	<minGenerationAge>26</minGenerationAge>
+	<minGenerationAge>35</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
 	<race>OG_Alien_Ork</race>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
@@ -681,12 +683,11 @@
 		<max>3.5</max>
 	</gearHealthRange>
 	<apparelTags>
-		<li>Military</li>
-		<li>Spacer</li>
-		<li>OrkHeavy</li>
+		<!--li>Military</li>
+		<li>Spacer</li-->
+		<li>OrkArmourHeavy</li>
 		<li>OGOGrenKrak</li>
 		<li>OGOGrenMelta</li>
-		<li>BossPole</li>
 		<li>IronGob</li>
 	</apparelTags>
 	<apparelMoney>
@@ -793,7 +794,8 @@
 <PawnKindDef Name="OrkMegaNob" ParentName="OrkMilBase" Abstract="True">
 	<label>Mega Nob</label>
 	<combatPower>220</combatPower>
-	<minGenerationAge>26</minGenerationAge>
+	<minGenerationAge>35</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
 	<race>OG_Alien_Ork</race>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
@@ -809,7 +811,6 @@
 	<apparelTags>
 		<li>Military</li>
 		<li>Spacer</li>
-		<li>OrkHeavy</li>
 		<li>OrkMega</li>
 		<li>BossPole</li>
 		<li>IronGob</li>
@@ -869,7 +870,6 @@
 	<factionLeader>false</factionLeader>
 	<isFighter>true</isFighter>
 	<minGenerationAge>50</minGenerationAge>
-	<maxGenerationAge>600</maxGenerationAge>
 	<gearHealthRange>
 		<min>0.8</min>
 		<max>3.5</max>
@@ -880,7 +880,7 @@
 	</apparelMoney>
 	<apparelTags>
 		<li>OGOClothing</li>
-		<li>OrkHeavy</li>
+		<li>OrkArmourHeavy</li>
 		<li>OrkMega</li>
 		<li>BossPole</li>
 		<li>IronGob</li>

@@ -70,30 +70,43 @@
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
+
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.05,0</NorthOffset>
-			<SouthOffset>0,0.023,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
 		</li>
 	</comps>
 </ThingDef>
@@ -176,24 +189,36 @@
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.05,0</NorthOffset>
+			<!--NorthOffset>0,0.05,0</NorthOffset>
 			<SouthOffset>0,0.022,0</SouthOffset>
 			<EastOffset>0,0.03,0</EastOffset>
-			<WestOffset>0,0.03,0</WestOffset>
+			<WestOffset>0,0.03,0</WestOffset-->
 		</li>
 	</comps>
 </ThingDef>
@@ -276,24 +301,32 @@
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Left</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Pauldrons/Square/Pad_Checkered_Right</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 			</PauldronEntries>
-			<NorthOffset>0,0.05,0</NorthOffset>
-			<SouthOffset>0,0.022,0</SouthOffset>
-			<EastOffset>0,0.03,0</EastOffset>
-			<WestOffset>0,0.03,0</WestOffset>
 		</li>
 	</comps>
 </ThingDef>
@@ -433,6 +466,10 @@
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Mega/Backpack/Base</padTexPath>
 					<commonality>10</commonality>
+					<northtop>PostHead</northtop>
+					<southtop>Shell</southtop>
+					<easttop>PostHead</easttop>
+					<westtop>PostHead</westtop>
 				</li>
 			</PauldronEntries>
 			<NorthOffset>0,0.05,0</NorthOffset>

@@ -7,7 +7,7 @@
 	<description>A Squig (short for "Squiggly Beast") is the simplest known form of Orkoid life. There are many types of Squig, each generally filling some functional or utilitarian role in the Ork ecosystem. Squigs naturally grow and breed within the cesspits of Ork settlements, subsisting on Ork refuse.\n\nHeavily-muscled creatures with vicious unnatural claws and an absurdly powerful bite. They will only eat meat or corpses. If disturbed in the wild, they are very likely to attack. Squigs are usually found in and around Ork Settlements and camps, often kept as Guard/Attack Dogs.</description>
 	<statBases>
 		<MoveSpeed>6.0</MoveSpeed>
-		<MarketValue>450</MarketValue>
+		<MarketValue>300</MarketValue>
 		<MinimumHandlingSkill>5</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.06</MeleeDodgeChance>
@@ -488,7 +488,7 @@
 </ThingDef>
 
 <PawnKindDef ParentName="AnimalKindBase">
-	<defName>OG_Squig_eatin</defName>
+	<defName>OG_Squig_Eatin</defName>
 	<label>eatin squig</label>
 	<race>OG_Squig_Eatin</race>
 	<combatPower>45</combatPower>
@@ -557,6 +557,315 @@
 				<drawSize>1.05</drawSize>
 				<color>(74,88,26)</color>
 				<shaderType>CutoutComplex</shaderType>
+				<shadowData>
+					<volume>(0.3, 0.4, 0.3)</volume>
+					<offset>(0,0,-0.15)</offset>
+				</shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>1.05</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<!--li>
+			<label>big squig</label>
+			<labelPlural>big squigs</labelPlural>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Eatin_Squig</texPath>
+				<drawSize>1.5</drawSize>
+				<color>(74,88,26)</color>
+				<shaderType>CutoutComplex</shaderType>
+				<shadowData>
+					<volume>(0.4, 0.5, 0.4)</volume>
+					<offset>(0,0,-0.15)</offset>
+				</shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<li>
+			<label>massive squig</label>
+			<labelPlural>massive squigs</labelPlural>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Eatin_Squig</texPath>
+				<drawSize>2.5</drawSize>
+				<color>(74,88,26)</color>
+				<shaderType>CutoutComplex</shaderType>
+				<shadowData>
+					<volume>(0.5, 0.6, 0.5)</volume>
+					<offset>(0,0,-0.15)</offset>
+				</shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>2.5</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<li>
+			<label>colossal squig</label>
+			<labelPlural>colossal squigs</labelPlural>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Eatin_Squig</texPath>
+				<drawSize>5</drawSize>
+				<color>(74,88,26)</color>
+				<shaderType>CutoutComplex</shaderType>
+				<shadowData>
+					<volume>(0.8, 0.10, 0.8)</volume>
+					<offset>(0,0,-0.15)</offset>
+				</shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>5</drawSize>
+			</dessicatedBodyGraphicData>
+		</li-->
+	</lifeStages>
+</PawnKindDef>
+
+<!-- ========================== Oily Squig ================================= -->
+<ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
+	<defName>OG_Squig_Oily</defName>
+	<label>oily squig</label>
+	<description>A Squig (short for "Squiggly Beast") is the simplest known form of Orkoid life. There are many types of Squig, each generally filling some functional or utilitarian role in the Ork ecosystem. Squigs naturally grow and breed within the cesspits of Ork settlements, subsisting on Ork refuse.\n\nThe Oily Squig is a variety of Squig bred by Ork Meks to create fuel for the Orks' ramshackle vehicles. They create the fuel, an organically-synthesized version of Promethium, in their rotund bellies, and it can be squeezed out of their anteater-like trunks. These Squigs have no mouths, other than their trunk, and are not combat-oriented like their far more aggressive counterparts.</description>
+	<statBases>
+		<MoveSpeed>2.0</MoveSpeed>
+		<MarketValue>350</MarketValue>
+		<MinimumHandlingSkill>2</MinimumHandlingSkill>
+		<ToxicSensitivity>0.5</ToxicSensitivity>
+		<MeleeDodgeChance>0.00</MeleeDodgeChance>
+		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
+		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
+		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+		<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	</statBases>
+	<race>
+		<hasGenders>false</hasGenders>
+		<body>Biped</body>
+		<predator>false</predator>
+		<petness>0.3</petness>
+		<baseBodySize>1.0</baseBodySize>
+		<baseHungerRate>0.25</baseHungerRate>
+		<baseHealthScale>1.25</baseHealthScale>
+		<foodType>OmnivoreRoughAnimal</foodType>
+		<leatherDef>Leather_Squig</leatherDef>
+		<bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
+		<gestationPeriodDays>26</gestationPeriodDays>
+		<nameOnTameChance>0</nameOnTameChance>
+		<trainability>None</trainability>
+		<wildness>0.0</wildness>
+		<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(2, 1.7)</li>
+				<li>(2.5, 0.7)</li>
+				<li>(3, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeExpectancy>150</lifeExpectancy>
+		<lifeStageAges>
+			<li>
+				<def>OG_SquigBabyTiny</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>OG_SquigBaby</def>
+				<minAge>0.05</minAge>
+			</li>
+			<li>
+				<def>OG_SquigJuvenile</def>
+				<minAge>0.1</minAge>
+			</li>
+			<li>
+				<def>OG_SquigAdult</def>
+				<minAge>0.25</minAge>
+				<soundWounded>Pawn_Warg_Wounded</soundWounded>
+				<soundDeath>Pawn_Warg_Death</soundDeath>
+				<soundCall>Pawn_Warg_Call</soundCall>
+				<soundAngry>Pawn_Warg_Angry</soundAngry>
+			</li>
+			<!--li>
+				<def>OG_SquigAdultBig</def>
+				<minAge>5</minAge>
+			</li>
+			<li>
+				<def>OG_SquigAdultMassive</def>
+				<minAge>10</minAge>
+			</li>
+			<li>
+				<def>OG_SquigAdultColossal</def>
+				<minAge>15</minAge>
+			</li-->
+		</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		<ageGenerationCurve>
+			<points>
+				<li>(0,0)</li>
+				<li>(1,150)</li>
+				<li>(2,100)</li>
+				<li>(5,12)</li>
+				<li>(7,6)</li>
+				<li>(10,3)</li>
+				<li>(15,2)</li>
+				<li>(20,1)</li>
+				<li>(25,0)</li>
+			</points>
+		</ageGenerationCurve>
+	</race>
+	<tools>
+		<li>
+		<label>teef</label>
+		<capacities>
+			<li>Bite</li>
+		</capacities>
+		<power>3</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.9</chanceFactor>
+		<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+				<def>Stun</def>
+				<amount>6</amount>
+				</li>
+			</extraMeleeDamages>
+		</surpriseAttack>
+		</li>
+		<li>
+		<label>head</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<tradeTags>
+		<li>AnimalFarmOrk</li>
+		<li>AnimalOrk</li>
+	</tradeTags>
+	<comps>
+		<li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
+			<Poisonable>true</Poisonable>
+			<FoodPoisonCause>
+				<li>DangerousFoodType</li>
+				<li>FilthyKitchen</li>
+				<li>IncompetentCook</li>
+				<li>Rotten</li>
+				<!--
+				<li>Unknown</li>
+				-->
+			</FoodPoisonCause>
+		</li>
+		<li Class="AdeptusMechanicus.CompProperties_Regeneration">
+			<healFreshWounds>true</healFreshWounds>
+			<healFreshChance>0.5</healFreshChance>
+			<allowSealWounds>false</allowSealWounds>
+			<sealWoundsChance>0.1</sealWoundsChance>
+			<healPermenantWounds>true</healPermenantWounds>
+			<healPermenantChance>0.1</healPermenantChance>
+			<allowScarRemoval>false</allowScarRemoval>
+			<scarRemovalChance>0.01</scarRemovalChance>
+			<regrowMissingParts>true</regrowMissingParts>
+			<regrowMissingChance>0.01</regrowMissingChance>
+			<useFood>true</useFood>
+			<useRest>false</useRest>
+			<onlyWhileSleeping>false</onlyWhileSleeping>
+		</li>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>12</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+	</comps>
+	<modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Quadruped</bodyShape>
+		</li>
+	</modExtensions>
+</ThingDef>
+
+<PawnKindDef ParentName="AnimalKindBase">
+	<defName>OG_Squig_Oily</defName>
+	<label>oily squig</label>
+	<race>OG_Squig_Oily</race>
+	<combatPower>45</combatPower>
+	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<alternateGraphicChance>1</alternateGraphicChance>
+	<alternateGraphics>
+		<li><color>(74,88,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(56,52,100)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(0,120,73)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(122,88,70)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(143,115,0)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(152,119,0)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(9,88,125)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(54,78,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(54,78,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+		<li><color>(112,24,16)</color><colorTwo>(203,163,106)</colorTwo></li>
+	</alternateGraphics>
+	<lifeStages>
+		<li>
+			<label>tiny squigling</label>
+			<labelPlural>tiny squiglings</labelPlural>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Oily_Squig</texPath>
+				<drawSize>0.25</drawSize>
+				<color>(74,88,26)</color>
+				<!--shaderType>CutoutComplex</shaderType-->
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>0.25</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<li>
+			<label>squigling</label>
+			<labelPlural>squiglings</labelPlural>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Oily_Squig</texPath>
+				<drawSize>0.35</drawSize>
+				<color>(74,88,26)</color>
+				<!--shaderType>CutoutComplex</shaderType-->
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>0.55</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Oily_Squig</texPath>
+				<drawSize>0.45</drawSize>
+				<color>(74,88,26)</color>
+				<!--shaderType>CutoutComplex</shaderType-->
+				<shadowData>
+					<volume>(0.25, 0.3, 0.25)</volume>
+					<offset>(0,0,-0.15)</offset>
+				</shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+				<drawSize>0.7</drawSize>
+			</dessicatedBodyGraphicData>
+		</li>
+		<li>
+			<bodyGraphicData>
+				<texPath>Things/Pawn/Animal/Squig/Oily_Squig</texPath>
+				<drawSize>0.75</drawSize>
+				<color>(74,88,26)</color>
+				<!--shaderType>CutoutComplex</shaderType-->
 				<shadowData>
 					<volume>(0.3, 0.4, 0.3)</volume>
 					<offset>(0,0,-0.15)</offset>

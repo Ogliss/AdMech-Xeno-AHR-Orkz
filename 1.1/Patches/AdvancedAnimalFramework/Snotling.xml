@@ -576,7 +576,7 @@
 		</value>
 	</li>
 	
-	<li Class="PatchOperationAdd">
+	<!--li Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "OG_Snotling"]</xpath>
 		<value>	
 	<recipes>
@@ -607,13 +607,13 @@
 		<li>ExciseCarcinoma</li>
 		<li>AdministerMechSerumHealer</li>
 		<li>RemoveBodyPart</li>
-		<!--li>Euthanize</li>
+		<li>Euthanize</li>
 		<li>Anesthetize</li>
 		<li>WPEquipWeaponOnAnimal</li>
-		<li>WPRemoveWeaponOnAnimal</li-->
+		<li>WPRemoveWeaponOnAnimal</li>
 	</recipes>
 		</value>
-	</li>
+	</li-->
 	
 </operations>
 </Operation>

@@ -20,17 +20,17 @@
 	</weaponMoney>
 	<weaponTags>
 		<li>NeolithicRangedBasic</li>
-			<li>NeolithicMeleeBasic</li>
+		<li>NeolithicMeleeBasic</li>
 		<li>NeolithicMeleeAdvanced</li>
 	</weaponTags>
 	<techHediffsMoney>
-		<min>200</min>
-		<max>300</max>
+		<min>0</min>
+		<max>0</max>
 	</techHediffsMoney>
-	<techHediffsTags>
+	<!--techHediffsTags>
 		<li>Simple</li>
-	</techHediffsTags>
-	<techHediffsChance>0.51</techHediffsChance>
+	</techHediffsTags-->
+	<!--techHediffsChance>0.51</techHediffsChance-->
 	<invNutrition>2.55</invNutrition>
 	<inventoryOptions>
 		<skipChance>0.75</skipChance>
@@ -70,6 +70,7 @@
 	<labelPlural>Feral Warlords</labelPlural>
 	<factionLeader>true</factionLeader>
 	<isFighter>true</isFighter>
+	<combatPower>250</combatPower>
 	<gearHealthRange>
 		<min>0.5</min>
 		<max>2.0</max>
@@ -89,7 +90,7 @@
 		<li>NeolithicMeleeAdvanced</li>
 		<li>MedievalMeleeAdvanced</li>
 		<li>NeolithicMeleeDecent</li>
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 		<li>NeolithicRangedChief</li>
 	</weaponTags>
 	<techHediffsMoney>
@@ -101,23 +102,27 @@
 	</techHediffsTags>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boss</li>
-		</categories>
-		<exclude>
-			<li>Ork_Boss_Weird</li>
-		</exclude>
-		<commonality>1</commonality>
+			<categories>
+				<li>Ork_Boss</li>
+			</categories>
+			<exclude>
+				<li>Ork_Boss_Weird</li>
+			</exclude>
+			<commonality>1</commonality>
 		</li>
 		<li>
-		<categories>
-			<li>Ork_Boss_Weird</li>
-		</categories>
-		<commonality>0.1</commonality>
+			<categories>
+				<li>Ork_Boss_Weird</li>
+			</categories>
+			<commonality>0.1</commonality>
 		</li>
 	</backstoryFiltersOverride>
 	<minGenerationAge>60</minGenerationAge>
 	<maxGenerationAge>600</maxGenerationAge>
+	<apparelRequired>
+        <li>OGO_Apparel_EavyArmour</li>
+        <li>OGO_Apparel_EavyElmet</li>
+	</apparelRequired>
 	<modExtensions>
 		<li Class="AdeptusMechanicus.BackstoryExtension">
 
@@ -159,7 +164,7 @@
 	</weaponMoney>
 	<weaponTags>
 		<li>OCrudeChoppa</li>
-			<li>NeolithicMeleeBasic</li>
+		<li>NeolithicMeleeBasic</li>
 	</weaponTags>
 	<techHediffsMoney>
 		<min>200</min>
@@ -225,12 +230,12 @@
 	<defName>OG_Ork_Feral_Boy_Runt</defName>
 	<label>Feral Runt Boy</label>
 	<combatPower>50</combatPower>
-	<maxGenerationAge>16</maxGenerationAge>
-	<backstoryFiltersOverride>
+	<maxGenerationAge>2</maxGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boy</li>
-		</categories>
+			<categories>
+				<li>Ork_Boy</li>
+			</categories>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -243,15 +248,15 @@
 	</apparelMoney>
 	<apparelTags>
 		<li>OGOClothing</li>
-		<li>OrkBasic</li>
+		<li>OrkArmourBasic</li>
 	</apparelTags>
 	<weaponMoney>
 		<min>200</min>
 		<max>1500</max>
 	</weaponMoney>
 	<weaponTags>
-		<li>OBrutalityMelee</li>
-		<li>OEBrutalityMelee</li>
+		<li>OBrutalityMeleeFeral</li>
+		<li>OEBrutalityMeleeFeral</li>
 	</weaponTags>
 	<techHediffsMoney>
 		<min>200</min>
@@ -279,8 +284,7 @@
 	<race>OG_Alien_Ork</race>
 	<invNutrition>2.55</invNutrition>
 	<itemQuality>Normal</itemQuality>
-	<minGenerationAge>17</minGenerationAge>
-	<maxGenerationAge>300</maxGenerationAge>
+	<minGenerationAge>2</minGenerationAge>
 	<gearHealthRange>
 		<min>0.7</min>
 		<max>2.3</max>
@@ -323,7 +327,8 @@
 <PawnKindDef Name="FeralOrkBoy" ParentName="FeralOrkMilBase" Abstract="True">
 	<label>Feral Boy</label>
 	<combatPower>70</combatPower>
-	<backstoryFiltersOverride>
+	<maxGenerationAge>29</maxGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy</li>
@@ -331,7 +336,8 @@
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
-	
+		<li>OrkArmourBasic</li>
+		<li>OrkArmourNormal</li>
 	</apparelTags>
 </PawnKindDef>
 
@@ -339,7 +345,7 @@
 <PawnKindDef ParentName="FeralOrkBoy">
 	<defName>OG_Ork_Feral_Boy_Choppa</defName>
 	<label>Feral Choppa Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Choppa</li>
@@ -347,7 +353,7 @@
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
-		<li>OBrutalityMelee</li>
+		<li>OBrutalityMeleeFeral</li>
 	</weaponTags>
 </PawnKindDef>
 
@@ -355,7 +361,7 @@
 <PawnKindDef ParentName="FeralOrkBoy">
 	<defName>OG_Ork_Feral_Boy_Slugga</defName>
 	<label>Feral Slugga Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Slugga</li>
@@ -371,7 +377,7 @@
 <PawnKindDef ParentName="FeralOrkBoy">
 	<defName>OG_Ork_Feral_Boy_Shoota</defName>
 	<label>Feral Shoota Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Shoota</li>
@@ -387,7 +393,7 @@
 <PawnKindDef ParentName="FeralOrkBoy">
 	<defName>OG_Ork_Feral_Boy_Weird</defName>
 	<label>Feral Wyrd boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Weird</li>
@@ -406,12 +412,13 @@
 <PawnKindDef Name="FeralOrkEavyBoy" ParentName="FeralOrkMilBase" Abstract="True">
 	<label>Feral Eavy Boy</label>
 	<combatPower>90</combatPower>
-	<minGenerationAge>19</minGenerationAge>
-	<backstoryFiltersOverride>
+	<minGenerationAge>15</minGenerationAge>
+	<maxGenerationAge>29</maxGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boy</li>
-		</categories>
+			<categories>
+				<li>Ork_Boy</li>
+			</categories>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -419,7 +426,7 @@
 		<max>2.3</max>
 	</gearHealthRange>
 	<apparelTags>
-		<li>Apparel_PlateArmor</li>
+		<li>OrkArmourHeavy</li>
 	</apparelTags>
 	<apparelMoney>
 		<min>1500</min>
@@ -466,7 +473,7 @@
 <PawnKindDef ParentName="FeralOrkEavyBoy">
 	<defName>OG_Ork_Feral_Eavy_Boy_Choppa</defName>
 	<label>Feral Eavy Choppa Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Choppa</li>
@@ -474,7 +481,7 @@
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 	<li>NeolithicMeleeAdvanced</li>
 	</weaponTags>
 </PawnKindDef>
@@ -483,7 +490,7 @@
 <PawnKindDef ParentName="FeralOrkEavyBoy">
 	<defName>OG_Ork_Feral_Eavy_Boy_Slugga</defName>
 	<label>Feral Eavy Slugga Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Slugga</li>
@@ -499,7 +506,7 @@
 <PawnKindDef ParentName="FeralOrkEavyBoy">
 	<defName>OG_Ork_Feral_Eavy_Boy_Shoota</defName>
 	<label>Feral Eavy Shoota Boy</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boy_Shoota</li>
@@ -515,8 +522,9 @@
 <PawnKindDef Name="OG_Ork_Nob_Feral" ParentName="FeralOrkMilBase" Abstract="True">
 	<label>Feral Nob</label>
 	<combatPower>135</combatPower>
-	<minGenerationAge>50</minGenerationAge>
-	<backstoryFiltersOverride>
+	<minGenerationAge>30</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob</li>
@@ -528,7 +536,11 @@
 		<max>2.3</max>
 	</gearHealthRange>
 	<apparelTags>
-	
+		<li>OGOClothing</li>
+		<li>OrkArmourHeavy</li>
+		<li>OrkArmourBasic</li>
+		<li>OrkArmourNormal</li>
+		<li>IronGob</li>
 	</apparelTags>
 	<apparelMoney>
 		<min>1000</min>
@@ -540,7 +552,7 @@
 	</weaponMoney>
 	<weaponTags>
 	
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 	</weaponTags>
 	<techHediffsMoney>
 		<min>2000</min>
@@ -579,7 +591,7 @@
 <PawnKindDef ParentName="OG_Ork_Nob_Feral">
 	<defName>OG_Ork_Feral_Nob_Choppa</defName>
 	<label>Feral Choppa Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Choppa</li>
@@ -587,7 +599,7 @@
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 	</weaponTags>
 </PawnKindDef>
 
@@ -595,7 +607,7 @@
 <PawnKindDef ParentName="OG_Ork_Nob_Feral">
 	<defName>OG_Ork_Feral_Nob_Slugga</defName>
 	<label>Feral Slugga Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Slugga</li>
@@ -611,7 +623,7 @@
 <PawnKindDef ParentName="OG_Ork_Nob_Feral">
 	<defName>OG_Ork_Feral_Nob_Shoota</defName>
 	<label>Feral Shoota Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Shoota</li>
@@ -627,7 +639,7 @@
 <PawnKindDef ParentName="OG_Ork_Nob_Feral">
 	<defName>OG_Ork_Feral_Nob_Weird</defName>
 	<label>Feral Wyrd Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Weird</li>
@@ -646,8 +658,9 @@
 <PawnKindDef Name="FeralOrkEavyNob" ParentName="FeralOrkMilBase" Abstract="True">
 	<label>Feral Eavy Nob</label>
 	<combatPower>220</combatPower>
-	<minGenerationAge>26</minGenerationAge>
-	<backstoryFiltersOverride>
+	<minGenerationAge>35</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob</li>
@@ -659,7 +672,9 @@
 		<max>3.5</max>
 	</gearHealthRange>
 	<apparelTags>
-	
+		<li>OGOClothing</li>
+		<li>OrkArmourHeavy</li>
+		<li>IronGob</li>
 	</apparelTags>
 	<apparelMoney>
 		<min>2500</min>
@@ -709,7 +724,7 @@
 <PawnKindDef ParentName="FeralOrkEavyNob">
 	<defName>OG_Ork_Feral_Eavy_Nob_Choppa</defName>
 	<label>Feral Eavy Choppa Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Choppa</li>
@@ -717,7 +732,7 @@
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 		<li>NeolithicMeleeAdvanced</li>
 		<li>MedievalMeleeAdvanced</li>
 	</weaponTags>
@@ -727,7 +742,7 @@
 <PawnKindDef ParentName="FeralOrkEavyNob">
 	<defName>OG_Ork_Feral_Eavy_Nob_Slugga</defName>
 	<label>Feral Eavy Slugga Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Slugga</li>
@@ -743,7 +758,7 @@
 <PawnKindDef ParentName="FeralOrkEavyNob">
 	<defName>OG_Ork_Feral_Eavy_Nob_Shoota</defName>
 	<label>Feral Eavy Shoota Nob</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Nob_Shoota</li>
@@ -759,8 +774,8 @@
 <PawnKindDef ParentName="FeralOrkMilBase" Name="FeralOrkWarbossBase" Abstract="True">
 	<label>Feral Warboss</label>
 	<combatPower>250</combatPower>
-	<minGenerationAge>26</minGenerationAge>
-	<backstoryFiltersOverride>
+	<minGenerationAge>50</minGenerationAge>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boss</li>
@@ -777,6 +792,9 @@
 	</apparelMoney>
 	<apparelTags>
 		<li>OGOClothing</li>
+		<li>OrkArmourHeavy</li>
+		<li>BossPole</li>
+		<li>IronGob</li>
 	</apparelTags>
 	<weaponMoney>
 		<min>10000</min>
@@ -786,7 +804,7 @@
 		<li>NeolithicMeleeAdvanced</li>
 		<li>MedievalMeleeAdvanced</li>
 		<li>NeolithicRangedChief</li>
-		<li>OEBrutalityMelee</li>
+		<li>OEBrutalityMeleeFeral</li>
 	</weaponTags>
 	<techHediffsMoney>
 		<min>2000</min>
@@ -826,11 +844,15 @@
 <PawnKindDef ParentName="FeralOrkWarbossBase">
 	<defName>OG_Ork_Feral_Warboss</defName>
 	<label>Feral Warboss</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boss_Weird</li>
-		</categories>
+			<categories>
+				<li>Ork_Boss</li>
+			</categories>
+			<exclude>
+				<li>Ork_Boss_Weird</li>
+			</exclude>
+			<commonality>1</commonality>
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
@@ -845,7 +867,7 @@
 <PawnKindDef ParentName="FeralOrkWarbossBase">
 	<defName>OG_Ork_Feral_Warboss_Weird</defName>
 	<label>Feral Shaman</label>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
 		<categories>
 			<li>Ork_Boss_Weird</li>
