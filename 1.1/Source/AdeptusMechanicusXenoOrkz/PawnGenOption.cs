@@ -4,8 +4,8 @@ using Verse;
 
 namespace AdeptusMechanicus
 {
-	// Token: 0x020008EB RID: 2283
-	public class PawnGenOption
+    // Token: 0x020008EB RID: 2283
+    public class PawnGenOption
 	{
 		public PawnGenOption(PawnKindDef kind, float weight)
         {
