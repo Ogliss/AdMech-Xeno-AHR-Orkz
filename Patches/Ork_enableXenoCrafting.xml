@@ -41,4 +41,37 @@
 			</operations>	
 		</match>
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_FueledStove"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_FueledStove</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_TableButcher"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_TableButcher</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_DrugLab"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsProduceDrugs"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_DrugLab</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>
