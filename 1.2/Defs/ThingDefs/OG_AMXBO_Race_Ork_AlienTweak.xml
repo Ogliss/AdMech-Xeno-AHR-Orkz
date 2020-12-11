@@ -22,6 +22,42 @@
 				<li MayRequire="QX.AstraMilitarum">
 					<defName>IG_TraitAstarte</defName>
 				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>TAU_Philosophy</defName>
+				</li>
 				<li>
 						<defName>Kind</defName>
 				</li>

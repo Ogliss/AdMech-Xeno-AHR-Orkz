@@ -11,6 +11,18 @@
 					<li MayRequire="QX.AstraMilitarum">IGTraitInquisition</li>
 					<li MayRequire="QX.AstraMilitarum">IGTraitImperialMedic</li>
 					<li MayRequire="QX.AstraMilitarum">IG_TraitAstarte</li>
+					<li MayRequire="CptOhu.CorruptionCore">Emperor_Hope</li>
+					<li MayRequire="CptOhu.CorruptionCore">Ynnead_Hope</li>
+					<li MayRequire="CptOhu.CorruptionCore">Cegorach_Laughter</li>
+					<li MayRequire="CptOhu.CorruptionCore">Khaine_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">Khorne_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">Nurgle_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">Slaanesh_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">Tzeentch_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">Undivided_Fervor</li>
+					<li MayRequire="CptOhu.CorruptionCore">DE_Depravity</li>
+					<li MayRequire="CptOhu.CorruptionCore">ELDAR_mastery</li>
+					<li MayRequire="CptOhu.CorruptionCore">TAU_Philosophy</li>
 					<li>Kind</li>
 					<li>Gay</li>
 					<li>Wimp</li>
