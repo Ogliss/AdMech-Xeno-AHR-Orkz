@@ -136,10 +136,6 @@ namespace AdeptusMechanicus.HarmonyInstance
             LinkedBodyAddon linked = addon as LinkedBodyAddon;
             if (linked != null && linked.useHeadPosition)
             {
-                /*
-                ThingDef_AlienRace thingDef_AlienRace = pawn.def as ThingDef_AlienRace;
-                GraphicPaths paths = thingDef_AlienRace.alienRace.graphicPaths.GetCurrentGraphicPath(pawn.ageTracker.CurLifeStage);
-                */
                 Vector3 b = quat * pawn.Drawer.renderer.BaseHeadOffsetAt(rotation);
                 Vector3 v = original + b;
                 result = v;
