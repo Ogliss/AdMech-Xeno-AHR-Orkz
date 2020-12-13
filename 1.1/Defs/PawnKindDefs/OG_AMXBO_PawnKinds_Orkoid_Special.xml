@@ -289,19 +289,28 @@
 	<labelPlural>wild ork runts</labelPlural>
 	<labelFemale>wild ork runt</labelFemale>
 	<labelFemalePlural>wild ork runts</labelFemalePlural>
-	<backstoryFiltersOverride>
+	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boy</li>
-			<li>Ork_Boy_Weird</li>
-		</categories>
+			<categories>
+				<li>Ork_Base_Child</li>
+			</categories>
+		</li>
+		<li>
+			<categories>
+				<li>Ork_Odd_Child</li>
+			</categories>
+		</li>
+		<li>
+			<categories>
+				<li>Ork_Weird_Child</li>
+			</categories>
 		</li>
 	</backstoryFiltersOverride>
 	<baseRecruitDifficulty>0.450</baseRecruitDifficulty>
 	<itemQuality>Poor</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>
-	<maxGenerationAge>0</maxGenerationAge>
+	<maxGenerationAge>1</maxGenerationAge>
 </PawnKindDef>
 
 <!-- ============================ Grot ========================== -->
@@ -322,7 +331,7 @@
 	<itemQuality>Poor</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>
-	<maxGenerationAge>0</maxGenerationAge>
+	<maxGenerationAge>1</maxGenerationAge>
 </PawnKindDef>
 
 </Defs>

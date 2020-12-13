@@ -21,13 +21,28 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             if (request.KindDef.isOrkoid())
             {
-                request.FixedGender = Gender.None;
                 //    Log.Message(string.Format("GeneratePawn request is {0}, {1}, {2}", request.KindDef.LabelCap, request.FixedGender, request.MustBeCapableOfViolence));
-                PawnKindDef pawnKind = request.KindDef;
-                float relation = 0f;
-                bool mustbeviolent = request.KindDef.race != OGOrkThingDefOf.OG_Alien_Grot;
-                request = new PawnGenerationRequest(pawnKind, request.Faction, request.Context, request.Tile, request.ForceGenerateNewPawn, request.Newborn, request.AllowDead, request.AllowDowned, request.CanGeneratePawnRelations, mustbeviolent, relation, request.ForceAddFreeWarmLayerIfNeeded, request.AllowGay, request.AllowFood, request.AllowAddictions, request.Inhabitant, request.CertainlyBeenInCryptosleep, request.ForceRedressWorldPawnIfFormerColonist, request.WorldPawnFactionDoesntMatter, request.BiocodeWeaponChance, request.ExtraPawnForExtraRelationChance, request.RelationWithExtraPawnChanceFactor, request.ValidatorPreGear, request.ValidatorPostGear, request.ForcedTraits, request.ProhibitedTraits, request.MinChanceToRedressWorldPawn, request.FixedBiologicalAge, request.FixedChronologicalAge, request.FixedGender, request.FixedMelanin, request.FixedLastName);
-                //    Log.Message(string.Format("GeneratePawn End request is {0}, {1}, {2}", request.KindDef.LabelCap, request.FixedGender, request.MustBeCapableOfViolence));
+                request.AllowGay = false;
+                request.FixedGender = Gender.None;
+                request.CanGeneratePawnRelations = false;
+                request.ColonistRelationChanceFactor = 0f;
+                request.RelationWithExtraPawnChanceFactor = 0f;
+                request.ExtraPawnForExtraRelationChance = null;
+
+                request.MustBeCapableOfViolence = request.KindDef.isOrk();
+                if (request.KindDef == OGOrkPawnKindDefOf.OG_Ork_Wild || request.KindDef == OGOrkPawnKindDefOf.OG_Grot_Wild)
+                {
+                    request.Newborn = true;
+                    request.ForbidAnyTitle = true;
+                    request.ForceGenerateNewPawn = true;
+                    request.ForceBodyType = request.KindDef.isOrk() ? BodyTypeDefOf.Male : BodyTypeDefOf.Thin;
+                    request.FixedBiologicalAge = 0f;
+                    request.FixedChronologicalAge = 0f;
+                    request.AllowAddictions = false;
+                    request.ForceAddFreeWarmLayerIfNeeded = false;
+                }
+            //    request = new PawnGenerationRequest(request.KindDef, request.Faction, request.Context, request.Tile, request.ForceGenerateNewPawn, request.Newborn, request.AllowDead, request.AllowDowned, request.CanGeneratePawnRelations, request.MustBeCapableOfViolence, request.RelationWithExtraPawnChanceFactor, request.ForceAddFreeWarmLayerIfNeeded, request.AllowGay, request.AllowFood, request.AllowAddictions, request.Inhabitant, request.CertainlyBeenInCryptosleep, request.ForceRedressWorldPawnIfFormerColonist, request.WorldPawnFactionDoesntMatter, request.BiocodeWeaponChance, request.ExtraPawnForExtraRelationChance, request.RelationWithExtraPawnChanceFactor, request.ValidatorPreGear, request.ValidatorPostGear, request.ForcedTraits, request.ProhibitedTraits, request.MinChanceToRedressWorldPawn, request.FixedBiologicalAge, request.FixedChronologicalAge, request.FixedGender, request.FixedMelanin, request.FixedLastName);
+                  Log.Message(string.Format("GeneratePawn End request is {0}\n{1}", request.KindDef.LabelCap, request.ToString()));
             }
         }
         
@@ -41,8 +56,20 @@ namespace AdeptusMechanicus.HarmonyInstance
                     return;
                 }
                 Pawn_StoryTracker storyTracker = __result.story;
-                if (storyTracker.childhood.identifier.Contains("_Weird"))
+
+                if (storyTracker.childhood.spawnCategories.Contains("Ork_Base_Child"))
                 {
+
+                }
+                else
+                if (storyTracker.childhood.spawnCategories.Contains("Ork_Odd_Child"))
+                {
+
+                }
+                else
+                if (storyTracker.childhood.spawnCategories.Contains("Ork_Weird_Child"))
+                {
+
                     bool psyker = storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity);
                     bool nob = false;
                     bool boss = false;
@@ -64,7 +91,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         else if (nob)
                         {
                             Rand.PushState();
-                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1,2)));
+                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1, 2)));
                             Rand.PopState();
                         }
                         else
@@ -77,6 +104,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                     }
                 }
+
             }
         }
         

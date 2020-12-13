@@ -9,7 +9,7 @@
 	<bodyTypeFemale>Male</bodyTypeFemale>
 	<slot>Childhood</slot>
 	<spawnCategories>
-		<li>Ork_Base_Child</li>
+		<li>Ork_Child</li>
 		<li>Ork_Standard</li>
 		<li>Ork_Runt</li>
 		<li>Ork_Boy</li>
@@ -112,6 +112,9 @@
 			<amount>-4</amount>
 		</li>
 	</skillGains>
+	<spawnCategories>
+		<li>Ork_Base_Child</li>
+	</spawnCategories>
 </AlienRace.BackstoryDef>
 
 <!-- Ork Child Smart -->

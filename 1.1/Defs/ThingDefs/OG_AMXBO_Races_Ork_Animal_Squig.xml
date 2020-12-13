@@ -59,6 +59,7 @@
 		<baseHealthScale>1.5</baseHealthScale>
 		<foodType>OmnivoreAnimal</foodType>
 		<leatherDef>Leather_Squig</leatherDef>
+		<nameGenerator>OG_NamerAnimal_Squig</nameGenerator>
 		<bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
 		<gestationPeriodDays>26</gestationPeriodDays>
 		<nameOnTameChance>1</nameOnTameChance>

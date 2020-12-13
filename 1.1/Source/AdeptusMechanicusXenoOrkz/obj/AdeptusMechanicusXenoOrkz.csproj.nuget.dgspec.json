@@ -51,7 +51,7 @@
             },
             "Lib.Harmony": {
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[2.0.4, )"
             }
           }
         }
@@ -108,7 +108,7 @@
             },
             "Lib.Harmony": {
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[2.0.4, )"
             },
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -174,7 +174,7 @@
             },
             "Lib.Harmony": {
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[2.0.4, )"
             }
           }
         }

@@ -66,10 +66,10 @@
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffset>(0.0, 0.05)</headOffset>
 				<headOffsetDirectional>
-					<north>(0.0, -0.00)</north>
-					<south>(0.0, -0.00)</south>
-					<east>(0.10, 0.0)</east>
-					<west>(-0.10, 0.0)</west>
+					<north>(0.0, -0.05)</north>
+					<south>(0.0, -0.05)</south>
+					<east>(0.10, 0.05)</east>
+					<west>(-0.10, 0.05)</west>
 				</headOffsetDirectional>
 				<alienbodytypes>
 					<li>Hulk</li>
@@ -201,6 +201,12 @@
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
+				<headOffsetDirectional>
+					<north>(0.0, -0.15)</north>
+					<south>(0.0, -0.15)</south>
+					<east>(0.0, -0.15)</east>
+					<west>(-0.0, -0.15)</west>
+				</headOffsetDirectional>
 			</li>
 			<li>
 				<lifeStageDefs>
@@ -213,6 +219,12 @@
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(1.00, 1.00)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
+				<headOffsetDirectional>
+					<north>(0.0, -0.055)</north>
+					<south>(0.0, -0.055)</south>
+					<east>(0.0, -0.055)</east>
+					<west>(-0.0, -0.055)</west>
+				</headOffsetDirectional>
 			</li>
 			<li>
 				<lifeStageDefs>
@@ -223,7 +235,7 @@
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 				<customDrawSize>(1.125, 1.125)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				<customHeadDrawSize>(1.00, 1.00)</customHeadDrawSize>
+				<customHeadDrawSize>(1.125, 1.125)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 			</li>
 			<li>
@@ -277,7 +289,7 @@
 				<!--customHeadDrawSize>(1.1, 1.1)</customHeadDrawSize-->
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
-					<north>(0.0, 0.22)</north>
+					<north>(0.0, 0.20)</north>
 					<south>(0.0, -0.00)</south>
 					<east>(0.200, 0.10)</east>
 					<west>(-0.200, 0.10)</west>

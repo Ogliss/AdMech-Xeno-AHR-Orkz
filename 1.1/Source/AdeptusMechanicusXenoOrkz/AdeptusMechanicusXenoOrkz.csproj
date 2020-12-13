@@ -38,6 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Harmony\Patches\AlienRace_DrawAddons_LinkedBodyAddons_Transpiler.cs" />
     <Compile Include="PawnGenOption.cs" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
@@ -107,7 +109,7 @@
       <Version>1.2.2753</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.0.3</Version>
+      <Version>2.0.4</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -20,7 +20,7 @@
 		<max>0</max>
 	</startingGoodwill>
 	<factionNameMaker>OG_NamerFaction_Ork</factionNameMaker>
-	<settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+	<settlementNameMaker>OG_NamerBases_Ork</settlementNameMaker>
 	<techLevel>Neolithic</techLevel>
 	<backstoryFilters>
 		<li>

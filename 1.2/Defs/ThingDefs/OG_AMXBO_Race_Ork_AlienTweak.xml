@@ -80,17 +80,20 @@
 			<alienPartGenerator>
 				<bodyAddons>
 					<!-- Eyes -->
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeR</path>
 						<bodyPart>right eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadDrawSize>true</useHeadDrawSize>
+						<useHeadPosition>true</useHeadPosition>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Hulk>(-0.42,0.6)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -98,8 +101,8 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Hulk>(0,0.9)</Hulk>
+									<Male>(0,0.0)</Male>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -107,8 +110,8 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
-									<Hulk>(-0.725,0.7)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -127,17 +130,20 @@
 							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Eyes/EyeL</path>
 						<bodyPart>left eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadDrawSize>true</useHeadDrawSize>
+						<useHeadPosition>true</useHeadPosition>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Hulk>(-0.42,0.6)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -145,8 +151,8 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Hulk>(0,0.9)</Hulk>
+									<Male>(0,0.0)</Male>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -154,8 +160,8 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
-									<Hulk>(-0.725,0.7)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -175,17 +181,21 @@
 						</hediffGraphics>
 					</li>
 					<!-- Ears -->
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarR</path>
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<layerInvert>true</layerInvert>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadDrawSize>true</useHeadDrawSize>
+						<useHeadPosition>true</useHeadPosition>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Hulk>(-0.44,0.6)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -193,8 +203,8 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Hulk>(0,0.9)</Hulk>
+									<Male>(0,0.0)</Male>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -202,8 +212,8 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.6,0.6)</Male>
-									<Hulk>(-0.75,0.70)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -218,17 +228,21 @@
 							<li>UpperHead</li>
 						</hiddenUnderApparelFor>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Ears/Average_Ork_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadDrawSize>true</useHeadDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<layerInvert>true</layerInvert>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
-									<Hulk>(-0.40,0.6)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -236,8 +250,8 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Hulk>(0,0.9)</Hulk>
+									<Male>(0,0.0)</Male>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -245,8 +259,8 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.6,0.6)</Male>
-									<Hulk>(-0.75,0.65)</Hulk>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -271,7 +285,7 @@
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
+									<Male>(-0.00,0.6)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -305,17 +319,20 @@
 					</li-->
 					<!-- Teef -->
 					<!-- Male -->
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef</path>
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<debug>false</debug>
 						<layerOffset>-0.2741</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -323,7 +340,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
+									<Male>(0,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -331,7 +348,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -347,18 +364,21 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
 						<!--bodyPart>right tusk</bodyPart-->
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -366,7 +386,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
+									<Male>(0,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -374,7 +394,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -393,18 +413,21 @@
 							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
 						<!--bodyPart>left tusk</bodyPart-->
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.42,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -412,7 +435,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0,0.9)</Male>
+									<Male>(0,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -420,7 +443,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.55,0.6)</Male>
+									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -440,18 +463,21 @@
 						</hediffGraphics>
 					</li>
 					<!-- Hulk -->
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef</path>
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<debug>false</debug>
 						<layerOffset>-0.2741</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
-						<drawSize>(1.075, 1.0)</drawSize>
+						<!--drawSize>(1.075, 1.0)</drawSize-->
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Hulk>(-0.4175,0.6)</Hulk>
+									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -467,7 +493,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Hulk>(-0.725,0.75)</Hulk>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -483,19 +509,22 @@
 							<li>UpperHead</li-->
 						</hiddenUnderApparelFor>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR</path>
 						<bodyPart>Jaw</bodyPart>
 						<!--bodyPart>right tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
-						<drawSize>(1.15, 1.15)</drawSize>
+						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Hulk>(-0.40,0.65)</Hulk>
+									<Hulk>(0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -503,7 +532,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Hulk>(0,0.9)</Hulk>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -511,7 +540,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Hulk>(-0.68,0.75)</Hulk>
+									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -530,19 +559,22 @@
 							<MissingBodyPart>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangR_Missing</MissingBodyPart>
 						</hediffGraphics>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<path>Things/Pawn/Humanlike/Ork/Head/Teef/Teef_FangL</path>
 						<bodyPart>Jaw</bodyPart>
 						<!--bodyPart>left tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
-						<drawSize>(1.15, 1.15)</drawSize>
+						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Hulk>(-0.44,0.65)</Hulk>
+									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
@@ -550,7 +582,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Hulk>(0,0.9)</Hulk>
+									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(0,0.0)</Average_Ork>
@@ -558,7 +590,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Hulk>(-0.68,0.75)</Hulk>
+									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Ork>(-0.0,0.0)</Average_Ork>

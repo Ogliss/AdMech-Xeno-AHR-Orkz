@@ -10,7 +10,7 @@ namespace AdeptusMechanicus
 {
     public static class OrkoidFungualUtility
     {
-        // Token: 0x04000BDF RID: 3039
+
         public static readonly SimpleCurve SquigSpawnCurve = new SimpleCurve
 		{
 			{
@@ -38,7 +38,7 @@ namespace AdeptusMechanicus
 				true
 			}
 		};
-        // Token: 0x04000BDF RID: 3039
+
         public static readonly SimpleCurve SnotSpawnCurve = new SimpleCurve
 		{
 			{
@@ -66,7 +66,7 @@ namespace AdeptusMechanicus
 				true
 			}
 		};
-        // Token: 0x04000BDF RID: 3039
+
         public static readonly SimpleCurve GrotSpawnCurve = new SimpleCurve
 		{
 			{
@@ -90,7 +90,7 @@ namespace AdeptusMechanicus
 				true
 			}
 		};
-        // Token: 0x04000BDF RID: 3039
+
         public static readonly SimpleCurve OrkSpawnCurve = new SimpleCurve
 		{
 			{
