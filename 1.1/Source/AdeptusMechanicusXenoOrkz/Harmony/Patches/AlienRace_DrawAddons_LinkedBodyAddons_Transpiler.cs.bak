@@ -19,7 +19,7 @@ using System.Reflection;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     
-    [HarmonyPatch(typeof(AlienRace.HarmonyPatches), "DrawAddons")]
+ //   [HarmonyPatch(typeof(AlienRace.HarmonyPatches), "DrawAddons")]
     public static class AlienRace_DrawAddons_LinkedBodyAddons_Transpiler
     {
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
