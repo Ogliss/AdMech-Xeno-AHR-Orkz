@@ -538,6 +538,17 @@
 
 		</value>
 	</li>
+	<li Class="PatchOperationFindModID">
+		<mods>
+			<li>notfood.SeedsPlease</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThinkTreeDef/thinkRoot[@Class="ThinkNode_Priority"]/subNodes//li[@Class="ThinkNode_ConditionalHasFaction"]/subNodes//li[7]/subNodes//li[@Class="AnimalJobs.JobGiver_GenericWorkGiver"]/workGiverDef</xpath>
+			<value>
+				<workGiverDef>GrowerSow</workGiverDef>
+			</value>
+		</match>
+	</li>
 	<li Class="PatchOperationReplace">
 		<xpath>/Defs/ThinkTreeDef[defName = "SnotlingConstant"]</xpath>
 		<value>	

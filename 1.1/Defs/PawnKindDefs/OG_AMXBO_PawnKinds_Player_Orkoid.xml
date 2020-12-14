@@ -143,8 +143,7 @@
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
-				<li>Ork_Weird</li>
-				<li>Ork_Weird_Boy</li>
+				<li>Ork_Boy_Weird</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
@@ -165,7 +164,7 @@
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
-				<li>Ork_Weird_Nob</li>
+				<li>Ork_Nob_Weird</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
@@ -186,7 +185,7 @@
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
-				<li>Ork_Weird_Boss</li>
+				<li>Ork_Boss_Weird</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>

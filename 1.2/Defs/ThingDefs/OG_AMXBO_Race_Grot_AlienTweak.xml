@@ -73,18 +73,21 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 				<bodyAddons>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<debug>false</debug>
 						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<drawnInBed>true</drawnInBed>
 						<layerOffset>-0.2740</layerOffset>
-						<drawSize>(0.85, 0.85)</drawSize>
+						<!--drawSize>(0.85, 0.85)</drawSize-->
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Thin>(-0.40,0.525)</Thin>
+									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
@@ -92,7 +95,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Thin>(-0.05,0.875)</Thin>
+									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
@@ -100,7 +103,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Thin>(-0.53,0.575)</Thin>
+									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
@@ -113,18 +116,21 @@
 							<!--li>UpperHead</li-->
 						</hiddenUnderApparelFor>
 					</li>
-					<li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<debug>false</debug>
 						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarL</path>
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<useHeadPosition>true</useHeadPosition>
+						<useHeadDrawSize>true</useHeadDrawSize>
 						<drawnInBed>true</drawnInBed>
 						<layerOffset>-0.2740</layerOffset>
-						<drawSize>(0.85, 0.85)</drawSize>
+						<!--drawSize>(0.85, 0.85)</drawSize-->
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Thin>(-0.45,0.525)</Thin>
+									<Thin>(-0.00,0.0)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
@@ -132,7 +138,7 @@
 							</south>
 							<north>
 								<bodyTypes>
-									<Thin>(0.025,0.85)</Thin>
+									<Thin>(0.00,0.00)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(0.0,0.0)</Average_Gretchin>
@@ -140,7 +146,7 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Thin>(-0.53,0.575)</Thin>
+									<Thin>(-0.00,0.00)</Thin>
 								</bodyTypes>
 								<crownTypes>
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>

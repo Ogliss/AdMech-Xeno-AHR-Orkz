@@ -10,13 +10,14 @@ using HarmonyLib;
 using Verse.Sound;
 using AdeptusMechanicus;
 using AdeptusMechanicus.ExtensionMethods;
+using UnityEngine;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public static class PawnGenerator_GeneratePawn_Orkoid_Patch
     {
-        [HarmonyPrefix]
+        [HarmonyPrefix, HarmonyPriority(Priority.Last)]
         public static void Pre_GeneratePawn(ref PawnGenerationRequest request)
         {
             if (request.KindDef.isOrkoid())
@@ -42,21 +43,31 @@ namespace AdeptusMechanicus.HarmonyInstance
                     request.ForceAddFreeWarmLayerIfNeeded = false;
                 }
             //    request = new PawnGenerationRequest(request.KindDef, request.Faction, request.Context, request.Tile, request.ForceGenerateNewPawn, request.Newborn, request.AllowDead, request.AllowDowned, request.CanGeneratePawnRelations, request.MustBeCapableOfViolence, request.RelationWithExtraPawnChanceFactor, request.ForceAddFreeWarmLayerIfNeeded, request.AllowGay, request.AllowFood, request.AllowAddictions, request.Inhabitant, request.CertainlyBeenInCryptosleep, request.ForceRedressWorldPawnIfFormerColonist, request.WorldPawnFactionDoesntMatter, request.BiocodeWeaponChance, request.ExtraPawnForExtraRelationChance, request.RelationWithExtraPawnChanceFactor, request.ValidatorPreGear, request.ValidatorPostGear, request.ForcedTraits, request.ProhibitedTraits, request.MinChanceToRedressWorldPawn, request.FixedBiologicalAge, request.FixedChronologicalAge, request.FixedGender, request.FixedMelanin, request.FixedLastName);
-                  Log.Message(string.Format("GeneratePawn End request is {0}\n{1}", request.KindDef.LabelCap, request.ToString()));
+            //      Log.Message(string.Format("GeneratePawn End request is {0}\n{1}", request.KindDef.LabelCap, request.ToString()));
             }
         }
         
         [HarmonyPostfix]
-        public static void Post_GeneratePawn(ref Pawn __result)
+        public static void Post_GeneratePawn(PawnGenerationRequest request, ref Pawn __result)
         {
             if (__result != null && __result.isOrkoid())
             {
                 if (__result.story == null)
                 {
+                    if (__result.isSquig() && request.Context == PawnGenerationContext.PlayerStarter)
+                    {
+                        if (__result.ageTracker.AgeBiologicalYearsFloat > 5f)
+                        {
+                            Rand.PushState();
+                            __result.ageTracker.AgeChronologicalTicks = ((float)Rand.RangeInclusive(1, 5) * 3600000).SecondsToTicks();
+                            Rand.PopState();
+                        }
+                    }
                     return;
                 }
                 Pawn_StoryTracker storyTracker = __result.story;
-
+                Backstory adulthood = storyTracker.adulthood;
+                bool adult = adulthood != null;
                 if (storyTracker.childhood.spawnCategories.Contains("Ork_Base_Child"))
                 {
 
@@ -70,33 +81,52 @@ namespace AdeptusMechanicus.HarmonyInstance
                 if (storyTracker.childhood.spawnCategories.Contains("Ork_Weird_Child"))
                 {
 
-                    bool psyker = storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity);
-                    bool nob = false;
-                    bool boss = false;
-                    if (psyker)
-                    {
-                        return;
-                    }
                     if (__result.isOrk())
                     {
-                        if (storyTracker.adulthood != null)
+                        if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))
                         {
-                            nob = storyTracker.adulthood.identifier.Contains("_Nob");
-                            boss = storyTracker.adulthood.identifier.Contains("_Boss");
+                            Trait trait = new Trait(TraitDefOf.PsychicSensitivity, 1);
+                            if (storyTracker.adulthood != null)
+                            {
+                                if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                                {
+                                    trait = new Trait(TraitDefOf.PsychicSensitivity, 2);
+                                }
+                                else if (storyTracker.adulthood.identifier.Contains("_Nob"))
+                                {
+                                    Rand.PushState();
+                                    trait = new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1, 2));
+                                    Rand.PopState();
+                                }
+                            }
+                            __result.story.traits.GainTrait(trait);
                         }
-                        if (boss)
+                        if (ModLister.RoyaltyInstalled)
                         {
-                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, 2));
-                        }
-                        else if (nob)
-                        {
-                            Rand.PushState();
-                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1, 2)));
-                            Rand.PopState();
-                        }
-                        else
-                        {
-                            __result.story.traits.GainTrait(new Trait(TraitDefOf.PsychicSensitivity, 1));
+                            if (!__result.health.hediffSet.HasHediff(HediffDefOf.PsychicAmplifier))
+                            {
+                                Hediff_Psylink _Psylink = HediffMaker.MakeHediff(HediffDefOf.PsychicAmplifier, __result, __result.RaceProps.body.AllParts.FirstOrDefault(x => x.def == BodyPartDefOf.Brain)) as Hediff_Psylink;
+                                _Psylink.suppressPostAddLetter = true;
+                                __result.health.AddHediff(_Psylink);
+                            }
+                            if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                            {
+                                Rand.PushState();
+                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(3, 5), __result.GetMaxPsylinkLevel()), false);
+                                Rand.PopState();
+                            }
+                            else if (storyTracker.adulthood.identifier.Contains("_Nob"))
+                            {
+                                Rand.PushState();
+                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(1, 3), __result.GetMaxPsylinkLevel()), false);
+                                Rand.PopState();
+                            }
+                            else if (adult)
+                            {
+                                Rand.PushState();
+                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(0, 2), __result.GetMaxPsylinkLevel()), false);
+                                Rand.PopState();
+                            }
                         }
                     }
                     if (__result.isGrot())
@@ -104,7 +134,22 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                     }
                 }
-
+                /*
+                if (adult)
+                {
+                    if (__result.isOrk())
+                    {
+                        if (storyTracker.adulthood.identifier.Contains("_Boss") || storyTracker.adulthood.identifier.Contains("_Nob"))
+                        {
+                            HarmonyPatches.ChangeBodyType(__result, BodyTypeDefOf.Hulk);
+                        }
+                        else
+                        {
+                            HarmonyPatches.ChangeBodyType(__result, BodyTypeDefOf.Male);
+                        }
+                    }
+                }
+                */
             }
         }
         

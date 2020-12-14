@@ -2,85 +2,102 @@
 <Defs>
 <!-- Grotz -->
 <!-- Grot Childhood -->
-<!-- Grot Child -->
-<AlienRace.BackstoryDef>
-	<defName>OG_Grot_Base_Child</defName>
+<AlienRace.BackstoryDef Name="OG_Grot_Child_Abstract" Abstract="True">
 	<title>Grotling</title>
 	<titleShort>Grotling</titleShort>
-	<baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Childhood</slot>
+	<baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
 	<workDisables>
 		<!--li>Intellectual</li-->
 	</workDisables>
 	<forcedTraits>
 		<li>
-				<defName>Nerves</defName>
+			<defName>Nerves</defName>
 			<degree>-1</degree>
-				<chance>10</chance>
+			<chance>10</chance>
 		</li>
 		<li>
-				<defName>Neurotic</defName>
+			<defName>Neurotic</defName>
 			<degree>2</degree>
-				<chance>10</chance>
+			<chance>10</chance>
 		</li>
+	</forcedTraits>
+	<spawnCategories>
+	
+	</spawnCategories>
+</AlienRace.BackstoryDef>
+
+<!-- Grot Child -->
+<AlienRace.BackstoryDef ParentName="OG_Grot_Child_Abstract">
+	<defName>OG_Grot_Base_Child</defName>
+	<workDisables>
+		<!--li>Intellectual</li-->
+	</workDisables>
+	<forcedTraits>
+		<!--li>
+			<defName>Nerves</defName>
+			<degree>-1</degree>
+			<chance>10</chance>
+		</li-->
 	</forcedTraits>
 	<skillGains>
 		<li>
-		<defName>Shooting</defName>
-		<amount>-1</amount>
+			<defName>Shooting</defName>
+			<amount>-1</amount>
 		</li>
 		<li>
-		<defName>Melee</defName>
-		<amount>-1</amount>
+			<defName>Melee</defName>
+			<amount>-1</amount>
 		</li>
 		<li>
-		<defName>Construction</defName>
-		<amount>4</amount>
+			<defName>Construction</defName>
+			<amount>4</amount>
 		</li>
 		<li>
-		<defName>Mining</defName>
-		<amount>2</amount>
+			<defName>Mining</defName>
+			<amount>2</amount>
 		</li>
 		<li>
-		<defName>Cooking</defName>
-		<amount>-4</amount>
+			<defName>Cooking</defName>
+			<amount>-4</amount>
 		</li>
 		<li>
-		<defName>Plants</defName>
-		<amount>4</amount>
+			<defName>Plants</defName>
+			<amount>4</amount>
 		</li>
 		<li>
-		<defName>Animals</defName>
-		<amount>2</amount>
+			<defName>Animals</defName>
+			<amount>2</amount>
 		</li>
 		<li>
-		<defName>Crafting</defName>
-		<amount>-2</amount>
+			<defName>Crafting</defName>
+			<amount>-2</amount>
 		</li>
 		<li>
-		<defName>Artistic</defName>
-		<amount>-6</amount>
+			<defName>Artistic</defName>
+			<amount>-6</amount>
 		</li>
 		<li>
-		<defName>Medicine</defName>
-		<amount>-2</amount>
+			<defName>Medicine</defName>
+			<amount>-2</amount>
 		</li>
 		<li>
-		<defName>Social</defName>
-		<amount>3</amount>
+			<defName>Social</defName>
+			<amount>3</amount>
 		</li>
 		<li>
-		<defName>Intellectual</defName>
-		<amount>-6</amount>
+			<defName>Intellectual</defName>
+			<amount>-6</amount>
 		</li>
 	</skillGains>
 	<spawnCategories>
 		<li>Grot_Base_Child</li>
 		<li>Grot_Runt</li>
 		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
 		<li>Grot_Slave</li>
 		<li>Grot_Leada</li>
 		<li>Grot_Tek</li>
@@ -101,16 +118,17 @@
 	<slot>Adulthood</slot>
 	<skillGains>
 		<li>
-		<defName>Melee</defName>
-		<amount>-1</amount>
+			<defName>Melee</defName>
+			<amount>-1</amount>
 		</li>
 		<li>
-		<defName>Shooting</defName>
-		<amount>-1</amount>
+			<defName>Shooting</defName>
+			<amount>-1</amount>
 		</li>
 	</skillGains>
 	<spawnCategories>
 		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
 		<li>Grot_Slave</li>
 	</spawnCategories>
 </AlienRace.BackstoryDef>
@@ -132,16 +150,17 @@
 	</workDisables>
 	<skillGains>
 		<li>
-		<defName>Medicine</defName>
-		<amount>2</amount>
+			<defName>Medicine</defName>
+			<amount>2</amount>
 		</li>
 		<li>
-		<defName>Melee</defName>
-		<amount>4</amount>
+			<defName>Melee</defName>
+			<amount>4</amount>
 		</li>
 	</skillGains>
 	<spawnCategories>
 		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
 		<li>Grot_Doc</li>
 	</spawnCategories>
 </AlienRace.BackstoryDef>
@@ -164,20 +183,21 @@
 	</workDisables>
 	<skillGains>
 		<li>
-		<defName>Crafting</defName>
-		<amount>3</amount>
+			<defName>Crafting</defName>
+			<amount>3</amount>
 		</li>
 		<li>
-		<defName>Melee</defName>
-		<amount>1</amount>
+			<defName>Melee</defName>
+			<amount>1</amount>
 		</li>
 		<li>
-		<defName>Intellectual</defName>
-		<amount>2</amount>
+			<defName>Intellectual</defName>
+			<amount>2</amount>
 		</li>
 	</skillGains>
 	<spawnCategories>
 		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
 		<li>Grot_Tek</li>
 	</spawnCategories>
 </AlienRace.BackstoryDef>
@@ -200,20 +220,21 @@
 	</workDisables>
 	<skillGains>
 		<li>
-		<defName>Crafting</defName>
-		<amount>3</amount>
+			<defName>Crafting</defName>
+			<amount>3</amount>
 		</li>
 		<li>
-		<defName>Melee</defName>
-		<amount>2</amount>
+			<defName>Melee</defName>
+			<amount>2</amount>
 		</li>
 		<li>
-		<defName>Shooting</defName>
-		<amount>2</amount>
+			<defName>Shooting</defName>
+			<amount>2</amount>
 		</li>
 	</skillGains>
 	<spawnCategories>
 		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
 		<li>Grot_Leada</li>
 	</spawnCategories>
 </AlienRace.BackstoryDef>
