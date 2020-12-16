@@ -244,7 +244,7 @@
             </li>
 			
 			<!-- Modded: Handle Animals-->
-			<li Class="ThinkNode_WPChancePerHour_Constant">
+			<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 				<mtbHours>0.5</mtbHours>
 				<subNodes>
 					<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
@@ -258,7 +258,7 @@
 			</li> 
 			
 			<!-- Modded: Cut Plants -->
-			<li Class="ThinkNode_WPChancePerHour_Constant">
+			<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 				<mtbHours>0.5</mtbHours>
 				<subNodes>
 					<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
@@ -269,7 +269,7 @@
 			
 			<!-- Modded: Harvest Plants -->
 			
-			<li Class="ThinkNode_WPChancePerHour_Constant">
+			<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 				<mtbHours>0.5</mtbHours>
 				<subNodes>
 					<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
@@ -292,7 +292,7 @@
 					<subNodes>
 						
 					<!-- Modded: Uninstall-->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 						<mtbHours>0.5</mtbHours>
 						<subNodes>
 							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
@@ -302,15 +302,15 @@
 					</li> 
 					
 					<!-- Modded: Repair-->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 						<mtbHours>0.5</mtbHours>
 						<subNodes>
-							<li Class="JobGiver_WPRepair" />					
+							<li Class="AnimalJobs.JobGiver_WPRepair" />					
 						</subNodes>
 					</li> 
 					
 					<!-- Modded: Repair-->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 						<mtbHours>0.5</mtbHours>
 						<subNodes>
 						<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
@@ -323,7 +323,7 @@
 					</li> 
 
 					<!-- Modded: Construction -->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 						<mtbHours>0.5</mtbHours>
 						<subNodes>
 							<!--
@@ -344,10 +344,10 @@
 					<!--
 					-->
 					<!-- Modded: deconstruct -->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 					<mtbHours>0.5</mtbHours>
 						<subNodes>
-							<li Class="JobGiver_WPDeconstruct" />		
+							<li Class="AnimalJobs.JobGiver_WPDeconstruct" />		
 							<li Class="AnimalJobs.JobGiver_GenericWorkGiver">					
 								<workGiverDef>RemoveRoofs</workGiverDef>
 							</li>
@@ -377,7 +377,7 @@
                         <li Class="ThinkNode_Tagger">
                           <tagToGive>TrainedAnimalBehavior</tagToGive>
                           <subNodes>
-								<li Class="ThinkNode_WPChancePerHour_Constant">
+								<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 									<mtbHours>0.25</mtbHours>
 									<subNodes>
 											<li Class="JobGiver_Haul" />						
@@ -411,10 +411,10 @@
 				<trainable>Obedience</trainable>
 				<subNodes>
 					<!-- Modded: Flick -->
-					<li Class="ThinkNode_WPChancePerHour_Constant">
+					<li Class="AnimalJobs.ThinkNode_WPChancePerHour_Constant">
 					<mtbHours>0.5</mtbHours>
 					<subNodes>
-							<li Class="JobGiver_WPFlick" />					
+							<li Class="AnimalJobs.JobGiver_WPFlick" />					
 					</subNodes>
 					</li>
 					
