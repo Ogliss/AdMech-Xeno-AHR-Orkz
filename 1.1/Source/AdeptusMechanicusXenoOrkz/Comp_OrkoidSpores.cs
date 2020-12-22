@@ -41,12 +41,12 @@ namespace AdeptusMechanicus
         public bool canspawn => plant.HarvestableNow && Props.canspawn;
 
         public bool spawnwild => Props.spawnwild;
-        public float spawnChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
+        public float spawnChance => parent.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSpawnChance : AMMod.settings.FungusSpawnChance;
 
-        public float squigChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSquigChance : AMMod.Instance.settings.FungusSquigChance;
-        public float snotlingChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
-        public float grotChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
-        public float orkChance => parent.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
+        public float squigChance => parent.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSquigChance : AMMod.settings.FungusSquigChance;
+        public float snotlingChance => parent.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSnotChance : AMMod.settings.FungusSnotChance;
+        public float grotChance => parent.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonGrotChance : AMMod.settings.FungusGrotChance;
+        public float orkChance => parent.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonOrkChance : AMMod.settings.FungusOrkChance;
 
         private float age = 0;
         public float Age

@@ -34,12 +34,12 @@ namespace AdeptusMechanicus
     {
         public OrkoidFungalProps FungalProps => this.def.plant as OrkoidFungalProps;
         public new bool HasEnoughLightToGrow => true;
-        public float spawnChance => this.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSpawnChance : AMMod.Instance.settings.FungusSpawnChance;
+        public float spawnChance => this.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSpawnChance : AMMod.settings.FungusSpawnChance;
 
-        public float squigChance => this.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSquigChance : AMMod.Instance.settings.FungusSquigChance;
-        public float snotlingChance => this.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonSnotChance : AMMod.Instance.settings.FungusSnotChance;
-        public float grotChance => this.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonGrotChance : AMMod.Instance.settings.FungusGrotChance;
-        public float orkChance => this.def.defName.Contains("Cocoon") ? AMMod.Instance.settings.CocoonOrkChance : AMMod.Instance.settings.FungusOrkChance;
+        public float squigChance => this.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSquigChance : AMMod.settings.FungusSquigChance;
+        public float snotlingChance => this.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonSnotChance : AMMod.settings.FungusSnotChance;
+        public float grotChance => this.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonGrotChance : AMMod.settings.FungusGrotChance;
+        public float orkChance => this.def.defName.Contains("Cocoon") ? AMMod.settings.CocoonOrkChance : AMMod.settings.FungusOrkChance;
 
         protected IEnumerable<Pawn> Squigs
         {

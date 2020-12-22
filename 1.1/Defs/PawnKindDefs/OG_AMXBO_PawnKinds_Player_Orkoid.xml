@@ -51,7 +51,8 @@
 </PawnKindDef-->
 
 <!-- Tek Ork Player Pawnkinds -->
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Boy -->
+<PawnKindDef ParentName="OG_Ork_Player_Boy_Base">
 	<defName>Colonist_OG_Ork_Boy</defName>
 	<label>boy</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
@@ -62,8 +63,6 @@
 		<min>500</min>
 		<max>1200</max>
 	</apparelMoney>
-	<minGenerationAge>0</minGenerationAge>
-	<maxGenerationAge>29</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
 			<categories>
@@ -80,7 +79,8 @@
 	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Nob -->
+<PawnKindDef ParentName="OG_Ork_Player_Nob_Base">
 	<defName>Colonist_OG_Ork_Nob</defName>
 	<label>nob</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
@@ -101,12 +101,11 @@
 		<min>500</min>
 		<max>1200</max>
 	</apparelMoney>
-	<minGenerationAge>30</minGenerationAge>
-	<maxGenerationAge>49</maxGenerationAge>
 	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Boss -->
+<PawnKindDef ParentName="OG_Ork_Player_Boss_Base">
 	<defName>Colonist_OG_Ork_Warboss</defName>
 	<label>boss</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
@@ -130,15 +129,14 @@
 		<min>500</min>
 		<max>1200</max>
 	</apparelMoney>
-	<minGenerationAge>50</minGenerationAge>
-	<maxGenerationAge>600</maxGenerationAge>
 	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 </PawnKindDef>
 
 <!-- Tek Ork Player Weird Pawnkinds -->
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Boy -->
+<PawnKindDef ParentName="OG_Ork_Player_Boy_Base">
 	<defName>Colonist_OG_Ork_Weird_Boy</defName>
-	<label>boy</label>
+	<label>weirdboy</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
@@ -157,7 +155,8 @@
 	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Nob -->
+<PawnKindDef ParentName="OG_Ork_Player_Nob_Base">
 	<defName>Colonist_OG_Ork_Weird_Nob</defName>
 	<label>nob</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
@@ -178,7 +177,8 @@
 	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Player_Base">
+<!-- Boss -->
+<PawnKindDef ParentName="OG_Ork_Player_Boss_Base">
 	<defName>Colonist_OG_Ork_Weird_Warboss</defName>
 	<label>boss</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>

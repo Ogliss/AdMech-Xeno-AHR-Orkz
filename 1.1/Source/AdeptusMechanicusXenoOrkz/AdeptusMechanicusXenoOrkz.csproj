@@ -38,8 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
-    <None Include="LinkedBodyAddon.cs.bak" />
-    <None Include="Harmony\Patches\AlienRace_DrawAddons_LinkedBodyAddons_Transpiler.cs.bak" />
     <Compile Include="PawnGenOption.cs" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />

@@ -126,6 +126,21 @@
 	</backstoryFiltersOverride>
 </PawnKindDef>
 
+<!-- ============================ Ork Player Boy Base ========================== -->
+<PawnKindDef Abstract="True" Name="OG_Ork_Player_Boy_Base" ParentName="OG_Ork_Player_Base">
+	<minGenerationAge>0</minGenerationAge>
+	<maxGenerationAge>29</maxGenerationAge>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="OG_Ork_Player_Nob_Base" ParentName="OG_Ork_Player_Base">
+	<minGenerationAge>30</minGenerationAge>
+	<maxGenerationAge>49</maxGenerationAge>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="OG_Ork_Player_Boss_Base" ParentName="OG_Ork_Player_Base">
+	<minGenerationAge>50</minGenerationAge>
+</PawnKindDef>
+
 <!-- ============================ Grot Player Base ========================== -->
 <PawnKindDef Abstract="True" Name="OG_Grot_Player_Base">
 	<race>OG_Alien_Grot</race>
