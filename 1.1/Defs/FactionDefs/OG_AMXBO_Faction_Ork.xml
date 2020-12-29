@@ -43,10 +43,10 @@
 		<li>Visitor_Ork_Standard</li>
 	</visitorTraderKinds>
 	<caravanTraderKinds>
-		<li>Caravan_Ork_BulkGoods</li>
-		<li>Caravan_Ork_CombatSupplier</li>
-		<li>Caravan_Ork_Exotic</li>
-		<li>Caravan_Ork_PirateMerchant</li>
+		<li>OG_Ork_Caravan_BulkGoods</li>
+		<li>OG_Ork_Caravan_CombatSupplier</li>
+		<li>OG_Ork_Caravan_Exotic</li>
+		<li>OG_Ork_Caravan_PirateMerchant</li>
 	</caravanTraderKinds>
 	<baseTraderKinds>
 		<li>Base_Ork_Standard</li>

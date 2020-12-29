@@ -2,7 +2,7 @@
 <Defs>
 <!--================= Bulk Goods Trader =================-->
 <TraderKindDef>
-	<defName>Caravan_Ork_BulkGoods</defName>
+	<defName>OG_Ork_Caravan_BulkGoods</defName>
 	<label>bulk goods trader</label>
 	<stockGenerators>
 
@@ -127,7 +127,7 @@
 
 <!--================= Combat Supplier Trader =================-->
 <TraderKindDef>
-	<defName>Caravan_Ork_CombatSupplier</defName>
+	<defName>OG_Ork_Caravan_CombatSupplier</defName>
 	<label>combat supplier</label>
 	<stockGenerators>
 
@@ -210,7 +210,7 @@
 
 <!--================= Exotic Goods Trader =================-->
 <TraderKindDef>
-	<defName>Caravan_Ork_Exotic</defName>
+	<defName>OG_Ork_Caravan_Exotic</defName>
 	<label>exotic goods trader</label>
 	<stockGenerators>
 
@@ -336,7 +336,7 @@
 
 <!--================= Slave Trader =================-->
 <TraderKindDef>
-	<defName>Caravan_Ork_PirateMerchant</defName>
+	<defName>OG_Ork_Caravan_PirateMerchant</defName>
 	<label>slaver</label>
 	<!--requestable>false</requestable-->
 	<commonalityMultFromPopulationIntent>

@@ -18,21 +18,29 @@ namespace AdeptusMechanicus.HarmonyInstance
         static HarmonyInstanceOrkz()
         {
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.orkz");
-            MethodInfo method = AccessTools.TypeByName("RimWorld.JobDriver_PlantWork").GetNestedTypes(BindingFlags.NonPublic | BindingFlags.Instance).First().
+            MethodInfo targetmethod1 = AccessTools.TypeByName("RimWorld.JobDriver_PlantWork").GetNestedTypes(BindingFlags.NonPublic | BindingFlags.Instance).First().
                 GetMethods(BindingFlags.NonPublic | BindingFlags.Instance).
                 MaxBy(mi => mi.GetMethodBody()?.GetILAsByteArray().Length ?? -1);
-            bool flag1 = method == null;
-            if (flag1)
+            bool t1 = targetmethod1 == null;
+            if (t1)
             {
                 Log.Warning("Target method null");
             }
-            MethodInfo method2 = typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("Transpiler");
-            bool flag2 = method2 == null;
-            if (flag2)
+            MethodInfo patchmethod1 = typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("Transpiler");
+            bool p1 = patchmethod1 == null;
+            if (p1)
             {
                 Log.Warning("Patch method null");
             }
-            harmony.Patch(method, transpiler: new HarmonyMethod(method2));
+            harmony.Patch(targetmethod1, transpiler: new HarmonyMethod(patchmethod1));
+            /*
+            MethodInfo targetmethod2 = AccessTools.TypeByName("AnimalGear.AlienChildrenCompatibilityHarmony.Alien_DrawAddons_Patch")?.GetMethod("DrawAddons_Pre");
+            bool t2 = targetmethod2 != null;
+            if (t2)
+            {
+                Log.Warning("Patch AnimalGear.AlienChildrenCompatibilityHarmony.Alien_DrawAddons_Patch method Found!!!");
+            }
+            */
             /*
             MethodInfo method3 = AccessTools.TypeByName("RBB_Code.JobDriver_CatchFish").GetMethod("MakeNewToils", BindingFlags.NonPublic | BindingFlags.Instance);
             MethodInfo method4 = typeof(JobDriver_CatchFish_MakeNewToils_Snotling_Patch).GetMethod("Prefix");

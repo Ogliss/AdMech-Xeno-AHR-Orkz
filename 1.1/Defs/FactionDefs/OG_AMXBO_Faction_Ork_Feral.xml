@@ -43,10 +43,10 @@
 		<li>Visitor_Ork_Feral_Standard</li>
 	</visitorTraderKinds>
 	<caravanTraderKinds>
-		<li>Caravan_Ork_Feral_BulkGoods</li>
-		<li>Caravan_Ork_Feral_CombatSupplier</li>
-		<li>Caravan_Ork_Feral_Exotic</li>
-		<li>Caravan_Ork_Feral_PirateMerchant</li>
+		<li>OG_Ork_Caravan_Feral_BulkGoods</li>
+		<li>OG_Ork_Caravan_Feral_CombatSupplier</li>
+		<li>OG_Ork_Caravan_Feral_Exotic</li>
+		<li>OG_Ork_Caravan_Feral_PirateMerchant</li>
 	</caravanTraderKinds>
 	<baseTraderKinds>
 		<li>Base_Ork_Feral_Standard</li>
@@ -113,7 +113,6 @@
 		</traders>
 		<carriers>
 			<Muffalo>2</Muffalo>
-			<OG_Squig>2</OG_Squig>
 			<Dromedary>2</Dromedary>
 		</carriers>
 		<guards>
