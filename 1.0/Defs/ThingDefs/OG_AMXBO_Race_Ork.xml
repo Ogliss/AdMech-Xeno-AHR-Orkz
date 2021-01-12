@@ -501,8 +501,8 @@
 				</li>
 				<li>
 					<factions>
-						<!--li>OG_DarkEldar_Faction</li-->
-						<li>OG_DarkEldar_PlayerColony</li>
+						<!--li>OG_DarkEldar_Kabal_Faction</li-->
+						<li>OG_DarkEldar_Kabal_PlayerColony</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>

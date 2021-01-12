@@ -117,8 +117,8 @@
 				</li>
 				<li>
 					<factions>
-						<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Faction</li>
-						<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_PlayerColony</li>
+						<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Kabal_Faction</li>
+						<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Kabal_PlayerColony</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -689,7 +689,7 @@
 		<MentalBreakThreshold>0.020</MentalBreakThreshold>
 		<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
 		<PainShockThreshold>0.95</PainShockThreshold>
-		<ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+		<ForagedNutritionPerDay>0.850</ForagedNutritionPerDay>
 		<GlobalLearningFactor>0.85</GlobalLearningFactor>
 		<MeleeDodgeChance>1.125</MeleeDodgeChance>
 		<MeleeHitChance>1.25</MeleeHitChance>
@@ -838,31 +838,31 @@
 	</recipes>
 	<comps>
 		<li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
-		<Poisonable>true</Poisonable>
-		<FoodPoisonCause>
-			<li>DangerousFoodType</li>
-			<li>FilthyKitchen</li>
-			<li>IncompetentCook</li>
-			<li>Rotten</li>
-			<!--
-			<li>Unknown</li>
-			-->
-		</FoodPoisonCause>
+			<Poisonable>true</Poisonable>
+			<FoodPoisonCause>
+				<li>DangerousFoodType</li>
+				<li>FilthyKitchen</li>
+				<li>IncompetentCook</li>
+				<li>Rotten</li>
+				<!--
+				<li>Unknown</li>
+				-->
+			</FoodPoisonCause>
 		</li>
 		<li Class="AdeptusMechanicus.CompProperties_Regeneration">
-		<healFreshWounds>true</healFreshWounds>
-		<healFreshChance>0.5</healFreshChance>
-		<allowSealWounds>false</allowSealWounds>
-		<sealWoundsChance>0.1</sealWoundsChance>
-		<healPermenantWounds>true</healPermenantWounds>
-		<healPermenantChance>0.1</healPermenantChance>
-		<allowScarRemoval>false</allowScarRemoval>
-		<scarRemovalChance>0.01</scarRemovalChance>
-		<regrowMissingParts>true</regrowMissingParts>
-		<regrowMissingChance>0.01</regrowMissingChance>
-		<useFood>true</useFood>
-		<useRest>false</useRest>
-		<onlyWhileSleeping>false</onlyWhileSleeping>
+			<healFreshWounds>true</healFreshWounds>
+			<healFreshChance>0.5</healFreshChance>
+			<allowSealWounds>false</allowSealWounds>
+			<sealWoundsChance>0.1</sealWoundsChance>
+			<healPermenantWounds>true</healPermenantWounds>
+			<healPermenantChance>0.1</healPermenantChance>
+			<allowScarRemoval>false</allowScarRemoval>
+			<scarRemovalChance>0.01</scarRemovalChance>
+			<regrowMissingParts>true</regrowMissingParts>
+			<regrowMissingChance>0.01</regrowMissingChance>
+			<useFood>true</useFood>
+			<useRest>false</useRest>
+			<onlyWhileSleeping>false</onlyWhileSleeping>
 		</li>
 	</comps>
 	<modExtensions>

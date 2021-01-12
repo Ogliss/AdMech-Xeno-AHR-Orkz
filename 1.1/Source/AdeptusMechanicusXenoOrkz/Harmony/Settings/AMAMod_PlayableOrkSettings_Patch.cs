@@ -22,22 +22,35 @@ namespace AdeptusMechanicus.HarmonyInstance
     }
 
     [HarmonyPatch(typeof(AMAMod), "OrkSettings")]
-    public static class AMMod_PlayableOrkSettings_Patch
+    public static class AMAMod_PlayableOrkSettings_Patch
     {
+        private static bool Xenobiologis = AdeptusIntergrationUtility.enabled_MagosXenobiologis;
+        private static AMSettings settings = AMAMod.settings;
         [HarmonyPrefix, HarmonyPriority(401)]
-        public static bool OrkSettings_Prefix(ref AMAMod __instance, ref Listing_Standard listing_Main, Rect rect, Rect inRect, float num, float num2)
+        public static void Prefix(ref AMAMod __instance, ref Listing_Standard listing_Main, Rect rect, Rect inRect, float num, float num2)
         {
-            AMSettings settings = AMAMod.settings;
-            bool showRaces = settings.ShowAllowedRaceSettings;
-            bool setting = settings.ShowAllowedRaceSettings && settings.ShowOrk;
+            bool showRaces = settings.ShowAllowedRaceSettings || !Xenobiologis;
+            bool setting = showRaces && settings.ShowOrk;
             float lineheight = (Text.LineHeight + listing_Main.verticalSpacing);
             float w = rect.width * 0.480f;
             int Options = 6;
             float RaceSettings = __instance.Length(setting, Options, lineheight, 48, showRaces ? 1 : 0); //(settings.ShowImperium ? (lineheight * 2) : (lineheight * 1)) + (settings.ShowImperium ? 10 : 0);
             float options = __instance.Length(setting, Options - 1, lineheight, 0, 0);
 
-            Listing_Standard listing_Race = listing_Main.BeginSection_NewTemp(RaceSettings);
-            listing_Race.CheckboxLabeled("AMXB_ShowOrk".Translate() + " Settings" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowOrk, null, false, true);
+            if (!Xenobiologis)
+            {
+                if (!listing_Main.ButtonText("AMO_ModName".Translate() + " Options" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowOrk))
+                {
+                    __instance.XenobiologisOrkMenuLength = 0;
+                    return;
+                }
+            }
+            Listing_Standard listing_Race;
+            if (AMAMod.VOPT)
+                listing_Race = listing_Main.BeginSection_OnePointTwo(RaceSettings);
+            else
+                listing_Race = listing_Main.BeginSection_OnePointOne(RaceSettings);
+            listing_Race.CheckboxLabeled("AMXB_ShowOrk".Translate() + " Settings" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowOrk, null, false, true, ArmouryMain.collapseTex, ArmouryMain.expandTex);
 
             if (setting)
             {
@@ -110,8 +123,6 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
             listing_Main.EndSection(listing_Race);
             __instance.XenobiologisOrkMenuLength = RaceSettings;
-
-            return false;
         }
     }
     

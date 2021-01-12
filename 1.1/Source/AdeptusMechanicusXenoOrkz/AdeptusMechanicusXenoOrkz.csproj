@@ -37,7 +37,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdeptusMechanicusOrkExtensions.cs" />
+    <Compile Include="OrkExtensions.cs" />
     <Compile Include="PawnGenOption.cs" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
@@ -56,7 +56,7 @@
     <Compile Include="Harmony\Patches\Pawn_EquipmentTracker_DropAllEquipment_KrudeBionic_Patch.cs" />
     <Compile Include="ThoughtWorker_Dark_Orkoid.cs" />
     <Compile Include="ThoughtWorker_HasKrudeAddedBodyPart.cs" />
-    <Compile Include="Harmony\Settings\AMMod_PlayableOrkSettings_Patch.cs" />
+    <Compile Include="Harmony\Settings\AMAMod_PlayableOrkSettings_Patch.cs" />
     <Compile Include="MentalStateWorker_StarvingOrkoid.cs" />
     <Compile Include="AMOMain.cs" />
     <Compile Include="AMXBSetIncidents.cs" />

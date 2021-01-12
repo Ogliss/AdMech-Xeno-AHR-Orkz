@@ -8,7 +8,7 @@ using Verse;
 namespace AdeptusMechanicus.ExtensionMethods
 {
 
-    public static class AdeptusMechanicusOrkExtensions
+    public static class OrkExtensions
     {
         public static bool isOrkoid(this PawnKindDef pawn)
         {
