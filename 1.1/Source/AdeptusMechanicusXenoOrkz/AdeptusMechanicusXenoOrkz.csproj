@@ -96,11 +96,6 @@
       <Name>AdeptusMechanicusArmoury</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\AdMechXeno\1.1\Source\AdeptusMechanicusXenobiologis\AdeptusMechanicusXenobiologis.csproj">
-      <Project>{25320202-14a6-42ed-aa6a-602006fd55b9}</Project>
-      <Name>AdeptusMechanicusXenobiologis</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

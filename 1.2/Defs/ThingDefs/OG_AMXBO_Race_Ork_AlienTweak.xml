@@ -59,22 +59,22 @@
 					<defName>TAU_Philosophy</defName>
 				</li>
 				<li>
-						<defName>Kind</defName>
+					<defName>Kind</defName>
 				</li>
 				<li>
-						<defName>Gay</defName>
+					<defName>Gay</defName>
 				</li>
 				<li>
-						<defName>Bisexual</defName>
+					<defName>Bisexual</defName>
 				</li>
 				<li>
-						<defName>Wimp</defName>
+					<defName>Wimp</defName>
 				</li>
 				<li>
-						<defName>DislikesWomen</defName>
+					<defName>DislikesWomen</defName>
 				</li>
 				<li>
-						<defName>DislikesMen</defName>
+					<defName>DislikesMen</defName>
 				</li>
 			</disallowedTraits>
 			<alienPartGenerator>

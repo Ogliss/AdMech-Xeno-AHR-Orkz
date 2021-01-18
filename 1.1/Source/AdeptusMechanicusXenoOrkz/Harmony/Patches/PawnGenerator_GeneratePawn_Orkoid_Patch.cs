@@ -47,7 +47,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
         }
         
-        [HarmonyPostfix]
+        [HarmonyPostfix, HarmonyPriority(Priority.Last)]
         public static void Post_GeneratePawn(PawnGenerationRequest request, ref Pawn __result)
         {
             if (__result != null && __result.isOrkoid())
@@ -153,37 +153,5 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
         }
         
-        /*
-        [HarmonyPostfix]
-        public static void Post_GeneratePawn(ref Pawn __result)
-        {
-            if (__result!=null)
-            {
-                if (__result.kindDef!=null)
-                {
-                    if (__result.kindDef.isOrkoid())
-                    {
-                        PawnKindDef kindDef = __result.kindDef;
-                        if (__result.RaceProps!=null)
-                        {
-                            if (__result.RaceProps.Humanlike)
-                            {
-                                Pawn_StoryTracker storyTracker = __result.story;
-                                bool weirdKind = kindDef.defName.Contains("Weird");
-                                bool weirdStory = storyTracker.adulthood.identifier.Contains("Weird") || storyTracker.childhood.identifier.Contains("Weird");
-                                bool weirdOrk = __result.def == OGOrkThingDefOf.OG_Alien_Ork && (weirdStory || weirdKind);
-                                bool weirdGrot = __result.def == OGOrkThingDefOf.OG_Alien_Grot && (weirdStory || weirdKind);
-                                bool weird = (weirdGrot || weirdOrk);
-                                if (weird)
-                                {
-                                    //   Log.Message(string.Format("{0} iz a wierd {1}....",__result.NameShortColored, __result.def.LabelCap));
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        */
     }
 }

@@ -5,7 +5,7 @@
 	<!-- ========================= Ork - Frag Grenades	========================== -->
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_GrenadePack_Frag</defName>
-		<label>frag stikk bombz (O)</label>
+		<label>frag stikkbombz (O)</label>
 		<description>a pack of frag stikk bombz.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/GrenadePacks/Ork/StikkBombs_Frag</texPath>
@@ -28,19 +28,17 @@
 			<Plasteel>4</Plasteel>
 		</costList>
 		<recipeMaker>
-		<researchPrerequisites>
-			<li>Machining</li>
-			<li>OG_Ork_Tech_Base_T1</li>
-		</researchPrerequisites>
+			<researchPrerequisites>
+				<li>Machining</li>
+				<li>OG_Ork_Tech_Base_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
-		<comps>
-			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<Abilities>
-					<li>OGO_Ability_ThrowFrag</li>
-				</Abilities>
-			</li>
-		</comps>
-		
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
@@ -55,12 +53,43 @@
 				<li>OGOGrenFrag</li>
 			</tags>
 		</apparel>
-		<thingCategories>
-			<li>OGOGrens</li>
-		</thingCategories>
-		<tradeTags>
-			<li>OGOGrens</li>
-		</tradeTags>
+		<verbs>
+			<li>
+				<label>throw frag stikkbomb</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<defaultCooldownTime>1.9</defaultCooldownTime>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<!--soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale-->
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>OGO_GrenadeThrown_Frag</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_WargearUseable">
+				<Cooldown>10</Cooldown>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<!--comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<Abilities>
+					<li>OGO_Ability_ThrowFrag</li>
+				</Abilities>
+			</li>
+		</comps-->
 	</ThingDef>
 	
 	<!-- ========================= Ork - Krak Grenades	========================== -->
@@ -93,14 +122,12 @@
 				<li>OG_Ork_Tech_Base_T2</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<comps>
-			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<Abilities>
-					<li>OGO_Ability_ThrowKrak</li>
-				</Abilities>
-			</li>
-		</comps>
-		
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
@@ -115,12 +142,43 @@
 				<li>OGOGrenKrak</li>
 			</tags>
 		</apparel>
-		<thingCategories>
-			<li>OGOGrens</li>
-		</thingCategories>
-		<tradeTags>
-			<li>OGOGrens</li>
-		</tradeTags>
+		<verbs>
+			<li>
+				<label>throw krak stikkbomb</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<defaultCooldownTime>1.9</defaultCooldownTime>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<!--soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale-->
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>OGO_GrenadeThrown_Krak</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_WargearUseable">
+				<Cooldown>10</Cooldown>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<!--comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<Abilities>
+					<li>OGO_Ability_ThrowKrak</li>
+				</Abilities>
+			</li>
+		</comps-->
 	</ThingDef>
 
 	<!-- ========================= Ork - Melta Bomb	========================== -->
@@ -152,14 +210,12 @@
 				<li>OG_Common_Tech_Weapons_Melta</li>
 			</researchPrerequisites>
 		</recipeMaker>
-		<comps>
-			<li Class="AbilitesExtended.CompProperties_AbilityItem">
-				<Abilities>
-					<li>OGO_Ability_ThrowMelta</li>
-				</Abilities>
-			</li>
-		</comps>
-		
+		<thingCategories>
+			<li>OGOGrens</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGOGrens</li>
+		</tradeTags>
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
@@ -174,12 +230,43 @@
 				<li>OGOGrenMelta</li>
 			</tags>
 		</apparel>
-		<thingCategories>
-			<li>OGOGrens</li>
-		</thingCategories>
-		<tradeTags>
-			<li>OGOGrens</li>
-		</tradeTags>
+		<verbs>
+			<li>
+				<label>throw tankbusta bomb</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<defaultCooldownTime>1.9</defaultCooldownTime>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<!--soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale-->
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>OGO_GrenadeThrown_Melta</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_WargearUseable">
+				<Cooldown>10</Cooldown>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<!--comps>  
+			<li Class="AbilityUser.CompProperties_AbilityItem">
+				<Abilities>
+					<li>OGO_Ability_ThrowMelta</li>
+				</Abilities>
+			</li>
+		</comps-->
 	</ThingDef>
 
 </Defs>

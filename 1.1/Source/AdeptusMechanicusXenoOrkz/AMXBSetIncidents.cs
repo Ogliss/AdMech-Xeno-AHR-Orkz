@@ -13,9 +13,9 @@ namespace AdeptusMechanicus
         {
             foreach (IncidentDef incidentDef in DefDatabase<IncidentDef>.AllDefsListForReading)
             {
-                if (incidentDef == OGOrkDefOf.OG_Ork_Rok_Crash)
+                if (incidentDef == OGOrkIncidentDefOf.OG_Ork_Rok_Crash)
                 {
-                    if (SettingsHelper.latest.AllowOrkRok)
+                    if (AMAMod.settings.AllowOrkRok)
                     {
                         incidentDef.baseChance = 0.1f;
                     }
