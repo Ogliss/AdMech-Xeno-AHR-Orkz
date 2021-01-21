@@ -848,7 +848,7 @@
 <!-- ====================== GrotCannon shot ===================== -->
 <ThingDef ParentName="OG_Bullet_Base">
 	<defName>OGO_Bullet_GrotCannon</defName>
-	<label>GrotCannon Shell</label>
+	<label>Grot Cannon Shell</label>
 	<graphicData>
 		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

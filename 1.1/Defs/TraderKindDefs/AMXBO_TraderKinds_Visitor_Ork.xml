@@ -49,11 +49,18 @@
 		
 		<!-- Weapons -->
 		<li Class="StockGenerator_WeaponsRanged">
-		<countRange>0~1</countRange>
+			<weaponTag>OrkRanged</weaponTag>
+			<countRange>0~1</countRange>
+		</li>
+		<li Class="StockGenerator_WeaponsMelee">
+			<weaponTag>OrkMelee</weaponTag>
+			<countRange>0~1</countRange>
 		</li>
 
+
 		<!-- Apparel -->
-		<li Class="StockGenerator_Clothes">
+		<li Class="AdeptusMechanicus.StockGenerator_ArmorTagged">
+			<apparelTag>OrkApparel</apparelTag>
 		<countRange>0~1</countRange>
 		</li>
 
