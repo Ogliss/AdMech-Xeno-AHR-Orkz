@@ -68,19 +68,20 @@ namespace AdeptusMechanicus.HarmonyInstance
                 Pawn_StoryTracker storyTracker = __result.story;
                 Backstory adulthood = storyTracker.adulthood;
                 bool adult = adulthood != null;
-                if (storyTracker.childhood.spawnCategories.Contains("Ork_Base_Child"))
+                if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
                 {
-
+                    Log.Message("Ork_Base_Child");
                 }
                 else
-                if (storyTracker.childhood.spawnCategories.Contains("Ork_Odd_Child"))
+                if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
                 {
 
+                    Log.Message("Ork_Odd_Child");
                 }
                 else
-                if (storyTracker.childhood.spawnCategories.Contains("Ork_Weird_Child"))
+                if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
                 {
-
+                    Log.Message("Ork_Weird_Child");
                     if (__result.isOrk())
                     {
                         if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))

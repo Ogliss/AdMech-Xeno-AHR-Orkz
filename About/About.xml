@@ -48,14 +48,15 @@
 	Grots - Humanlike
 	Snotlings - Advanced Animal
 	Squigs - Animal:
-		Cave Squig: similar to wargs, but can grow quite large given enough time
+		Cave Squig: similar to wargs, but can grow quite large given enough time.
 		Eatin Squigs: slow and stupid, only good fer eatin!
+		Oily Squigs: slow and stupid, but produce chemfuel over time.
 	
 	Factions:
-	Orkz
-	Feral Orkz
-	Hulk Orkz
-	Rok Orkz
+	Space Orkz: Spacer Tech level Greenskin faction.
+	Feral Orkz Tribal Tech level Greenskin faction.
+	Hulk Orkz: Permantly Hostile Hidden faction.
+	Rok Orkz: Permantly Hostile Hidden faction.
 	
 	Ork Player Faction
 	Ork Player Tribe
@@ -84,26 +85,33 @@
 	Iron Gob (Ork only)
 	
 	Plants:
-	Orkoid Fungus - the symbiotic fungus that is essential the orkoid ecosystem, it is a source of food, Squigs, Snotlings, Grots and Orks
-	Orkoid Cocoons
+	Orkoid Fungus - the symbiotic fungus that is essential the orkoid ecosystem, it is a source of food, Squigs, Snotlings, Grots and Orks.
+	Orkoid Cocoons - Cocoons are spawned by an event, intended to represet 'wild' spore growth and Cannot be planted.
 	
 	Buildings:
-	Ork Crafting Supplies
+	Ork Crafting Supplies (Machining Table)
 	Ork Fermenting Barrel - requires Syrchalis' Universal Fermenter mod
+	Ork Butcher Table
+	Ork Fueled Stove
+	Ork Drug lab
+	Ork Stele
+	Waaaagh! Banner
 	
 	Resources:
 	Orkoid Fungus - a food
-	Bitz - basic orkish crafting material
-	Komponent -  Orkish components
-	
-	Waart - made from orkoid fungus, used to make Grog - requires Syrchalis' Universal Fermenter mod
-	Grog - a foul orkish alcholic beverage made from fungal Waart - requires Syrchalis' Universal Fermenter mod
+	Speckled Bloodshade - Medical Fungus
+	Ork Bitz - basic orkish crafting material
+	Ork Komponent - Orkish components
+
+	Ork Waart - made from orkoid fungus, used to make Grog - requires [SYR] Universal Fermenter
+	Ork Grog - a foul orkish alcholic beverage made from fungal Waart - requires [SYR] Universal Fermenter
 	
 	Mechanics:
 	Orkoid - All Orkz count as having both the Bloodlust and Psychopath trait.
 	Symbiotic Fungus - All Orkoids originate from the same strain of fungal spores, which can mature into a might warboss, or a tiny mushroom.
 	
 	Special Thanks to 
+	
 	SirLalaPyon/LoliMaestro who contributed the following Orky textures
 		Butcher Table
 		Fueled Stove
@@ -116,6 +124,7 @@
 		Fungus
 		Grog
 		Ork Skull
+		
 	Comradebusman2 who contributed the following Orky textures
 		Waaagh! banner
 		</description>	
