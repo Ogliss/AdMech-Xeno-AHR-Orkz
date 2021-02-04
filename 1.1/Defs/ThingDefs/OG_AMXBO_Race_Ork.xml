@@ -29,13 +29,22 @@
 	</comps>
 	<drawGUIOverlay>true</drawGUIOverlay>
 	-->
-	<comps>
+    <inspectorTabs>
+		<li MayRequire="Corruption.Core">Corruption.Core.Soul.ITab_Pawn_Soul</li>
+    </inspectorTabs>
+    <comps>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
 		<li MayRequire="CETeam.CombatExtended">
-		<compClass>CombatExtended.CompPawnGizmo</compClass>
+			<compClass>CombatExtended.CompPawnGizmo</compClass>
 		</li>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
-	</comps>
+		<li MayRequire="Corruption.Psykers">
+			<compClass>Corruption.Psykers.CompPsyker</compClass>
+		</li>
+		<li MayRequire="Corruption.Core">
+			<compClass>Corruption.Core.Soul.CompSoul</compClass>
+		</li>
+    </comps>
 </ThingDef>
 
 <AlienRace.ThingDef_AlienRace Name="OG_Ork_RaceBase" ParentName="OG_Ork_Pawn_Base" Abstract="True">
