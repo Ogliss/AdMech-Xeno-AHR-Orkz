@@ -93,7 +93,6 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             ThingDef harvestedThingDef = harvested;
             OrkoidFungus fungus = plant as OrkoidFungus;
-            Thing thing;
             if (fungus != null && (pawn != null && pawn.isOrkoid()))
             {
             //    Log.Message(pawn.Name+" 'ez arvestin " + plant.LabelCap + " boss");

@@ -36,26 +36,26 @@ namespace AdeptusMechanicus
             }
         }
 
-        public Plant plant => base.parent as Plant;
+        public Plant Plant => base.parent as Plant;
 
-        public bool canspawn => plant.HarvestableNow && Props.canspawn;
+        public bool Canspawn => Plant.HarvestableNow && Props.canspawn;
 
-        public bool spawnwild => Props.spawnwild;
-        public float spawnChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSpawnChance : AMAMod.settings.FungusSpawnChance;
+        public bool Spawnwild => Props.spawnwild;
+        public float SpawnChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSpawnChance : AMAMod.settings.FungusSpawnChance;
 
-        public float squigChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSquigChance : AMAMod.settings.FungusSquigChance;
-        public float snotlingChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSnotChance : AMAMod.settings.FungusSnotChance;
-        public float grotChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonGrotChance : AMAMod.settings.FungusGrotChance;
-        public float orkChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonOrkChance : AMAMod.settings.FungusOrkChance;
+        public float SquigChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSquigChance : AMAMod.settings.FungusSquigChance;
+        public float SnotlingChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSnotChance : AMAMod.settings.FungusSnotChance;
+        public float GrotChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonGrotChance : AMAMod.settings.FungusGrotChance;
+        public float OrkChance => parent.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonOrkChance : AMAMod.settings.FungusOrkChance;
 
         private float age = 0;
         public float Age
         {
             get
             {
-                if (plant != null)
+                if (Plant != null)
                 {
-                    age = plant.Age;
+                    age = Plant.Age;
                 }
                 return age;
             }
@@ -65,11 +65,11 @@ namespace AdeptusMechanicus
         {
             get
             {
-                if (plant != null)
+                if (Plant != null)
                 {
-                    if (plant.Map!=null)
+                    if (Plant.Map!=null)
                     {
-                        fertility = plant.GrowthRateFactor_Fertility;
+                        fertility = Plant.GrowthRateFactor_Fertility;
                     }
                 }
                 return fertility;
@@ -112,16 +112,16 @@ namespace AdeptusMechanicus
                        select p;
             }
         }
-        public List<Pair<PawnKindDef, float>> pairs
+        public List<Pair<PawnKindDef, float>> Pairs
         {
             get
             {
                 return new List<Pair<PawnKindDef, float>>()
                 {
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Snotling, snotlingChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance * OrkoidFungualUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Snotling, SnotlingChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Grot_Wild, GrotChance * (OrkoidFungualUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(OGOrkPawnKindDefOf.OG_Ork_Wild, OrkChance * OrkoidFungualUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
                 };
             }
         }
@@ -129,26 +129,26 @@ namespace AdeptusMechanicus
         public void SpawnPawns(Pawn harvester, Plant plant)
         {
 
-            if (canspawn)
+            if (Canspawn)
             {
                 Rand.PushState();
                 var spawnRoll = Rand.Value;
                 Rand.PopState();
-                if (spawnRoll < (spawnChance * plant.Growth))
+                if (spawnRoll < (SpawnChance * plant.Growth))
                 {
                     string msg = string.Empty;
                     StringBuilder builder = new StringBuilder();
                     builder.AppendLine("Possible Spawns:");
-                    foreach (var item in pairs)
+                    foreach (var item in Pairs)
                     {
                         builder.Append(" " + item.First.LabelCap + " weighted at " + item.Second);
                     }
 
-                    Pair<PawnKindDef, float> pair = pairs.RandomElementByWeight(x => x.Second);
+                    Pair<PawnKindDef, float> pair = Pairs.RandomElementByWeight(x => x.Second);
                     pawnKindDef = pair.First;
                     builder.Append(" " + "Spawning " + pawnKindDef.LabelCap);
                     if (Prefs.DevMode) Log.Message(builder.ToString());
-                    faction = spawnwild ? null : Faction.OfPlayer;
+                    faction = Spawnwild ? null : Faction.OfPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
 
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
@@ -165,7 +165,7 @@ namespace AdeptusMechanicus
                             pawn.story.childhood.identifier = "Grot_Base_Child";
                         }
                         */
-                        if (!spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
+                        if (!Spawnwild && (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerColony))
                         {
                             PawnKindDef pawnKind;
                             if (Faction.OfPlayer.def == OGOrkFactionDefOf.OG_Ork_PlayerTribe)

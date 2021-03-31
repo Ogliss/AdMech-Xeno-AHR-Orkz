@@ -28,7 +28,7 @@ namespace AdeptusMechanicus
                 OGOrkThingDefOf.OG_Plant_Orkoid_Fungus,
                 OGOrkThingDefOf.OG_Plant_Orkoid_Cocoon
             };
-            ArmouryMain.DoRacialRestrictionsFor(races, "O", OrkReseach, null, null, plants, animals);
+            AlienRaceUtility.DoRacialRestrictionsFor(races, "O", OrkReseach, null, null, plants, animals);
         }
         
     }

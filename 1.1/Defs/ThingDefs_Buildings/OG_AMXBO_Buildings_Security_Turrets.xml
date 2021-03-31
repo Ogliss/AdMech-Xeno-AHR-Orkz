@@ -52,7 +52,7 @@
 </ThingDef>
 
 <ThingDef ParentName="OGO_Turret" Name="OGO_LaserTurret" Abstract="True"> 
-	<thingClass>AdeptusMechanicus.Building_LaserGun</thingClass>
+	<thingClass>AdeptusMechanicus.Lasers.Building_LaserGun</thingClass>
 </ThingDef>
 
 <!--
@@ -598,7 +598,7 @@
 </ThingDef>
 
 <ThingDef ParentName="OGO_HeavyTurret" Name="OGO_HeavyLaserTurret" Abstract="True"> 
-	<thingClass>AdeptusMechanicus.Building_LaserGun</thingClass>
+	<thingClass>AdeptusMechanicus.Lasers.Building_LaserGun</thingClass>
 </ThingDef>
 
 <!--=============== Rattler turret ===============-->
@@ -865,19 +865,19 @@
 		<soundExplode>OGIAC_Explosion</soundExplode>
 	</projectile>
 	<modExtensions>
-		<li Class="AdeptusMechanicus.EffectProjectileExtension">
-		<explosionMote>true</explosionMote>
+		<li Class="AdeptusMechanicus.ProjectileVFX">
+		
 		<explosionMoteSize>0.75</explosionMoteSize>
-		<ImpactMoteDef>Mote_YellowSparkFlash</ImpactMoteDef>
-		<ImpactMoteSize>2</ImpactMoteSize>
-		<ImpactGlowMoteDef>Mote_ExplosionFlash</ImpactGlowMoteDef>
-		<ImpactGlowMoteSize>2.5</ImpactGlowMoteSize>
+		<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+		<impactMoteSize>2</impactMoteSize>
+		<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+		<impactGlowMoteSize>2.5</impactGlowMoteSize>
 		</li>
 	</modExtensions>
 </ThingDef>
 
 <!--=============== BigZzappa turret ===============-->
-<ThingDef ParentName="OGO_HeavyLaserTurret" Class="AdeptusMechanicus.Building_LaserGunDef">
+<ThingDef ParentName="OGO_HeavyLaserTurret" Class="AdeptusMechanicus.Lasers.Building_LaserGunDef">
 	<defName>OGO_Turret_BigZzappa_Auto</defName>
 	<label>big zzappa turret</label>
 	<description>A heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged.</description> 
@@ -950,7 +950,7 @@
 	</verbs>
 </ThingDef>
 
-	<ThingDef ParentName="OG_Bullet_LaserGeneric" Class="AdeptusMechanicus.LaserBeamDef">
+	<ThingDef ParentName="OG_Bullet_LaserGeneric" Class="AdeptusMechanicus.Lasers.LaserBeamDef">
 		<defName>OGO_Bullet_BigZzappa</defName>
 		<label>big zzappa blast</label>
 		<textures>
@@ -966,7 +966,7 @@
 	</ThingDef>
   
 <!--=============== Twin-Linked Lascannon turret ===============-->
-<!--ThingDef ParentName="OGO_HeavyLaserTurret" Class="AdeptusMechanicus.Building_LaserGunDef">
+<!--ThingDef ParentName="OGO_HeavyLaserTurret" Class="AdeptusMechanicus.Lasers.Building_LaserGunDef">
 	<defName>OGO_Turret_LascannonDual_Auto</defName>
 	<label>twin-linked lascannon turret</label>
 	<description>A heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged.</description>

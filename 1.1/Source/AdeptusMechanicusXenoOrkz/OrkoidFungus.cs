@@ -19,9 +19,9 @@ namespace AdeptusMechanicus
         public FloatRange tempsOptimal = new FloatRange(10f, 42f);
         public FloatRange tempsLimits = new FloatRange(0f, 58f);
         public float optionalChance = 0.01f;
-        public List<optionalThings> optionals = new List<optionalThings>();
+        public List<OptionalThings> optionals = new List<OptionalThings>();
         
-        public struct optionalThings
+        public struct OptionalThings
         {
             public ThingDef def;
             public float weight;
@@ -34,12 +34,12 @@ namespace AdeptusMechanicus
     {
         public OrkoidFungalProps FungalProps => this.def.plant as OrkoidFungalProps;
         public new bool HasEnoughLightToGrow => true;
-        public float spawnChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSpawnChance : AMAMod.settings.FungusSpawnChance;
+        public float SpawnChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSpawnChance : AMAMod.settings.FungusSpawnChance;
 
-        public float squigChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSquigChance : AMAMod.settings.FungusSquigChance;
-        public float snotlingChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSnotChance : AMAMod.settings.FungusSnotChance;
-        public float grotChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonGrotChance : AMAMod.settings.FungusGrotChance;
-        public float orkChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonOrkChance : AMAMod.settings.FungusOrkChance;
+        public float SquigChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSquigChance : AMAMod.settings.FungusSquigChance;
+        public float SnotlingChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonSnotChance : AMAMod.settings.FungusSnotChance;
+        public float GrotChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonGrotChance : AMAMod.settings.FungusGrotChance;
+        public float OrkChance => this.def.defName.Contains("Cocoon") ? AMAMod.settings.CocoonOrkChance : AMAMod.settings.FungusOrkChance;
 
         protected IEnumerable<Pawn> Squigs
         {
@@ -167,18 +167,18 @@ namespace AdeptusMechanicus
                 Rand.PushState(this.thingIDNumber);
                 var spawnRoll = Rand.ValueSeeded(this.thingIDNumber);
                 Rand.PopState();
-                if (spawnRoll < (spawnChance * (/*HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + greenskins) **/ Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor) * this.Growth))
+                if (spawnRoll < (SpawnChance * (/*HealthTuning.DeathOnDownedChance_NonColonyHumanlikeFromPopulationIntentCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + greenskins) **/ Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor) * this.Growth))
                 {
                     PawnKindDef pawnKindDef;
-                    bool OrkoidHarvester = harvester != null ? harvester.isOrkoid() : true;
+                    bool OrkoidHarvester = harvester == null || harvester.isOrkoid();
                     if (OrkoidHarvester)
                     {
                         List<PawnGenOption> options = new List<PawnGenOption>()
                         {
-                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
-                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Snotling, snotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
-                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Grot_Wild, grotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
-                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, orkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungualUtility.SquigSpawnCurve.Evaluate(squigs))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Snotling, SnotlingChance * (OrkoidFungualUtility.SnotSpawnCurve.Evaluate(snots))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Grot_Wild, GrotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.GrotSpawnCurve.Evaluate(grots))),
+                            new PawnGenOption(OGOrkPawnKindDefOf.OG_Ork_Wild, OrkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungualUtility.OrkSpawnCurve.Evaluate(orks)))
                         };
                         pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
                         Rand.PushState();

@@ -29,12 +29,12 @@ namespace AdeptusMechanicus.HarmonyInstance
 
         private static bool Dev => AMAMod.Dev;
         private static bool Xenobiologis => AdeptusIntergrationUtility.enabled_MagosXenobiologis;
-        private static bool showXB => settings.ShowXenobiologisSettings;
-        private static bool showRaces => (Xenobiologis && settings.ShowAllowedRaceSettings && showXB) || (!Xenobiologis && settings.ShowOrk);
-        private static bool setting => showRaces && settings.ShowOrk;
+        private static bool ShowXB => settings.ShowXenobiologisSettings;
+        private static bool ShowRaces => (Xenobiologis && settings.ShowAllowedRaceSettings && ShowXB) || (!Xenobiologis && settings.ShowOrk);
+        private static bool Setting => ShowRaces && settings.ShowOrk;
 
         private static int Options = 2;
-        private static float RaceSettings => mod.Length(setting, Options, lineheight, 8, showRaces ? 1 : 0);
+        private static float RaceSettings => mod.Length(Setting, Options, lineheight, 8, ShowRaces ? 1 : 0);
 
         public static float MainMenuLength = 0;
         public static float MenuLength = 0;
@@ -55,7 +55,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     return;
                 }
             }
-            if (showRaces)
+            if (ShowRaces)
             {
                 Listing_StandardExpanding listing_Race = listing_Main.BeginSection((num2 != 0 ? num2 : RaceSettings) + inc, false, 3, 4, 0);
                 if (Xenobiologis)
@@ -85,7 +85,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         settings.AllowOrkTek && settings.AllowOrkWeapons);
                     listing_Race.EndSection(listing_General);
                     MenuLength = listing_General.CurHeight != 0 ? listing_General.CurHeight : listing_General.MaxColumnHeightSeen;
-                    Listing_StandardExpanding listing_FungalLabel = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
+                    Listing_StandardExpanding listing_FungalLabel = listing_Race.BeginSection(__instance.Length(Setting, 1, lineheight, 0, 0), true);
                     listing_FungalLabel.ColumnWidth *= 0.32f;
                     listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AMO_FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
                     listing_FungalLabel.NewColumn();
@@ -93,11 +93,11 @@ namespace AdeptusMechanicus.HarmonyInstance
                     listing_FungalLabel.NewColumn();
                     if (listing_FungalLabel.ButtonTextLine("Defaults"))
                     {
-                        resetFungalSettings();
+                        ResetFungalSettings();
                     }
                     listing_Race.EndSection(listing_FungalLabel);
 
-                    Listing_StandardExpanding listing_Fungus = listing_Race.BeginSection(__instance.Length(setting, 4, lineheight, 0, 0), true);
+                    Listing_StandardExpanding listing_Fungus = listing_Race.BeginSection(__instance.Length(Setting, 4, lineheight, 0, 0), true);
                     listing_Fungus.ColumnWidth *= 0.32f;
                     listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
                     listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
@@ -118,7 +118,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
         }
 
-        private static void resetFungalSettings()
+        private static void ResetFungalSettings()
         {
             settings.FungusSpawnChance = 0.025f;
             settings.FungusSpawnChanceBuffer = settings.FungusSpawnChance.ToString();

@@ -3,7 +3,7 @@
 <!-- Tek Ork Player Pawnkind Defs -->
 <!--PawnKindDef ParentName="OG_Ork_Player_Base">
 	<defName>Colonist_OG_Ork</defName>
-	<label>Ork colonist</label>
+    <label>colonist (Ork)</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
 	<apparelMoney>
 		<min>500</min>
@@ -202,7 +202,7 @@
 <!-- Tek Ork Player Grot Pawnkinds -->
 <PawnKindDef ParentName="OG_Grot_Player_Base">
 	<defName>Colonist_OG_Grot</defName>
-	<label>Grot colonist</label>
+	<label>colonist (Grot)</label>
 	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
 	<apparelTags>
 	
