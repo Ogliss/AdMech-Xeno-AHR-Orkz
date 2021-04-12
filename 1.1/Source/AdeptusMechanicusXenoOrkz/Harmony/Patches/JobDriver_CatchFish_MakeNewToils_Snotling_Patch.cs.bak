@@ -135,7 +135,9 @@ namespace AdeptusMechanicus.HarmonyInstance
 				{
 					Job curJob = __instance.pawn.jobs.curJob;
 					Thing thing = null;
+					Rand.PushState();
 					float num2 = Rand.Value;
+					Rand.PopState();
 					TerrainDef terrainDef = fishingSpot.Map.terrainGrid.TerrainAt(fishingSpot.fishingSpotCell);
 					if (terrainDef.defName.Equals("Marsh") || fishingSpot.Map.Biome.defName.Contains("Swamp"))
 					{
@@ -146,18 +148,27 @@ namespace AdeptusMechanicus.HarmonyInstance
 						MoteMaker.ThrowMetaIcon(__instance.pawn.Position, fishingSpot.Map, ThingDefOf.Mote_IncapIcon);
 						__instance.pawn.jobs.EndCurrentJob(JobCondition.Incompletable, true, true);
 						string str;
-						if (fishingSpot.Map.Biome.defName.Contains("Tropical") && !terrainDef.defName.Contains("Ocean") && (double)Rand.Value < 0.33)
+						
+						Rand.PushState();
+						bool flag1 = fishingSpot.Map.Biome.defName.Contains("Tropical") && !terrainDef.defName.Contains("Ocean") && (double)Rand.Value < 0.33;
+						Rand.PopState();
+						if (flag1)
 						{
 							str = __instance.pawn.Name.ToStringShort.CapitalizeFirst() + "RBB.TragedyPiranhaText".Translate();
 							Find.LetterStack.ReceiveLetter("RBB.TragedyTitle".Translate(), str, LetterDefOf.NegativeEvent, __instance.pawn, null, null, null, null);
+							Rand.PushState();
 							int num3 = Rand.Range(3, 6);
 							for (int i = 0; i < num3; i++)
 							{
 								__instance.pawn.TakeDamage(new DamageInfo(DamageDefOf.Bite, (float)Rand.Range(1, 4), 0f, -1f, __instance.pawn, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
 							}
+							Rand.PopState();
 							return;
 						}
-						if (terrainDef.defName.Contains("Ocean") && (double)Rand.Value < 0.33)
+						Rand.PushState();
+						bool flag2 = terrainDef.defName.Contains("Ocean") && (double)Rand.Value < 0.33;
+						Rand.PopState();
+						if (flag2)
 						{
 							str = __instance.pawn.Name.ToStringShort.CapitalizeFirst() + "RBB.TragedyJellyfishText".Translate();
 							Find.LetterStack.ReceiveLetter("RBB.TragedyTitle".Translate(), str, LetterDefOf.NegativeEvent, __instance.pawn, null, null, null, null);

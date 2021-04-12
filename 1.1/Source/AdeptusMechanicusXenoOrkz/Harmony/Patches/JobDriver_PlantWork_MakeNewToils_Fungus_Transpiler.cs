@@ -96,6 +96,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             if (fungus != null && (pawn != null && pawn.isOrkoid()))
             {
             //    Log.Message(pawn.Name+" 'ez arvestin " + plant.LabelCap + " boss");
+
                 Rand.PushState(plant.thingIDNumber);
 
                 if (FungalMeds != null && Rand.ChanceSeeded(0.01f, plant.thingIDNumber))
