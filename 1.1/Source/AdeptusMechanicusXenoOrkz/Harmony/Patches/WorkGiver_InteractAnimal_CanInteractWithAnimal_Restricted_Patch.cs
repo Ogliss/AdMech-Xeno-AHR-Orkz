@@ -31,7 +31,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 __result = pawn.isOrkoid();
                 if (!__result)
                 {
-                    JobFailReason.Is("OG_AMXO_NonOrkoidTamer".Translate(animal.def.label), null);
+                    JobFailReason.Is("AMO_NonOrkoidTamer".Translate(animal.def.label), null);
                 }
             }
         }

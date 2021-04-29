@@ -8,7 +8,7 @@ using Verse;
 
 namespace AdeptusMechanicus
 {
-    public static class OrkoidFungualUtility
+    public static class OrkoidFungalUtility
     {
 
         public static readonly SimpleCurve SquigSpawnCurve = new SimpleCurve

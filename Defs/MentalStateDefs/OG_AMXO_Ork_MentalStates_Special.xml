@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>OGO_Ork_Scrapping</defName>
+		<stateClass>AdeptusMechanicus.MentalState_Ork_Scrapping</stateClass>
+		<label>scrappin'</label>
+		<minTicksBeforeRecovery>420</minTicksBeforeRecovery>
+		<recoveryMtbDays>0.02</recoveryMtbDays>
+		<category>Aggro</category>
+		<nameColor>(0.88,0.48,0.16)</nameColor>
+		<baseInspectLine>Mental state: Scrappin'</baseInspectLine>
+		<unspawnedCanDo>true</unspawnedCanDo>
+	</MentalStateDef>
+  
+	<MentalBreakDef>
+		<defName>OGO_Orkoid_Starving</defName>
+		<mentalState>OGO_Orkoid_Starving</mentalState>
+		<baseCommonality>0.75</baseCommonality>
+		<intensity>Extreme</intensity>
+	</MentalBreakDef>
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>OGO_Orkoid_Starving</defName>
+		<stateClass>AdeptusMechanicus.MentalState_StarvingOrkoid</stateClass>
+		<workerClass>AdeptusMechanicus.MentalStateWorker_StarvingOrkoid</workerClass>
+		<label>starvin</label>
+		<category>Aggro</category>
+		<minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
+		<recoverFromSleep>true</recoverFromSleep>
+		<nameColor>(0.9,0.2,0.5)</nameColor>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<recoveryMessage>{0} is no longer starvin.</recoveryMessage>
+		<beginLetter>{0} hunger has become all consuming and is going to satiate [PAWN_possessive] hunger.</beginLetter>
+		<beginLetterDef>ThreatSmall</beginLetterDef>
+		<baseInspectLine>Mental state: Starvin</baseInspectLine>
+		<allowBeatfire>true</allowBeatfire>
+	</MentalStateDef>
+
+</Defs>

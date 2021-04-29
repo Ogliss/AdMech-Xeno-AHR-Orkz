@@ -12,7 +12,7 @@ using AdeptusMechanicus.ExtensionMethods;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(AMAMod), "ModLoaded")]
-    public static class MAMod_SettingsCategory_Patch
+    public static class AMAMod_SettingsCategory_Patch
     {
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)

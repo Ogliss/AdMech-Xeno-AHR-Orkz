@@ -31,7 +31,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 request.ExtraPawnForExtraRelationChance = null;
 
                 request.MustBeCapableOfViolence = request.KindDef.isOrk();
-                if (request.KindDef == OGOrkPawnKindDefOf.OG_Ork_Wild || request.KindDef == OGOrkPawnKindDefOf.OG_Grot_Wild)
+                if (request.KindDef == OrkPawnKindDefOf.OG_Ork_Wild || request.KindDef == OrkPawnKindDefOf.OG_Grot_Wild)
                 {
                     request.Newborn = true;
                     request.ForbidAnyTitle = true;
@@ -70,18 +70,18 @@ namespace AdeptusMechanicus.HarmonyInstance
                 bool adult = adulthood != null;
                 if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
                 {
-                    Log.Message("Ork_Base_Child");
+                    Log.Message(__result.Name+": Ork_Base_Child");
                 }
                 else
                 if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
                 {
 
-                    Log.Message("Ork_Odd_Child");
+                    Log.Message(__result.Name + ": Ork_Odd_Child");
                 }
                 else
                 if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
                 {
-                    Log.Message("Ork_Weird_Child");
+                    Log.Message(__result.Name + ": Ork_Weird_Child");
                     if (__result.isOrk())
                     {
                         if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))

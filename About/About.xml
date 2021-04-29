@@ -39,11 +39,10 @@
 		<li>Ogliss.FeralOrkz</li>
 	</incompatibleWith>	
 	<description>V1.6.1.2
-	Adds Warhammer 40k Orkz/Grotz as playable races
-	Requires new start or a faction manager mod to have faction bases on the world map.
+Adds Warhammer 40k Orkz/Grotz as playable races
 
-	Contents
-	Races:
+Contents
+Races:
 	Orks - Humanlike
 	Grots - Humanlike
 	Snotlings - Advanced Animal
@@ -52,7 +51,7 @@
 		Eatin Squigs: slow and stupid, only good fer eatin!
 		Oily Squigs: slow and stupid, but produce chemfuel over time.
 	
-	Factions:
+Factions:
 	Space Orkz: Spacer Tech level Greenskin faction.
 	Feral Orkz Tribal Tech level Greenskin faction.
 	Hulk Orkz: Permantly Hostile Hidden faction.
@@ -61,11 +60,11 @@
 	Ork Player Faction
 	Ork Player Tribe
 	
-	Scenarios:
+Scenarios:
 	Space Ork Start
 	Feral Ork Start
 	
-	Apparel:
+Apparel:
 	Greenskin Shirt (Ork/Grot only)
 	Greenskin Jacket (Ork/Grot only)
 	Slava Cowl (Ork/Grot only)
@@ -78,17 +77,17 @@
 	Mega Arma (Ork only)
 	Mega Elmet (Ork only)
 	
-	Wargear:
+Wargear:
 	Stikkbomb Packs (Frag, Krak, Tankbusta)
 	Kustom Force Field (Shield)
 	Bosspole (Ork only)
 	Iron Gob (Ork only)
 	
-	Plants:
+Plants:
 	Orkoid Fungus - the symbiotic fungus that is essential the orkoid ecosystem, it is a source of food, Squigs, Snotlings, Grots and Orks.
 	Orkoid Cocoons - Cocoons are spawned by an event, intended to represet 'wild' spore growth and Cannot be planted.
 	
-	Buildings:
+Buildings:
 	Ork Crafting Supplies (Machining Table)
 	Ork Fermenting Barrel - requires Syrchalis' Universal Fermenter mod
 	Ork Butcher Table
@@ -97,7 +96,7 @@
 	Ork Stele
 	Waaaagh! Banner
 	
-	Resources:
+Resources:
 	Orkoid Fungus - a food
 	Speckled Bloodshade - Medical Fungus
 	Ork Bitz - basic orkish crafting material
@@ -110,22 +109,36 @@
 	Orkoid - All Orkz count as having both the Bloodlust and Psychopath trait.
 	Symbiotic Fungus - All Orkoids originate from the same strain of fungal spores, which can mature into a might warboss, or a tiny mushroom.
 	
-	Special Thanks to 
+Load Order info:
+	Humanoid Alien Races( if used, ideally this should be loaded as close to the top of your list as possible )
+	SRTS( if used )
+	Combat Extended( if used )
+	Astra Militarum Core( if used )
+	Astra offical addons( if used )
+	Corruption Core( if used )
+	Corruption offical addons( if used )
+	Armoury
+	Magos Xenobiologis( if used )
+	Playable Orkz( This Mod ),Eldar,Tau,Etc( if used ) order doesnt matter
+
+Credits:
+SirLaLaPyon: Textures for
+	Butcher Table
+	Fueled Stove
+	Doors
+	Beds
+	Tables
+	Research Benches
+	Drug Lab
+	Turrets
+	Fungus
+	Grog
+	Ork Skull
+
+Comradebusman2: Textures for
+	Waaagh! banner
 	
-	SirLalaPyon/LoliMaestro who contributed the following Orky textures
-		Butcher Table
-		Fueled Stove
-		Doors
-		Beds
-		Tables
-		Research Benches
-		Drug Lab
-		Turrets
-		Fungus
-		Grog
-		Ork Skull
-		
-	Comradebusman2 who contributed the following Orky textures
-		Waaagh! banner
+Ogliss: XML, C#, Textures for
+	Everything not listed above!
 		</description>	
 </ModMetaData>

@@ -15,7 +15,7 @@
 							<defName>Seed_OG_Orkoid_Fungus</defName>
 							<label>orkoid spores</label>
 							<sources>
-								<li>OG_Plant_OrkoidFungus</li>
+								<li>OG_Plant_Orkoid_Fungus</li>
 							</sources>
 						</SeedsPlease.SeedDef>
 						<RecipeDef ParentName="ExtractSeed">
