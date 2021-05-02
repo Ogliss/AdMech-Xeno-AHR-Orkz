@@ -79,8 +79,8 @@
 						<bodyPart>right ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<drawnInBed>true</drawnInBed>
 						<layerOffset>-0.2740</layerOffset>
 						<!--drawSize>(0.85, 0.85)</drawSize-->
@@ -122,8 +122,8 @@
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<drawnInBed>true</drawnInBed>
 						<layerOffset>-0.2740</layerOffset>
 						<!--drawSize>(0.85, 0.85)</drawSize-->

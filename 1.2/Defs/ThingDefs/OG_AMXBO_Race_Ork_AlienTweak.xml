@@ -85,8 +85,8 @@
 						<bodyPart>right eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadDrawSize>true</useHeadDrawSize>
-						<useHeadPosition>true</useHeadPosition>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
@@ -135,8 +135,8 @@
 						<bodyPart>left eye</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadDrawSize>true</useHeadDrawSize>
-						<useHeadPosition>true</useHeadPosition>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
@@ -187,8 +187,8 @@
 						<inFrontOfBody>true</inFrontOfBody>
 						<layerInvert>true</layerInvert>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadDrawSize>true</useHeadDrawSize>
-						<useHeadPosition>true</useHeadPosition>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<offsets>
@@ -233,8 +233,8 @@
 						<bodyPart>left ear</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadDrawSize>true</useHeadDrawSize>
-						<useHeadPosition>true</useHeadPosition>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<alignWithHead>true</alignWithHead>
 						<layerInvert>true</layerInvert>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
@@ -324,8 +324,8 @@
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<debug>false</debug>
 						<layerOffset>-0.2741</layerOffset>
@@ -370,8 +370,8 @@
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
@@ -419,8 +419,8 @@
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
@@ -468,8 +468,8 @@
 						<bodyPart>Jaw</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
 						<layerOffset>-0.2741</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
@@ -515,8 +515,8 @@
 						<!--bodyPart>right tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
@@ -565,8 +565,8 @@
 						<!--bodyPart>left tusk</bodyPart-->
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
-						<useHeadPosition>true</useHeadPosition>
-						<useHeadDrawSize>true</useHeadDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
 						<layerOffset>-0.2740</layerOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
