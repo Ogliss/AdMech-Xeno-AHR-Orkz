@@ -18,7 +18,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     {
         private static Trait bloodlust = new Trait(TraitDefOf.Bloodlust);
         private static Trait psychopath = new Trait(TraitDefOf.Psychopath);
-        private static Trait nimble = new Trait(OGTraitDefOf.Nimble);
+        private static Trait nimble = new Trait(AdeptusTraitDefOf.Nimble);
         [HarmonyPostfix]
         public static void Postfix(TraitDef tDef, Pawn ___pawn, ref Trait __result)
         {

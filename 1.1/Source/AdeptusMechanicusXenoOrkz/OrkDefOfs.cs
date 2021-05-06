@@ -29,8 +29,8 @@ namespace AdeptusMechanicus
         public static AlienRace.BackstoryDef OG_Grot_Base_Child;
 
         // Humanlike Race Defs
-        public static ThingDef OG_Alien_Ork;
-        public static ThingDef OG_Alien_Grot;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Ork;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Grot;
         
 
         public static ThingDef OG_Snotling;
