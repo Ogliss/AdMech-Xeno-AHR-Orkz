@@ -102,7 +102,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                             }
                             __result.story.traits.GainTrait(trait);
                         }
-                        if (ModLister.RoyaltyInstalled)
+                        if (AdeptusIntergrationUtility.enabled_Royalty)
                         {
                             if (!__result.health.hediffSet.HasHediff(HediffDefOf.PsychicAmplifier))
                             {
