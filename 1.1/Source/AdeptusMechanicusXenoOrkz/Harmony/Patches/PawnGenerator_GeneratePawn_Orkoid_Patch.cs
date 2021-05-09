@@ -31,7 +31,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 request.ExtraPawnForExtraRelationChance = null;
 
                 request.MustBeCapableOfViolence = request.KindDef.isOrk();
-                if (request.KindDef == OrkPawnKindDefOf.OG_Ork_Wild || request.KindDef == OrkPawnKindDefOf.OG_Grot_Wild)
+                if (request.KindDef == AdeptusPawnKindDefOf.OG_Ork_Wild || request.KindDef == AdeptusPawnKindDefOf.OG_Grot_Wild)
                 {
                     request.Newborn = true;
                     request.ForbidAnyTitle = true;

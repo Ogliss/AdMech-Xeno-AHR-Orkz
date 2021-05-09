@@ -174,14 +174,14 @@ namespace AdeptusMechanicus
                     {
                         List<PawnGenOption> options = new List<PawnGenOption>()
                         {
-                            new PawnGenOption(OrkPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungalUtility.SquigSpawnCurve.Evaluate(squigs))),
-                            new PawnGenOption(OrkPawnKindDefOf.OG_Snotling, SnotlingChance * (OrkoidFungalUtility.SnotSpawnCurve.Evaluate(snots))),
-                            new PawnGenOption(OrkPawnKindDefOf.OG_Grot_Wild, GrotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungalUtility.GrotSpawnCurve.Evaluate(grots))),
-                            new PawnGenOption(OrkPawnKindDefOf.OG_Ork_Wild, OrkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungalUtility.OrkSpawnCurve.Evaluate(orks)))
+                            new PawnGenOption(AdeptusPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungalUtility.SquigSpawnCurve.Evaluate(squigs))),
+                            new PawnGenOption(AdeptusPawnKindDefOf.OG_Snotling, SnotlingChance * (OrkoidFungalUtility.SnotSpawnCurve.Evaluate(snots))),
+                            new PawnGenOption(AdeptusPawnKindDefOf.OG_Grot_Wild, GrotChance * ((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungalUtility.GrotSpawnCurve.Evaluate(grots))),
+                            new PawnGenOption(AdeptusPawnKindDefOf.OG_Ork_Wild, OrkChance *((this.ageInt/this.def.plant.LifespanTicks) + OrkoidFungalUtility.OrkSpawnCurve.Evaluate(orks)))
                         };
                         pawnKindDef = options.InRandomOrder().RandomElementByWeight(x => x.selectionWeight).kind;
                         Rand.PushState();
-                        if (pawnKindDef == OrkPawnKindDefOf.OG_Squig)
+                        if (pawnKindDef == AdeptusPawnKindDefOf.OG_Squig)
                         {
                             Rand.PushState();
                             pawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.RaceProps.Animal && x.defName.Contains("OG_") && x.defName.Contains("_Squig")).RandomElementByWeight(x => AdeptusMath.Inverse(x.race.BaseMarketValue));
@@ -201,7 +201,7 @@ namespace AdeptusMechanicus
                     }
                     else
                     {
-                        pawnKindDef = OrkPawnKindDefOf.OG_Squig;
+                        pawnKindDef = AdeptusPawnKindDefOf.OG_Squig;
                     }
                     Faction faction = FungalProps.spawnwild || !OrkoidHarvester ? null : Faction.OfPlayer;
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
@@ -220,16 +220,16 @@ namespace AdeptusMechanicus
                             pawn.story.childhood.identifier = "Grot_Base_Child";
                         }
                         */
-                        if (!FungalProps.spawnwild && (Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerColony))
+                        if (!FungalProps.spawnwild && (Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerColony))
                         {
                             PawnKindDef pawnKind;
-                            if (Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerTribe)
+                            if (Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerTribe)
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OrkPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElementByWeight(x=> AdeptusMath.Inverse(x.combatPower));
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? AdeptusPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElementByWeight(x=> AdeptusMath.Inverse(x.combatPower));
                             }
                             else
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OrkPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElementByWeight(x => AdeptusMath.Inverse(x.combatPower));
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? AdeptusPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElementByWeight(x => AdeptusMath.Inverse(x.combatPower));
                             }
                             pawn.ChangeKind(pawnKind);
                         }

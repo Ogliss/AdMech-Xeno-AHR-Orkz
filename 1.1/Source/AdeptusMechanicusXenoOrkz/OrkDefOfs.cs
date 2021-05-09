@@ -38,52 +38,6 @@ namespace AdeptusMechanicus
         public static ThingDef OG_Squig_Ork;
     }
 
-    [DefOf]
-    public static class OrkPawnKindDefOf
-    {
-        static OrkPawnKindDefOf()
-        {
-            DefOfHelper.EnsureInitializedInCtor(typeof(OrkPawnKindDefOf));
-        }
-        public class Player
-        {
-            public static PawnKindDef OG_Squig;
-        }
-        public static PawnKindDef OG_Squig;
-
-        public static PawnKindDef OG_Squig_Ork;
-
-        public static PawnKindDef OG_Snotling;
-
-        [MayRequireXenobiologis]
-        public static PawnKindDef OG_Ork_Snotling;
-
-        public static PawnKindDef OG_Grot_Wild;
-        public static PawnKindDef Tribesperson_OG_Grot;
-        public static PawnKindDef Colonist_OG_Grot;
-
-        public static PawnKindDef OG_Ork_Wild;
-    //    public static PawnKindDef Tribesperson_OG_Ork;
-    //    public static PawnKindDef Colonist_OG_Ork;
-    }
-
-    [DefOf]
-    public static class OrkFactionDefOf
-    {
-        static OrkFactionDefOf()
-        {
-            DefOfHelper.EnsureInitializedInCtor(typeof(OrkFactionDefOf));
-        }
-
-        public static FactionDef OG_Ork_PlayerColony;
-        public static FactionDef OG_Ork_PlayerTribe;
-
-        public static FactionDef OG_Ork_Rok;
-        public static FactionDef OG_Ork_Hulk;
-
-        public static FactionDef OG_Ork_Tek_Faction;
-        public static FactionDef OG_Ork_Feral_Faction;
-    }
 
     [DefOf]
     public static class OrkJobDefOf

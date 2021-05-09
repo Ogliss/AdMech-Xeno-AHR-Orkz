@@ -118,10 +118,10 @@ namespace AdeptusMechanicus
             {
                 return new List<Pair<PawnKindDef, float>>()
                 {
-                    new Pair<PawnKindDef, float>(OrkPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OrkPawnKindDefOf.OG_Ork_Snotling, SnotlingChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OrkPawnKindDefOf.OG_Grot_Wild, GrotChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                    new Pair<PawnKindDef, float>(OrkPawnKindDefOf.OG_Ork_Wild, OrkChance * OrkoidFungalUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
+                    new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Squig, SquigChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Ork_Snotling, SnotlingChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Grot_Wild, GrotChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
+                    new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Ork_Wild, OrkChance * OrkoidFungalUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
                 };
             }
         }
@@ -165,16 +165,16 @@ namespace AdeptusMechanicus
                             pawn.story.childhood.identifier = "Grot_Base_Child";
                         }
                         */
-                        if (!Spawnwild && (Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerColony))
+                        if (!Spawnwild && (Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerTribe || Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerColony))
                         {
                             PawnKindDef pawnKind;
-                            if (Faction.OfPlayer.def == OrkFactionDefOf.OG_Ork_PlayerTribe)
+                            if (Faction.OfPlayer.def == AdeptusFactionDefOf.OG_Ork_PlayerTribe)
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OrkPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElement();
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? AdeptusPawnKindDefOf.Tribesperson_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Tribesperson_OG_Ork")).RandomElement();
                             }
                             else
                             {
-                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? OrkPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElement();
+                                pawnKind = pawn.def.defName.Contains("Alien_Grot") ? AdeptusPawnKindDefOf.Colonist_OG_Grot : DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => x.defName.Contains("Colonist_OG_Ork")).RandomElement();
                             }
                             pawn.ChangeKind(pawnKind);
                         }
