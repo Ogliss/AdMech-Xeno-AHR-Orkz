@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Adeptus Mechanicus: Xenobiologis (Playable Orkoids)</name>
+	<name>Adeptus Xenobiologis: Orkoids</name>
 	<packageId>Ogliss.AdMech.Xenobiologis.Orkz</packageId>
 	<author>Ogliss</author>
 	<supportedVersions>
@@ -31,6 +31,7 @@
 		<li>CETeam.CombatExtended</li>
 		<li>QX.AstraMilitarum</li>
 		<li>CptOhu.CorruptionCore</li>
+		<li>Mlie.O21Rimhammer40K</li>
 	</loadAfter>
 	<loadBefore>
 	

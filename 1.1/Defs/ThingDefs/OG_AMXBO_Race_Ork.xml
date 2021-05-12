@@ -675,14 +675,32 @@
 			</plantList>
 			<!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
 			<buildingList>
+				<li>OGO_SteleLarge</li>
 				<li>OGO_TableMachining</li>
+				<li>OGO_ElectricStove</li>
+				<li>OGO_FueledStove</li>
 				<li>OGO_TableButcher</li>
 				<li>OGO_DrugLab</li>
+				<li>OGO_SimpleResearchBench</li>
+				<li>OGO_HiTechResearchBench</li>
+				<li>OGO_Bed</li>
+				<li>OGO_Table1x2c</li>
+				<li>OGO_Table2x4c</li>
+				<li>OGO_ChemfuelPoweredGenerator</li>
 			</buildingList>
 			<blackBuildingList>
+				<li>SteleLarge</li>
 				<li>TableMachining</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
 				<li>TableButcher</li>
 				<li>DrugLab</li>
+				<li>SimpleResearchBench</li>
+				<li>HiTechResearchBench</li>
+				<li>Bed</li>
+				<li>Table1x2c</li>
+				<li>Table2x4c</li>
+				<li>ChemfuelPoweredGenerator</li>
 			</blackBuildingList>
 		</raceRestriction>
 	</alienRace>

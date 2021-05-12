@@ -181,7 +181,7 @@ namespace AdeptusMechanicus
 		{
 			get
 			{
-				return this.pawn.BodySize * (1f - (1f * this.pawn.needs.joy.CurLevel));
+				return this.pawn.BodySize * (1f - (1f * (this.pawn.needs.joy != null ? this.pawn.needs.joy.CurLevel : 0f)));
 			}
 		}
 		
