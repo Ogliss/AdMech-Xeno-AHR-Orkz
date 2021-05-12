@@ -20,7 +20,7 @@ namespace AdeptusMechanicus
 			{
 				return null;
 			}
-			Job job = JobMaker.MakeJob(OrkJobDefOf.OGO_Orkoid_Scrap, otherPawn);
+			Job job = JobMaker.MakeJob(AdeptusJobDefOf.OGO_Orkoid_Scrap, otherPawn);
 			job.maxNumMeleeAttacks = 1;
 			job.verbToUse = verbToUse;
 			return job;

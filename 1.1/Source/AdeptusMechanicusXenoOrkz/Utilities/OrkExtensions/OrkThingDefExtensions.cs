@@ -6,17 +6,17 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isOrkoid(this ThingDef pawn)
         {
-            return pawn.isOrk() || pawn.isGrot() || pawn.isSquig() || pawn.isSnotling() || pawn.race.BloodDef == OrkThingDefOf.OG_FilthBlood_Orkoid;
+            return pawn.isOrk() || pawn.isGrot() || pawn.isSquig() || pawn.isSnotling() || pawn.race.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Orkoid;
         }
 
         public static bool isOrk(this ThingDef pawn)
         {
-            return pawn == OrkThingDefOf.OG_Alien_Ork;
+            return pawn == AdeptusThingDefOf.OG_Alien_Ork;
         }
 
         public static bool isGrot(this ThingDef pawn)
         {
-            return pawn == OrkThingDefOf.OG_Alien_Grot;
+            return pawn == AdeptusThingDefOf.OG_Alien_Grot;
         }
 
         public static bool isSquig(this ThingDef pawn)
@@ -30,7 +30,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool isOrkoidFungus(this ThingDef def)
         {
-            return def == OrkThingDefOf.OG_Plant_Orkoid_Fungus || def == OrkThingDefOf.OG_Plant_Orkoid_Cocoon;
+            return def == AdeptusThingDefOf.OG_Plant_Orkoid_Fungus || def == AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon;
         }
 
     }

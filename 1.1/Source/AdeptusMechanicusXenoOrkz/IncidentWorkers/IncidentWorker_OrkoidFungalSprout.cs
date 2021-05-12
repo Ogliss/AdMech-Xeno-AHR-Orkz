@@ -43,7 +43,7 @@ namespace AdeptusMechanicus
 				{
 					plant.Destroy(DestroyMode.Vanish);
 				}
-				Thing thing2 = GenSpawn.Spawn(OrkThingDefOf.OG_Plant_Orkoid_Cocoon, intVec, map, WipeMode.Vanish);
+				Thing thing2 = GenSpawn.Spawn(AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon, intVec, map, WipeMode.Vanish);
 				if (thing == null)
 				{
 					thing = thing2;
@@ -66,7 +66,7 @@ namespace AdeptusMechanicus
 		// Token: 0x06000E25 RID: 3621 RVA: 0x00069E88 File Offset: 0x00068288
 		private bool CanSpawnAt(IntVec3 c, Map map)
 		{
-			if (!c.Standable(map) || c.Fogged(map) || map.fertilityGrid.FertilityAt(c) < OrkThingDefOf.OG_Plant_Orkoid_Cocoon.plant.fertilityMin || !c.GetRoom(map, RegionType.Set_Passable).PsychologicallyOutdoors || c.GetEdifice(map) != null || !PlantUtility.GrowthSeasonNow(c, map, false))
+			if (!c.Standable(map) || c.Fogged(map) || map.fertilityGrid.FertilityAt(c) < AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon.plant.fertilityMin || !c.GetRoom(map, RegionType.Set_Passable).PsychologicallyOutdoors || c.GetEdifice(map) != null || !PlantUtility.GrowthSeasonNow(c, map, false))
 			{
 				return false;
 			}
@@ -78,7 +78,7 @@ namespace AdeptusMechanicus
 			List<Thing> thingList = c.GetThingList(map);
 			for (int i = 0; i < thingList.Count; i++)
 			{
-				if (thingList[i].def == OrkThingDefOf.OG_Plant_Orkoid_Cocoon)
+				if (thingList[i].def == AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon)
 				{
 					return false;
 				}

@@ -7,17 +7,17 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isOrkoid(this Pawn pawn)
         {
-            return pawn.isOrk() || pawn.isGrot() || pawn.isSquig() || pawn.isSnotling() || pawn.RaceProps.BloodDef == OrkThingDefOf.OG_FilthBlood_Orkoid;
+            return pawn.isOrk() || pawn.isGrot() || pawn.isSquig() || pawn.isSnotling() || pawn.RaceProps.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Orkoid;
         }
 
         public static bool isOrk(this Pawn pawn)
         {
-            return pawn.def == OrkThingDefOf.OG_Alien_Ork;
+            return pawn.def == AdeptusThingDefOf.OG_Alien_Ork;
         }
 
         public static bool isGrot(this Pawn pawn)
         {
-            return pawn.def == OrkThingDefOf.OG_Alien_Grot;
+            return pawn.def == AdeptusThingDefOf.OG_Alien_Grot;
         }
 
         public static bool isSquig(this Pawn pawn)

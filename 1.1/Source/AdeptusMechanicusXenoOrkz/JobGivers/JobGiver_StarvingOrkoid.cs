@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
 				return null;
 			}
 			Thing spawnedParentOrMe = mentalState_StarvingOrkoid.target.SpawnedParentOrMe;
-			Job job = JobMaker.MakeJob(OrkJobDefOf.OGO_Orkoid_Hunt, spawnedParentOrMe);
+			Job job = JobMaker.MakeJob(AdeptusJobDefOf.OGO_Orkoid_Hunt, spawnedParentOrMe);
 			job.canBash = true;
 			job.killIncappedTarget = true;
 			if (spawnedParentOrMe != mentalState_StarvingOrkoid.target)

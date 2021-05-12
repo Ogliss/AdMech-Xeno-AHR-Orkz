@@ -18,7 +18,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 	{
 		private static void Postfix(Pawn_NeedsTracker __instance, Pawn ___pawn, NeedDef nd, ref bool __result)
 		{
-            if (___pawn.isOrkoid() && nd == OrkNeedDefOf.Beauty)
+            if (___pawn.isOrkoid() && nd == AdeptusNeedDefOf.Beauty)
 			{
 				__result = false;
 			}

@@ -17,10 +17,10 @@ namespace AdeptusMechanicus
 			{
 				Messages.Message("AMO_MessageSocialFight".Translate(pawn.LabelShort, otherPawn.LabelShort, pawn.Named("PAWN1"), otherPawn.Named("PAWN2")), pawn, MessageTypeDefOf.ThreatSmall, true);
 			}
-			pawn.mindState.mentalStateHandler.TryStartMentalState(OrkMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, otherPawn, false);
+			pawn.mindState.mentalStateHandler.TryStartMentalState(AdeptusMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, otherPawn, false);
 			if (otherPawn.isOrk())
 			{
-				otherPawn.mindState.mentalStateHandler.TryStartMentalState(OrkMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, pawn, false);
+				otherPawn.mindState.mentalStateHandler.TryStartMentalState(AdeptusMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, pawn, false);
 			}
 			else
 			{

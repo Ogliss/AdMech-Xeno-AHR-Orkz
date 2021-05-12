@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
 	{
 		protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
-			Need_Orkoid_Fightyness need_Violence = (Need_Orkoid_Fightyness)p.needs.AllNeeds.Find((Need x) => x.def == OrkNeedDefOf.OG_Ork_Fightyness);
+			Need_Orkoid_Fightyness need_Violence = (Need_Orkoid_Fightyness)p.needs.AllNeeds.Find((Need x) => x.def == AdeptusNeedDefOf.OG_Ork_Fightyness);
 			bool flag = need_Violence == null || p.HostFaction != null;
 			ThoughtState result;
 			if (flag)

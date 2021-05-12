@@ -10,7 +10,7 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isOrkoidFungus(this Thing thing)
         {
-            return thing.def == OrkThingDefOf.OG_Plant_Orkoid_Fungus || thing.def == OrkThingDefOf.OG_Plant_Orkoid_Cocoon;
+            return thing.def == AdeptusThingDefOf.OG_Plant_Orkoid_Fungus || thing.def == AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon;
         }
 
     }

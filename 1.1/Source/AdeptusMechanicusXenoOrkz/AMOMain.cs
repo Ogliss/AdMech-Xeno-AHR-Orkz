@@ -25,13 +25,13 @@ namespace AdeptusMechanicus
 
             AlienRace.ThingDef_AlienRace Cybork = DefDatabase<ThingDef>.GetNamedSilentFail("OG_Alien_Cybork") as AlienRace.ThingDef_AlienRace;
 
-            List<ThingDef> races = new List<ThingDef>() { OrkThingDefOf.OG_Alien_Ork, OrkThingDefOf.OG_Alien_Grot, OrkThingDefOf.OG_Snotling};
+            List<ThingDef> races = new List<ThingDef>() { AdeptusThingDefOf.OG_Alien_Ork, AdeptusThingDefOf.OG_Alien_Grot, AdeptusThingDefOf.OG_Snotling};
             if (Cybork != null) races.Add(Cybork);
             List<ThingDef> animals = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null && x.race.Animal && x.isOrkoid()).ToList();
             List<ThingDef> plants = new List<ThingDef>()
             {
-                OrkThingDefOf.OG_Plant_Orkoid_Fungus,
-                OrkThingDefOf.OG_Plant_Orkoid_Cocoon
+                AdeptusThingDefOf.OG_Plant_Orkoid_Fungus,
+                AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon
             };
             AlienRaceUtility.DoRacialRestrictionsFor(races, "O", blackTags, whiteProjects, blackProjects, whitePlants: plants, whiteAnimals: animals);
         }
