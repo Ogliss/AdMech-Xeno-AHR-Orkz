@@ -5,21 +5,14 @@
 		<operations>
 			<!-- ========================= Ork - Studded Armour ========================== -->
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="OGO_Apparel_LevaArmour"]/statBases</xpath>
-				<value>
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_LevaArmour</defName>
+				<statBases>
 					<Bulk>25</Bulk>
 					<WornBulk>8</WornBulk>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="OGO_Apparel_LevaArmour"]/statBases/StuffEffectMultiplierArmor</xpath>
-				<value>
 					<StuffEffectMultiplierArmor>2.0</StuffEffectMultiplierArmor>
-				</value>
+				</statBases>
 			</li>
-
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="OGO_Apparel_LevaArmour"]/equippedStatOffsets</xpath>
 				<value>
@@ -27,17 +20,9 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="OGO_Apparel_LevaArmour"]/apparel/bodyPartGroups</xpath>
-				<value>
-					<li>Hands</li>
-					<li>Feet</li>
-				</value>
-			</li>
-
 		
 			<!-- ========================= Ork - Ranger Helmet ========================== -->
-			<li Class="PatchOperationReplace">
+			<!--li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="OGE_Apparel_RangerArmourHelmet"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
 					<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
@@ -56,7 +41,7 @@
 				<value>
 					<li>MiddleHead</li>
 				</value>
-			</li>
+			</li-->
 
 			<!-- ========================= Ork - Flak Armour ========================== -->
 			<li Class="PatchOperationAdd">
@@ -95,7 +80,7 @@
 
 			
 			<!-- ========================= Ork - Gaurdian Helmet ========================== -->
-			<li Class="PatchOperationReplace">
+			<!--li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="OGE_Apparel_MeshArmourHelmet"]/statBases/ArmorRating_Sharp</xpath>
 				<value>
 					<ArmorRating_Sharp>4</ArmorRating_Sharp>
@@ -114,7 +99,7 @@
 				<value>
 					<li>MiddleHead</li>
 				</value>
-			</li>
+			</li-->
 			<!-- ========================= Ork - Eavy Armour ========================== -->
 			
 

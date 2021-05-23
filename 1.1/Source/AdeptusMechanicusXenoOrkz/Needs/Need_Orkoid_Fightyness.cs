@@ -267,6 +267,10 @@ namespace AdeptusMechanicus
 		public bool fought = false;
 		public bool foughtSocially = false;
 		private int lastFoughtTick = -99999;
+		public bool IsFighting(Pawn pawn)
+		{
+			return pawn.CurJob != null && (pawn.CurJob.def == JobDefOf.AttackMelee || pawn.CurJob.def == JobDefOf.AttackStatic /*|| pawn.CurJob.def == JobDefOf.Wait_Combat*/ || pawn.CurJob.def == JobDefOf.PredatorHunt);
+		}
 	}
 
 	/*

@@ -43,7 +43,8 @@
     <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
     <Compile Include="Harmony\Patches\Pawn_NeedsTracker_ShouldHaveNeed_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_AgeTick_Orkoid_Patch.cs" />
-    <Compile Include="Harmony\Patches\Pawn_PostApplyDamage_OrkoidFightyness_Patch.cs" />
+    <Compile Include="Harmony\Patches\Thing_TakeDamage_OrkoidFightyness_Patch.cs" />
+    <None Include="Harmony\Patches\Pawn_PostApplyDamage_OrkoidFightyness_Patch.cs.bak" />
     <Compile Include="JobDrivers\Class1.cs" />
     <Compile Include="JobDrivers\JobDriver_OrkoidHunt.cs" />
     <Compile Include="JobGivers\Class1.cs" />

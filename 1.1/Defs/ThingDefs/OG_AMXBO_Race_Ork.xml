@@ -788,7 +788,7 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>600</lifeExpectancy>
 		<leatherDef>Leather_Ork</leatherDef>
-		<nameGenerator>OG_NamerPerson_Ork</nameGenerator>
+		<nameGenerator>OG_Ork_NamerPerson</nameGenerator>
 		<body>OG_Ork_Body</body>
 		<bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
 		<fleshType>OG_Flesh_Ork</fleshType>

@@ -59,7 +59,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         if (__result.ageTracker.AgeBiologicalYearsFloat > 5f)
                         {
                             Rand.PushState();
-                            __result.ageTracker.AgeChronologicalTicks = ((float)Rand.RangeInclusive(1, 5) * 3600000).SecondsToTicks();
+                            __result.ageTracker.AgeBiologicalTicks = ((float)Rand.RangeInclusive(1, 5) * 3600000).SecondsToTicks();
                             Rand.PopState();
                         }
                     }
@@ -68,22 +68,22 @@ namespace AdeptusMechanicus.HarmonyInstance
                 Pawn_StoryTracker storyTracker = __result.story;
                 Backstory adulthood = storyTracker.adulthood;
                 bool adult = adulthood != null;
-                if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
+                if (__result.isOrk())
                 {
-                    Log.Message(__result.Name+": Ork_Base_Child");
-                }
-                else
-                if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
-                {
-
-                    Log.Message(__result.Name + ": Ork_Odd_Child");
-                }
-                else
-                if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
-                {
-                    Log.Message(__result.Name + ": Ork_Weird_Child");
-                    if (__result.isOrk())
+                    if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
                     {
+                        Log.Message(__result.Name + ": Ork_Base_Child");
+                    }
+                    else
+                    if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
+                    {
+
+                        Log.Message(__result.Name + ": Ork_Odd_Child");
+                    }
+                    else
+                    if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
+                    {
+                        Log.Message(__result.Name + ": Ork_Weird_Child");
                         if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))
                         {
                             Trait trait = new Trait(TraitDefOf.PsychicSensitivity, 1);
@@ -110,30 +110,34 @@ namespace AdeptusMechanicus.HarmonyInstance
                                 _Psylink.suppressPostAddLetter = true;
                                 __result.health.AddHediff(_Psylink);
                             }
-                            if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                            if (adult)
                             {
-                                Rand.PushState();
-                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(3, 5), __result.GetMaxPsylinkLevel()), false);
-                                Rand.PopState();
-                            }
-                            else if (storyTracker.adulthood.identifier.Contains("_Nob"))
-                            {
-                                Rand.PushState();
-                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(1, 3), __result.GetMaxPsylinkLevel()), false);
-                                Rand.PopState();
-                            }
-                            else if (adult)
-                            {
-                                Rand.PushState();
-                                __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(0, 2), __result.GetMaxPsylinkLevel()), false);
-                                Rand.PopState();
+                                if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                                {
+                                    Rand.PushState();
+                                    __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(3, 5), __result.GetMaxPsylinkLevel()), false);
+                                    Rand.PopState();
+                                }
+                                else if (storyTracker.adulthood.identifier.Contains("_Nob"))
+                                {
+                                    Rand.PushState();
+                                    __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(1, 3), __result.GetMaxPsylinkLevel()), false);
+                                    Rand.PopState();
+                                }
+                                else if (adult)
+                                {
+                                    Rand.PushState();
+                                    __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(0, 2), __result.GetMaxPsylinkLevel()), false);
+                                    Rand.PopState();
+                                }
+
                             }
                         }
                     }
-                    if (__result.isGrot())
-                    {
+                }
+                if (__result.isGrot())
+                {
 
-                    }
                 }
                 /*
                 if (adult)

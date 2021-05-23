@@ -39,7 +39,7 @@
 	<incompatibleWith>
 		<li>Ogliss.FeralOrkz</li>
 	</incompatibleWith>	
-	<description>V1.6.1.2
+	<description>V1.6.5.0
 Adds Warhammer 40k Orkz/Grotz as playable races
 
 Contents
@@ -109,6 +109,7 @@ Resources:
 	Mechanics:
 	Orkoid - All Orkz count as having both the Bloodlust and Psychopath trait.
 	Symbiotic Fungus - All Orkoids originate from the same strain of fungal spores, which can mature into a might warboss, or a tiny mushroom.
+	Fightyness - 
 	
 Load Order info:
 	Humanoid Alien Races( if used, ideally this should be loaded as close to the top of your list as possible )

@@ -318,23 +318,23 @@
 		<defName>SnotlingConstant</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
-		<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
-			<subNodes>
-				<!-- Flee enemies, tornados, meteorites, etc. -->
-				<li Class="JobGiver_AnimalFlee" />
+				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+					<subNodes>
+						<!-- Flee enemies, tornados, meteorites, etc. -->
+						<li Class="JobGiver_AnimalFlee" />
 
-				<!-- Join auto joinable caravan -->
-				<li Class="ThinkNode_Subtree">
-				<treeDef>JoinAutoJoinableCaravan</treeDef>
-				</li>
-				
-				<!-- Lord directives -->
-				<li Class="ThinkNode_Subtree">
-				<treeDef>LordDutyConstant</treeDef>
+						<!-- Join auto joinable caravan -->
+						<li Class="ThinkNode_Subtree">
+							<treeDef>JoinAutoJoinableCaravan</treeDef>
+						</li>
+						
+						<!-- Lord directives -->
+						<li Class="ThinkNode_Subtree">
+							<treeDef>LordDutyConstant</treeDef>
+						</li>
+					</subNodes>
 				</li>
 			</subNodes>
-		</li>
-		</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
 

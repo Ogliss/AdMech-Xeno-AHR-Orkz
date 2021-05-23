@@ -509,7 +509,7 @@
       <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <graphicData>
-      <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
+      <texPath>Things/Building/Ork/Production/ResearchBenchHiTech</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(7,4)</drawSize>
