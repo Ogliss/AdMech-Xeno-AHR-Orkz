@@ -65,19 +65,19 @@ namespace AdeptusMechanicus
 				string text;
 				if (num > 0)
 				{
-					text = "AMO_FightRiskExtreme".Translate();
+					text = "AdeptusMechanicus.Ork.FightRiskExtreme".Translate();
 				}
 				else
 				{
 					num = FightRiskAlertUtility.PawnsAtRiskMajor.Count<Pawn>();
 					if (num > 0)
 					{
-						text = "AMO_FightRiskMajor".Translate();
+						text = "AdeptusMechanicus.Ork.FightRiskMajor".Translate();
 					}
 					else
 					{
 						num = FightRiskAlertUtility.PawnsAtRiskMinor.Count<Pawn>();
-						text = "AMO_FightRiskMinor".Translate();
+						text = "AdeptusMechanicus.Ork.FightRiskMinor".Translate();
 					}
 				}
 				if (num > 1)
@@ -100,7 +100,7 @@ namespace AdeptusMechanicus
 					{
 						stringBuilder2.AppendLine("  - " + pawn.NameShortColored.Resolve());
 					}
-					stringBuilder.Append("AMO_FightRiskExtremeDesc".Translate(stringBuilder2).Resolve());
+					stringBuilder.Append("AdeptusMechanicus.Ork.FightRiskExtremeDesc".Translate(stringBuilder2).Resolve());
 				}
 				if (FightRiskAlertUtility.PawnsAtRiskMajor.Any<Pawn>())
 				{
@@ -113,7 +113,7 @@ namespace AdeptusMechanicus
 					{
 						stringBuilder3.AppendLine("  - " + pawn2.NameShortColored.Resolve());
 					}
-					stringBuilder.Append("AMO_FightRiskMajorDesc".Translate(stringBuilder3).Resolve());
+					stringBuilder.Append("AdeptusMechanicus.Ork.FightRiskMajorDesc".Translate(stringBuilder3).Resolve());
 				}
 				if (FightRiskAlertUtility.PawnsAtRiskMinor.Any<Pawn>())
 				{
@@ -126,10 +126,10 @@ namespace AdeptusMechanicus
 					{
 						stringBuilder4.AppendLine("  - " + pawn3.NameShortColored.Resolve());
 					}
-					stringBuilder.Append("AMO_FightRiskMinorDesc".Translate(stringBuilder4).Resolve());
+					stringBuilder.Append("AdeptusMechanicus.Ork.FightRiskMinorDesc".Translate(stringBuilder4).Resolve());
 				}
 				stringBuilder.AppendLine();
-				stringBuilder.Append("AMO_FightRiskDescEnding".Translate());
+				stringBuilder.Append("AdeptusMechanicus.Ork.FightRiskDescEnding".Translate());
 				return stringBuilder.ToString();
 			}
 		}

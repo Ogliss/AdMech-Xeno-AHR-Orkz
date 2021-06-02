@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest> 
 <identifier>Ogliss.AdMech.Xenobiologis.Orkz</identifier>
-<version>1.6.5.0</version>
+<version>1.6.5.1</version>
 <dependencies>
 	<li>Ogliss.AdMech.Armoury</li>
 	<li>erdelf.HumanoidAlienRaces</li>

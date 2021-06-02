@@ -21,10 +21,10 @@
 					</value>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_ReseachBase"]/requiredResearchFacilities</xpath>
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_Tech_Base"]/requiredResearchFacilities</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_ReseachBase"]/requiredResearchBuilding</xpath>
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_Tech_Base"]/requiredResearchBuilding</xpath>
 				</li>
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="OGO_TableMachining"]/comps/li[@Class="CompProperties_Facility"]</xpath>

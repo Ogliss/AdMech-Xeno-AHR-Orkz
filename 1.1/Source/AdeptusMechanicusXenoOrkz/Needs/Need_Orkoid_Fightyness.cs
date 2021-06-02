@@ -66,12 +66,10 @@ namespace AdeptusMechanicus
 		{
 			get
 			{
-				bool flag = this.pawn.isOrkoid();
 				bool result;
-				if (flag)
+				if (this.pawn.isOrkoid())
 				{
-					bool flag2 = this.pawn.WorkTagIsDisabled(WorkTags.Violent);
-					result = flag2;
+					result = this.pawn.WorkTagIsDisabled(WorkTags.Violent);
 				}
 				else
 				{
@@ -133,7 +131,7 @@ namespace AdeptusMechanicus
 					if (pawn.isOrk() && CurCategory != FightynessCategory.Free && Math.Sign(this.lastEffectiveDelta) > 0)
 					{
                         Rand.PushState();
-						Log.Message(pawn.NameShortColored + " will start a fight "+ this.CurLevelPercentage +"%");
+					//	Log.Message(pawn.NameShortColored + " will start a fight "+ this.CurLevelPercentage +"%");
 						if (Rand.Chance(this.CurLevelPercentage/100f))
 						{
 							Orkoid maxOrkiness;

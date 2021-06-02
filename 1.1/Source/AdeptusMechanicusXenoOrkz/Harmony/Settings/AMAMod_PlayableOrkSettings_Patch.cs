@@ -17,7 +17,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)
         {
-            __result += ", " + "AMO_ModName".Translate();
+            __result += ", " + "AdeptusMechanicus.Ork.ModName".Translate();
         }
     }
     [HarmonyPatch(typeof(AMAMod), "OrkSettings")]
@@ -42,7 +42,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPrefix]
         public static void OrkSettings_Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, Rect rect, Rect inRect, float num, ref float num2)
         {
-            string label = "AMXB_ShowOrk".Translate() + " Settings";
+            string label = "AdeptusMechanicus.Xenobiologis.ShowOrk".Translate() + " Settings";
             string tooltip = string.Empty;
             if (Dev)
             {
@@ -66,19 +66,19 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     Listing_StandardExpanding listing_General = listing_Race.BeginSection(MenuLength, true);
                     listing_General.ColumnWidth *= 0.32f;
-                    listing_General.CheckboxLabeled("AMXB_AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowOrkTek,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) || !settings.AllowOrkWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) && settings.AllowOrkWeapons);
                     listing_General.NewColumn();
-                    listing_General.CheckboxLabeled("AMXB_AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowOrkFeral,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) || !settings.AllowOrkWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) && settings.AllowOrkWeapons);
                     listing_General.NewColumn();
-                    listing_General.CheckboxLabeled("AMXB_AllowOrkRok".Translate(),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkRok".Translate(),
                         ref settings.AllowOrkRok,
                         null,
                         !settings.AllowOrkTek || !settings.AllowOrkWeapons,
@@ -87,9 +87,9 @@ namespace AdeptusMechanicus.HarmonyInstance
                     MenuLength = listing_General.CurHeight != 0 ? listing_General.CurHeight : listing_General.MaxColumnHeightSeen;
                     Listing_StandardExpanding listing_FungalLabel = listing_Race.BeginSection(__instance.Length(Setting, 1, lineheight, 0, 0), true);
                     listing_FungalLabel.ColumnWidth *= 0.32f;
-                    listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AMO_FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
+                    listing_FungalLabel.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
                     listing_FungalLabel.NewColumn();
-                    listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_CocoonOptions".Translate(), ref settings.CocoonSpawnChance, ref settings.CocoonSpawnChanceBuffer, 0f, 1f, "AMO_CocoonOptionsToolTip".Translate(), 0.75f, 0.25f);
+                    listing_FungalLabel.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.CocoonOptions".Translate(), ref settings.CocoonSpawnChance, ref settings.CocoonSpawnChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.CocoonOptionsToolTip".Translate(), 0.75f, 0.25f);
                     listing_FungalLabel.NewColumn();
                     if (listing_FungalLabel.ButtonTextLine("Defaults"))
                     {
@@ -99,17 +99,17 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                     Listing_StandardExpanding listing_Fungus = listing_Race.BeginSection(__instance.Length(Setting, 4, lineheight, 0, 0), true);
                     listing_Fungus.ColumnWidth *= 0.32f;
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SquigToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SnotToolTip".Translate(), 0.75f, 0.25f);
                     //    listing_Fungus.NewColumn();
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Grot".Translate(), ref settings.FungusGrotChance, ref settings.FungusGrotChanceBuffer, 0f, 1f, "AMO_GrotToolTip".Translate(), 0.75f, 0.25f);
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Ork".Translate(), ref settings.FungusOrkChance, ref settings.FungusOrkChanceBuffer, 0f, 1f, "AMO_OrkToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Grot".Translate(), ref settings.FungusGrotChance, ref settings.FungusGrotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.GrotToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Ork".Translate(), ref settings.FungusOrkChance, ref settings.FungusOrkChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.OrkToolTip".Translate(), 0.75f, 0.25f);
                     listing_Fungus.NewColumn();
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.CocoonSquigChance, ref settings.CocoonSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.CocoonSnotChance, ref settings.CocoonSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Squig".Translate(), ref settings.CocoonSquigChance, ref settings.CocoonSquigChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SquigToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Snot".Translate(), ref settings.CocoonSnotChance, ref settings.CocoonSnotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SnotToolTip".Translate(), 0.75f, 0.25f);
                     //    listing_Fungus.NewColumn();
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AMO_GrotToolTip".Translate(), 0.75f, 0.25f);
-                    listing_Fungus.TextFieldNumericLabeled<float>("AMO_Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AMO_OrkToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.GrotToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.OrkToolTip".Translate(), 0.75f, 0.25f);
                     listing_Race.EndSection(listing_Fungus);
                 }
                 listing_Main.EndSection(listing_Race);
@@ -163,31 +163,31 @@ namespace AdeptusMechanicus.HarmonyInstance
 
             if (!Xenobiologis)
             {
-                if (!listing_Main.ButtonText("AMO_ModName".Translate() + " Options", ref settings.ShowOrk))
+                if (!listing_Main.ButtonText("AdeptusMechanicus.Ork.ModName".Translate() + " Options", ref settings.ShowOrk))
                 {
                     return;
                 }
             }
             Listing_StandardExpanding listing_Race = listing_Main.BeginSection(RaceSettings, false, 3, 4, 0);
-            listing_Race.CheckboxLabeled("AMXB_ShowOrk".Translate() + " Settings" , ref settings.ShowOrk, null, false, true, ArmouryMain.collapseTex, ArmouryMain.expandTex);
+            listing_Race.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.ShowOrk".Translate() + " Settings" , ref settings.ShowOrk, null, false, true, ArmouryMain.collapseTex, ArmouryMain.expandTex);
 
             if (setting)
             {
                 Listing_StandardExpanding listing_General = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
                 listing_General.ColumnWidth *= 0.32f;
-                listing_General.CheckboxLabeled("AMXB_AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkTek".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                     ref settings.AllowOrkTek,
                     null,
                     !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) || !settings.AllowOrkWeapons,
                     DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) && settings.AllowOrkWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                     ref settings.AllowOrkFeral,
                     null,
                     !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) || !settings.AllowOrkWeapons,
                     DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) && settings.AllowOrkWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowOrkRok".Translate(),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkRok".Translate(),
                     ref settings.AllowOrkRok,
                     null,
                     !settings.AllowOrkTek || !settings.AllowOrkWeapons,
@@ -195,9 +195,9 @@ namespace AdeptusMechanicus.HarmonyInstance
                 listing_Race.EndSection(listing_General);
                 Listing_StandardExpanding listing_FungalLabel = listing_Race.BeginSection(__instance.Length(setting, 1, lineheight, 0, 0), true);
                 listing_FungalLabel.ColumnWidth *= 0.32f;
-                listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AMO_FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
+                listing_FungalLabel.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
                 listing_FungalLabel.NewColumn();
-                listing_FungalLabel.TextFieldNumericLabeled<float>("AMO_CocoonOptions".Translate(), ref settings.CocoonSpawnChance, ref settings.CocoonSpawnChanceBuffer, 0f, 1f, "AMO_CocoonOptionsToolTip".Translate(), 0.75f, 0.25f);
+                listing_FungalLabel.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.CocoonOptions".Translate(), ref settings.CocoonSpawnChance, ref settings.CocoonSpawnChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.CocoonOptionsToolTip".Translate(), 0.75f, 0.25f);
                 listing_FungalLabel.NewColumn();
                 if (listing_FungalLabel.ButtonTextLine("Defaults"))
                 {
@@ -227,17 +227,17 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                 Listing_StandardExpanding listing_Fungus = listing_Race.BeginSection(__instance.Length(setting, 4, lineheight, 0, 0), true);
                 listing_Fungus.ColumnWidth *= 0.32f;
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Squig".Translate(), ref settings.FungusSquigChance, ref settings.FungusSquigChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SquigToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Snot".Translate(), ref settings.FungusSnotChance, ref settings.FungusSnotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SnotToolTip".Translate(), 0.75f, 0.25f);
             //    listing_Fungus.NewColumn();
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Grot".Translate(), ref settings.FungusGrotChance, ref settings.FungusGrotChanceBuffer, 0f, 1f, "AMO_GrotToolTip".Translate(), 0.75f, 0.25f);
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Ork".Translate(), ref settings.FungusOrkChance, ref settings.FungusOrkChanceBuffer, 0f, 1f, "AMO_OrkToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Grot".Translate(), ref settings.FungusGrotChance, ref settings.FungusGrotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.GrotToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Ork".Translate(), ref settings.FungusOrkChance, ref settings.FungusOrkChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.OrkToolTip".Translate(), 0.75f, 0.25f);
                 listing_Fungus.NewColumn();
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Squig".Translate(), ref settings.CocoonSquigChance, ref settings.CocoonSquigChanceBuffer, 0f, 1f, "AMO_SquigToolTip".Translate(), 0.75f, 0.25f);
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Snot".Translate(), ref settings.CocoonSnotChance, ref settings.CocoonSnotChanceBuffer, 0f, 1f, "AMO_SnotToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Squig".Translate(), ref settings.CocoonSquigChance, ref settings.CocoonSquigChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SquigToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Snot".Translate(), ref settings.CocoonSnotChance, ref settings.CocoonSnotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.SnotToolTip".Translate(), 0.75f, 0.25f);
             //    listing_Fungus.NewColumn();
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AMO_GrotToolTip".Translate(), 0.75f, 0.25f);
-                listing_Fungus.TextFieldNumericLabeled<float>("AMO_Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AMO_OrkToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.GrotToolTip".Translate(), 0.75f, 0.25f);
+                listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.OrkToolTip".Translate(), 0.75f, 0.25f);
                 listing_Race.EndSection(listing_Fungus);
             }
             listing_Main.EndSection(listing_Race);

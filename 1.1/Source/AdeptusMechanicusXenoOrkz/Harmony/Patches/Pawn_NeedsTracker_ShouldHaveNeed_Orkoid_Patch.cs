@@ -22,6 +22,10 @@ namespace AdeptusMechanicus.HarmonyInstance
 			{
 				__result = false;
 			}
+            if (!___pawn.isOrkoid() && nd == AdeptusNeedDefOf.OG_Ork_Fightyness)
+			{
+				__result = false;
+			}
 		}
 	}
 }

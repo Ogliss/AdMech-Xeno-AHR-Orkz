@@ -15,7 +15,7 @@ namespace AdeptusMechanicus
 		{
 			if (PawnUtility.ShouldSendNotificationAbout(pawn) || PawnUtility.ShouldSendNotificationAbout(otherPawn))
 			{
-				Messages.Message("AMO_MessageSocialFight".Translate(pawn.LabelShort, otherPawn.LabelShort, pawn.Named("PAWN1"), otherPawn.Named("PAWN2")), pawn, MessageTypeDefOf.ThreatSmall, true);
+				Messages.Message("AdeptusMechanicus.Ork.MessageSocialFight".Translate(pawn.LabelShort, otherPawn.LabelShort, pawn.Named("PAWN1"), otherPawn.Named("PAWN2")), pawn, MessageTypeDefOf.ThreatSmall, true);
 			}
 			pawn.mindState.mentalStateHandler.TryStartMentalState(AdeptusMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, otherPawn, false);
 			if (otherPawn.isOrk())
