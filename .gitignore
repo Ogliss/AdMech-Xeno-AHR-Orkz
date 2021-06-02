@@ -1,4 +1,8 @@
-
+obj/
+bin/
+*.vs
+*.zip
+*.7z
+*.rar
 *.pdb
 *.psd
-*.pdb
