@@ -206,9 +206,9 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(0.8, 0.8)</customDrawSize>
+				<customDrawSize>(0.85, 0.85)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				<customHeadDrawSize>(0.65, 0.65)</customHeadDrawSize>
+				<customHeadDrawSize>(0.775, 0.775)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
 					<north>(0.0, -0.15)</north>

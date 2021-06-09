@@ -154,11 +154,11 @@ namespace AdeptusMechanicus
 									maxOrkiness = Orkoid.Snotling;
 									break;
 							}
-							Log.Message("if it can find something to krump.....");
+							//	Log.Message("if it can find something to krump.....");
 							Pawn t = FightynessScrapUtility.FindKrumpablePawn(pawn, this.CurCategory, maxOrkiness);
 							if (t != null)
 							{
-								Log.Message("gonna try and krump "+t.NameShortColored);
+								//	Log.Message("gonna try and krump "+t.NameShortColored);
 								FightynessScrapUtility.StartScrap(pawn ,t);
 							}
                         }
