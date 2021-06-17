@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
 {
     public class ThoughtWorker_HasKrudeAddedBodyPart : ThoughtWorker
     {
-        protected override ThoughtState CurrentStateInternal(Pawn p)
+        public override ThoughtState CurrentStateInternal(Pawn p)
         {
             //Make Painstoppers being able to nullify the thought. 
             if (p.health?.hediffSet.hediffs.Any(hediff => hediff.CurStage?.painFactor == 0f) ?? false)

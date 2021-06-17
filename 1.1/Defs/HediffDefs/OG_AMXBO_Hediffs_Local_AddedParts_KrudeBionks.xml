@@ -69,7 +69,7 @@
 		<label>krude bionik eye</label>
 		<labelNoun>a krude bionik eye</labelNoun>
 		<comps>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikEye</spawnThingOnRemoved>
 		<addedPartProps>
@@ -164,7 +164,6 @@
 					</li>
 				</tools>
 			</li>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikArm</spawnThingOnRemoved>
 		<addedPartProps>
@@ -248,7 +247,7 @@
 		<label>krude bionik leg</label>
 		<labelNoun>a krude bionik leg</labelNoun>
 		<comps>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikLeg</spawnThingOnRemoved>
 		<addedPartProps>
@@ -332,7 +331,7 @@
 		<label>krude bionik spine</label>
 		<labelNoun>a krude bionik spine</labelNoun>
 		<comps>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+		
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikSpine</spawnThingOnRemoved>
 		<addedPartProps>
@@ -430,7 +429,7 @@
 					</li>
 				</tools>
 			</li>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+			
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikArm_Bludgeon</spawnThingOnRemoved>
 		<addedPartProps>
@@ -543,7 +542,7 @@
 					</li>
 				</tools>
 			</li>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
+			
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikArm_Spike</spawnThingOnRemoved>
 		<addedPartProps>
@@ -645,8 +644,6 @@
 					</li>
 				</tools>
 			</li>
-			<!--li Class="QEthics.HediffCompProperties_CrudeAddedPart"/-->
-			<!--li Class="QEthics.HediffCompProperties_WeaponsPlatform"/-->
 		</comps>
 		<spawnThingOnRemoved>OG_KrudeBionikArm_RangedWeaponPlatform</spawnThingOnRemoved>
 		<addedPartProps>
@@ -744,61 +741,61 @@
 			<compClass>AdeptusMechanicus.HediffComp_DrawImplant_AdMech</compClass>
 			<implantDrawerType>Head</implantDrawerType>
 			<implantGraphicPath>Things/Pawn/Animal/Squig/BombSquig/BombSquig</implantGraphicPath>
-				  <inFrontOfBody>true</inFrontOfBody>
-				  <useHeadOffset>false</useHeadOffset>
-				  <layerOffset>0.1</layerOffset>
-				  <offsets>
-					  <south>
-						<layerOffset>0.5</layerOffset>
-						<bodyTypes>
-							<Male>(-0,0,0)</Male>
-							<Female>(-0,0,0)</Female>
-						</bodyTypes>
-						<crownTypes>
-							<Average_Normal>(-0,0,0)</Average_Normal>
-							<Average_Narrow>(-0,0,0)</Average_Narrow>
-							<Average_Wide>(-0,0,0)</Average_Wide>
-							<Average_Pointy>(-0,0,0)</Average_Pointy>
-						</crownTypes>
-					  </south>
-					  <north>
-						<layerOffset>0.5</layerOffset>
-						<bodyTypes>
-							<Male>(0,0,0)</Male>
-							<Female>(0,0,0)</Female>
-						</bodyTypes>
-						<crownTypes>
-							<Average_Normal>(0,0,0)</Average_Normal>
-							<Average_Narrow>(0,0,0)</Average_Narrow>
-							<Average_Wide>(0,0,0)</Average_Wide>
-							<Average_Pointy>(0,0,0)</Average_Pointy>
-						</crownTypes>
-					  </north>
-					  <east>
-						<bodyTypes>
-							<Male>(-0,0,0)</Male>
-							<Female>(-0,0,0)</Female>
-						</bodyTypes>
-						<crownTypes>
-							<Average_Normal>(-0,0,0)</Average_Normal>
-							<Average_Narrow>(-0,0,0)</Average_Narrow>
-							<Average_Wide>(-0,0,0)</Average_Wide>
-							<Average_Pointy>(-0,0,0)</Average_Pointy>
-						</crownTypes>
-					  </east>
-					  <west>
-						<bodyTypes>
-							<Male>(-0,0,0)</Male>
-							<Female>(-0,0,0)</Female>
-						</bodyTypes>
-						<crownTypes>
-							<Average_Normal>(-0,0,0)</Average_Normal>
-							<Average_Narrow>(-0,0,0)</Average_Narrow>
-							<Average_Wide>(-0,0,0)</Average_Wide>
-							<Average_Pointy>(-0,0,0)</Average_Pointy>
-						</crownTypes>
-					  </west>
-				  </offsets>
+			  <inFrontOfBody>true</inFrontOfBody>
+			  <useHeadOffset>false</useHeadOffset>
+			  <layerOffset>0.1</layerOffset>
+			  <offsets>
+				  <south>
+					<layerOffset>0.5</layerOffset>
+					<bodyTypes>
+						<Male>(-0,0,0)</Male>
+						<Female>(-0,0,0)</Female>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(-0,0,0)</Average_Normal>
+						<Average_Narrow>(-0,0,0)</Average_Narrow>
+						<Average_Wide>(-0,0,0)</Average_Wide>
+						<Average_Pointy>(-0,0,0)</Average_Pointy>
+					</crownTypes>
+				  </south>
+				  <north>
+					<layerOffset>0.5</layerOffset>
+					<bodyTypes>
+						<Male>(0,0,0)</Male>
+						<Female>(0,0,0)</Female>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(0,0,0)</Average_Normal>
+						<Average_Narrow>(0,0,0)</Average_Narrow>
+						<Average_Wide>(0,0,0)</Average_Wide>
+						<Average_Pointy>(0,0,0)</Average_Pointy>
+					</crownTypes>
+				  </north>
+				  <east>
+					<bodyTypes>
+						<Male>(-0,0,0)</Male>
+						<Female>(-0,0,0)</Female>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(-0,0,0)</Average_Normal>
+						<Average_Narrow>(-0,0,0)</Average_Narrow>
+						<Average_Wide>(-0,0,0)</Average_Wide>
+						<Average_Pointy>(-0,0,0)</Average_Pointy>
+					</crownTypes>
+				  </east>
+				  <west>
+					<bodyTypes>
+						<Male>(-0,0,0)</Male>
+						<Female>(-0,0,0)</Female>
+					</bodyTypes>
+					<crownTypes>
+						<Average_Normal>(-0,0,0)</Average_Normal>
+						<Average_Narrow>(-0,0,0)</Average_Narrow>
+						<Average_Wide>(-0,0,0)</Average_Wide>
+						<Average_Pointy>(-0,0,0)</Average_Pointy>
+					</crownTypes>
+				  </west>
+			  </offsets>
 		  </li>
 		</comps>
 	</HediffDef>

@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
 	public class IncidentWorker_OrkoidFungalSprout : IncidentWorker
 	{
 		// Token: 0x06000E22 RID: 3618 RVA: 0x00069D20 File Offset: 0x00068120
-		protected override bool CanFireNowSub(IncidentParms parms)
+		public override bool CanFireNowSub(IncidentParms parms)
 		{
 			if (!base.CanFireNowSub(parms))
 			{
@@ -21,7 +21,7 @@ namespace AdeptusMechanicus
 		}
 
 		// Token: 0x06000E23 RID: 3619 RVA: 0x00069D68 File Offset: 0x00068168
-		protected override bool TryExecuteWorker(IncidentParms parms)
+		public override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
 			IntVec3 root;

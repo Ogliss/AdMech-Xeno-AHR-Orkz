@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
 	public class JobGiver_SlaughterRandomAnimal : ThinkNode_JobGiver
 	{
 		// Token: 0x060030A9 RID: 12457 RVA: 0x00112290 File Offset: 0x00110490
-		protected override Job TryGiveJob(Pawn pawn)
+		public override Job TryGiveJob(Pawn pawn)
 		{
 			MentalState_Slaughterer mentalState_Slaughterer = pawn.MentalState as MentalState_Slaughterer;
 			if (mentalState_Slaughterer != null && mentalState_Slaughterer.SlaughteredRecently)

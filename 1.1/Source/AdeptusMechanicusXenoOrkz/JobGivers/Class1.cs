@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
 	public class JobGiver_Berserk : ThinkNode_JobGiver
 	{
 		// Token: 0x06003090 RID: 12432 RVA: 0x00111B38 File Offset: 0x0010FD38
-		protected override Job TryGiveJob(Pawn pawn)
+		public override Job TryGiveJob(Pawn pawn)
 		{
 			if (Rand.Value < 0.5f)
 			{

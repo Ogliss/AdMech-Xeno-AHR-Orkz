@@ -18,7 +18,7 @@ namespace AdeptusMechanicus
 		protected abstract int IngestInterval(Pawn pawn);
 
 		// Token: 0x06002EF3 RID: 12019 RVA: 0x001087B4 File Offset: 0x001069B4
-		protected override Job TryGiveJob(Pawn pawn)
+		public override Job TryGiveJob(Pawn pawn)
 		{
 			if (Find.TickManager.TicksGame - pawn.mindState.lastIngestTick > this.IngestInterval(pawn))
 			{

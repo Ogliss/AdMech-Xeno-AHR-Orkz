@@ -8,7 +8,7 @@ namespace AdeptusMechanicus
     // AdeptusMechanicus.JobGiver_StarvingOrkoid
     public class JobGiver_StarvingOrkoid : ThinkNode_JobGiver
 	{
-		protected override Job TryGiveJob(Pawn pawn)
+		public override Job TryGiveJob(Pawn pawn)
 		{
 			MentalState_StarvingOrkoid mentalState_StarvingOrkoid = pawn.MentalState as MentalState_StarvingOrkoid;
 			if (mentalState_StarvingOrkoid == null || !mentalState_StarvingOrkoid.IsTargetStillValidAndReachable())

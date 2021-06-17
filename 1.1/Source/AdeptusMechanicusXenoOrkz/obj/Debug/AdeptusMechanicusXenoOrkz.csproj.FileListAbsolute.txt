@@ -9,5 +9,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusXenoOrkz.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusXenoOrkz.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusOrkz.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusOrkz.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusXenoOrkz.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusXenoOrkz.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\1.1\Source\AdeptusMechanicusXenoOrkz\obj\Debug\AdeptusMechanicusXenoOrkz.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Eldar\1.1\Assemblies\AdeptusMechanicusOrkz.dll

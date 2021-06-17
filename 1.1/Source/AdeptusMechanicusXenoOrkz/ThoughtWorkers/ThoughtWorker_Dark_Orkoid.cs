@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
     public class ThoughtWorker_Dark_Orkoid : ThoughtWorker
     {
         // Token: 0x06000A26 RID: 2598 RVA: 0x0004FC2B File Offset: 0x0004E02B
-        protected override ThoughtState CurrentStateInternal(Pawn p)
+        public override ThoughtState CurrentStateInternal(Pawn p)
         {
             return p.isOrkoid() && p.Awake() && p.needs.mood.recentMemory.TicksSinceLastLight > 2400;
         }

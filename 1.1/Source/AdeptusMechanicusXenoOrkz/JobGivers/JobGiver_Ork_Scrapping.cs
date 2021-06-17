@@ -8,7 +8,7 @@ namespace AdeptusMechanicus
 	// AdeptusMechanicus.JobGiver_Ork_Scrapping
 	public class JobGiver_Ork_Scrapping : ThinkNode_JobGiver
 	{
-		protected override Job TryGiveJob(Pawn pawn)
+		public override Job TryGiveJob(Pawn pawn)
 		{
 			if (pawn.RaceProps.Humanlike && pawn.WorkTagIsDisabled(WorkTags.Violent))
 			{

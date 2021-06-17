@@ -26,7 +26,7 @@ namespace AdeptusMechanicus
 		}
 
 		// Token: 0x06002BEA RID: 11242 RVA: 0x000FF850 File Offset: 0x000FDA50
-		protected override IEnumerable<Toil> MakeNewToils()
+		public override IEnumerable<Toil> MakeNewToils()
 		{
 			this.FailOnAggroMentalState(TargetIndex.A);
 			this.FailOnThingMissingDesignation(TargetIndex.A, DesignationDefOf.Slaughter);

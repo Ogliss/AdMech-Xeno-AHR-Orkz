@@ -9,7 +9,7 @@ namespace AdeptusMechanicus
     public class ThoughtWorker_HumanlikeLeatherApparel_Ork : ThoughtWorker
     {
         // Token: 0x06000A2A RID: 2602 RVA: 0x0004FCF4 File Offset: 0x0004E0F4
-        protected override ThoughtState CurrentStateInternal(Pawn p)
+        public override ThoughtState CurrentStateInternal(Pawn p)
         {
             string text = null;
             int num = 0;
