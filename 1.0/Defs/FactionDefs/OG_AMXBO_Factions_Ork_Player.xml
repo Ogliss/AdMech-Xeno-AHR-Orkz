@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<FactionDef Parent="PlayerFactionBase" Name="OG_Ork_PlayerFactionBase" Abstract="True">
+<FactionDef ParentName="PlayerFactionBase" Name="OG_Ork_PlayerFactionBase" Abstract="True">
 	<defName>OG_Ork_PlayerColony</defName>
 	<label>Ork Colony</label>
 	<description>Your own kommunity.</description>
@@ -61,7 +61,7 @@
 	<defName>OG_Ork_PlayerColony</defName>
 </FactionDef>
 
-	<FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
+	<FactionDef ParentName="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase" Abstract="True">
 	<label>Ork Tribal</label>
 	<description>Ork Tribal Start.</description>
 	<isPlayer>true</isPlayer>
