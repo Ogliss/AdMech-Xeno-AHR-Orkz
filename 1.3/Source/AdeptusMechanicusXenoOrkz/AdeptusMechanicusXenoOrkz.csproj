@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F973FA7C-1F5D-4312-8E66-5E5ACCFE8AE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdeptusMechanicus</RootNamespace>
+    <AssemblyName>AdeptusMechanicusOrkz</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+    <FileAlignment>512</FileAlignment>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alerts\Alert_MinorFightRisk.cs" />
+    <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
+    <Compile Include="Harmony\Patches\Pawn_NeedsTracker_ShouldHaveNeed_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_AgeTracker_AgeTick_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\Thing_TakeDamage_OrkoidFightyness_Patch.cs" />
+    <None Include="Harmony\Patches\Pawn_PostApplyDamage_OrkoidFightyness_Patch.cs.bak" />
+    <Compile Include="JobDrivers\Class1.cs" />
+    <Compile Include="JobDrivers\JobDriver_OrkoidHunt.cs" />
+    <Compile Include="JobGivers\Class1.cs" />
+    <Compile Include="JobGivers\Class2.cs" />
+    <Compile Include="JobGivers\Class3.cs" />
+    <Compile Include="JobGivers\JobGiver_StarvingOrkoid.cs" />
+    <Compile Include="JobGivers\Class5.cs" />
+    <Compile Include="JobGivers\JobGiver_Ork_Scrapping.cs" />
+    <Compile Include="MentalStates\MentalState_Ork_Scrapping.cs" />
+    <Compile Include="Needs\Need_Orkoid_Fightyness.cs" />
+    <Compile Include="Utilities\FightynessScrapUtility.cs" />
+    <Compile Include="Utilities\FightRiskAlertUtility.cs" />
+    <Compile Include="Utilities\Kulture.cs" />
+    <Compile Include="Utilities\Orkoid.cs" />
+    <Compile Include="Utilities\OrkExtensions\OrkPawnExtensions.cs" />
+    <Compile Include="Utilities\OrkExtensions\OrkPawnKindDefExtensions.cs" />
+    <Compile Include="Utilities\OrkExtensions\OrkPlantExtensions.cs" />
+    <Compile Include="Utilities\OrkExtensions\OrkThingDefExtensions.cs" />
+    <Compile Include="Utilities\StarvingOrkoidMentalStateUtility.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Orkoid_NeedFightyness.cs" />
+    <Compile Include="Utilities\FightynessCategory.cs" />
+    <Compile Include="Utilities\OrkExtensions\OrkThingExtensions.cs" />
+    <Compile Include="Utilities\PawnGenOption.cs" />
+    <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch - Copy.cs.bak" />
+    <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
+    <Compile Include="Harmony\Patches\WorkGiver_InteractAnimal_CanInteractWithAnimal_Restricted_Patch.cs" />
+    <Compile Include="Harmony\Patches\RelationsUtility_TryDevelopBondRelation_Restricted_Patch.cs" />
+    <Compile Include="Utilities\DebugTools\AdMechDebugActionsMisc.cs" />
+    <Compile Include="Utilities\OrkoidFungualUtility.cs" />
+    <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />
+    <None Include="Harmony\Patches\QuestManager_Notify_PlantHarvested_Orkoid_Patch.cs.bak" />
+    <Compile Include="Harmony\Patches\TraitSet_DegreeOfTrait_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\TraitSet_GetTrait_Orkoid_Patch.cs" />
+    <Compile Include="Things\OrkoidFungus.cs" />
+    <Compile Include="Harmony\Patches\TraitSet_HasTrait_Orkoid_Patch.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_IsCarryingMeleeWeapon.cs" />
+    <Compile Include="Harmony\Patches\Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_EquipmentTracker_DropAllEquipment_KrudeBionic_Patch.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Dark_Orkoid.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_HasKrudeAddedBodyPart.cs" />
+    <Compile Include="Harmony\Settings\AMAMod_PlayableOrkSettings_Patch.cs" />
+    <Compile Include="MentalStateWorkers\MentalStateWorker_StarvingOrkoid.cs" />
+    <Compile Include="AMOMain.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_HumanlikeLeatherApparel_Ork.cs" />
+    <Compile Include="MentalStates\MentalState_StarvingOrkoid.cs" />
+    <Compile Include="Harmony\Patches\Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Comps\Comp_OrkoidSpores.cs" />
+    <Compile Include="Harmony\Patches\PawnGenerator_GeneratePawn_Orkoid_Patch.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_OrkoidFungalSprout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="1CompSlotLoadable">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\CompSlotLoadable\1.3\bin\Debug\1CompSlotLoadable.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AdeptusMechanicusArmoury">
+      <HintPath>..\..\..\..\AdMechArmoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\AlienRaces\1.3\Assemblies\AlienRace.dll</HintPath>
+	  <Private>False</Private>
+    </Reference>
+    <Reference Include="CrashedShipsExtension">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\ExpandedCrashedShips\1.3\bin\Debug\CrashedShipsExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtraHives">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\FactionHives\1.3\bin\Debug\ExtraHives.dll</HintPath>
+    </Reference>
+    <Reference Include="Quarry">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2007576583\1.1\Assemblies\Quarry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rainbeau%27s Fishing">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2034028432\1.2\Assemblies\Rainbeau's Fishing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.0" GeneratePathProperty="true" />
+    <PackageReference Include="Lib.Harmony" Version="2.0.4" />
+    <PackageReference Include="TaskPubliciser">
+      <Version>1.0.3</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Target Name="MyCode" BeforeTargets="UpdateReferences">
+    <PropertyGroup>
+      <AssemblyCSharp>$(PkgKrafs_Rimworld_Ref)\ref\net472\Assembly-CSharp.dll</AssemblyCSharp>
+      <PubliciseOutputPath>$(PkgKrafs_Rimworld_Ref)\ref\net472\</PubliciseOutputPath>
+      <AssemblyCSharp_Publicised>$(PubliciseOutputPath)Assembly-CSharp_publicised.dll</AssemblyCSharp_Publicised>
+    </PropertyGroup>
+    <Publicise TargetAssemblyPath="$(AssemblyCSharp)" OutputPath="$(PkgKrafs_Rimworld_Ref)\ref\net472\" Condition="Exists('$(AssemblyCSharp)')" />
+    <ItemGroup>
+      <Reference Include="$(AssemblyCSharp_Publicised)">
+        <SpecificVersion>false</SpecificVersion>
+        <HintPath>$(AssemblyCSharp_Publicised)</HintPath>
+        <Implicit>true</Implicit>
+        <Private>false</Private>
+      </Reference>
+    </ItemGroup>
+  </Target>
+  <Target Name="UpdateReferences" AfterTargets="ResolveLockFileReferences">
+    <ItemGroup>
+      <Reference Remove="$(PkgKrafs_Rimworld_Ref)\ref\net472\Assembly-CSharp.dll" />
+    </ItemGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

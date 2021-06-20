@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_PlayerFactionBase">
+		<defName>OG_Ork_PlayerColony</defName>
+		<modExtensions>
+			<li Class="AdeptusMechanicus.FactionDefExtension">
+				<RefugeeFactions>
+					<li>OG_Ork_FeralRefugee_Faction</li>
+				</RefugeeFactions>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+	<FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
+		<defName>OG_Ork_PlayerTribe</defName>
+		<modExtensions>
+			<li Class="AdeptusMechanicus.FactionDefExtension">
+				<RefugeeFactions>
+					<li>OG_Ork_FeralRefugee_Faction</li>
+				</RefugeeFactions>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+</Defs>

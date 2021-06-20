@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <!-- ========================= Ork Rok ========================= -->
-<ThingDef ParentName="ShipPartBaseOG">
-	<defName>OG_Ork_Rok</defName>
+<ThingDef Abstract="True" Name="OG_Ork_Rok_Base" ParentName="ShipPartBaseOG">
 	<label>Ork Rok</label>
 	<description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials.</description>
 	<graphicData>
@@ -57,19 +56,6 @@
 			<conditionDef>GiantSmokeCloud</conditionDef>
 			<worldRange>10</worldRange>
 		</li-->
-		<li Class="CompProperties_ThrownMoteEmitter">
-			<mote>Mote_Smoke</mote>
-			<offsetMin>(-2,0,3)</offsetMin>
-			<offsetMax>(2,0,3)</offsetMax>
-			<emissionInterval>15</emissionInterval>
-			<burstCount>2</burstCount>
-			<scale>2~4</scale>
-			<rotationRate>-30~30</rotationRate>
-			<velocityX>-40~40</velocityX>
-			<velocityY>0.5~1</velocityY>
-			<colorA>(0.2,0.2,0.2,1)</colorA>
-			<colorB>(0.4,0.4,0.4,1)</colorB>
-		</li>
 	</comps>
 </ThingDef>
 

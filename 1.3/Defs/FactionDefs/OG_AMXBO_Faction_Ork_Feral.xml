@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_Feral_Faction_Base">
+		<defName>OG_Ork_Feral_Faction</defName>
+	</FactionDef>
+
+</Defs>

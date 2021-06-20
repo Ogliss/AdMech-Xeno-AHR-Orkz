@@ -1,301 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <!-- Refugee -->
-<PawnKindDef Name="OG_Ork_Refugee_Base" Abstract="True">
-	<label>refugee</label>
-	<race>OG_Alien_Ork</race>
-	<defaultFactionType>OG_Ork_FeralRefugee_Faction</defaultFactionType>
-	<chemicalAddictionChance>0.12</chemicalAddictionChance>
-	<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-	<invNutrition>2.55</invNutrition>
-	<biocodeWeaponChance>0.1</biocodeWeaponChance>
-	<combatPower>35</combatPower>
-	<gearHealthRange>0.2~0.6</gearHealthRange>
-	<itemQuality>Poor</itemQuality>
-	<apparelMoney>90~280</apparelMoney>
-	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
-	<apparelTags>
-		<li>OrkApparel</li>
-	</apparelTags>
-	<weaponMoney>60~200</weaponMoney>
-	<weaponTags>
-		<li>MedievalMeleeBasic</li>
-		<li>NeolithicMeleeBasic</li>
-	</weaponTags>
-	<techHediffsMoney>50~50</techHediffsMoney>
-	<techHediffsTags>
-		<li>Poor</li>
-	</techHediffsTags>
-	<techHediffsChance>0.15</techHediffsChance>
-	<inventoryOptions>
-		<skipChance>0.9</skipChance>
-		<subOptionsChooseOne>
-		<li>
-			<thingDef>Silver</thingDef>
-			<countRange>30~70</countRange>
-		</li>
-		<li>
-			<thingDef>MedicineIndustrial</thingDef>
-			<countRange>1</countRange>
-		</li>
-		</subOptionsChooseOne>
-	</inventoryOptions>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Standard</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-</PawnKindDef>
-
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_BoyBase">
 	<defName>OG_Refugee_Ork_Boy</defName>
-	<maxGenerationAge>29</maxGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boy</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_NobBase">
 	<defName>OG_Refugee_Ork_Nob</defName>
-	<minGenerationAge>30</minGenerationAge>
-	<maxGenerationAge>49</maxGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Nob</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_BossBase">
 	<defName>OG_Refugee_Ork_Boss</defName>
-	<minGenerationAge>50</minGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boss</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_Boy_WeirdBase">
 	<defName>OG_Refugee_Ork_Boy_Weird</defName>
-	<maxGenerationAge>29</maxGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boy_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_Nob_WeirdBase">
 	<defName>OG_Refugee_Ork_Nob_Weird</defName>
-	<minGenerationAge>30</minGenerationAge>
-	<maxGenerationAge>49</maxGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Nob_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef ParentName="OG_Ork_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_Boss_WeirdBase">
 	<defName>OG_Refugee_Ork_Boss_Weird</defName>
-	<minGenerationAge>50</minGenerationAge>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boss_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef Name="OG_Grot_Refugee_Base" Abstract="True">
-	<label>refugee</label>
-	<race>OG_Alien_Grot</race>
-	<defaultFactionType>OG_Ork_FeralRefugee_Faction</defaultFactionType>
-	<chemicalAddictionChance>0.12</chemicalAddictionChance>
-	<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-	<invNutrition>2.55</invNutrition>
-	<biocodeWeaponChance>0.1</biocodeWeaponChance>
-	<combatPower>35</combatPower>
-	<gearHealthRange>0.2~0.6</gearHealthRange>
-	<itemQuality>Poor</itemQuality>
-	<apparelMoney>90~280</apparelMoney>
-	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
-	<apparelTags>
-		<li>OrkApparel</li>
-	</apparelTags>
-	<weaponMoney>60~200</weaponMoney>
-	<weaponTags>
-		<li>MedievalMeleeBasic</li>
-		<li>NeolithicMeleeBasic</li>
-	</weaponTags>
-	<techHediffsMoney>50~50</techHediffsMoney>
-	<techHediffsTags>
-		<li>Poor</li>
-	</techHediffsTags>
-	<techHediffsChance>0.15</techHediffsChance>
-	<inventoryOptions>
-		<skipChance>0.9</skipChance>
-		<subOptionsChooseOne>
-		<li>
-			<thingDef>Silver</thingDef>
-			<countRange>30~70</countRange>
-		</li>
-		<li>
-			<thingDef>MedicineIndustrial</thingDef>
-			<countRange>1</countRange>
-		</li>
-		</subOptionsChooseOne>
-	</inventoryOptions>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Grot_Gretchin</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-</PawnKindDef>
-
-<PawnKindDef ParentName="OG_Grot_Refugee_Base">
+<PawnKindDef ParentName="OG_Refugee_GrotBase">
 	<defName>OG_Refugee_Grot</defName>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Grot_Gretchin</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef Name="OG_Ork_Refugee_Feral_Base" Abstract="True">
-	<label>refugee</label>
-	<race>OG_Alien_Ork</race>
-	<defaultFactionType>OG_Ork_FeralRefugee_Faction</defaultFactionType>
-	<backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
-	<invNutrition>2.55</invNutrition>
-	<biocodeWeaponChance>0.0</biocodeWeaponChance>
-	<combatPower>35</combatPower>
-	<gearHealthRange>0.2~0.6</gearHealthRange>
-	<itemQuality>Poor</itemQuality>
-	<apparelMoney>90~280</apparelMoney>
-	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
-	<apparelTags>
-		<li>OrkApparel</li>
-	</apparelTags>
-	<weaponMoney>60~200</weaponMoney>
-	<weaponTags>
-		<li>MedievalMeleeBasic</li>
-		<li>NeolithicMeleeBasic</li>
-	</weaponTags>
-	<techHediffsMoney>50~50</techHediffsMoney>
-	<techHediffsTags>
-		<li>Poor</li>
-	</techHediffsTags>
-	<techHediffsChance>0.15</techHediffsChance>
-	<inventoryOptions>
-		<skipChance>0.9</skipChance>
-		<subOptionsChooseOne>
-		<li>
-			<thingDef>Silver</thingDef>
-			<countRange>30~70</countRange>
-		</li>
-		<li>
-			<thingDef>MedicineIndustrial</thingDef>
-			<countRange>1</countRange>
-		</li>
-		</subOptionsChooseOne>
-	</inventoryOptions>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Standard</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-</PawnKindDef>
-
-<PawnKindDef ParentName="OG_Ork_Refugee_Feral_Base">
+<PawnKindDef ParentName="OG_Refugee_Ork_FeralBase">
 	<defName>OG_Refugee_Ork_Feral</defName>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Standard</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
 
-<PawnKindDef Name="OG_Grot_Refugee_Feral_Base" Abstract="True">
-	<label>refugee</label>
-	<race>OG_Alien_Grot</race>
-	<defaultFactionType>OG_Ork_FeralRefugee_Faction</defaultFactionType>
-	<chemicalAddictionChance>0.12</chemicalAddictionChance>
-	<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-	<invNutrition>2.55</invNutrition>
-	<biocodeWeaponChance>0.1</biocodeWeaponChance>
-	<combatPower>35</combatPower>
-	<gearHealthRange>0.2~0.6</gearHealthRange>
-	<itemQuality>Poor</itemQuality>
-	<apparelMoney>90~280</apparelMoney>
-	<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
-	<apparelTags>
-		<li>OrkApparel</li>
-	</apparelTags>
-	<weaponMoney>60~200</weaponMoney>
-	<weaponTags>
-		<li>MedievalMeleeBasic</li>
-		<li>NeolithicMeleeBasic</li>
-	</weaponTags>
-	<techHediffsMoney>50~50</techHediffsMoney>
-	<techHediffsTags>
-		<li>Poor</li>
-	</techHediffsTags>
-	<techHediffsChance>0.15</techHediffsChance>
-	<inventoryOptions>
-		<skipChance>0.9</skipChance>
-		<subOptionsChooseOne>
-		<li>
-			<thingDef>Silver</thingDef>
-			<countRange>30~70</countRange>
-		</li>
-		<li>
-			<thingDef>MedicineIndustrial</thingDef>
-			<countRange>1</countRange>
-		</li>
-		</subOptionsChooseOne>
-	</inventoryOptions>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Grot_Gretchin</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-</PawnKindDef>
-
-<PawnKindDef ParentName="OG_Grot_Refugee_Feral_Base">
+<PawnKindDef ParentName="OG_Refugee_Grot_FeralBase">
 	<defName>OG_Refugee_Grot_Feral</defName>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Grot_Gretchin</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 </PawnKindDef>
+
 </Defs>

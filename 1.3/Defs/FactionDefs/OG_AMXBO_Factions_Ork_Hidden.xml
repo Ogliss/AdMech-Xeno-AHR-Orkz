@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
+		<defName>OG_Ork_Hulk</defName>
+	</FactionDef>
+
+	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
+		<defName>OG_Ork_Rok</defName>
+	</FactionDef>
+
+</Defs>

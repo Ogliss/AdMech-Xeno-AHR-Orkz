@@ -1,217 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- Tek Ork Player Pawnkind Defs -->
-<!--PawnKindDef ParentName="OG_Ork_Player_Base">
-	<defName>Colonist_OG_Ork</defName>
-    <label>colonist (Ork)</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<apparelMoney>
-		<min>500</min>
-		<max>1200</max>
-	</apparelMoney>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-		<categories>
-			<li>Ork_Boy</li>
-		</categories>
-		<commonality>1</commonality>
-		</li>
-		<li>
-		<categories>
-			<li>Ork_Boy_Weird</li>
-		</categories>
-		<commonality>0.1</commonality>
-		</li>
-		<li>
-		<categories>
-			<li>Ork_Nob</li>
-		</categories>
-		<commonality>0.3</commonality>
-		</li>
-		<li>
-		<categories>
-			<li>Ork_Nob_Weird</li>
-		</categories>
-		<commonality>0.05</commonality>
-		</li>
-		<li>
-		<categories>
-			<li>Ork_Boss</li>
-		</categories>
-		<commonality>0.15</commonality>
-		</li>
-		<li>
-		<categories>
-			<li>Ork_Boss_Weird</li>
-		</categories>
-		<commonality>0.025</commonality>
-		</li>
-	</backstoryFiltersOverride>
-	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-</PawnKindDef-->
+	<!-- Tek Ork Player Pawnkinds -->
+	<!-- Boy -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_BoyBase">
+		<defName>Colonist_OG_Ork_Boy</defName>
+	</PawnKindDef>
 
-<!-- Tek Ork Player Pawnkinds -->
-<!-- Boy -->
-<PawnKindDef ParentName="OG_Ork_Player_Boy_Base">
-	<defName>Colonist_OG_Ork_Boy</defName>
-	<label>boy</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<apparelTags>
-	
-	</apparelTags>
-	<apparelMoney>
-		<min>500</min>
-		<max>1200</max>
-	</apparelMoney>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boy</li>
-			</categories>
-		</li>
-		<li>
-			<categories>
-				<li>Ork_Boy_Weird</li>
-			</categories>
-			<commonality>0.1</commonality>
-		</li>
-	</backstoryFiltersOverride>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Nob -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_NobBase">
+		<defName>Colonist_OG_Ork_Nob</defName>
+	</PawnKindDef>
 
-<!-- Nob -->
-<PawnKindDef ParentName="OG_Ork_Player_Nob_Base">
-	<defName>Colonist_OG_Ork_Nob</defName>
-	<label>nob</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Nob</li>
-			</categories>
-		</li>
-		<li>
-			<categories>
-				<li>Ork_Nob_Weird</li>
-			</categories>
-			<commonality>0.1</commonality>
-		</li>
-	</backstoryFiltersOverride>
-	<apparelMoney>
-		<min>500</min>
-		<max>1200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Boss -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_WarbossBase">
+		<defName>Colonist_OG_Ork_Warboss</defName>
+	</PawnKindDef>
 
-<!-- Boss -->
-<PawnKindDef ParentName="OG_Ork_Player_Boss_Base">
-	<defName>Colonist_OG_Ork_Warboss</defName>
-	<label>boss</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boss</li>
-			</categories>
-		</li>
-		<li>
-			<categories>
-				<li>Ork_Boss_Weird</li>
-			</categories>
-			<commonality>0.1</commonality>
-		</li>
-	</backstoryFiltersOverride>
-	<apparelTags>
-	
-	</apparelTags>
-	<apparelMoney>
-		<min>500</min>
-		<max>1200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Tek Ork Player Weird Pawnkinds -->
+	<!-- Boy -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_Weird_BoyBase">
+		<defName>Colonist_OG_Ork_Weird_Boy</defName>
+	</PawnKindDef>
 
-<!-- Tek Ork Player Weird Pawnkinds -->
-<!-- Boy -->
-<PawnKindDef ParentName="OG_Ork_Player_Boy_Base">
-	<defName>Colonist_OG_Ork_Weird_Boy</defName>
-	<label>weirdboy</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boy_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-	<apparelTags>
-		<li>Neolithic</li>
-	</apparelTags>
-	<apparelMoney>
-		<min>200</min>
-		<max>200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Nob -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_Weird_NobBase">
+		<defName>Colonist_OG_Ork_Weird_Nob</defName>
+	</PawnKindDef>
 
-<!-- Nob -->
-<PawnKindDef ParentName="OG_Ork_Player_Nob_Base">
-	<defName>Colonist_OG_Ork_Weird_Nob</defName>
-	<label>nob</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Nob_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-	<apparelTags>
-		<li>Neolithic</li>
-	</apparelTags>
-	<apparelMoney>
-		<min>200</min>
-		<max>200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Boss -->
+	<PawnKindDef ParentName="Colonist_OG_Ork_Weird_WarbossBase">
+		<defName>Colonist_OG_Ork_Weird_Warboss</defName>
+	</PawnKindDef>
 
-<!-- Boss -->
-<PawnKindDef ParentName="OG_Ork_Player_Boss_Base">
-	<defName>Colonist_OG_Ork_Weird_Warboss</defName>
-	<label>boss</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<backstoryFiltersOverride Inherit="False">
-		<li>
-			<categories>
-				<li>Ork_Boss_Weird</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
-	<apparelTags>
-		<li>Neolithic</li>
-	</apparelTags>
-	<apparelMoney>
-		<min>200</min>
-		<max>200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
-
-<!-- Tek Ork Player Grot Pawnkinds -->
-<PawnKindDef ParentName="OG_Grot_Player_Base">
-	<defName>Colonist_OG_Grot</defName>
-	<label>colonist (Grot)</label>
-	<defaultFactionType>OG_Ork_PlayerColony</defaultFactionType>
-	<apparelTags>
-	
-	</apparelTags>
-	<apparelMoney>
-		<min>500</min>
-		<max>1200</max>
-	</apparelMoney>
-	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-</PawnKindDef>
+	<!-- Tek Ork Player Grot Pawnkinds -->
+	<PawnKindDef ParentName="Colonist_OG_GrotBase">
+		<defName>Colonist_OG_Grot</defName>
+	</PawnKindDef>
 
 </Defs>
