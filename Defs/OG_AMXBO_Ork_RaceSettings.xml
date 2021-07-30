@@ -212,7 +212,7 @@
 					<li>OG_Ork_PlayerTribe</li> 
 				</factionDefs>
 			</li>
-			<li>
+			<!--li>
 				<pawnKindEntries>
 					<li>
 						<kindDefs>
@@ -306,7 +306,7 @@
 				<factionDefs>
 					<li>PlayerTribe</li> 
 				</factionDefs>
-			</li>
+			</li-->
 		</startingColonists>
 		<alienwandererkinds>
 			<li>

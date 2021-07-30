@@ -47,7 +47,7 @@ namespace AdeptusMechanicus
         {
             if (this.target == null)
             {
-                Log.Error("No target. This should have been checked in this mental state's worker.", false);
+                Log.Error("No target. This should have been checked in this mental state's worker.");
                 return "";
             }
             return this.def.beginLetter.Formatted(this.pawn.NameShortColored.Resolve(), this.target.NameShortColored.Resolve(), this.pawn.Named("PAWN"), this.target.Named("TARGET")).AdjustedFor(this.pawn, "PAWN", true).CapitalizeFirst();

@@ -12,7 +12,7 @@ namespace AdeptusMechanicus
 {
     [StaticConstructorOnStartup]
     public class AMOMain
-    {
+    { 
         public static List<ResearchProjectDef> OrkReseach => DefDatabase<ResearchProjectDef>.AllDefs.Where(x=> x.defName.Contains("OG_Ork_Tech_")).ToList();
         static AMOMain()
         {

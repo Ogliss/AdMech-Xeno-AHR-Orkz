@@ -93,6 +93,7 @@
 	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
 		<defName>OGO_Wargear_BossPole</defName>
 		<label>Boss Pole</label>
+		<thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
 		<description>Senior Orks, such as Nobs, Big Meks or Warbosses usually carry around some sign of their status, that shows that they are not the ones to be messed with. These items help them to bring their mob into order during the battle.\n\nThese items may be a metal jaw or some other impressive sign but usually take a form of a huge metal stick, heavy with trophies or crude metal glyphs, proclaiming their user's hardness and ferociousness. They are known as Bosspoles or Backbanners It has the additional advantage of being able to be used to hit boyz that attempt to run away from battle.</description>
 		<graphicData>
 			<texPath>Things/Item/Apparel/Ork/BossPole/BossPole__Icon</texPath>
@@ -110,6 +111,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<!--animateExtra>true</animateExtra-->
 						<commonality>10</commonality>
 					</li>
 					<li>
@@ -121,6 +123,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<!--animateExtra>true</animateExtra-->
 						<commonality>10</commonality>
 					</li>
 					<li>
@@ -132,6 +135,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<!--animateExtra>true</animateExtra-->
 						<commonality>5</commonality>
 					</li>
 					<li>
@@ -143,6 +147,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<!--animateExtra>true</animateExtra-->
 						<commonality>5</commonality>
 					</li>
 				</ExtrasEntries>

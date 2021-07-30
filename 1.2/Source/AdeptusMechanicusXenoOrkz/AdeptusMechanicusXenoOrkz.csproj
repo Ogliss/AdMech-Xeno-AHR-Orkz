@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -106,10 +106,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="CrashedShipsExtension">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\ExpandedCrashedShips\bin\Debug\CrashedShipsExtension.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\ExpandedCrashedShips\1.1\bin\Debug\CrashedShipsExtension.dll</HintPath>
     </Reference>
     <Reference Include="ExtraHives">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\FactionHives\bin\Debug\ExtraHives.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\FactionHives\1.1\bin\Debug\ExtraHives.dll</HintPath>
     </Reference>
     <Reference Include="Quarry">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2007576583\1.1\Assemblies\Quarry.dll</HintPath>
@@ -121,12 +121,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="1CompSlotLoadable">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\CompSlotLoadable\bin\Debug\1CompSlotLoadable.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="AdeptusMechanicusArmoury">
-      <HintPath>..\..\..\..\AdMechArmoury\1.1\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <HintPath>..\..\..\..\\AdMechArmoury\1.2\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AlienRace">
@@ -139,6 +135,7 @@
     <PackageReference Include="Lib.Harmony">
       <Version>2.0.4</Version>
     </PackageReference>
+    <PackageReference Include="RimWorld.MultiplayerAPI" Version="0.3.0" />
     <PackageReference Include="TaskPubliciser">
       <Version>1.0.3</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -165,6 +162,9 @@
     <ItemGroup>
       <Reference Remove="$(PkgKrafs_Rimworld_Ref)\ref\net472\Assembly-CSharp.dll" />
     </ItemGroup>
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="call &quot;$(ProjectDir)..\Scripts\ModCopy 1.2.bat&quot;&#xD;&#xA;call :REPORT_ERRORLEVEL&#xD;&#xA;goto :EOF&#xD;&#xA;&#xD;&#xA;:REPORT_ERRORLEVEL&#xD;&#xA;echo.&#xD;&#xA;if ERRORLEVEL 16 echo ***FATAL ERROR*** &amp; goto :EOF&#xD;&#xA;if ERRORLEVEL 8 echo **FAILED COPIES** &amp; goto :EOF&#xD;&#xA;if ERRORLEVEL 4 echo *MISMATCHES* &amp; goto :EOF&#xD;&#xA;if ERRORLEVEL 2 echo EXTRA FILES &amp; goto :EOF&#xD;&#xA;if ERRORLEVEL 1 echo Copy successful &amp; goto :EOF&#xD;&#xA;if ERRORLEVEL 0 echo –no change– &amp; goto :EOF" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

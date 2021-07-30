@@ -8,7 +8,7 @@
         <operations>
 			<!-- Remove Royalty dependant Ork Refugee Faction basicMemberKind.-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/FactionDef[defName="OG_Ork_FeralRefugee_Faction"]/basicMemberKind</xpath>
+				<xpath>Defs/FactionDef[@Name="OG_Ork_FeralRefugee_Faction_Base"]/basicMemberKind</xpath>
 				<value>
 					<basicMemberKind>OG_Refugee_Ork_Boy</basicMemberKind>
 				</value>

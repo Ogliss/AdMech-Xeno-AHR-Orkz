@@ -15,7 +15,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     public static class AMAMod_SettingsCategory_Patch
     {
         [HarmonyPostfix]
-        public static void ModsLoaded(ref AMAMod __instance, ref string __result)
+        public static void ModsLoaded(ref string __result)
         {
             __result += ", " + "AdeptusMechanicus.Ork.ModName".Translate();
         }
@@ -40,7 +40,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         public static float MenuLength = 0;
         private static float inc = 0;
         [HarmonyPrefix]
-        public static void OrkSettings_Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, Rect rect, Rect inRect, float num, ref float num2)
+        public static void OrkSettings_Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, ref float num2)
         {
             string label = "AdeptusMechanicus.Xenobiologis.ShowOrk".Translate() + " Settings";
             string tooltip = string.Empty;
@@ -151,7 +151,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         private static bool Xenobiologis = AdeptusIntergrationUtility.enabled_MagosXenobiologis;
         private static AMSettings settings = AMAMod.settings;
         [HarmonyPrefix, HarmonyPriority(401)]
-        public static void Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, Rect rect, Rect inRect, float num, float num2)
+        public static void Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, Rect rect)
         {
             bool showRaces = settings.ShowAllowedRaceSettings || !Xenobiologis;
             bool setting = showRaces && settings.ShowOrk;

@@ -267,7 +267,7 @@ namespace AdeptusMechanicus
                     GenSpawn.Spawn(pawn, this.Position, this.Map, 0);
                     if (harvester!=null && harvester.Faction == Faction.OfPlayer)
                     {
-                        TaggedString taggedString = "AdeptusMechanicus.Ork.FungalHarvest_SuccessMessage".Translate(harvester.Name, pawn.Label);
+                        TaggedString taggedString = TranslatorFormattedStringExtensions.Translate("AdeptusMechanicus.Ork.FungalHarvest_SuccessMessage", harvester.Named("HARVESTER"), pawn.Label);
                         Messages.Message(taggedString, pawn, MessageTypeDefOf.PositiveEvent, true);
                     }
                     return true;
@@ -396,6 +396,5 @@ namespace AdeptusMechanicus
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
-        private string cachedLabelMouseover;
     }
 }

@@ -3,6 +3,15 @@
 
 	<FactionDef ParentName="OG_Ork_PlayerFactionBase">
 		<defName>OG_Ork_PlayerColony</defName>
+		<allowedCultures>
+			<li>OG_Greenskin_Goffs</li>
+		</allowedCultures>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
 		<modExtensions>
 			<li Class="AdeptusMechanicus.FactionDefExtension">
 				<RefugeeFactions>
@@ -14,6 +23,16 @@
 
 	<FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
 		<defName>OG_Ork_PlayerTribe</defName>
+		<allowedCultures>
+			<li>OG_GreenskinTribal_Culture</li>
+		</allowedCultures>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
 		<modExtensions>
 			<li Class="AdeptusMechanicus.FactionDefExtension">
 				<RefugeeFactions>

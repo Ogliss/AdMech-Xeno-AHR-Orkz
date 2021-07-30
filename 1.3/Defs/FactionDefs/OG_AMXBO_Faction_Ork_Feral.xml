@@ -2,7 +2,21 @@
 <Defs>
 
 	<FactionDef ParentName="OG_Ork_Feral_Faction_Base">
-		<defName>OG_Ork_Feral_Faction</defName>
+		<defName>OG_GreenskinTribal_Culture</defName>
+		<allowedCultures>
+			<li>OG_GreenskinTribal_Culture</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OG_Ork_Primacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
 	</FactionDef>
 
 </Defs>

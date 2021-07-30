@@ -1,11 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
+	<FactionDef Abstract="True" Name="OG_Ork_Hidden_Faction" ParentName="OG_Ork_Hidden_Faction_Base">
+		<allowedCultures>
+			<li>OG_Greenskin_Goffs</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OG_Ork_Primacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<structureMemeWeights Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
+	</FactionDef>
+	
+	<FactionDef ParentName="OG_Ork_Hidden_Faction">
 		<defName>OG_Ork_Hulk</defName>
 	</FactionDef>
 
-	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
+	<FactionDef ParentName="OG_Ork_Hidden_Faction">
 		<defName>OG_Ork_Rok</defName>
 	</FactionDef>
 

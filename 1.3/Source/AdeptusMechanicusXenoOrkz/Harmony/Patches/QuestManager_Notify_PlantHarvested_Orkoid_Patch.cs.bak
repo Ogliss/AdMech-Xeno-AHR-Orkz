@@ -19,7 +19,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPostfix]
         public static void Postfix(Pawn worker, Thing harvested)
         {
-            Log.Message(worker + " Harvested " + harvested);
+       //     Log.Message(worker + " Harvested " + harvested);
         }
     }
 }

@@ -9,7 +9,7 @@
 		<pawnsPlural>greenskinz</pawnsPlural>
 		<basicMemberKind>Colonist_OG_Ork_Boy</basicMemberKind>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<fixedName>a greenskin Waaagh!</fixedName>
+		<!--fixedName>a greenskin Waaagh!</fixedName-->
 		<factionNameMaker>OG_Ork_NamerFaction_Waaagh</factionNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryFilters>

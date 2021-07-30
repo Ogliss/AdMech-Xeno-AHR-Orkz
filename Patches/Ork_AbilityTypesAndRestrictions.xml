@@ -8,10 +8,10 @@
 		<xpath>/Defs/TraitDef[defName = "PJ_ForceSensitive"]</xpath>
 	</li>
 	<li Class="PatchOperationTest">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(defName,'Ork_Boy_') or starts-with(defName,'Ork_Nob_') or starts-with(defName,'Ork_Boss_')]/disallowedTraits</xpath>
 	</li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(defName,'Ork_Boy_') or starts-with(defName,'Ork_Nob_') or starts-with(defName,'Ork_Boss_')]/disallowedTraits</xpath>
 		<value>
 			<li>
 				<defName>PJ_ForceSensitive</defName>
@@ -28,10 +28,10 @@
 		</value>
 	</li>
 	<li Class="PatchOperationTest">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(defName,'Grot_')]/disallowedTraits</xpath>
 	</li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(defName,'Grot_')]/disallowedTraits</xpath>
 		<value>
 			<li>
 				<defName>PJ_ForceSensitive</defName>
@@ -109,10 +109,10 @@
 		<xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
 	</li>
 	<li Class="PatchOperationTest">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(defName,'Ork_Boy_') or starts-with(defName,'Ork_Nob_') or starts-with(defName,'Ork_Boss_')]/disallowedTraits</xpath>
 	</li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(defName,'Ork_Boy_') or starts-with(defName,'Ork_Nob_') or starts-with(defName,'Ork_Boss_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>TM_Gifted</defName>
@@ -174,10 +174,10 @@
 		</value>
 	</li>
 	<li Class="PatchOperationTest">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(defName,'Grot_')]/disallowedTraits</xpath>
 	</li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(defName,'Grot_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
 				<defName>TM_Gifted</defName>

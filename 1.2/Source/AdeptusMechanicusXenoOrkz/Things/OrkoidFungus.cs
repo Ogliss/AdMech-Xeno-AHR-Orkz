@@ -396,6 +396,5 @@ namespace AdeptusMechanicus
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
-        private string cachedLabelMouseover;
     }
 }

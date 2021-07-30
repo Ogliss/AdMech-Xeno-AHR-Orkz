@@ -37,16 +37,17 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(ThingMaker), name: nameof(ThingMaker.MakeThing), parameters: new[] { typeof(ThingDef), typeof(ThingDef) })))
                     {
-                    //    if (Prefs.DevMode) Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    //    if (Prefs.DevMode) Log.Message("Fungus Patch A " + i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
 
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
-                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_3);             // Plant
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
                         instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvest"));
                     }
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
                     {
+                    //    if (Prefs.DevMode) Log.Message("Fungus Patch B " + i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
-                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_3);             // Plant
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
                         instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvested"));
                     }
                 }
@@ -58,13 +59,13 @@ namespace AdeptusMechanicus.HarmonyInstance
                     if (instructionsList[index: i - 1].Calls(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing))))
                     {
 
-                        Log.Message("Boss, wez found it!");
-                        Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    //    Log.Message("Boss, wez found it!");
+                    //    Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                     }
                     if (instructionsList[index: i - 1].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
                     {
-                        Log.Message("Boss, wez found it!");
-                        Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    //    Log.Message("Boss, wez found it!");
+                    //    Log.Message(i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                     }
                  }
                  */
@@ -73,8 +74,8 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(QuestManager), name: nameof(QuestManager.Notify_PlantHarvested), parameters: new[] { typeof(Pawn), typeof(Thing) })))
                     {
-                        Log.Message("Boss, wez found QuestManager.Notify_PlantHarvested!");
-                        Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
+                    //    Log.Message("Boss, wez found QuestManager.Notify_PlantHarvested!");
+                    //    Log.Message((i) + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
                         yield return new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusSpawner"));
@@ -95,14 +96,14 @@ namespace AdeptusMechanicus.HarmonyInstance
             OrkoidFungus fungus = plant as OrkoidFungus;
             if (fungus != null && (pawn != null && pawn.isOrkoid()))
             {
-            //    Log.Message(pawn.Name+" 'ez arvestin " + plant.LabelCap + " boss");
+            //    if (AMAMod.Dev) Log.Message("FungusHarvest " + pawn.Name+" 'ez arvestin " + plant.LabelCap + " boss");
 
                 Rand.PushState(plant.thingIDNumber);
 
                 if (FungalMeds != null && Rand.ChanceSeeded(0.01f, plant.thingIDNumber))
                 {
                     harvestedThingDef = FungalMeds;
-                //    Log.Message("we'ez found some meds boss!");
+                //    if (AMAMod.Dev) Log.Message("FungusHarvest " + "we'ez found some meds boss!");
                 }
 
                 Rand.PopState();
@@ -130,7 +131,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         return true;
                     }
                 }
-            //    Log.Message(pawn.Name + " 'ez arvested " + thing.stackCount + " " + thing.LabelCap + " from " + plant.LabelCap + " boss!");
+            //    if (AMAMod.Dev) Log.Message("FungusHarvested " + pawn.Name + " 'ez arvested " + thing.stackCount + " " + thing.LabelCap + " from " + plant.LabelCap + " boss!");
             }
             return GenPlace.TryPlaceThing(thing, center, map, ThingPlaceMode.Near, null, null, default(Rot4));
         }

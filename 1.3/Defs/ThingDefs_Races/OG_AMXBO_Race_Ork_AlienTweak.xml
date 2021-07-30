@@ -88,9 +88,10 @@
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -109,6 +110,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -138,9 +140,10 @@
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -159,6 +162,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -190,9 +194,10 @@
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<alignWithHead>true</alignWithHead>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -211,6 +216,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -237,9 +243,10 @@
 						<alignWithHead>true</alignWithHead>
 						<layerInvert>true</layerInvert>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(0.00,0.0)</Hulk>
@@ -249,6 +256,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 									<Hulk>(0,0.0)</Hulk>
@@ -258,6 +266,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -281,7 +290,7 @@
 						<bodyPart>Nose</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<debug>false</debug>
-						<layerOffset>-0.2741</layerOffset>
+						<layerOffset>0.2741</layerOffset>
 						<offsets>
 							<south>
 								<bodyTypes>
@@ -328,9 +337,10 @@
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<debug>false</debug>
-						<layerOffset>-0.2741</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -339,6 +349,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 								</bodyTypes>
@@ -347,6 +358,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -373,10 +385,11 @@
 						<alignWithHead>true</alignWithHead>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -385,6 +398,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 								</bodyTypes>
@@ -393,6 +407,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -422,10 +437,11 @@
 						<alignWithHead>true</alignWithHead>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -434,6 +450,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 								</bodyTypes>
@@ -442,6 +459,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -471,11 +489,12 @@
 						<alignWithHead>true</alignWithHead>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
-						<layerOffset>-0.2741</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
 						<!--drawSize>(1.075, 1.0)</drawSize-->
 						<offsets>
 							<south>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -484,6 +503,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0)</Hulk>
 								</bodyTypes>
@@ -492,6 +512,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -518,11 +539,12 @@
 						<alignWithHead>true</alignWithHead>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
 						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -531,6 +553,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
@@ -539,6 +562,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -568,11 +592,12 @@
 						<alignWithHead>true</alignWithHead>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 						<debug>false</debug>
-						<layerOffset>-0.2740</layerOffset>
+						<defaultOffset>Center</defaultOffset>
 						<bodyTypeRequirement>Hulk</bodyTypeRequirement>
 						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -581,6 +606,7 @@
 								</crownTypes>
 							</south>
 							<north>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
@@ -589,6 +615,7 @@
 								</crownTypes>
 							</north>
 							<east>
+								<layerOffset>0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -674,6 +701,30 @@
 				</colorChannels>
 			</alienPartGenerator>
 		</generalSettings>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<!--getsGreyAt>200</getsGreyAt--> 
+					<styleTagsOverride>
+						<li>OrkHair</li>
+					</styleTagsOverride>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
 	</alienRace>
 </AlienRace.ThingDef_AlienRace>
 

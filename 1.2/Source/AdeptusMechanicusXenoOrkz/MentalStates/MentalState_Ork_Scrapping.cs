@@ -8,7 +8,7 @@ namespace AdeptusMechanicus
 {
     public class MentalState_Ork_Scrapping : MentalState_SocialFighting
 	{
-		private bool ShouldStop
+		private new bool ShouldStop
 		{
 			get
 			{
@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
 			}
 		}
 
-		private bool IsOtherPawnSocialFightingWithMe
+		private new bool IsOtherPawnSocialFightingWithMe
 		{
 			get
 			{

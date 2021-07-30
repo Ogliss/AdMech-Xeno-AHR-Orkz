@@ -14,14 +14,15 @@ using UnityEngine;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
-    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
-    public static class PawnGenerator_GeneratePawn_Orkoid_Patch
+//    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
+    internal static class PawnGenerator_GeneratePawn_Orkoid_Patch
     {
         [HarmonyPrefix, HarmonyPriority(Priority.Last)]
-        public static void Pre_GeneratePawn(ref PawnGenerationRequest request)
+        private static void PreGen(ref PawnGenerationRequest request)
         {
             if (request.KindDef.isOrkoid())
             {
+                request.KindDef.RaceProps.hasGenders = false;
                 //    Log.Message(string.Format("GeneratePawn request is {0}, {1}, {2}", request.KindDef.LabelCap, request.FixedGender, request.MustBeCapableOfViolence));
                 request.AllowGay = false;
                 request.FixedGender = Gender.None;
@@ -72,18 +73,18 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
                     {
-                        Log.Message(__result.Name + ": Ork_Base_Child");
+                    //    Log.Message(__result.Name + ": Ork_Base_Child");
                     }
                     else
                     if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
                     {
 
-                        Log.Message(__result.Name + ": Ork_Odd_Child");
+                    //    Log.Message(__result.Name + ": Ork_Odd_Child");
                     }
                     else
                     if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
                     {
-                        Log.Message(__result.Name + ": Ork_Weird_Child");
+                    //    Log.Message(__result.Name + ": Ork_Weird_Child");
                         if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))
                         {
                             Trait trait = new Trait(TraitDefOf.PsychicSensitivity, 1);

@@ -195,6 +195,13 @@
 				</colorChannels>
 				</alienPartGenerator>
 		</generalSettings>
+		<hairSettings>
+			<hasHair>true</hasHair>
+			<getsGreyAt>200</getsGreyAt> 
+			<hairTags>
+					<li>GrotHair</li>
+			</hairTags>
+		</hairSettings>
  </alienRace>
 </AlienRace.ThingDef_AlienRace>
 </Defs>

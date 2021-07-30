@@ -674,6 +674,13 @@
 				</colorChannels>
 			</alienPartGenerator>
 		</generalSettings>
+		<hairSettings>
+			<hasHair>true</hasHair>
+			<getsGreyAt>300</getsGreyAt> 
+			<hairTags>
+				<li>OrkHair</li>
+			</hairTags>
+		</hairSettings>
 	</alienRace>
 </AlienRace.ThingDef_AlienRace>
 

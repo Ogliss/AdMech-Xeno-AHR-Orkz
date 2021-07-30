@@ -42,32 +42,18 @@ namespace AdeptusMechanicus.HarmonyInstance
 	[HarmonyPatch("CheckCreateVerbProperties")]
 	public static class Pawn_NativeVerbs_CheckCreateVerbProperties_Patch
 	{
-		private static Pawn pawn(Pawn_NativeVerbs instance)
-		{
-			return (Pawn)Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_pawn.GetValue(instance);
-		}
-
-		private static List<VerbProperties> cachedVerbProperties(Pawn_NativeVerbs instance)
-		{
-			return (List<VerbProperties>)Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.GetValue(instance);
-		}
-
 		private static bool Prefix(ref Pawn_NativeVerbs __instance)
 		{
-			bool flag = Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance) == null;
-			if (flag)
+			if (__instance.cachedVerbProperties == null)
 			{
-				bool flag2 = Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.pawn(__instance).isSnotling();
-				if (flag2)
+				if (__instance.pawn.isSnotling())
 				{
-					Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.FI_cachedVerbProperties.SetValue(__instance, new List<VerbProperties>());
-					Pawn_NativeVerbs_CheckCreateVerbProperties_Patch.cachedVerbProperties(__instance).Add(NativeVerbPropertiesDatabase.VerbWithCategory(VerbCategory.BeatFire));
+					__instance.cachedVerbProperties = new List<VerbProperties>();
+					__instance.cachedVerbProperties.Add(NativeVerbPropertiesDatabase.VerbWithCategory(VerbCategory.BeatFire));
 					return false;
 				}
 			}
 			return true;
 		}
-		private static FieldInfo FI_pawn = typeof(Pawn_NativeVerbs).GetField("pawn", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
-		private static FieldInfo FI_cachedVerbProperties = typeof(Pawn_NativeVerbs).GetField("cachedVerbProperties", BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.GetProperty | BindingFlags.SetProperty);
 	}
 }
