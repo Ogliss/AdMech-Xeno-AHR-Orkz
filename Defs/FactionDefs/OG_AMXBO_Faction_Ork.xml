@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_Tek_Faction_Base">
+		<defName>OG_Ork_Tek_Faction</defName>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li>OG_Greenskin_Goffs</li>
+		</allowedCultures>
+		<requiredMemes IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">OG_Ork_Primacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+			<li>Tribal</li>
+			<li>Pirate</li>
+		</hairTags>
+		<startingGoodwill IgnoreIfNoMatchingField="True">
+			<min>-60</min>
+			<max>0</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill IgnoreIfNoMatchingField="True">
+			<min>-60</min>
+			<max>0</max>
+		</naturalColonyGoodwill>
+	</FactionDef>
+
+</Defs>

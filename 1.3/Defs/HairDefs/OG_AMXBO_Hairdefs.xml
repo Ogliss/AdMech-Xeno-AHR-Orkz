@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!--StyleItemCategoryDef>
-		<defName>OrkHair</defName>
+	<StyleItemCategoryDef>
+		<defName>OG_Ork_Hair</defName>
 		<label>ork hair</label>
-	</StyleItemCategoryDef-->
+	</StyleItemCategoryDef>
 
 	<HairDef Abstract="True" Name="Ork_Hair_Base">
 		<hairTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</hairTags>
 		<styleTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</styleTags>
 	</HairDef>
 	
@@ -43,17 +43,17 @@
 	</HairDef>
 
 
-	<!--StyleItemCategoryDef>
-		<defName>GrotHair</defName>
+	<StyleItemCategoryDef>
+		<defName>OG_Grot_Hair</defName>
 		<label>grot hair</label>
-	</StyleItemCategoryDef-->
+	</StyleItemCategoryDef>
   
 	<HairDef Abstract="True" Name="Grot_Hair_Base">
 		<hairTags>
-			<li>GrotHair</li>
+			<li>OG_Grot_Hair</li>
 		</hairTags>
 		<styleTags>
-			<li>GrotHair</li>
+			<li>OG_Grot_Hair</li>
 		</styleTags>
 	</HairDef>
 	

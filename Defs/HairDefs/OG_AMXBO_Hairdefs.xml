@@ -7,7 +7,7 @@
 		<texPath>Things/Pawn/Humanlike/Ork/Hair/TopKnot</texPath>
 		<defName>OrkTopKnot</defName>
 		<hairTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</hairTags>
 	</HairDef>
 
@@ -17,7 +17,7 @@
 		<texPath>Things/Pawn/Humanlike/Ork/Hair/Mohawk</texPath>
 		<defName>OrkMohawk</defName>
 		<hairTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</hairTags>
 	</HairDef>
 
@@ -27,7 +27,7 @@
 		<texPath>Things/Pawn/Humanlike/Ork/Hair/Spikes</texPath>
 		<defName>OrkSpikes</defName>
 		<hairTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</hairTags>
 	</HairDef>
 
@@ -37,7 +37,7 @@
 		<texPath>Things/Pawn/Humanlike/Ork/Hair/Bald</texPath>
 		<defName>OrkBald</defName>
 		<hairTags>
-			<li>OrkHair</li>
+			<li>OG_Ork_Hair</li>
 		</hairTags>
 	</HairDef>
 
@@ -48,7 +48,7 @@
 		<texPath>Things/Pawn/Humanlike/Grot/Hair/TopKnot</texPath>
 		<defName>GrotTopKnot</defName>
 		<hairTags>
-			<li>GrotHair</li>
+			<li>OG_Grot_Hair</li>
 		</hairTags>
 	</HairDef>
 
@@ -58,7 +58,7 @@
 		<texPath>Things/Pawn/Humanlike/Grot/Hair/Bald</texPath>
 		<defName>GrotBald</defName>
 		<hairTags>
-			<li>GrotHair</li>
+			<li>OG_Grot_Hair</li>
 		</hairTags>
 	</HairDef>
 

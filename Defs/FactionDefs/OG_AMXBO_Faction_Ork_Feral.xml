@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_Feral_Faction_Base">
+		<defName>OG_GreenskinTribal_Culture</defName>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li>OG_GreenskinTribal_Culture</li>
+		</allowedCultures>
+		<requiredMemes IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">OG_Ork_Primacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+			<li>Tribal</li>
+			<li>Civil</li>
+			<li>Raider</li>
+			<li>Rural</li>
+		</hairTags>
+		<startingGoodwill IgnoreIfNoMatchingField="True">
+			<min>-100</min>
+			<max>0</max>
+		</startingGoodwill>
+		<naturalColonyGoodwill IgnoreIfNoMatchingField="True">
+			<min>-60</min>
+			<max>0</max>
+		</naturalColonyGoodwill>
+	</FactionDef>
+
+</Defs>

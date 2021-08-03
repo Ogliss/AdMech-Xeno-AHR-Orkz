@@ -112,7 +112,7 @@ namespace AdeptusMechanicus
 					float num2 = num * 0.00333333341f;
 					if (this.fought)
 					{
-						num2 = foughtSocially ? -1f : -0.25f;
+						num2 = -num2 *( foughtSocially ? -1f : -0.25f);
                         if (TicksSatisfied > 15000)
 						{
 							this.fought = false;

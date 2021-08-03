@@ -62,6 +62,7 @@
 	
 	<!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
 	<ThingDef Name="OG_Ork_Apparel_Armor_Base" ParentName="OG_Apparel_Base" Abstract="True">
+		<thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
 		<apparel>
 			<tags>
 				<li>OrkApparel</li>

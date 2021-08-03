@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
-//    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
+    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     internal static class PawnGenerator_GeneratePawn_Orkoid_Patch
     {
         [HarmonyPrefix, HarmonyPriority(Priority.Last)]

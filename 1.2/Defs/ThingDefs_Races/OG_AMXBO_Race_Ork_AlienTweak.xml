@@ -678,7 +678,7 @@
 			<hasHair>true</hasHair>
 			<getsGreyAt>300</getsGreyAt> 
 			<hairTags>
-				<li>OrkHair</li>
+				<li>OG_Ork_Hair</li>
 			</hairTags>
 		</hairSettings>
 	</alienRace>

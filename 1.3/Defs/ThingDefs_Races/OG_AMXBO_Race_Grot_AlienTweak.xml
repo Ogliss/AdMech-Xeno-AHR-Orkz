@@ -205,10 +205,10 @@
 			<li>
 				<key>HairDef</key>
 				<value>
-					<hasStyle>true</hasStyle>
+					<hasStyle>false</hasStyle>
 					<!--getsGreyAt>200</getsGreyAt--> 
 					<styleTagsOverride>
-						<li>GrotHair</li>
+						<li>OG_Grot_Hair</li>
 					</styleTagsOverride>
 				</value>
 			</li>

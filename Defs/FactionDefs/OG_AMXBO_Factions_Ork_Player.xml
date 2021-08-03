@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Ork_PlayerFactionBase">
+		<defName>OG_Ork_PlayerColony</defName>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li>OG_Greenskin_Goffs</li>
+		</allowedCultures>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+			<li>Tribal</li>
+			<li>Raider</li>
+		</hairTags>
+		<modExtensions>
+			<li Class="AdeptusMechanicus.FactionDefExtension">
+				<RefugeeFactions>
+					<li>OG_Ork_FeralRefugee_Faction</li>
+				</RefugeeFactions>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+	<FactionDef ParentName="OG_Ork_Feral_PlayerFactionBase">
+		<defName>OG_Ork_PlayerTribe</defName>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li>OG_GreenskinTribal_Culture</li>
+		</allowedCultures>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
+			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</OG_Ork_Structure_TheistAbstract>
+		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+			<li>Tribal</li>
+			<li>Raider</li>
+		</hairTags>
+		<modExtensions>
+			<li Class="AdeptusMechanicus.FactionDefExtension">
+				<RefugeeFactions>
+					<li>OG_Ork_FeralRefugee_Faction</li>
+				</RefugeeFactions>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+</Defs>

@@ -199,7 +199,7 @@
 			<hasHair>true</hasHair>
 			<getsGreyAt>200</getsGreyAt> 
 			<hairTags>
-					<li>GrotHair</li>
+					<li>OG_Grot_Hair</li>
 			</hairTags>
 		</hairSettings>
  </alienRace>
