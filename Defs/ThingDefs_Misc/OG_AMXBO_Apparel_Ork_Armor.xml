@@ -462,7 +462,7 @@
 					<commonality>10</commonality>
 				</li-->
 				<li>
-					<forceDynamicDraw>true</forceDynamicDraw>
+					<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 					<shoulderPadType>Backpack</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
 					<padTexPath>Things/Item/Apparel/Ork/Arma/Mega/Backpack/Base</padTexPath>
