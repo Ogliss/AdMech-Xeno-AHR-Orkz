@@ -14,7 +14,7 @@
 		</graphicData>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>2.5</DeteriorationRate>
 			<SellPriceFactor>0.5</SellPriceFactor>

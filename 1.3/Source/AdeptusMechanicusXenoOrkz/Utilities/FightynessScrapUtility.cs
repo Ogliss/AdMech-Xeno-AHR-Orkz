@@ -9,7 +9,7 @@ using Verse.AI;
 
 namespace AdeptusMechanicus
 {
-    public static class FightynessScrapUtility
+    public static class FightynessUtility
 	{
 		public static void StartScrap(Pawn pawn, Pawn otherPawn)
 		{
@@ -24,7 +24,7 @@ namespace AdeptusMechanicus
 			}
 			else
 			{
-
+				otherPawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, null, false, false, pawn, false);
 			}
 			TaleRecorder.RecordTale(TaleDefOf.SocialFight, new object[]
 			{
@@ -40,7 +40,7 @@ namespace AdeptusMechanicus
 			workingList.Clear();
 			workingList.AddRange(collection);
 			workingList.Shuffle<Pawn>();
-			workingList.RemoveAll(x => x == pawn || x.Orkiness() > max);
+			workingList.RemoveAll(x => x == pawn || x.Orkiness() > max || x.Downed || !x.Awake());
 			workingList.RemoveAll(x => x.BodySize > maxSize);
 			workingList.RemoveAll(x => !pawn.CanReach(x, PathEndMode.Touch, Danger.Deadly));
 			if (workingList.NullOrEmpty())

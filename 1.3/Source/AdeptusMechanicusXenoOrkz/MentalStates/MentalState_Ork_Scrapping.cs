@@ -24,7 +24,7 @@ namespace AdeptusMechanicus
 				{
 					return false;
 				}
-				MentalState_Ork_Scrapping mentalState_SocialFighting = this.otherPawn.MentalState as MentalState_Ork_Scrapping;
+				MentalState_SocialFighting mentalState_SocialFighting = this.otherPawn.MentalState as MentalState_SocialFighting;
 				return mentalState_SocialFighting != null && mentalState_SocialFighting.otherPawn == this.pawn;
 			}
 		}

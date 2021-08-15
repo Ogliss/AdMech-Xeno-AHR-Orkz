@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using AdeptusMechanicus.settings;
+using RimWorld;
 using System;
 using Verse;
 
@@ -23,7 +24,7 @@ namespace AdeptusMechanicus
 
 		public override AlertReport GetReport()
 		{
-			if (FightRiskAlertUtility.PawnsAtRiskExtreme.Any<Pawn>() || FightRiskAlertUtility.PawnsAtRiskMajor.Any<Pawn>())
+			if (!AMAMod.settings.OrkoidFightyness || FightRiskAlertUtility.PawnsAtRiskExtreme.Any<Pawn>() || FightRiskAlertUtility.PawnsAtRiskMajor.Any<Pawn>())
 			{
 				return false;
 			}

@@ -20,39 +20,35 @@ namespace AdeptusMechanicus.HarmonyInstance
 		{
 			if (dinfo.Def.ExternalViolenceFor(__instance))
 			{
-				if (dinfo.Instigator != null)
-				{
-					if (dinfo.Instigator is Pawn pawn && pawn != null && pawn.isOrk() && !pawn.Dead)
+				Pawn damaged = __instance as Pawn;
+				Pawn instigator = dinfo.Instigator as Pawn;
+                if (instigator != null && instigator.isOrk())
+                {
+					for (int i = 0; i < instigator.needs.AllNeeds.Count; i++)
 					{
-						if (pawn.isOrk())
+						if (instigator.needs.AllNeeds[i] is Need_Orkoid_Fightyness need_Violence)
 						{
-							for (int i = 0; i < pawn.needs.AllNeeds.Count; i++)
-							{
-								if (pawn.needs.AllNeeds[i] is Need_Orkoid_Fightyness need_Violence)
-								{
-								//	Log.Message(pawn + "is Fightin!");
-									float old = need_Violence.CurLevel;
-									need_Violence.fought = true;
-									need_Violence.foughtSocially = pawn.MentalState is MentalState_SocialFighting;
-									//	need_Violence.CurLevel += totalDamageDealt;
-									break;
-								}
-							}
+						//	Log.Message(instigator + " is Fightin!");
+							float old = need_Violence.CurLevel;
+							need_Violence.Fought = true;
+							need_Violence.foughtSocially = instigator.MentalState is MentalState_SocialFighting;
+							need_Violence.CurLevel -= dinfo.Amount * 0.005f;
+							break;
 						}
 					}
-					if (__instance is Pawn pawn2 && pawn2 != null && (pawn2.isGrot() || pawn2.isOrk()) && !pawn2.Dead)
+				}
+				if (damaged != null && (damaged.isGrot() || damaged.isOrk()) && !damaged.Dead)
+				{
+					for (int i = 0; i < damaged.needs.AllNeeds.Count; i++)
 					{
-						for (int i = 0; i < pawn2.needs.AllNeeds.Count; i++)
+						if (damaged.needs.AllNeeds[i] is Need_Orkoid_Fightyness need_Violence)
 						{
-							if (pawn2.needs.AllNeeds[i] is Need_Orkoid_Fightyness need_Violence)
-							{
 							//	Log.Message(pawn2 + "is getting klobbered!");
-								float old = need_Violence.CurLevel;
-								need_Violence.fought = true;
-								need_Violence.foughtSocially = pawn2.MentalState is MentalState_SocialFighting;
-								//	need_Violence.CurLevel += totalDamageDealt;
-								break;
-							}
+							float old = need_Violence.CurLevel;
+							need_Violence.Fought = true;
+							need_Violence.foughtSocially = damaged.MentalState is MentalState_SocialFighting;
+							need_Violence.CurLevel -= dinfo.Amount * 0.0025f;
+							break;
 						}
 					}
 				}

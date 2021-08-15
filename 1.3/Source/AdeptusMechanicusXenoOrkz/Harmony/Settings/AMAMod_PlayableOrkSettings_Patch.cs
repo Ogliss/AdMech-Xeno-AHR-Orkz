@@ -33,7 +33,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         private static bool ShowRaces => (Xenobiologis && settings.ShowAllowedRaceSettings && ShowXB) || (!Xenobiologis && settings.ShowOrk);
         private static bool Setting => ShowRaces && settings.ShowOrk;
 
-        private static int Options = 2;
+        private static int Options = 3;
         private static float RaceSettings => mod.Length(Setting, Options, lineheight, 8, ShowRaces ? 1 : 0);
 
         public static float MainMenuLength = 0;
@@ -50,7 +50,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
             if (!Xenobiologis)
             {
-                if (!listing_Main.ButtonText(label, ref settings.ShowOrk))
+                if (!listing_Main.ButtonText(label, ref settings.ShowOrk, Dev, ref inc))
                 {
                     return;
                 }
@@ -71,12 +71,18 @@ namespace AdeptusMechanicus.HarmonyInstance
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) || !settings.AllowOrkWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) && settings.AllowOrkWeapons);
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Ork.AllowOrkoidFightyness".Translate(),
+                        ref settings.OrkoidFightyness,
+                        "AdeptusMechanicus.Ork.AllowOrkoidFightynessToolTip".Translate(),
+                        !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) || !settings.AllowOrkWeapons,
+                        DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Tek")) && settings.AllowOrkWeapons);
                     listing_General.NewColumn();
                     listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkFeral".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowOrkFeral,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) || !settings.AllowOrkWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Ork_Feral")) && settings.AllowOrkWeapons);
+                    listing_General.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.FightynessStatisfied".Translate(), ref settings.OrkoidFightynessStatisfied, ref settings.OrkoidFightynessStatisfiedBuffer, 0, int.MaxValue, "AdeptusMechanicus.Ork.FightynessStatisfiedToolTip".Translate(), 0.75f, 0.25f);
                     listing_General.NewColumn();
                     listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowOrkRok".Translate(),
                         ref settings.AllowOrkRok,
@@ -84,7 +90,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         !settings.AllowOrkTek || !settings.AllowOrkWeapons,
                         settings.AllowOrkTek && settings.AllowOrkWeapons);
                     listing_Race.EndSection(listing_General);
-                    MenuLength = listing_General.CurHeight != 0 ? listing_General.CurHeight : listing_General.MaxColumnHeightSeen;
+                    MenuLength = Math.Max(listing_General.CurHeight, listing_General.MaxColumnHeightSeen);// listing_General.CurHeight > 0 ? listing_General.CurHeight : listing_General.MaxColumnHeightSeen;
                     Listing_StandardExpanding listing_FungalLabel = listing_Race.BeginSection(__instance.Length(Setting, 1, lineheight, 0, 0), true);
                     listing_FungalLabel.ColumnWidth *= 0.32f;
                     listing_FungalLabel.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.FungusOptions".Translate(), ref settings.FungusSpawnChance, ref settings.FungusSpawnChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.FungusOptionsToolTip".Translate(), 0.75f, 0.25f);
@@ -110,6 +116,8 @@ namespace AdeptusMechanicus.HarmonyInstance
                     //    listing_Fungus.NewColumn();
                     listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Grot".Translate(), ref settings.CocoonGrotChance, ref settings.CocoonGrotChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.GrotToolTip".Translate(), 0.75f, 0.25f);
                     listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.Ork".Translate(), ref settings.CocoonOrkChance, ref settings.CocoonOrkChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.OrkToolTip".Translate(), 0.75f, 0.25f);
+                    listing_Fungus.NewColumn();
+                    listing_Fungus.TextFieldNumericLabeled<float>("AdeptusMechanicus.Ork.FungalMeds".Translate(), ref settings.FungusMedChance, ref settings.FungusMedChanceBuffer, 0f, 1f, "AdeptusMechanicus.Ork.FungalMedsToolTip".Translate(), 0.75f, 0.25f);
                     listing_Race.EndSection(listing_Fungus);
                 }
                 listing_Main.EndSection(listing_Race);

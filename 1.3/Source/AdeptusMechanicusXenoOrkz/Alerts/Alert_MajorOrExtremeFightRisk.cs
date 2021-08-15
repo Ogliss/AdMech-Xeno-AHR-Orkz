@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using AdeptusMechanicus.settings;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using Verse;
@@ -30,6 +31,10 @@ namespace AdeptusMechanicus
 
 		public override AlertReport GetReport()
 		{
+            if (!AMAMod.settings.OrkoidFightyness)
+            {
+				return false;
+            }
 			return AlertReport.CulpritsAre(this.Culprits);
 		}
 

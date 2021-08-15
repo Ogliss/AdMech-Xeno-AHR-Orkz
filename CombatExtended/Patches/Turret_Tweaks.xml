@@ -4,7 +4,7 @@
 		<operations>
 			<!--success>Always</success-->
 			<!--=============== Base turrets ===============-->
-			<li Class="PatchOperationReplace">
+			<!--li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="OGO_HeavyTurret" or @Name="OGO_Turret"]/thingClass</xpath>
 				<value>
 					<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
@@ -15,7 +15,7 @@
 				<value>
 					<thingClass>AdeptusMechanicus.Lasers.Building_LaserGunCE</thingClass>
 				</value>
-			</li>
+			</li-->
 			<!--=============== Manual turrets ===============-->
 			<!--=============== Pintle-Mounted Heavy Bolter ===============-->
 			<!--li Class="CombatExtended.PatchOperationMakeGunCECompatible">

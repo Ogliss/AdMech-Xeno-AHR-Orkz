@@ -18,7 +18,7 @@
 		</stuffCategories>
 		<tradeability>Sellable</tradeability>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>1600</WorkToMake>
 			<MarketValue>100</MarketValue>
 			<Mass>0.35</Mass>

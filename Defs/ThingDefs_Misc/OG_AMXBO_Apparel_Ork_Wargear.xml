@@ -24,6 +24,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 						<commonality>10</commonality>
 					</li>
 				</ExtrasEntries>
@@ -111,7 +112,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
-						<!--animateExtra>true</animateExtra-->
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 						<commonality>10</commonality>
 					</li>
 					<li>
@@ -123,7 +124,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
-						<!--animateExtra>true</animateExtra-->
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 						<commonality>10</commonality>
 					</li>
 					<li>
@@ -135,7 +136,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
-						<!--animateExtra>true</animateExtra-->
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 						<commonality>5</commonality>
 					</li>
 					<li>
@@ -147,7 +148,7 @@
 							<color>255,255,209</color-->
 						</graphicData>
 						<UseBodytypeTextures>false</UseBodytypeTextures>
-						<!--animateExtra>true</animateExtra-->
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
 						<commonality>5</commonality>
 					</li>
 				</ExtrasEntries>

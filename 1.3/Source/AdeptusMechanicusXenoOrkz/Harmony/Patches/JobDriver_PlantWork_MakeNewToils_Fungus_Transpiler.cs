@@ -40,14 +40,14 @@ namespace AdeptusMechanicus.HarmonyInstance
                     //    if (Prefs.DevMode) Log.Message("Fungus Patch A " + i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
 
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
-                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_1);             // Plant
                         instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvest"));
                     }
                     if (instructionsList[index: i].OperandIs(AccessTools.Method(type: typeof(GenPlace), name: nameof(GenPlace.TryPlaceThing), parameters: new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4) })))
                     {
                     //    if (Prefs.DevMode) Log.Message("Fungus Patch B " + i + " opcode: " + instruction.opcode + " operand: " + instruction.operand);
                         yield return new CodeInstruction(opcode: OpCodes.Ldloc_0);             // Pawn
-                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_2);             // Plant
+                        yield return new CodeInstruction(opcode: OpCodes.Ldloc_1);             // Plant
                         instruction = new CodeInstruction(opcode: OpCodes.Call, operand: typeof(JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler).GetMethod("FungusHarvested"));
                     }
                 }
@@ -100,10 +100,10 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                 Rand.PushState(plant.thingIDNumber);
 
-                if (FungalMeds != null && Rand.ChanceSeeded(0.01f, plant.thingIDNumber))
+                if (FungalMeds != null && Rand.ChanceSeeded(0.1f, plant.thingIDNumber))
                 {
                     harvestedThingDef = FungalMeds;
-                //    if (AMAMod.Dev) Log.Message("FungusHarvest " + "we'ez found some meds boss!");
+                //    if (AMAMod.Dev) Log.Message("FungusHarvest " + "we'ez found some " + harvestedThingDef.LabelCap + " boss!");
                 }
 
                 Rand.PopState();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using AdeptusMechanicus.ExtensionMethods;
+using AdeptusMechanicus.settings;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -69,7 +70,7 @@ namespace AdeptusMechanicus
 				bool result;
 				if (this.pawn.isOrkoid())
 				{
-					result = this.pawn.WorkTagIsDisabled(WorkTags.Violent);
+					result = !AMAMod.settings.OrkoidFightyness;// this.pawn.WorkTagIsDisabled(WorkTags.Violent) && !pawn.Downed;
 				}
 				else
 				{
@@ -94,12 +95,10 @@ namespace AdeptusMechanicus
 			{
 				if (!this.IsFrozen)
 				{
-					float b = 0.2f;
 					float num;
 					if (this.pawn.Spawned)
 					{
 						num = FightynessRate;
-						b = 0f;
 					}
 					else
 					{
@@ -110,29 +109,26 @@ namespace AdeptusMechanicus
 						num *= DeltaFactor_InBed;
 					}
 					float num2 = num * 0.00333333341f;
-					if (this.fought)
+					if (this.Fought || pawn.Downed)
 					{
-						num2 = -num2 *( foughtSocially ? -1f : -0.25f);
-                        if (TicksSatisfied > 15000)
+					//	if (AMAMod.Dev && this.Fought) Log.Message(pawn + " fought recently");
+						num2 = -(num2 * (foughtSocially || pawn.Downed ? 0.25f : 1f));
+                        if (this.Fought && TicksSatisfied > satisifiedTicks)
 						{
-							this.fought = false;
+							if (AMAMod.Dev) Log.Message(pawn + " now needs to fight again");
+							this.Fought = false;
 						}
 					}
 					float curLevel = this.CurLevel;
-					if ((double)num2 < 0.0)
-					{
-						this.CurLevel = Mathf.Min(this.CurLevel, Mathf.Max(this.CurLevel + num2, b));
-					}
-					else
-					{
-						this.CurLevel = Mathf.Min(this.CurLevel + num2, 1f);
-					}
+
+					this.CurLevel = Mathf.Clamp(this.CurLevel+num2, 0, 1f);
+
 					this.lastEffectiveDelta = this.CurLevel - curLevel;
-					if (pawn.isOrk() && CurCategory != FightynessCategory.Free && Math.Sign(this.lastEffectiveDelta) > 0)
+					if (pawn.isOrk() && !(pawn.MentalState is MentalState_SocialFighting) && CurCategory != FightynessCategory.Free && Math.Sign(this.lastEffectiveDelta) > 0)
 					{
                         Rand.PushState();
 					//	Log.Message(pawn.NameShortColored + " will start a fight "+ this.CurLevelPercentage +"%");
-						if (Rand.Chance(this.CurLevelPercentage/100f))
+						if (Rand.Chance((this.CurLevelPercentage / 100f)*pawn.health.summaryHealth.SummaryHealthPercent))
 						{
 							Orkoid maxOrkiness;
 							int val1 = (int)pawn.Orkiness() + (int)CurCategory;
@@ -155,11 +151,11 @@ namespace AdeptusMechanicus
 									break;
 							}
 							//	Log.Message("if it can find something to krump.....");
-							Pawn t = FightynessScrapUtility.FindKrumpablePawn(pawn, this.CurCategory, maxOrkiness);
+							Pawn t = FightynessUtility.FindKrumpablePawn(pawn, this.CurCategory, maxOrkiness);
 							if (t != null)
 							{
 								//	Log.Message("gonna try and krump "+t.NameShortColored);
-								FightynessScrapUtility.StartScrap(pawn ,t);
+								FightynessUtility.StartScrap(pawn ,t);
 							}
                         }
 						Rand.PopState();
@@ -171,15 +167,29 @@ namespace AdeptusMechanicus
 		{
 			get
 			{
-				return Mathf.Max(0, Find.TickManager.TicksGame - pawn.mindState.lastAttackTargetTick);
+				int remaining = Mathf.Max(0, Find.TickManager.TicksGame - lastFoughtTick);
+				if (AMAMod.Dev) Log.Message(this.pawn.NameShortColored + " Cur Tick: "+ Find.TickManager.TicksGame+ " last Attack Tick: " + lastFoughtTick + " remaining satisifiedTicks: " + (satisifiedTicks - remaining));
+				return remaining;
 			}
 		}
 
+		public bool Fought
+		{
+			get
+			{
+				return fought;
+			}
+			set
+			{
+				fought = value;
+				lastFoughtTick = Find.TickManager.TicksGame;
+			}
+		}
 		private float FightynessRate
 		{
 			get
 			{
-				return this.pawn.BodySize * (1f - (1f * (this.pawn.needs.joy != null ? this.pawn.needs.joy.CurLevel : 0f)));
+				return this.pawn.BodySize * (1f - (1f * (this.pawn.needs.joy != null ? this.pawn.needs.joy.CurLevel : 0f))) / 2;
 			}
 		}
 		
@@ -199,43 +209,6 @@ namespace AdeptusMechanicus
 			}
 		}
 		
-		protected IEnumerable<Pawn> Squigs
-		{
-			get
-			{
-				return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-					   where p.isSquig()
-					   select p;
-			}
-		}
-		protected IEnumerable<Pawn> Snots
-		{
-			get
-			{
-				return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-					   where p.isSnotling()
-					   select p;
-			}
-		}
-		protected IEnumerable<Pawn> Grots
-		{
-			get
-			{
-				return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-					   where p.isGrot()
-					   select p;
-			}
-		}
-		protected IEnumerable<Pawn> Orks
-		{
-			get
-			{
-				return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-					   where p.isOrk()
-					   select p;
-			}
-		}
-
 		public override int GUIChangeArrow
 		{
 			get
@@ -265,6 +238,7 @@ namespace AdeptusMechanicus
 		public bool fought = false;
 		public bool foughtSocially = false;
 		private int lastFoughtTick = -99999;
+		private  int satisifiedTicks => ((AMAMod.settings.OrkoidFightynessStatisfied * 60) *60).SecondsToTicks();
 		public bool IsFighting(Pawn pawn)
 		{
 			return pawn.CurJob != null && (pawn.CurJob.def == JobDefOf.AttackMelee || pawn.CurJob.def == JobDefOf.AttackStatic /*|| pawn.CurJob.def == JobDefOf.Wait_Combat*/ || pawn.CurJob.def == JobDefOf.PredatorHunt);
