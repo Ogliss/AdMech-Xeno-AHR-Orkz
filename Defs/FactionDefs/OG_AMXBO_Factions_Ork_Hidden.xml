@@ -122,11 +122,7 @@
 	</FactionDef>
 
 	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
-		<defName>OG_Ork_Hulk</defName>
-	</FactionDef>
-
-	<FactionDef ParentName="OG_Ork_Hidden_Faction_Base">
-		<defName>OG_Ork_Rok</defName>
+		<defName>OG_Ork_Waaagh</defName>
 	</FactionDef>
 
 </Defs>

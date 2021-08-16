@@ -107,8 +107,8 @@
 				</li>
 				<li>
 					<factions>
-						<li>OG_Ork_Hulk</li>
-						<li>OG_Ork_Rok</li>
+						<li>OG_Ork_Waaagh</li>
+						<li>OG_Ork_Waaagh</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>

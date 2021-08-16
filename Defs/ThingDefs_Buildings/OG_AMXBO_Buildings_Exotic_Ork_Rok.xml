@@ -19,13 +19,13 @@
 	</placeWorkers>
 	<modExtensions>
 		<li Class="ExtraHives.HiveDefExtension">
-			<Faction>OG_Ork_Rok</Faction>
+			<Faction>OG_Ork_Waaagh</Faction>
 		</li>
 	</modExtensions>
 	<comps>
 		<li Class="CrashedShipsExtension.CompProperties_SpawnerOnDamaged">
 			<Factions>
-				<li>OG_Ork_Rok</li>
+				<li>OG_Ork_Waaagh</li>
 			</Factions>
 		</li>
 		<li Class="CrashedShipsExtension.CompProperties_SpawnerPawn">
@@ -92,7 +92,7 @@
 	<modExtensions>
 		<li Class="ExtraHives.HiveDefExtension">
 			<TunnelDef>OG_Ork_Rok_Spawner_Tunnel</TunnelDef>
-			<Faction>OG_Ork_Rok</Faction>
+			<Faction>OG_Ork_Waaagh</Faction>
 		</li>
 	</modExtensions>
 	<comps>
@@ -117,7 +117,7 @@
 	<modExtensions>
 		<li Class="ExtraHives.TunnelExtension">
 			<HiveDef>OG_Ork_Rok_Tunnel</HiveDef>
-			<Faction>OG_Ork_Rok</Faction>
+			<Faction>OG_Ork_Waaagh</Faction>
 		</li>
 	</modExtensions>
 	<tickerType>Normal</tickerType>
