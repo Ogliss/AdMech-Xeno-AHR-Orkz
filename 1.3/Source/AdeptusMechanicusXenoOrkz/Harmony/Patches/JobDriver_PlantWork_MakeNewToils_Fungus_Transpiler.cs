@@ -100,7 +100,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 
                 Rand.PushState(plant.thingIDNumber);
 
-                if (FungalMeds != null && Rand.ChanceSeeded(0.1f, plant.thingIDNumber))
+                if (FungalMeds != null && Rand.ChanceSeeded(AMAMod.settings.FungusMedChance, plant.thingIDNumber))
                 {
                     harvestedThingDef = FungalMeds;
                 //    if (AMAMod.Dev) Log.Message("FungusHarvest " + "we'ez found some " + harvestedThingDef.LabelCap + " boss!");
