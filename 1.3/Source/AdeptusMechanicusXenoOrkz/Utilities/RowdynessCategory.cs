@@ -2,7 +2,7 @@
 
 namespace AdeptusMechanicus
 {
-    public enum FightynessCategory : byte
+    public enum RowdynessCategory : byte
 	{
 		Obsessed,
 		Requires,

@@ -7,6 +7,9 @@
 	
 	<ThingDef ParentName="BodyPartBionicBase" Name="OG_BodyPartKrudeBioniks" Abstract="true">
 		<techLevel>Industrial</techLevel>
+		<techHediffsTags Inherit="false">
+		  <li>OrkKrudeBionik</li>
+		</techHediffsTags>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>OGO_TableMachining</li>

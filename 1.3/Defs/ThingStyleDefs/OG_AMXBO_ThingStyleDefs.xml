@@ -27,15 +27,15 @@
 	<ThingStyleDef ParentName="OG_Ork_TableStyleBase">
 		<defName>OGO_Table1x2c</defName>
 		<graphicData>
-			<texPath>Things/Building/Ork/Furniture/TableScrap1x2</texPath>
+			<texPath>Things/Building/Ork/Furniture/Table1x2</texPath>
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 
 	<!--ThingStyleDef ParentName="OG_Ork_TableStyleBase">
-		<defName>Morbid_Table2x2c</defName>
+		<defName>OGO_Table2x2c</defName>
 		<graphicData>
-			<texPath>Things/Building/BuildingStyles/Morbid/Tables/MorbidTable2x2</texPath>
+			<texPath>Things/Building/Ork/Furniture/MorbidTable2x2</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef-->
@@ -49,9 +49,9 @@
 	</ThingStyleDef>
 
 	<!--ThingStyleDef ParentName="OG_Ork_TableStyleBase">
-		<defName>Morbid_Table3x3c</defName>
+		<defName>OGO_Table3x3c</defName>
 		<graphicData>
-			<texPath>Things/Building/BuildingStyles/Morbid/Tables/MorbidTable3x3</texPath>
+			<texPath>Things/Building/Ork/Furniture/MorbidTable3x3</texPath>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef-->

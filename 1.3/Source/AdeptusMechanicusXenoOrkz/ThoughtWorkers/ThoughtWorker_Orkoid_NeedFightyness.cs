@@ -20,22 +20,22 @@ namespace AdeptusMechanicus
 			{
 				switch (need_Violence.CurCategory)
 				{
-					case FightynessCategory.Obsessed:
+					case RowdynessCategory.Obsessed:
 						result = ThoughtState.ActiveAtStage(0);
 						break;
-					case FightynessCategory.Requires:
+					case RowdynessCategory.Requires:
 						result = ThoughtState.ActiveAtStage(1);
 						break;
-					case FightynessCategory.Craves:
+					case RowdynessCategory.Craves:
 						result = ThoughtState.ActiveAtStage(2);
 						break;
-					case FightynessCategory.Desires:
+					case RowdynessCategory.Desires:
 						result = ThoughtState.ActiveAtStage(3);
 						break;
-					case FightynessCategory.Wants:
+					case RowdynessCategory.Wants:
 						result = ThoughtState.ActiveAtStage(4);
 						break;
-					case FightynessCategory.Free:
+					case RowdynessCategory.Free:
 						result = ThoughtState.Inactive;
 						break;
 					default:

@@ -18,6 +18,7 @@
 
   <LifeStageDef ParentName="OG_SquigBaby">
     <defName>OG_SquigBabyTiny</defName>
+    <label>baby</label>
     <bodySizeFactor>0.1</bodySizeFactor>
     <foodMaxFactor>4</foodMaxFactor>
   </LifeStageDef>

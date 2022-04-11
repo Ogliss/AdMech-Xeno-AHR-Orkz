@@ -59,6 +59,15 @@
 				</value>
 			</li>
 
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_LevaArmour</defName>
+				<statBases>
+					<Bulk>25</Bulk>
+					<WornBulk>8</WornBulk>
+					<StuffEffectMultiplierArmor>2.0</StuffEffectMultiplierArmor>
+				</statBases>
+			</li>
+			
 			<!--li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="OGO_Apparel_Armour"]/equippedStatOffsets/MoveSpeed</xpath>
 			</li-->

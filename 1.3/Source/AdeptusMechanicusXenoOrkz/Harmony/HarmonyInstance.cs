@@ -86,6 +86,5 @@ namespace AdeptusMechanicus.HarmonyInstance
             if (Prefs.DevMode) Log.Message(string.Format("Adeptus Xenobiologis: Orkz: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))));
         }
 
-
     }
 }

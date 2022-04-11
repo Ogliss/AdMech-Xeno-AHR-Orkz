@@ -75,6 +75,7 @@
 				<li>OGOWargear1</li>
 				<li>KustomForceField</li>
 				<li>OGOShield</li>
+				<li>OGEnergyShield</li>
 			</tags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -185,6 +186,10 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Tribal_Ork</li>
+				<li>OG_TribalRefugee_Ork</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<bodyPartGroups>
 				<li>Waist</li>
 			</bodyPartGroups>
@@ -245,6 +250,10 @@
 		</equippedStatOffsets>
 		<generateCommonality>0.25</generateCommonality>
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Tribal_Ork</li>
+				<li>OG_TribalRefugee_Ork</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<bodyPartGroups Inherit="false">
 				<li>Mouth</li>
 				<li>Neck</li>

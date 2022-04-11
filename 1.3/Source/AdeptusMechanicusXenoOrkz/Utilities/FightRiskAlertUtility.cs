@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
 				FightRiskAlertUtility.pawnsAtRiskExtremeResult.Clear();
 				foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep)
 				{
-					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory <= FightynessCategory.Requires)
+					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory <= RowdynessCategory.Requires)
 					{
 						FightRiskAlertUtility.pawnsAtRiskExtremeResult.Add(pawn);
 					}
@@ -32,7 +32,7 @@ namespace AdeptusMechanicus
 				FightRiskAlertUtility.pawnsAtRiskMajorResult.Clear();
 				foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep)
 				{
-					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory <= FightynessCategory.Desires)
+					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory <= RowdynessCategory.Desires)
 					{
 						FightRiskAlertUtility.pawnsAtRiskMajorResult.Add(pawn);
 					}
@@ -48,7 +48,7 @@ namespace AdeptusMechanicus
 				FightRiskAlertUtility.pawnsAtRiskMinorResult.Clear();
 				foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep)
 				{
-					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory < FightynessCategory.Free)
+					if (!pawn.Downed && pawn.needs.TryGetNeed(AdeptusNeedDefOf.OG_Ork_Fightyness) is Need_Orkoid_Fightyness need_Violence && need_Violence.CurCategory < RowdynessCategory.Free)
 					{
 						FightRiskAlertUtility.pawnsAtRiskMinorResult.Add(pawn);
 					}

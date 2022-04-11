@@ -40,6 +40,10 @@
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Arma/Leva/Base</wornGraphicPath>
 		<bodyPartGroups>
@@ -144,13 +148,17 @@
 	<stuffCategories>
 		<li>Metallic</li>
 	</stuffCategories>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>OG_Ork_Tech_Apparel_Armour_T1</li>
-			</researchPrerequisites>
-		</recipeMaker>
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>OG_Ork_Tech_Apparel_Armour_T1</li>
+		</researchPrerequisites>
+	</recipeMaker>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<bodyPartGroups>
 			<li>Torso</li>
@@ -239,7 +247,7 @@
 		<MaxHitPoints>350</MaxHitPoints>
 		<MarketValue>1700</MarketValue>
 		<WorkToMake>12000</WorkToMake>
-		<Mass>35</Mass>
+		<Mass>12</Mass>
 		<Flammability>0</Flammability>
 		<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.92</ArmorRating_Blunt>
@@ -254,13 +262,17 @@
 		<Steel>150</Steel>
 		<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>OG_Ork_Tech_Apparel_Armour_T2</li>
-			</researchPrerequisites>
-		</recipeMaker>
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>OG_Ork_Tech_Apparel_Armour_T2</li>
+		</researchPrerequisites>
+	</recipeMaker>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<bodyPartGroups>
 			<li>Neck</li>
 			<li>Torso</li>
@@ -354,7 +366,7 @@
 	<statBases>
 	<WorkToMake>75000</WorkToMake>
 		<MaxHitPoints>700</MaxHitPoints>
-		<Mass>25.25</Mass>
+		<Mass>20</Mass>
 		<Flammability>0.0</Flammability>
 		<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 		<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
@@ -397,6 +409,7 @@
 			<li>Royal</li>
 			<li>RoyalTier7</li>
 			<li>RoyalCombatGear</li>
+			<li>PrestigeCombatGear</li>
 			<li>EVA</li>
 		</tags>
 		<defaultOutfitTags>

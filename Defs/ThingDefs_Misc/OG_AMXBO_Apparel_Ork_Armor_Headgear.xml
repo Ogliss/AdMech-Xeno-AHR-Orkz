@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- ========================= Ork - Leva Elmet ========================== -->
-<ThingDef ParentName="OG_Ork_Apparel">
+<ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
 	<defName>OGO_Apparel_LevaElmet</defName>
 	<label>studded elmet</label>
 	<description>A simple helmet, the basic type of Orkish head armour. Usually made from sections of hardened leather, with the odd bits of scrap metal plate or scavenged piece of armour. It sometimes includes 'horns' fashioned from metal or bones and other metal plates bolted together, Orkish armour has a ramshackle, improvised appearance, but offers more protection then its humble origins would suggest.</description>
@@ -33,6 +33,10 @@
 	</stuffCategories>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/LevaHelmet</wornGraphicPath>
 		<bodyPartGroups>
@@ -98,6 +102,10 @@
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/Helmet</wornGraphicPath>
 		<bodyPartGroups>
 			<li>UpperHead</li>
@@ -160,6 +168,10 @@
 		</recipeMaker>
 	<generateCommonality>1</generateCommonality>
 	<apparel>
+		<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<li>OG_Tribal_Ork</li>
+			<li>OG_TribalRefugee_Ork</li>
+		</ideoDesireAllowedFactionCategoryTags>
 		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/HelmetBase/EavyHelmet</wornGraphicPath>
 		<bodyPartGroups>
 			<li>UpperHead</li>

@@ -691,8 +691,8 @@
 				<li>SimpleResearchBench</li>
 				<li>HiTechResearchBench</li>
 				<li>Bed</li>
-				<li>Table1x2c</li>
-				<li>Table2x4c</li>
+				<!--li>Table1x2c</li>
+				<li>Table2x4c</li-->
 				<li>ChemfuelPoweredGenerator</li>
 			</blackBuildingList>
 		</raceRestriction>

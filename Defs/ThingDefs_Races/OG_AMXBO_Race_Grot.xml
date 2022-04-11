@@ -12,24 +12,24 @@
 				</li>
 		</graphicPaths>
 		<generalSettings>
-				<maleGenderProbability>1</maleGenderProbability>
+			<maleGenderProbability>1</maleGenderProbability>
 			<minAgeForAdulthood>2</minAgeForAdulthood>
-				<immuneToAge>false</immuneToAge>
-				<alienPartGenerator>
+			<immuneToAge>false</immuneToAge>
+			<alienPartGenerator>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.70, 0.70)</customHeadDrawSize>
-					<aliencrowntypes>
-						<li>Average_Gretchin</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+				<aliencrowntypes>
+					<li>Average_Gretchin</li>
+				</aliencrowntypes>
+				<alienbodytypes>
 					<li>Thin</li>
-					</alienbodytypes>
-				</alienPartGenerator>
+				</alienbodytypes>
+			</alienPartGenerator>
 			<chemicalSettings>	
 			</chemicalSettings>
-				<humanRecipeImport>true</humanRecipeImport>
+			<humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
@@ -358,159 +358,159 @@
 					<li>AteOrkFungusAsIngredient</li>
 				</cannotReceiveThoughts-->
 			<replacerList>
-					<!-- 
-					<li>
-						<original>EnvironmentDark</original>
-						<replacer>EnvironmentDark_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>ApparelDamaged</original>
-						<replacer>ApparelDamaged_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>DefeatedHostileFactionLeader</original>
-						<replacer>DefeatedHostileFactionLeader_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>DeadMansApparel</original>
-						<replacer>DeadMansApparel_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>ButcheredHumanlikeCorpseOpinion</original>
-						<replacer>ButcheredHumanlikeCorpseOpinion_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>AteRawHumanlikeMeat</original>
-						<replacer>AteRawHumanlikeMeat_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>ColonistLeftUnburied</original>
-						<replacer>ColonistLeftUnburied_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>Greedy</original>
-						<replacer>Greedy_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>HumanLeatherApparelSad</original>
-						<replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>HumanLeatherApparelHappy</original>
-						<replacer>HumanLeatherApparelHappy_OGOrkoid</replacer> 
-					</li>
-					-->
-					<li>
-						<original>AteWithoutTable</original>
-						<replacer>AteWithoutTable_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>SleptOutside</original>
-						<replacer>SleptOutside_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>SleptOnGround</original>
-						<replacer>SleptOnGround_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>SleptInCold</original>
-						<replacer>SleptInCold_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>SleptInHeat</original>
-						<replacer>SleptInHeat_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>KnowPrisonerSold</original>
-						<replacer>KnowPrisonerSold_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>KnowBuriedInSarcophagus</original>
-						<replacer>KnowBuriedInSarcophagus_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>SoakingWet</original>
-						<replacer>SoakingWet_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>ObservedLayingCorpse</original>
-						<replacer>ObservedLayingCorpse_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>ObservedLayingRottingCorpse</original>
-						<replacer>ObservedLayingRottingCorpse_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>WitnessedDeathNonAlly</original>
-						<replacer>WitnessedDeathNonAlly_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>WitnessedDeathFamily</original>
-						<replacer>WitnessedDeathFamily_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>WitnessedDeathBloodlust</original>
-						<replacer>WitnessedDeathBloodlust_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>KilledHumanlikeBloodlust</original>
-						<replacer>KilledHumanlikeBloodlust_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>DefeatedHostileFactionLeaderOpinion</original>
-						<replacer>DefeatedHostileFactionLeaderOpinion_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>AteInsectMeatDirect</original>
-						<replacer>AteInsectMeatDirect_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>AteInsectMeatAsIngredient</original>
-						<replacer>AteInsectMeatAsIngredient_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>AteCorpse</original>
-						<replacer>AteCorpse_OGOrkoid</replacer> 
-					</li>
-					<li>
-						<original>AteKibble</original>
-						<replacer>AteKibble_OGOrkoid</replacer> 
-					</li>
-				</replacerList>
-				<restrictedThoughts>
-					<li>EnvironmentDark_OGOrkoid</li>
-					<li>Ascetic_OGOrkoid</li>
-					<li>Greedy_OGOrkoid</li>
-					<li>ApparelDamaged_OGOrkoid</li>
-					<li>DeadMansApparel_OGOrkoid</li>
-					<!--li>HumanLeatherApparelSad_OGOrkoid</li-->
-					<li>HumanLeatherApparelHappy_OGOrkoid</li>
-					<li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
-					<li>AteRawHumanlikeMeat_OGOrkoid</li>
-					<li>BrawlerUnhappy_OGOrkoid</li>
-					<li>ShooterUnhappy_OGOrkoid</li>
-					<li>ColonistLeftUnburied_OGOrkoid</li>
-					<li>AteWithoutTable_OGOrkoid</li>
-					<li>SleptOutside_OGOrkoid</li>
-					<li>SleptOutside_OGOrkoid</li>
-					<li>SleptInCold_OGOrkoid</li>
-					<li>SleptInHeat_OGOrkoid</li>
-					<li>KnowPrisonerSold_OGOrkoid</li>
-					<li>KnowBuriedInSarcophagus_OGOrkoid</li>
-					<li>SoakingWet_OGOrkoid</li>
-					<li>ObservedLayingCorpse_OGOrkoid</li>
-					<li>ObservedLayingRottingCorpse_OGOrkoid</li>
-					<li>WitnessedDeathNonAlly_OGOrkoid</li>
-					<li>WitnessedDeathFamily_OGOrkoid</li>
-					<li>WitnessedDeathBloodlust_OGOrkoid</li>
-					<li>KilledHumanlikeBloodlust_OGOrkoid</li>
-					<li>DefeatedHostileFactionLeader_OGOrkoid</li>
-					<li>DefeatedHostileFactionLeaderOpinion_OGOrkoid</li>
-					<li>AteInsectMeatDirect_OGOrkoid</li>
-					<li>AteInsectMeatAsIngredient_OGOrkoid</li>
-					<li>AteCorpse_OGOrkoid</li>
-					<li>AteKibble_OGOrkoid</li>
-				</restrictedThoughts>
+				<!-- 
+				<li>
+					<original>EnvironmentDark</original>
+					<replacer>EnvironmentDark_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>ApparelDamaged</original>
+					<replacer>ApparelDamaged_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>DefeatedHostileFactionLeader</original>
+					<replacer>DefeatedHostileFactionLeader_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>DeadMansApparel</original>
+					<replacer>DeadMansApparel_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>ButcheredHumanlikeCorpseOpinion</original>
+					<replacer>ButcheredHumanlikeCorpseOpinion_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>AteRawHumanlikeMeat</original>
+					<replacer>AteRawHumanlikeMeat_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>ColonistLeftUnburied</original>
+					<replacer>ColonistLeftUnburied_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>Greedy</original>
+					<replacer>Greedy_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>HumanLeatherApparelSad</original>
+					<replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>HumanLeatherApparelHappy</original>
+					<replacer>HumanLeatherApparelHappy_OGOrkoid</replacer> 
+				</li>
+				-->
+				<li>
+					<original>AteWithoutTable</original>
+					<replacer>AteWithoutTable_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>SleptOutside</original>
+					<replacer>SleptOutside_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>SleptOnGround</original>
+					<replacer>SleptOnGround_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>SleptInCold</original>
+					<replacer>SleptInCold_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>SleptInHeat</original>
+					<replacer>SleptInHeat_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>KnowPrisonerSold</original>
+					<replacer>KnowPrisonerSold_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>KnowBuriedInSarcophagus</original>
+					<replacer>KnowBuriedInSarcophagus_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>SoakingWet</original>
+					<replacer>SoakingWet_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>ObservedLayingCorpse</original>
+					<replacer>ObservedLayingCorpse_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>ObservedLayingRottingCorpse</original>
+					<replacer>ObservedLayingRottingCorpse_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>WitnessedDeathNonAlly</original>
+					<replacer>WitnessedDeathNonAlly_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>WitnessedDeathFamily</original>
+					<replacer>WitnessedDeathFamily_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>WitnessedDeathBloodlust</original>
+					<replacer>WitnessedDeathBloodlust_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>KilledHumanlikeBloodlust</original>
+					<replacer>KilledHumanlikeBloodlust_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>DefeatedHostileFactionLeaderOpinion</original>
+					<replacer>DefeatedHostileFactionLeaderOpinion_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>AteInsectMeatDirect</original>
+					<replacer>AteInsectMeatDirect_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>AteInsectMeatAsIngredient</original>
+					<replacer>AteInsectMeatAsIngredient_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>AteCorpse</original>
+					<replacer>AteCorpse_OGOrkoid</replacer> 
+				</li>
+				<li>
+					<original>AteKibble</original>
+					<replacer>AteKibble_OGOrkoid</replacer> 
+				</li>
+			</replacerList>
+			<restrictedThoughts>
+				<li>EnvironmentDark_OGOrkoid</li>
+				<li>Ascetic_OGOrkoid</li>
+				<li>Greedy_OGOrkoid</li>
+				<li>ApparelDamaged_OGOrkoid</li>
+				<li>DeadMansApparel_OGOrkoid</li>
+				<!--li>HumanLeatherApparelSad_OGOrkoid</li-->
+				<li>HumanLeatherApparelHappy_OGOrkoid</li>
+				<li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
+				<li>AteRawHumanlikeMeat_OGOrkoid</li>
+				<li>BrawlerUnhappy_OGOrkoid</li>
+				<li>ShooterUnhappy_OGOrkoid</li>
+				<li>ColonistLeftUnburied_OGOrkoid</li>
+				<li>AteWithoutTable_OGOrkoid</li>
+				<li>SleptOutside_OGOrkoid</li>
+				<li>SleptOutside_OGOrkoid</li>
+				<li>SleptInCold_OGOrkoid</li>
+				<li>SleptInHeat_OGOrkoid</li>
+				<li>KnowPrisonerSold_OGOrkoid</li>
+				<li>KnowBuriedInSarcophagus_OGOrkoid</li>
+				<li>SoakingWet_OGOrkoid</li>
+				<li>ObservedLayingCorpse_OGOrkoid</li>
+				<li>ObservedLayingRottingCorpse_OGOrkoid</li>
+				<li>WitnessedDeathNonAlly_OGOrkoid</li>
+				<li>WitnessedDeathFamily_OGOrkoid</li>
+				<li>WitnessedDeathBloodlust_OGOrkoid</li>
+				<li>KilledHumanlikeBloodlust_OGOrkoid</li>
+				<li>DefeatedHostileFactionLeader_OGOrkoid</li>
+				<li>DefeatedHostileFactionLeaderOpinion_OGOrkoid</li>
+				<li>AteInsectMeatDirect_OGOrkoid</li>
+				<li>AteInsectMeatAsIngredient_OGOrkoid</li>
+				<li>AteCorpse_OGOrkoid</li>
+				<li>AteKibble_OGOrkoid</li>
+			</restrictedThoughts>
 			<cannotReceiveThoughts>
 				<!--
 					<li>ButcheredHumanlikeCorpse</li>
@@ -566,11 +566,11 @@
 				<li>KnowGuestOrganHarvested</li>
 				<li>SleptInBarracks</li>
 				
-					<li>AteOrkMeal</li>
-					<li>AteOrkFungusDirect</li>
-					<li>AteOrkFungusAsIngredient</li>
-					<li>DefeatedHostileFactionLeaderOpinion</li>
-				</cannotReceiveThoughts>
+				<li>AteOrkMeal</li>
+				<li>AteOrkFungusDirect</li>
+				<li>AteOrkFungusAsIngredient</li>
+				<li>DefeatedHostileFactionLeaderOpinion</li>
+			</cannotReceiveThoughts>
 		</thoughtSettings>
 		<relationSettings>
 				<relationChanceModifierParent>0</relationChanceModifierParent>
@@ -676,8 +676,8 @@
 				<li>OG_Plant_Orkoid_Cocoon</li>
 			</plantList>
 			<!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
-			<!--buildingList>
-				<li>OGO_SteleLarge</li>
+			<buildingList>
+				<!--li>OGO_SteleLarge</li>
 				<li>OGO_TableMachining</li>
 				<li>OGO_ElectricStove</li>
 				<li>OGO_FueledStove</li>
@@ -688,8 +688,8 @@
 				<li>OGO_Bed</li>
 				<li>OGO_Table1x2c</li>
 				<li>OGO_Table2x4c</li>
-				<li>OGO_ChemfuelPoweredGenerator</li>
-			</buildingList-->
+				<li>OGO_ChemfuelPoweredGenerator</li-->
+			</buildingList>
 			<blackBuildingList>
 				<li>SteleLarge</li>
 				<li>TableMachining</li>
@@ -700,8 +700,8 @@
 				<li>SimpleResearchBench</li>
 				<li>HiTechResearchBench</li>
 				<li>Bed</li>
-				<li>Table1x2c</li>
-				<li>Table2x4c</li>
+				<!--li>Table1x2c</li>
+				<li>Table2x4c</li-->
 				<li>ChemfuelPoweredGenerator</li>
 			</blackBuildingList>
 			<conceptList>
@@ -717,12 +717,12 @@
 		<ComfyTemperatureMax>35</ComfyTemperatureMax>
 		<LeatherAmount>15</LeatherAmount>
 		<CarryingCapacity>50</CarryingCapacity>
-	<PsychicSensitivity>0.35</PsychicSensitivity>
-	<MiningSpeed>0.8</MiningSpeed>
-	<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
-	<AimingDelayFactor>0.75</AimingDelayFactor>
-	<MentalBreakThreshold>0.045</MentalBreakThreshold>
-	<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+		<PsychicSensitivity>0.35</PsychicSensitivity>
+		<MiningSpeed>0.8</MiningSpeed>
+		<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
+		<AimingDelayFactor>0.75</AimingDelayFactor>
+		<MentalBreakThreshold>0.045</MentalBreakThreshold>
+		<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
 		<PainShockThreshold>0.75</PainShockThreshold>
 		<ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
 		<GlobalLearningFactor>0.75</GlobalLearningFactor>

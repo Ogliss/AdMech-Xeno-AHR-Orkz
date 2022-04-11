@@ -27,31 +27,31 @@ namespace AdeptusMechanicus
 		private float Craves => 0.5f;
 		private float Requires => 0.7f;
 		private float Obsessed => 0.9f;
-		public FightynessCategory CurCategory
+		public RowdynessCategory CurCategory
 		{
 			get
 			{
 				if (base.CurLevelPercentage < Wants) // 0.0500000007450581
 				{
-					return FightynessCategory.Free;
+					return RowdynessCategory.Free;
 				}
 				if (base.CurLevelPercentage < Desires) // 0.200000002980232
 				{
-					return FightynessCategory.Wants;
+					return RowdynessCategory.Wants;
 				}
 				if (base.CurLevelPercentage < Craves) // 0.400000005960464
 				{
-					return FightynessCategory.Desires;
+					return RowdynessCategory.Desires;
 				}
 				if (base.CurLevelPercentage < Requires) // 0.600000023841858
 				{
-					return FightynessCategory.Craves;
+					return RowdynessCategory.Craves;
 				}
 				if (base.CurLevelPercentage > Obsessed) // 0.800000011920929
 				{
-					return FightynessCategory.Requires;
+					return RowdynessCategory.Requires;
 				}
-				return FightynessCategory.Obsessed;
+				return RowdynessCategory.Obsessed;
 			}
 		}
 
@@ -124,40 +124,72 @@ namespace AdeptusMechanicus
 					this.CurLevel = Mathf.Clamp(this.CurLevel+num2, 0, 1f);
 
 					this.lastEffectiveDelta = this.CurLevel - curLevel;
-					if (pawn.isOrk() && !(pawn.MentalState is MentalState_SocialFighting) && CurCategory != FightynessCategory.Free && Math.Sign(this.lastEffectiveDelta) > 0)
+					if (pawn.isOrk() && !(pawn.MentalState is MentalState_SocialFighting) && CurCategory != RowdynessCategory.Free && Math.Sign(this.lastEffectiveDelta) > 0)
 					{
                         Rand.PushState();
-					//	Log.Message(pawn.NameShortColored + " will start a fight "+ this.CurLevelPercentage +"%");
+					//	if (AMAMod.Dev) Log.Message(pawn.NameShortColored + " will start a fight "+ this.CurLevelPercentage +"%");
 						if (Rand.Chance((this.CurLevelPercentage / 100f)*pawn.health.summaryHealth.SummaryHealthPercent))
 						{
+							Orkoid Orkiness = pawn.Orkiness();
 							Orkoid maxOrkiness;
-							int val1 = (int)pawn.Orkiness() + (int)CurCategory;
+
+							int val1 = (int)Orkiness + (5 - (int)CurCategory);
 							switch (CurCategory)
 							{
-								case FightynessCategory.Obsessed:
-									maxOrkiness = (Orkoid)Math.Min(val1, 9);
+								case RowdynessCategory.Obsessed:
+									maxOrkiness = (Orkoid)Math.Min(val1, (int)Orkoid.Warboss);
 									break;
-								case FightynessCategory.Requires:
-									maxOrkiness = (Orkoid)Math.Min(val1, 8);
+								case RowdynessCategory.Requires:
+									maxOrkiness = (Orkoid)Math.Min(val1, (int)Orkoid.Warboss);
 									break;
-								case FightynessCategory.Craves:
-                                    maxOrkiness = (Orkoid)Math.Min(val1, 6);
+								case RowdynessCategory.Craves:
+                                    maxOrkiness = (Orkoid)Math.Min(val1, (int)Orkoid.Warboss);
 									break;
-								case FightynessCategory.Desires:
+								case RowdynessCategory.Desires:
 									maxOrkiness = Orkoid.Ork;
 									break;
 								default:
 									maxOrkiness = Orkoid.Snotling;
 									break;
 							}
+                            if (maxOrkiness > Orkoid.Warboss)
+                            {
+								maxOrkiness = Orkoid.Warboss;
+							}
 							//	Log.Message("if it can find something to krump.....");
-							Pawn t = FightynessUtility.FindKrumpablePawn(pawn, this.CurCategory, maxOrkiness);
+							Pawn t = RowdynessUtility.FindKrumpablePawnFor(pawn, this.CurCategory, maxOrkiness);
 							if (t != null)
 							{
 								//	Log.Message("gonna try and krump "+t.NameShortColored);
-								FightynessUtility.StartScrap(pawn ,t);
+								RowdynessUtility.StartScrap(pawn ,t);
 							}
                         }
+						Rand.PopState();
+					}
+                    if (pawn.isGrot())
+                    {
+						Rand.PushState();
+						if (Rand.Chance((this.CurLevelPercentage / 100f) * pawn.health.summaryHealth.SummaryHealthPercent))
+						{
+							switch (CurCategory)
+							{
+								case RowdynessCategory.Obsessed:
+
+									break;
+								case RowdynessCategory.Requires:
+
+									break;
+								case RowdynessCategory.Craves:
+
+									break;
+								case RowdynessCategory.Desires:
+
+									break;
+								default:
+
+									break;
+							}
+						}
 						Rand.PopState();
 					}
 				}

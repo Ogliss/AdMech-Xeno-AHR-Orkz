@@ -6,7 +6,7 @@
 		<label>greenskin refugee group</label>
 		<pawnSingular>refugee</pawnSingular>
 		<pawnsPlural>refugees</pawnsPlural>
-		<categoryTag>OutlanderRefugee</categoryTag>
+		<categoryTag>OG_OutlanderRefugee_Ork</categoryTag>
 		<canMakeRandomly>false</canMakeRandomly>
 		<canSiege>false</canSiege>
 		<canStageAttacks>false</canStageAttacks>

@@ -17,7 +17,7 @@ namespace AdeptusMechanicus
 
         static AMOMain()
         {
-            List<string> blackTags = new List<string>() { "I", "C" };
+            List<string> blackTags = ArmouryMain.humansTags;
             List<ResearchProjectDef> blackProjects = new List<ResearchProjectDef>();
             blackProjects.AddRange(ArmouryMain.ReseachImperial);
             blackProjects.AddRange(ArmouryMain.ReseachChaos);

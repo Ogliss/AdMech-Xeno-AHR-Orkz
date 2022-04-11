@@ -14,7 +14,7 @@
 						</pawnKinds>
 					</li-->
 					<li>
-						<categoryTag>OutlanderOrk</categoryTag>
+						<categoryTag>OG_Outlander_Ork</categoryTag>
 						<pawnKinds>
 						  <li>OG_Ork_Boy_Runt</li>
 						  <li>Slave_OG_Grot</li>
@@ -29,7 +29,7 @@
 						</pawnKinds>
 					</li>
 					<li>
-						<categoryTag>TribalOrk</categoryTag>
+						<categoryTag>OG_Tribal_Ork</categoryTag>
 						<pawnKinds>
 						  <li>OG_Ork_Feral_Boy_Runt</li>
 						  <li>OG_Ork_Feral_Boy_Choppa</li>
@@ -50,7 +50,7 @@
 						</pawnKinds>
 					</li-->
 					<li>
-						<categoryTag>OutlanderOrk</categoryTag>
+						<categoryTag>OG_Outlander_Ork</categoryTag>
 						<pawnKinds>
 						  <li>OG_Ork_Boy_Runt</li>
 						  <li>OG_Ork_Boy_Choppa</li>
@@ -62,7 +62,7 @@
 						</pawnKinds>
 					</li>
 					<li>
-						<categoryTag>TribalOrk</categoryTag>
+						<categoryTag>OG_Tribal_Ork</categoryTag>
 						<pawnKinds>
 						  <li>OG_Ork_Feral_Boy_Runt</li>
 						  <li>OG_Ork_Feral_Boy_Choppa</li>
@@ -84,14 +84,14 @@
 							<storeAs>lodgersPawnKind</storeAs>
 							<choices>
 								<li>
-									<categoryTag>OutlanderOrk</categoryTag>
+									<categoryTag>OG_Outlander_Ork</categoryTag>
 									<pawnKinds>
 									  <li>OG_Squig</li>
 									  <li>OG_Snotling</li>
 									</pawnKinds>
 								</li>
 								<li>
-									<categoryTag>TribalOrk</categoryTag>
+									<categoryTag>OG_Tribal_Ork</categoryTag>
 									<pawnKinds>
 									  <li>OG_Squig</li>
 									  <li>OG_Snotling</li>

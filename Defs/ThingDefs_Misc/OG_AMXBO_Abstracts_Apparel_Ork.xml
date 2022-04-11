@@ -4,6 +4,10 @@
 	<!-- ========================= Ork - Clothes Base - Apparel Base ========================== -->
 	<ThingDef Name="OG_Ork_Apparel_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Outlander_Ork</li>
+				<li>OG_OutlanderRefugee_Ork</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<tags>
 				<li>OrkApparel</li>
 			</tags>
@@ -15,6 +19,12 @@
 	
 	<!-- ========================= Ork - Clothes Base - Apparel Makable Base ========================== -->
 	<ThingDef Name="OG_Ork_Apparel_Makeable" ParentName="OG_Ork_Apparel_Base" Abstract="True">
+		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Tribal_Ork</li>
+				<li>OG_TribalRefugee_Ork</li>
+			</ideoDesireAllowedFactionCategoryTags>
+		</apparel>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -64,6 +74,10 @@
 	<ThingDef Name="OG_Ork_Apparel_Armor_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Outlander_Ork</li>
+				<li>OG_OutlanderRefugee_Ork</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<tags>
 				<li>OrkApparel</li>
 			</tags>
@@ -118,7 +132,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Ork - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OG_Ork_Apparel_Wargear_Base" ParentName="OG_Apparel_Base" Abstract="True">
+	<ThingDef Name="OG_Ork_Apparel_Wargear_Base" ParentName="OG_Apparel_Wargear_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>OrkWargear</li>

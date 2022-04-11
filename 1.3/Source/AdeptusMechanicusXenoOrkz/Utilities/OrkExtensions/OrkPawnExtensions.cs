@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 using Verse.AI;
 
 namespace AdeptusMechanicus.ExtensionMethods
@@ -22,7 +23,12 @@ namespace AdeptusMechanicus.ExtensionMethods
 
         public static bool isSquig(this Pawn pawn)
         {
-            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Squig");
+            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Squig") && !pawn.def.defName.Contains("Squiggoth");
+        }
+
+        public static bool isSquiggoth(this Pawn pawn)
+        {
+            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Squiggoth");
         }
 
         public static bool isSnotling(this Pawn pawn)
@@ -34,49 +40,44 @@ namespace AdeptusMechanicus.ExtensionMethods
         {
             if (pawn.isOrkoid())
             {
-                if (pawn.def.defName.Contains("Gargantuan"))
+                LifeStageDef stage = pawn.ageTracker.CurLifeStage;
+                if (pawn.RaceProps.Humanlike)
                 {
-                    return Orkoid.GargantuanSquiggoth;
-                }
-                else
-                if (pawn.def.defName.Contains("Squiggoth"))
-                {
-                    return Orkoid.Squiggoth;
-                }
-                else
-                if (pawn.isOrk())
-                {
-                    if (pawn.kindDef.defName.Contains("Warboss"))
+                    if (pawn.isGrot())
+                        return Orkoid.Grot;
+                    if (pawn.isOrk())
                     {
-                        return Orkoid.Warboss;
-                    }
-                    else
-                    if (pawn.kindDef.defName.Contains("Nob"))
-                    {
-                        return Orkoid.Nob;
-                    }
-                    else
-                    if (pawn.kindDef.defName.Contains("Runt"))
-                    {
-                        return Orkoid.Runt;
-                    }
-                    else
+                        if (stage.label.Contains("Runt") || stage.label.Contains("Whelp") || stage.label.Contains("Git"))
+                            return Orkoid.Runt;
+                        if (stage.label.Contains("Boss"))
+                            return Orkoid.Warboss;
+                        if (stage.label.Contains("Nob"))
+                            return Orkoid.Nob;
                         return Orkoid.Ork;
+                    }
                 }
                 else
-                if (pawn.isGrot())
                 {
-                    return Orkoid.Grot;
-                }
-                else
-                if (pawn.isSnotling())
-                {
-                    return Orkoid.Snotling;
-                }
-                else
-                if (pawn.isSquig())
-                {
-                    return Orkoid.Squig;
+                    if (pawn.isSnotling())
+                        return Orkoid.Snotling;
+                    if (pawn.isSquiggoth())
+                    {
+                        if (stage.label.Contains("gargantuan"))
+                            return Orkoid.GargantuanSquiggoth;
+                        return Orkoid.Squiggoth;
+                    }
+                    if (pawn.isSquig())
+                    {
+                        if (stage.label.Contains("baby") || /*stage.label.Contains("juvenile") ||*/ pawn.def == AdeptusThingDefOf.OG_Squig_Eatin || pawn.def == AdeptusThingDefOf.OG_Squig_Oily)
+                            return Orkoid.Squigling;
+                        if (stage.label.Contains("big"))
+                            return Orkoid.BigSquig;
+                        if (stage.label.Contains("massive"))
+                            return Orkoid.MassiveSquig;
+                        if (stage.label.Contains("colossal"))
+                            return Orkoid.ColossalSquig;
+                        return Orkoid.Squig;
+                    }
                 }
             }
             return Orkoid.NonOrkoid;

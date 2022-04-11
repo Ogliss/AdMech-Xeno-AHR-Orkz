@@ -3,14 +3,18 @@
     public enum Orkoid
     {
         NonOrkoid,
-        Squig,
+        Squigling,
         Snotling,
         Grot,
         Runt,
+        Squig,
         Ork,
         Nob,
+        BigSquig,
         Warboss,
+        MassiveSquig,
         Squiggoth,
+        ColossalSquig,
         GargantuanSquiggoth
     }
 }

@@ -4,7 +4,7 @@
 	<FactionDef Name="OG_Ork_Tek_Faction_Base" ParentName="FactionBase">
 		<defName>OG_Ork_Tek_Faction</defName>
 		<label>ork warband</label>
-		<categoryTag>OutlanderOrk</categoryTag>
+		<categoryTag>OG_Outlander_Ork</categoryTag>
 		<description>The Orks, also called Greenskins, are a savage, warlike, green-skinned race of humanoids who are spread all across the Milky Way Galaxy. They are seen by their enemies as savage, warlike, and crude, but they are the most successful species in the whole galaxy, outnumbering possibly every other intelligent race, even Mankind.\n\nGreenskins are one of the most dangerous alien races to plague the galaxy. Numerous beyond belief and driven always to fight and conquer, the Orks threaten every single intelligent species of the galaxy. Orks are possibly the most warlike aliens in the 41st Millennium, and their number is beyond counting. Amid constant, seething tides of war and bloodshed, burgeoning Ork stellar empires rise and fall. Mercifully most are short-lived, soon destroying themselves in a maelstrom of violence and internecine conflict, but should the Orks ever truly unify, they would crush all opposition.</description>
 		<pawnSingular>ork</pawnSingular>
 		<pawnsPlural>orkz</pawnsPlural>
