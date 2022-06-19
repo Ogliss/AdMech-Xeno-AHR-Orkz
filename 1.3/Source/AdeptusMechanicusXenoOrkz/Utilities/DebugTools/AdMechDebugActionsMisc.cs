@@ -13,7 +13,7 @@ namespace Verse
     public static class AdMechDebugActionsMisc
 	{
 		// Verse.DebugToolsSpawning
-		[DebugAction("General", "Mature All plants of Def...", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+		[DebugAction("Adeptus", "Mature All plants of Def...", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
 		private static void MatureAllPlantsOf()
 		{
 			List<DebugMenuOption> list = new List<DebugMenuOption>();

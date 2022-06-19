@@ -20,6 +20,8 @@
 				</categories>
 			</li>
 		</backstoryFilters>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">85</configurationListOrderPriority>
 		<allowedCultures IgnoreIfNoMatchingField="True">
 			<li>OG_Greenskin_Goffs</li>
 		</allowedCultures>

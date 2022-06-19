@@ -95,7 +95,6 @@
 			<notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Grot</li>
-				<li>OG_Cyborg_Ork</li>
 			</notXenophobistTowards>
 			<factionRelations>
 				<li>
@@ -206,9 +205,9 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(0.85, 0.85)</customDrawSize>
+				<customDrawSize>(1, 1)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				<customHeadDrawSize>(0.775, 0.775)</customHeadDrawSize>
+				<customHeadDrawSize>(0.7, 0.7)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
 					<north>(0.0, -0.15)</north>
@@ -224,7 +223,7 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.00, 1.00)</customDrawSize>
+				<customDrawSize>(1.15, 1.15)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(0.85, 0.85)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
@@ -242,7 +241,7 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.125, 1.125)</customDrawSize>
+				<customDrawSize>(1.35, 1.35)</customDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<customHeadDrawSize>(0.95, 0.95)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
@@ -254,8 +253,8 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.25, 1.25)</customDrawSize>
-				<customPortraitDrawSize>(1.25, 1.25)</customPortraitDrawSize>
+				<customDrawSize>(1.55, 1.55)</customDrawSize>
+				<customPortraitDrawSize>(1.35, 1.35)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<!--customHeadDrawSize>(1.05, 1.05)</customHeadDrawSize-->
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
@@ -273,8 +272,8 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.3, 1.3)</customDrawSize>
-				<customPortraitDrawSize>(1.3, 1.3)</customPortraitDrawSize>
+				<customDrawSize>(1.6, 1.6)</customDrawSize>
+				<customPortraitDrawSize>(1.35, 1.35)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
 				<!--customHeadDrawSize>(1.075, 1.075)</customHeadDrawSize-->
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
@@ -292,16 +291,16 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.35, 1.35)</customDrawSize>
+				<customDrawSize>(1.65, 1.65)</customDrawSize>
 				<customPortraitDrawSize>(1.35, 1.35)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				<!--customHeadDrawSize>(1.1, 1.1)</customHeadDrawSize-->
+				<customHeadDrawSize>(1.3, 1.3)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
 					<north>(0.0, 0.15)</north>
 					<south>(0.0, -0.00)</south>
-					<east>(0.200, 0.0)</east>
-					<west>(-0.200, 0.0)</west>
+					<east>(0.2100, 0.0)</east>
+					<west>(-0.2100, 0.0)</west>
 				</headOffsetDirectional>
 			</li>
 			<li>
@@ -311,16 +310,16 @@
 				<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
 				<head>Things/Pawn/Humanlike/Ork/Head/</head>
                 <skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
-				<customDrawSize>(1.5, 1.5)</customDrawSize>
+				<customDrawSize>(1.7, 1.7)</customDrawSize>
 				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
 				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				<!--customHeadDrawSize>(1.2, 1.2)</customHeadDrawSize-->
+				<customHeadDrawSize>(1.3, 1.3)</customHeadDrawSize>
 				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
 				<headOffsetDirectional>
 					<north>(0.0, 0.22)</north>
 					<south>(0.0, -0.00)</south>
-					<east>(0.200, 0.0)</east>
-					<west>(-0.200, 0.0)</west>
+					<east>(0.2200, 0.0)</east>
+					<west>(-0.2200, 0.0)</west>
 				</headOffsetDirectional>
 			</li>
 		</graphicPaths>
@@ -341,7 +340,6 @@
 					<raceList>
 							<!--li>OG_Alien_Grot</li-->
 							<li>OG_Alien_Ork</li>
-							<li>OG_Cyborg_Ork</li>
 					</raceList>
 					<thought>ButcheredOrkoidCorpse_OGOrkoid</thought>
 					<knowThought>KnowButcheredOrkoidCorpse_OGOrkoid</knowThought>
@@ -352,7 +350,6 @@
 					<raceList>
 							<!--li>OG_Alien_Grot</li-->
 							<li>OG_Alien_Ork</li>
-							<li>OG_Cyborg_Ork</li>
 					</raceList>
 					<thought>AteOrkoidMeatDirect_OGOrkoid</thought>
 					<ingredientThought>AteOrkoidMeatAsIngredient_OGOrkoid</ingredientThought>
@@ -517,10 +514,10 @@
 			</restrictedThoughts>
 			<cannotReceiveThoughts>
 				<!--
-					<li>ButcheredHumanlikeCorpse</li>
+				<li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-					<li>AteHumanlikeMeatDirect</li>
-					<li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteHumanlikeMeatDirect</li>
+				<li>AteHumanlikeMeatAsIngredient</li>
 				
 				<li>ObservedLayingCorpse</li>
 				<li>AteWithoutTable</li>
@@ -873,16 +870,11 @@
 			</FoodPoisonCause>
 		</li>
 		<li Class="AdeptusMechanicus.CompProperties_Regeneration">
-			<healFreshWounds>true</healFreshWounds>
 			<healFreshChance>0.5</healFreshChance>
-			<allowSealWounds>false</allowSealWounds>
 			<sealWoundsChance>0.1</sealWoundsChance>
-			<healPermenantWounds>true</healPermenantWounds>
 			<healPermenantChance>0.1</healPermenantChance>
-			<allowScarRemoval>false</allowScarRemoval>
-			<scarRemovalChance>0.01</scarRemovalChance>
-			<regrowMissingParts>true</regrowMissingParts>
 			<regrowMissingChance>0.01</regrowMissingChance>
+			<healTickInterval>2500</healTickInterval>
 			<useFood>true</useFood>
 			<useRest>false</useRest>
 			<onlyWhileSleeping>false</onlyWhileSleeping>

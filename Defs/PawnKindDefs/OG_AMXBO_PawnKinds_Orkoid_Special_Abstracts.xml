@@ -138,7 +138,7 @@
 </PawnKindDef>
 
 <PawnKindDef Abstract="True" Name="OG_Ork_Player_Boss_Base" ParentName="OG_Ork_Player_Base">
-	<minGenerationAge>50</minGenerationAge>
+	<minGenerationAge>80</minGenerationAge>
 </PawnKindDef>
 
 <!-- ============================ Grot Player Base ========================== -->

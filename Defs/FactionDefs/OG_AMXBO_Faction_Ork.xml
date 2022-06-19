@@ -19,6 +19,8 @@
 		<earliestRaidDays>45</earliestRaidDays>
 		<factionNameMaker>OG_Ork_NamerFaction</factionNameMaker>
 		<settlementNameMaker>OG_Ork_NamerBases</settlementNameMaker>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">70</configurationListOrderPriority>
 		<techLevel>Industrial</techLevel>
 		<backstoryFilters>
 			<li>

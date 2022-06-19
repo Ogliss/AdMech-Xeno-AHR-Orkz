@@ -46,32 +46,32 @@
 		<manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 		<litterSizeCurve>
-		<points>
-			<li>(0.5, 0)</li>
-			<li>(1, 1)</li>
-			<li>(2, 1.7)</li>
-			<li>(2.5, 0.7)</li>
-			<li>(3, 0)</li>
-		</points>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(2, 1.7)</li>
+				<li>(2.5, 0.7)</li>
+				<li>(3, 0)</li>
+			</points>
 		</litterSizeCurve>
 		<lifeExpectancy>10</lifeExpectancy>
 		<lifeStageAges>
-		<li>
-			<def>AnimalBaby</def>
-			<minAge>0</minAge>
-		</li>
-		<li>
-			<def>AnimalJuvenile</def>
-			<minAge>0.1</minAge>
-		</li>
-		<li>
-			<def>AnimalAdult</def>
-			<minAge>0.25</minAge>
-			<soundWounded>Pawn_Warg_Wounded</soundWounded>
-			<soundDeath>Pawn_Warg_Death</soundDeath>
-			<soundCall>Pawn_Warg_Call</soundCall>
-			<soundAngry>Pawn_Warg_Angry</soundAngry>
-		</li>
+			<li>
+				<def>AnimalBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>AnimalJuvenile</def>
+				<minAge>0.1</minAge>
+			</li>
+			<li>
+				<def>AnimalAdult</def>
+				<minAge>0.25</minAge>
+				<soundWounded>Pawn_Warg_Wounded</soundWounded>
+				<soundDeath>Pawn_Warg_Death</soundDeath>
+				<soundCall>Pawn_Warg_Call</soundCall>
+				<soundAngry>Pawn_Warg_Angry</soundAngry>
+			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 		<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
@@ -138,31 +138,7 @@
 		<li>AnimalOrk</li>
 	</tradeTags>
 	<comps>
-		<!--li Class="FeralOrkz.CompProperties_FoodPoisonProtection">
-		<Poisonable>true</Poisonable>
-		<FoodPoisonCause>
-			<li>DangerousFoodType</li>
-			<li>FilthyKitchen</li>
-			<li>IncompetentCook</li>
-			<li>Rotten</li>
-			<li>Unknown</li>
-		</FoodPoisonCause>
-		</li>
-		<li Class="FeralOrkz.CompProperties_Regeneration">
-		<healFreshWounds>true</healFreshWounds>
-		<healFreshChance>0.5</healFreshChance>
-		<allowSealWounds>false</allowSealWounds>
-		<sealWoundsChance>0.1</sealWoundsChance>
-		<healPermenantWounds>true</healPermenantWounds>
-		<healPermenantChance>0.1</healPermenantChance>
-		<allowScarRemoval>false</allowScarRemoval>
-		<scarRemovalChance>0.01</scarRemovalChance>
-		<regrowMissingParts>true</regrowMissingParts>
-		<regrowMissingChance>0.01</regrowMissingChance>
-		<useFood>true</useFood>
-		<useRest>false</useRest>
-		<onlyWhileSleeping>false</onlyWhileSleeping>
-		</li-->
+	
 	</comps>
 	<modExtensions>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">

@@ -22,10 +22,10 @@ namespace AdeptusMechanicus
 			this.threshPercents.Add(Requires);
 			this.threshPercents.Add(Obsessed);
 		}
-		private float Wants => 0.15f;
-		private float Desires => 0.3f;
-		private float Craves => 0.5f;
-		private float Requires => 0.7f;
+		private float Wants => 0.3f;
+		private float Desires => 0.5f;
+		private float Craves => 0.65f;
+		private float Requires => 0.85f;
 		private float Obsessed => 0.9f;
 		public RowdynessCategory CurCategory
 		{
@@ -112,7 +112,7 @@ namespace AdeptusMechanicus
 					if (this.Fought || pawn.Downed)
 					{
 					//	if (AMAMod.Dev && this.Fought) Log.Message(pawn + " fought recently");
-						num2 = -(num2 * (foughtSocially || pawn.Downed ? 0.25f : 1f));
+						num2 = -(num2 * (foughtSocially || pawn.Downed ? 0.5f : 1f));
                         if (this.Fought && TicksSatisfied > satisifiedTicks)
 						{
 							if (AMAMod.Dev) Log.Message(pawn + " now needs to fight again");
@@ -199,8 +199,9 @@ namespace AdeptusMechanicus
 		{
 			get
 			{
-				int remaining = Mathf.Max(0, Find.TickManager.TicksGame - lastFoughtTick);
-				if (AMAMod.Dev) Log.Message(this.pawn.NameShortColored + " Cur Tick: "+ Find.TickManager.TicksGame+ " last Attack Tick: " + lastFoughtTick + " remaining satisifiedTicks: " + (satisifiedTicks - remaining));
+				int happyUntill = (lastFoughtTick + satisifiedTicks);
+				int remaining = Mathf.Max(0, happyUntill - Find.TickManager.TicksGame);
+				if (AMAMod.Dev) Log.Message($"{this.pawn.NameShortColored}, Cur Tick: {Find.TickManager.TicksGame}, Last Attack Tick: {lastFoughtTick}, Disabled Until: {happyUntill} remaining satisifiedTicks: {remaining}");
 				return remaining;
 			}
 		}
@@ -265,7 +266,7 @@ namespace AdeptusMechanicus
 			Scribe_Values.Look<int>(ref this.lastFoughtTick, "lastFoughtTick", -99999, false);
 		}
 
-		private const float DeltaFactor_InBed = 0.2f;
+		private const float DeltaFactor_InBed = 0.02f;
 		private float lastEffectiveDelta;
 		public bool fought = false;
 		public bool foughtSocially = false;

@@ -161,7 +161,6 @@
 					<raceList>
 						<li>OG_Alien_Grot</li>
 						<li>OG_Alien_Ork</li>
-						<li>OG_Cyborg_Ork</li>
 					</raceList>
 					<thought>ButcheredOrkoidCorpse_OGOrkoid</thought>
 					<knowThought>KnowButcheredOrkoidCorpse_OGOrkoid</knowThought>
@@ -172,7 +171,6 @@
 					<raceList>
 						<li>OG_Alien_Grot</li>
 						<li>OG_Alien_Ork</li>
-						<li>OG_Cyborg_Ork</li>
 					</raceList>
 					<thought>AteOrkoidMeatDirect_OGOrkoid</thought>
 					<ingredientThought>AteOrkoidMeatAsIngredient_OGOrkoid</ingredientThought>
@@ -884,15 +882,8 @@
 			</FoodPoisonCause>
 		</li>
 		<li Class="AdeptusMechanicus.CompProperties_Regeneration">
-			<healFreshWounds>true</healFreshWounds>
 			<healFreshChance>0.5</healFreshChance>
-			<allowSealWounds>false</allowSealWounds>
-			<sealWoundsChance>0.1</sealWoundsChance>
-			<healPermenantWounds>true</healPermenantWounds>
 			<healPermenantChance>0.1</healPermenantChance>
-			<allowScarRemoval>false</allowScarRemoval>
-			<scarRemovalChance>0.01</scarRemovalChance>
-			<regrowMissingParts>true</regrowMissingParts>
 			<regrowMissingChance>0.01</regrowMissingChance>
 			<useFood>true</useFood>
 			<useRest>false</useRest>

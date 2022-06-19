@@ -18,6 +18,8 @@
 		<leaderTitle>Feral Warboss</leaderTitle>
 		<factionNameMaker>OG_Ork_NamerFaction</factionNameMaker>
 		<settlementNameMaker>OG_Ork_NamerBases</settlementNameMaker>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">70</configurationListOrderPriority>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 			<li>

@@ -70,9 +70,12 @@
 				<li>
 					<defName>DislikesMen</defName>
 				</li>
-				</disallowedTraits>
-				<alienPartGenerator>
+			</disallowedTraits>
+			<alienPartGenerator>
+				<borderScale>1.4</borderScale>
+				<atlasScale>2</atlasScale>
 				<bodyAddons>
+					<!-- Ears -->
 					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<debug>false</debug>
 						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
@@ -86,7 +89,7 @@
 						<!--drawSize>(0.85, 0.85)</drawSize-->
 						<offsets>
 							<south>
-								<layerOffset>-0.0</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
@@ -104,7 +107,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>-0.0</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
@@ -112,6 +115,15 @@
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>skin</colorChannel>
 						<hiddenUnderApparelFor>
@@ -132,7 +144,7 @@
 						<!--drawSize>(0.85, 0.85)</drawSize-->
 						<offsets>
 							<south>
-								<layerOffset>0.0</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.00,0.0)</Thin>
 								</bodyTypes>
@@ -150,7 +162,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.0</layerOffset>
+								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.00,0.00)</Thin>
 								</bodyTypes>
@@ -158,6 +170,15 @@
 									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>skin</colorChannel>
 						<hiddenUnderApparelFor>
@@ -199,7 +220,7 @@
 						</second-->
 					</li>
 				</colorChannels>
-				</alienPartGenerator>
+			</alienPartGenerator>
 		</generalSettings>
 		<styleSettings>
 			<li>

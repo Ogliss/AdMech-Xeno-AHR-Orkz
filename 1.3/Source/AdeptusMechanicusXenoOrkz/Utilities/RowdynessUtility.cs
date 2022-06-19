@@ -73,8 +73,11 @@ namespace AdeptusMechanicus
 		private static List<Pawn> workingList = new List<Pawn>();
 
 		public static bool GetsRowdy(Pawn pawn, float CurLevelPercentage)
-        {
-			return Rand.Chance((CurLevelPercentage / 100f) * pawn.health.summaryHealth.SummaryHealthPercent);
+		{
+			Rand.PopState();
+			bool result = Rand.Chance((CurLevelPercentage / 100f) * pawn.health.summaryHealth.SummaryHealthPercent);
+			Rand.PushState();
+			return result;
 		}
 
 	}

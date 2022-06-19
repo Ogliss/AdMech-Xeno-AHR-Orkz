@@ -78,6 +78,8 @@
 				</li>
 			</disallowedTraits>
 			<alienPartGenerator>
+				<borderScale>1.5</borderScale>
+				<atlasScale>2</atlasScale>
 				<bodyAddons>
 					<!-- Eyes -->
 					<li Class="AdeptusMechanicus.LinkedBodyAddon">
@@ -91,7 +93,7 @@
 						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -110,7 +112,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -119,6 +121,16 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -143,7 +155,7 @@
 						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -162,7 +174,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -171,6 +183,16 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -197,7 +219,7 @@
 						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -216,7 +238,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -225,6 +247,16 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>skinEars</colorChannel>
 						<hiddenUnderApparelFor>
@@ -246,7 +278,7 @@
 						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(0.00,0.0)</Hulk>
@@ -256,7 +288,7 @@
 								</crownTypes>
 							</south>
 							<north>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 									<Hulk>(0,0.0)</Hulk>
@@ -266,7 +298,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 									<Hulk>(-0.00,0.0)</Hulk>
@@ -275,6 +307,16 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+									<Hulk>(-0.00,0.0)</Hulk>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>skinEars</colorChannel>
 						<hiddenUnderApparelFor>
@@ -340,7 +382,7 @@
 						<defaultOffset>Center</defaultOffset>
 						<offsets>
 							<south>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -349,7 +391,7 @@
 								</crownTypes>
 							</south>
 							<north>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(0,0.0)</Male>
 								</bodyTypes>
@@ -358,7 +400,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -366,6 +408,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2741</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -389,7 +440,7 @@
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -407,7 +458,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -415,6 +466,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -441,7 +501,7 @@
 						<bodyTypeRequirement>Male</bodyTypeRequirement>
 						<offsets>
 							<south>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -459,7 +519,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2740</layerOffset>
+								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Male>(-0.00,0.0)</Male>
 								</bodyTypes>
@@ -467,6 +527,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -494,7 +563,7 @@
 						<!--drawSize>(1.075, 1.0)</drawSize-->
 						<offsets>
 							<south>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -503,7 +572,7 @@
 								</crownTypes>
 							</south>
 							<north>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0)</Hulk>
 								</bodyTypes>
@@ -512,7 +581,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -520,6 +589,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -544,7 +622,7 @@
 						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -553,7 +631,7 @@
 								</crownTypes>
 							</south>
 							<north>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
@@ -562,7 +640,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.00,0.0)</Hulk>
 								</bodyTypes>
@@ -570,6 +648,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
@@ -597,7 +684,7 @@
 						<!--drawSize>(1.15, 1.15)</drawSize-->
 						<offsets>
 							<south>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -606,7 +693,7 @@
 								</crownTypes>
 							</south>
 							<north>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.2741</layerOffset>
 								<bodyTypes>
 									<Hulk>(0,0.0)</Hulk>
 								</bodyTypes>
@@ -615,7 +702,7 @@
 								</crownTypes>
 							</north>
 							<east>
-								<layerOffset>0.2741</layerOffset>
+								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Hulk>(-0.0,0.0)</Hulk>
 								</bodyTypes>
@@ -623,6 +710,15 @@
 									<Average_Ork>(-0.0,0.0)</Average_Ork>
 								</crownTypes>
 							</east>
+							<west>
+								<layerOffset>-0.2741</layerOffset>
+								<bodyTypes>
+									<Male>(-0.00,0.0)</Male>
+								</bodyTypes>
+								<crownTypes>
+									<Average_Ork>(-0.0,0.0)</Average_Ork>
+								</crownTypes>
+							</west>
 						</offsets>
 						<colorChannel>none</colorChannel>
 						<!--colorChannel>skin</colorChannel-->
