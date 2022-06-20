@@ -1,5 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<!--============================== Beds ==============================-->
+	
+	<ThingDef ParentName="BedWithQualityBase">
+		<defName>OGO_Bed</defName>
+		<label>bed</label>
+		<description>A cozy mattress and sheets on a frame for resting.</description>
+		<graphicData>
+			<texPath>Things/Building/Ork/Furniture/Bed/BedScrap</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>EndTable</li>
+					<li>Dresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<designationHotKey>Misc2</designationHotKey>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconScale>0.90</uiIconScale>
+	</ThingDef>
 
 	<!--======================= Basic domestic furniture ==============================-->
 
@@ -146,11 +203,11 @@
 	</ThingDef-->
 
 	<!-- Table -->
-	<ThingDef ParentName="TableGatherSpotBase">
+	<!--ThingDef ParentName="TableGatherSpotBase">
 		<defName>OGO_Table1x2c</defName>
 		<label>table (1x2)</label>
 		<graphicData>
-			<texPath>Things/Building/Ork/Furniture/Table1x2</texPath>
+			<texPath>Things/Building/Ork/Furniture/TableScrap1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 			<damageData>
@@ -170,7 +227,7 @@
 		</statBases>
 		<size>(1,2)</size>
 		<costStuffCount>28</costStuffCount>
-	</ThingDef>
+	</ThingDef-->
 
 	<!--ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table2x2c</defName>
@@ -199,7 +256,7 @@
 		<rotatable>false</rotatable>
 	</ThingDef-->
 
-	<ThingDef ParentName="TableGatherSpotBase">
+	<!--ThingDef ParentName="TableGatherSpotBase">
 		<defName>OGO_Table2x4c</defName>
 		<label>table (2x4)</label>
 		<graphicData>
@@ -225,7 +282,7 @@
 		<building>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
-	</ThingDef>
+	</ThingDef-->
 
 	<!--ThingDef ParentName="TableGatherSpotBase">
 		<defName>Table3x3c</defName>

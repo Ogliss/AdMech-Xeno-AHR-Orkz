@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.PawnBioDef>
+		<defName>OG_Ork_KaptinJak</defName>
+		<childhoodDef>OG_Ork_Base_Child</childhoodDef>
+		<adulthoodDef>OG_Ork_Boy_Kommando</adulthoodDef>
+		<gender>Either</gender> <!-- other options are Male and Female -->
+		<name>
+			<first>Jak</first>
+			<last>Doobiuz</last>
+			<nick>Kaptin</nick>
+		</name>
+		<factionLeader>true</factionLeader>
+		<validRaces>
+			<li>OG_Alien_Ork</li>
+		</validRaces>
+	</AlienRace.PawnBioDef>
+</Defs>

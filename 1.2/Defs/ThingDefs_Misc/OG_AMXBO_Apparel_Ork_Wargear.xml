@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Ork - Wargear S 1 ========================== -->
+	<!-- ========================= Ork - Kustom Forcefield ========================== -->
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
+		<defName>OGO_Wargear_KustomForcefield</defName>
+		<label>Kustom Forcefield</label>
+		<description>.</description>
+		<thingClass>AdeptusMechanicus.AdvShieldBelt</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Wargear/Ork/KustomForceField/KustomForceField</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>		
+			<li Class="AdeptusMechanicus.CompProperties_Wargear" />
+			<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+				<ExtrasEntries>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Equipment/Wargear/Ork/KustomForceField/KustomForceField</texPath>
+							<!--graphicClass>Graphic_Single</graphicClass-->
+							<shaderType>Cutout</shaderType>
+							<!--colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color-->
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
+						<commonality>10</commonality>
+					</li>
+				</ExtrasEntries>
+				<NorthOffset>0,0.05,0.50</NorthOffset>
+				<SouthOffset>0,-0.05,0.50</SouthOffset>
+				<EastOffset>-0.25,0.025,0.50</EastOffset>
+				<WestOffset>0.25,0.025,0.50</WestOffset>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>120000</WorkToMake>
+			<Mass>1</Mass>
+			<EnergyShieldRechargeRate>0.065</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>2.2</EnergyShieldEnergyMax>
+			<MarketValue>34000</MarketValue>
+			<MaxHitPoints>180</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>4</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ShieldBelt</li>
+				<li>OG_Ork_Tech_Base_T3</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<thingCategories>
+		
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OG_Belt_Wargear_1</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>OGOWargear1</li>
+				<li>KustomForceField</li>
+				<li>OGOShield</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+			<li>
+				<weight>10</weight>
+				<only>RGBA(1,1,1,1)</only>
+
+			</li>
+			</options>
+		</colorGenerator>
+		<generateCommonality>0.01</generateCommonality>
+	</ThingDef>
+
+	<!-- ========================= Ork - Wargear S 2 ========================== -->
+	<!-- ========================= Ork - Boss Pole ========================== -->
+	<ThingDef ParentName="OG_Ork_Apparel_Wargear_Makeable">
+		<defName>OGO_Wargear_BossPole</defName>
+		<label>Boss Pole</label>
+		<thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
+		<description>Senior Orks, such as Nobs, Big Meks or Warbosses usually carry around some sign of their status, that shows that they are not the ones to be messed with. These items help them to bring their mob into order during the battle.\n\nThese items may be a metal jaw or some other impressive sign but usually take a form of a huge metal stick, heavy with trophies or crude metal glyphs, proclaiming their user's hardness and ferociousness. They are known as Bosspoles or Backbanners It has the additional advantage of being able to be used to hit boyz that attempt to run away from battle.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/BossPole/BossPole__Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>     
+			<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+				<ExtrasEntries>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Ork/BossPole/BossPole_A</texPath>
+							<!--graphicClass>Graphic_Single</graphicClass-->
+							<shaderType>Cutout</shaderType>
+							<!--colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color-->
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
+						<commonality>10</commonality>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Ork/BossPole/BossPole_B</texPath>
+							<!--graphicClass>Graphic_Single</graphicClass-->
+							<shaderType>Cutout</shaderType>
+							<!--colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color-->
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
+						<commonality>10</commonality>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Ork/BossPole/BossPole_Gork</texPath>
+							<!--graphicClass>Graphic_Single</graphicClass-->
+							<shaderType>Cutout</shaderType>
+							<!--colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color-->
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
+						<commonality>5</commonality>
+					</li>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Ork/BossPole/BossPole_Mork</texPath>
+							<!--graphicClass>Graphic_Single</graphicClass-->
+							<shaderType>Cutout</shaderType>
+							<!--colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color-->
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<forceDynamicDraw IgnoreIfNoMatchingField="True">true</forceDynamicDraw>
+						<commonality>5</commonality>
+					</li>
+				</ExtrasEntries>
+				<onHead>true</onHead>
+				<NorthOffset>0,0.005,0.250</NorthOffset>
+				<SouthOffset>0,-0.005,0.250</SouthOffset>
+				<EastOffset>-0.25,-0.025,0.250</EastOffset>
+				<WestOffset>0.25,-0.025,0.250</WestOffset>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+		<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>OG_Ork_Tech_Apparel_Wargear_T2</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<!--wornGraphicPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</wornGraphicPath-->
+			<layers>
+				<li>OG_Belt_Wargear_2</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>BossPole</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>OGOWargear</li>
+		</tradeTags>
+		<generateCommonality>0.03</generateCommonality>
+	</ThingDef>
+	
+	<!-- ========================= Ork - Special ========================== -->
+	<!-- ========================= Ork - Iron Gob ========================== -->
+	<ThingDef ParentName="OG_Ork_Apparel_Armor_Headgear">
+		<defName>OGO_Apparel_IronGob</defName>
+		<label>Iron Gob</label>
+		<description>These massive facial appliances are bolted onto an Ork's armour, or onto the Ork's jaw itself. They exaggerate the already fearsome appearance of these green brutes and are often viewed as symbols of authority. As such, they are often found on Ork Nobs and Warbosses.</description>
+		<!-- <thingClass>AdeptusMechanicus.ProtectiveEyeWear</thingClass> -->
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/Headgear/IronGob/Ork_IronGob</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+			<recipeMaker>
+				<researchPrerequisites>
+					<li>OG_Ork_Tech_Apparel_Wargear_T1</li>
+				</researchPrerequisites>
+			</recipeMaker>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<Mass>0.05</Mass>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>400</MarketValue>
+			<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.01</MoveSpeed>
+			<PsychicSensitivity>-0.10</PsychicSensitivity>
+		</equippedStatOffsets>
+		<generateCommonality>0.25</generateCommonality>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Mouth</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/IronGob/Ork_IronGob</wornGraphicPath>	
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>			
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>OGOrk</li>
+				<li>OGOrkArmour</li>
+				<li>OGOrkHeadgear</li>
+				<li>OGOrkMask</li>
+				<li>IronGob</li>
+				<li>Royal</li>
+				<li>RoyalTier1</li>
+				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>OGOArmour</li>
+			</defaultOutfitTags> 
+		</apparel>
+		<comps>		
+		
+		</comps>
+	</ThingDef>
+
+	<!-- ========================= Ork - Wargear S 3 ========================== -->
+
+	<!-- ========================= Ork - Wargear Overhead ========================== -->
+			<!--
+		<li Class="AdeptusMechanicus.CompProperties_HediffApparel">
+			<hediffDef>FragGrenadeThrowerHeDiff</hediffDef>
+			<severityBasedOnDurability>false</severityBasedOnDurability>
+			<partsToAffect>
+			<li>A_BODYPARTDEF_HERE</li>
+			<li>A_BODYPARTDEF_HERE</li>
+			<li>A_BODYPARTDEF_HERE</li>
+			</partsToAffect>
+			<groupsToAffect>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
+			<li>A_BODYPARTGROUPDEF_HERE</li>
+			</groupsToAffect>
+		</li>
+			-->
+</Defs>
