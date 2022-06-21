@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid Wildman Behavior Link -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>OGO_TableButcher</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

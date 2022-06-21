@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_TableMachining"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationSequence">
+			<!--success>Always</success-->
+			<operations>	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "OGO_TableMachining"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Production</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "OGO_TableMachining"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+						  <li>OG_Ork_Tech_Base_T1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_Tech_Base"]/requiredResearchFacilities</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[@Name = "OG_Ork_Tech_Base"]/requiredResearchBuilding</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="OGO_TableMachining"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName="OGO_TableMachining"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="OGO_TableMachining"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="OGO_TableMachining"]</xpath>
+					</match>
+				</li>
+			</operations>	
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_FueledStove"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_FueledStove</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_ElectricStove"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_ElectricStove</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_TableButcher"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_TableButcher</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OGO_DrugLab"]</xpath>
+		<!--success>Always</success-->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/WorkGiverDef[defName = "DoBillsProduceDrugs"]/fixedBillGiverDefs</xpath>
+			<value>
+				<li>OGO_DrugLab</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
