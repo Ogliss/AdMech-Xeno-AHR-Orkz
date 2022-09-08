@@ -116,7 +116,7 @@ namespace AdeptusMechanicus
                         if (this.Fought && TicksSatisfied > satisifiedTicks)
 						{
 							if (AMAMod.Dev) Log.Message(pawn + " now needs to fight again");
-							this.Fought = false;
+							this.fought = false;
 						}
 					}
 					float curLevel = this.CurLevel;
@@ -201,7 +201,7 @@ namespace AdeptusMechanicus
 			{
 				int happyUntill = (lastFoughtTick + satisifiedTicks);
 				int remaining = Mathf.Max(0, happyUntill - Find.TickManager.TicksGame);
-				if (AMAMod.Dev) Log.Message($"{this.pawn.NameShortColored}, Cur Tick: {Find.TickManager.TicksGame}, Last Attack Tick: {lastFoughtTick}, Disabled Until: {happyUntill} remaining satisifiedTicks: {remaining}");
+				if (AMAMod.Dev && remaining < satisifiedTicks/ AMAMod.settings.OrkoidFightynessStatisfied) Log.Message($"{this.pawn.NameShortColored}, Cur Tick: {Find.TickManager.TicksGame}, Last Attack Tick: {lastFoughtTick}, Disabled Until: {happyUntill} remaining satisifiedTicks: {remaining}");
 				return remaining;
 			}
 		}

@@ -17,8 +17,6 @@
 		<PlantHarvestYield>1.05</PlantHarvestYield>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.25</MeleeDodgeChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.1</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.1</MeleeParryChance>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.125</ArmorRating_Sharp>
 		<ComfyTemperatureMin>-10</ComfyTemperatureMin>

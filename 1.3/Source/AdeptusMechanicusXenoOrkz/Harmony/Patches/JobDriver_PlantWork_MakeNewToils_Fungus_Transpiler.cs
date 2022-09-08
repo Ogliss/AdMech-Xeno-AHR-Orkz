@@ -115,74 +115,35 @@ namespace AdeptusMechanicus.HarmonyInstance
         public static bool FungusHarvested(Thing thing, IntVec3 center, Map map, ThingPlaceMode mode, Action<Thing, int> placedAction, Predicate<IntVec3> nearPlaceValidator, Rot4 rot, Pawn pawn, Plant plant)
         {
             OrkoidFungus fungus = plant as OrkoidFungus;
-            if (fungus != null && (pawn != null && pawn.isOrkoid()))
+            if (fungus != null)
             {
-                ThingDef harvestedThingDef = plant.def.plant.harvestedThingDef;
-                if (FungalMeds != null && thing.def == FungalMeds)
+                if (pawn != null && pawn.isOrkoid())
+                {
+                    ThingDef harvestedThingDef = plant.def.plant.harvestedThingDef;
+                    if (FungalMeds != null && thing.def == FungalMeds)
+                    {
+                        Rand.PushState();
+                        thing.stackCount = Rand.RangeInclusive(1, Math.Max(thing.stackCount / 4, 1));
+                        Rand.PopState();
+                    }
+                    if (thing.def == plant.def.plant.harvestedThingDef)
+                    {
+                        if (fungus.TrySpawnPawns(pawn))
+                        {
+                            return true;
+                        }
+                    }
+                }
+                else
                 {
                     Rand.PushState();
-                    thing.stackCount = Rand.RangeInclusive(1, Math.Max(thing.stackCount / 4, 1));
+                       thing.stackCount = Rand.Range(1,3);
                     Rand.PopState();
-                }
-                if (thing.def == plant.def.plant.harvestedThingDef)
-                {
-                    if (fungus.TrySpawnPawns(pawn))
-                    {
-                        return true;
-                    }
                 }
             //    if (AMAMod.Dev) Log.Message("FungusHarvested " + pawn.Name + " 'ez arvested " + thing.stackCount + " " + thing.LabelCap + " from " + plant.LabelCap + " boss!");
             }
             return GenPlace.TryPlaceThing(thing, center, map, ThingPlaceMode.Near, null, null, default(Rot4));
         }
-
-        private static IEnumerable<Pawn> Squigs
-        {
-            get
-            {
-                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                       where p.isSquig()
-                       select p;
-            }
-        }
-        private static IEnumerable<Pawn> Snots
-        {
-            get
-            {
-                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                       where p.isSnotling()
-                       select p;
-            }
-        }
-        private static IEnumerable<Pawn> Grots
-        {
-            get
-            {
-                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                       where p.isGrot()
-                       select p;
-            }
-        }
-        private static IEnumerable<Pawn> Orks
-        {
-            get
-            {
-                return from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                       where p.isOrk()
-                       select p;
-            }
-        }
-        private static List<Pair<PawnKindDef, float>> Pairs (float squigChance, float snotlingChance, float grotChance, float orkChance)
-        {
-            return new List<Pair<PawnKindDef, float>>()
-            {
-                new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Squig, squigChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Squigs.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Ork_Snotling, snotlingChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Snots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Grot_Wild, grotChance * (OrkoidFungalUtility.GrotSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Grots.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)),
-                new Pair<PawnKindDef, float>(AdeptusPawnKindDefOf.OG_Ork_Wild, orkChance * OrkoidFungalUtility.OrkSpawnCurve.Evaluate(StorytellerUtilityPopulation.PopulationIntent + Orks.Count())* Find.Storyteller.difficulty.enemyDeathOnDownedChanceFactor)
-            };
-        }
-
 
     }
 

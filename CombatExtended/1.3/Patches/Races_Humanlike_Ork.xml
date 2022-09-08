@@ -41,6 +41,51 @@
 			</tools>
 		</value>
 	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeParryChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeParryChance>1.15</MeleeParryChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeParryChance</xpath>
+			<value>
+				<MeleeParryChance>1.15</MeleeParryChance>
+			</value>
+		</match>
+	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeCritChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeCritChance>1.15</MeleeCritChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeCritChance</xpath>
+			<value>
+				<MeleeCritChance>1.15</MeleeCritChance>
+			</value>
+		</match>
+	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeDodgeChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeDodgeChance>0.75</MeleeDodgeChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeDodgeChance</xpath>
+			<value>
+				<MeleeDodgeChance>0.75</MeleeDodgeChance>
+			</value>
+		</match>
+	</li>
 </operations>
 </Operation>
 

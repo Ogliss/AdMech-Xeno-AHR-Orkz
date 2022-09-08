@@ -94,20 +94,7 @@
 		<purpose>Food</purpose>
 	</plant>
 	<comps>
-		<!--li Class="AdeptusMechanicus.CompProperties_OrkoidSpores">
-		<canspawn>true</canspawn>
-		<spawnwild>false</spawnwild>
-		<spawnChance>0.05</spawnChance>
-		<snotlingChance>0.5</snotlingChance>
-		<grotChance>0.05</grotChance>
-		<orkChance>0.025</orkChance>
-		</li-->
-	<!--
-		<li Class="CompProperties_Glower">
-		<glowRadius>10</glowRadius>
-		<glowColor>(5,25,32,0)</glowColor>
-		</li>
-	-->
+	
 	</comps>
 		<!--storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity--> 
 </ThingDef>
@@ -133,20 +120,7 @@
 		</sowTags>
 	</plant>
 	<comps>
-		<!--li Class="AdeptusMechanicus.CompProperties_OrkoidSpores">
-		<canspawn>true</canspawn>
-		<spawnwild>true</spawnwild>
-		<spawnChance>0.5</spawnChance>
-		<snotlingChance>0.5</snotlingChance>
-		<grotChance>0.45</grotChance>
-		<orkChance>0.25</orkChance>
-		</li-->
-	<!--
-		<li Class="CompProperties_Glower">
-		<glowRadius>10</glowRadius>
-		<glowColor>(5,25,32,0)</glowColor>
-		</li>
-	-->
+	
 	</comps>
 </ThingDef>
 
@@ -163,9 +137,9 @@
 	</statBases>
 	<ingestible>
 		<foodType>Meat, VegetableOrFruit</foodType>
-		<tasteThought>AteOrkMeal</tasteThought>
-		<specialThoughtDirect>AteOrkFungusDirect</specialThoughtDirect>
-		<specialThoughtAsIngredient>AteOrkFungusAsIngredient</specialThoughtAsIngredient>
+		<tasteThought>OG_AteMeal_OrkFungus</tasteThought>
+		<specialThoughtDirect>OG_AteDirect_OrkFungus</specialThoughtDirect>
+		<specialThoughtAsIngredient>OG_AteAsIngredient_OrkFungus</specialThoughtAsIngredient>
 	</ingestible>
 	<comps>
 		<li Class="CompProperties_Rottable">

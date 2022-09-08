@@ -158,8 +158,8 @@
 						<li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
 						<li MayRequire="CptOhu.CorruptionCore">PlayerColony_IoM</li>
 						<li MayRequire="CptOhu.CorruptionCore">PlayerColony_Chaos</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">IG_ChaosMarineFaction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TraitorGuardFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_ChaosMarineFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TraitorGuardFaction</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -183,7 +183,7 @@
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Necron_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TyranidFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TyranidFaction</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -567,9 +567,9 @@
 				<li>KnowGuestOrganHarvested</li>
 				<li>SleptInBarracks</li>
 				
-				<li>AteOrkMeal</li>
-				<li>AteOrkFungusDirect</li>
-				<li>AteOrkFungusAsIngredient</li>
+				<li>OG_AteMeal_OrkFungus</li>
+				<li>OG_AteDirect_OrkFungus</li>
+				<li>OG_AteAsIngredient_OrkFungus</li>
 				<li>DefeatedHostileFactionLeaderOpinion</li>
 			</cannotReceiveThoughts>
 		</thoughtSettings>
@@ -713,8 +713,6 @@
 		<GlobalLearningFactor>0.85</GlobalLearningFactor>
 		<MeleeDodgeChance>1.125</MeleeDodgeChance>
 		<MeleeHitChance>1.25</MeleeHitChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">1.15</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">1.15</MeleeParryChance>
 		<GeneralLaborSpeed>0.75</GeneralLaborSpeed>
 		<ButcheryFleshSpeed>1.5</ButcheryFleshSpeed>
 		<ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
@@ -737,8 +735,8 @@
 			<surpriseAttack>
 				<extraMeleeDamages>
 					<li>
-					<def>Stun</def>
-					<amount>22</amount>
+						<def>Stun</def>
+						<amount>22</amount>
 					</li>
 				</extraMeleeDamages>
 			</surpriseAttack>
@@ -754,8 +752,8 @@
 			<surpriseAttack>
 				<extraMeleeDamages>
 					<li>
-					<def>Stun</def>
-					<amount>22</amount>
+						<def>Stun</def>
+						<amount>22</amount>
 					</li>
 				</extraMeleeDamages>
 			</surpriseAttack>
@@ -891,56 +889,6 @@
 	<defName>OG_Alien_Ork</defName>
 	<label>Ork</label>
 	<description>The pinnacle of the orkoid species: A fully grown Ork.</description>
-</AlienRace.ThingDef_AlienRace>
-
-<AlienRace.ThingDef_AlienRace Name="OG_Cyborg_Ork" ParentName="OG_Ork_Race">
-	<defName>OG_Cyborg_Ork</defName>
-	<label>Cybork</label>
-	<description>The pinnacle of the orkoid species: A fully grown Ork, augmented with Bionikz!</description>
-	<statBases>
-		<!--
-		<MarketValue>2000</MarketValue>
-		<MoveSpeed>4.5</MoveSpeed>
-		<Flammability>0.3</Flammability>
-		<ComfyTemperatureMin>3</ComfyTemperatureMin>
-		<ComfyTemperatureMax>42</ComfyTemperatureMax>
-		<LeatherAmount>55</LeatherAmount>
-		<CarryingCapacity>100</CarryingCapacity>
-		<PsychicSensitivity>0.35</PsychicSensitivity>
-		<MiningSpeed>1.4</MiningSpeed>
-		<ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
-		<AimingDelayFactor>-0.25</AimingDelayFactor>
-		<MentalBreakThreshold>0.025</MentalBreakThreshold>
-		<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
-		<PainShockThreshold>0.9</PainShockThreshold>
-		<ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
-		<GlobalLearningFactor>0.85</GlobalLearningFactor>
-		<MeleeDodgeChance>1.125</MeleeDodgeChance>
-		<MeleeHitChance>1.125</MeleeHitChance>
-		<GeneralLaborSpeed>0.75</GeneralLaborSpeed>
-		<ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
-		<ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
-		<SmeltingSpeed>0.5</SmeltingSpeed>
-		<NegotiationAbility>0.5</NegotiationAbility>
-		<SocialImpact>0.5</SocialImpact>
-		<TradePriceImprovement>0.5</TradePriceImprovement>
-		-->
-	</statBases>
-	<alienRace>
-		<generalSettings>
-			<notXenophobistTowards>
-				<li>OG_Alien_Grot</li>
-				<li>OG_Alien_Ork</li>
-				<li>OG_Cyborg_Ork</li>
-			</notXenophobistTowards>
-		</generalSettings>
-	</alienRace>
-	<race>
-	<useMeatFrom>OG_Alien_Ork</useMeatFrom>
-		<hediffGiverSets>
-		<li>OG_Ork_Cy_HediffSet</li>
-		</hediffGiverSets>
-	</race>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

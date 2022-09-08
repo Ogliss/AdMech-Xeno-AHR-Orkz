@@ -107,6 +107,12 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="OGO_Turret_Rattler_Auto"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGO_Turret_Rattler_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy IgnoreIfNoMatchingField="True">0.25</AimingAccuracy>
+				</value>
+			</li>
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>OGO_GunTurret_Rattler</defName>
 				<statBases>
@@ -177,6 +183,12 @@
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="OGO_Turret_GrotCannon_Auto"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGO_Turret_GrotCannon_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy IgnoreIfNoMatchingField="True">0.25</AimingAccuracy>
+				</value>
 			</li>
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>OGO_GunTurret_GrotCannon</defName>
@@ -256,6 +268,12 @@
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="OGO_Turret_BigZzappa_Auto"]/comps/li[@Class = "CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGO_Turret_BigZzappa_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy IgnoreIfNoMatchingField="True">0.5</AimingAccuracy>
+				</value>
 			</li>
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>OGO_GunTurret_BigZzappa</defName>

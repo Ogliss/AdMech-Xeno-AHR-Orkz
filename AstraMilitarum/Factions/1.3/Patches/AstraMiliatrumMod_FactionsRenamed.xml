@@ -6,15 +6,15 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="IG_ChaosMarineFaction"]/text()</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="QX_ChaosMarineFaction"]/text()</xpath>
 					<value>QX_ChaosMarineFaction</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="TraitorGuardFaction"]/text()</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="QX_TraitorGuardFaction"]/text()</xpath>
 					<value>QX_TraitorGuardFaction</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="TyranidFaction"]/text()</xpath>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase" or @Name="OG_Grot_RaceBase"]/alienRace/generalSettings/factionRelations/li/factions/li[text()="QX_TyranidFaction"]/text()</xpath>
 					<value>QX_TyranidFaction</value>
 				</li>
 			</operations>

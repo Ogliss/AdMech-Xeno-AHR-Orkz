@@ -11,6 +11,9 @@
     <TargetFramework>net472</TargetFramework>
     <FileAlignment>512</FileAlignment>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Alerts\Alert_MinorFightRisk.cs" />
     <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
+    <Compile Include="Comps\Class1.cs" />
     <Compile Include="Harmony\Patches\Pawn_NeedsTracker_ShouldHaveNeed_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_AgeTick_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Thing_TakeDamage_OrkoidFightyness_Patch.cs" />
@@ -92,14 +96,12 @@
     <Compile Include="Harmony\Patches\Pawn_EquipmentTracker_DropAllEquipment_KrudeBionic_Patch.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Dark_Orkoid.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_HasKrudeAddedBodyPart.cs" />
-    <Compile Include="Harmony\Settings\AMAMod_PlayableOrkSettings_Patch.cs" />
     <Compile Include="MentalStateWorkers\MentalStateWorker_StarvingOrkoid.cs" />
     <Compile Include="AMOMain.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_HumanlikeLeatherApparel_Ork.cs" />
     <Compile Include="MentalStates\MentalState_StarvingOrkoid.cs" />
     <Compile Include="Harmony\Patches\Pawn_RelationsTracker_SecondaryRomanceChanceFactor_Orkoid_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="Comps\Comp_OrkoidSpores.cs" />
     <Compile Include="Harmony\Patches\PawnGenerator_GeneratePawn_Orkoid_Patch.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_OrkoidFungalSprout.cs" />
   </ItemGroup>
@@ -109,8 +111,12 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="AdeptusMechanicusArmoury">
-      <HintPath>..\..\..\..\AdMechArmoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\AdMech-Armoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AdeptusMechanicusArmouryAlienTweaks">
+      <HintPath>..\..\..\..\AdMech-Armoury\1.3\AlienRaces\Assemblies\AdeptusMechanicusArmouryAlienTweaks.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.3\Assemblies\AlienRace.dll</HintPath>
@@ -132,7 +138,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.3326" GeneratePathProperty="true" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.3389" GeneratePathProperty="true" />
     <PackageReference Include="Lib.Harmony" Version="2.2.1" />
     <PackageReference Include="TaskPubliciser">
       <Version>1.0.3</Version>

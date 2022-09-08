@@ -33,6 +33,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 							need_Violence.Fought = true;
 							need_Violence.foughtSocially = instigator.MentalState is MentalState_SocialFighting;
 							need_Violence.CurLevel -= dinfo.Amount * 0.005f;
+							if (need_Violence.CurLevel >= 0.9f) instigator.ageTracker.growth += dinfo.Amount * 0.005f;
 							break;
 						}
 					}
@@ -48,6 +49,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 							need_Violence.Fought = true;
 							need_Violence.foughtSocially = damaged.MentalState is MentalState_SocialFighting;
 							need_Violence.CurLevel -= dinfo.Amount * 0.0025f;
+							if (damaged.isOrk() && need_Violence.CurCategory >= RowdynessCategory.Free) damaged.ageTracker.growth += dinfo.Amount * 0.005f;
 							break;
 						}
 					}

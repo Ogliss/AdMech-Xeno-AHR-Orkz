@@ -11,8 +11,6 @@
 		<MinimumHandlingSkill>5</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.06</MeleeDodgeChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.125</ArmorRating_Sharp>
 		<ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -300,18 +298,18 @@
 </PawnKindDef>
 
 <!-- ========================== Attack_Squig ================================= -->
-<ThingDef ParentName="SquigBase">
+<!--ThingDef ParentName="SquigBase">
 	<defName>OG_Squig_Ork</defName>
 	<race>
 		<useMeatFrom>OG_Squig</useMeatFrom>
 		<intelligence>ToolUser</intelligence>
 	</race>
 	<tradeTags Inherit="false"> </tradeTags>
-</ThingDef>
+</ThingDef-->
 
 <PawnKindDef Name="OG_Squig_Ork" ParentName="OG_Squig">
 	<defName>OG_Squig_Ork</defName>
-	<race>OG_Squig_Ork</race>
+	<race>OG_Squig</race>
 	<defaultFactionType>OG_Ork_Tek_Faction</defaultFactionType>
 </PawnKindDef>
 
@@ -327,8 +325,6 @@
 		<MinimumHandlingSkill>1</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.00</MeleeDodgeChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
 		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
 		<ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -624,8 +620,6 @@
 		<MinimumHandlingSkill>2</MinimumHandlingSkill>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
 		<MeleeDodgeChance>0.00</MeleeDodgeChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
 		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
 		<ComfyTemperatureMin>-40</ComfyTemperatureMin>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!--success>Always</success-->
+		<operations>
+			<!-- ========================= Ork - Shirt ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_UniformShirt</defName>
+				<statBases>
+					<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+				</statBases>
+			</li>
+		
+			<!-- ========================= Ork - Jacket ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_UniformJacket</defName>
+				<statBases>
+					<StuffEffectMultiplierArmor>11</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<MeleeDodgeChance>-0.01</MeleeDodgeChance>
+				</equippedStatOffsets>
+			</li>
+
+			<!-- ========================= Ork - Slava Cowl ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_SlavaCowl</defName>
+				<statBases>
+					<Bulk>2</Bulk>
+					<WornBulk>0.5</WornBulk>
+					<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<AimingAccuracy>-0.05</AimingAccuracy>
+				</equippedStatOffsets>
+				<layersPrepend>
+					<li>OnHead</li>
+				</layersPrepend>
+			</li>	
+
+			
+		</operations>
+	</Operation>
+</Patch>

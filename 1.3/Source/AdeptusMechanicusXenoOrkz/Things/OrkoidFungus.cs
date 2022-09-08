@@ -207,7 +207,10 @@ namespace AdeptusMechanicus
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
                     
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
-
+                    if (harvester != null && !OrkoidHarvester)
+                    {
+                        pawn.MentalState.ForceHostileTo(harvester);
+                    }
                     if (pawnKindDef.RaceProps.Humanlike)
                     {
                         /*
@@ -275,7 +278,7 @@ namespace AdeptusMechanicus
             }
             return false;
         }
-        // Token: 0x06005259 RID: 21081 RVA: 0x001BBF68 File Offset: 0x001BA168
+
         public override void TickLong()
         {
             if (base.Destroyed)
@@ -338,7 +341,7 @@ namespace AdeptusMechanicus
             }
             this.cachedLabelMouseover = null;
         }
-        // Token: 0x0600525E RID: 21086 RVA: 0x001BC6D4 File Offset: 0x001BA8D4
+
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();

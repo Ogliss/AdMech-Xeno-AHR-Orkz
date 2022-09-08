@@ -4,19 +4,19 @@
 	<!-- ======= Basic quality thoughts ========= -->
 
 	<ThoughtDef>
-		<defName>AteOrkMeal</defName>
+		<defName>OG_AteMeal_OrkFungus</defName>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
 				<label>ate ork meal</label>
-				<description>I had to eat a disgusting, fungal meal. I know it keeps you alive, but nobody wants to swallow that glop.</description>
-				<baseMoodEffect>-6</baseMoodEffect>
+				<description>I had to eat a disgusting meal, made from horrible green slimey fungus. I know it keeps you alive, but nobody wants to swallow that grox shit.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>AteOrkFungusDirect</defName>
+		<defName>OG_AteDirect_OrkFungus</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
@@ -24,21 +24,21 @@
 			<li>
 				<label>ate ork fungus</label>
 				<description>I ate some green, slimy fungus. It was, possibly, the most disgusting thing I've ever tasted.</description>
-				<baseMoodEffect>-6</baseMoodEffect>
+				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>AteOrkFungusAsIngredient</defName>
+		<defName>OG_AteAsIngredient_OrkFungus</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
 				<label>ate cooked ork fungus</label>
-				<description>I ate a meal cooked from green, slimy fungus. The seasoning partly covered the taste, but there were glands and fluid pockets in there that I can't identify.</description>
-				<baseMoodEffect>-3</baseMoodEffect>
+				<description>I ate a meal cooked from green, slimy fungus. The seasoning partly covered the taste, but it was horribly fiberous and chewy.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

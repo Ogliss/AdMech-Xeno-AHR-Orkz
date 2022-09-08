@@ -97,8 +97,8 @@
 						<li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
 						<li MayRequire="CptOhu.CorruptionCore">PlayerColony_IoM</li>
 						<li MayRequire="CptOhu.CorruptionCore">PlayerColony_Chaos</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">IG_ChaosMarineFaction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TraitorGuardFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_ChaosMarineFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TraitorGuardFaction</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -122,7 +122,7 @@
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Necron_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TyranidFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TyranidFaction</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -351,9 +351,9 @@
 				<li>SleptInBarracks</li>
 				<li>SleepDisturbed</li>
 				
-					<li>AteOrkMeal</li>
-					<li>AteOrkFungusDirect</li>
-					<li>AteOrkFungusAsIngredient</li>
+					<li>OG_AteMeal_OrkFungus</li>
+					<li>OG_AteDirect_OrkFungus</li>
+					<li>OG_AteAsIngredient_OrkFungus</li>
 				</cannotReceiveThoughts-->
 			<replacerList>
 				<!-- 
@@ -564,9 +564,9 @@
 				<li>KnowGuestOrganHarvested</li>
 				<li>SleptInBarracks</li>
 				
-				<li>AteOrkMeal</li>
-				<li>AteOrkFungusDirect</li>
-				<li>AteOrkFungusAsIngredient</li>
+				<li>OG_AteMeal_OrkFungus</li>
+				<li>OG_AteDirect_OrkFungus</li>
+				<li>OG_AteAsIngredient_OrkFungus</li>
 				<li>DefeatedHostileFactionLeaderOpinion</li>
 			</cannotReceiveThoughts>
 		</thoughtSettings>
@@ -726,8 +726,6 @@
 		<GlobalLearningFactor>0.75</GlobalLearningFactor>
 		<MeleeDodgeChance>1.35</MeleeDodgeChance>
 		<MeleeHitChance>0.85</MeleeHitChance>
-		<MeleeCritChance MayRequire="CETeam.CombatExtended">0.75</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.75</MeleeParryChance>
 		<GeneralLaborSpeed>0.92</GeneralLaborSpeed>
 		<ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
 		<ButcheryFleshEfficiency>0.75</ButcheryFleshEfficiency>
