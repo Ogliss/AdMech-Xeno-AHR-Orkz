@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ============================ Ork Civilians ========================== -->
+	<!-- ============================ Ork Faction leader Warlord ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Warboss_WarlordBase">
+		<defName>OG_Ork_Warboss_Warlord</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Trader ========================== -->
+	<PawnKindDef ParentName="OG_Ork_TraderBase">
+		<defName>OG_Ork_Trader</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">0~1</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">7~12</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Slave ========================== -->
+	<PawnKindDef ParentName="OG_Ork_SlaveBase">
+		<defName>Slave_OG_Ork</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">0~1</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">7~12</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Grot Trader ========================== -->
+	<PawnKindDef ParentName="OG_Grot_TraderBase">
+		<defName>OG_Grot_Trader</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">0~1</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">7~12</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Grot Slave ========================== -->
+	<PawnKindDef ParentName="OG_Grot_SlaveBase">
+		<defName>Slave_OG_Grot</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">0~1</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">7~12</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Security ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Boy_RuntBase">
+		<defName>OG_Ork_Boy_Runt</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">0~1</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">7~12</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Military ========================== -->
+	<!-- ============================ Ork Boyz ========================== -->
+	<!-- ============================ Choppa Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Boy_ChoppaBase">
+		<defName>OG_Ork_Boy_Choppa</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">1~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Slugga Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Boy_SluggaBase">
+		<defName>OG_Ork_Boy_Slugga</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">1~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Shoota Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Boy_ShootaBase">
+		<defName>OG_Ork_Boy_Shoota</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">1~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Weird Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Weird_BoyBase">
+		<defName>OG_Ork_Weird_Boy</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">1~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Eavy Boyz ========================== -->
+	<!-- ============================ Eavy Choppa Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Boy_ChoppaBase">
+		<defName>OG_Ork_Eavy_Boy_Choppa</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Eavy Slugga Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Boy_SluggaBase">
+		<defName>OG_Ork_Eavy_Boy_Slugga</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Eavy Shoota Boyz ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Boy_ShootaBase">
+		<defName>OG_Ork_Eavy_Boy_Shoota</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Nobz ========================== -->
+	<!-- ============================ Choppa Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Nob_ChoppaBase">
+		<defName>OG_Ork_Nob_Choppa</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Slugga Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Nob_SluggaBase">
+		<defName>OG_Ork_Nob_Slugga</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Shoota Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Nob_ShootaBase">
+		<defName>OG_Ork_Nob_Shoota</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Weird Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Weird_NobBase">
+		<defName>OG_Ork_Weird_Nob</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Eavy Nobz ========================== -->
+	<!-- ============================ Choppa Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Nob_ChoppaBase">
+		<defName>OG_Ork_Eavy_Nob_Choppa</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Slugga Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Nob_SluggaBase">
+		<defName>OG_Ork_Eavy_Nob_Slugga</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Shoota Nob ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Eavy_Nob_ShootaBase">
+		<defName>OG_Ork_Eavy_Nob_Shoota</defName>
+		<initialWillRange IgnoreIfNoMatchingField="True">2~3</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~26</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Ork Mega Nobz ========================== -->
+	<!-- ============================ Ork Bosses ========================== -->
+	<!-- ============================ Warboss (Boss) ========================== -->
+	<PawnKindDef ParentName="OG_Ork_WarbossBase">
+		<defName>OG_Ork_Warboss</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">6~8</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">37~66</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Prophet (Wyrd Boss) ========================== -->
+	<PawnKindDef ParentName="OG_Ork_Warboss_WeirdBase">
+		<defName>OG_Ork_Warboss_Weird</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">6~8</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">37~66</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ========================= Ork - Slava Cowl ========================== -->
+
+<ThingDef ParentName="OG_Ork_Apparel">
+	<defName>OGO_Apparel_SlavaCowl</defName>
+	<label>slava cowl</label>
+	<description>A cowl worn by ork Runtherds and grot tenders. provides minor protection from the elements and weaponry</description>
+	<graphicData>
+		<texPath>Things/Item/Apparel/Ork/Headgear/SlavaCowl/SlavaCowl__Icon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Cutout</shaderType>
+	</graphicData>
+	<costStuffCount>25</costStuffCount>
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<statBases>
+		<MaxHitPoints>150</MaxHitPoints>
+		<MarketValue>300</MarketValue>
+		<WorkToMake>1800</WorkToMake>
+		<Mass>0.14</Mass>
+		<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>0.0</MoveSpeed>
+	</equippedStatOffsets>
+	<generateCommonality>2</generateCommonality>
+	<apparel>
+		<wornGraphicPath>Things/Item/Apparel/Ork/Headgear/SlavaCowl/SlavaCowl</wornGraphicPath>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>OGOHeadgear</li>
+			<li>OGOCap</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+		<options>
+		<li>
+			<only>RGBA(1.00,1.00,1.00,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.95,0.95,0.95,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.90,0.90,0.90,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.85,0.85,0.85,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.80,0.80,0.80,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.75,0.75,0.75,1)</only>
+		</li>
+		<li>
+			<only>RGBA(0.70,0.70,0.70,1)</only>
+		</li>
+		</options>
+	</colorGenerator>
+	<modExtensions>
+		<li Class="AdeptusMechanicus.ApparelRestrictionDefExtension">
+			<raceSpecifics>
+				<li>
+					<raceDef>OG_Alien_Grot</raceDef>
+					<texPath>Grot</texPath>
+				</li>
+			</raceSpecifics>
+		</li>
+	</modExtensions>
+</ThingDef>
+
+</Defs>

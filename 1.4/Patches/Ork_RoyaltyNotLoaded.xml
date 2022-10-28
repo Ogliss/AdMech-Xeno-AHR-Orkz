@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Royalty</li>
+    </mods>
+    <nomatch Class="PatchOperationSequence">
+        <operations>
+			<!-- Remove Royalty dependant Ork Refugee Faction basicMemberKind.-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FactionDef[@Name="OG_Ork_FeralRefugee_Faction_Base"]/basicMemberKind</xpath>
+				<value>
+					<basicMemberKind>OG_Refugee_Ork_Boy</basicMemberKind>
+				</value>
+			</li>
+        </operations>
+    </nomatch>
+</Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<NeedDef>
+		<defName>OG_Ork_Fightyness</defName>
+		<needClass>AdeptusMechanicus.Need_Orkoid_Fightyness</needClass>
+		<label>fightyness</label>
+		<description>Orkz is made fer fightin' an Winnin. da boyz start ta get rowdy if they dont get ta krump somfin pretty regula like.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<listPriority>100</listPriority>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+	</NeedDef>
+
+</Defs>

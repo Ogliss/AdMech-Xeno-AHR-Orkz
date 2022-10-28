@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Ork - Apparel ========================== -->	
+	<!-- ========================= Ork - Shirt ========================== -->
+	<ThingDef ParentName="OG_Ork_Apparel">
+		<defName>OGO_Apparel_UniformShirt</defName>
+		<label>ork undershirt</label>
+		<description>A simple rough shirt worn by greenskins across the galaxy. Its crude design and make less effective at protecting one from the elements. What it lacks in thermal insulation, it makes up for in durability and protection.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/Shirt/Shirt__Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<colorTwo>(173,104,42)</colorTwo>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.35</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.18</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<generateCommonality>1</generateCommonality>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPath>Things/Item/Apparel/Ork/Shirt/Shirt</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>OrkBasic</li>
+				<li>OGOClothing</li>
+				<li>OGOUniform</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Any</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+		
+		</comps>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<!-- ========================= Ork - Jacket ========================== -->
+		<ThingDef ParentName="OG_Ork_Apparel">
+		<defName>OGO_Apparel_UniformJacket</defName>
+		<description>A simple tough jacket worn by greenskins across the galaxy. And while its crude design and make less effective at protecting one from the elements, it makes up for its lack of thermal insulation in durability and increased protection.</description>
+		<label>ork jacket</label>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/Jacket/Jacket__Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<!--MarketValue>600</MarketValue-->
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>1.7</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!--MoveSpeed>-0.04</MoveSpeed-->
+		</equippedStatOffsets>
+		<generateCommonality>2</generateCommonality>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+			<wornGraphicPath>Things/Item/Apparel/Ork/Jacket/Jacket</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>OrkBasic</li>
+				<li>OGOClothing</li>
+				<li>OGOUniform</li>
+				<li>OGOJacket</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+		
+		</comps>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

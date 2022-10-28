@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!--success>Always</success-->
+		<operations>
+			<!-- ========================= Ork - Leva Arma ========================== -->
+
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_LevaArmour</defName>
+				<statBases>
+					<Bulk>25</Bulk>
+					<WornBulk>8</WornBulk>
+					<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<MeleeDodgeChance>-0.05</MeleeDodgeChance>
+				</equippedStatOffsets>
+				<bodyPartGroups>
+					<li>Hands</li>
+					<li>Feet</li>
+				</bodyPartGroups>
+			</li>
+		
+			<!-- ========================= Ork - Leva Elmet ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_LevaElmet</defName>
+				<statBases>
+					<Bulk>5</Bulk>
+					<WornBulk>1.1</WornBulk>
+					<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<AimingAccuracy>-0.05</AimingAccuracy>
+				</equippedStatOffsets>
+				<layersPrepend>
+					<li>OnHead</li>
+					<li>StrappedHead</li>
+				</layersPrepend>
+			</li>	
+
+			<!-- ========================= Ork - Flak Arma ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_Armour</defName>
+				<statBases>
+					<Bulk>40</Bulk>
+					<WornBulk>12</WornBulk>
+					<StuffEffectMultiplierArmor>3.3</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+				</equippedStatOffsets>
+				<bodyPartGroups>
+					<li>Hands</li>
+					<li>Feet</li>
+				</bodyPartGroups>
+			</li>
+
+			<!-- ========================= Ork - 'Ard Hat ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_Elmet</defName>
+				<statBases>
+					<Bulk>5</Bulk>
+					<WornBulk>1.1</WornBulk>
+					<StuffEffectMultiplierArmor>3.3</StuffEffectMultiplierArmor>
+				</statBases>
+				<equippedStatOffsets>
+					<AimingAccuracy>-0.05</AimingAccuracy>
+				</equippedStatOffsets>
+				<layersPrepend>
+					<li>OnHead</li>
+					<li>StrappedHead</li>
+				</layersPrepend>
+			</li>	
+			
+			<!-- ========================= Ork - Eavy Armour ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_EavyArmour</defName>
+				<statBases>
+					<Mass>50</Mass>
+					<Bulk>100</Bulk>
+					<WornBulk>15</WornBulk>
+					<ArmorRating_Blunt>45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>20</ArmorRating_Sharp>
+				</statBases>
+				<equippedStatOffsets>
+					<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+					<CarryWeight>80</CarryWeight>
+					<CarryBulk>10</CarryBulk>
+				</equippedStatOffsets>
+				<bodyPartGroups>
+					<li>Hands</li>
+					<li>Feet</li>
+				</bodyPartGroups>
+			</li>
+			
+			<!-- ========================= Ork - 'Eavy Elmet ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<defName>OGO_Apparel_EavyElmet</defName>
+				<statBases>
+					<Bulk>5</Bulk>
+					<WornBulk>1.1</WornBulk>
+					<ArmorRating_Blunt>45</ArmorRating_Blunt>
+					<ArmorRating_Sharp>20</ArmorRating_Sharp>
+				</statBases>
+				<equippedStatOffsets>
+					<AimingAccuracy>-0.05</AimingAccuracy>
+				</equippedStatOffsets>
+				<layersPrepend>
+					<li>OnHead</li>
+					<li>StrappedHead</li>
+				</layersPrepend>
+			</li>	
+			
+			<!-- ========================= Ork - Mega Armour ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<Name>OG_Ork_Apparel_Mega_Armour_Base</Name>
+				<statBases>
+					<Mass>120</Mass>
+					<Bulk>150</Bulk>
+					<WornBulk>35</WornBulk>
+					<ArmorRating_Blunt>108</ArmorRating_Blunt>
+					<ArmorRating_Sharp>36</ArmorRating_Sharp>
+				</statBases>
+				<equippedStatOffsets>
+					<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+					<CarryWeight>120</CarryWeight>
+					<CarryBulk>100</CarryBulk>
+					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</equippedStatOffsets>
+				<bodyPartGroups>
+					<li>Hands</li>
+					<li>Feet</li>
+				</bodyPartGroups>
+			</li>
+			
+			<!-- ========================= Ork - Mega Elmet ========================== -->
+			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+				<Name>OG_Ork_Apparel_Mega_Armour_Helmet_Base</Name>
+				<statBases>
+					<Bulk>5</Bulk>
+					<WornBulk>1.1</WornBulk>
+					<ArmorRating_Blunt>108</ArmorRating_Blunt>
+					<ArmorRating_Sharp>36</ArmorRating_Sharp>
+				</statBases>
+				<equippedStatOffsets>
+					<AimingAccuracy>-0.05</AimingAccuracy>
+					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</equippedStatOffsets>
+				<layersPrepend>
+					<li>OnHead</li>
+					<li>StrappedHead</li>
+				</layersPrepend>
+			</li>	
+			
+		</operations>
+	</Operation>
+</Patch>

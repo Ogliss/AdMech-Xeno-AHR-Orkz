@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>OG_Ork_NeedViolence</defName>
+		<workerClass>AdeptusMechanicus.ThoughtWorker_Orkoid_NeedFightyness</workerClass>
+		<stages>
+			<li>
+				<label>Waaagh!!!</label>
+				<description>WOTZ ALL DIS NOT FOIGHTIN FINGS? I WANNA KRUMP SUMFIN ZOGGIT! SUM GIT BETTAH WATCH OUT, I'Z IN A FIGHTIN MOOD! WAAAAAAAAAAAAAAAAAAGH!!!!!!!!!!!!!!!!!!!!!!!!!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>rowdy</label>
+				<description>If I'z don't fight sumfin soon, I might just esplode. Gork an Mork, pleeze give us somfin ta krump!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>boisterous</label>
+				<description>I'z itchin fer a gud fight! Sumfin needs ta get krumped now, it'z all i can fink uv! I wunder if i can get krump da boss...</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+			<li>
+				<label>disgruntled</label>
+				<description>I wanna krump sumfin, it'z been a while...</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>bored</label>
+				<description>I'z wanna go kick a snot, dat'll get 'im werkin fasta, and it'z fun.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+</Defs>
