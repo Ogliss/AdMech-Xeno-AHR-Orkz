@@ -15,7 +15,8 @@
 		<AnimalGatherYield>0.85</AnimalGatherYield>
 		<PlantWorkSpeed>1.5</PlantWorkSpeed>
 		<PlantHarvestYield>1.05</PlantHarvestYield>
-		<ToxicSensitivity>0.5</ToxicSensitivity>
+		<ToxicResistance>0.5</ToxicResistance>
+		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
 		<MeleeDodgeChance>0.25</MeleeDodgeChance>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.125</ArmorRating_Sharp>

@@ -18,7 +18,7 @@ namespace AdeptusMechanicus
 		{
 			Thing result;
 			ThingDef thingDef;
-			if (FoodUtility.TryFindBestFoodSourceFor(pawn, pawn, true, out result, out thingDef, false, true, true, true, true, false, false, false, false, FoodPreferability.Undefined))
+			if (FoodUtility.TryFindBestFoodSourceFor(pawn, pawn, true, out result, out thingDef, false, true, true, true, true, false, false, false, false, false, FoodPreferability.Undefined))
 			{
 				return result;
 			}

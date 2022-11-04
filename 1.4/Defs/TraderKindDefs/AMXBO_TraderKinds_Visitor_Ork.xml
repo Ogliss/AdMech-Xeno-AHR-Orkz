@@ -48,21 +48,41 @@
 		</li>
 		
 		<!-- Weapons -->
-		<li Class="StockGenerator_WeaponsRanged">
-			<weaponTag>OrkRanged</weaponTag>
+		<li Class="StockGenerator_MarketValue">
+			<tradeTag>OrkRanged</tradeTag>
 			<countRange>0~1</countRange>
 		</li>
-		<li Class="StockGenerator_WeaponsMelee">
-			<weaponTag>OrkMelee</weaponTag>
+		<li Class="StockGenerator_MarketValue">
+			<tradeTag>OrkMelee</tradeTag>
 			<countRange>0~1</countRange>
 		</li>
 
 
 		<!-- Apparel -->
-		<li Class="AdeptusMechanicus.StockGenerator_ArmorTagged">
-			<apparelTag>OrkApparel</apparelTag>
+		<li Class="StockGenerator_MarketValue">
+			<tradeTag>ClothingOrk</tradeTag>
 			<countRange>0~1</countRange>
 		</li>
+		<li Class="StockGenerator_MarketValue">
+			<tradeTag>ArmourOrk</tradeTag>
+			<countRange>0~1</countRange>
+		</li>
+		<li Class="StockGenerator_Category">
+			<categoryDef>OGOHeadgear</categoryDef>
+			<thingDefCountRange>0~1</thingDefCountRange>
+			<countRange>0~1</countRange>
+		</li>
+		<li Class="StockGenerator_Category">
+			<categoryDef>OGOGrens</categoryDef>
+			<thingDefCountRange>0~1</thingDefCountRange>
+			<countRange>0~1</countRange>
+		</li>
+		<li Class="StockGenerator_Category">
+			<categoryDef>OGOWargear</categoryDef>
+			<thingDefCountRange>0~1</thingDefCountRange>
+			<countRange>0~1</countRange>
+		</li>
+		
 
 		<!-- Implants -->
 		<!-- none -->

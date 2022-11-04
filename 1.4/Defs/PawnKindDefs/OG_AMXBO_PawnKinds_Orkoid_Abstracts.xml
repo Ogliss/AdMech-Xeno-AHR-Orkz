@@ -137,7 +137,7 @@
 <PawnKindDef Abstract="True" Name="GrotCivBase" ParentName="OG_Orkoid_Base">
 	<combatPower>25</combatPower>
 	<race>OG_Alien_Grot</race>
-	<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+	<!--baseRecruitDifficulty>0.25</baseRecruitDifficulty-->
 	<itemQuality>Normal</itemQuality>
 	<isFighter>false</isFighter>
 	<gearHealthRange>

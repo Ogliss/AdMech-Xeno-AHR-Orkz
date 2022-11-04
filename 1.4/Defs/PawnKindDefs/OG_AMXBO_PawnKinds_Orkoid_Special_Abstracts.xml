@@ -11,7 +11,6 @@
 		</li>
 	</backstoryFiltersOverride>
 	<chemicalAddictionChance>0.035</chemicalAddictionChance>
-	<baseRecruitDifficulty>1</baseRecruitDifficulty>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelTags>
 		<li>OGOClothing</li>
@@ -36,7 +35,6 @@
 		</li>
 	</backstoryFiltersOverride>
 	<chemicalAddictionChance>0.035</chemicalAddictionChance>
-	<baseRecruitDifficulty>1</baseRecruitDifficulty>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelTags>
 		<li>OGOClothing</li>
@@ -62,7 +60,6 @@
 		</li>
 	</backstoryFiltersOverride>
 	<chemicalAddictionChance>0.035</chemicalAddictionChance>
-	<baseRecruitDifficulty>1</baseRecruitDifficulty>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelTags>
 		<li>OGOClothing</li>
@@ -79,7 +76,6 @@
 		</li>
 	</backstoryFiltersOverride>
 	<chemicalAddictionChance>0.035</chemicalAddictionChance>
-	<baseRecruitDifficulty>1</baseRecruitDifficulty>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelTags>
 		<li>OGOClothing</li>
@@ -90,7 +86,7 @@
 <PawnKindDef Abstract="True" Name="OG_Ork_Player_Base">
 	<race>OG_Alien_Ork</race>
 	<combatPower>70</combatPower>
-	<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+	<!--baseRecruitDifficulty>1.0</baseRecruitDifficulty-->
 	<isFighter>true</isFighter>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -145,7 +141,7 @@
 <PawnKindDef Abstract="True" Name="OG_Grot_Player_Base">
 	<race>OG_Alien_Grot</race>
 	<combatPower>40</combatPower>
-	<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+	<!--baseRecruitDifficulty>0.25</baseRecruitDifficulty-->
 	<isFighter>false</isFighter>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -318,7 +314,7 @@
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
-	<baseRecruitDifficulty>0.450</baseRecruitDifficulty>
+	<!--baseRecruitDifficulty>0.450</baseRecruitDifficulty-->
 	<itemQuality>Poor</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>
@@ -338,7 +334,7 @@
 		</categories>
 		</li>
 	</backstoryFiltersOverride>
-	<baseRecruitDifficulty>0.250</baseRecruitDifficulty>
+	<!--baseRecruitDifficulty>0.250</baseRecruitDifficulty-->
 	<itemQuality>Poor</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	<minGenerationAge>0</minGenerationAge>

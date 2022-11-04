@@ -4,7 +4,7 @@
 	<!-- ============================ Ork Faction leader Warlord ========================== -->
 	<PawnKindDef ParentName="OG_Ork_Warboss_WarlordBase">
 		<defName>OG_Ork_Warboss_Warlord</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -152,7 +152,7 @@
 	<!-- ============================ Warboss (Boss) ========================== -->
 	<PawnKindDef ParentName="OG_Ork_WarbossBase">
 		<defName>OG_Ork_Warboss</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">6~8</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">37~66</initialResistanceRange>
 	</PawnKindDef>
@@ -160,7 +160,7 @@
 	<!-- ============================ Prophet (Wyrd Boss) ========================== -->
 	<PawnKindDef ParentName="OG_Ork_Warboss_WeirdBase">
 		<defName>OG_Ork_Warboss_Weird</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">6~8</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">37~66</initialResistanceRange>
 	</PawnKindDef>

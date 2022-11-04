@@ -204,7 +204,7 @@ namespace AdeptusMechanicus
                         pawnKindDef = AdeptusPawnKindDefOf.OG_Squig;
                     }
                     Faction faction = FungalProps.spawnwild || !OrkoidHarvester ? null : Faction.OfPlayer;
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
                     
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
                     if (harvester != null && !OrkoidHarvester)

@@ -113,6 +113,10 @@
 			</PauldronEntries>
 		</li>
 	</comps>
+		<tradeTags>
+			<li>ArmourOrk</li>
+			<li>LightArmourOrk</li>
+		</tradeTags>
 </ThingDef>
  
 <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
@@ -229,6 +233,10 @@
 			<WestOffset>0,0.03,0</WestOffset-->
 		</li>
 	</comps>
+		<tradeTags>
+			<li>ArmourOrk</li>
+			<li>MediumArmourOrk</li>
+		</tradeTags>
 </ThingDef>
  
 <ThingDef ParentName="OG_Ork_Apparel_Armor_Makeable">
@@ -341,9 +349,13 @@
 			</PauldronEntries>
 		</li>
 	</comps>
+		<tradeTags>
+			<li>ArmourOrk</li>
+			<li>HeavyArmourOrk</li>
+		</tradeTags>
 </ThingDef>
 
-	<!--==================== Ork - Mega Arma =========================-->
+	<!--==================== Ork - Mega Arma Base =========================-->
 	<!--==================== Abstracts =========================-->
 <ThingDef Name="OG_Ork_Apparel_Mega_Armour_Base" ParentName="OG_Ork_Apparel_Armor_Makeable" Abstract="True">
 	<techLevel>Spacer</techLevel>
@@ -447,7 +459,7 @@
 	</comps>
 </ThingDef>
 
-	<!--==================== Ork - Mega Arma Base =========================-->
+	<!--==================== Ork - Mega Arma =========================-->
 <ThingDef ParentName="OG_Ork_Apparel_Mega_Armour_Base">
 	<defName>OGO_Apparel_MegaArmour</defName>
 	<label>Mega Arma</label>
@@ -492,6 +504,10 @@
 			<WestOffset>0,0.05,0.25</WestOffset>
 		</li>
 	</comps>
+		<tradeTags>
+			<li>ArmourOrk</li>
+			<li>MegaArmourOrk</li>
+		</tradeTags>
 </ThingDef>
 
 

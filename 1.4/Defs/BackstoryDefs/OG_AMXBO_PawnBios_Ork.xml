@@ -2,8 +2,8 @@
 <Defs>
 	<AlienRace.PawnBioDef>
 		<defName>OG_Ork_KaptinJak</defName>
-		<childhoodDef>OG_Ork_Base_Child</childhoodDef>
-		<adulthoodDef>OG_Ork_Boy_Kommando</adulthoodDef>
+		<childhood>OG_Ork_Base_Child</childhood>
+		<adulthood>OG_Ork_Boy_Kommando</adulthood>
 		<gender>Either</gender> <!-- other options are Male and Female -->
 		<name>
 			<first>Jak</first>

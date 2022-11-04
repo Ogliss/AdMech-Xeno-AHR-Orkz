@@ -76,6 +76,10 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>BasicClothingOrk</li>
+			<li>ClothingOrk</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- ========================= Ork - Jacket ========================== -->
@@ -155,6 +159,10 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<tradeTags>
+			<li>ClothingOrk</li>
+			<li>BasicClothingOrk</li>
+		</tradeTags>
 	</ThingDef>
 
 </Defs>

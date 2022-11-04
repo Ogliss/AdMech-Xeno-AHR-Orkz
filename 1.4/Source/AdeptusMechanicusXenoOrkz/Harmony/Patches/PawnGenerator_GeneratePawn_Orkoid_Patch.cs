@@ -34,7 +34,6 @@ namespace AdeptusMechanicus.HarmonyInstance
                 request.MustBeCapableOfViolence = request.KindDef.isOrk();
                 if (request.KindDef == AdeptusPawnKindDefOf.OG_Ork_Wild || request.KindDef == AdeptusPawnKindDefOf.OG_Grot_Wild)
                 {
-                    request.Newborn = true;
                     request.ForbidAnyTitle = true;
                     request.ForceGenerateNewPawn = true;
                     request.ForceBodyType = request.KindDef.isOrk() ? BodyTypeDefOf.Male : BodyTypeDefOf.Thin;
@@ -67,7 +66,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     return;
                 }
                 Pawn_StoryTracker storyTracker = __result.story;
-                Backstory adulthood = storyTracker.adulthood;
+                RimWorld.BackstoryDef adulthood = storyTracker.adulthood;
                 bool adult = adulthood != null;
                 if (__result.isOrk())
                 {

@@ -10,7 +10,7 @@
 		<category>Aggro</category>
 		<nameColor>(0.88,0.48,0.16)</nameColor>
 		<baseInspectLine>Mental state: Scrappin'</baseInspectLine>
-		<unspawnedCanDo>true</unspawnedCanDo>
+		<!--unspawnedCanDo>true</unspawnedCanDo-->
 	</MentalStateDef>
   
 	<MentalBreakDef>

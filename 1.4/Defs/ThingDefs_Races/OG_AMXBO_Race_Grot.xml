@@ -6,26 +6,25 @@
 	<description>The worker of the orkoid species: A fully grown Grot.</description>
 	<alienRace>
 		<graphicPaths>
-				<li>
-					<body>Things/Pawn/Humanlike/Grot/Bodies/</body>
-					<head>Things/Pawn/Humanlike/Grot/Head/</head>
-				</li>
+			<body>Things/Pawn/Humanlike/Grot/Bodies/</body>
+			<head>Things/Pawn/Humanlike/Grot/Head/</head>
 		</graphicPaths>
 		<generalSettings>
 			<maleGenderProbability>1</maleGenderProbability>
 			<minAgeForAdulthood>2</minAgeForAdulthood>
 			<immuneToAge>false</immuneToAge>
 			<alienPartGenerator>
-				<useGenderedHeads>false</useGenderedHeads>
-				<useGenderedBodies>false</useGenderedBodies>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.70, 0.70)</customHeadDrawSize>
-				<aliencrowntypes>
-					<li>Average_Gretchin</li>
-				</aliencrowntypes>
-				<alienbodytypes>
+				<headTypes>
+					<li>Gretchin_AverageNormal</li>
+					<li>Gretchin_NarrowNormal</li>
+					<li>Gretchin_NarrowPointy</li>
+					<li>Gretchin_NarrowWide</li>
+				</headTypes>
+				<bodyTypes>
 					<li>Thin</li>
-				</alienbodytypes>
+				</bodyTypes>
 			</alienPartGenerator>
 			<chemicalSettings>	
 			</chemicalSettings>
@@ -130,18 +129,18 @@
 					</goodwill>
 				</li>
 			</factionRelations>
-				<forcedRaceTraitEntries>
-					<li>
-						<defName>Wimp</defName>
-						<degree>0</degree>
-						<chance>25</chance>
-					</li>
-					<li>
-						<defName>Xenophobia</defName>
-						<degree>1</degree>
-						<chance>75</chance>
-					</li>
-				</forcedRaceTraitEntries>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Wimp</defName>
+					<degree>0</degree>
+					<chance>25</chance>
+				</li>
+				<li>
+					<defName>Xenophobia</defName>
+					<degree>1</degree>
+					<chance>75</chance>
+				</li>
+			</forcedRaceTraitEntries>
 		</generalSettings>
 		<thoughtSettings>
 			<butcherThoughtGeneral>

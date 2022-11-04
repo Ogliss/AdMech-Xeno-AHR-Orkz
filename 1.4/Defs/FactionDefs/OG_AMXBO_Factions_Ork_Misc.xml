@@ -27,7 +27,7 @@
 		<maxCountAtGameStart>0</maxCountAtGameStart>
 		<techLevel>Industrial</techLevel>
 		<basicMemberKind>Refugee</basicMemberKind>
-		<geneticVariance>0.8</geneticVariance>
+		<!--geneticVariance>0.8</geneticVariance-->
 		<backstoryFilters>
 			<li>
 				<categories>

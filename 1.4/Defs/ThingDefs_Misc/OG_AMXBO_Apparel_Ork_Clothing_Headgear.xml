@@ -82,6 +82,11 @@
 			</raceSpecifics>
 		</li>
 	</modExtensions>
+	<tradeTags>
+		<li>ClothingOrk</li>
+		<li>HatOrk</li>
+		<li>BasicClothingOrk</li>
+	</tradeTags>
 </ThingDef>
 
 </Defs>

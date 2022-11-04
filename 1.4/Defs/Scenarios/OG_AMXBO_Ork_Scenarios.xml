@@ -12,22 +12,27 @@
 				<factionDef>OG_Ork_PlayerColony</factionDef>
 			</playerFaction>
 			<parts>
-				<li Class="AdeptusMechanicus.ScenPart_ConfigPage_ConfigureStartingPawnsSpecific">
-					<def>ConfigPage_ConfigureStartingPawns</def>
-					<Pawns>
-						<li>
-							<kindDef>Colonist_OG_Ork_Warboss</kindDef>
-							<count>1</count>
-						</li>
-						<li>
-							<kindDef>Colonist_OG_Ork_Boy</kindDef>
-							<count>2</count>
-						</li>
-						<li>
-							<kindDef>Colonist_OG_Grot</kindDef>
-							<count>3</count>
-						</li>
-					</Pawns>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+				  <def>ConfigurePawnsKindDefs</def>
+				  <pawnChoiceCount>8</pawnChoiceCount>
+				  <leftBehindPawnKind>Colonist_OG_Grot</leftBehindPawnKind>
+				  <kindCounts>
+					<li>
+					  <kindDef>Colonist_OG_Grot</kindDef>
+					  <count>3</count>
+					  <requiredAtStart>true</requiredAtStart>
+					</li>
+					<li>
+					  <kindDef>Colonist_OG_Ork_Boy</kindDef>
+					  <count>2</count>
+					  <requiredAtStart>true</requiredAtStart>
+					</li>
+					<li>
+					  <kindDef>Colonist_OG_Ork_Warboss</kindDef>
+					  <count>1</count>
+					  <requiredAtStart>true</requiredAtStart>
+					</li>
+				  </kindCounts>
 				</li>
 				<!--li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>

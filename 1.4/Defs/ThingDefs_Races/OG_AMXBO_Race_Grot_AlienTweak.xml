@@ -79,7 +79,8 @@
 					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<debug>false</debug>
 						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
-						<bodyPart>right ear</bodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
 						<alignWithHead>true</alignWithHead>
@@ -93,36 +94,36 @@
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</south>
 							<north>
 								<layerOffset>-0.0</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</north>
 							<east>
 								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</east>
 							<west>
 								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</west>
 						</offsets>
 						<colorChannel>skin</colorChannel>
@@ -134,7 +135,8 @@
 					<li Class="AdeptusMechanicus.LinkedBodyAddon">
 						<debug>false</debug>
 						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarL</path>
-						<bodyPart>left ear</bodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
 						<inFrontOfBody>true</inFrontOfBody>
 						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
 						<alignWithHead>true</alignWithHead>
@@ -148,36 +150,36 @@
 								<bodyTypes>
 									<Thin>(-0.00,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</south>
 							<north>
 								<layerOffset>0.0</layerOffset>
 								<bodyTypes>
 									<Thin>(0.00,0.00)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</north>
 							<east>
 								<layerOffset>-0.5880</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.00,0.00)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</east>
 							<west>
 								<layerOffset>-0.2740</layerOffset>
 								<bodyTypes>
 									<Thin>(-0.0,0.0)</Thin>
 								</bodyTypes>
-								<crownTypes>
-									<Average_Gretchin>(-0.0,0.0)</Average_Gretchin>
-								</crownTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
 							</west>
 						</offsets>
 						<colorChannel>skin</colorChannel>

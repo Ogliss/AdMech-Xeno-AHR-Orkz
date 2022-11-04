@@ -2,18 +2,18 @@
 <Defs>
 <!-- Grotz -->
 <!-- Grot Childhood -->
-<AlienRace.BackstoryDef Name="OG_Grot_Child_Abstract" Abstract="True">
+<AlienRace.AlienBackstoryDef Name="OG_Grot_Child_Abstract" Abstract="True">
 	<title>Grotling</title>
 	<titleShort>Grotling</titleShort>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Childhood</slot>
-	<baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
+	<baseDesc>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDesc>
 	<workDisables>
 		<!--li>Intellectual</li-->
 	</workDisables>
-	<forcedTraits>
+	<forcedTraitsChance>
 		<li>
 			<defName>Nerves</defName>
 			<degree>-1</degree>
@@ -24,73 +24,73 @@
 			<degree>2</degree>
 			<chance>10</chance>
 		</li>
-	</forcedTraits>
+	</forcedTraitsChance>
 	<spawnCategories>
 	
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
 
 <!-- Grot Child -->
-<AlienRace.BackstoryDef ParentName="OG_Grot_Child_Abstract">
+<AlienRace.AlienBackstoryDef ParentName="OG_Grot_Child_Abstract">
 	<defName>OG_Grot_Base_Child</defName>
 	<workDisables>
 		<!--li>Intellectual</li-->
 	</workDisables>
-	<forcedTraits>
+	<forcedTraitsChance>
 		<!--li>
 			<defName>Nerves</defName>
 			<degree>-1</degree>
 			<chance>10</chance>
 		</li-->
-	</forcedTraits>
+	</forcedTraitsChance>
 	<skillGains>
 		<li>
-			<defName>Shooting</defName>
-			<amount>-1</amount>
+			<key>Shooting</key>
+			<value>-1</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>-1</amount>
+			<key>Melee</key>
+			<value>-1</value>
 		</li>
 		<li>
-			<defName>Construction</defName>
-			<amount>4</amount>
+			<key>Construction</key>
+			<value>4</value>
 		</li>
 		<li>
-			<defName>Mining</defName>
-			<amount>2</amount>
+			<key>Mining</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Cooking</defName>
-			<amount>-4</amount>
+			<key>Cooking</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Plants</defName>
-			<amount>4</amount>
+			<key>Plants</key>
+			<value>4</value>
 		</li>
 		<li>
-			<defName>Animals</defName>
-			<amount>2</amount>
+			<key>Animals</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Crafting</defName>
-			<amount>-2</amount>
+			<key>Crafting</key>
+			<value>-2</value>
 		</li>
 		<li>
-			<defName>Artistic</defName>
-			<amount>-6</amount>
+			<key>Artistic</key>
+			<value>-3</value>
 		</li>
 		<li>
-			<defName>Medicine</defName>
-			<amount>-2</amount>
+			<key>Medicine</key>
+			<value>-2</value>
 		</li>
 		<li>
-			<defName>Social</defName>
-			<amount>3</amount>
+			<key>Social</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Intellectual</defName>
-			<amount>-6</amount>
+			<key>Intellectual</key>
+			<value>-6</value>
 		</li>
 	</skillGains>
 	<spawnCategories>
@@ -102,28 +102,28 @@
 		<li>Grot_Leada</li>
 		<li>Grot_Tek</li>
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
 
 <!-- Grot Adulthood -->
 <!-- Grot Slave -->
-<AlienRace.BackstoryDef>
+<AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_Base</defName>
 	<title>Grot Slave</title>
 	<titleShort>Slave</titleShort>
-	<linkedBackstory>Grot_Base_Child</linkedBackstory>
-	<baseDescription>[PAWN_nameDef] is a Grot, the backbone of Ork society. Most menial tasks are performed by [PAWN_pronoun] kind.</baseDescription>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a Grot, the backbone of Ork society. Most menial tasks are performed by [PAWN_pronoun] kind.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
 	<skillGains>
 		<li>
-			<defName>Melee</defName>
-			<amount>-1</amount>
+			<key>Melee</key>
+			<value>-1</value>
 		</li>
 		<li>
-			<defName>Shooting</defName>
-			<amount>-1</amount>
+			<key>Shooting</key>
+			<value>-1</value>
 		</li>
 	</skillGains>
 	<spawnCategories>
@@ -131,15 +131,15 @@
 		<li>Grot_Goblin</li>
 		<li>Grot_Slave</li>
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
 
 <!-- Grot Orderly -->	
-<AlienRace.BackstoryDef>
+<AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_Orderly</defName>
 	<title>Grot orderly</title>
 	<titleShort>Orderly</titleShort>
-	<linkedBackstory>Grot_Base_Child</linkedBackstory>
-	<baseDescription>[PAWN_nameDef] is a orderly. With an knack for knowing which bitz go where when it comes to stickin da boyz back togeather.</baseDescription>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a orderly. With an knack for knowing which bitz go where when it comes to stickin da boyz back togeather.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -150,12 +150,12 @@
 	</workDisables>
 	<skillGains>
 		<li>
-			<defName>Medicine</defName>
-			<amount>2</amount>
+			<key>Medicine</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>4</amount>
+			<key>Melee</key>
+			<value>4</value>
 		</li>
 	</skillGains>
 	<spawnCategories>
@@ -163,15 +163,15 @@
 		<li>Grot_Goblin</li>
 		<li>Grot_Doc</li>
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
 
 <!-- Grot Tinkerer --> 
-<AlienRace.BackstoryDef>
+<AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_Tinkerer</defName>
 	<title>Grot Tinkerer</title>
 	<titleShort>Tinkerer</titleShort>
-	<linkedBackstory>Grot_Base_Child</linkedBackstory>
-	<baseDescription>[PAWN_nameDef] is a Tinkerer. With an knack for knowing which bitz go where when it comes to teknology.</baseDescription>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a Tinkerer. With an knack for knowing which bitz go where when it comes to teknology.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -183,16 +183,16 @@
 	</workDisables>
 	<skillGains>
 		<li>
-			<defName>Crafting</defName>
-			<amount>3</amount>
+			<key>Crafting</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>1</amount>
+			<key>Melee</key>
+			<value>1</value>
 		</li>
 		<li>
-			<defName>Intellectual</defName>
-			<amount>2</amount>
+			<key>Intellectual</key>
+			<value>2</value>
 		</li>
 	</skillGains>
 	<spawnCategories>
@@ -200,15 +200,15 @@
 		<li>Grot_Goblin</li>
 		<li>Grot_Tek</li>
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
  
-<!-- Grot Tinkerer --> 
-<AlienRace.BackstoryDef>
+<!-- Grot Trouble Maker --> 
+<AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_TroubleMaker</defName>
 	<title>Grot Trouble Maker</title>
 	<titleShort>Trouble Maker</titleShort>
-	<linkedBackstory>Grot_Base_Child</linkedBackstory>
-	<baseDescription>[PAWN_nameDef] is a Trouble Maker. With an knack for knowing how to whip iz mates into a frenzy.</baseDescription>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a Trouble Maker. With an knack for knowing how to whip iz mates into a frenzy.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -220,16 +220,16 @@
 	</workDisables>
 	<skillGains>
 		<li>
-			<defName>Crafting</defName>
-			<amount>3</amount>
+			<key>Crafting</key>
+			<value>3</value>
 		</li>
 		<li>
-			<defName>Melee</defName>
-			<amount>2</amount>
+			<key>Melee</key>
+			<value>2</value>
 		</li>
 		<li>
-			<defName>Shooting</defName>
-			<amount>2</amount>
+			<key>Shooting</key>
+			<value>2</value>
 		</li>
 	</skillGains>
 	<spawnCategories>
@@ -237,6 +237,6 @@
 		<li>Grot_Goblin</li>
 		<li>Grot_Leada</li>
 	</spawnCategories>
-</AlienRace.BackstoryDef>
+</AlienRace.AlienBackstoryDef>
  
 </Defs>
