@@ -126,7 +126,7 @@
 					<CarryWeight>120</CarryWeight>
 					<CarryBulk>100</CarryBulk>
 					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-					<ToxicSensitivity>-0.50</ToxicSensitivity>
+					<ToxicResistance>0.5</ToxicResistance>
 				</equippedStatOffsets>
 				<bodyPartGroups>
 					<li>Hands</li>
@@ -146,7 +146,7 @@
 				<equippedStatOffsets>
 					<AimingAccuracy>-0.05</AimingAccuracy>
 					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-					<ToxicSensitivity>-0.50</ToxicSensitivity>
+					<ToxicResistance>0.5</ToxicResistance>
 				</equippedStatOffsets>
 				<layersPrepend>
 					<li>OnHead</li>
