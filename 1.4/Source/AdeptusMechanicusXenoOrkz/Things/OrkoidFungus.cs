@@ -1,9 +1,11 @@
-﻿using AdeptusMechanicus.ExtensionMethods;
+﻿
+using AdeptusMechanicus.ExtensionMethods;
 using AdeptusMechanicus.settings;
 using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -11,22 +13,6 @@ using Verse;
 
 namespace AdeptusMechanicus
 {
-    // AdeptusMechanicus.OrkoidFungalProps
-    public class OrkoidFungalProps : PlantProperties
-    {
-        public bool canspawn = true;
-        public bool spawnwild = true;
-        public FloatRange tempsOptimal = new FloatRange(10f, 42f);
-        public FloatRange tempsLimits = new FloatRange(0f, 58f);
-        public float optionalChance = 0.01f;
-        public List<OptionalThings> optionals = new List<OptionalThings>();
-        
-        public struct OptionalThings
-        {
-            public ThingDef def;
-            public float weight;
-        }
-    }
 
 
     // AdeptusMechanicus.OrkoidFungus
@@ -163,6 +149,7 @@ namespace AdeptusMechanicus
                 int grots = Grots.Count();
                 int orks = Orks.Count();
                 int greenskins = squigs + snots + grots + orks;
+                float plantAge = Age / 3600000f;
                 Rand.PushState(this.thingIDNumber);
                 var spawnRoll = Rand.ValueSeeded(this.thingIDNumber);
                 Rand.PopState();
@@ -189,12 +176,12 @@ namespace AdeptusMechanicus
                         }
                         Rand.PopState(); 
                         StringBuilder builder = new StringBuilder();
-                        builder.Append(pawnKindDef.LabelCap + " Spawned");
+                        builder.Append($"{pawnKindDef.LabelCap} Spawned: Aged: {plantAge}");
                         builder.AppendLine();
 
                         foreach (var item in options)
                         {
-                            builder.Append(" " + item.kind.LabelCap + " weighted at " + item.selectionWeight);
+                            builder.Append($" {item.kind.LabelCap} weighted at {item.selectionWeight}");
                         }
                         if (Prefs.DevMode) Log.Message(builder.ToString());
 
@@ -203,9 +190,9 @@ namespace AdeptusMechanicus
                     {
                         pawnKindDef = AdeptusPawnKindDefOf.OG_Squig;
                     }
-                    Faction faction = FungalProps.spawnwild || !OrkoidHarvester ? null : Faction.OfPlayer;
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, true, false, true, true, 0f, fixedGender: Gender.None, fixedBiologicalAge: Age, fixedChronologicalAge: Age);
-                    
+                    Faction faction = FungalProps.spawnwild || OrkoidHarvester ? harvester.Faction : null;
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, 0f, false, false, false, false, false, false, false, false, false, 0f, 0f, null, 0f, null, null, fixedGender: Gender.None, fixedBiologicalAge: plantAge, fixedChronologicalAge: plantAge);
+
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
                     if (harvester != null && !OrkoidHarvester)
                     {
@@ -213,6 +200,7 @@ namespace AdeptusMechanicus
                     }
                     if (pawnKindDef.RaceProps.Humanlike)
                     {
+                    //    if (Prefs.DevMode) Log.Message("pre Humanlike");
                         /*
                         if (pawn.kindDef == OGOrkPawnKindDefOf.OG_Ork_Wild)
                         {
@@ -244,7 +232,6 @@ namespace AdeptusMechanicus
                     }
                     if (GrowthRateFactor_Fertility < 1f)
                     {
-
                         foreach (Need need in pawn.needs.AllNeeds)
                         {
 
@@ -257,11 +244,11 @@ namespace AdeptusMechanicus
                     else
                     {
                         float level = GrowthRateFactor_Fertility - 1f;
-                        pawn.needs.food.CurLevel = level;
-                        pawn.needs.rest.CurLevel = 1f;
+                        if (pawn.needs?.food != null) pawn.needs.food.CurLevel = level;
+                        if (pawn.needs?.rest != null) pawn.needs.rest.CurLevel = 1f;
                         if (pawn.RaceProps.Humanlike)
                         {
-                            pawn.needs.mood.CurLevel = level;
+                            if (pawn.needs?.mood != null) pawn.needs.mood.CurLevel = level;
                         }
                     }
                     Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Malnutrition, pawn);

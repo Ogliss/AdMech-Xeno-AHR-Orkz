@@ -805,15 +805,15 @@
 		</litterSizeCurve>
 		<lifeStageAges>
 			<li>
-				<def>GrotWhelp</def>
+				<def>OG_Lifestage_Grot_Whelp</def>
 				<minAge>0</minAge>
 			</li>
 			<li>
-				<def>GrotRunt</def>
+				<def>OG_Lifestage_Grot_Runt</def>
 				<minAge>1</minAge>
 			</li>
 			<li>
-				<def>GrotAdult</def>
+				<def>OG_Lifestage_Grot_Adult</def>
 				<minAge>2</minAge>
 			</li>
 		</lifeStageAges>

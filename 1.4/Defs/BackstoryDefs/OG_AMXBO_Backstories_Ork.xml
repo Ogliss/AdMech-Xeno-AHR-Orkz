@@ -114,7 +114,28 @@
 		</li>
 	</skillGains>
 	<spawnCategories>
+		<li>Ork_Child</li>
 		<li>Ork_Base_Child</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Runt</li>
+		<li>Ork_Boy</li>
+		<li>Ork_Nob</li>
+		<li>Ork_Boss</li>
+		<li>Ork_Tek</li>
+		<li>Ork_Choppa</li>
+		<li>Ork_Boy_Choppa</li>
+		<li>Ork_Slugga</li>
+		<li>Ork_Boy_Slugga</li>
+		<li>Ork_Shoota</li>
+		<li>Ork_Boy_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Doc</li>
+		<li>Ork_Noncom</li>
 	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 
@@ -538,7 +559,7 @@
 		</li>
 	</skillGains>
 	<spawnCategories>
-	
+		<li>Ork_Boss</li>
 	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 

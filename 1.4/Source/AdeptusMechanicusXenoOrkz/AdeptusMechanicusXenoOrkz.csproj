@@ -50,11 +50,15 @@
     <Compile Include="Alerts\Alert_MinorFightRisk.cs" />
     <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
     <Compile Include="Comps\Class1.cs" />
+    <Compile Include="DefOf\OrkoidLifeStageDefOf.cs" />
+    <Compile Include="Harmony\Patches\Pawn_AgeTracker_BodyResourceGrowthSpeed_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_AgeTracker_LifeStageMinAge_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_NeedsTracker_ShouldHaveNeed_Orkoid_Patch.cs" />
-    <Compile Include="Harmony\Patches\Pawn_AgeTracker_AgeTick_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\Pawn_AgeTracker_RecalculateLifeStageIndex_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Thing_TakeDamage_OrkoidFightyness_Patch.cs" />
     <Compile Include="Harmony\Patches\Command_SetPlantToGrow_IsPlantAvailable_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\RaceRestrictionSettings_CanPlant_Snotling_Patch.cs" />
+    <Compile Include="Things\OrkoidFungalProps.cs" />
     <None Include="Harmony\Patches\Pawn_PostApplyDamage_OrkoidFightyness_Patch.cs.bak" />
     <Compile Include="JobDrivers\JobDriver_Slaughter.cs" />
     <Compile Include="JobDrivers\JobDriver_OrkoidHunt.cs" />
@@ -83,7 +87,6 @@
     <None Include="Harmony\Patches\JobDriver_CatchFish_MakeNewToils_Snotling_Patch.cs.bak" />
     <Compile Include="Harmony\Patches\WorkGiver_InteractAnimal_CanInteractWithAnimal_Restricted_Patch.cs" />
     <Compile Include="Harmony\Patches\RelationsUtility_TryDevelopBondRelation_Restricted_Patch.cs" />
-    <Compile Include="Utilities\DebugTools\AdMechDebugActionsMisc.cs" />
     <Compile Include="Utilities\OrkoidFungualUtility.cs" />
     <Compile Include="Harmony\Patches\JobDriver_PlantWork_MakeNewToils_Fungus_Transpiler.cs" />
     <None Include="Harmony\Patches\QuestManager_Notify_PlantHarvested_Orkoid_Patch.cs.bak" />

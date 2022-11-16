@@ -70,18 +70,18 @@ namespace AdeptusMechanicus.HarmonyInstance
                 bool adult = adulthood != null;
                 if (__result.isOrk())
                 {
-                    if (storyTracker.childhood.identifier.Contains("Ork_Base_Child"))
+                    if (storyTracker.childhood.defName.Contains("Ork_Base_Child"))
                     {
                     //    Log.Message(__result.Name + ": Ork_Base_Child");
                     }
                     else
-                    if (storyTracker.childhood.identifier.Contains("Ork_Odd_Child"))
+                    if (storyTracker.childhood.defName.Contains("Ork_Odd_Child"))
                     {
 
                     //    Log.Message(__result.Name + ": Ork_Odd_Child");
                     }
                     else
-                    if (storyTracker.childhood.identifier.Contains("Ork_Weird_Child"))
+                    if (storyTracker.childhood.defName.Contains("Ork_Weird_Child"))
                     {
                     //    Log.Message(__result.Name + ": Ork_Weird_Child");
                         if (!storyTracker.traits.HasTrait(TraitDefOf.PsychicSensitivity))
@@ -89,11 +89,11 @@ namespace AdeptusMechanicus.HarmonyInstance
                             Trait trait = new Trait(TraitDefOf.PsychicSensitivity, 1);
                             if (storyTracker.adulthood != null)
                             {
-                                if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                                if (storyTracker.adulthood.defName.Contains("_Boss"))
                                 {
                                     trait = new Trait(TraitDefOf.PsychicSensitivity, 2);
                                 }
-                                else if (storyTracker.adulthood.identifier.Contains("_Nob"))
+                                else if (storyTracker.adulthood.defName.Contains("_Nob"))
                                 {
                                     Rand.PushState();
                                     trait = new Trait(TraitDefOf.PsychicSensitivity, Rand.RangeInclusive(1, 2));
@@ -112,13 +112,13 @@ namespace AdeptusMechanicus.HarmonyInstance
                             }
                             if (adult)
                             {
-                                if (storyTracker.adulthood.identifier.Contains("_Boss"))
+                                if (storyTracker.adulthood.defName.Contains("_Boss"))
                                 {
                                     Rand.PushState();
                                     __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(3, 5), __result.GetMaxPsylinkLevel()), false);
                                     Rand.PopState();
                                 }
-                                else if (storyTracker.adulthood.identifier.Contains("_Nob"))
+                                else if (storyTracker.adulthood.defName.Contains("_Nob"))
                                 {
                                     Rand.PushState();
                                     __result.ChangePsylinkLevel(Math.Min(Rand.RangeInclusive(1, 3), __result.GetMaxPsylinkLevel()), false);
@@ -144,7 +144,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (__result.isOrk())
                     {
-                        if (storyTracker.adulthood.identifier.Contains("_Boss") || storyTracker.adulthood.identifier.Contains("_Nob"))
+                        if (storyTracker.adulthood.defName.Contains("_Boss") || storyTracker.adulthood.defName.Contains("_Nob"))
                         {
                             HarmonyPatches.ChangeBodyType(__result, BodyTypeDefOf.Hulk);
                         }

@@ -98,18 +98,21 @@
 	</techHediffsTags>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boss</li>
-			</categories>
-			<exclude>
-				<li>Ork_Boss_Weird</li>
-			</exclude>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 			<commonality>1</commonality>
 		</li>
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boss_Weird</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 			<commonality>0.1</commonality>
 		</li>
 	</backstoryFiltersOverride>
@@ -222,9 +225,13 @@
 	<maxGenerationAge>2</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boy</li>
-		</categories>
+			<categoriesAdulthood>
+				<li>Ork_Boy</li>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -324,9 +331,13 @@
 	<maxGenerationAge>29</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-		<categories>
-			<li>Ork_Boy</li>
-		</categories>
+			<categoriesAdulthood>
+				<li>Ork_Boy</li>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
@@ -340,9 +351,13 @@
 	<label>Choppa Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Choppa</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -355,9 +370,13 @@
 	<label>Slugga Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Slugga</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -370,9 +389,12 @@
 	<label>Shoota Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Shoota</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -385,9 +407,12 @@
 	<label>Weird boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Weird</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
@@ -406,9 +431,12 @@
 	<maxGenerationAge>29</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -470,9 +498,12 @@
 	<label>Eavy Choppa Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Choppa</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -485,9 +516,12 @@
 	<label>Eavy Slugga Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Slugga</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -500,9 +534,12 @@
 	<label>Eavy Shoota Boy</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boy_Shoota</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -518,9 +555,12 @@
 	<maxGenerationAge>49</maxGenerationAge>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -585,9 +625,12 @@
 	<label>Choppa Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Choppa</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -600,9 +643,12 @@
 	<label>Ork Slugga Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Slugga</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -615,9 +661,12 @@
 	<label>Shoota Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Shoota</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -631,9 +680,12 @@
 	<label>Weird Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Weird</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>
@@ -653,9 +705,12 @@
 	<race>OG_Alien_Ork</race>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -723,9 +778,12 @@
 	<label>Eavy Choppa Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Choppa</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -739,9 +797,12 @@
 	<label>Eavy Slugga Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Slugga</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -756,9 +817,12 @@
 	<label>Ork Eavy Shoota Nob</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob_Shoota</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<weaponTags>
@@ -776,9 +840,12 @@
 	<race>OG_Alien_Ork</race>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Nob</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<gearHealthRange>
@@ -911,9 +978,15 @@
 	<label>Warboss</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boss</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Base_Child</li>
+			</categoriesChildhood>
+			<exclude>
+				<li>Ork_Boss_Weird</li>
+			</exclude>
 		</li>
 	</backstoryFiltersOverride>
 </PawnKindDef>
@@ -923,9 +996,12 @@
 	<label>Prophet of Waaaargh</label>
 	<backstoryFiltersOverride Inherit="False">
 		<li>
-			<categories>
+			<categoriesAdulthood>
 				<li>Ork_Boss_Weird</li>
-			</categories>
+			</categoriesAdulthood>
+			<categoriesChildhood>
+				<li>Ork_Weird_Child</li>
+			</categoriesChildhood>
 		</li>
 	</backstoryFiltersOverride>
 	<apparelTags>

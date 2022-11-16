@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
 <LifeStageDef>
-	<defName>GrotWhelp</defName>
+	<defName>OG_Lifestage_Grot_Whelp</defName>
 	<label>Stuntie</label>
 	<bodySizeFactor>0.5</bodySizeFactor>
 		<foodMaxFactor>0.5</foodMaxFactor>
@@ -15,7 +15,7 @@
 </LifeStageDef>
 
 <LifeStageDef>
-	<defName>GrotRunt</defName>
+	<defName>OG_Lifestage_Grot_Runt</defName>
 	<label>Runt</label>
 	<bodySizeFactor>0.85</bodySizeFactor>
 		<foodMaxFactor>1</foodMaxFactor>
@@ -29,7 +29,7 @@
 </LifeStageDef>
 
 <LifeStageDef>
-	<defName>GrotAdult</defName>
+	<defName>OG_Lifestage_Grot_Adult</defName>
 	<label>Git</label>
 	<visible>false</visible>
 	<bodySizeFactor>1</bodySizeFactor>
