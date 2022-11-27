@@ -23,17 +23,17 @@ namespace AdeptusMechanicus.ExtensionMethods
 
         public static bool isSquig(this Pawn pawn)
         {
-            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Squig") && !pawn.def.defName.Contains("Squiggoth");
+            return !pawn.def.defName.NullOrEmpty() && pawn.def.defName.StartsWith("OG_") && pawn.def.defName.Contains("Squig") && !pawn.def.defName.Contains("Squiggoth");
         }
 
         public static bool isSquiggoth(this Pawn pawn)
         {
-            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Squiggoth");
+            return !pawn.def.defName.NullOrEmpty() && pawn.def.defName.StartsWith("OG_") && pawn.def.defName.Contains("Squiggoth");
         }
 
         public static bool isSnotling(this Pawn pawn)
         {
-            return pawn.def.defName.Contains("OG_") && pawn.def.defName.Contains("Snotling");
+            return !pawn.def.defName.NullOrEmpty() && pawn.def.defName.StartsWith("OG_") && pawn.def.defName.Contains("Snotling");
         }
 
         public static Orkoid Orkiness(this Pawn pawn)

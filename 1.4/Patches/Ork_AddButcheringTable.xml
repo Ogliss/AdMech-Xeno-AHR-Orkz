@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- Orkoid Wildman Behavior Link -->
+	<!-- Orkoid TableButcher DoBillsButcherFlesh Link -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>

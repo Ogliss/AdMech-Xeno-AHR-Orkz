@@ -458,6 +458,9 @@
 			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
 		</relationSettings>
 		<raceRestriction>
+			<blackEndoCategories>
+			  <li>BodyType</li>
+			</blackEndoCategories>
 			<researchList>
 				<li>
 					<projects>
@@ -771,18 +774,18 @@
 		<offset>(0,0,-0.3)</offset>
 		</specialShadowData>
 		<ageGenerationCurve>
-		<points>
-			<li>(0,0)</li>
-			<li>(3,200)</li>
-			<li>(10,250)</li>
-			<li>(20,150)</li>
-			<li>(30,100)</li>
-			<li>(40,12)</li>
-			<li>(50,6)</li>
-			<li>(120,1)</li>
-			<li>(140,1)</li>
-			<li>(200,0)</li>
-		</points>
+			<points>
+				<li>(0,0)</li>
+				<li>(3,200)</li>
+				<li>(10,250)</li>
+				<li>(20,150)</li>
+				<li>(30,100)</li>
+				<li>(40,12)</li>
+				<li>(50,6)</li>
+				<li>(120,1)</li>
+				<li>(140,1)</li>
+				<li>(200,0)</li>
+			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>
 			<li>OrganicAgeless</li>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdeptusMechanicus.settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace AdeptusMechanicus
         public new CompProperties_Orkoid Props => this.props as CompProperties_Orkoid;
 
         public override float HealFactor => Props.healFactor;
+        public override float HealMinimum => AMAMod.settings.OrkoidMinHealing;
         public override float HealFactorScar => Props.healFactorOldWound;
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {

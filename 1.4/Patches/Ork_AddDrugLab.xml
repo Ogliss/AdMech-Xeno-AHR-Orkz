@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid DrugLab Link -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef/recipeMaker/recipeUsers/li[text()="DrugLab"]</xpath>
+				<value>
+					<li>OGO_DrugLab</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

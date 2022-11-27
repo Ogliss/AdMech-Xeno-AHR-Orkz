@@ -805,7 +805,7 @@
 			<li>
 				<key>HairDef</key>
 				<value>
-					<hasStyle>false</hasStyle>
+					<!--hasStyle>false</hasStyle-->
 					<!--getsGreyAt>200</getsGreyAt--> 
 					<styleTagsOverride>
 						<li>OG_Ork_Hair</li>

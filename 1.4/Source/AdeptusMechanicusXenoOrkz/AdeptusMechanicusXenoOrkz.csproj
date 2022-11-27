@@ -49,8 +49,10 @@
   <ItemGroup>
     <Compile Include="Alerts\Alert_MinorFightRisk.cs" />
     <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
-    <Compile Include="Comps\Class1.cs" />
+    <Compile Include="Comps\Comp_Orkoid.cs" />
     <Compile Include="DefOf\OrkoidLifeStageDefOf.cs" />
+    <Compile Include="Harmony\Patches\PawnGenerator_FinalLevelOfSkill_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\StatPart_Age_AgeMultiplier_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_BodyResourceGrowthSpeed_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_LifeStageMinAge_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_NeedsTracker_ShouldHaveNeed_Orkoid_Patch.cs" />
