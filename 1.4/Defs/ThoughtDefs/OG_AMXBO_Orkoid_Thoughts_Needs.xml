@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!-- Social fights -->
+	
+	<ThoughtDef>
+		<defName>OG_Ork_LostScrap</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>lost scrap wiv {0}</label>
+				<description>i got the snot kicked outta me...</description>
+				<baseOpinionOffset>22</baseOpinionOffset>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>OG_Ork_WonScrap</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>won scrap wiv {0}</label>
+				<description>I kicked da snot outta dat git!!</description>
+				<baseOpinionOffset>-38</baseOpinionOffset>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>OG_Ork_WonScrap_Downed</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>won scrap wiv {0}</label>
+				<description>I kicked da snot outta dat git!!</description>
+				<baseOpinionOffset>-38</baseOpinionOffset>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+
+	<ThoughtDef>
+		<defName>OG_Ork_WonScrap_Killed</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>300</stackLimit>
+		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>won scrap wiv {0}</label>
+				<description>I kicked da snot outta dat git!!</description>
+				<baseOpinionOffset>-38</baseOpinionOffset>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+
 	<ThoughtDef>
 		<defName>OG_Ork_NeedViolence</defName>
 		<workerClass>AdeptusMechanicus.ThoughtWorker_Orkoid_NeedFightyness</workerClass>
@@ -31,5 +104,5 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-  
+	
 </Defs>

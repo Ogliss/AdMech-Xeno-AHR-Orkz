@@ -1,5 +1,8 @@
-﻿namespace AdeptusMechanicus
+﻿using RimWorld;
+
+namespace AdeptusMechanicus
 {
+
     public enum Orkoid
     {
         NonOrkoid,

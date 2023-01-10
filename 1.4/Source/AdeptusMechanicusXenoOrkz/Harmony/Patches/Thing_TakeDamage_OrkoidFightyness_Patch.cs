@@ -21,7 +21,9 @@ namespace AdeptusMechanicus.HarmonyInstance
 			if (dinfo.Def.ExternalViolenceFor(__instance))
 			{
 				Pawn damaged = __instance as Pawn;
-				Pawn instigator = dinfo.Instigator as Pawn;
+				bool PawnDmg = damaged != null;
+				float mult = (PawnDmg ? 0.01f : 0.001f);
+                Pawn instigator = dinfo.Instigator as Pawn;
                 if (instigator != null && instigator.isOrk())
                 {
 					for (int i = 0; i < instigator.needs.AllNeeds.Count; i++)
@@ -31,9 +33,13 @@ namespace AdeptusMechanicus.HarmonyInstance
 						//	Log.Message(instigator + " is Fightin!");
 							float old = need_Violence.CurLevel;
 							need_Violence.Fought = true;
-							need_Violence.foughtSocially = instigator.MentalState is MentalState_SocialFighting;
-							need_Violence.CurLevel -= dinfo.Amount * 0.005f;
-							if (need_Violence.CurLevel >= 0.9f) instigator.ageTracker.growth += dinfo.Amount * 0.005f;
+							if (instigator.MentalState is MentalState_SocialFighting state)
+							{
+                                need_Violence.foughtSocially = true;
+								if (state is MentalState_Ork_Scrapping scrapping) scrapping.Damage(dinfo.Amount);
+                            }
+                            need_Violence.CurLevel -= dinfo.Amount * mult;
+							if (need_Violence.CurLevel >= 0.9f) instigator.ageTracker.growth += dinfo.Amount * mult;
 							break;
 						}
 					}

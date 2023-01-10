@@ -17,34 +17,26 @@ namespace AdeptusMechanicus.HarmonyInstance
     [HarmonyPatch(typeof(TraitSet), "GetTrait", new Type[] { typeof(TraitDef), typeof(int) })]
     public static class TraitSet_GetTrait_Orkoid_Patch
     {
-        private static Trait bloodlust = new Trait(TraitDefOf.Bloodlust);
-        private static Trait psychopath = new Trait(TraitDefOf.Psychopath);
-        private static Trait nimble = new Trait(AdeptusTraitDefOf.Nimble);
+        public static List<Trait> traits = new List<Trait>()
+        {
+            new Trait(TraitDefOf.Bloodlust),
+            new Trait(TraitDefOf.Psychopath),
+            new Trait(TraitDefOf.Tough)
+        };
+
         [HarmonyPostfix]
         public static void Postfix(TraitDef tDef, Pawn ___pawn, ref Trait __result)
         {
             if (___pawn != null)
             {
-                if (___pawn.isOrk())
+                if (___pawn.isOrkoid())
                 {
-                    if (tDef == TraitDefOf.Bloodlust)
+                    foreach (var item in traits)
                     {
-                        __result = bloodlust;
-                    }
-                    if (tDef == TraitDefOf.Psychopath)
-                    {
-                        __result = psychopath;
-                    }
-                }
-                if (___pawn.isGrot())
-                {
-                    if (tDef == TraitDefOf.Bloodlust)
-                    {
-                        __result = bloodlust;
-                    }
-                    if (tDef == TraitDefOf.Psychopath)
-                    {
-                        __result = psychopath;
+                        if (tDef == item.def && (tDef != TraitDefOf.Tough || ___pawn.Orkiness() >= Orkoid.Nob))
+                        {
+                            __result = item;
+                        }
                     }
                 }
             }

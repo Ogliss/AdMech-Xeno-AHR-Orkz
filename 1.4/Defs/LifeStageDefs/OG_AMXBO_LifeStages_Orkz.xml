@@ -24,7 +24,7 @@
 	<marketValueFactor>0.75</marketValueFactor>
 	<meleeDamageFactor>0.75</meleeDamageFactor>
 	<statFactors>
-		<MoveSpeed>0.875</MoveSpeed>
+		<MoveSpeed>1.175</MoveSpeed>
 	</statFactors>
 </LifeStageDef>
 
@@ -46,6 +46,7 @@
 	<meleeDamageFactor>1.25</meleeDamageFactor>
 	<statFactors>
 		<MoveSpeed>1</MoveSpeed>
+		<IncomingDamageFactor>0.5</IncomingDamageFactor>
 	</statFactors>
 </LifeStageDef>
 
@@ -60,6 +61,7 @@
 	<meleeDamageFactor>1.75</meleeDamageFactor>
 	<statFactors>
 		<MoveSpeed>1</MoveSpeed>
+		<IncomingDamageFactor>0.475</IncomingDamageFactor>
 	</statFactors>
 </LifeStageDef>
 
@@ -75,6 +77,7 @@
 	<meleeDamageFactor>1.75</meleeDamageFactor>
 	<statFactors>
 		<MoveSpeed>1</MoveSpeed>
+		<IncomingDamageFactor>0.4</IncomingDamageFactor>
 	</statFactors>
 </LifeStageDef>
 
@@ -89,6 +92,7 @@
 	<meleeDamageFactor>2.25</meleeDamageFactor>
 	<statFactors>
 		<MoveSpeed>1</MoveSpeed>
+		<IncomingDamageFactor>0.35</IncomingDamageFactor>
 	</statFactors>
 </LifeStageDef>
 

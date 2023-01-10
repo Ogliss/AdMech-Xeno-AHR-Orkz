@@ -27,6 +27,13 @@ namespace AdeptusMechanicus.HarmonyInstance
                     {
                         __result = 0;
                     }
+                    if (___pawn.Orkiness() >= Orkoid.Nob)
+                    {
+                        if (tDef == TraitDefOf.Tough)
+                        {
+                            __result = 0;
+                        }
+                    }
                 }
             }
         }

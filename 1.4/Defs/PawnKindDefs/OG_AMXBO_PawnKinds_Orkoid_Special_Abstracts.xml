@@ -66,7 +66,7 @@
 	</apparelTags>
 </PawnKindDef>
 
-<PawnKindDef Abstract="True" Name="OG_Grot_Feral" ParentName="OG_Orkoid_Base">
+<PawnKindDef Abstract="True" Name="OG_Grot_Feral" ParentName="OG_Grot_Base">
 	<defaultFactionType>OG_Ork_Feral_Faction</defaultFactionType>
 	<backstoryFiltersOverride>
 		<li>

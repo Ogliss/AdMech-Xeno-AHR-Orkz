@@ -104,7 +104,7 @@
 							<options>
 							  <li>
 								  <anyAnimal>true</anyAnimal>
-								  <onlyAllowedFleshType>Normal</onlyAllowedFleshType>
+								  <onlyAllowedFleshType>OG_Flesh_Ork</onlyAllowedFleshType>
 								  <weight>1</weight>
 							  </li>
 							</options>

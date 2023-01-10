@@ -1,5 +1,6 @@
 ﻿using System;
 using AdeptusMechanicus.ExtensionMethods;
+using AlienRace;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -8,11 +9,61 @@ namespace AdeptusMechanicus
 {
     public class MentalState_Ork_Scrapping : MentalState_SocialFighting
 	{
-		public new bool ShouldStop
+		Need_Orkoid_Fightyness pawnFightyness = null;
+        Need_Orkoid_Fightyness PawnFightyness
 		{
 			get
 			{
-				return !this.otherPawn.Spawned || this.otherPawn.Dead || this.otherPawn.Downed || (!this.IsOtherPawnSocialFightingWithMe && this.otherPawn.isOrk());
+				if (pawnFightyness == null)
+				{
+					foreach (Need item in pawn?.needs?.needs)
+					{
+						if (item is Need_Orkoid_Fightyness fightyness)
+						{
+							pawnFightyness = fightyness;
+
+                        }
+					}
+				}
+				return pawnFightyness;
+
+            }
+		}
+		
+		Need_Orkoid_Fightyness otherFightyness = null;
+        Need_Orkoid_Fightyness OtherFightyness
+		{
+			get
+			{
+				if (otherFightyness == null)
+                {
+                    foreach (Need item in otherPawn?.needs?.needs)
+                    {
+						if (item is Need_Orkoid_Fightyness fightyness)
+						{
+                            otherFightyness = fightyness;
+
+                        }
+					}
+				}
+				return otherFightyness;
+
+            }
+		}
+
+        public new bool ShouldStop
+		{
+			get
+			{
+				bool otherSpawned = this.otherPawn.Spawned;
+				bool otherDead = this.otherPawn.Dead;
+				bool otherDowned = this.otherPawn.Downed;
+				bool otherOrk = this.otherPawn.isOrk();
+				bool IsOtherPawnSocialFightingWithMe = this.IsOtherPawnSocialFightingWithMe;
+				bool result = !otherSpawned || otherDead || otherDowned || (!IsOtherPawnSocialFightingWithMe && !otherOrk);
+
+                Log.Message($"ShouldStop::Result {result} :: otherSpawned:: {otherSpawned}, otherDead:: {otherDead}, otherDowned:: {otherDowned}, otherOrk:: {otherOrk}, IsOtherPawnSocialFightingWithMe:: {IsOtherPawnSocialFightingWithMe}");
+                return result;
 			}
 		}
 
@@ -35,9 +86,22 @@ namespace AdeptusMechanicus
 			{
 				base.RecoverFromState();
 				return;
-			}
-			base.MentalStateTick();
-		}
+            }
+            if (this.pawn.IsHashIntervalTick(30))
+            {
+                this.age += 30;
+                if (this.age >= this.def.maxTicksBeforeRecovery || (this.age >= this.def.minTicksBeforeRecovery && this.CanEndBeforeMaxDurationNow && Rand.MTBEventOccurs(this.def.recoveryMtbDays, 60000f, 30f)) || (this.forceRecoverAfterTicks != -1 && this.age >= this.forceRecoverAfterTicks))
+                {
+                    this.RecoverFromState();
+                    return;
+                }
+                if (this.def.recoverFromSleep && !this.pawn.Awake())
+                {
+                    this.RecoverFromState();
+                    return;
+                }
+            }
+        }
 
 		public override void PostEnd()
 		{
@@ -51,7 +115,11 @@ namespace AdeptusMechanicus
 			}
 			this.pawn.jobs.StopAll(false, true);
 			this.pawn.mindState.meleeThreat = null;
-			if (this.IsOtherPawnSocialFightingWithMe)
+            if (this.otherPawn.Dead || this.otherPawn.Downed || this.otherPawn.MentalState is MentalState_Ork_Scrapping scrapping && this.damageDone > scrapping.damageDone)
+            {
+                won = true;
+            }
+            if (this.IsOtherPawnSocialFightingWithMe)
 			{
 				this.otherPawn.MentalState.RecoverFromState();
 			}
@@ -59,20 +127,33 @@ namespace AdeptusMechanicus
 			{
 				Messages.Message("AdeptusMechanicus.Ork.MessageNoLongerSocialFighting".Translate(this.pawn.LabelShort, this.otherPawn.LabelShort, this.pawn.Named("PAWN1"), this.otherPawn.Named("PAWN2")), this.pawn, MessageTypeDefOf.SituationResolved, true);
 			}
-			if (!this.pawn.Dead && this.pawn.needs.mood != null && !this.otherPawn.Dead)
+			if (!this.pawn.Dead && this.pawn.needs.mood != null && otherPawn.RaceProps.Humanlike /* && !this.otherPawn.Dead */)
 			{
 				ThoughtDef def;
-				if (pawn.isOrk())
+				if (pawn.isOrk() && this.won)
 				{
-					def = ThoughtDefOf.HadCatharticFight;
-				}
+					def = otherPawn.Downed ? OrkoidThoughtDefOf.OG_Ork_WonScrap_Downed : otherPawn.Dead ? OrkoidThoughtDefOf.OG_Ork_WonScrap_Killed : OrkoidThoughtDefOf.OG_Ork_WonScrap; 
+					pawn.ageTracker.growth += damageDone * (0.05f * (int)otherPawn.Orkiness());
+                }
 				else
 				{
-					def = ThoughtDefOf.HadAngeringFight;
+					def = OrkoidThoughtDefOf.OG_Ork_LostScrap;
 				}
 				this.pawn.needs.mood.thoughts.memories.TryGainMemory(def, this.otherPawn);
 			}
 		}
-
+		public void Damage(float dmg)
+		{
+			damageDone+=dmg;
+		}
+		bool won = false;
+		public bool instigator = false;
+		float damageDone = 0f;
+		public override void ExposeData()
+		{
+			base.ExposeData();
+			Scribe_Values.Look(ref this.damageDone, "damageDone", 0f);
+			Scribe_Values.Look(ref this.instigator, "instigator", false);
+		}
 	}
 }

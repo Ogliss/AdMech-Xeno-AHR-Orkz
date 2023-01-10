@@ -5,11 +5,11 @@
 <AlienRace.AlienBackstoryDef Name="OG_Grot_Child_Abstract" Abstract="True">
 	<title>Grotling</title>
 	<titleShort>Grotling</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDesc>
+	<slot>Childhood</slot>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
-	<slot>Childhood</slot>
-	<baseDesc>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDesc>
 	<workDisables>
 		<!--li>Intellectual</li-->
 	</workDisables>
@@ -74,15 +74,15 @@
 		</li>
 		<li>
 			<key>Crafting</key>
-			<value>-2</value>
+			<value>-1</value>
 		</li>
 		<li>
 			<key>Artistic</key>
-			<value>-3</value>
+			<value>-2</value>
 		</li>
 		<li>
 			<key>Medicine</key>
-			<value>-2</value>
+			<value>-1</value>
 		</li>
 		<li>
 			<key>Social</key>
@@ -94,7 +94,91 @@
 		</li>
 	</skillGains>
 	<spawnCategories>
+		<li>Grot_Child</li>
 		<li>Grot_Base_Child</li>
+		<li>Grot_Runt</li>
+		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
+		<li>Grot_Slave</li>
+		<li>Grot_Leada</li>
+		<li>Grot_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Grot Child -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Grot_Child_Abstract">
+	<defName>OG_Grot_Rebel_Child</defName>
+	<title>Grotling rebel</title>
+	<titleShort>rebel</titleShort>
+	<baseDesc>[PAWN_nameDef] spent his yoof in a kamp of 'Rebel Grotz' groups of Gretchin who have escaped slavery to their larger Ork cousins, and as such has had a slightly less servile existance.</baseDesc>
+	<workDisables>
+		<!--li>Intellectual</li-->
+	</workDisables>
+	<forcedTraitsChance Inherit="False">
+		<li>
+			<defName>Nerves</defName>
+			<degree>-1</degree>
+			<chance>5</chance>
+		</li>
+		<li>
+			<defName>Neurotic</defName>
+			<degree>2</degree>
+			<chance>5</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<li>
+			<key>Shooting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Mining</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Cooking</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Plants</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Animals</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Crafting</key>
+			<value>1</value>
+		</li>
+		<li>
+			<key>Artistic</key>
+			<value>-1</value>
+		</li>
+		<li>
+			<key>Medicine</key>
+			<value>-1</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Intellectual</key>
+			<value>-4</value>
+		</li>
+	</skillGains>
+	<spawnCategories>
+		<li>Grot_Child</li>
+		<li>Grot_Rebel_Child</li>
 		<li>Grot_Runt</li>
 		<li>Grot_Gretchin</li>
 		<li>Grot_Goblin</li>
@@ -133,13 +217,77 @@
 	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 
+<!-- Grot Fungus Tenda -->
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Grot_Farmer</defName>
+	<title>grot fungus tenda</title>
+	<titleShort>tenda</titleShort>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a fungus tenda, part of the backbone of Ork society. Most tasks related to harvesting and tending of fungus are performed by [PAWN_pronoun] kind.</baseDesc>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<skillGains>
+		<li>
+			<key>Plants</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>-1</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>-1</value>
+		</li>
+	</skillGains>
+	<spawnCategories>
+		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
+		<li>Grot_Farmer</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Grot Squigherda -->
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Grot_Squigherda</defName>
+	<title>grot squigherda</title>
+	<titleShort>squigherda</titleShort>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is a squigherda, part of the backbone of Ork society. Most tasks related to the raising and tending of squigs are performed by [PAWN_pronoun] kind.</baseDesc>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<skillGains>
+		<li>
+			<key>Animals</key>
+			<value>4</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>-1</value>
+		</li>
+		<li>
+			<key>Shooting</key>
+			<value>-1</value>
+		</li>
+	</skillGains>
+	<spawnCategories>
+		<li>Grot_Gretchin</li>
+		<li>Grot_Goblin</li>
+		<li>Grot_Squigherda</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
 <!-- Grot Orderly -->	
 <AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_Orderly</defName>
 	<title>Grot orderly</title>
 	<titleShort>Orderly</titleShort>
 	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
-	<baseDesc>[PAWN_nameDef] is a orderly. With an knack for knowing which bitz go where when it comes to stickin da boyz back togeather.</baseDesc>
+	<baseDesc>[PAWN_nameDef] is a orderly. With an knack for knowing which bitz go where when it comes to helping stickin da boyz back togeather.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
@@ -151,7 +299,7 @@
 	<skillGains>
 		<li>
 			<key>Medicine</key>
-			<value>2</value>
+			<value>4</value>
 		</li>
 		<li>
 			<key>Melee</key>
@@ -165,6 +313,42 @@
 	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 
+<!-- Grot Oiler --> 
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Grot_Oiler</defName>
+	<title>Grot Oiler</title>
+	<titleShort>Oiler</titleShort>
+	<linkedBackstory>OG_Grot_Base_Child</linkedBackstory>
+	<baseDesc>[PAWN_nameDef] is an Oiler. With an knack for knowing which bitz da Mek needz.</baseDesc>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Cooking</li>
+	</workDisables>
+	<skillGains>
+		<li>
+			<key>Crafting</key>
+			<value>3</value>
+		</li>
+		<li>
+			<key>Melee</key>
+			<value>2</value>
+		</li>
+		<li>
+			<key>Construction</key>
+			<value>2</value>
+		</li>
+	</skillGains>
+	<spawnCategories>
+		<li>Grot_Gretchin</li>
+		<li>Grot_Oiler</li>
+		<li>Grot_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+ 
 <!-- Grot Tinkerer --> 
 <AlienRace.AlienBackstoryDef>
 	<defName>OG_Grot_Tinkerer</defName>
@@ -178,7 +362,6 @@
 	<slot>Adulthood</slot>
 	<workDisables>
 		<li>Caring</li>
-		<li>Social</li>
 		<li>Cooking</li>
 	</workDisables>
 	<skillGains>
@@ -230,6 +413,10 @@
 		<li>
 			<key>Shooting</key>
 			<value>2</value>
+		</li>
+		<li>
+			<key>Social</key>
+			<value>3</value>
 		</li>
 	</skillGains>
 	<spawnCategories>

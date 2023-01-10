@@ -24,4 +24,19 @@ namespace AdeptusMechanicus
         public static LifeStageDef OG_Lifestage_Grot_Runt;
         public static LifeStageDef OG_Lifestage_Grot_Adult;
     }
+
+    [DefOf]
+    public static class OrkoidThoughtDefOf
+    {
+        static OrkoidThoughtDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(OrkoidThoughtDefOf));
+        }
+
+        public static ThoughtDef OG_Ork_LostScrap;
+        public static ThoughtDef OG_Ork_WonScrap;
+        public static ThoughtDef OG_Ork_WonScrap_Downed;
+        public static ThoughtDef OG_Ork_WonScrap_Killed;
+        
+    }
 }

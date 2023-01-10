@@ -18,7 +18,8 @@ namespace AdeptusMechanicus
 				Messages.Message("AdeptusMechanicus.Ork.MessageSocialFight".Translate(pawn.LabelShort, otherPawn.LabelShort, pawn.Named("PAWN1"), otherPawn.Named("PAWN2")), pawn, MessageTypeDefOf.ThreatSmall, true);
 			}
 			pawn.mindState.mentalStateHandler.TryStartMentalState(AdeptusMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, otherPawn, false);
-			if (otherPawn.isOrk())
+			if (pawn.MentalState is MentalState_Ork_Scrapping state) state.instigator = true;
+            if (otherPawn.isOrk())
 			{
 				otherPawn.mindState.mentalStateHandler.TryStartMentalState(AdeptusMentalStateDefOf.OGO_Ork_Scrapping, null, false, false, pawn, false);
 			}

@@ -68,11 +68,12 @@ namespace AdeptusMechanicus.HarmonyInstance
 			
             if (!___pawn.Dead && ___pawn.isOrk())
 			{
+				/*
 				if (___pawn.def is AlienRace.ThingDef_AlienRace alienDef && Find.Selector.SingleSelectedThing == ___pawn)
 				{
 					Log.Message($"Prefix RecalculateLifeStageIndex {alienDef.LabelCap} minAgeForAdulthood: {alienDef.alienRace.generalSettings.minAgeForAdulthood} Growth: {___growth}");
 				}
-
+				*/
 			}
 		}
 
@@ -81,11 +82,12 @@ namespace AdeptusMechanicus.HarmonyInstance
 			
             if (!___pawn.Dead && ___pawn.isOrk())
 			{
+				/*
 				if (___pawn.def is AlienRace.ThingDef_AlienRace alienDef && Find.Selector.SingleSelectedThing == ___pawn)
 				{
 					Log.Message($"Postfix RecalculateLifeStageIndex {alienDef.LabelCap} minAgeForAdulthood: {alienDef.alienRace.generalSettings.minAgeForAdulthood} Growth: {___growth}");
 				}
-
+				*/
 			}
 		}
 	}

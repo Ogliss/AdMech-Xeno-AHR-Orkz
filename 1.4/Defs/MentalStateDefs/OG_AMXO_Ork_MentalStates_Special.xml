@@ -6,7 +6,7 @@
 		<stateClass>AdeptusMechanicus.MentalState_Ork_Scrapping</stateClass>
 		<label>scrappin'</label>
 		<minTicksBeforeRecovery>420</minTicksBeforeRecovery>
-		<recoveryMtbDays>0.02</recoveryMtbDays>
+		<recoveryMtbDays>0.04</recoveryMtbDays>
 		<category>Aggro</category>
 		<nameColor>(0.88,0.48,0.16)</nameColor>
 		<baseInspectLine>Mental state: Scrappin'</baseInspectLine>

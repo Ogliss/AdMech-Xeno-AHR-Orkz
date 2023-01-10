@@ -13,12 +13,12 @@ namespace AdeptusMechanicus.HarmonyInstance
 		private static float Postfix(float __result, Pawn pawn)
 		{
 			float result = __result;
-			bool selected = pawn != null && pawn.Map != null && Find.Selector.SingleSelectedThing == pawn;
+		//	bool selected = pawn != null && pawn.Map != null && Find.Selector.SingleSelectedThing == pawn;
 			if (!pawn.Dead && pawn.isOrk())
 			{
-				if (pawn.def is AlienRace.ThingDef_AlienRace alienDef && selected)
+				if (pawn.def is AlienRace.ThingDef_AlienRace alienDef/* && selected*/)
 				{
-					Log.Message($"BodyResourceGrowthSpeed {alienDef.LabelCap} minAgeForAdulthood: {alienDef.alienRace.generalSettings.minAgeForAdulthood} <= {pawn.ageTracker.AgeBiologicalYearsFloat} == {alienDef.alienRace.generalSettings.minAgeForAdulthood <= pawn.ageTracker.AgeBiologicalYearsFloat}");
+				//	Log.Message($"BodyResourceGrowthSpeed {alienDef.LabelCap} minAgeForAdulthood: {alienDef.alienRace.generalSettings.minAgeForAdulthood} <= {pawn.ageTracker.AgeBiologicalYearsFloat} == {alienDef.alienRace.generalSettings.minAgeForAdulthood <= pawn.ageTracker.AgeBiologicalYearsFloat}");
 				}
 
 				LifeStageAge adultOrk = null;
@@ -33,7 +33,7 @@ namespace AdeptusMechanicus.HarmonyInstance
 						break;
 					}
 				}
-				if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} StageIndexForAdulthood: {adultOrk}");
+			//	if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} StageIndexForAdulthood: {adultOrk}");
 				float need = 0f;
 				for (int i = 0; i < pawn.needs.AllNeeds.Count; i++)
 				{
@@ -43,9 +43,9 @@ namespace AdeptusMechanicus.HarmonyInstance
 						break;
 					}
 				}
-				if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} need: {need}");
+			//	if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} need: {need}");
 				if (pawn.ageTracker.CurLifeStageIndex >= adultOrkInd) result -= Mathf.Clamp(need, 0f, result);
-				if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} result: {__result}, {result}");
+			//	if (selected) Log.Message($"BodyResourceGrowthSpeed {pawn.LabelCap} result: {__result}, {result}");
 
 			}
 			return result;

@@ -183,7 +183,7 @@ namespace AdeptusMechanicus
                         {
                             builder.Append($" {item.kind.LabelCap} weighted at {item.selectionWeight}");
                         }
-                        if (AMAMod.Dev) Log.Message(builder.ToString());
+                    //    if (AMAMod.Dev) Log.Message(builder.ToString());
 
                     }
                     else
@@ -191,8 +191,8 @@ namespace AdeptusMechanicus
                         pawnKindDef = AdeptusPawnKindDefOf.OG_Squig;
                     }
                     Faction faction = FungalProps.spawnwild || OrkoidHarvester ? harvester.Faction : null;
-                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, 0f, false, false, false, false, false, false, false, false, false, 0f, 0f, null, 0f, null, null, fixedGender: Gender.None, fixedBiologicalAge: plantAge, fixedChronologicalAge: plantAge);
-                    pawnGenerationRequest.AllowedDevelopmentalStages = DevelopmentalStage.Newborn;
+                    PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, PawnGenerationContext.NonPlayer, Map.Tile, true, false, false, false, true, 0f, false, false, false, false, false, true, false, false, false, 0f, 0f, null, 0f, null, null, fixedGender: Gender.None, fixedBiologicalAge: plantAge, fixedChronologicalAge: plantAge);
+                    pawnGenerationRequest.AllowedDevelopmentalStages = FungalProps.allowedDevelopmentalStages;
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
                     if (harvester != null && !OrkoidHarvester)
                     {

@@ -51,7 +51,17 @@
     <Compile Include="Alerts\Alert_MajorOrExtremeFightRisk.cs" />
     <Compile Include="Comps\Comp_Orkoid.cs" />
     <Compile Include="DefOf\OrkoidLifeStageDefOf.cs" />
-    <Compile Include="Harmony\Patches\PawnGenerator_FinalLevelOfSkill_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceGrowthMomentAges_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceNewbornCategoryGroup_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceAgeSkillFactor_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceNewbornSkill_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceAgeSkillMaxFactorCurve_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\AlienRaceUtility_RaceNewbornTraits_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\HediffComp_Infecter_CheckMakeInfection_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\ImmunityHandler_DiseaseContractChanceFactor_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\MeditationFocusDef_EnablingThingsExplanation_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\MeditationFocusTypeAvailabilityCache_PawnCanUseInt_Orkoid_Patch.cs" />
+    <Compile Include="Harmony\Patches\PawnGenerator_TryGenerateSexualityTraitFor_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\StatPart_Age_AgeMultiplier_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_BodyResourceGrowthSpeed_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\Pawn_AgeTracker_LifeStageMinAge_Orkoid_Patch.cs" />
@@ -61,6 +71,7 @@
     <Compile Include="Harmony\Patches\Command_SetPlantToGrow_IsPlantAvailable_Orkoid_Patch.cs" />
     <Compile Include="Harmony\Patches\RaceRestrictionSettings_CanPlant_Snotling_Patch.cs" />
     <Compile Include="Things\OrkoidFungalProps.cs" />
+    <Compile Include="Utilities\GrowthUtility_Orkoid.cs" />
     <None Include="Harmony\Patches\Pawn_PostApplyDamage_OrkoidFightyness_Patch.cs.bak" />
     <Compile Include="JobDrivers\JobDriver_Slaughter.cs" />
     <Compile Include="JobDrivers\JobDriver_OrkoidHunt.cs" />
@@ -143,7 +154,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3542" GeneratePathProperty="true" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3563" GeneratePathProperty="true" />
     <PackageReference Include="Lib.Harmony" Version="2.2.2" />
     <PackageReference Include="TaskPubliciser">
       <Version>1.0.3</Version>

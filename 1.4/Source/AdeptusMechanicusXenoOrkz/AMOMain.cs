@@ -4,6 +4,7 @@ using System.Linq;
 using AdeptusMechanicus.ExtensionMethods;
 using AdeptusMechanicus.HarmonyInstance;
 using AdeptusMechanicus.settings;
+using AlienRace;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -35,7 +36,11 @@ namespace AdeptusMechanicus
                 AdeptusThingDefOf.OG_Plant_Orkoid_Cocoon
             };
             AlienRaceUtility.DoRacialRestrictionsFor(races, "O", blackTags, whiteProjects, blackProjects, whitePlants: plants, whiteAnimals: animals);
+            ThingDef vanillaMachiningTable = DefDatabase<ThingDef>.GetNamed("TableMachining");
+            ThingDef orkMachiningTable = DefDatabase<ThingDef>.GetNamed("OGO_TableMachining");
+            AlienRaceUtility.AddRecipes(vanillaMachiningTable, orkMachiningTable, races);
+
         }
-        
+
     }
 }

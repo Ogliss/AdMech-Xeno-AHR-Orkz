@@ -6,12 +6,53 @@
 	<description>The worker of the orkoid species: A fully grown Grot.</description>
 	<alienRace>
 		<graphicPaths>
-			<body>Things/Pawn/Humanlike/Grot/Bodies/</body>
 			<head>Things/Pawn/Humanlike/Grot/Head/</head>
+			<!--body>Things/Pawn/Humanlike/Grot/Bodies/</body-->
+			<body>
+				<bodytypeGraphics>
+				  <!--Child>
+					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Child</path>
+				  </Child-->
+				  <Thin>
+					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Thin</path>
+				  </Thin>
+				</bodytypeGraphics>
+			</body>
 		</graphicPaths>
 		<generalSettings>
+			<growthAges>
+				<li>0</li>
+				<li>1</li>
+				<li>2</li>
+			</growthAges>
+			<!-- Used when a baby becomes a child -->
+			<childBackstoryFilter IgnoreIfNoMatchingField="True">
+				<li>
+					<categories>
+						<li>Child_Orkoid</li>
+						<li>ChildTribal_Orkoid</li>
+					</categories>
+				</li>
+			</childBackstoryFilter>
+			<!-- Used when a child becomes an adult -->
+			<adultBackstoryFilter IgnoreIfNoMatchingField="True">
+				<li>
+					<categories>
+						<li>AdultColonist_Orkoid</li>
+						<li>AdultTribal_Orkoid</li>
+					</categories>
+				</li>
+			</adultBackstoryFilter>
+			<!-- Used when a vatgrown pawn becomes an adult -->
+			<adultVatBackstoryFilter IgnoreIfNoMatchingField="True">
+				<li>
+					<categories>
+						<li>VatGrown_Orkoid</li>
+					</categories>
+				</li>
+			</adultVatBackstoryFilter>
 			<maleGenderProbability>1</maleGenderProbability>
-			<minAgeForAdulthood>2</minAgeForAdulthood>
+			<minAgeForAdulthood>1</minAgeForAdulthood>
 			<immuneToAge>false</immuneToAge>
 			<alienPartGenerator>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
@@ -24,13 +65,163 @@
 				</headTypes>
 				<bodyTypes>
 					<li>Thin</li>
+					<!--li MayRequire="Ludeon.RimWorld.Biotech">Child</li-->
 				</bodyTypes>
+				<borderScale>1</borderScale>
+				<atlasScale>2</atlasScale>
+				<bodyAddons>
+					<!-- Ears -->
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
+						<debug>false</debug>
+						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarR</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<defaultOffset>Center</defaultOffset>
+						<!--drawSize>(0.85, 0.85)</drawSize-->
+						<offsets>
+							<south>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</south>
+							<north>
+								<layerOffset>-0.0</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</north>
+							<east>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</east>
+							<west>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</west>
+						</offsets>
+						<colorChannel>skin</colorChannel>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+							<!--li>UpperHead</li-->
+						</hiddenUnderApparelFor>
+					</li>
+					<li Class="AdeptusMechanicus.LinkedBodyAddon">
+						<debug>false</debug>
+						<path>Things/Pawn/Humanlike/Grot/Head/Ears/Average_Gretchin_EarL</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<linkLifeStageDrawSize>true</linkLifeStageDrawSize>
+						<alignWithHead>true</alignWithHead>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<drawnInBed>true</drawnInBed>
+						<defaultOffset>Center</defaultOffset>
+						<!--drawSize>(0.85, 0.85)</drawSize-->
+						<offsets>
+							<south>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.00,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</south>
+							<north>
+								<layerOffset>0.0</layerOffset>
+								<bodyTypes>
+									<Thin>(0.00,0.00)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</north>
+							<east>
+								<layerOffset>-0.5880</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.00,0.00)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</east>
+							<west>
+								<layerOffset>-0.2740</layerOffset>
+								<bodyTypes>
+									<Thin>(-0.0,0.0)</Thin>
+								</bodyTypes>
+								<headTypes>
+									<Gretchin_AverageNormal>(-0.0,0.0)</Gretchin_AverageNormal>
+								</headTypes>
+							</west>
+						</offsets>
+						<colorChannel>skin</colorChannel>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+							<!--li>UpperHead</li-->
+						</hiddenUnderApparelFor>
+					</li>
+
+				</bodyAddons>
+				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>100</weight>
+									<min>RGBA(0.0,0.329,0.255,1)</min>
+									<max>RGBA(0.388,0.61,0.133,1)</max>
+								</li>
+								<li>
+									<weight>10</weight>
+									<min>RGBA(0.224,0.196,0.133,1)</min>
+									<max>RGBA(0.478,0.451,0.482,1)</max>
+								</li>
+								<li>
+									<weight>1</weight>
+									<min>RGBA(0.4,0.004,0.204,1)</min>
+									<max>RGBA(0.608,0,0.09,1)</max>
+								</li>
+							</options>
+						</first>
+						<!--second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+								</li>
+							</options>
+						</second-->
+					</li>
+				</colorChannels>
 			</alienPartGenerator>
 			<chemicalSettings>	
 			</chemicalSettings>
 			<humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
-				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Ork</li>
 				<li>OG_Alien_Grot</li>
 			</notXenophobistTowards>
@@ -141,6 +332,74 @@
 					<chance>75</chance>
 				</li>
 			</forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>TAU_Philosophy</defName>
+				</li>
+				<li>
+					<defName>Kind</defName>
+				</li>
+				<li>
+					<defName>Gay</defName>
+				</li>
+				<li>
+					<defName>DislikesWomen</defName>
+				</li>
+				<li>
+					<defName>DislikesMen</defName>
+				</li>
+			</disallowedTraits>
 		</generalSettings>
 		<thoughtSettings>
 			<butcherThoughtGeneral>
@@ -570,41 +829,42 @@
 			</cannotReceiveThoughts>
 		</thoughtSettings>
 		<relationSettings>
-				<relationChanceModifierParent>0</relationChanceModifierParent>
-				<relationChanceModifierChild>0</relationChanceModifierChild>
-				<relationChanceModifierSibling>3</relationChanceModifierSibling>
-			
-				<relationChanceModifierLover>0</relationChanceModifierLover>
-				<relationChanceModifierExLover>0</relationChanceModifierExLover>
-			
-				<relationChanceModifierFiance>0</relationChanceModifierFiance>
-				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
-				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
-				<renamer>
-					<li>
-						<relation>Sibling</relation>
-						<label>Mob mate</label>
-						<femaleLabel>Mob mate</femaleLabel>
-					</li>
-					<li>
-						<relation>Parent</relation>
-						<label>Kult leader</label>
-						<femaleLabel>Kult leader</femaleLabel>
-					</li>
-					<li>
-						<relation>Child</relation>
-						<label>Klan member</label>
-						<femaleLabel>Klan member</femaleLabel>
-					</li>
-				</renamer>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>3</relationChanceModifierSibling>
+		
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+		
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+			<renamer>
+				<li>
+					<relation>Sibling</relation>
+					<label>Mob mate</label>
+					<femaleLabel>Mob mate</femaleLabel>
+				</li>
+				<li>
+					<relation>Parent</relation>
+					<label>Kult leader</label>
+					<femaleLabel>Kult leader</femaleLabel>
+				</li>
+				<li>
+					<relation>Child</relation>
+					<label>Klan member</label>
+					<femaleLabel>Klan member</femaleLabel>
+				</li>
+			</renamer>
 		</relationSettings>
 		<raceRestriction>
 			<blackEndoCategories>
-			  <li>BodyType</li>
+				<li>BodyType</li>
+				<li>Headbone</li>
+				<li>Head</li>
 			</blackEndoCategories>
 			<researchList>
 				<li>
-				
 					<projects>
 					<!--li>OG_Ork_Tech_Base_T1</li>
 					<li>OG_Ork_Tech_Weapons_Melee_T1</li>
@@ -616,7 +876,6 @@
 					<li>OG_Ork_Tech_Base_T3</li>
 					<li>OG_Ork_Tech_Apparel_Armour_T3</li-->
 					</projects>
-				
 					<apparelList>
 					
 					</apparelList>
@@ -708,6 +967,30 @@
 				<!--li>OrkoidFungus</li-->
 			</conceptList>
 		</raceRestriction>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+					<!--getsGreyAt>200</getsGreyAt--> 
+					<styleTagsOverride>
+						<li>OG_Grot_Hair</li>
+					</styleTagsOverride>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>TattooDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+		</styleSettings>
 	</alienRace>
 	<statBases>
 		<MarketValue>2000</MarketValue>
@@ -813,11 +1096,11 @@
 			</li>
 			<li>
 				<def>OG_Lifestage_Grot_Runt</def>
-				<minAge>1</minAge>
+				<minAge>0.01</minAge>
 			</li>
 			<li>
 				<def>OG_Lifestage_Grot_Adult</def>
-				<minAge>2</minAge>
+				<minAge>1</minAge>
 			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -897,7 +1180,7 @@
 	</modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
-<AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
+<AlienRace.ThingDef_AlienRace Name="OG_Grot_Race" ParentName="OG_Grot_RaceBase">
 	<defName>OG_Alien_Grot</defName>
 	<label>Grot</label>
 	<description>Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations. Gretchins are quite low in the strict hierarchy of Ork society because of their small size (the lowest Orkoids being the Snotlings) and are often used for the dirtiest jobs like scavenging and being used as the football when the bigger Orks get bored.

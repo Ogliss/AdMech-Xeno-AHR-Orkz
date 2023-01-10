@@ -10,6 +10,7 @@ using HarmonyLib;
 using Verse.Sound;
 using AdeptusMechanicus;
 using AdeptusMechanicus.ExtensionMethods;
+using UnityEngine;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
@@ -27,6 +28,13 @@ namespace AdeptusMechanicus.HarmonyInstance
                     if (tDef == TraitDefOf.Bloodlust || tDef == TraitDefOf.Psychopath)
                     {
                         __result = true;
+                    }
+                    if (___pawn.Orkiness() >= Orkoid.Nob)
+                    {
+                        if (tDef == TraitDefOf.Tough)
+                        {
+                            __result = true;
+                        }
                     }
                 }
             }

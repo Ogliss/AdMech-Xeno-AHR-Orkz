@@ -13,6 +13,7 @@ namespace AdeptusMechanicus
         public FloatRange tempsLimits = new FloatRange(0f, 58f);
         public float optionalChance = 0.01f;
         public List<OptionalThings> optionals = new List<OptionalThings>();
+        public DevelopmentalStage allowedDevelopmentalStages;
         
         public struct OptionalThings
         {
