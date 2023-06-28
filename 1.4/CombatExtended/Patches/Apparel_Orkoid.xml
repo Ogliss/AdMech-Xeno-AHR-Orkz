@@ -4,7 +4,7 @@
 		<!--success>Always</success-->
 		<operations>
 			<!-- ========================= Ork - Shirt ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_UniformShirt</defName>
 				<statBases>
 					<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
@@ -12,7 +12,7 @@
 			</li>
 		
 			<!-- ========================= Ork - Jacket ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_UniformJacket</defName>
 				<statBases>
 					<StuffEffectMultiplierArmor>11</StuffEffectMultiplierArmor>
@@ -23,7 +23,7 @@
 			</li>
 
 			<!-- ========================= Ork - Slava Cowl ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_SlavaCowl</defName>
 				<statBases>
 					<Bulk>2</Bulk>

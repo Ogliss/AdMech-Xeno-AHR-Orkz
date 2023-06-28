@@ -6,13 +6,19 @@
 		<defName>OGO_Wargear_KustomForcefield</defName>
 		<label>Kustom Forcefield</label>
 		<description>.</description>
-		<thingClass>AdeptusMechanicus.AdvShieldBelt</thingClass>
+		<thingClass>AdeptusMechanicus.ApparelComposite</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Wargear/Ork/KustomForceField/KustomForceField</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<comps>		
 			<li Class="AdeptusMechanicus.CompProperties_Wargear" />
+			<li Class="AdeptusMechanicus.CompProperties_Shield">
+				<allowRangedAttacks>true</allowRangedAttacks>
+				<blocksMeleeWeapons>true</blocksMeleeWeapons>
+				<drawX>1.1</drawX>
+				<drawY>1.1</drawY>
+			</li>
 			<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
 				<ExtrasEntries>
 					<li>

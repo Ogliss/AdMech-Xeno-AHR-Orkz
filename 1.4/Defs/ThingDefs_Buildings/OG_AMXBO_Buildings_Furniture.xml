@@ -236,7 +236,7 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-		<fertility>1.0</fertility>
+		<fertility IgnoreIfNoMatchingField="True">1.0</fertility>
 		<designationHotKey>Misc9</designationHotKey>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>

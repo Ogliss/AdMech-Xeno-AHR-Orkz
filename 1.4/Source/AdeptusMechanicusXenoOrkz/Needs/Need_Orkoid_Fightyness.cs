@@ -113,7 +113,7 @@ namespace AdeptusMechanicus
 					{
 					//	if (AMAMod.Dev && this.Fought) Log.Message(pawn + " fought recently");
 						num2 = -(num2 * (foughtSocially || pawn.Downed ? 0.5f : 1f));
-                        if (this.Fought && TicksSatisfied > satisifiedTicks)
+                        if (this.Fought && TicksSatisfied == 0)
 						{
 							if (AMAMod.Dev) Log.Message(pawn + " now needs to fight again");
 							this.fought = false;

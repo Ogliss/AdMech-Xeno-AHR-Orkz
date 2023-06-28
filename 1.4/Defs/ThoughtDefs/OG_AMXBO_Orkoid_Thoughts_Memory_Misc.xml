@@ -276,10 +276,10 @@
 		<durationDays>2</durationDays>
 		<stackLimit>30</stackLimit>
 		<stackedEffectMultiplier>1.75</stackedEffectMultiplier>
-		<nullifyingTraits>
+		<!--nullifyingTraits>
 			<li>Psychopath</li>
 			<li>Bloodlust</li>
-		</nullifyingTraits>
+		</nullifyingTraits-->
 		<stages>
 			<li>
 				<label>witnessed ally's death</label>

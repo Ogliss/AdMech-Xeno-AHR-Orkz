@@ -5,7 +5,7 @@
 		<operations>
 			<!-- ========================= Ork - Leva Arma ========================== -->
 
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_LevaArmour</defName>
 				<statBases>
 					<Bulk>25</Bulk>
@@ -22,7 +22,7 @@
 			</li>
 		
 			<!-- ========================= Ork - Leva Elmet ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_LevaElmet</defName>
 				<statBases>
 					<Bulk>5</Bulk>
@@ -39,7 +39,7 @@
 			</li>	
 
 			<!-- ========================= Ork - Flak Arma ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_Armour</defName>
 				<statBases>
 					<Bulk>40</Bulk>
@@ -56,7 +56,7 @@
 			</li>
 
 			<!-- ========================= Ork - 'Ard Hat ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_Elmet</defName>
 				<statBases>
 					<Bulk>5</Bulk>
@@ -73,7 +73,7 @@
 			</li>	
 			
 			<!-- ========================= Ork - Eavy Armour ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_EavyArmour</defName>
 				<statBases>
 					<Mass>50</Mass>
@@ -94,7 +94,7 @@
 			</li>
 			
 			<!-- ========================= Ork - 'Eavy Elmet ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<defName>OGO_Apparel_EavyElmet</defName>
 				<statBases>
 					<Bulk>5</Bulk>
@@ -112,7 +112,7 @@
 			</li>	
 			
 			<!-- ========================= Ork - Mega Armour ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<Name>OG_Ork_Apparel_Mega_Armour_Base</Name>
 				<statBases>
 					<Mass>120</Mass>
@@ -135,7 +135,7 @@
 			</li>
 			
 			<!-- ========================= Ork - Mega Elmet ========================== -->
-			<li Class="CombatExtended.PatchOperationMakeApparelCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeApparelCECompatible">
 				<Name>OG_Ork_Apparel_Mega_Armour_Helmet_Base</Name>
 				<statBases>
 					<Bulk>5</Bulk>

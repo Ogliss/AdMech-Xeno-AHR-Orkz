@@ -3,7 +3,7 @@
 	<!-- ========== Snotling ========== -->
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OG_Snotling</defName>
 				<statBases>
 					<ArmorRating_Blunt>4</ArmorRating_Blunt>

@@ -136,7 +136,7 @@
 		<MarketValue>1.1</MarketValue>
 	</statBases>
 	<ingestible>
-		<foodType>Meat, VegetableOrFruit</foodType>
+		<foodType>Meat, Fungus, VegetableOrFruit</foodType>
 		<tasteThought>OG_AteMeal_OrkFungus</tasteThought>
 		<specialThoughtDirect>OG_AteDirect_OrkFungus</specialThoughtDirect>
 		<specialThoughtAsIngredient>OG_AteAsIngredient_OrkFungus</specialThoughtAsIngredient>

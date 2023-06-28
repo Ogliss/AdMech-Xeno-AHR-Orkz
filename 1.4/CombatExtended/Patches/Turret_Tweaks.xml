@@ -18,7 +18,7 @@
 			</li-->
 			<!--=============== Manual turrets ===============-->
 			<!--=============== Pintle-Mounted Heavy Bolter ===============-->
-			<!--li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<!--li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGO_GunTurret_HeavyBolter</defName>
 				<statBases>
 					<Mass>12.6</Mass>
@@ -56,7 +56,7 @@
 				</FireModes>
 			</li-->
 			<!--=============== Pintle-Mounted Storm Bolter ===============-->
-			<!--li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<!--li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGO_GunTurret_StormBolter</defName>
 				<statBases>
 					<Mass>4.6</Mass>
@@ -113,7 +113,7 @@
 					<AimingAccuracy IgnoreIfNoMatchingField="True">0.25</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGO_GunTurret_Rattler</defName>
 				<statBases>
 					<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
@@ -190,7 +190,7 @@
 					<AimingAccuracy IgnoreIfNoMatchingField="True">0.25</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGO_GunTurret_GrotCannon</defName>
 				<statBases>
 					<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
@@ -275,7 +275,7 @@
 					<AimingAccuracy IgnoreIfNoMatchingField="True">0.5</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGO_GunTurret_BigZzappa</defName>
 				<statBases>
 					<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>

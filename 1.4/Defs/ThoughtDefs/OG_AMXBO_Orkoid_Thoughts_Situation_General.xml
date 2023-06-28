@@ -80,11 +80,9 @@
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>
-		<!--
 		<nullifyingTraits>
-			<li>Bloodlust</li>
+			<li>Wimp</li>
 		</nullifyingTraits>
-		-->
 	</ThoughtDef>
 	
 	<ThoughtDef>
