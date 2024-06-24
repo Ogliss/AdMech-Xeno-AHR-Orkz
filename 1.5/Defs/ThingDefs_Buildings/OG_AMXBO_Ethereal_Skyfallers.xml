@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="SkyfallerBase">
+	<defName>OG_Orkoid_RokIncoming</defName>
+	<label>meteorite (incoming)</label>
+	<size>(4, 4)</size>
+	<graphicData>
+		<texPath>Things/Skyfaller/Meteorite</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>Transparent</shaderType>
+		<drawSize>(10, 10)</drawSize>
+	</graphicData>
+	<skyfaller>
+		<shadowSize>(3, 3)</shadowSize>
+		<explosionRadius>4</explosionRadius>
+		<explosionDamage>Bomb</explosionDamage>
+		<rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+		<speed>1.2</speed>
+	</skyfaller>
+</ThingDef>
+
+</Defs>

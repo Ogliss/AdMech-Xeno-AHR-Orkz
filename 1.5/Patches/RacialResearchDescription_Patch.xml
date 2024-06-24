@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName = "OG_Ork_Tech_Base_T1"]/description</xpath>
+				<value>
+					<description>The Ork way of life is as straightforward and brutal as the Orks themselves. Much like their approach to everything else, Orks do not waste time pondering why they do things, or how they might do them better. Instead they simply act, the fundamental tenet of their society is a simple one that even the most pea-brained Snotling can understand -- might makes right.\n\nOrk Research and Technology can Only be researched/crafted by Orks or Grots.</description>
+				</value>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>

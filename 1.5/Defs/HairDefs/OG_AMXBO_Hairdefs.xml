@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<StyleItemCategoryDef>
+		<defName>OG_Ork_Hair</defName>
+		<label>ork hair</label>
+	</StyleItemCategoryDef>
+
+	<HairDef Abstract="True" Name="Ork_Hair_Base">
+		<hairTags>
+			<li>OG_Ork_Hair</li>
+		</hairTags>
+		<styleTags>
+			<li>OG_Ork_Hair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef ParentName="Ork_Hair_Base">
+		<defName>OrkTopKnot</defName>
+		<label>TopKnot</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Ork/Hair/TopKnot</texPath>
+	</HairDef>
+
+	<HairDef ParentName="Ork_Hair_Base">
+		<defName>OrkMohawk</defName>
+		<label>Moawk</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Ork/Hair/Mohawk</texPath>
+	</HairDef>
+
+	<HairDef ParentName="Ork_Hair_Base">
+		<defName>OrkSpikes</defName>
+		<label>Spikez</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Ork/Hair/Spikes</texPath>
+	</HairDef>
+
+	<HairDef ParentName="Ork_Hair_Base">
+		<defName>OrkBald</defName>
+		<label>Ork Bald</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Ork/Hair/Bald</texPath>
+	</HairDef>
+
+
+	<StyleItemCategoryDef>
+		<defName>OG_Grot_Hair</defName>
+		<label>grot hair</label>
+	</StyleItemCategoryDef>
+  
+	<HairDef Abstract="True" Name="Grot_Hair_Base">
+		<hairTags>
+			<li>OG_Grot_Hair</li>
+		</hairTags>
+		<styleTags>
+			<li>OG_Grot_Hair</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef ParentName="Grot_Hair_Base">
+		<defName>GrotTopKnot</defName>
+		<label>Grot Top Knot</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Grot/Hair/TopKnot</texPath>
+	</HairDef>
+
+	<HairDef ParentName="Grot_Hair_Base">
+		<defName>GrotBald</defName>
+		<label>Grot Bald</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Humanlike/Grot/Hair/Bald</texPath>
+	</HairDef>
+
+</Defs>

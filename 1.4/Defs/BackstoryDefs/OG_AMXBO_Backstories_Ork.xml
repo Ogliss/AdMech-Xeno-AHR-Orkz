@@ -885,13 +885,13 @@
 	<defName>OG_Ork_Nob_MadDok</defName>
 	<title>Mad Dok</title>
 	<titleShort>Dok</titleShort>
-	<baseDesc>[PAWN_nameDef] has proven his worth and achieved the rank of mek. With an knack for knowing which bitz go where when it comes to teknology.</baseDesc>
+	<baseDesc>[PAWN_nameDef] has proven his worth and achieved the rank of mad dok. With an knack for knowing which bitz go where when it comes to puttin da boys back togeather.</baseDesc>
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<bodyTypeMale>Hulk</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
 	<workDisables>
-		<li>Caring</li>
+		<li>Mining</li>
 		<li>Cooking</li>
 	</workDisables>
 	<forcedTraitsChance>
@@ -902,24 +902,20 @@
 	</forcedTraitsChance>
 	<skillGains>
 		<li>
-			<key>Crafting</key>
-			<value>6</value>
+			<key>Medicine</key>
+			<value>8</value>
 		</li>
 		<li>
 			<key>Intellectual</key>
-			<value>6</value>
+			<value>5</value>
 		</li>
 		<li>
 			<key>Shooting</key>
-			<value>2</value>
-		</li>
-		<li>
-			<key>Construction</key>
-			<value>3</value>
+			<value>-2</value>
 		</li>
 		<li>
 			<key>Melee</key>
-			<value>-2</value>
+			<value>2</value>
 		</li>
 	</skillGains>
 	<spawnCategories>

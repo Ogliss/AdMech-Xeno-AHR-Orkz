@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef Name="AverageBase" Abstract="True">
+    <hairMeshSize>(1.5, 1.5)</hairMeshSize>
+    <beardMeshSize>(1.5, 1.5)</beardMeshSize>
+  </HeadTypeDef>
+
+  <HeadTypeDef Name="NarrowBase" Abstract="True">
+    <hairMeshSize>(1.3, 1.5)</hairMeshSize>
+    <beardMeshSize>(1.5, 1.5)</beardMeshSize>
+    <beardOffset>(0, 0, -0.05)</beardOffset>
+    <beardOffsetXEast>-0.05</beardOffsetXEast>
+    <eyeOffsetEastWest>(0.1, 0, 0.18)</eyeOffsetEastWest>
+    <narrow>true</narrow>
+  </HeadTypeDef>
+
+  <!-- Unisex -->
+
+  <!--HeadTypeDef ParentName="AverageBase">
+    <defName>Stump</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/None_Average_Stump</graphicPath>
+    <selectionWeight>0</selectionWeight>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+  </HeadTypeDef-->
+
+  <!-- Ork -->
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Ork_Skull</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Skull/Skull</graphicPath>
+    <selectionWeight>0</selectionWeight>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Ork_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Ork/Head/Average_Ork</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Ork_AverageScarred</defName>
+    <graphicPath>Things/Pawn/Humanlike/Ork/Head/Scarred_Ork_0</graphicPath>
+    <eyeOffsetEastWest>(0.175, 0, 0.18)</eyeOffsetEastWest>
+    <gender>None</gender>
+  </HeadTypeDef>
+  
+  <!-- Grot -->
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Gretchin_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Grot/Head/Average_Gretchin</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>Gretchin_NarrowNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Grot/Head/Narrow_Gretchin</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>Gretchin_NarrowPointy</defName>
+    <graphicPath>Things/Pawn/Humanlike/Grot/Head/Pointy_Gretchin</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>Gretchin_NarrowWide</defName>
+    <graphicPath>Things/Pawn/Humanlike/Grot/Head/Wide_Gretchin</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+</Defs>

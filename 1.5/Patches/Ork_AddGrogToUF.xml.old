@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[SYR] Universal Fermenter</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <!--success>Always</success-->
+        <operations>
+			<!-- Swapping Grog to UF -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "OG_Ork_FermentingBarrel"]/comps/li[@Class="AdeptusMechanicus.CompProperties_UniversalFermenter"]</xpath>
+				<value>
+				  <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
+					<showProductIcon>true</showProductIcon>
+					<barOffset>(0.0, 0.25)</barOffset>
+					<barScale>(1.0, 1.0)</barScale>
+					<processes>
+					  <li>
+						<thingDef>OG_Ork_Grog</thingDef>
+						<ingredientFilter>
+						  <thingDefs>
+							<li>OG_Ork_Waart</li>
+						  </thingDefs>
+						</ingredientFilter>
+						<usesTemperature>true</usesTemperature>
+						<temperatureSafe>-1.0~32.0</temperatureSafe>
+						<temperatureIdeal>7.0~32.0</temperatureIdeal>
+						<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+						<speedBelowSafe>0.1</speedBelowSafe>
+						<speedAboveSafe>1.0</speedAboveSafe>
+						<processDays>6</processDays> <!-- in days, 60000 ticks is a day -->
+						<maxCapacity>25</maxCapacity>
+						<efficiency>1.0</efficiency>
+						<sunFactor>1.0~1.0</sunFactor>
+						<rainFactor>1.0~1.0</rainFactor>
+						<snowFactor>1.0~1.0</snowFactor>
+						<windFactor>1.0~1.0</windFactor>
+						<graphicSuffix></graphicSuffix>
+						<usesQuality>false</usesQuality>
+						<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+					  </li>
+					</processes>
+				  </li>
+				</value>
+			</li>
+        </operations>
+    </match>
+</Operation>
+</Patch>

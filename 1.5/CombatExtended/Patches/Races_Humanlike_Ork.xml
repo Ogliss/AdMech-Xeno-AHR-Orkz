@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+<!--success>Always</success-->
+<operations>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>9</power>
+					<cooldownTime>1.65</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetration>0.095</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>9</power>
+					<cooldownTime>1.65</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetration>0.095</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.85</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetration>0.079</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeParryChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeParryChance>1.15</MeleeParryChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeParryChance</xpath>
+			<value>
+				<MeleeParryChance>1.15</MeleeParryChance>
+			</value>
+		</match>
+	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeCritChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeCritChance>1.15</MeleeCritChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeCritChance</xpath>
+			<value>
+				<MeleeCritChance>1.15</MeleeCritChance>
+			</value>
+		</match>
+	</li>
+	<li Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeDodgeChance</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases</xpath>
+			<value>
+				<MeleeDodgeChance>0.75</MeleeDodgeChance>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Ork_RaceBase"]/statBases/MeleeDodgeChance</xpath>
+			<value>
+				<MeleeDodgeChance>0.75</MeleeDodgeChance>
+			</value>
+		</match>
+	</li>
+</operations>
+</Operation>
+
+</Patch>

@@ -52,6 +52,11 @@
 	<description>The pinnacle of the orkoid species: A fully grown Ork.</description>
 	<alienRace>
 		<generalSettings>
+			<growthAges>
+				<li>1</li>
+				<li>2</li>
+				<li>10</li>
+			</growthAges>
 			<maleGenderProbability>1</maleGenderProbability>
 			<minAgeForAdulthood>2</minAgeForAdulthood>
 			<immuneToAge>false</immuneToAge>
@@ -986,7 +991,31 @@
 			</factionRelations>
 		</generalSettings>
 		<graphicPaths>
-			<body>Things/Pawn/Humanlike/Ork/Bodies/</body>
+			<body>
+				<bodytypeGraphics>
+				  <Baby>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Child</path>
+				  </Baby>
+				  <Child>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Child</path>
+				  </Child>
+				  <Male>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Male</path>
+				  </Male>
+				  <Female>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Female</path>
+				  </Female>
+				  <Fat>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Fat</path>
+				  </Fat>
+				  <Thin>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Thin</path>
+				  </Thin>
+				  <Hulk>
+					<path>Things/Pawn/Humanlike/Ork/Bodies/Naked_Hulk</path>
+				  </Hulk>
+				</bodytypeGraphics>
+			</body>
 			<head>Things/Pawn/Humanlike/Ork/Head/</head>
 			<skull>Things/Pawn/Humanlike/Ork/Skull/Skull</skull>
 		</graphicPaths>

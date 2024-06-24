@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Ork Childhood -->
+<AlienRace.AlienBackstoryDef Name="OG_Ork_Child_Base" Abstract="True">
+	<title>yoof</title>
+	<titleShort>yoof</titleShort>
+	<baseDesc>[PAWN_nameDef] is an Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Male</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>Ork_Child</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Runt</li>
+		<li>Ork_Boy</li>
+		<li>Ork_Nob</li>
+		<li>Ork_Boss</li>
+		<li>Ork_Tek</li>
+		<li>Ork_Choppa</li>
+		<li>Ork_Boy_Choppa</li>
+		<li>Ork_Slugga</li>
+		<li>Ork_Boy_Slugga</li>
+		<li>Ork_Shoota</li>
+		<li>Ork_Boy_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Doc</li>
+		<li>Ork_Noncom</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Child Base -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Child_Base">
+	<defName>OG_Ork_Base_Child</defName>
+	<workDisables>
+	</workDisables>
+	<disallowedTraitsChance>
+		<li>
+			<defName Degree="2">Beauty</defName>
+		</li>
+		<li>
+			<defName Degree="1">Beauty</defName>
+		</li>
+		<li>
+			<defName Degree="1">PsychicSensitivity</defName>
+		</li>
+		<li>
+			<defName Degree="2">PsychicSensitivity</defName>
+		</li>
+	</disallowedTraitsChance>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>4</Melee>
+		<Construction>1</Construction>
+		<Mining>2</Mining>
+		<Cooking>-3</Cooking>
+		<Plants>1</Plants>
+		<Animals>1</Animals>
+		<Crafting>2</Crafting>
+		<Medicine>-4</Medicine>
+		<Social>-6</Social>
+		<Intellectual>-4</Intellectual>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Child</li>
+		<li>Ork_Base_Child</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Runt</li>
+		<li>Ork_Boy</li>
+		<li>Ork_Nob</li>
+		<li>Ork_Boss</li>
+		<li>Ork_Tek</li>
+		<li>Ork_Choppa</li>
+		<li>Ork_Boy_Choppa</li>
+		<li>Ork_Slugga</li>
+		<li>Ork_Boy_Slugga</li>
+		<li>Ork_Shoota</li>
+		<li>Ork_Boy_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Doc</li>
+		<li>Ork_Noncom</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Odd Child -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Child_Base">
+	<defName>OG_Ork_Odd_Child</defName>
+	<workDisables>
+	
+	</workDisables>
+	<disallowedTraitsChance>
+		<li>
+			<defName Degree="2">Beauty</defName>
+		</li>
+		<li>
+			<defName Degree="1">Beauty</defName>
+		</li>
+		<li>
+			<defName Degree="1">PsychicSensitivity</defName>
+		</li>
+		<li Degree="2">
+			<defName>PsychicSensitivity</defName>
+		</li>
+	</disallowedTraitsChance>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>2</Melee>
+		<Construction>-1</Construction>
+		<Mining>-2</Mining>
+		<Cooking>-3</Cooking>
+		<Plants>-1</Plants>
+		<Animals>-1</Animals>
+		<Crafting>2</Crafting>
+		<Medicine>3</Medicine>
+		<Social>-1</Social>
+		<Intellectual>2</Intellectual>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Odd_Child</li>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Nob_Odd</li>
+		<li>Ork_Boss_Odd</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Adulthood -->
+<!-- Ork Boyz -->
+<AlienRace.AlienBackstoryDef Name="OG_Ork_Boy_Backstory_Base" Abstract="True">
+	<bioAgeRange>
+		<max>29</max>
+	</bioAgeRange>
+	<spawnCategories>
+		<li>Ork_Boy</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Choppa -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Choppa</defName>
+	<title>Choppa</title>
+	<titleShort>Choppa</titleShort>
+	<baseDesc>[PAWN_nameDef] is earning his place in Ork society by being a terrific close-range fighter.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+	<!--
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	-->
+		<li>ManualSkilled</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+				<defName>ShootingAccuracy</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Melee>4</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy_Choppa</li>
+		<li>Ork_Choppa</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Slugga -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Slugga</defName>
+	<title>Slugga</title>
+	<titleShort>Slugga</titleShort>
+	<baseDesc>[PAWN_nameDef]'s is motto is: Less talk, moar DAKKA! [PAWN_pronoun] loves to shoot, it doesnt matter what, although the result is less accurate than your average ork.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+	<!--
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+		<li>ManualSkilled</li>
+	-->
+		<li>Social</li>
+		<li>Caring</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="-1">ShootingAccuracy</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Shooting>2</Shooting>
+		<Melee>2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy_Slugga</li>
+		<li>Ork_Slugga</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Shoota -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Shoota</defName>
+	<title>sharpshooter</title>
+	<titleShort>Snipa</titleShort>
+	<baseDesc>[PAWN_nameDef] has a knack for actually hitting a target when using projectiles. [PAWN_pronoun] is more accurate than your average ork.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+	<!--
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+		<li>ManualSkilled</li>
+	-->
+		<li>Social</li>
+		<li>Caring</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="1">ShootingAccuracy</defName>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Shooting>4</Shooting>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy_Shoota</li>
+		<li>Ork_Shoota</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Shouta -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Shouter</defName>
+	<title>Shouta</title>
+	<titleShort>Shouta</titleShort>
+	<baseDesc>[PAWN_nameDef] is infamous for his booming voice, being able to call out enemies over half a mile away.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+	</workDisables>
+	<skillGains>
+		<Animals>1</Animals>
+		<Melee>2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Standard</li>
+		<li>Ork_Noncom</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Mad -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Mad</defName>
+	<title>Madboy</title>
+	<titleShort>Madboy</titleShort>
+	<baseDesc>[PAWN_nameDef] is a madboy. With an intellect as thick as [PAWN_pronoun] skull, only the most basic tasks are suitable for this specimen.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>ManualSkilled</li>
+		<li>Animals</li>
+		<li>Crafting</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>1</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Nobz -->
+<AlienRace.AlienBackstoryDef Name="OG_Ork_Nob_Backstory_Base" Abstract="True">
+	<bioAgeRange>
+		<min>30</min>
+		<max>49</max>
+	</bioAgeRange>
+	<spawnCategories>
+		<li>Ork_Nob</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Nob Crusher --> 
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Nob_Backstory_Base">
+	<defName>OG_Ork_Nob_Crusher</defName>
+	<title>Crusher Nob</title>
+	<titleShort>Crusher</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Nob, Bigger and badder than the average Ork, having survived countless battles and has proven his worth by viciously pummeling his opponents into the dirt.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>-2</Shooting>
+		<Melee>3</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Nob_Choppa</li>
+		<li>Ork_Nob_Choppa</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+ 
+<!-- Ork Nob Flash -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Nob_Backstory_Base">
+	<defName>OG_Ork_Nob_Flash</defName>
+	<title>Flash Git</title>
+	<titleShort>Flash</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Nob, Bigger and badder than the average Ork, having survived countless battles.\n\n Known as a Flash Git for his fixation with the biggest and badest weapon he can get his hands on</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="-1">ShootingAccuracy</defName>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Shooting>3</Shooting>
+		<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Nob_Slugga</li>
+		<li>Ork_Nob_Slugga</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Nob Devastator -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Nob_Backstory_Base">
+	<defName>OG_Ork_Nob_Devastator</defName>
+	<title>Devistata</title>
+	<titleShort>Devistata</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Nob, Bigger and badder than the average Ork, having survived countless battles. Known as a "Devistata" due to a perticular proclivity for pyrotechnics.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="1">ShootingAccuracy</defName>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Nob_Shoota</li>
+		<li>Ork_Nob_Shoota</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Bossez -->
+<AlienRace.AlienBackstoryDef Name="OG_Ork_Boss_Backstory_Base" Abstract="True">
+	<bioAgeRange>
+		<min>50</min>
+	</bioAgeRange>
+	<spawnCategories>
+		<li>Ork_Boss</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boss -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boss_Backstory_Base">
+	<defName>OG_Ork_Boss_Nob</defName>
+	<title>Boss</title>
+	<titleShort>Boss</titleShort>
+	<baseDesc>[PAWN_nameDef] has achieved the rank of boss by being the bigger and tougher all his competition.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Caring</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>Crafting</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>75</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>6</Shooting>
+		<Melee>6</Melee>
+		<Social>6</Social>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boss</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork OddBoyz -->
+<!-- Ork Boy Kommando -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Kommando</defName>
+	<title>Kommando</title>
+	<titleShort>Kommando</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Kommando, he epitomise the Orky virtue of low cunning. Nothing makes [PAWN_nameDef] happier than creeping up on an unsuspecting enemy, his mates slithering through the undergrowth at his side. When the time is right, burst from concealment, slashing, stabbing and shooting their stunned prey before they have a chance to strike back.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+	<!--
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	-->
+		<li>ManualSkilled</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>ShootingAccuracy</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Melee>4</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Boy_Kommando</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Brewer -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Brewer</defName>
+	<title>Brewer</title>
+	<titleShort>Brewer</titleShort>
+	<baseDesc>[PAWN_nameDef] has developed a rare talent among greenskins in that he's smart enough to brew stuff. Being a Greenskin, the result still tastes horrible and may be lethal to non-Greenskins. </baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Caring</li>
+	</workDisables>
+	<skillGains>
+		<Cooking>4</Cooking>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Noncom</li>
+		<li>Grot_Gretchin</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Boy Herda -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Herda</defName>
+	<title>Squig Erda</title>
+	<titleShort>Erda</titleShort>
+	<baseDesc>[PAWN_nameDef] is known for his skill in handling squigs and other animals. Skill in this case often means beating the poor thing until it submits.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>PlantWork</li>
+		<li>Cooking</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<skillGains>
+		<Animals>3</Animals>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Standard</li>
+		<li>Grot_Gretchin</li>
+		<li>Ork_Noncom</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Mekboy -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OrkMekboy</defName>
+	<title>Mekboy</title>
+	<titleShort>Mekboy</titleShort>
+	<baseDesc>[PAWN_nameDef] is a mekboy. With an knack for knowing which bitz go where when it comes to teknology.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Cooking</li>
+	</workDisables>
+	<skillGains>
+		<Crafting>3</Crafting>
+		<Intellectual>3</Intellectual>
+		<Construction>2</Construction>
+		<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Painboy -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Doc</defName>
+	<title>Painboy</title>
+	<titleShort>Painboy</titleShort>
+	<baseDesc>[PAWN_nameDef] is a painboy. With an knack for knowing which bitz go where when it comes to stickin da boyz back togeather.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Cooking</li>
+		<li>Mining</li>
+		<li>Crafting</li>
+	</workDisables>
+	<skillGains>
+		<Medicine>5</Medicine>
+		<Intellectual>3</Intellectual>
+		<Shooting>-2</Shooting>
+		<Melee>1</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Boy_Odd</li>
+		<li>Ork_Standard</li>
+		<li>Ork_Doc</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork OddNobz -->
+<!-- Ork Nob Mek -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Nob_Backstory_Base">
+	<defName>OG_Ork_Nob_Mek</defName>
+	<title>Mek</title>
+	<titleShort>Mek</titleShort>
+	<baseDesc>[PAWN_nameDef] has proven his worth and achieved the rank of mek. With an knack for knowing which bitz go where when it comes to teknology.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Cooking</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Crafting>6</Crafting>
+		<Intellectual>6</Intellectual>
+		<Shooting>2</Shooting>
+		<Construction>3</Construction>
+		<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Nob_Odd</li>
+		<li>Ork_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork Mad Dok -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Nob_Backstory_Base">
+	<defName>OG_Ork_Nob_MadDok</defName>
+	<title>Mad Dok</title>
+	<titleShort>Dok</titleShort>
+	<baseDesc>[PAWN_nameDef] has proven his worth and achieved the rank of mad dok. With an knack for knowing which bitz go where when it comes to puttin da boys back togeather.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Mining</li>
+		<li>Cooking</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Medicine>8</Medicine>
+		<Intellectual>5</Intellectual>
+		<Shooting>-2</Shooting>
+		<Melee>2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Odd</li>
+		<li>Ork_Nob_Odd</li>
+		<li>Ork_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Ork OddBossez -->
+<!-- Ork Big Mek -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boss_Backstory_Base">
+	<defName>OG_Ork_Boss_Mek</defName>
+	<title>Big Mek</title>
+	<titleShort>Big Mek</titleShort>
+	<baseDesc>[PAWN_nameDef] has proven his worth and achieved the rank of BigMek. With an knack for knowing which bitz go where when it comes to teknology.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Tough</defName>
+			<chance>75</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Crafting>7</Crafting>
+		<Melee>5</Melee>
+		<Intellectual>6</Intellectual>
+		<Shooting>2</Shooting>
+		<Construction>4</Construction>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Tek</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Freebootahz -->
+<!-- Freebootah Adulthood -->
+<!-- Ork Boy Freebootah -->
+<AlienRace.AlienBackstoryDef ParentName="OG_Ork_Boy_Backstory_Base">
+	<defName>OG_Ork_Boy_Freebootah</defName>
+	<title>Freebootah</title>
+	<titleShort>Freebootah</titleShort>
+	<baseDesc>[PAWN_nameDef] is a Freebootah, the typical Ork pirate, akin in almost every way to a standard Ork. Nothing makes [PAWN_nameDef] happier than creeping up on an unsuspecting voidcraft, his mates slithering through the undergrowth at his side. When the time is right, burst from concealment, slashing, stabbing and shooting their stunned prey before they have a chance to strike back.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<!--
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>PlantWork</li>
+		-->
+		<li>ManualSkilled</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName>Brawler</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<disallowedTraitsChance>
+		<li>
+			<defName>ShootingAccuracy</defName>
+		</li>
+	</disallowedTraitsChance>
+	<skillGains>
+		<Melee>4</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Boy</li>
+		<li>Ork_Boy_Kommando</li>
+		<li>Ork_Standard</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Weird Orkz -->
+<!-- Weird Childhood -->
+<!-- Weird Child -->
+ <AlienRace.AlienBackstoryDef>
+	<defName>OG_Ork_Weird_Child</defName>
+	<title>weird runt</title>
+	<titleShort>yoof</titleShort>
+	<baseDesc>[PAWN_nameDef] is a bit puny for an Ork. As such, the other boyz think ez a bit weird.</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Male</bodyTypeFemale>
+	<slot>Childhood</slot>
+	<workDisables>
+		<li>Cleaning</li>
+		<li>Artistic</li>
+	</workDisables>
+	<disallowedTraitsChance>
+		<li>
+			<defName Degree="2">Beauty</defName>
+		</li>
+		<li>
+			<defName Degree="1">Beauty</defName>
+		</li>
+	</disallowedTraitsChance>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="2">PsychicSensitivity</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName Degree="1">PsychicSensitivity</defName>
+			<chance>75</chance>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>25</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Shooting>1</Shooting>
+		<Melee>2</Melee>
+		<Construction>1</Construction>
+		<Mining>2</Mining>
+		<Cooking>1</Cooking>
+		<Plants>1</Plants>
+		<Animals>1</Animals>
+		<Crafting>2</Crafting>
+		<Medicine>1</Medicine>
+		<Social>1</Social>
+		<Intellectual>1</Intellectual>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Weird</li>
+		<li>Ork_Weird_Child</li>
+		<li>Ork_Boy_Weird</li>
+		<li>Ork_Nob_Weird</li>
+		<li>Ork_Boss_Weird</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Weird Adulthood -->
+<!-- Weird Boyz -->
+<!-- Weird Boy -->
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Ork_Boy_Weird</defName>
+	<title>Weirdboy</title>
+	<titleShort>Weirdboy</titleShort>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
+	<bioAgeRange>
+		<min>16</min>
+		<max>29</max>
+	</bioAgeRange>
+	<baseDesc>[PAWN_nameDef] is a Weirdboy. an ork of unusual mental capacity and is more intelligent than your average Ork</baseDesc>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Mining</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="2">PsychicSensitivity</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName Degree="1">PsychicSensitivity</defName>
+			<chance>75</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Crafting>3</Crafting>
+		<Intellectual>3</Intellectual>
+		<Construction>2</Construction>
+		<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Weird</li>
+		<li>Ork_Boy_Weird</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+ 
+<!-- Weird Nobz -->
+<!-- Weirdboy Warp'Ead -->
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Ork_Nob_Weird</defName>
+	<title>Weirdboy Warp'Ead</title>
+	<titleShort>Warp'Ead</titleShort>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
+	<bioAgeRange>
+		<min>30</min>
+		<max>49</max>
+	</bioAgeRange>
+	<baseDesc>[PAWN_nameDef] is a Warp'Ead, Bigger and badder than the average Ork, having survived countless battles.\n\n An Ork of unusual mental capacity and is far more intelligent than your average Ork.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="2">PsychicSensitivity</defName>
+			<chance>75</chance>
+		</li>
+		<li>
+			<defName Degree="1">PsychicSensitivity</defName>
+			<chance>50</chance>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>50</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Crafting>6</Crafting>
+		<Intellectual>6</Intellectual>
+		<Shooting>2</Shooting>
+		<Construction>3</Construction>
+		<Melee>-2</Melee>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Weird</li>
+		<li>Ork_Nob_Weird</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+<!-- Weird Bossez -->
+<!-- Prophet of Waaaaargh -->
+<AlienRace.AlienBackstoryDef>
+	<defName>OG_Ork_Boss_Weird</defName>
+	<title>Prophet of Waaaaargh!</title>
+	<titleShort>Prophet</titleShort>
+	<!-- <linkedBackstory>Ork_Weird_Child</linkedBackstory> -->
+	<bioAgeRange>
+		<min>50</min>
+	</bioAgeRange>
+	<baseDesc>[PAWN_nameDef] is beholden to no tribe nor lord, only the whisperings of the Greenskin gods in his addled mind a Weirdboy Prophet of Waaaaargh!, hearld of Gork and Mork. an Immense Ork, Bigger and badder than even a Nob, having survived countless battles and almost a Warboss in his own right.</baseDesc>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+	<bodyTypeFemale>Hulk</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<workDisables>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Cooking</li>
+		<li>Animals</li>
+		<li>Mining</li>
+		<li>PlantWork</li>
+	</workDisables>
+	<forcedTraitsChance>
+		<li>
+			<defName Degree="2">PsychicSensitivity</defName>
+			<chance>100</chance>
+		</li>
+		<li>
+			<defName>Tough</defName>
+			<chance>75</chance>
+		</li>
+	</forcedTraitsChance>
+	<skillGains>
+		<Crafting>7</Crafting>
+		<Melee>5</Melee>
+		<Intellectual>6</Intellectual>
+		<Shooting>2</Shooting>
+		<Construction>4</Construction>
+	</skillGains>
+	<spawnCategories>
+		<li>Ork_Weird</li>
+		<li>Ork_Boss_Weird</li>
+	</spawnCategories>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

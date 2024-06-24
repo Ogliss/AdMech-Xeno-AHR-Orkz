@@ -14,7 +14,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPrefix]
         public static bool Prefix(Pawn pawn, MeditationFocusDef __instance, ref string __result)
         {
-            if (pawn.isOrkoid())
+            if (pawn != null && pawn.isOrkoid())
             {
                 List<string> reasons = new List<string>();
                 if (__instance.requiresRoyalTitle && pawn.royalty != null && pawn.royalty.AllTitlesInEffectForReading.Count > 0)

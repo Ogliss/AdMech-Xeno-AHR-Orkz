@@ -6,7 +6,7 @@
 	<ThoughtDef>
 		<defName>OG_Ork_LostScrap</defName>
 		<thoughtClass>Thought_MemorySocial</thoughtClass>
-		<durationDays>20</durationDays>
+		<durationDays>3</durationDays>
 		<stackLimit>300</stackLimit>
 		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
 		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
@@ -23,7 +23,7 @@
 	<ThoughtDef>
 		<defName>OG_Ork_WonScrap</defName>
 		<thoughtClass>Thought_MemorySocial</thoughtClass>
-		<durationDays>20</durationDays>
+		<durationDays>3</durationDays>
 		<stackLimit>300</stackLimit>
 		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
 		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
@@ -40,7 +40,7 @@
 	<ThoughtDef>
 		<defName>OG_Ork_WonScrap_Downed</defName>
 		<thoughtClass>Thought_MemorySocial</thoughtClass>
-		<durationDays>20</durationDays>
+		<durationDays>6</durationDays>
 		<stackLimit>300</stackLimit>
 		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
 		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
@@ -58,7 +58,7 @@
 	<ThoughtDef>
 		<defName>OG_Ork_WonScrap_Killed</defName>
 		<thoughtClass>Thought_MemorySocial</thoughtClass>
-		<durationDays>20</durationDays>
+		<durationDays>9</durationDays>
 		<stackLimit>300</stackLimit>
 		<stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
 		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
@@ -90,17 +90,17 @@
 			<li>
 				<label>boisterous</label>
 				<description>I'z itchin fer a gud fight! Sumfin needs ta get krumped now, it'z all i can fink uv! I wunder if i can get krump da boss...</description>
-				<baseMoodEffect>-7</baseMoodEffect>
+				<baseMoodEffect>-6</baseMoodEffect>
 			</li>
 			<li>
 				<label>disgruntled</label>
 				<description>I wanna krump sumfin, it'z been a while...</description>
-				<baseMoodEffect>-5</baseMoodEffect>
+				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 			<li>
 				<label>bored</label>
 				<description>I'z wanna go kick a snot, dat'll get 'im werkin fasta, and it'z fun.</description>
-				<baseMoodEffect>-3</baseMoodEffect>
+				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

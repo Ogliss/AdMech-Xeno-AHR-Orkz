@@ -122,10 +122,6 @@
     <Compile Include="IncidentWorkers\IncidentWorker_OrkoidFungalSprout.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="1CompSlotLoadable">
-      <HintPath>..\..\..\..\OgsTools\CompSlotLoadable\1.4\bin\Debug\1CompSlotLoadable.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="AdeptusMechanicusArmoury">
       <HintPath>..\..\..\..\AdMechArmoury\1.4\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
       <Private>false</Private>
@@ -154,7 +150,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3563" GeneratePathProperty="true" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3901" GeneratePathProperty="true" />
     <PackageReference Include="Lib.Harmony" Version="2.2.2" />
     <PackageReference Include="TaskPubliciser">
       <Version>1.0.3</Version>

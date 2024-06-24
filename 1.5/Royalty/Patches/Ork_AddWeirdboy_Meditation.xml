@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid Weirdboy Meditation Focus Link -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+				<value>
+					<li>
+						<categoryName>Ork_Weird_Child</categoryName>
+						<slot>Childhood</slot>
+					</li>
+					<li>
+						<categoryName>Ork_Weird</categoryName>
+						<slot>Childhood</slot>
+					</li>
+					<li>
+						<categoryName>Ork_Weird</categoryName>
+						<slot>Adulthood</slot>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/MeditationFocusDef[defName="Artistic"]/incompatibleBackstoriesAny</xpath>
+				<value>
+					<li>
+						<categoryName>Ork_Standard</categoryName>
+						<slot>Childhood</slot>
+					</li>
+					<li>
+						<categoryName>Ork_Standard</categoryName>
+						<slot>Adulthood</slot>
+					</li>
+					<li>
+						<categoryName>Grot_Child</categoryName>
+						<slot>Childhood</slot>
+					</li>
+					<li>
+						<categoryName>Grot_Gretchin</categoryName>
+						<slot>Adulthood</slot>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/MeditationFocusDef[defName="Dignified"]</xpath>
+				<value>
+					<incompatibleBackstoriesAny>
+						<li>
+							<categoryName>Ork_Standard</categoryName>
+							<slot>Childhood</slot>
+						</li>
+						<li>
+							<categoryName>Ork_Standard</categoryName>
+							<slot>Adulthood</slot>
+						</li>
+						<li>
+							<categoryName>Grot_Child</categoryName>
+							<slot>Childhood</slot>
+						</li>
+						<li>
+							<categoryName>Grot_Gretchin</categoryName>
+							<slot>Adulthood</slot>
+						</li>
+					</incompatibleBackstoriesAny>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

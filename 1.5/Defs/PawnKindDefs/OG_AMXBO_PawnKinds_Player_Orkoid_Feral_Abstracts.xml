@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_OrkBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<apparelMoney>
+		<min>500</min>
+		<max>1200</max>
+	</apparelMoney>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>Ork_Boy</li>
+		</categories>
+		<commonality>1</commonality>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Boy_Weird</li>
+		</categories>
+		<commonality>0.1</commonality>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Nob</li>
+		</categories>
+		<commonality>0.3</commonality>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Nob_Weird</li>
+		</categories>
+		<commonality>0.05</commonality>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Boss</li>
+		</categories>
+		<commonality>0.15</commonality>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Boss_Weird</li>
+		</categories>
+		<commonality>0.025</commonality>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_BoyBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>Ork_Boy</li>
+		</categories>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Boy_Weird</li>
+		</categories>
+		<commonality>0.1</commonality>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_NobBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>Ork_Nob</li>
+		</categories>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Nob_Weird</li>
+		</categories>
+		<commonality>0.1</commonality>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_WarbossBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>Ork_Boss</li>
+		</categories>
+		</li>
+		<li>
+		<categories>
+			<li>Ork_Boss_Weird</li>
+		</categories>
+		<commonality>0.1</commonality>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_Weird_BoyBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride Inherit="False">
+		<li>
+			<categories>
+				<li>Ork_Boy_Weird</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_Weird_NobBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride Inherit="False">
+		<li>
+			<categories>
+				<li>Ork_Nob_Weird</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_Ork_Weird_WarbossBase" ParentName="OG_Ork_Player_Base">
+	<label>Ork Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride Inherit="False">
+		<li>
+			<categories>
+				<li>Ork_Boss_Weird</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+<PawnKindDef Abstract="True" Name="Tribesperson_OG_GrotBase" ParentName="OG_Grot_Player_Base">
+	<label>Grot Tribal</label>
+	<defaultFactionType>OG_Ork_PlayerTribe</defaultFactionType>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>Grot_Goblin</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelTags>
+		<li>Neolithic</li>
+	</apparelTags>
+	<apparelMoney>
+		<min>200</min>
+		<max>200</max>
+	</apparelMoney>
+	<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+</PawnKindDef>
+
+</Defs>

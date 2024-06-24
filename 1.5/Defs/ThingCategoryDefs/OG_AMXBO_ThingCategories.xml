@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Adeptus Mechanicus - Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Ork Gear Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Ork Armour Catagories ========================== -->
+	<ThingCategoryDef>
+		<defName>OG_Apparel_Ork</defName>
+		<label>ork</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGOArmour</defName>
+		<label>armour</label>
+		<parent>OG_Apparel_Ork</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>OGOArmorHeadgear</defName>
+		<label>head armor</label>
+        <parent>OGOArmour</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>OGOApparel</defName>
+		<label>clothing</label>
+		<parent>OG_Apparel_Ork</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGOHeadgear</defName>
+		<label>headgear</label>
+		<parent>OG_Apparel_Ork</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGOApparelUtility</defName>
+		<label>utility</label>
+		<parent>OG_Apparel_Ork</parent>
+	</ThingCategoryDef>
+			
+	<ThingCategoryDef>
+		<defName>OGOWargear</defName>
+		<label>wargear</label>
+		<parent>OG_Apparel_Ork</parent>
+	</ThingCategoryDef>
+
+<!-- Ork Corpse -->
+	<ThingCategoryDef>
+		<defName>OG_Corpses_Orkoid</defName>
+		<label>ork corpses</label>
+		<parent>CorpsesHumanlike</parent>
+	</ThingCategoryDef>
+	
+<!-- Ork Construct Corpse -->
+	<ThingCategoryDef>
+		<defName>OG_Corpses_Orkoid_Construct</defName>
+		<label>ork construct remains</label>
+		<parent>CorpsesMechanoid</parent>
+	</ThingCategoryDef>
+	
+</Defs>

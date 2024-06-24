@@ -5,26 +5,27 @@
 	<label>Grot</label>
 	<description>The worker of the orkoid species: A fully grown Grot.</description>
 	<alienRace>
-		<graphicPaths>
-			<head>Things/Pawn/Humanlike/Grot/Head/</head>
-			<!--body>Things/Pawn/Humanlike/Grot/Bodies/</body-->
-			<body>
-				<bodytypeGraphics>
-				  <!--Child>
-					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Child</path>
-				  </Child-->
-				  <Thin>
-					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Thin</path>
-				  </Thin>
-				</bodytypeGraphics>
-			</body>
-		</graphicPaths>
 		<generalSettings>
 			<growthAges>
-				<li>0</li>
 				<li>1</li>
 				<li>2</li>
+				<li>3</li>
 			</growthAges>
+			<!-- Used when a baby is born -->
+			<newbornBackstoryFilter>
+				<li>
+					<categories>
+						<li>CommonAlienCategory</li>
+					</categories>
+					<commonality>0.75</commonality>
+				</li>
+				<li>
+					<categories>
+						<li>UncommonAlienCategory</li>
+					</categories>
+					<commonality>0.25</commonality>
+				</li>
+			</newbornBackstoryFilter>
 			<!-- Used when a baby becomes a child -->
 			<childBackstoryFilter IgnoreIfNoMatchingField="True">
 				<li>
@@ -54,6 +55,86 @@
 			<maleGenderProbability>1</maleGenderProbability>
 			<minAgeForAdulthood>1</minAgeForAdulthood>
 			<immuneToAge>false</immuneToAge>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Wimp</defName>
+					<degree>0</degree>
+					<chance>25</chance>
+				</li>
+				<li>
+					<defName>Xenophobia</defName>
+					<degree>1</degree>
+					<chance>75</chance>
+				</li>
+			</forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+				</li>
+				<li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>TAU_Philosophy</defName>
+				</li>
+				<li>
+					<defName>Kind</defName>
+				</li>
+				<li>
+					<defName>Gay</defName>
+				</li>
+				<li>
+					<defName>DislikesWomen</defName>
+				</li>
+				<li>
+					<defName>DislikesMen</defName>
+				</li>
+			</disallowedTraits>
 			<alienPartGenerator>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.70, 0.70)</customHeadDrawSize>
@@ -320,87 +401,23 @@
 					</goodwill>
 				</li>
 			</factionRelations>
-			<forcedRaceTraitEntries>
-				<li>
-					<defName>Wimp</defName>
-					<degree>0</degree>
-					<chance>25</chance>
-				</li>
-				<li>
-					<defName>Xenophobia</defName>
-					<degree>1</degree>
-					<chance>75</chance>
-				</li>
-			</forcedRaceTraitEntries>
-			<disallowedTraits>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IGTraitMechanicus</defName>
-				</li>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IGTraitAstraMilitarum</defName>
-				</li>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IGTraitAssassinorum</defName>
-				</li>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IGTraitInquisition</defName>
-				</li>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IGTraitImperialMedic</defName>
-				</li>
-				<li MayRequire="QX.AstraMilitarum">
-					<defName>IG_TraitAstarte</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Emperor_Hope</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Ynnead_Hope</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Cegorach_Laughter</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Khaine_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Khorne_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Nurgle_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Slaanesh_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Tzeentch_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>Undivided_Fervor</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>DE_Depravity</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>ELDAR_mastery</defName>
-				</li>
-				<li MayRequire="CptOhu.CorruptionCore">
-					<defName>TAU_Philosophy</defName>
-				</li>
-				<li>
-					<defName>Kind</defName>
-				</li>
-				<li>
-					<defName>Gay</defName>
-				</li>
-				<li>
-					<defName>DislikesWomen</defName>
-				</li>
-				<li>
-					<defName>DislikesMen</defName>
-				</li>
-			</disallowedTraits>
 		</generalSettings>
+		<graphicPaths>
+			<head>Things/Pawn/Humanlike/Grot/Head/</head>
+			<body>
+				<bodytypeGraphics>
+				  <Baby>
+					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Child</path>
+				  </Baby>
+				  <Child>
+					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Child</path>
+				  </Child>
+				  <Thin>
+					<path>Things/Pawn/Humanlike/Grot/Bodies/Naked_Thin</path>
+				  </Thin>
+				</bodytypeGraphics>
+			</body>
+		</graphicPaths>
 		<thoughtSettings>
 			<butcherThoughtGeneral>
 				<thought>ButcheredHumanlikeCorpse_OGOrkoid</thought>
