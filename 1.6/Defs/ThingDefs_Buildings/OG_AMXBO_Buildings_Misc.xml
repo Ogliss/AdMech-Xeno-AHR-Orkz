@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--============================== Steles ==============================-->
+
+  <ThingDef Name="OG_Ork_SteleBase" ParentName="BuildingBase" Abstract="True">
+	<designationCategory>Misc</designationCategory>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<fillPercent>0.50</fillPercent>
+	<stuffCategories>
+		<li>Stony</li>
+	</stuffCategories>
+	<canOverlapZones>false</canOverlapZones>
+	<pathCost>50</pathCost>
+	<rotatable>false</rotatable>
+	<castEdgeShadows>True</castEdgeShadows>
+	<researchPrerequisites>
+		<li>ComplexFurniture</li>
+		<li>ComplexFurniture</li>
+	</researchPrerequisites>
+	<comps>
+		<li Class="CompProperties_Art">
+			<nameMaker>NamerArtFurniture</nameMaker>
+			<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+			<minQualityForArtistic>Awful</minQualityForArtistic>
+		</li>
+	</comps>
+	<inspectorTabs>
+		<li>ITab_Art</li>
+	</inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="OG_Ork_SteleBase">
+	<defName>OGO_SteleLarge</defName>
+	<label>large stele</label>
+	<description>A tall, thick slab with engravings on the sides. Orkz use these to memorialize individuals, battles, and other important events.</description>
+	<size>(2,2)</size>
+	<statBases>
+		<MaxHitPoints>200</MaxHitPoints>
+		<WorkToBuild>8000</WorkToBuild>
+		<Beauty>15</Beauty>
+		<MeditationFocusStrength>0.15</MeditationFocusStrength>
+	</statBases>
+	<costStuffCount>125</costStuffCount>
+	<uiIconScale>0.8</uiIconScale>
+	<uiIconOffset>(0, 0.04)</uiIconOffset>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>Things/Building/Ork/Misc/Stele</texPath>
+		<!--shaderType>CutoutComplex</shaderType-->
+		<drawSize>(3,3)</drawSize>
+		<drawOffset>(0,0,0.05)</drawOffset>
+		<shadowData>
+			<volume>(1.5, 0.6, 1.5)</volume>
+			<offset>(0, 0, -0.15)</offset>
+		</shadowData>
+		<damageData>
+			<rect>(0.1,0.1,1.9,1.9)</rect>
+		</damageData>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+				<li>Artistic</li>
+			</focusTypes>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <!--ThingDef ParentName="OG_Ork_SteleBase">
+	<defName>SteleGrand</defName>
+	<label>grand stele</label>
+	<description>A towering slab with extensive engravings on the sides. Steles have been used since ancient times to memorialize individuals, battles, and other important events.</description>
+	<size>(3,3)</size>
+	<statBases>
+		<MaxHitPoints>400</MaxHitPoints>
+		<WorkToBuild>16000</WorkToBuild>
+		<Beauty>30</Beauty>
+		<MeditationFocusStrength>0.18</MeditationFocusStrength>
+	</statBases>
+	<costStuffCount>250</costStuffCount>
+	<uiIconScale>0.7</uiIconScale>
+	<uiIconOffset>(0, 0.02)</uiIconOffset>
+	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Building/Furniture/GrandStele</texPath>
+		<drawSize>(5,5)</drawSize>
+		<drawOffset>(0,0,0.25)</drawOffset>
+		<shadowData>
+			<volume>(2.2, 1, 2.2)</volume>
+			<offset>(0, 0, -0.1)</offset>
+		</shadowData>
+		<damageData>
+			<rect>(0.1,0.1,2.9,2.9)</rect>
+		</damageData>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+				<li>Artistic</li>
+			</focusTypes>
+		</li>
+	</comps>
+  </ThingDef-->
+
+</Defs>

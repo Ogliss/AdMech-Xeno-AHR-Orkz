@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid TableButcher DoBillsButcherFlesh Link -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef/recipeMaker/recipeUsers/li[text()="ElectricStove"]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[recipeMaker/recipeUsers/li[text()="ElectricStove"]]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>OGO_ElectricStove</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef/recipeMaker/recipeUsers/li[text()="FueledStove"]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[recipeMaker/recipeUsers/li[text()="FueledStove"]]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>OGO_FueledStove</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
