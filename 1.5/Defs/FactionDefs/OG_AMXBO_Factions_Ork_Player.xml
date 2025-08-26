@@ -27,7 +27,7 @@
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
-			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</OG_Ork_Structure_TheistAbstract>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<hairTags IgnoreIfNoMatchingField="True">
 			<li>Tribal</li>
@@ -106,7 +106,7 @@
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
-			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</OG_Ork_Structure_TheistAbstract>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<hairTags IgnoreIfNoMatchingField="True">
 			<li>Tribal</li>
@@ -187,7 +187,7 @@
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
-			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</OG_Ork_Structure_TheistAbstract>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<hairTags IgnoreIfNoMatchingField="True">
 			<li>Tribal</li>
@@ -265,7 +265,7 @@
 		  <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights IgnoreIfNoMatchingField="True" Inherit="False">
-			<OG_Ork_Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</OG_Ork_Structure_TheistAbstract>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<hairTags IgnoreIfNoMatchingField="True">
 			<li>Tribal</li>
